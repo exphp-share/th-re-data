@@ -104,7 +104,7 @@ def do_types(bv, path):
         else:
             typedefs[str(type_name)] = {'size': bv_types[type_name].width, 'def': str(bv_types[type_name])}
 
-    with open_output_json_with_validation(os.path.join(path, 'type-defs.json')) as f:
+    with open_output_json_with_validation(os.path.join(path, 'type-aliases.json')) as f:
         nice_json_object(f, 0, typedefs, lambda f, d: json_object_with_key_order(f, d, ['def', 'size']))
 
     structures_own = {k: v for (k, v) in structures.items() if k.startswith('z')}
