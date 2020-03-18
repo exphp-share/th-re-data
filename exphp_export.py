@@ -107,8 +107,12 @@ def do_types(bv, path):
     with open_output_json_with_validation(os.path.join(path, 'type-defs.json')) as f:
         nice_json_object(f, 0, typedefs, lambda f, d: json_object_with_key_order(f, d, ['def', 'size']))
 
-    with open_output_json_with_validation(os.path.join(path, 'type-structs.json')) as f:
-        nice_json_object_of_array(f, 0, structures, lambda f, d: json.dump(d, f))
+    structures_own = {k: v for (k, v) in structures.items() if k.startswith('z')}
+    structures_ext = {k: v for (k, v) in structures.items() if not k.startswith('z')}
+    with open_output_json_with_validation(os.path.join(path, 'type-structs-own.json')) as f:
+        nice_json_object_of_array(f, 0, structures_own, lambda f, d: json.dump(d, f))
+    with open_output_json_with_validation(os.path.join(path, 'type-structs-ext.json')) as f:
+        nice_json_object_of_array(f, 0, structures_ext, lambda f, d: json.dump(d, f))
 
     with open_output_json_with_validation(os.path.join(path, 'type-enums.json')) as f:
         nice_json_object_of_array(f, 0, enumerations, lambda f, d: json.dump(d, f))
