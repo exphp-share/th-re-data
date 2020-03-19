@@ -123,6 +123,7 @@
 , {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": "void*[3]", "comment": null}
 , {"addr": "0x4917c4", "name": "SCORE_EXTEND_QUOTAS_EXTRA", "type": "int32_t [6]", "comment": null}
 , {"addr": "0x491880", "name": "SCORE_EXTEND_QUOTAS_STANDARD", "type": "int32_t [11]", "comment": null}
+, {"addr": "0x491b1c", "name": "SELECT_TEX_CALLABLES", "type": "void", "comment": null}
 , {"addr": "0x491ce0", "name": "__ptr_leaf_409030", "type": "void*", "comment": null}
 , {"addr": "0x491d5c", "name": "VTABLE_SHOTTYPE_DOYOU", "type": "struct zVTableShotType", "comment": null}
 , {"addr": "0x491d78", "name": "VTABLE_SHOTTYPE_FALL", "type": "struct zVTableShotType", "comment": null}

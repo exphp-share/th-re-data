@@ -18,6 +18,7 @@
 , {"addr": "0x4029d0", "name": "sub_4029d0_logs_debug_messages", "comment": null}
 , {"addr": "0x402aa0", "name": "print_error_402aa0", "comment": null}
 , {"addr": "0x402b70", "name": "ecl_move_rand_402b70", "comment": null}
+, {"addr": "0x402d30", "name": "math_wrap_angle_again", "comment": null}
 , {"addr": "0x402d90", "name": "math_wrap_angle_402d90", "comment": null}
 , {"addr": "0x402ff0", "name": "sub_402ff0__uses_game_speed", "comment": null}
 , {"addr": "0x403110", "name": "sub_403110_pos_math_thing", "comment": null}
@@ -32,9 +33,10 @@
 , {"addr": "0x405540", "name": "sprintf_405540", "comment": null}
 , {"addr": "0x405600", "name": "leaf_405600_disabled_log_func", "comment": null}
 , {"addr": "0x405670", "name": "anm_508_callback_405670", "comment": null}
+, {"addr": "0x406190", "name": "increment_timer", "comment": null}
 , {"addr": "0x406200", "name": "anm_reset_pos_machine", "comment": null}
 , {"addr": "0x406320", "name": "ecl_move_rand_406320", "comment": null}
-, {"addr": "0x406340", "name": "anm_vm_find_last_linked_vm", "comment": null}
+, {"addr": "0x406340", "name": "anm_406340", "comment": null}
 , {"addr": "0x406380", "name": "anm_create_child_508", "comment": null}
 , {"addr": "0x406470", "name": "cartesian_from_polar", "comment": null}
 , {"addr": "0x406490", "name": "set_timer_to_value", "comment": null}
@@ -56,6 +58,7 @@
 , {"addr": "0x40c040", "name": "ecl_callSTD_40c040", "comment": null}
 , {"addr": "0x40cd10", "name": "interp_step_40cd10", "comment": null}
 , {"addr": "0x40d400", "name": "ecl_leaf_40d400_usedonce", "comment": null}
+, {"addr": "0x40d490", "name": "decrement_timer", "comment": null}
 , {"addr": "0x40d510", "name": "leaf_40d510_ret_ecx_0arg", "comment": null}
 , {"addr": "0x40d520", "name": "leaf_40d520_ret0_0arg", "comment": null}
 , {"addr": "0x40d530", "name": "leaf_40d530_ret0_0arg", "comment": null}
@@ -250,7 +253,8 @@
 , {"addr": "0x45edb0", "name": "leaf_45edb0__float_math_on_a_struct", "comment": null}
 , {"addr": "0x45f2d0", "name": "anm_get_float_var", "comment": null}
 , {"addr": "0x45f610", "name": "anm_get_int_var", "comment": null}
-, {"addr": "0x45f780", "name": "anm_leaf_45f780_get_float_var_ptr", "comment": null}
+, {"addr": "0x45f780", "name": "anm_get_float_var_ptr", "comment": null}
+, {"addr": "0x45f890", "name": "anm_get_int_var_ptr", "comment": null}
 , {"addr": "0x45f980", "name": "anm_run", "comment": null}
 , {"addr": "0x463b30", "name": "anm_step_interpolators", "comment": null}
 , {"addr": "0x463d40", "name": "interp_step_float_2", "comment": null}
