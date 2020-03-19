@@ -67,6 +67,8 @@ def do_symbols(bv, path):
     
     datas.sort()
     funcs.sort()
+    for v in labels.values():
+        v.sort()
 
     # Python3's insertion-order dicts would make the output of json.dump "nice enough",
     # but Python2's dict order is so bad we need to step in and do something about it.
