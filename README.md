@@ -1,6 +1,8 @@
 Exported reverse engineering data from binja for TH16.  Binja doesn't have nice export facilities so I just made some simple json files.
 
-* [`type-structs-own.json`](./type-structs-own.json) — WIP struct defs for TH16.  **Probably what you're looking for.**
+* [`type-structs-own.json`](./type-structs-own.json) — WIP struct defs for TH16.
+  + **This is probably what you're looking for.**
+  + Apologies for some long field names; I don't have any other way to write comments that can be "in my face" while browsing code.
 * [`funcs.json`](./funcs.json) — Labels and comments for functions that I've sufficiently renamed.
 * [`static.json`](./statics.json) — Labels, comments, and types for statics that I've sufficiently renamed.
 * [`labels.json`](./labels.json) — Labels I generated in some functions for switch cases.
