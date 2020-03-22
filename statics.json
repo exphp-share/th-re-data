@@ -123,7 +123,9 @@
 , {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": "void*[3]", "comment": null}
 , {"addr": "0x4917c4", "name": "SCORE_EXTEND_QUOTAS_EXTRA", "type": "int32_t [6]", "comment": null}
 , {"addr": "0x491880", "name": "SCORE_EXTEND_QUOTAS_STANDARD", "type": "int32_t [11]", "comment": null}
-, {"addr": "0x491b1c", "name": "SELECT_TEX_CALLABLES", "type": "void", "comment": null}
+, {"addr": "0x4919e8", "name": "ANM_508_CALLABLES", "type": "void*[5]", "comment": null}
+, {"addr": "0x491b0c", "name": "SELECT_TEX_CALLABLES_3", "type": "void*[4]", "comment": null}
+, {"addr": "0x491b1c", "name": "SELECT_TEX_CALLABLES", "type": "void*[4]", "comment": null}
 , {"addr": "0x491ce0", "name": "__ptr_leaf_409030", "type": "void*", "comment": null}
 , {"addr": "0x491d5c", "name": "VTABLE_SHOTTYPE_DOYOU", "type": "struct zVTableShotType", "comment": null}
 , {"addr": "0x491d78", "name": "VTABLE_SHOTTYPE_FALL", "type": "struct zVTableShotType", "comment": null}
@@ -157,6 +159,7 @@
 , {"addr": "0x4943d8", "name": "float(1e-4)", "type": "float", "comment": null}
 , {"addr": "0x4943dc", "name": "float(5e-4)", "type": "float", "comment": null}
 , {"addr": "0x4943e4", "name": "float(1e-3)", "type": "float", "comment": null}
+, {"addr": "0x4943f0", "name": "float(1/256)", "type": "float", "comment": null}
 , {"addr": "0x4943f4", "name": "float(1/128)", "type": "float", "comment": null}
 , {"addr": "0x49440c", "name": "float(0.03)", "type": "float", "comment": null}
 , {"addr": "0x494424", "name": "float(0.05+eps)", "type": "float", "comment": null}

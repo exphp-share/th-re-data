@@ -256,7 +256,7 @@
 , {"addr": "0x45c360", "name": "dx_direct_input_initialize", "comment": null}
 , {"addr": "0x45e150", "name": "play_sound_sister", "comment": null}
 , {"addr": "0x45e1f0", "name": "play_sound", "comment": null}
-, {"addr": "0x45edb0", "name": "leaf_45edb0__float_math_on_a_struct", "comment": null}
+, {"addr": "0x45edb0", "name": "anm_init_matrices_with_scale_factors", "comment": null}
 , {"addr": "0x45f2d0", "name": "anm_get_float_var", "comment": null}
 , {"addr": "0x45f610", "name": "anm_get_int_var", "comment": null}
 , {"addr": "0x45f780", "name": "anm_get_float_var_ptr", "comment": null}
@@ -276,6 +276,7 @@
 , {"addr": "0x464aa0", "name": "anm_set_alpha1_time", "comment": null}
 , {"addr": "0x464b40", "name": "anm_set_rgb1_time", "comment": null}
 , {"addr": "0x464c60", "name": "anm_set_rgb2_time", "comment": null}
+, {"addr": "0x464d60", "name": "cartesian_from_polar_2", "comment": null}
 , {"addr": "0x464d80", "name": "time_copy", "comment": null}
 , {"addr": "0x464dd0", "name": "anm_464dd0_recursive", "comment": null}
 , {"addr": "0x468c00", "name": "anm_468c00__uses_render_mode", "comment": null}
