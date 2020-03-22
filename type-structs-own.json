@@ -1,4 +1,24 @@
-{ "zAnm614": 
+{ "z0_D3D10_VIEWPORT": 
+  [ ["0x0", "TopLeftX", "INT"]
+  , ["0x4", "TopLeftY", "INT"]
+  , ["0x8", "Width", "UINT"]
+  , ["0xc", "Height", "UINT"]
+  , ["0x10", "MinDepth", "float"]
+  , ["0x14", "MaxDepth", "float"]
+  , ["0x18", "__end", null]
+  ]
+
+, "z0_IDirect3DDevice9": 
+  [ ["0x0", "__abstract_type", "char [0]"]
+  , ["0x0", "__end", null]
+  ]
+
+, "z0_IDirect3DTexture9": 
+  [ ["0x0", "__abstract_type", "char [0]"]
+  , ["0x0", "__end", null]
+  ]
+
+, "zAnm614": 
   [ ["0x0", "vm", "struct zAnmVm"]
   , ["0x5fc", "node", "struct zAnm614List"]
   , ["0x60c", "bool__enabled_maybe", "int32_t"]
@@ -40,20 +60,29 @@
 , "zAnmLoaded": 
   [ ["0x0", "slot_num", "int32_t"]
   , ["0x4", "name", "char [260]"]
-  , ["0x108", "anm_file", "void*"]
+  , ["0x108", "anm_file", "struct zAnmRawFileHeader*"]
   , ["0x10c", "vms", "struct zAnmVm*"]
   , ["0x110", "entry_count", "int32_t"]
   , ["0x114", "script_count", "int32_t"]
   , ["0x118", "sprite_count", "int32_t"]
   , ["0x11c", "sprites", "struct zAnmLoadedSprite*"]
   , ["0x120", "scripts", "uint8_t**"]
-  , ["0x124", "d3d", "void*"]
+  , ["0x124", "d3d", "struct zAnmLoadedD3D*"]
   , ["0x128", "load_wait", "int32_t"]
   , ["0x12c", "__unknown", null]
   , ["0x134", "__field_134__some_kind_of_counter", "int32_t"]
   , ["0x138", "__unknown", null]
   , ["0x13c", "__exact_size_known", "char [0]"]
   , ["0x13c", "__end", null]
+  ]
+
+, "zAnmLoadedD3D": 
+  [ ["0x0", "texture", "struct z0_IDirect3DTexture9*"]
+  , ["0x4", "__unknown", null]
+  , ["0x10", "__image_file_entry", "struct zAnmRawFileEntry*"]
+  , ["0x14", "__unknown", null]
+  , ["0x18", "__exact_size_known", "char [0]"]
+  , ["0x18", "__end", null]
   ]
 
 , "zAnmLoadedSprite": 
@@ -71,6 +100,18 @@
   , ["0x3c", "__unknown__usually_1_1", "struct zFloat2"]
   , ["0x44", "__exact_size_known", "char [0]"]
   , ["0x44", "__end", null]
+  ]
+
+, "zAnmRawFileEntry": 
+  [ ["0x0", "__end", null]
+  ]
+
+, "zAnmRawFileHeader": 
+  [ ["0x0", "version", "int32_t"]
+  , ["0x4", "__unknown", null]
+  , ["0x10", "offset_of_first_file_entry", "int32_t"]
+  , ["0x14", "__unknown", null]
+  , ["0x20", "__end", null]
   ]
 
 , "zAnmRawHeader11": 
@@ -151,9 +192,9 @@
   , ["0x3a8", "__set_by_418", "struct zFloat2 [4]"]
   , ["0x3c8", "set_by_425", "float"]
   , ["0x3cc", "set_by_426", "float"]
-  , ["0x3d0", "__matrix_3d0", "struct zMatrix44"]
-  , ["0x410", "__matrix_410", "struct zMatrix44"]
-  , ["0x450", "__matrix_450", "struct zMatrix44"]
+  , ["0x3d0", "__matrix_3d0", "struct zD3DMatrix"]
+  , ["0x410", "__matrix_410", "struct zD3DMatrix"]
+  , ["0x450", "__matrix_450", "struct zD3DMatrix"]
   , ["0x490", "field_490", "int32_t"]
   , ["0x494", "__unknown", null]
   , ["0x4a0", "int_script_vars", "int32_t [4]"]
@@ -255,6 +296,26 @@
 , "zBulletType": 
   [ ["0x0", "__unknown", null]
   , ["0x118", "__end", null]
+  ]
+
+, "zD3DMatrix": 
+  [ ["0x0", "m00", "float"]
+  , ["0x4", "m01", "float"]
+  , ["0x8", "m02", "float"]
+  , ["0xc", "m03", "float"]
+  , ["0x10", "m10", "float"]
+  , ["0x14", "m11", "float"]
+  , ["0x18", "m12", "float"]
+  , ["0x1c", "m13", "float"]
+  , ["0x20", "m20", "float"]
+  , ["0x24", "m21", "float"]
+  , ["0x28", "m22", "float"]
+  , ["0x2c", "m23", "float"]
+  , ["0x30", "m30", "float"]
+  , ["0x34", "m31", "float"]
+  , ["0x38", "m32", "float"]
+  , ["0x3c", "m33", "float"]
+  , ["0x40", "__end", null]
   ]
 
 , "zEclBehemoth": 
@@ -631,26 +692,6 @@
   , ["0x68", "__end", null]
   ]
 
-, "zMatrix44": 
-  [ ["0x0", "m00", "float"]
-  , ["0x4", "m01", "float"]
-  , ["0x8", "m02", "float"]
-  , ["0xc", "m03", "float"]
-  , ["0x10", "m10", "float"]
-  , ["0x14", "m11", "float"]
-  , ["0x18", "m12", "float"]
-  , ["0x1c", "m13", "float"]
-  , ["0x20", "m20", "float"]
-  , ["0x24", "m21", "float"]
-  , ["0x28", "m22", "float"]
-  , ["0x2c", "m23", "float"]
-  , ["0x30", "m30", "float"]
-  , ["0x34", "m31", "float"]
-  , ["0x38", "m32", "float"]
-  , ["0x3c", "m33", "float"]
-  , ["0x40", "__end", null]
-  ]
-
 , "zPlayer": 
   [ ["0x0", "__unknown", null]
   , ["0x14", "anm_vm", "struct zAnmVm"]
@@ -927,6 +968,19 @@
   , ["0x28", "actual_fps", "float"]
   , ["0x2c", "__unknown", null]
   , ["0x88", "__end", null]
+  ]
+
+, "zUnknownGlobalD3DStuff": 
+  [ ["0x0", "__field_0", "struct zFloat3"]
+  , ["0xc", "__unknown", null]
+  , ["0x24", "__field_24", "struct zFloat3"]
+  , ["0x30", "__unknown", null]
+  , ["0x3c", "__field_3c", "struct zFloat3"]
+  , ["0x48", "__unknown", null]
+  , ["0x60", "view_matrix", "struct zD3DMatrix"]
+  , ["0xa0", "projection_matrix", "struct zD3DMatrix"]
+  , ["0xe0", "viewport", "struct z0_D3D10_VIEWPORT"]
+  , ["0xf8", "__end", null]
   ]
 
 , "zUnknownIndirectionThing": 

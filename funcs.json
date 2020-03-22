@@ -59,6 +59,7 @@
 , {"addr": "0x4097c0", "name": "load_stage_data", "comment": null}
 , {"addr": "0x409d90", "name": "ecl_sub_409d90_usedonce", "comment": null}
 , {"addr": "0x40a7a0", "name": "trampoline_40a7a0", "comment": null}
+, {"addr": "0x40a7d0", "name": "d3d_40a7d0", "comment": null}
 , {"addr": "0x40b3b0", "name": "unknown_step_interpolators_40b3b0", "comment": null}
 , {"addr": "0x40c040", "name": "ecl_callSTD_40c040", "comment": null}
 , {"addr": "0x40cd10", "name": "interp_step_40cd10", "comment": null}
@@ -279,6 +280,7 @@
 , {"addr": "0x464d60", "name": "cartesian_from_polar_2", "comment": null}
 , {"addr": "0x464d80", "name": "time_copy", "comment": null}
 , {"addr": "0x464dd0", "name": "anm_464dd0_recursive", "comment": null}
+, {"addr": "0x467d00", "name": "sub_467d00__interesting", "comment": null}
 , {"addr": "0x468c00", "name": "anm_468c00__uses_render_mode", "comment": null}
 , {"addr": "0x46a3a0", "name": "initialize_giant_anm_struct", "comment": null}
 , {"addr": "0x46cdd0", "name": "anm_load", "comment": null}

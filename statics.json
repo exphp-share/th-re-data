@@ -339,7 +339,12 @@
 , {"addr": "0x4c1048", "name": "CRIT_SECTION_W", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c1060", "name": "CRIT_SECTION_S", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c1078", "name": "CRIT_SECTION_T", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c10d8", "name": "data_4c10d8_ptr", "type": "void*", "comment": null}
+, {"addr": "0x4c10d8", "name": "GLOBAL_D3D_DEVICE", "type": "struct z0_IDirect3DDevice9*", "comment": null}
+, {"addr": "0x4c1308", "name": "D3D_STUFF_4c1308", "type": "struct zUnknownGlobalD3DStuff", "comment": null}
+, {"addr": "0x4c1434", "name": "D3D_STUFF_4c1434", "type": "struct zUnknownGlobalD3DStuff", "comment": null}
+, {"addr": "0x4c1560", "name": "D3D_STUFF_4c1560__HAS_ANM_VARS_16_TO_21", "type": "struct zUnknownGlobalD3DStuff", "comment": "ANM vars 10016-10018 are the sum of field_0 + field_3c.\nANM vars 10019-10021 are field_24.\n\nNotice there are at least 3 other instances of this struct\nliving in static memory, but only this one has any\nconnection to ANM vars."}
+, {"addr": "0x4c168c", "name": "D3D_STUFF_4c168c", "type": "struct zUnknownGlobalD3DStuff", "comment": null}
+, {"addr": "0x4c17b8", "name": "D3D_STUFF_PTR", "type": "struct zUnknownGlobalD3DStuff*", "comment": "At any given time this points to one of four instances of\nthis struct that all live in static memory."}
 , {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
 , {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": "int32_t", "comment": null}
 , {"addr": "0x4d7d04", "name": "INITIAL_PERFORMANCE_COUNTER", "type": "int32_t", "comment": null}
