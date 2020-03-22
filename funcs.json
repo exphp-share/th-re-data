@@ -18,6 +18,9 @@
 , {"addr": "0x4029d0", "name": "sub_4029d0_logs_debug_messages", "comment": null}
 , {"addr": "0x402aa0", "name": "print_error_402aa0", "comment": null}
 , {"addr": "0x402b70", "name": "ecl_move_rand_402b70", "comment": null}
+, {"addr": "0x402be0", "name": "rand_int", "comment": null}
+, {"addr": "0x402c70", "name": "randf_0_to_x", "comment": null}
+, {"addr": "0x402cb0", "name": "randf_neg_x_to_x", "comment": null}
 , {"addr": "0x402d30", "name": "math_wrap_angle_again", "comment": null}
 , {"addr": "0x402d90", "name": "math_wrap_angle_402d90", "comment": null}
 , {"addr": "0x402ff0", "name": "sub_402ff0__uses_game_speed", "comment": null}
@@ -42,6 +45,8 @@
 , {"addr": "0x406490", "name": "set_timer_to_value", "comment": null}
 , {"addr": "0x406510", "name": "anm_508_callback_406510", "comment": null}
 , {"addr": "0x406930", "name": "anm_508_callback_406930", "comment": null}
+, {"addr": "0x406a70", "name": "anm_sub_406a70", "comment": null}
+, {"addr": "0x406c40", "name": "anm_sub_406c40", "comment": null}
 , {"addr": "0x406ce0", "name": "anm_set_alpha2_time", "comment": null}
 , {"addr": "0x406d80", "name": "anm_set_layer", "comment": null}
 , {"addr": "0x406e10", "name": "interp_step_float_3", "comment": null}
@@ -247,6 +252,7 @@
 , {"addr": "0x447760", "name": "sub_447760_unknown_replay_related", "comment": null}
 , {"addr": "0x459240", "name": "draw_text", "comment": null}
 , {"addr": "0x459830", "name": "start_allocates_behemoth_459830", "comment": null}
+, {"addr": "0x45b280", "name": "set_window_resolution_from_cfg", "comment": null}
 , {"addr": "0x45c360", "name": "dx_direct_input_initialize", "comment": null}
 , {"addr": "0x45e150", "name": "play_sound_sister", "comment": null}
 , {"addr": "0x45e1f0", "name": "play_sound", "comment": null}
@@ -255,7 +261,10 @@
 , {"addr": "0x45f610", "name": "anm_get_int_var", "comment": null}
 , {"addr": "0x45f780", "name": "anm_get_float_var_ptr", "comment": null}
 , {"addr": "0x45f890", "name": "anm_get_int_var_ptr", "comment": null}
+, {"addr": "0x45f940", "name": "divide_vec2_by_640_480", "comment": null}
 , {"addr": "0x45f980", "name": "anm_run", "comment": null}
+, {"addr": "0x4630f0", "name": "anm_leaf_4630f0__flag_534_24_only", "comment": null}
+, {"addr": "0x4632f0", "name": "anm_sub_4632f0", "comment": null}
 , {"addr": "0x463b30", "name": "anm_step_interpolators", "comment": null}
 , {"addr": "0x463d40", "name": "interp_step_float_2", "comment": null}
 , {"addr": "0x464040", "name": "anm_set_rotation_2d_time", "comment": null}
@@ -268,6 +277,8 @@
 , {"addr": "0x464b40", "name": "anm_set_rgb1_time", "comment": null}
 , {"addr": "0x464c60", "name": "anm_set_rgb2_time", "comment": null}
 , {"addr": "0x464d80", "name": "time_copy", "comment": null}
+, {"addr": "0x464dd0", "name": "anm_464dd0_recursive", "comment": null}
+, {"addr": "0x468c00", "name": "anm_468c00__uses_render_mode", "comment": null}
 , {"addr": "0x46a3a0", "name": "initialize_giant_anm_struct", "comment": null}
 , {"addr": "0x46cdd0", "name": "anm_load", "comment": null}
 , {"addr": "0x46cf80", "name": "sub_preload_anim_46cf80", "comment": null}
