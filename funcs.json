@@ -84,6 +84,7 @@
 , {"addr": "0x40e3c0", "name": "shottype_sub_doyou_method_10", "comment": null}
 , {"addr": "0x40e480", "name": "leaf_40e480_nop", "comment": null}
 , {"addr": "0x40e490", "name": "sub_40e490_recursive_math_func", "comment": null}
+, {"addr": "0x40e5c0", "name": "anm_create_40e5c0", "comment": null}
 , {"addr": "0x40e780", "name": "shottype_main_aya_bomb_start", "comment": null}
 , {"addr": "0x40e9d0", "name": "shottype_main_aya_bomb_tick", "comment": null}
 , {"addr": "0x40ebe0", "name": "leaf_40ebe0_ret1_0arg", "comment": null}
@@ -129,7 +130,7 @@
 , {"addr": "0x411280", "name": "shottype_main_reimu_method_10", "comment": null}
 , {"addr": "0x411410", "name": "math_wrap_angle_411410", "comment": null}
 , {"addr": "0x411460", "name": "shottype_sub_spring_release_start", "comment": null}
-, {"addr": "0x4116a0", "name": "shottype_sub_spring_bomb_tick", "comment": null}
+, {"addr": "0x4116a0", "name": "shottype_sub_spring_release_tick", "comment": null}
 , {"addr": "0x411770", "name": "leaf_411770_ret1_0arg", "comment": null}
 , {"addr": "0x411780", "name": "leaf_411780_ret0_2arg", "comment": null}
 , {"addr": "0x411790", "name": "shottype_sub_spring_method_10", "comment": null}
@@ -156,6 +157,7 @@
 , {"addr": "0x41a4d0", "name": "method_41a4d0_1arg_loads_zero_on_fpu", "comment": null}
 , {"addr": "0x41a4e0", "name": "method_41a4e0_1arg_returns_0", "comment": null}
 , {"addr": "0x41a670", "name": "method_41a670_destructor", "comment": null}
+, {"addr": "0x41a6d0", "name": "enm_life_41a6d0", "comment": null}
 , {"addr": "0x41a720", "name": "ecl_unkown562_41a720", "comment": null}
 , {"addr": "0x41a760", "name": "method_41a760_destructor", "comment": null}
 , {"addr": "0x41a860", "name": "method_41a860", "comment": null}
@@ -168,8 +170,11 @@
 , {"addr": "0x41b580", "name": "sub_41b580_initialize_EnemyFull", "comment": null}
 , {"addr": "0x41bb50", "name": "enm_step_interpolators", "comment": null}
 , {"addr": "0x41c1f0", "name": "ecl_sub_41c1f0_math", "comment": null}
-, {"addr": "0x41d1e0", "name": "enm_41d1e0__steps_interps", "comment": null}
-, {"addr": "0x41d2e0", "name": "enm_0041d2e0__steps_interpolators", "comment": null}
+, {"addr": "0x41c330", "name": "enm_step_game_logic", "comment": null}
+, {"addr": "0x41cbd0", "name": "enm_update_41cbd0__lotsa_float_math", "comment": null}
+, {"addr": "0x41d1e0", "name": "enm_update_entry_point", "comment": null}
+, {"addr": "0x41d2e0", "name": "enm_update", "comment": null}
+, {"addr": "0x41d520", "name": "enm_die", "comment": null}
 , {"addr": "0x41d900", "name": "ecl_525_killAll", "comment": null}
 , {"addr": "0x41da30", "name": "ecl_unknown551_41da30", "comment": null}
 , {"addr": "0x41db70", "name": "ecl_unknown571", "comment": null}
@@ -184,6 +189,7 @@
 , {"addr": "0x424c10", "name": "ecl_get_float_global_ptr", "comment": null}
 , {"addr": "0x424e40", "name": "ecl_leaf_424e40_usedtwice", "comment": null}
 , {"addr": "0x424eb0", "name": "ecl_leaf_424eb0_usedonce", "comment": null}
+, {"addr": "0x425010", "name": "enm_leaf_425010", "comment": null}
 , {"addr": "0x4251d0", "name": "ecl_get_int_arg__enm", "comment": null}
 , {"addr": "0x4251f0", "name": "ecl_get_arg0_output_ptr__enm", "comment": null}
 , {"addr": "0x425200", "name": "ecl_get_float_arg__enm", "comment": null}
@@ -193,6 +199,7 @@
 , {"addr": "0x425870", "name": "ecl_bezier_425870", "comment": null}
 , {"addr": "0x4258b0", "name": "interp_step_strange_1", "comment": null}
 , {"addr": "0x4260d0", "name": "ecl_sub_4260d0_usedonce", "comment": null}
+, {"addr": "0x426160", "name": "sub_426160__anm_set_main", "comment": null}
 , {"addr": "0x426260", "name": "ecl_et_offset_rad_426260", "comment": null}
 , {"addr": "0x4268c0", "name": "sub_4268c0_initializes_2e4", "comment": null}
 , {"addr": "0x427ca0", "name": "sub_427ca0_allocates_2e4", "comment": null}
@@ -302,7 +309,8 @@
 , {"addr": "0x470240", "name": "disabled_logger_470240", "comment": null}
 , {"addr": "0x470b80", "name": "sub_470b80_destructor", "comment": null}
 , {"addr": "0x471490", "name": "sub_471490_destructor", "comment": null}
-, {"addr": "0x472030", "name": "ecl_run_under_300", "comment": null}
+, {"addr": "0x472030", "name": "ecl_run", "comment": null}
+, {"addr": "0x473bc0", "name": "enm_run_ecl", "comment": null}
 , {"addr": "0x473c90", "name": "ecl_get_int_arg", "comment": null}
 , {"addr": "0x473d40", "name": "ecl_get_float_arg", "comment": null}
 , {"addr": "0x473e40", "name": "ecl_get_int_arg_given_value", "comment": null}
