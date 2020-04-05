@@ -96,10 +96,10 @@
 , {"addr": "0x462cb8", "name": "jump_table_462cb8", "type": "uint32_t [53]", "comment": null}
 , {"addr": "0x462d8c", "name": "anm_run_jumptable_1_indirect", "type": "uint8_t [215]", "comment": null}
 , {"addr": "0x462d8c", "name": "jump_table_462d8c", "type": "uint8_t [215]", "comment": null}
-, {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": "uint32_t [81]", "comment": null}
 , {"addr": "0x462e64", "name": "jump_table_462e64", "type": "uint32_t [81]", "comment": null}
-, {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": "uint32_t [81]", "comment": null}
 , {"addr": "0x462fa8", "name": "jump_table_462fa8", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": "uint8_t [313]", "comment": null}
 , {"addr": "0x463b04", "name": "jump_table_463b04", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x463b14", "name": "jump_table_463b14", "type": "uint8_t [17]", "comment": null}
 , {"addr": "0x465254", "name": "jump_table_465254", "type": "uint32_t [10]", "comment": null}
@@ -112,16 +112,18 @@
 , {"addr": "0x468c54", "name": "jump_table_468c54", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x46c87c", "name": "jump_table_46c87c", "type": "uint32_t [5]", "comment": null}
 , {"addr": "0x46c890", "name": "jump_table_46c890", "type": "uint8_t [30]", "comment": null}
-, {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t [67]", "comment": null}
 , {"addr": "0x473a4c", "name": "jump_table_473a4c", "type": "uint32_t [67]", "comment": null}
-, {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
+, {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t [67]", "comment": null}
 , {"addr": "0x473b58", "name": "jump_table_473b58", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
+, {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
 , {"addr": "0x47870e", "name": "jump_table_47870e", "type": "uint32_t [8]", "comment": null}
 , {"addr": "0x478c2c", "name": "jump_table_478c2c", "type": "uint32_t [12]", "comment": null}
 , {"addr": "0x490eb0", "name": "__ptr_GAME_SPEED_MULT_FROM_ECL", "type": "float*", "comment": null}
 , {"addr": "0x490eb4", "name": "FUNCS_FOR_ECL_FLAG_EXT_DMG", "type": "void*[3]", "comment": null}
 , {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": "void*[3]", "comment": null}
 , {"addr": "0x4917c4", "name": "SCORE_EXTEND_QUOTAS_EXTRA", "type": "int32_t [6]", "comment": null}
+, {"addr": "0x4917e0", "name": "ITEM_PIV_AMOUNTS__ITEMS_8_TO_D", "type": "float [6]", "comment": null}
+, {"addr": "0x4917f8", "name": "ITEM_ANM_SCRIPT_IDS", "type": "struct zInt2 [17]", "comment": null}
 , {"addr": "0x491880", "name": "SCORE_EXTEND_QUOTAS_STANDARD", "type": "int32_t [11]", "comment": null}
 , {"addr": "0x4919e8", "name": "ANM_508_CALLABLES", "type": "void*[5]", "comment": null}
 , {"addr": "0x491b0c", "name": "SELECT_TEX_CALLABLES_3", "type": "void*[4]", "comment": null}
@@ -167,24 +169,74 @@
 , {"addr": "0x493790", "name": "vtable_493790_baseclass", "type": "void*[8]", "comment": null}
 , {"addr": "0x4938f8", "name": "WINDOW TITLE", "type": "struct ShiftJis [54]", "comment": null}
 , {"addr": "0x4943c0", "name": "float(0)", "type": "float", "comment": null}
+, {"addr": "0x4943d0", "name": "float(2.3283064e-10)", "type": "float", "comment": null}
 , {"addr": "0x4943d4", "name": "float(4.6666e-10)", "type": "float", "comment": null}
 , {"addr": "0x4943d8", "name": "float(1e-4)", "type": "float", "comment": null}
 , {"addr": "0x4943dc", "name": "float(5e-4)", "type": "float", "comment": null}
+, {"addr": "0x4943e0", "name": "float(0.0009765625)", "type": "float", "comment": null}
 , {"addr": "0x4943e4", "name": "float(1e-3)", "type": "float", "comment": null}
+, {"addr": "0x4943e8", "name": "float(0.001953125)", "type": "float", "comment": null}
+, {"addr": "0x4943ec", "name": "float(0.0026179939)", "type": "float", "comment": null}
 , {"addr": "0x4943f0", "name": "float(1/256)", "type": "float", "comment": null}
 , {"addr": "0x4943f4", "name": "float(1/128)", "type": "float", "comment": null}
+, {"addr": "0x4943f8", "name": "float(0.008333334)", "type": "float", "comment": null}
+, {"addr": "0x4943fc", "name": "float(0.01)", "type": "float", "comment": null}
+, {"addr": "0x494400", "name": "float(0.015625)", "type": "float", "comment": null}
+, {"addr": "0x494404", "name": "float(0.017453292)", "type": "float", "comment": null}
+, {"addr": "0x494408", "name": "float(0.025)", "type": "float", "comment": null}
 , {"addr": "0x49440c", "name": "float(0.03)", "type": "float", "comment": null}
+, {"addr": "0x494410", "name": "float(0.03125)", "type": "float", "comment": null}
+, {"addr": "0x494414", "name": "float(0.033333335)", "type": "float", "comment": null}
+, {"addr": "0x494418", "name": "float(0.03926991)", "type": "float", "comment": null}
+, {"addr": "0x49441c", "name": "float(0.040000003)", "type": "float", "comment": null}
+, {"addr": "0x494420", "name": "float(0.049087387)", "type": "float", "comment": null}
 , {"addr": "0x494424", "name": "float(0.05+eps)", "type": "float", "comment": null}
+, {"addr": "0x494428", "name": "float(0.0625)", "type": "float", "comment": null}
+, {"addr": "0x49442c", "name": "float(0.06666667)", "type": "float", "comment": null}
+, {"addr": "0x494430", "name": "float(0.08)", "type": "float", "comment": null}
+, {"addr": "0x494434", "name": "float(0.09817477)", "type": "float", "comment": null}
 , {"addr": "0x494438", "name": "float(0.1)", "type": "float", "comment": null}
+, {"addr": "0x49443c", "name": "float(0.10471976)", "type": "float", "comment": null}
+, {"addr": "0x494440", "name": "float(0.11034483)", "type": "float", "comment": null}
+, {"addr": "0x494444", "name": "float(0.11111111)", "type": "float", "comment": null}
 , {"addr": "0x494448", "name": "float(1/8)", "type": "float", "comment": null}
+, {"addr": "0x49444c", "name": "float(0.17453292)", "type": "float", "comment": null}
+, {"addr": "0x494450", "name": "float(0.18367349)", "type": "float", "comment": null}
+, {"addr": "0x494454", "name": "float(0.19634955)", "type": "float", "comment": null}
 , {"addr": "0x494458", "name": "float(0.2)", "type": "float", "comment": null}
+, {"addr": "0x49445c", "name": "float(0.2026834)", "type": "float", "comment": null}
 , {"addr": "0x494460", "name": "float(0.25)", "type": "float", "comment": null}
+, {"addr": "0x494464", "name": "float(0.2617994)", "type": "float", "comment": null}
+, {"addr": "0x494468", "name": "float(0.28994083)", "type": "float", "comment": null}
+, {"addr": "0x49446c", "name": "float(0.3)", "type": "float", "comment": null}
+, {"addr": "0x494470", "name": "float(0.34906584)", "type": "float", "comment": null}
+, {"addr": "0x494474", "name": "float(0.35)", "type": "float", "comment": null}
+, {"addr": "0x494478", "name": "float(0.36)", "type": "float", "comment": null}
+, {"addr": "0x49447c", "name": "float(0.37565035)", "type": "float", "comment": null}
+, {"addr": "0x494480", "name": "float(0.38)", "type": "float", "comment": null}
+, {"addr": "0x494484", "name": "float(0.3844)", "type": "float", "comment": null}
+, {"addr": "0x494488", "name": "float(0.3926991)", "type": "float", "comment": null}
+, {"addr": "0x49448c", "name": "float(0.4)", "type": "float", "comment": null}
+, {"addr": "0x494490", "name": "float(0.42249995)", "type": "float", "comment": null}
+, {"addr": "0x494494", "name": "float(0.44444445)", "type": "float", "comment": null}
+, {"addr": "0x494498", "name": "float(0.48999998)", "type": "float", "comment": null}
 , {"addr": "0x49449c", "name": "float(0.5)", "type": "float", "comment": null}
+, {"addr": "0x4944a0", "name": "float(0.5555556)", "type": "float", "comment": null}
+, {"addr": "0x4944a4", "name": "float(0.5625)", "type": "float", "comment": null}
+, {"addr": "0x4944a8", "name": "float(0.62434965)", "type": "float", "comment": null}
+, {"addr": "0x4944ac", "name": "float(0.668424)", "type": "float", "comment": null}
+, {"addr": "0x4944b0", "name": "float(0.69813174)", "type": "float", "comment": null}
+, {"addr": "0x4944b4", "name": "float(0.7)", "type": "float", "comment": null}
+, {"addr": "0x4944b8", "name": "float(0.71005917)", "type": "float", "comment": null}
 , {"addr": "0x4944bc", "name": "float(0.75)", "type": "float", "comment": null}
+, {"addr": "0x4944c0", "name": "float(0.7853982)", "type": "float", "comment": null}
+, {"addr": "0x4944c4", "name": "float(0.8163265)", "type": "float", "comment": null}
+, {"addr": "0x4944c8", "name": "float(0.8888889)", "type": "float", "comment": null}
 , {"addr": "0x4944cc", "name": "float(0.9)", "type": "float", "comment": null}
+, {"addr": "0x4944d0", "name": "float(0.95)", "type": "float", "comment": null}
 , {"addr": "0x4944d4", "name": "float(0.99)", "type": "float", "comment": null}
 , {"addr": "0x4944d8", "name": "float(1)", "type": "float", "comment": null}
-, {"addr": "0x4944e8", "name": "float(0.01)", "type": "float", "comment": null}
+, {"addr": "0x4944e8", "name": "float(1.01)", "type": "int32_t", "comment": null}
 , {"addr": "0x4944f0", "name": "double(0.013)", "type": "double", "comment": null}
 , {"addr": "0x4944f8", "name": "double(1/60)", "type": "double", "comment": null}
 , {"addr": "0x494500", "name": "double(0.0167)", "type": "double", "comment": null}
@@ -222,35 +274,79 @@
 , {"addr": "0x4945e4", "name": "float(18)", "type": "float", "comment": null}
 , {"addr": "0x4945e8", "name": "float(20)", "type": "float", "comment": null}
 , {"addr": "0x4945ec", "name": "float(24)", "type": "float", "comment": null}
+, {"addr": "0x4945f0", "name": "float(26)", "type": "float", "comment": null}
+, {"addr": "0x4945f4", "name": "float(28)", "type": "float", "comment": null}
+, {"addr": "0x4945f8", "name": "float(30)", "type": "float", "comment": null}
 , {"addr": "0x4945fc", "name": "float(32)", "type": "float", "comment": null}
+, {"addr": "0x494600", "name": "float(36)", "type": "float", "comment": null}
 , {"addr": "0x494604", "name": "float(40)", "type": "float", "comment": null}
+, {"addr": "0x494608", "name": "float(44)", "type": "float", "comment": null}
+, {"addr": "0x49460c", "name": "float(48)", "type": "float", "comment": null}
+, {"addr": "0x494610", "name": "float(50)", "type": "float", "comment": null}
 , {"addr": "0x494614", "name": "float(56)", "type": "float", "comment": null}
+, {"addr": "0x494618", "name": "float(57)", "type": "float", "comment": null}
+, {"addr": "0x49461c", "name": "float(58)", "type": "float", "comment": null}
+, {"addr": "0x494620", "name": "float(60)", "type": "float", "comment": null}
 , {"addr": "0x494624", "name": "float(64)", "type": "float", "comment": null}
+, {"addr": "0x494628", "name": "float(65)", "type": "float", "comment": null}
+, {"addr": "0x49462c", "name": "float(70)", "type": "float", "comment": null}
 , {"addr": "0x494630", "name": "float(80)", "type": "float", "comment": null}
 , {"addr": "0x494634", "name": "float(96)", "type": "float", "comment": null}
 , {"addr": "0x494638", "name": "float(100)", "type": "float", "comment": null}
 , {"addr": "0x49463c", "name": "float(112)", "type": "float", "comment": null}
+, {"addr": "0x494640", "name": "float(118)", "type": "float", "comment": null}
 , {"addr": "0x494644", "name": "float(128)", "type": "float", "comment": null}
+, {"addr": "0x494648", "name": "float(150)", "type": "float", "comment": null}
+, {"addr": "0x49464c", "name": "float(158)", "type": "float", "comment": null}
 , {"addr": "0x494650", "name": "float(160)", "type": "float", "comment": null}
+, {"addr": "0x494654", "name": "float(176)", "type": "float", "comment": null}
+, {"addr": "0x494658", "name": "float(182)", "type": "float", "comment": null}
+, {"addr": "0x49465c", "name": "float(191)", "type": "float", "comment": null}
 , {"addr": "0x494660", "name": "float(192)", "type": "float", "comment": null}
 , {"addr": "0x494664", "name": "float(200)", "type": "float", "comment": null}
+, {"addr": "0x494668", "name": "float(204)", "type": "float", "comment": null}
 , {"addr": "0x49466c", "name": "float(212)", "type": "float", "comment": null}
 , {"addr": "0x494670", "name": "float(224)", "type": "float", "comment": null}
+, {"addr": "0x494674", "name": "float(226)", "type": "float", "comment": null}
+, {"addr": "0x494678", "name": "float(240)", "type": "float", "comment": null}
 , {"addr": "0x49467c", "name": "float(255)", "type": "float", "comment": null}
 , {"addr": "0x494680", "name": "float(256)", "type": "float", "comment": null}
+, {"addr": "0x494684", "name": "float(288)", "type": "float", "comment": null}
+, {"addr": "0x494688", "name": "float(290)", "type": "float", "comment": null}
+, {"addr": "0x49468c", "name": "float(300)", "type": "float", "comment": null}
 , {"addr": "0x494690", "name": "float(320)", "type": "float", "comment": null}
+, {"addr": "0x494694", "name": "float(352)", "type": "float", "comment": null}
+, {"addr": "0x494698", "name": "float(360)", "type": "float", "comment": null}
 , {"addr": "0x49469c", "name": "float(384)", "type": "float", "comment": null}
 , {"addr": "0x4946a0", "name": "float(392)", "type": "float", "comment": null}
 , {"addr": "0x4946a4", "name": "float(400)", "type": "float", "comment": null}
+, {"addr": "0x4946a8", "name": "float(408)", "type": "float", "comment": null}
+, {"addr": "0x4946ac", "name": "float(416)", "type": "float", "comment": null}
 , {"addr": "0x4946b0", "name": "float(448)", "type": "float", "comment": null}
+, {"addr": "0x4946b4", "name": "float(464)", "type": "float", "comment": null}
 , {"addr": "0x4946b8", "name": "float(472)", "type": "float", "comment": null}
 , {"addr": "0x4946bc", "name": "float(480)", "type": "float", "comment": null}
 , {"addr": "0x4946c0", "name": "float(512)", "type": "float", "comment": null}
+, {"addr": "0x4946c4", "name": "float(540)", "type": "float", "comment": null}
+, {"addr": "0x4946c8", "name": "float(576)", "type": "float", "comment": null}
+, {"addr": "0x4946cc", "name": "float(618)", "type": "float", "comment": null}
+, {"addr": "0x4946d0", "name": "float(620)", "type": "float", "comment": null}
 , {"addr": "0x4946d4", "name": "float(640)", "type": "float", "comment": null}
 , {"addr": "0x4946d8", "name": "float(990)", "type": "float", "comment": null}
+, {"addr": "0x4946dc", "name": "float(995)", "type": "float", "comment": null}
+, {"addr": "0x4946e0", "name": "float(999)", "type": "float", "comment": null}
 , {"addr": "0x4946e4", "name": "float(1000)", "type": "float", "comment": null}
+, {"addr": "0x4946e8", "name": "float(1024)", "type": "float", "comment": null}
+, {"addr": "0x4946ec", "name": "float(3072)", "type": "float", "comment": null}
+, {"addr": "0x4946f0", "name": "float(6400)", "type": "float", "comment": null}
+, {"addr": "0x4946f4", "name": "float(9216)", "type": "float", "comment": null}
 , {"addr": "0x4946f8", "name": "float(999990)", "type": "float", "comment": null}
+, {"addr": "0x4946fc", "name": "float(9999990)", "type": "float", "comment": null}
+, {"addr": "0x494700", "name": "float(683565250)", "type": "float", "comment": null}
 , {"addr": "0x494704", "name": "float(-0)", "type": "float", "comment": null}
+, {"addr": "0x494708", "name": "float(-0.01)", "type": "float", "comment": null}
+, {"addr": "0x49470c", "name": "float(-0.03)", "type": "float", "comment": null}
+, {"addr": "0x494710", "name": "float(-0.05)", "type": "float", "comment": null}
 , {"addr": "0x494714", "name": "float(-0.066666)", "type": "float", "comment": null}
 , {"addr": "0x494718", "name": "float(-0.1)", "type": "float", "comment": null}
 , {"addr": "0x49471c", "name": "float(-0.5)", "type": "float", "comment": null}
@@ -258,9 +354,12 @@
 , {"addr": "0x494724", "name": "float(-0.5*(PI-0.1))", "type": "float", "comment": null}
 , {"addr": "0x494728", "name": "float(-0.5*PI)", "type": "float", "comment": null}
 , {"addr": "0x49472c", "name": "float(-0.5*(PI+0.1))", "type": "float", "comment": null}
+, {"addr": "0x494730", "name": "float(-2)", "type": "float", "comment": null}
 , {"addr": "0x494734", "name": "float(-PI)", "type": "float", "comment": null}
 , {"addr": "0x494738", "name": "float(-4)", "type": "float", "comment": null}
 , {"addr": "0x49473c", "name": "float(-2*PI)", "type": "float", "comment": null}
+, {"addr": "0x494740", "name": "float(-8)", "type": "float", "comment": null}
+, {"addr": "0x494744", "name": "float(-10)", "type": "float", "comment": null}
 , {"addr": "0x494748", "name": "double(-999999)", "type": "double", "comment": null}
 , {"addr": "0x494750", "name": "float(-15)", "type": "float", "comment": null}
 , {"addr": "0x494754", "name": "float(-20)", "type": "float", "comment": null}
@@ -277,6 +376,7 @@
 , {"addr": "0x494780", "name": "float(-999)", "type": "float", "comment": null}
 , {"addr": "0x494784", "name": "float(-5000)", "type": "float", "comment": null}
 , {"addr": "0x494788", "name": "float(-999990)", "type": "float", "comment": null}
+, {"addr": "0x494880", "name": "CONST_USED_FOR_FABS", "type": "int64_t", "comment": "ANDing this with a 32bit or 64bit floating point number\nwill produce its absolute value."}
 , {"addr": "0x4948a0", "name": "_128_BIT_CONSTANT_ALL_FFFF", "type": "int128_t", "comment": null}
 , {"addr": "0x49a0a0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table [1]", "comment": null}
 , {"addr": "0x49a0c0", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
@@ -286,6 +386,7 @@
 , {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": "struct zFloat4 [3]", "comment": null}
 , {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": "struct zFloat4 [3]", "comment": null}
 , {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS_I_THINK", "type": "char", "comment": null}
+, {"addr": "0x4a52c8", "name": "INPUT_4a52c8", "type": "int32_t", "comment": null}
 , {"addr": "0x4a52e4", "name": "CONST_4a52e4_ALL_FFFF", "type": "int16_t", "comment": null}
 , {"addr": "0x4a5788", "name": "GAME_SPEED", "type": "float", "comment": "Set by ECL to make final boss deaths more dramatic.\n\nAlso regularly modified by the game many, many, many times\nper frame in order to make different ANM/ECL objects\nperceive time differently.  Kinda scary how much code\nrelies on this single piece of mutable global state."}
 , {"addr": "0x4a5790", "name": "CUR_STAGE_NUM", "type": "int32_t", "comment": null}
@@ -299,6 +400,8 @@
 , {"addr": "0x4a57b0", "name": "CURRENT_SCORE", "type": "int32_t", "comment": "Current score divided by 10"}
 , {"addr": "0x4a57b4", "name": "DIFFICULTY", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57bc", "name": "RANK", "type": "int32_t", "comment": "Never written!"}
+, {"addr": "0x4a57c0", "name": "GRAZE_1", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57c4", "name": "GRAZE_2", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57c8", "name": "SPELL_ID", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57cc", "name": "GLOBAL_MISS_COUNT", "type": "int32_t", "comment": "Probably added as a global ECL variable in LoLK for\nthe final boss' dialogue."}
 , {"addr": "0x4a57d4", "name": "NUM_POINT_ITEMS_COLLECTED", "type": "int32_t", "comment": null}
@@ -314,6 +417,8 @@
 , {"addr": "0x4a5808", "name": "CURRENT_SEASON_POWER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a583c", "name": "SEASON_POWER_LEVEL_REQUIREMENTS", "type": "int32_t [6]", "comment": null}
 , {"addr": "0x4a5854", "name": "MAX_SEASON_POWER", "type": "int32_t", "comment": null}
+, {"addr": "0x4a586c", "name": "DATA_4a586c_RELATED_TO_PIV_ITEMS__SEEMS_UNUSED", "type": "int32_t", "comment": null}
+, {"addr": "0x4a587c", "name": "DDC_ITEM_SPAWN_COUNT", "type": "int32_t", "comment": "This counts the number of items of type 0xF spawned.\nMerlin labels this as \"ITEM_DDC.\" I don't think it is used?"}
 , {"addr": "0x4a5880", "name": "TOTAL_DEADLY_ENEMY_COUNT", "type": "int32_t", "comment": "This seems to count the total number of enemies that have had hurtboxes enabled since the beginning of stage 1.\n\nOr something like that."}
 , {"addr": "0x4a6be0", "name": "CRITICAL_SECTION_ARRAY", "type": "struct CRITICAL_SECTION [11]", "comment": null}
 , {"addr": "0x4a6d54", "name": "HEAP_4A6D54", "type": "HANDLE", "comment": null}
@@ -333,7 +438,7 @@
 , {"addr": "0x4a6dcc", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4a6dd4", "name": "GLOBAL_B4_PTR", "type": "struct zUnknownSizeB4*", "comment": null}
 , {"addr": "0x4a6dd8", "name": "GLOBAL_1BC_PTR", "type": "struct zUnknownGlobal1bc_UsuallyNullSoWhoCares*", "comment": null}
-, {"addr": "0x4a6ddc", "name": "GLOBAL_UK_PTR", "type": "struct zUkBehemoth*", "comment": null}
+, {"addr": "0x4a6ddc", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
 , {"addr": "0x4a6de0", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
 , {"addr": "0x4a6ee0", "name": "GLOBAL_610_PTR", "type": "struct zUnknownGlobal610*", "comment": null}
 , {"addr": "0x4a6ee4", "name": "GLOBAL_63C_PTR", "type": "struct zUnknownGlobal63c*", "comment": null}

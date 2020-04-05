@@ -197,4 +197,23 @@
   , ["IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION", 16]
   ]
 
+, "zItemType": 
+  [ ["ITEM_POWER", 1]
+  , ["ITEM_POINT", 2]
+  , ["ITEM_BIG_POWER", 3]
+  , ["ITEM_LIFE_PIECE", 4]
+  , ["ITEM_LIFE", 5]
+  , ["ITEM_BOMB_PIECE", 6]
+  , ["ITEM_BOMB", 7]
+  , ["ITEM_F", 8]
+  , ["ITEM_PIV_5", 9]
+  , ["ITEM_PIV_10", 10]
+  , ["ITEM_PIV_20", 11]
+  , ["ITEM_PIV_30", 12]
+  , ["ITEM_PIV_40", 13]
+  , ["ITEM_PIV_50", 14]
+  , ["ITEM_DDC", 15]
+  , ["ITEM_SEASON", 16]
+  ]
+
 }
