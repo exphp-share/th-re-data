@@ -27,6 +27,7 @@
 , {"addr": "0x41a2c0", "name": "jump_table_41a2c0", "type": "uint32_t [18]", "comment": null}
 , {"addr": "0x41ad60", "name": "jump_table_41ad60", "type": "uint32_t [8]", "comment": null}
 , {"addr": "0x41ad80", "name": "jump_table_41ad80", "type": "uint8_t [92]", "comment": null}
+, {"addr": "0x41d880", "name": "float(-0.00019931947)", "type": "float", "comment": null}
 , {"addr": "0x422a9b", "name": "ecl_run_over_300__default", "type": "void", "comment": "default case"}
 , {"addr": "0x422ab8", "name": "ecl_run_over_300__jump_table", "type": "uint32_t [174]", "comment": null}
 , {"addr": "0x422ab8", "name": "jump_table_422ab8", "type": "uint32_t [174]", "comment": null}
@@ -96,10 +97,10 @@
 , {"addr": "0x462cb8", "name": "jump_table_462cb8", "type": "uint32_t [53]", "comment": null}
 , {"addr": "0x462d8c", "name": "anm_run_jumptable_1_indirect", "type": "uint8_t [215]", "comment": null}
 , {"addr": "0x462d8c", "name": "jump_table_462d8c", "type": "uint8_t [215]", "comment": null}
-, {"addr": "0x462e64", "name": "jump_table_462e64", "type": "uint32_t [81]", "comment": null}
 , {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": "uint32_t [81]", "comment": null}
-, {"addr": "0x462fa8", "name": "jump_table_462fa8", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x462e64", "name": "jump_table_462e64", "type": "uint32_t [81]", "comment": null}
 , {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x462fa8", "name": "jump_table_462fa8", "type": "uint8_t [313]", "comment": null}
 , {"addr": "0x463b04", "name": "jump_table_463b04", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x463b14", "name": "jump_table_463b14", "type": "uint8_t [17]", "comment": null}
 , {"addr": "0x465254", "name": "jump_table_465254", "type": "uint32_t [10]", "comment": null}
@@ -169,8 +170,8 @@
 , {"addr": "0x493790", "name": "vtable_493790_baseclass", "type": "void*[8]", "comment": null}
 , {"addr": "0x4938f8", "name": "WINDOW TITLE", "type": "struct ShiftJis [54]", "comment": null}
 , {"addr": "0x4943c0", "name": "float(0)", "type": "float", "comment": null}
-, {"addr": "0x4943d0", "name": "float(2.3283064e-10)", "type": "float", "comment": null}
-, {"addr": "0x4943d4", "name": "float(4.6666e-10)", "type": "float", "comment": null}
+, {"addr": "0x4943d0", "name": "float(2**-32)", "type": "float", "comment": null}
+, {"addr": "0x4943d4", "name": "float(2**-31)", "type": "float", "comment": null}
 , {"addr": "0x4943d8", "name": "float(1e-4)", "type": "float", "comment": null}
 , {"addr": "0x4943dc", "name": "float(5e-4)", "type": "float", "comment": null}
 , {"addr": "0x4943e0", "name": "float(0.0009765625)", "type": "float", "comment": null}
@@ -200,7 +201,7 @@
 , {"addr": "0x494440", "name": "float(0.11034483)", "type": "float", "comment": null}
 , {"addr": "0x494444", "name": "float(0.11111111)", "type": "float", "comment": null}
 , {"addr": "0x494448", "name": "float(1/8)", "type": "float", "comment": null}
-, {"addr": "0x49444c", "name": "float(0.17453292)", "type": "float", "comment": null}
+, {"addr": "0x49444c", "name": "float(PI/18)", "type": "float", "comment": null}
 , {"addr": "0x494450", "name": "float(0.18367349)", "type": "float", "comment": null}
 , {"addr": "0x494454", "name": "float(0.19634955)", "type": "float", "comment": null}
 , {"addr": "0x494458", "name": "float(0.2)", "type": "float", "comment": null}
@@ -411,28 +412,31 @@
 , {"addr": "0x4a57e4", "name": "CURRENT_POWER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57e8", "name": "CURRENT_POWER_COPY", "type": "int32_t", "comment": "This one is updated less frequently.\nIt may be the power at the beginning of the frame?"}
 , {"addr": "0x4a57f4", "name": "CURRENT_LIVES", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57f8", "name": "CURRENT_LIFE_FRAGMENTS", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57fc", "name": "NEXT_SCORE_EXTEND_INDEX", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5800", "name": "CURRENT_BOMBS", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5804", "name": "CURRENT_BOMB_FRAGMENTS", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5808", "name": "CURRENT_SEASON_POWER", "type": "int32_t", "comment": null}
+, {"addr": "0x4a580c", "name": "MAX_SEASON_POWER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a583c", "name": "SEASON_POWER_LEVEL_REQUIREMENTS", "type": "int32_t [6]", "comment": null}
-, {"addr": "0x4a5854", "name": "MAX_SEASON_POWER", "type": "int32_t", "comment": null}
+, {"addr": "0x4a5854", "name": "MAX_SEASON_POWER_COPY", "type": "int32_t", "comment": null}
 , {"addr": "0x4a586c", "name": "DATA_4a586c_RELATED_TO_PIV_ITEMS__SEEMS_UNUSED", "type": "int32_t", "comment": null}
+, {"addr": "0x4a5870", "name": "LAST_POINT_OR_POWER_COLLECTED_POS", "type": "struct zFloat3", "comment": null}
 , {"addr": "0x4a587c", "name": "DDC_ITEM_SPAWN_COUNT", "type": "int32_t", "comment": "This counts the number of items of type 0xF spawned.\nMerlin labels this as \"ITEM_DDC.\" I don't think it is used?"}
 , {"addr": "0x4a5880", "name": "TOTAL_DEADLY_ENEMY_COUNT", "type": "int32_t", "comment": "This seems to count the total number of enemies that have had hurtboxes enabled since the beginning of stage 1.\n\nOr something like that."}
 , {"addr": "0x4a6be0", "name": "CRITICAL_SECTION_ARRAY", "type": "struct CRITICAL_SECTION [11]", "comment": null}
 , {"addr": "0x4a6d54", "name": "HEAP_4A6D54", "type": "HANDLE", "comment": null}
-, {"addr": "0x4a6d80", "name": "RNG_4a6d80", "type": "struct zRng", "comment": null}
-, {"addr": "0x4a6d88", "name": "RNG_4a6d88", "type": "struct zRng", "comment": null}
+, {"addr": "0x4a6d80", "name": "REPLAY_UNSAFE_RNG", "type": "struct zRng", "comment": null}
+, {"addr": "0x4a6d88", "name": "REPLAY_SAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4a6d94", "name": "GLOBAL_58_PTR", "type": "struct zUnknownGlobal58*", "comment": null}
-, {"addr": "0x4a6d98", "name": "data_4a6d98_size_19254", "type": "int32_t", "comment": null}
+, {"addr": "0x4a6d98", "name": "ASCII_INF_PTR", "type": "struct zAsciiInf*", "comment": null}
 , {"addr": "0x4a6da0", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4a6da4", "name": "SUBSEASON_SHOTTYPE_PTR", "type": "struct zShotType*", "comment": null}
 , {"addr": "0x4a6da8", "name": "MAIN_SHOTTYPE_PTR", "type": "struct zShotType*", "comment": null}
 , {"addr": "0x4a6dac", "name": "ECL_OBJECT_PTR", "type": "struct zEclBehemoth*", "comment": null}
-, {"addr": "0x4a6db0", "name": "data_4a6db0_size_bc", "type": "int32_t", "comment": null}
+, {"addr": "0x4a6db0", "name": "SPELLCARD_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4a6db8", "name": "GLOBAL_2020_PTR", "type": "struct zUnknownGlobal2020*", "comment": null}
-, {"addr": "0x4a6dc0", "name": "data_4a6dc0_unknown_storage_ptr", "type": "struct zUnknownStorage1*", "comment": null}
+, {"addr": "0x4a6dc0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
 , {"addr": "0x4a6dc4", "name": "FUNCS_FOR_ECL_UNKNOWN_634", "type": "void*[1]", "comment": null}
 , {"addr": "0x4a6dc8", "name": "GLOBAL_88_PTR", "type": "struct zUnknownGlobal88*", "comment": null}
 , {"addr": "0x4a6dcc", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
@@ -444,8 +448,8 @@
 , {"addr": "0x4a6ee4", "name": "GLOBAL_63C_PTR", "type": "struct zUnknownGlobal63c*", "comment": null}
 , {"addr": "0x4a6ef8", "name": "PLAYER_STRUCT_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4a6f08", "name": "data_4a6f08_ptr", "type": "void*", "comment": null}
-, {"addr": "0x4a6f0c", "name": "data_4a6f0c_ptr", "type": "int32_t", "comment": null}
-, {"addr": "0x4a6f10", "name": "data_4a6f10_ptr", "type": "int32_t", "comment": null}
+, {"addr": "0x4a6f0c", "name": "GLOBAL_1A3AC_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4a6f10", "name": "GLOBAL_ASCII_1034", "type": "struct zAsciiGlobal1034*", "comment": null}
 , {"addr": "0x4c0f48", "name": "SUPER_GIANT_ANM_STRUCT_PTR", "type": "struct zAnmBehemoth*", "comment": null}
 , {"addr": "0x4c0f58", "name": "CRIT_SECTION_Y", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c0f88", "name": "CRIT_SECTION_V", "type": "struct CRITICAL_SECTION", "comment": null}
