@@ -216,4 +216,16 @@
   , ["ITEM_SEASON", 16]
   ]
 
+, "zPlayerDirection": 
+  [ ["PLDIR_NONE", 0]
+  , ["PLDIR_U", 1]
+  , ["PLDIR_D", 2]
+  , ["PLDIR_L", 3]
+  , ["PLDIR_R", 4]
+  , ["PLDIR_UL", 5]
+  , ["PLDIR_UR", 6]
+  , ["PLDIR_DL", 7]
+  , ["PLDIR_DR", 8]
+  ]
+
 }
