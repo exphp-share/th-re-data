@@ -216,6 +216,12 @@
   , ["ITEM_SEASON", 16]
   ]
 
+, "zPlayerBulletState": 
+  [ ["PLBULLETSTATE_FREE", 0]
+  , ["PLBULLETSTATE_ACTIVE", 1]
+  , ["PLBULLETSTATE_HIT", 2]
+  ]
+
 , "zPlayerDirection": 
   [ ["PLDIR_NONE", 0]
   , ["PLDIR_U", 1]
@@ -226,6 +232,12 @@
   , ["PLDIR_UR", 6]
   , ["PLDIR_DL", 7]
   , ["PLDIR_DR", 8]
+  ]
+
+, "zReplayManagerMode": 
+  [ ["REPLAY_RECORDING", 0]
+  , ["REPLAY_PLAYBACK", 1]
+  , ["REPLAY_IDFK_WHAT_THIS_IS", 2]
   ]
 
 }

@@ -28,12 +28,14 @@
 , {"addr": "0x41ad60", "name": "jump_table_41ad60", "type": "uint32_t [8]", "comment": null}
 , {"addr": "0x41ad80", "name": "jump_table_41ad80", "type": "uint8_t [92]", "comment": null}
 , {"addr": "0x41baf2", "name": "float(4.0620843e-28)", "type": "float", "comment": null}
+, {"addr": "0x41d423", "name": "float(-3.2208192e-34)_1", "type": "float", "comment": null}
+, {"addr": "0x41d498", "name": "float(-7.863328e-38)", "type": "float", "comment": null}
 , {"addr": "0x41d880", "name": "float(-0.00019931947)", "type": "float", "comment": null}
 , {"addr": "0x422a9b", "name": "ecl_run_over_300__default", "type": "void", "comment": "default case"}
 , {"addr": "0x422ab8", "name": "jump_table_422ab8", "type": "uint32_t [174]", "comment": null}
 , {"addr": "0x422ab8", "name": "ecl_run_over_300__jump_table", "type": "uint32_t [174]", "comment": null}
-, {"addr": "0x422d70", "name": "ecl_run_over_300__indirect_table", "type": "uint8_t [702]", "comment": null}
 , {"addr": "0x422d70", "name": "jump_table_422d70", "type": "uint8_t [702]", "comment": null}
+, {"addr": "0x422d70", "name": "ecl_run_over_300__indirect_table", "type": "uint8_t [702]", "comment": null}
 , {"addr": "0x423030", "name": "jump_table_423030", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x423040", "name": "jump_table_423040", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x4237b8", "name": "jump_table_4237b8", "type": "uint32_t [19]", "comment": null}
@@ -44,6 +46,7 @@
 , {"addr": "0x424a80", "name": "jump_table_424a80", "type": "uint32_t [98]", "comment": null}
 , {"addr": "0x424d80", "name": "jump_table_424d80", "type": "uint32_t [25]", "comment": null}
 , {"addr": "0x424de4", "name": "jump_table_424de4", "type": "uint8_t [81]", "comment": null}
+, {"addr": "0x428edd", "name": "float(2.94846e-38)", "type": "float", "comment": null}
 , {"addr": "0x42b3ec", "name": "jump_table_42b3ec", "type": "uint32_t [36]", "comment": null}
 , {"addr": "0x42e4c0", "name": "jump_table_42e4c0", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x42ef70", "name": "jump_table_42ef70", "type": "uint32_t [6]", "comment": null}
@@ -94,14 +97,15 @@
 , {"addr": "0x45f870", "name": "jump_table_45f870", "type": "uint8_t [32]", "comment": null}
 , {"addr": "0x45f8fc", "name": "jump_table_45f8fc", "type": "uint32_t [8]", "comment": null}
 , {"addr": "0x45f91c", "name": "jump_table_45f91c", "type": "uint8_t [30]", "comment": null}
-, {"addr": "0x462cb8", "name": "jump_table_462cb8", "type": "uint32_t [53]", "comment": null}
 , {"addr": "0x462cb8", "name": "anm_run_jumptable_1", "type": "uint32_t [53]", "comment": null}
-, {"addr": "0x462d8c", "name": "jump_table_462d8c", "type": "uint8_t [215]", "comment": null}
+, {"addr": "0x462cb8", "name": "jump_table_462cb8", "type": "uint32_t [53]", "comment": null}
 , {"addr": "0x462d8c", "name": "anm_run_jumptable_1_indirect", "type": "uint8_t [215]", "comment": null}
-, {"addr": "0x462e64", "name": "jump_table_462e64", "type": "uint32_t [81]", "comment": null}
+, {"addr": "0x462d8c", "name": "jump_table_462d8c", "type": "uint8_t [215]", "comment": null}
 , {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": "uint32_t [81]", "comment": null}
-, {"addr": "0x462fa8", "name": "jump_table_462fa8", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x462e64", "name": "jump_table_462e64", "type": "uint32_t [81]", "comment": null}
 , {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x462fa8", "name": "jump_table_462fa8", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x463460", "name": "float(36879.95)", "type": "float", "comment": null}
 , {"addr": "0x463b04", "name": "jump_table_463b04", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x463b14", "name": "jump_table_463b14", "type": "uint8_t [17]", "comment": null}
 , {"addr": "0x465254", "name": "jump_table_465254", "type": "uint32_t [10]", "comment": null}
@@ -114,10 +118,11 @@
 , {"addr": "0x468c54", "name": "jump_table_468c54", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x46c87c", "name": "jump_table_46c87c", "type": "uint32_t [5]", "comment": null}
 , {"addr": "0x46c890", "name": "jump_table_46c890", "type": "uint8_t [30]", "comment": null}
+, {"addr": "0x46ee12", "name": "float(7.361264e-36)", "type": "float", "comment": null}
 , {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t [67]", "comment": null}
 , {"addr": "0x473a4c", "name": "jump_table_473a4c", "type": "uint32_t [67]", "comment": null}
-, {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
 , {"addr": "0x473b58", "name": "jump_table_473b58", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
+, {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
 , {"addr": "0x47870e", "name": "jump_table_47870e", "type": "uint32_t [8]", "comment": null}
 , {"addr": "0x478c2c", "name": "jump_table_478c2c", "type": "uint32_t [12]", "comment": null}
 , {"addr": "0x490eb0", "name": "__ptr_GAME_SPEED_MULT_FROM_ECL", "type": "float*", "comment": null}
@@ -131,19 +136,23 @@
 , {"addr": "0x4919a0", "name": "SHT_FUNC_2c_TABLE", "type": "void*[8]", "comment": null}
 , {"addr": "0x4919c0", "name": "SHT_FUNC_28_TABLE", "type": "void*[8]", "comment": null}
 , {"addr": "0x4919e8", "name": "ANM_508_CALLABLES", "type": "void*[5]", "comment": null}
-, {"addr": "0x491b0c", "name": "SELECT_TEX_CALLABLES_3", "type": "void*[4]", "comment": null}
-, {"addr": "0x491b1c", "name": "SELECT_TEX_CALLABLES", "type": "void*[4]", "comment": null}
+, {"addr": "0x491b0c", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[4]", "comment": null}
+, {"addr": "0x491b1c", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[4]", "comment": null}
+, {"addr": "0x491b2c", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[7]", "comment": null}
+, {"addr": "0x491b48", "name": "ANM_ON_COPY_FUNC_1", "type": "void*[2]", "comment": null}
+, {"addr": "0x491b50", "name": "ANM_ON_COPY_FUNC_2", "type": "void*[2]", "comment": null}
+, {"addr": "0x491b58", "name": "ANM_ON_DELETE_FUNCS", "type": "void*[4]", "comment": null}
 , {"addr": "0x491ce0", "name": "__ptr_leaf_409030", "type": "void*", "comment": null}
-, {"addr": "0x491d5c", "name": "VTABLE_SHOTTYPE_DOYOU", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491d78", "name": "VTABLE_SHOTTYPE_FALL", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491d94", "name": "VTABLE_SHOTTYPE_SUMMER", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491db0", "name": "VTABLE_SHOTTYPE_WINTER", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491dcc", "name": "VTABLE_SHOTTYPE_SPRING", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491de8", "name": "VTABLE_SHOTTYPE_AYA", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491e04", "name": "VTABLE_SHOTTYPE_CIRNO", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491e20", "name": "VTABLE_SHOTTYPE_MARISA", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491e3c", "name": "VTABLE_SHOTTYPE_REIMU", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x491e58", "name": "VTABLE_SHOTTYPE_DEFAULT", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x491d5c", "name": "VTABLE_BOMB_DOYOU", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491d78", "name": "VTABLE_BOMB_FALL", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491d94", "name": "VTABLE_BOMB_SUMMER", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491db0", "name": "VTABLE_BOMB_WINTER", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491dcc", "name": "VTABLE_BOMB_SPRING", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491de8", "name": "VTABLE_SHOTTYPE_AYA", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491e04", "name": "VTABLE_BOMB_CIRNO", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491e20", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491e3c", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491e58", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491e70", "name": "RELEASE_LEVEL_DURATION_DOYOU", "type": "int32_t [7]", "comment": null}
 , {"addr": "0x491e8c", "name": "RELEASE_LEVEL_RADIUS_2_DOYOU", "type": "float [7]", "comment": null}
 , {"addr": "0x491eb0", "name": "RELEASE_LEVEL_RADIUS_DOYOU", "type": "float [7]", "comment": null}
@@ -159,12 +168,13 @@
 , {"addr": "0x492198", "name": "VTABLE_ENEMY_MANAGER", "type": "struct zVTableEnemyManager", "comment": null}
 , {"addr": "0x4921a8", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
 , {"addr": "0x4921c4", "name": "VTABLE_ECL_BASECLASS", "type": "struct zVTableEcl", "comment": null}
-, {"addr": "0x4921e0", "name": "vtable_4921e0", "type": "void*[2]", "comment": null}
-, {"addr": "0x4922e0", "name": "VTABLE_LASER_CURVY", "type": "struct zVTableLaser", "comment": "- Curl up and die\n- Curvy satono"}
-, {"addr": "0x49234c", "name": "vtable_49234c", "type": "struct zVTableLaser", "comment": "Not sure if this is used.\nA type of laser that can't be canceled."}
-, {"addr": "0x4923b8", "name": "VTABLE_LASER_STRAIGHT_2", "type": "struct zVTableLaser", "comment": "- Ex seven swords spell before they have a hitbox\n- Dark sarugaku"}
-, {"addr": "0x492424", "name": "VTABLE_LASER_STRAIGHT_1", "type": "struct zVTableLaser", "comment": "Straight lasers with shiny, tapered points at the ends.\n- Straight satono lasers\n- Ex seven swords spell lasers once they gain hitboxes\n- Stage 6 first spell lasers"}
+, {"addr": "0x4921e0", "name": "vtable_4921e0", "type": "struct zVTableUnknown2", "comment": null}
+, {"addr": "0x4922e0", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": "This one is used by:\n- Curl up and die\n- Curvy satono"}
+, {"addr": "0x49234c", "name": "VTABLE_LASER_BEAM", "type": "struct zVTableLaser", "comment": "Not sure if this is used.\nA type of laser that can't be canceled."}
+, {"addr": "0x4923b8", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": "- Ex seven swords spell before they have a hitbox\n- Dark sarugaku"}
+, {"addr": "0x492424", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": "Straight lasers with shiny, tapered points at the ends.\n- Straight satono lasers\n- Ex seven swords spell lasers once they gain hitboxes\n- Stage 6 first spell lasers"}
 , {"addr": "0x492490", "name": "VTABLE_LASER_DEFAULT", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x492c10", "name": "PLAYER_OPTION_ANM_SCRIPT_IDS_2", "type": "void", "comment": null}
 , {"addr": "0x492c20", "name": "PLAYER_DIRECTION_DEFS", "type": "struct zInt2 [9]", "comment": null}
 , {"addr": "0x492c68", "name": "CHARACTER_ATTRACTBOX_FOCUSED_TABLE", "type": "float [4]", "comment": null}
 , {"addr": "0x492c78", "name": "CHARACTER_GRAZEBOX_SIZE_TABLE", "type": "float [4]", "comment": null}
@@ -396,19 +406,20 @@
 , {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": "struct zFloat4 [3]", "comment": null}
 , {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": "struct zFloat4 [3]", "comment": null}
 , {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS_I_THINK", "type": "char", "comment": null}
-, {"addr": "0x4a52c8", "name": "INPUT", "type": "int32_t", "comment": null}
+, {"addr": "0x4a50b0", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": "Internal representation of the keys currently held on the keyboard.\n\nUnlike INPUT, this updates even while the game is paused or on the main menu.  It includes keys like ESC, P, R, and Enter that are not tracked in replays."}
+, {"addr": "0x4a52c8", "name": "INPUT", "type": "int32_t", "comment": "Keys currently held in this frame of the game world.\n\nIn contrast to HARDWARE_INPUT, this does not include keys like Esc. During replays, this variable is read from the replay."}
 , {"addr": "0x4a52cc", "name": "INPUT_PREV", "type": "int32_t", "comment": null}
 , {"addr": "0x4a52d4", "name": "INPUT_RISING_EDGE", "type": "int32_t", "comment": null}
 , {"addr": "0x4a52d8", "name": "INPUT_FALLING_EDGE", "type": "int32_t", "comment": null}
 , {"addr": "0x4a52e4", "name": "CONST_4a52e4_ALL_FFFF", "type": "int16_t", "comment": null}
 , {"addr": "0x4a5788", "name": "GAME_SPEED", "type": "float", "comment": "Set by ECL to make final boss deaths more dramatic.\n\nAlso regularly modified by the game many, many, many times\nper frame in order to make different ANM/ECL objects\nperceive time differently.  Kinda scary how much code\nrelies on this single piece of mutable global state."}
-, {"addr": "0x4a5790", "name": "CUR_STAGE_NUM", "type": "int32_t", "comment": null}
+, {"addr": "0x4a5790", "name": "CUR_STAGE_NUM", "type": "int32_t", "comment": "=========================================\n=========================================\n=========================================\n=========================================\n\nThis field is the beginning of the replay saved globals.\nI don't want to annotate the type of the struct here because\nthen I won't be able to write comments anywhere."}
 , {"addr": "0x4a5794", "name": "WEIRD_CUR_STAGE_NUM_GLOBAL", "type": "int32_t", "comment": "This is set to a stage number while a stage is being loaded. For replays, this number gets set back to 1 shortly thereafter (but in other scenarios, the stage number is kept in both globals)"}
 , {"addr": "0x4a5798", "name": "CURRENT_CHAPTER", "type": "int32_t", "comment": "Set to different various numbers by ECL at various points\nin the stage (most notably the values 28 and 2b are often\ntested by the code)"}
 , {"addr": "0x4a579c", "name": "TIME_IN_STAGE", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57a0", "name": "TIME_IN_STAGE_UNUSED_COPY", "type": "int32_t", "comment": "Updated in perfect sync with TIME_IN_STAGE"}
 , {"addr": "0x4a57a4", "name": "CHARACTER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57a8", "name": "SHOTTYPE_MODIFIER__ALWAYS_ZERO", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57a8", "name": "SUBSHOT__ZERO_IN_TH16", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57ac", "name": "SUBSEASON", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57b0", "name": "CURRENT_SCORE", "type": "int32_t", "comment": "Current score divided by 10"}
 , {"addr": "0x4a57b4", "name": "DIFFICULTY", "type": "int32_t", "comment": null}
@@ -423,6 +434,7 @@
 , {"addr": "0x4a57e0", "name": "MAX_POINT_ITEM_VALUE", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57e4", "name": "CURRENT_POWER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57e8", "name": "CURRENT_POWER_COPY", "type": "int32_t", "comment": "This one is updated less frequently.\nIt may be the power at the beginning of the frame?"}
+, {"addr": "0x4a57ec", "name": "SA_POWER_DIVISOR", "type": "int32_t", "comment": "Always 100.\nThis is the amount of power \"per level\". It exists because\nin SA, one of Marisa's shottypes could go up to level 8."}
 , {"addr": "0x4a57f4", "name": "CURRENT_LIVES", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57f8", "name": "CURRENT_LIFE_FRAGMENTS", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57fc", "name": "NEXT_SCORE_EXTEND_INDEX", "type": "int32_t", "comment": null}
@@ -430,7 +442,7 @@
 , {"addr": "0x4a5804", "name": "CURRENT_BOMB_FRAGMENTS", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5808", "name": "CURRENT_SEASON_POWER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a580c", "name": "MAX_SEASON_POWER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5810", "name": "SEASON_POWER_LEVEL_DELTAS", "type": "int32_t [7]", "comment": null}
+, {"addr": "0x4a5810", "name": "SEASON_POWER_LEVEL_DELTAS", "type": "int32_t [7]", "comment": "=============\n============= offset 0x80\n============="}
 , {"addr": "0x4a583c", "name": "SEASON_POWER_LEVEL_REQUIREMENTS", "type": "int32_t [6]", "comment": null}
 , {"addr": "0x4a5854", "name": "MAX_SEASON_POWER_COPY", "type": "int32_t", "comment": null}
 , {"addr": "0x4a586c", "name": "DATA_4a586c_RELATED_TO_PIV_ITEMS__SEEMS_UNUSED", "type": "int32_t", "comment": null}
@@ -443,29 +455,33 @@
 , {"addr": "0x4a6d88", "name": "REPLAY_SAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4a6d94", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
 , {"addr": "0x4a6d98", "name": "ASCII_INF_PTR", "type": "struct zAsciiInf*", "comment": null}
+, {"addr": "0x4a6d9c", "name": "ANOTHER_STAGE_PTR???", "type": "struct zStage*", "comment": "All I know so far is that the same destructor is called on this pointer as the other stage pointer.\n\nMaybe this one exists for stage transitions."}
 , {"addr": "0x4a6da0", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
-, {"addr": "0x4a6da4", "name": "SUBSEASON_SHOTTYPE_PTR", "type": "struct zShotType*", "comment": null}
-, {"addr": "0x4a6da8", "name": "MAIN_SHOTTYPE_PTR", "type": "struct zShotType*", "comment": null}
-, {"addr": "0x4a6dac", "name": "ET_OBJECT_PTR", "type": "struct zBulletBehemoth*", "comment": null}
-, {"addr": "0x4a6db0", "name": "SPELLCARD_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4a6db8", "name": "GLOBAL_2020_PTR", "type": "struct zUnknownGlobal2020*", "comment": null}
+, {"addr": "0x4a6da4", "name": "SUBSEASON_SHOTTYPE_PTR", "type": "struct zBomb*", "comment": null}
+, {"addr": "0x4a6da8", "name": "MAIN_SHOTTYPE_PTR", "type": "struct zBomb*", "comment": null}
+, {"addr": "0x4a6dac", "name": "ET_OBJECT_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4a6db0", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
+, {"addr": "0x4a6db8", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": "This type has almost no responsibilities.  99% of code accessing it is only using it to get the AnmLoaded for effect.anm.\n\nIn TH15-17, it is 0x2020 bytes large and holds an array of Anm IDs.  I think this array holds IDs for player bullet splash animations, as well as enemy death, and possibly anything that uses anmPlay.  Why? I don't have a clue. At first I suspected that maybe it is to give these anms a chance to run special cleanup callbacks when the game is closed, but the TH16 destructor does not iterate over these ids...  (it just loops over all ANMs period, setting flags on everything from bullet.anm and effect.anm)\n\nPrior to TH15, things get even weirder.  This type did exist in TH13 and TH14, but it was only 0x2c bytes. In TH14, I found only a SINGLE function that uses this pointer for some purpose other than getting effect.anm.  I set a breakpoint on that function, and found that it was triggered every time a boss made one of those dark blobby spiral-in effects they do when teleporting or charging spells.\n\nThat function has paths that write to an array at this+0x1c, but TH14 never enters those paths.  So I have basically no clue at all why this type exists in TH14. a\n"}
+, {"addr": "0x4a6dbc", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
 , {"addr": "0x4a6dc0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
 , {"addr": "0x4a6dc4", "name": "FUNCS_FOR_ECL_UNKNOWN_634", "type": "void*[1]", "comment": null}
 , {"addr": "0x4a6dc8", "name": "GLOBAL_88_PTR", "type": "struct zUnknownGlobal88*", "comment": null}
 , {"addr": "0x4a6dcc", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
-, {"addr": "0x4a6dd4", "name": "GLOBAL_B4_PTR", "type": "struct zUnknownSizeB4*", "comment": null}
+, {"addr": "0x4a6dd4", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
 , {"addr": "0x4a6dd8", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
 , {"addr": "0x4a6ddc", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
 , {"addr": "0x4a6de0", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
 , {"addr": "0x4a6ee0", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
-, {"addr": "0x4a6ee4", "name": "GLOBAL_63C_PTR", "type": "struct zUnknownGlobal63c*", "comment": null}
-, {"addr": "0x4a6ef4", "name": "GLOBAL_3F4_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4a6ee4", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
+, {"addr": "0x4a6ef4", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
 , {"addr": "0x4a6ef8", "name": "PLAYER_STRUCT_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4a6f04", "name": "SHT_SHOOTER_30_TABLE", "type": "void", "comment": null}
-, {"addr": "0x4a6f08", "name": "data_4a6f08_ptr", "type": "void*", "comment": null}
+, {"addr": "0x4a6f08", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x4a6f0c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4a6f10", "name": "GLOBAL_ASCII_1034", "type": "struct zAsciiGlobal1034*", "comment": null}
-, {"addr": "0x4c0f48", "name": "SUPER_GIANT_ANM_STRUCT_PTR", "type": "struct zAnmBehemoth*", "comment": null}
+, {"addr": "0x4a6f10", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
+, {"addr": "0x4a6f20", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x4c0f44", "name": "ANM_ON_WAIT_FUNCS", "type": "void*[1]", "comment": null}
+, {"addr": "0x4c0f48", "name": "SUPER_GIANT_ANM_STRUCT_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4c0f58", "name": "CRIT_SECTION__UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": "This critical section serializes all access to the UpdateFuncRegistry.\n\n"}
 , {"addr": "0x4c0f88", "name": "CRIT_SECTION_V", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c0fa0", "name": "CRIT_SECTION_R", "type": "struct CRITICAL_SECTION", "comment": null}
@@ -485,6 +501,7 @@
 , {"addr": "0x4c1560", "name": "D3D_STUFF_4c1560__HAS_ANM_VARS_16_TO_21", "type": "struct zUnknownGlobalD3DStuff", "comment": "ANM vars 10016-10018 are the sum of field_0 + field_3c.\nANM vars 10019-10021 are field_24.\n\nNotice there are at least 3 other instances of this struct\nliving in static memory, but only this one has any\nconnection to ANM vars."}
 , {"addr": "0x4c168c", "name": "D3D_STUFF_4c168c", "type": "struct zUnknownGlobalD3DStuff", "comment": null}
 , {"addr": "0x4c17b8", "name": "D3D_STUFF_PTR", "type": "struct zUnknownGlobalD3DStuff*", "comment": "At any given time this points to one of four instances of\nthis struct that all live in static memory."}
+, {"addr": "0x4c17c4", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
 , {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
 , {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": "int32_t", "comment": null}
 , {"addr": "0x4d7d04", "name": "INITIAL_PERFORMANCE_COUNTER", "type": "int32_t", "comment": null}
