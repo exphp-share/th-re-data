@@ -34,13 +34,13 @@
 , {"addr": "0x422a9b", "name": "ecl_run_over_300__default", "type": "void", "comment": "default case"}
 , {"addr": "0x422ab8", "name": "jump_table_422ab8", "type": "uint32_t [174]", "comment": null}
 , {"addr": "0x422ab8", "name": "ecl_run_over_300__jump_table", "type": "uint32_t [174]", "comment": null}
-, {"addr": "0x422d70", "name": "jump_table_422d70", "type": "uint8_t [702]", "comment": null}
 , {"addr": "0x422d70", "name": "ecl_run_over_300__indirect_table", "type": "uint8_t [702]", "comment": null}
+, {"addr": "0x422d70", "name": "jump_table_422d70", "type": "uint8_t [702]", "comment": null}
 , {"addr": "0x423030", "name": "jump_table_423030", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x423040", "name": "jump_table_423040", "type": "uint32_t [4]", "comment": null}
 , {"addr": "0x4237b8", "name": "jump_table_4237b8", "type": "uint32_t [19]", "comment": null}
-, {"addr": "0x423df4", "name": "jump_table_423df4", "type": "uint32_t [98]", "comment": null}
 , {"addr": "0x423df4", "name": "ecl_get_int_global__jump_table", "type": "uint32_t [98]", "comment": null}
+, {"addr": "0x423df4", "name": "jump_table_423df4", "type": "uint32_t [98]", "comment": null}
 , {"addr": "0x424088", "name": "jump_table_424088", "type": "uint32_t [16]", "comment": null}
 , {"addr": "0x4240c8", "name": "jump_table_4240c8", "type": "uint8_t [63]", "comment": null}
 , {"addr": "0x424a80", "name": "jump_table_424a80", "type": "uint32_t [98]", "comment": null}
@@ -121,8 +121,8 @@
 , {"addr": "0x46ee12", "name": "float(7.361264e-36)", "type": "float", "comment": null}
 , {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t [67]", "comment": null}
 , {"addr": "0x473a4c", "name": "jump_table_473a4c", "type": "uint32_t [67]", "comment": null}
-, {"addr": "0x473b58", "name": "jump_table_473b58", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
 , {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
+, {"addr": "0x473b58", "name": "jump_table_473b58", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
 , {"addr": "0x47870e", "name": "jump_table_47870e", "type": "uint32_t [8]", "comment": null}
 , {"addr": "0x478c2c", "name": "jump_table_478c2c", "type": "uint32_t [12]", "comment": null}
 , {"addr": "0x490eb0", "name": "__ptr_GAME_SPEED_MULT_FROM_ECL", "type": "float*", "comment": null}
@@ -142,6 +142,7 @@
 , {"addr": "0x491b48", "name": "ANM_ON_COPY_FUNC_1", "type": "void*[2]", "comment": null}
 , {"addr": "0x491b50", "name": "ANM_ON_COPY_FUNC_2", "type": "void*[2]", "comment": null}
 , {"addr": "0x491b58", "name": "ANM_ON_DELETE_FUNCS", "type": "void*[4]", "comment": null}
+, {"addr": "0x491c34", "name": "VTABLE_DELETE_THREAD", "type": "struct zVTableDelete", "comment": null}
 , {"addr": "0x491ce0", "name": "__ptr_leaf_409030", "type": "void*", "comment": null}
 , {"addr": "0x491d5c", "name": "VTABLE_BOMB_DOYOU", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491d78", "name": "VTABLE_BOMB_FALL", "type": "struct zVTableBomb", "comment": null}
@@ -417,24 +418,25 @@
 , {"addr": "0x4a5794", "name": "WEIRD_CUR_STAGE_NUM_GLOBAL", "type": "int32_t", "comment": "This is set to a stage number while a stage is being loaded. For replays, this number gets set back to 1 shortly thereafter (but in other scenarios, the stage number is kept in both globals)"}
 , {"addr": "0x4a5798", "name": "CURRENT_CHAPTER", "type": "int32_t", "comment": "Set to different various numbers by ECL at various points\nin the stage (most notably the values 28 and 2b are often\ntested by the code)"}
 , {"addr": "0x4a579c", "name": "TIME_IN_STAGE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57a0", "name": "TIME_IN_STAGE_UNUSED_COPY", "type": "int32_t", "comment": "Updated in perfect sync with TIME_IN_STAGE"}
+, {"addr": "0x4a57a0", "name": "TIME_IN_CHAPTER__POSSIBLY_BROKEN", "type": "int32_t", "comment": "This is probably TIME_IN_CHAPTER, but I'm not sure if it actually gets\nzeroed out when a new chapter begins in TH16. (TODO: test)"}
 , {"addr": "0x4a57a4", "name": "CHARACTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57a8", "name": "SUBSHOT__ZERO_IN_TH16", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57ac", "name": "SUBSEASON", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57b0", "name": "CURRENT_SCORE", "type": "int32_t", "comment": "Current score divided by 10"}
 , {"addr": "0x4a57b4", "name": "DIFFICULTY", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57b8", "name": "CONTINUES_USED", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57bc", "name": "RANK", "type": "int32_t", "comment": "Never written!"}
-, {"addr": "0x4a57c0", "name": "GRAZE_1", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57c4", "name": "GRAZE_2", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57c0", "name": "GRAZE", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57c4", "name": "GRAZE_IN_CHAPTER__POSSIBLY_BROKEN", "type": "int32_t", "comment": "I'm not sure if this gets zeroed out when a new chapter begins\nin TH16. (TODO: TEST)"}
 , {"addr": "0x4a57c8", "name": "SPELL_ID", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57cc", "name": "GLOBAL_MISS_COUNT", "type": "int32_t", "comment": "Probably added as a global ECL variable in LoLK for\nthe final boss' dialogue."}
 , {"addr": "0x4a57d4", "name": "NUM_POINT_ITEMS_COLLECTED", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57d8", "name": "CURRENT_POINT_ITEM_VALUE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57dc", "name": "INITIAL_POINT_ITEM_VALUE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57e0", "name": "MAX_POINT_ITEM_VALUE", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57d8", "name": "CURRENT_PIV", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57dc", "name": "INITIAL_PIV", "type": "int32_t", "comment": null}
+, {"addr": "0x4a57e0", "name": "MAXIMUM_PIV", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57e4", "name": "CURRENT_POWER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57e8", "name": "CURRENT_POWER_COPY", "type": "int32_t", "comment": "This one is updated less frequently.\nIt may be the power at the beginning of the frame?"}
-, {"addr": "0x4a57ec", "name": "SA_POWER_DIVISOR", "type": "int32_t", "comment": "Always 100.\nThis is the amount of power \"per level\". It exists because\nin SA, one of Marisa's shottypes could go up to level 8."}
+, {"addr": "0x4a57e8", "name": "__CURRENT_POWER_COPY", "type": "int32_t", "comment": "This one is updated less frequently.\nIt may be the power at the beginning of the frame?"}
+, {"addr": "0x4a57ec", "name": "POWER_PER_LEVEL", "type": "int32_t", "comment": "Always 100.\nThis is the amount of power \"per level\". It exists because\nin SA, one of Marisa's shottypes could go up to level 8."}
 , {"addr": "0x4a57f4", "name": "CURRENT_LIVES", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57f8", "name": "CURRENT_LIFE_FRAGMENTS", "type": "int32_t", "comment": null}
 , {"addr": "0x4a57fc", "name": "NEXT_SCORE_EXTEND_INDEX", "type": "int32_t", "comment": null}
@@ -446,9 +448,12 @@
 , {"addr": "0x4a583c", "name": "SEASON_POWER_LEVEL_REQUIREMENTS", "type": "int32_t [6]", "comment": null}
 , {"addr": "0x4a5854", "name": "MAX_SEASON_POWER_COPY", "type": "int32_t", "comment": null}
 , {"addr": "0x4a586c", "name": "DATA_4a586c_RELATED_TO_PIV_ITEMS__SEEMS_UNUSED", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5870", "name": "LAST_POINT_OR_POWER_COLLECTED_POS", "type": "struct zFloat3", "comment": null}
-, {"addr": "0x4a587c", "name": "DDC_ITEM_SPAWN_COUNT", "type": "int32_t", "comment": "This counts the number of items of type 0xF spawned.\nMerlin labels this as \"ITEM_DDC.\" I don't think it is used?"}
-, {"addr": "0x4a5880", "name": "TOTAL_DEADLY_ENEMY_COUNT", "type": "int32_t", "comment": "This seems to count the total number of enemies that have had hurtboxes enabled since the beginning of stage 1.\n\nOr something like that."}
+, {"addr": "0x4a5870", "name": "__LAST_POINT_OR_POWER_COLLECTED_POS", "type": "struct zFloat3", "comment": "Probably used by DDC to position the PoC bonus?\n"}
+, {"addr": "0x4a587c", "name": "__DDC_ITEM_SPAWN_COUNT", "type": "int32_t", "comment": "Presumably used to schedule guaranteed life pieces in DDC"}
+, {"addr": "0x4a5880", "name": "__LOLK_ENEMIES_SPAWNED_IN_CHAPTER", "type": "int32_t", "comment": "I'm not sure if these get reset to zero every chapter in HSiFS.\n(TODO: test)"}
+, {"addr": "0x4a5884", "name": "__LOLK_ENEMIES_DESTROYED_IN_CHAPTER", "type": "int32_t", "comment": null}
+, {"addr": "0x4a5888", "name": "music_filename", "type": "char [256]", "comment": null}
+, {"addr": "0x4a5bfc", "name": "CONTINUES_REMAINING", "type": "int32_t", "comment": null}
 , {"addr": "0x4a6be0", "name": "CRITICAL_SECTION_ARRAY", "type": "struct CRITICAL_SECTION [11]", "comment": null}
 , {"addr": "0x4a6d54", "name": "HEAP_4A6D54", "type": "HANDLE", "comment": null}
 , {"addr": "0x4a6d80", "name": "REPLAY_UNSAFE_RNG", "type": "struct zRng", "comment": null}
@@ -465,7 +470,7 @@
 , {"addr": "0x4a6dbc", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
 , {"addr": "0x4a6dc0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
 , {"addr": "0x4a6dc4", "name": "FUNCS_FOR_ECL_UNKNOWN_634", "type": "void*[1]", "comment": null}
-, {"addr": "0x4a6dc8", "name": "GLOBAL_88_PTR", "type": "struct zUnknownGlobal88*", "comment": null}
+, {"addr": "0x4a6dc8", "name": "GLOBAL_88_PTR", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x4a6dcc", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4a6dd4", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
 , {"addr": "0x4a6dd8", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
@@ -481,7 +486,7 @@
 , {"addr": "0x4a6f10", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4a6f20", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4c0f44", "name": "ANM_ON_WAIT_FUNCS", "type": "void*[1]", "comment": null}
-, {"addr": "0x4c0f48", "name": "SUPER_GIANT_ANM_STRUCT_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x4c0f48", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4c0f58", "name": "CRIT_SECTION__UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": "This critical section serializes all access to the UpdateFuncRegistry.\n\n"}
 , {"addr": "0x4c0f88", "name": "CRIT_SECTION_V", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c0fa0", "name": "CRIT_SECTION_R", "type": "struct CRITICAL_SECTION", "comment": null}
@@ -489,8 +494,9 @@
 , {"addr": "0x4c0fe8", "name": "CRIT_SECTION_U", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c1030", "name": "CRIT_SECTION_X", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c1048", "name": "CRIT_SECTION_W", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c1060", "name": "CRIT_SECTION_S", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4c1060", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c1078", "name": "CRIT_SECTION_T", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4c10d0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4c10d8", "name": "GLOBAL_D3D_DEVICE", "type": "struct z0_IDirect3DDevice9*", "comment": null}
 , {"addr": "0x4c128c", "name": "ANM_VM_4c128c", "type": "struct zAnmVm*", "comment": null}
 , {"addr": "0x4c1290", "name": "ANM_VM_4c1290", "type": "struct zAnmVm*", "comment": null}
@@ -502,7 +508,9 @@
 , {"addr": "0x4c168c", "name": "D3D_STUFF_4c168c", "type": "struct zUnknownGlobalD3DStuff", "comment": null}
 , {"addr": "0x4c17b8", "name": "D3D_STUFF_PTR", "type": "struct zUnknownGlobalD3DStuff*", "comment": "At any given time this points to one of four instances of\nthis struct that all live in static memory."}
 , {"addr": "0x4c17c4", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
+, {"addr": "0x4c1a68", "name": "THREAD_4c1a68", "type": "struct zThread", "comment": null}
 , {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
+, {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": "struct zArcFile [20]", "comment": null}
 , {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": "int32_t", "comment": null}
 , {"addr": "0x4d7d04", "name": "INITIAL_PERFORMANCE_COUNTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4d9d10", "name": "SYSPARAM_SCREEN_SAVE_ACTIVE", "type": "int32_t", "comment": null}
