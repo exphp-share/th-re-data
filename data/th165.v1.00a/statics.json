@@ -1,0 +1,4 @@
+[ {"addr": "0x4a46f0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table [1]", "comment": null}
+, {"addr": "0x4a4710", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4a47b0", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
+]

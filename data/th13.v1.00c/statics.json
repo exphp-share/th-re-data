@@ -1,0 +1,70 @@
+[ {"addr": "0x4aa5bc", "name": "VTABLE_SHOTTYPE_REIMU", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4aa5d8", "name": "VTABLE_SHOTTYPE_MARISA", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4aa5f4", "name": "VTABLE_SHOTTYPE_SANAE", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4aa610", "name": "VTABLE_SHOTTYPE_YOUMU", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4aa62c", "name": "VTABLE_SHOTTYPE_DEFAULT", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4ae868", "name": "double(100)", "type": "double", "comment": null}
+, {"addr": "0x4ae8a0", "name": "double(192)", "type": "double", "comment": null}
+, {"addr": "0x4ae8a8", "name": "double(1000)", "type": "double", "comment": null}
+, {"addr": "0x4aead4", "name": "float(464)", "type": "float", "comment": null}
+, {"addr": "0x4aead8", "name": "float(512)", "type": "float", "comment": null}
+, {"addr": "0x4aeadc", "name": "float(480)", "type": "float", "comment": null}
+, {"addr": "0x4aeae0", "name": "float(640)", "type": "float", "comment": null}
+, {"addr": "0x4aeaf0", "name": "float(100)", "type": "float", "comment": null}
+, {"addr": "0x4aeb00", "name": "float(-240)", "type": "float", "comment": null}
+, {"addr": "0x4aeb18", "name": "float(191)", "type": "float", "comment": null}
+, {"addr": "0x4aeb1c", "name": "float(330)", "type": "float", "comment": null}
+, {"addr": "0x4aeb28", "name": "float(80)", "type": "float", "comment": null}
+, {"addr": "0x4aec2c", "name": "float(-0.5*PI)", "type": "float", "comment": null}
+, {"addr": "0x4aefd8", "name": "float(2.2)", "type": "float", "comment": null}
+, {"addr": "0x4af008", "name": "float(999999)", "type": "float", "comment": null}
+, {"addr": "0x4af00c", "name": "float(0.040000003)", "type": "float", "comment": null}
+, {"addr": "0x4af010", "name": "float(36864)", "type": "float", "comment": null}
+, {"addr": "0x4af014", "name": "float(2304)", "type": "float", "comment": null}
+, {"addr": "0x4af018", "name": "float(9610000)", "type": "float", "comment": null}
+, {"addr": "0x4af01c", "name": "float(600)", "type": "float", "comment": null}
+, {"addr": "0x4af020", "name": "float(300)", "type": "float", "comment": null}
+, {"addr": "0x4af024", "name": "float(-600)", "type": "float", "comment": null}
+, {"addr": "0x4af028", "name": "float(-14)", "type": "float", "comment": null}
+, {"addr": "0x4b4d48", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4b9c34", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4be7b8", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Beginning of globals object"}
+, {"addr": "0x4be808", "name": "CURRENT_SPIRIT_GAUGE", "type": "int32_t", "comment": null}
+, {"addr": "0x4be810", "name": "HIGH_SCORE_DISPLAY", "type": "int32_t", "comment": null}
+, {"addr": "0x4be81c", "name": "CUR_STAGE_NUM", "type": "int32_t", "comment": null}
+, {"addr": "0x4be820", "name": "__CUR_STAGE_NUM__COPY", "type": "int32_t", "comment": null}
+, {"addr": "0x4be828", "name": "data_4be828__MAYBE_TIME_IN_STAGE", "type": "int32_t", "comment": null}
+, {"addr": "0x4be82c", "name": "data_4be82c__MAYBE_PLAYER_ALIVE_TIME", "type": "int32_t", "comment": null}
+, {"addr": "0x4be844", "name": "CONTINUES_REMAINING", "type": "int32_t", "comment": null}
+, {"addr": "0x4c0a28", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
+, {"addr": "0x4c2160", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
+, {"addr": "0x4c2164", "name": "TRANCE_MANAGER_PTR", "type": "struct zTranceManager*", "comment": null}
+, {"addr": "0x4c216c", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
+, {"addr": "0x4c2170", "name": "SHOTTYPE_PTR", "type": "struct zBomb*", "comment": null}
+, {"addr": "0x4c2174", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4c217c", "name": "DEBUG_SPRT_VIEW_PTR", "type": "struct zDebugSprtView*", "comment": null}
+, {"addr": "0x4c2180", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
+, {"addr": "0x4c2184", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
+, {"addr": "0x4c2188", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4c2190", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
+, {"addr": "0x4c2194", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
+, {"addr": "0x4c2198", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4c229c", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
+, {"addr": "0x4c22a0", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
+, {"addr": "0x4c22a4", "name": "SPIRIT_ITEM_MANAGER_PTR", "type": "struct zSpiritItemManager*", "comment": null}
+, {"addr": "0x4c22c0", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
+, {"addr": "0x4c22c4", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4c22c8", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
+, {"addr": "0x4c22d0", "name": "DEBUG_SOUND_TEST_PTR", "type": "struct zDebugSoundTest*", "comment": null}
+, {"addr": "0x4c22d4", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
+, {"addr": "0x4c22d8", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
+, {"addr": "0x4c22e0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x4dc658", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
+, {"addr": "0x4dc688", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x4dc6a0", "name": "SUPERVISOR_START", "type": "int32_t", "comment": "The supervisor is stored directly here and not as a pointer\nbut I haven't made a type for it yet in this binary"}
+, {"addr": "0x4dcc24", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
+, {"addr": "0x4df120", "name": "data_4df120__mystery", "type": "int32_t", "comment": "0 while loading\n0 while game is paused\n1 on main menu\n2 while playing game"}
+, {"addr": "0x4df1a0", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
+, {"addr": "0x4e4740", "name": "data_4e4740__seems_sound_related", "type": "void*", "comment": null}
+, {"addr": "0x4e49b0", "name": "CRITICAL_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
+]

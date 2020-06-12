@@ -1,0 +1,33 @@
+{ "zCOMMENT": 
+  [ ["0x0", "__unused", "char"]
+  , ["0x1", "__end", null]
+  ]
+
+, "zUpdateFunc": 
+  [ ["0x0", "priority__(lowest_goes_first)", "int32_t"]
+  , ["0x4", "flags", "int32_t"]
+  , ["0x8", "function_pointer", "void*"]
+  , ["0xc", "on_registration", "void*"]
+  , ["0x10", "on_cleanup", "void*"]
+  , ["0x14", "list_node", "struct zUpdateFuncList"]
+  , ["0x20", "ecx_arg_to_function", "void*"]
+  , ["0x24", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x24", "__end", null]
+  ]
+
+, "zUpdateFuncList": 
+  [ ["0x0", "entry", "struct zUpdateFunc*"]
+  , ["0x4", "next", "struct zUpdateFuncList*"]
+  , ["0x8", "prev", "struct zUpdateFuncList*"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zUpdateFuncRegistry": 
+  [ ["0x0", "on_tick_list_head", "struct zUpdateFunc"]
+  , ["0x24", "on_draw_list_head", "struct zUpdateFunc"]
+  , ["0x48", "__unknown", null]
+  , ["0x50", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x50", "__end", null]
+  ]
+
+}

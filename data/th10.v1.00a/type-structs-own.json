@@ -1,0 +1,228 @@
+{ "zAnmManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x732460", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x732460", "__end", null]
+  ]
+
+, "zAnmVm": 
+  [ ["0x0", "__unknown", null]
+  , ["0x3ac", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x3ac", "__end", null]
+  ]
+
+, "zAsciiManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x89ac", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x89ac", "__end", null]
+  ]
+
+, "zAsciiPopupManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0xb884", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xb884", "__end", null]
+  ]
+
+, "zBomb": 
+  [ ["0x0", "__unknown", null]
+  , ["0x48", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBullet": 
+  [ ["0x0", "__unknown", null]
+  , ["0x7f0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x7f0", "__end", null]
+  ]
+
+, "zBulletManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x60", "bullets", "struct zBullet [2001]"]
+  , ["0x3e0b50", "__unknown", null]
+  , ["0x3e0b54", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x3e0b54", "__end", null]
+  ]
+
+, "zCOMMENT": 
+  [ ["0x0", "__unused", "char"]
+  , ["0x1", "__end", null]
+  ]
+
+, "zDebugSprtView": 
+  [ ["0x0", "__unknown", null]
+  , ["0x688", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x688", "__end", null]
+  ]
+
+, "zDebugSptTest": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2e4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2e4", "__end", null]
+  ]
+
+, "zEffectManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x18", "__end", null]
+  ]
+
+, "zEnding": 
+  [ ["0x0", "__unknown", null]
+  , ["0x28", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x28", "__end", null]
+  ]
+
+, "zEnemyManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x68", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x68", "__end", null]
+  ]
+
+, "zFpsCounter": 
+  [ ["0x0", "__unknown", null]
+  , ["0x8c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x8c", "__end", null]
+  ]
+
+, "zGameThread": 
+  [ ["0x0", "__unknown", null]
+  , ["0x60", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x60", "__end", null]
+  ]
+
+, "zGlobals": 
+  [ ["0x0", "HIGH_SCORE_DISPLAY", "int32_t"]
+  , ["0x4", "CURRENT_SCORE", "int32_t"]
+  , ["0x8", "CURRENT_POWER", "uint16_t"]
+  , ["0xa", "__unused_padding", "char [2]"]
+  , ["0xc", "CURRENT_PIV__SCALED", "int32_t"]
+  , ["0x10", "__field_10", "int32_t"]
+  , ["0x14", "FAITH_TIMER", "struct zTimer"]
+  , ["0x28", "CHARACTER", "int32_t"]
+  , ["0x2c", "SUBSHOT", "int32_t"]
+  , ["0x30", "CURRENT_LIVES", "int32_t"]
+  , ["0x34", "DIFFICULTY", "int32_t"]
+  , ["0x38", "__field_38", "int32_t"]
+  , ["0x3c", "CURRENT_STAGE", "int32_t"]
+  , ["0x40", "__CURRENT_STAGE__COPY", "int32_t"]
+  , ["0x44", "__field_44", "int32_t"]
+  , ["0x48", "__field_48", "int32_t"]
+  , ["0x4c", "__field_4c", "int32_t"]
+  , ["0x50", "CONTINUES_USED", "int32_t"]
+  , ["0x54", "__field_54", "int32_t"]
+  , ["0x58", "RANK", "int32_t"]
+  , ["0x5c", "__end", null]
+  ]
+
+, "zGui": 
+  [ ["0x0", "__filler_00", "char [16]"]
+  , ["0x10", "__vms_10", "struct zAnmVm [10]"]
+  , ["0x24c8", "__vms_2c48", "struct zAnmVm [10]"]
+  , ["0x4980", "__vms_4980", "struct zAnmVm [9]"]
+  , ["0x6a8c", "__vms_6a8c", "struct zAnmVm [4]"]
+  , ["0x793c", "__vms_793c", "struct zAnmVm [2]"]
+  , ["0x8094", "__vms_8094", "struct zAnmVm [7]"]
+  , ["0x9a48", "__unknown", null]
+  , ["0x9ed0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x9ed0", "__end", null]
+  ]
+
+, "zHintManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1a8", "__end", null]
+  ]
+
+, "zItem": 
+  [ ["0x0", "__unknown", null]
+  , ["0x3f0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x3f0", "__end", null]
+  ]
+
+, "zItemManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x14", "items", "struct zItem [2198]"]
+  , ["0x21ceb4", "__unknown", null]
+  , ["0x21cec0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x21cec0", "__end", null]
+  ]
+
+, "zLaserManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x45c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x45c", "__end", null]
+  ]
+
+, "zLoadingThread": 
+  [ ["0x0", "__unknown", null]
+  , ["0x3f0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x3f0", "__end", null]
+  ]
+
+, "zMainMenu": 
+  [ ["0x0", "__unknown", null]
+  , ["0x5acc", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x5acc", "__end", null]
+  ]
+
+, "zPauseMenu": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2c8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2c8", "__end", null]
+  ]
+
+, "zPlayer": 
+  [ ["0x0", "__unknown", null]
+  , ["0x4478", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x4478", "__end", null]
+  ]
+
+, "zReplayManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0xa0", "stage_data", "struct zReplayStageData [8]"]
+  , ["0x1c0", "__unknown", null]
+  , ["0x2d4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2d4", "__end", null]
+  ]
+
+, "zReplayStageData": 
+  [ ["0x0", "__unknown", null]
+  , ["0x24", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x24", "__end", null]
+  ]
+
+, "zScreenEffect": 
+  [ ["0x0", "__unknown", null]
+  , ["0x44", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x44", "__end", null]
+  ]
+
+, "zSpellcard": 
+  [ ["0x0", "__unknown", null]
+  , ["0x10", "__vms_10", "struct zAnmVm [2]"]
+  , ["0x768", "__unknown", null]
+  , ["0x778", "__vms_778", "struct zAnmVm [8]"]
+  , ["0x24d8", "__vms_24d8", "struct zAnmVm [5]"]
+  , ["0x3734", "__unknown", null]
+  , ["0x37b0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x37b0", "__end", null]
+  ]
+
+, "zStage": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2b64", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2b64", "__end", null]
+  ]
+
+, "zTimer": 
+  [ ["0x0", "prev", "int32_t"]
+  , ["0x4", "current", "int32_t"]
+  , ["0x8", "current_f", "float"]
+  , ["0xc", "game_speed", "float*"]
+  , ["0x10", "control", "int32_t"]
+  , ["0x14", "__end", null]
+  ]
+
+, "zUpdateFuncRegistry": 
+  [ ["0x0", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+}

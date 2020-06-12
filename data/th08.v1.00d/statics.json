@@ -1,0 +1,114 @@
+[ {"addr": "0x44082b", "name": "float(4.9572427e+16)", "type": "float", "comment": null}
+, {"addr": "0x4b42c4", "name": "float(96)", "type": "float", "comment": null}
+, {"addr": "0x4b42c8", "name": "float(64)", "type": "float", "comment": null}
+, {"addr": "0x4b42cc", "name": "float(32)", "type": "float", "comment": null}
+, {"addr": "0x4b42d0", "name": "float(392)", "type": "float", "comment": null}
+, {"addr": "0x4b42d4", "name": "float(16)", "type": "float", "comment": null}
+, {"addr": "0x4b42d8", "name": "float(3.5)", "type": "float", "comment": null}
+, {"addr": "0x4b42dc", "name": "float(3)", "type": "float", "comment": null}
+, {"addr": "0x4b42e0", "name": "float(14)", "type": "float", "comment": null}
+, {"addr": "0x4b42e4", "name": "float(62)", "type": "float", "comment": null}
+, {"addr": "0x4b42e8", "name": "float(80)", "type": "float", "comment": null}
+, {"addr": "0x4b42ec", "name": "float(2)", "type": "float", "comment": null}
+, {"addr": "0x4b42f0", "name": "float(112)", "type": "float", "comment": null}
+, {"addr": "0x4b42f4", "name": "float(7)", "type": "float", "comment": null}
+, {"addr": "0x4b42f8", "name": "float(63)", "type": "float", "comment": null}
+, {"addr": "0x4b42fc", "name": "float(416)", "type": "float", "comment": null}
+, {"addr": "0x4b4300", "name": "float(8)", "type": "float", "comment": null}
+, {"addr": "0x4b4304", "name": "float(5)", "type": "float", "comment": null}
+, {"addr": "0x4b4308", "name": "float(4)", "type": "float", "comment": null}
+, {"addr": "0x4b430c", "name": "float(60)", "type": "float", "comment": null}
+, {"addr": "0x4b4334", "name": "float(PI)", "type": "float", "comment": null}
+, {"addr": "0x4b4338", "name": "float(1)", "type": "float", "comment": null}
+, {"addr": "0x4b4380", "name": "float(1e-05)", "type": "float", "comment": null}
+, {"addr": "0x4b4384", "name": "float(0)", "type": "float", "comment": null}
+, {"addr": "0x4b4388", "name": "float(960)", "type": "float", "comment": null}
+, {"addr": "0x4b438c", "name": "float(-1)", "type": "float", "comment": null}
+, {"addr": "0x4b4390", "name": "float(10)", "type": "float", "comment": null}
+, {"addr": "0x4b4394", "name": "float(-100)", "type": "float", "comment": null}
+, {"addr": "0x4b4398", "name": "float(3.2)", "type": "float", "comment": null}
+, {"addr": "0x4b439c", "name": "float(0.3926991)", "type": "float", "comment": null}
+, {"addr": "0x4b4460", "name": "float(2*PI)", "type": "float", "comment": null}
+, {"addr": "0x4b4464", "name": "float(-PI)", "type": "float", "comment": null}
+, {"addr": "0x4b4468", "name": "float(PI/2)", "type": "float", "comment": null}
+, {"addr": "0x4b48c8", "name": "float(48)", "type": "float", "comment": null}
+, {"addr": "0x4b48cc", "name": "float(-1.5707964)", "type": "float", "comment": null}
+, {"addr": "0x4b48d0", "name": "float(0.3)", "type": "float", "comment": null}
+, {"addr": "0x4b48d4", "name": "float(0.01)", "type": "float", "comment": null}
+, {"addr": "0x4b48d8", "name": "float(-0.01)", "type": "float", "comment": null}
+, {"addr": "0x4b48dc", "name": "float(-64)", "type": "float", "comment": null}
+, {"addr": "0x4b48e0", "name": "float(0.7071068)", "type": "float", "comment": null}
+, {"addr": "0x4b48e4", "name": "float(208)", "type": "float", "comment": null}
+, {"addr": "0x4b48e8", "name": "float(67.882256)", "type": "float", "comment": null}
+, {"addr": "0x4b48ec", "name": "float(135.76451)", "type": "float", "comment": null}
+, {"addr": "0x4b48f0", "name": "float(343.76453)", "type": "float", "comment": null}
+, {"addr": "0x4b48f4", "name": "float(72.23549)", "type": "float", "comment": null}
+, {"addr": "0x4b48f8", "name": "float(327.76453)", "type": "float", "comment": null}
+, {"addr": "0x4b48fc", "name": "float(56.23549)", "type": "float", "comment": null}
+, {"addr": "0x4b4900", "name": "float(275.88226)", "type": "float", "comment": null}
+, {"addr": "0x4b4904", "name": "float(140.11774)", "type": "float", "comment": null}
+, {"addr": "0x4b4908", "name": "float(259.88226)", "type": "float", "comment": null}
+, {"addr": "0x4b490c", "name": "float(124.117744)", "type": "float", "comment": null}
+, {"addr": "0x4b4c90", "name": "double(0)", "type": "double", "comment": null}
+, {"addr": "0x4b6944", "name": "float(0.99)", "type": "float", "comment": null}
+, {"addr": "0x4b847c", "name": "float(0.5)", "type": "float", "comment": null}
+, {"addr": "0x4c6000", "name": "LIFE_BEFORE_MAIN", "type": "void*[46]", "comment": null}
+, {"addr": "0x4c7480", "name": "EFFECT_ANM_FILENAMES", "type": "char*[15]", "comment": null}
+, {"addr": "0x4c74c0", "name": "MSG_DAT_FILENAMES", "type": "char*[108]", "comment": null}
+, {"addr": "0x4cce00", "name": "ASCII_MANAGER_ON_DRAW_14", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4cce20", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
+, {"addr": "0x4e3fd0", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4e3ff0", "name": "ASCII_MANAGER_ON_DRAW_0E", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4e4010", "name": "STAGE_ON_DRAW_06", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4e4030", "name": "STAGE", "type": "struct zStage", "comment": null}
+, {"addr": "0x4ea630", "name": "STAGE_ON_DRAW_07", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4ea650", "name": "STAGE_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4ea670", "name": "SPELLCARD", "type": "struct zSpellcard", "comment": null}
+, {"addr": "0x4eccb8", "name": "UNKNOWN_GLOBAL_W", "type": "struct zUnknownGlobalW", "comment": null}
+, {"addr": "0x4ece20", "name": "ECL_VAR_A", "type": "int32_t", "comment": null}
+, {"addr": "0x4ece24", "name": "ECL_VAR_B", "type": "int32_t", "comment": null}
+, {"addr": "0x4ece28", "name": "ECL_VAR_C", "type": "int32_t", "comment": null}
+, {"addr": "0x4ece2c", "name": "ECL_VAR_D", "type": "int32_t", "comment": null}
+, {"addr": "0x4ece30", "name": "ECL_VAR_R", "type": "float", "comment": null}
+, {"addr": "0x4ece34", "name": "ECL_VAR_S", "type": "float", "comment": null}
+, {"addr": "0x4ece38", "name": "ECL_VAR_M", "type": "float", "comment": null}
+, {"addr": "0x4ece3c", "name": "ECL_VAR_N", "type": "float", "comment": null}
+, {"addr": "0x4ece40", "name": "UPDATE_FUNC_4ece40", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4ece60", "name": "EFFECT_MANAGER", "type": "struct zEffectManager", "comment": null}
+, {"addr": "0x577ebc", "name": "EFFECT_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x577edc", "name": "EFFECT_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x577f00", "name": "ENEMY_MANAGER_ON_DRAW_08", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x577f20", "name": "ENEMY_MANAGER", "type": "struct zEnemyManager", "comment": null}
+, {"addr": "0xf54e30", "name": "ENEMY_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0xf54e50", "name": "ENEMY_MANAGER_ON_DRAW_0B", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0xf54e70", "name": "BULLET_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0xf54e90", "name": "BULLET_MANAGER", "type": "struct zBulletManager", "comment": null}
+, {"addr": "0x160f408", "name": "BULLET_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x160f428", "name": "UNKNOWN_GLOBAL_T", "type": "void", "comment": null}
+, {"addr": "0x160f4c4", "name": "GUI_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x160f4e4", "name": "GUI_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x160f508", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": "This thing... um...\n\nIt's important.  That's for sure.  Commenting out its on_tick\ncrashes the game; commenting out its on_draw during a game\ndoes nothing, but commenting it out before starting the game\ncauses a crash.\n\nIts 'on_tick' is MASSIVE.  If you look inside, you'll see\na string somewhere that says Pause.  But... I think this thing\nrepresents a fair bit more than just the pause menu!\n\nIf you look at the object itself, it has a pointer to a thing\nholding important variables like lives and bombs (which become\nstatic globals in modern games), and it also contains a very,\nvery large array holding what is apparently data for spell\npractice.  It has, like, ZUN's spell comments and stuff.\nIt's weird.  It's just... weird.\n\nIt no longer exists in MoF."}
+, {"addr": "0x164d344", "name": "LOLIDFK_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x164d364", "name": "LOLIDFK_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x164d520", "name": "REPLAY_SAFE_RNG", "type": "void", "comment": null}
+, {"addr": "0x164d540", "name": "UNKNOWN_GLOBAL_Y", "type": "struct zUnknownGlobalY", "comment": null}
+, {"addr": "0x164f548", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry", "comment": null}
+, {"addr": "0x164f588", "name": "UNKNOWN_GLOBAL_ARCFILE", "type": "struct zArcFile", "comment": null}
+, {"addr": "0x164f598", "name": "UNUSED_DEBUG_THING", "type": "struct zUnusedDebugThing", "comment": null}
+, {"addr": "0x1653628", "name": "UPDATE_FUNC_1653628", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x1653648", "name": "ITEM_MANAGER", "type": "struct zItemManager", "comment": null}
+, {"addr": "0x17ce6dc", "name": "UPDATE_FUNC_17CE6DC", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x17ce700", "name": "GLOBAL_44", "type": "struct zUnknownGlobal44", "comment": null}
+, {"addr": "0x17ce758", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
+, {"addr": "0x17ceac0", "name": "STATIC_VMS_17CEAC0", "type": "struct zAnmVm [3]", "comment": null}
+, {"addr": "0x17cf4c8", "name": "MUSIC_ROOM", "type": "struct zMusicRoom", "comment": null}
+, {"addr": "0x17d5ef8", "name": "PLAYER", "type": "struct zPlayer", "comment": null}
+, {"addr": "0x18b8a30", "name": "SOME_GLOBAL_SCREEN_EFFECT", "type": "struct zScreenEffect", "comment": null}
+, {"addr": "0x18b8a68", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
+, {"addr": "0x18bdc90", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x18bdc98", "name": "ARRAY_18bdc98", "type": "struct zSize1c_1 [4]", "comment": null}
+, {"addr": "0x18bdd08", "name": "ARRAY_18bdd08", "type": "struct zSize18 [4]", "comment": null}
+, {"addr": "0x18bdd68", "name": "ARRAY_18bdd68", "type": "struct zSize18 [4]", "comment": null}
+, {"addr": "0x18bde08", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x18bde18", "name": "ARCFILES_18bde18", "type": "struct zArcFile [20]", "comment": null}
+]

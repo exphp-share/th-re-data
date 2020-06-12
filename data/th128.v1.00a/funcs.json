@@ -1,0 +1,6 @@
+[ {"addr": "0x4539d0", "name": "main", "comment": null}
+, {"addr": "0x4681d0", "name": "register__on_tick", "comment": null}
+, {"addr": "0x468270", "name": "register__on_draw", "comment": null}
+, {"addr": "0x47296c", "name": "malloc", "comment": null}
+, {"addr": "0x47460e", "name": "_start", "comment": null}
+]

@@ -1,130 +1,20 @@
-[ {"addr": "0x400000", "name": "__dos_header", "type": "struct DOS_Header", "comment": null}
-, {"addr": "0x400040", "name": "__dos_stub", "type": "void", "comment": null}
-, {"addr": "0x400080", "name": "__rich_header", "type": "struct Rich_Header", "comment": null}
-, {"addr": "0x400138", "name": "__coff_header", "type": "struct COFF_Header", "comment": null}
-, {"addr": "0x400150", "name": "__pe32_optional_header", "type": "struct PE32_Optional_Header", "comment": null}
-, {"addr": "0x400230", "name": "__section_headers", "type": "struct Section_Header [5]", "comment": null}
-, {"addr": "0x401570", "name": "jump_table_401570", "type": "uint32_t [9]", "comment": null}
-, {"addr": "0x40168c", "name": "jump_table_40168c", "type": "uint32_t [6]", "comment": null}
-, {"addr": "0x4030f0", "name": "jump_table_4030f0", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x4033b8", "name": "jump_table_4033b8", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x403a10", "name": "jump_table_403a10", "type": "uint32_t [31]", "comment": null}
-, {"addr": "0x407a28", "name": "jump_table_407a28", "type": "uint32_t [10]", "comment": null}
-, {"addr": "0x408eb4", "name": "jump_table_408eb4", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x408ec4", "name": "jump_table_408ec4", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x40bfbc", "name": "jump_table_40bfbc", "type": "uint32_t [21]", "comment": null}
-, {"addr": "0x40c010", "name": "jump_table_40c010", "type": "uint32_t [9]", "comment": null}
-, {"addr": "0x40da4c", "name": "jump_table_40da4c", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x40db10", "name": "jump_table_40db10", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x412494", "name": "jump_table_412494", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x4137f8", "name": "jump_table_4137f8", "type": "uint32_t [13]", "comment": null}
-, {"addr": "0x41382c", "name": "jump_table_41382c", "type": "uint32_t [11]", "comment": null}
-, {"addr": "0x414cb0", "name": "jump_table_414cb0", "type": "uint32_t [8]", "comment": null}
-, {"addr": "0x414cd0", "name": "jump_table_414cd0", "type": "uint8_t [128]", "comment": null}
-, {"addr": "0x414d50", "name": "jump_table_414d50", "type": "uint32_t [8]", "comment": null}
-, {"addr": "0x414d70", "name": "jump_table_414d70", "type": "uint32_t [11]", "comment": null}
-, {"addr": "0x415768", "name": "jump_table_415768", "type": "uint32_t [7]", "comment": null}
-, {"addr": "0x41a2c0", "name": "jump_table_41a2c0", "type": "uint32_t [18]", "comment": null}
-, {"addr": "0x41ad60", "name": "jump_table_41ad60", "type": "uint32_t [8]", "comment": null}
-, {"addr": "0x41ad80", "name": "jump_table_41ad80", "type": "uint8_t [92]", "comment": null}
-, {"addr": "0x41baf2", "name": "float(4.0620843e-28)", "type": "float", "comment": null}
+[ {"addr": "0x41baf2", "name": "float(4.0620843e-28)", "type": "float", "comment": null}
 , {"addr": "0x41d423", "name": "float(-3.2208192e-34)_1", "type": "float", "comment": null}
 , {"addr": "0x41d498", "name": "float(-7.863328e-38)", "type": "float", "comment": null}
 , {"addr": "0x41d880", "name": "float(-0.00019931947)", "type": "float", "comment": null}
 , {"addr": "0x422a9b", "name": "ecl_run_over_300__default", "type": "void", "comment": "default case"}
-, {"addr": "0x422ab8", "name": "jump_table_422ab8", "type": "uint32_t [174]", "comment": null}
 , {"addr": "0x422ab8", "name": "ecl_run_over_300__jump_table", "type": "uint32_t [174]", "comment": null}
 , {"addr": "0x422d70", "name": "ecl_run_over_300__indirect_table", "type": "uint8_t [702]", "comment": null}
-, {"addr": "0x422d70", "name": "jump_table_422d70", "type": "uint8_t [702]", "comment": null}
-, {"addr": "0x423030", "name": "jump_table_423030", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x423040", "name": "jump_table_423040", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x4237b8", "name": "jump_table_4237b8", "type": "uint32_t [19]", "comment": null}
 , {"addr": "0x423df4", "name": "ecl_get_int_global__jump_table", "type": "uint32_t [98]", "comment": null}
-, {"addr": "0x423df4", "name": "jump_table_423df4", "type": "uint32_t [98]", "comment": null}
-, {"addr": "0x424088", "name": "jump_table_424088", "type": "uint32_t [16]", "comment": null}
-, {"addr": "0x4240c8", "name": "jump_table_4240c8", "type": "uint8_t [63]", "comment": null}
-, {"addr": "0x424a80", "name": "jump_table_424a80", "type": "uint32_t [98]", "comment": null}
-, {"addr": "0x424d80", "name": "jump_table_424d80", "type": "uint32_t [25]", "comment": null}
-, {"addr": "0x424de4", "name": "jump_table_424de4", "type": "uint8_t [81]", "comment": null}
 , {"addr": "0x428edd", "name": "float(2.94846e-38)", "type": "float", "comment": null}
-, {"addr": "0x42b3ec", "name": "jump_table_42b3ec", "type": "uint32_t [36]", "comment": null}
-, {"addr": "0x42e4c0", "name": "jump_table_42e4c0", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x42ef70", "name": "jump_table_42ef70", "type": "uint32_t [6]", "comment": null}
-, {"addr": "0x4300bc", "name": "jump_table_4300bc", "type": "uint32_t [16]", "comment": null}
-, {"addr": "0x43184c", "name": "jump_table_43184c", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x4325f0", "name": "jump_table_4325f0", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x432604", "name": "jump_table_432604", "type": "uint8_t [16]", "comment": null}
-, {"addr": "0x435600", "name": "jump_table_435600", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x439298", "name": "jump_table_439298", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x4392ac", "name": "jump_table_4392ac", "type": "uint8_t [16]", "comment": null}
-, {"addr": "0x43d0d0", "name": "jump_table_43d0d0", "type": "uint32_t [20]", "comment": null}
-, {"addr": "0x43d120", "name": "jump_table_43d120", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x43d130", "name": "jump_table_43d130", "type": "uint8_t [15]", "comment": null}
-, {"addr": "0x440b6c", "name": "jump_table_440b6c", "type": "uint32_t [17]", "comment": null}
-, {"addr": "0x440bb0", "name": "jump_table_440bb0", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x443708", "name": "jump_table_443708", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x44b4d8", "name": "jump_table_44b4d8", "type": "uint32_t [21]", "comment": null}
-, {"addr": "0x44b59c", "name": "jump_table_44b59c", "type": "uint32_t [12]", "comment": null}
-, {"addr": "0x44c508", "name": "jump_table_44c508", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x44c51c", "name": "jump_table_44c51c", "type": "uint32_t [10]", "comment": null}
-, {"addr": "0x44c544", "name": "jump_table_44c544", "type": "uint32_t [10]", "comment": null}
-, {"addr": "0x44c8a0", "name": "jump_table_44c8a0", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x44ec48", "name": "jump_table_44ec48", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x4502a8", "name": "jump_table_4502a8", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x450adc", "name": "jump_table_450adc", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x450ed8", "name": "jump_table_450ed8", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x4513ac", "name": "jump_table_4513ac", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x451d34", "name": "jump_table_451d34", "type": "uint32_t [6]", "comment": null}
-, {"addr": "0x452c20", "name": "jump_table_452c20", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x453894", "name": "jump_table_453894", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x454194", "name": "jump_table_454194", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x455320", "name": "jump_table_455320", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x455778", "name": "jump_table_455778", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x455d34", "name": "jump_table_455d34", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x456044", "name": "jump_table_456044", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x456d38", "name": "jump_table_456d38", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x459580", "name": "jump_table_459580", "type": "uint32_t [9]", "comment": null}
-, {"addr": "0x45a6b4", "name": "jump_table_45a6b4", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x45a6c8", "name": "jump_table_45a6c8", "type": "uint8_t [24]", "comment": null}
-, {"addr": "0x45a6e0", "name": "jump_table_45a6e0", "type": "uint32_t [6]", "comment": null}
-, {"addr": "0x45c284", "name": "jump_table_45c284", "type": "uint32_t [6]", "comment": null}
-, {"addr": "0x45d338", "name": "jump_table_45d338", "type": "uint32_t [10]", "comment": null}
-, {"addr": "0x45e8a0", "name": "jump_table_45e8a0", "type": "uint32_t [9]", "comment": null}
-, {"addr": "0x45f578", "name": "jump_table_45f578", "type": "uint32_t [36]", "comment": null}
-, {"addr": "0x45f710", "name": "jump_table_45f710", "type": "uint32_t [18]", "comment": null}
-, {"addr": "0x45f758", "name": "jump_table_45f758", "type": "uint8_t [36]", "comment": null}
-, {"addr": "0x45f830", "name": "jump_table_45f830", "type": "uint32_t [16]", "comment": null}
-, {"addr": "0x45f870", "name": "jump_table_45f870", "type": "uint8_t [32]", "comment": null}
-, {"addr": "0x45f8fc", "name": "jump_table_45f8fc", "type": "uint32_t [8]", "comment": null}
-, {"addr": "0x45f91c", "name": "jump_table_45f91c", "type": "uint8_t [30]", "comment": null}
 , {"addr": "0x462cb8", "name": "anm_run_jumptable_1", "type": "uint32_t [53]", "comment": null}
-, {"addr": "0x462cb8", "name": "jump_table_462cb8", "type": "uint32_t [53]", "comment": null}
 , {"addr": "0x462d8c", "name": "anm_run_jumptable_1_indirect", "type": "uint8_t [215]", "comment": null}
-, {"addr": "0x462d8c", "name": "jump_table_462d8c", "type": "uint8_t [215]", "comment": null}
 , {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": "uint32_t [81]", "comment": null}
-, {"addr": "0x462e64", "name": "jump_table_462e64", "type": "uint32_t [81]", "comment": null}
 , {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": "uint8_t [313]", "comment": null}
-, {"addr": "0x462fa8", "name": "jump_table_462fa8", "type": "uint8_t [313]", "comment": null}
 , {"addr": "0x463460", "name": "float(36879.95)", "type": "float", "comment": null}
-, {"addr": "0x463b04", "name": "jump_table_463b04", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x463b14", "name": "jump_table_463b14", "type": "uint8_t [17]", "comment": null}
-, {"addr": "0x465254", "name": "jump_table_465254", "type": "uint32_t [10]", "comment": null}
-, {"addr": "0x465a14", "name": "jump_table_465a14", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x466ee8", "name": "jump_table_466ee8", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x467ce0", "name": "jump_table_467ce0", "type": "uint32_t [6]", "comment": null}
-, {"addr": "0x468b70", "name": "jump_table_468b70", "type": "uint32_t [15]", "comment": null}
-, {"addr": "0x468bac", "name": "jump_table_468bac", "type": "uint8_t [28]", "comment": null}
-, {"addr": "0x468bc8", "name": "jump_table_468bc8", "type": "uint32_t [12]", "comment": null}
-, {"addr": "0x468c54", "name": "jump_table_468c54", "type": "uint32_t [4]", "comment": null}
-, {"addr": "0x46c87c", "name": "jump_table_46c87c", "type": "uint32_t [5]", "comment": null}
-, {"addr": "0x46c890", "name": "jump_table_46c890", "type": "uint8_t [30]", "comment": null}
 , {"addr": "0x46ee12", "name": "float(7.361264e-36)", "type": "float", "comment": null}
 , {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t [67]", "comment": null}
-, {"addr": "0x473a4c", "name": "jump_table_473a4c", "type": "uint32_t [67]", "comment": null}
 , {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
-, {"addr": "0x473b58", "name": "jump_table_473b58", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
-, {"addr": "0x47870e", "name": "jump_table_47870e", "type": "uint32_t [8]", "comment": null}
-, {"addr": "0x478c2c", "name": "jump_table_478c2c", "type": "uint32_t [12]", "comment": null}
 , {"addr": "0x490eb0", "name": "__ptr_GAME_SPEED_MULT_FROM_ECL", "type": "float*", "comment": null}
 , {"addr": "0x490eb4", "name": "FUNCS_FOR_ECL_FLAG_EXT_DMG", "type": "void*[3]", "comment": null}
 , {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": "void*[3]", "comment": null}

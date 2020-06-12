@@ -1,0 +1,49 @@
+[ {"addr": "0x402c41", "name": "float(-3.927902e+19)", "type": "float", "comment": null}
+, {"addr": "0x49fc50", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[6]", "comment": null}
+, {"addr": "0x4a2458", "name": "VTABLE_4a2458", "type": "void*", "comment": null}
+, {"addr": "0x4a3d28", "name": "double(192)", "type": "double", "comment": null}
+, {"addr": "0x4a3d68", "name": "double(16)", "type": "double", "comment": null}
+, {"addr": "0x4a3d70", "name": "double(32)", "type": "double", "comment": null}
+, {"addr": "0x4a3ff0", "name": "double(1e-4)", "type": "double", "comment": null}
+, {"addr": "0x4a4000", "name": "double(0.05)", "type": "double", "comment": null}
+, {"addr": "0x4a9fe8", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4ad138", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4b0c40", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
+, {"addr": "0x4b2ed0", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
+, {"addr": "0x4b43b8", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
+, {"addr": "0x4b43bc", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
+, {"addr": "0x4b43c0", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
+, {"addr": "0x4b43c4", "name": "BOMB_PTR", "type": "struct zBomb*", "comment": null}
+, {"addr": "0x4b43c8", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4b43cc", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
+, {"addr": "0x4b43d0", "name": "DEBUG_SPRT_VIEW_PTR", "type": "struct zDebugSprtView*", "comment": null}
+, {"addr": "0x4b43d4", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
+, {"addr": "0x4b43d8", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
+, {"addr": "0x4b43dc", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4b43e0", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
+, {"addr": "0x4b43e4", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
+, {"addr": "0x4b43e8", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4b44e8", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
+, {"addr": "0x4b44ec", "name": "HINT_MANAGER_PTR", "type": "struct zHintManager*", "comment": null}
+, {"addr": "0x4b44f0", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
+, {"addr": "0x4b44f4", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
+, {"addr": "0x4b44f8", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
+, {"addr": "0x4b4510", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
+, {"addr": "0x4b4514", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4b4518", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
+, {"addr": "0x4b451c", "name": "SCOREFILE_PTR", "type": "struct zScorefile*", "comment": null}
+, {"addr": "0x4b4520", "name": "DEBUG_SOUND_TEST_PTR", "type": "struct zDebugSoundTest*", "comment": null}
+, {"addr": "0x4b4524", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
+, {"addr": "0x4b4528", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
+, {"addr": "0x4b4530", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x4b4534", "name": "UFO_PTR", "type": "struct zUfo*", "comment": "Responsible for summoning a UFO once three tokens are collected,\nand ticking the state of the UFO.\n\nDoesn't seem to be responsible for updating the tokens."}
+, {"addr": "0x4ce89c", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
+, {"addr": "0x4ce8cc", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x4ce8e8", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
+, {"addr": "0x4cf200", "name": "CRITICAL_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4cf4e8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
+, {"addr": "0x4d0e70", "name": "data_4d0e70__mystery", "type": "void", "comment": null}
+, {"addr": "0x4d48b8", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
+, {"addr": "0x4d49d0", "name": "INPUT", "type": "int32_t", "comment": null}
+, {"addr": "0x4d49d4", "name": "INPUT_PREV", "type": "int32_t", "comment": null}
+]

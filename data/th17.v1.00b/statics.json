@@ -1,0 +1,300 @@
+[ {"addr": "0x4274b9", "name": "float(2.0675518e+18)", "type": "float", "comment": null}
+, {"addr": "0x427b40", "name": "jump_table_427b40_int_global", "type": "uint32_t [102]", "comment": null}
+, {"addr": "0x46a2fc", "name": "anm_jump_table_from_neg_1__addresses", "type": "uint32_t [53]", "comment": null}
+, {"addr": "0x46a3d0", "name": "anm_jump_table_from_neg_1__indices", "type": "uint8_t [215]", "comment": null}
+, {"addr": "0x46a4a8", "name": "anm_jump_table_for_jmpDec__indices", "type": "uint32_t [8]", "comment": null}
+, {"addr": "0x46a4c8", "name": "anm_jump_table_for_jmpDec__addresses", "type": "uint8_t [30]", "comment": null}
+, {"addr": "0x46a4e8", "name": "anm_jump_table_from_301__addresses", "type": "uint32_t [81]", "comment": null}
+, {"addr": "0x46a62c", "name": "anm_jump_table_from_301__indices", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x478f08", "name": "float(-2.1036966e-34)", "type": "float", "comment": null}
+, {"addr": "0x4a0da8", "name": "ITEM_ANM_SCRIPT_IDS", "type": "struct zInt2 [32]", "comment": null}
+, {"addr": "0x4a0f68", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[5]", "comment": null}
+, {"addr": "0x4a0f80", "name": "SHT_FUNCS_1", "type": "void*[7]", "comment": null}
+, {"addr": "0x4a0fa0", "name": "SHT_FUNCS_3", "type": "void*[7]", "comment": null}
+, {"addr": "0x4a0fc0", "name": "SHT_FUNCS_4", "type": "void*[6]", "comment": null}
+, {"addr": "0x4a0ff4", "name": "ANM_ON_TICK_FUNCS", "type": "void*[6]", "comment": null}
+, {"addr": "0x4a1174", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[4]", "comment": null}
+, {"addr": "0x4a1184", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[8]", "comment": null}
+, {"addr": "0x4a11a4", "name": "ANM_ON_DESTROY_FUNCS", "type": "void*[5]", "comment": null}
+, {"addr": "0x4a13e4", "name": "VTABLE_SHOTTYPE_YOUMU", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4a1400", "name": "VTABLE_SHOTTYPE_MARISA", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4a141c", "name": "VTABLE_SHOTTYPE_REIMU", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4a1438", "name": "VTABLE_SHOTTYPE_DEFAULT", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4a1680", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[6]", "comment": null}
+, {"addr": "0x4a17e0", "name": "VTABLE_LASER_CURVE", "type": "void*[26]", "comment": null}
+, {"addr": "0x4a184c", "name": "VTABLE_LASER_BEAM", "type": "void*[26]", "comment": null}
+, {"addr": "0x4a18b8", "name": "VTABLE_LASER_INFINITE", "type": "void*[26]", "comment": null}
+, {"addr": "0x4a1924", "name": "VTABLE_LASER_LINE", "type": "void*[26]", "comment": null}
+, {"addr": "0x4a1990", "name": "VTABLE_LASER_DEFAULT", "type": "void*[26]", "comment": null}
+, {"addr": "0x4a3a88", "name": "float(2**-32)", "type": "float", "comment": null}
+, {"addr": "0x4a3a8c", "name": "float(2**-31)", "type": "float", "comment": null}
+, {"addr": "0x4a3a90", "name": "float(1e-04)", "type": "float", "comment": null}
+, {"addr": "0x4a3a94", "name": "float(0.00048828125)", "type": "float", "comment": null}
+, {"addr": "0x4a3a98", "name": "float(0.0009765625)", "type": "float", "comment": null}
+, {"addr": "0x4a3a9c", "name": "float(0.001)", "type": "float", "comment": null}
+, {"addr": "0x4a3aa0", "name": "float(0.001953125)", "type": "float", "comment": null}
+, {"addr": "0x4a3aa4", "name": "float(0.0026179939)", "type": "float", "comment": null}
+, {"addr": "0x4a3aa8", "name": "float(0.00390625)", "type": "float", "comment": null}
+, {"addr": "0x4a3aac", "name": "float(0.0078125)", "type": "float", "comment": null}
+, {"addr": "0x4a3ab0", "name": "float(0.008333334)", "type": "float", "comment": null}
+, {"addr": "0x4a3ab4", "name": "float(0.01)", "type": "float", "comment": null}
+, {"addr": "0x4a3ab8", "name": "float(0.015625)", "type": "float", "comment": null}
+, {"addr": "0x4a3abc", "name": "float(0.025)", "type": "float", "comment": null}
+, {"addr": "0x4a3ac0", "name": "float(0.03)", "type": "float", "comment": null}
+, {"addr": "0x4a3ac4", "name": "float(0.03125)", "type": "float", "comment": null}
+, {"addr": "0x4a3ac8", "name": "float(0.033333335)", "type": "float", "comment": null}
+, {"addr": "0x4a3acc", "name": "float(0.03926991)", "type": "float", "comment": null}
+, {"addr": "0x4a3ad0", "name": "float(0.040000003)", "type": "float", "comment": null}
+, {"addr": "0x4a3ad4", "name": "float(0.049087387)", "type": "float", "comment": null}
+, {"addr": "0x4a3ad8", "name": "float(0.05)", "type": "float", "comment": null}
+, {"addr": "0x4a3adc", "name": "float(0.0625)", "type": "float", "comment": null}
+, {"addr": "0x4a3ae0", "name": "float(0.06666667)", "type": "float", "comment": null}
+, {"addr": "0x4a3ae4", "name": "float(0.08)", "type": "float", "comment": null}
+, {"addr": "0x4a3ae8", "name": "float(0.09817477)", "type": "float", "comment": null}
+, {"addr": "0x4a3aec", "name": "float(0.1)", "type": "float", "comment": null}
+, {"addr": "0x4a3af0", "name": "float(0.11111111)", "type": "float", "comment": null}
+, {"addr": "0x4a3af4", "name": "float(0.125)", "type": "float", "comment": null}
+, {"addr": "0x4a3af8", "name": "float(PI/18)", "type": "float", "comment": null}
+, {"addr": "0x4a3afc", "name": "float(0.18367349)", "type": "float", "comment": null}
+, {"addr": "0x4a3b00", "name": "float(0.19634955)", "type": "float", "comment": null}
+, {"addr": "0x4a3b04", "name": "float(0.2)", "type": "float", "comment": null}
+, {"addr": "0x4a3b08", "name": "float(0.2026834)", "type": "float", "comment": null}
+, {"addr": "0x4a3b0c", "name": "float(0.25)", "type": "float", "comment": null}
+, {"addr": "0x4a3b10", "name": "float(0.2617994)", "type": "float", "comment": null}
+, {"addr": "0x4a3b14", "name": "float(0.28994083)", "type": "float", "comment": null}
+, {"addr": "0x4a3b18", "name": "float(0.3)", "type": "float", "comment": null}
+, {"addr": "0x4a3b1c", "name": "float(0.34906584)", "type": "float", "comment": null}
+, {"addr": "0x4a3b20", "name": "float(0.35)", "type": "float", "comment": null}
+, {"addr": "0x4a3b24", "name": "float(0.36)", "type": "float", "comment": null}
+, {"addr": "0x4a3b28", "name": "float(0.37565035)", "type": "float", "comment": null}
+, {"addr": "0x4a3b2c", "name": "float(0.38)", "type": "float", "comment": null}
+, {"addr": "0x4a3b30", "name": "float(0.3844)", "type": "float", "comment": null}
+, {"addr": "0x4a3b34", "name": "float(0.3926991)", "type": "float", "comment": null}
+, {"addr": "0x4a3b38", "name": "float(0.4)", "type": "float", "comment": null}
+, {"addr": "0x4a3b3c", "name": "float(0.42249995)", "type": "float", "comment": null}
+, {"addr": "0x4a3b40", "name": "float(0.44444445)", "type": "float", "comment": null}
+, {"addr": "0x4a3b44", "name": "float(0.48999998)", "type": "float", "comment": null}
+, {"addr": "0x4a3b48", "name": "float(0.5)", "type": "float", "comment": null}
+, {"addr": "0x4a3b4c", "name": "float(0.5235988)", "type": "float", "comment": null}
+, {"addr": "0x4a3b50", "name": "float(0.5555556)", "type": "float", "comment": null}
+, {"addr": "0x4a3b54", "name": "float(0.5625)", "type": "float", "comment": null}
+, {"addr": "0x4a3b58", "name": "float(0.62434965)", "type": "float", "comment": null}
+, {"addr": "0x4a3b5c", "name": "float(0.6632251)", "type": "float", "comment": null}
+, {"addr": "0x4a3b60", "name": "float(0.668424)", "type": "float", "comment": null}
+, {"addr": "0x4a3b64", "name": "float(0.69813174)", "type": "float", "comment": null}
+, {"addr": "0x4a3b68", "name": "float(0.7)", "type": "float", "comment": null}
+, {"addr": "0x4a3b6c", "name": "float(0.71005917)", "type": "float", "comment": null}
+, {"addr": "0x4a3b70", "name": "float(0.75)", "type": "float", "comment": null}
+, {"addr": "0x4a3b74", "name": "float(0.7853982)", "type": "float", "comment": null}
+, {"addr": "0x4a3b78", "name": "float(0.8)", "type": "float", "comment": null}
+, {"addr": "0x4a3b7c", "name": "float(0.8163265)", "type": "float", "comment": null}
+, {"addr": "0x4a3b80", "name": "float(0.8726647)", "type": "float", "comment": null}
+, {"addr": "0x4a3b84", "name": "float(0.8888889)", "type": "float", "comment": null}
+, {"addr": "0x4a3b88", "name": "float(0.9)", "type": "float", "comment": null}
+, {"addr": "0x4a3b8c", "name": "float(0.9075712)", "type": "float", "comment": null}
+, {"addr": "0x4a3b90", "name": "float(0.95)", "type": "float", "comment": null}
+, {"addr": "0x4a3b94", "name": "float(0.96)", "type": "float", "comment": null}
+, {"addr": "0x4a3b98", "name": "float(0.99)", "type": "float", "comment": null}
+, {"addr": "0x4a3b9c", "name": "float(1)", "type": "float", "comment": null}
+, {"addr": "0x4a3ba0", "name": "double(0.00835)", "type": "double", "comment": null}
+, {"addr": "0x4a3ba8", "name": "float(1.01)", "type": "float", "comment": null}
+, {"addr": "0x4a3bac", "name": "float(1.0471976)", "type": "float", "comment": null}
+, {"addr": "0x4a3bd0", "name": "float(1.2)", "type": "float", "comment": null}
+, {"addr": "0x4a3bd4", "name": "float(1.2217305)", "type": "float", "comment": null}
+, {"addr": "0x4a3be0", "name": "float(1.4959966)", "type": "float", "comment": null}
+, {"addr": "0x4a3be4", "name": "float(1.5)", "type": "float", "comment": null}
+, {"addr": "0x4a3bf0", "name": "float(1.5207964)", "type": "float", "comment": null}
+, {"addr": "0x4a3bf4", "name": "float(0.5*PI)", "type": "float", "comment": null}
+, {"addr": "0x4a3bf8", "name": "float(1.6207963)", "type": "float", "comment": null}
+, {"addr": "0x4a3c18", "name": "float(2)", "type": "float", "comment": null}
+, {"addr": "0x4a3c1c", "name": "float(2.0071287)", "type": "float", "comment": null}
+, {"addr": "0x4a3c28", "name": "float(2.0943952)", "type": "float", "comment": null}
+, {"addr": "0x4a3c38", "name": "float(2.2340217)", "type": "float", "comment": null}
+, {"addr": "0x4a3c3c", "name": "float(2.3561945)", "type": "float", "comment": null}
+, {"addr": "0x4a3c40", "name": "float(2.4783676)", "type": "float", "comment": null}
+, {"addr": "0x4a3c44", "name": "float(2.5)", "type": "float", "comment": null}
+, {"addr": "0x4a3c50", "name": "float(2.6179938)", "type": "float", "comment": null}
+, {"addr": "0x4a3c54", "name": "float(2.792527)", "type": "float", "comment": null}
+, {"addr": "0x4a3c58", "name": "float(3)", "type": "float", "comment": null}
+, {"addr": "0x4a3c5c", "name": "float(PI)", "type": "float", "comment": null}
+, {"addr": "0x4a3c70", "name": "float(3.6)", "type": "float", "comment": null}
+, {"addr": "0x4a3c74", "name": "float(3.6651917)", "type": "float", "comment": null}
+, {"addr": "0x4a3c78", "name": "float(3.804818)", "type": "float", "comment": null}
+, {"addr": "0x4a3c7c", "name": "float(3.883222)", "type": "float", "comment": null}
+, {"addr": "0x4a3c80", "name": "float(3.926991)", "type": "float", "comment": null}
+, {"addr": "0x4a3c84", "name": "float(4)", "type": "float", "comment": null}
+, {"addr": "0x4a3c88", "name": "float(4.049164)", "type": "float", "comment": null}
+, {"addr": "0x4a3c8c", "name": "float(4.1887903)", "type": "float", "comment": null}
+, {"addr": "0x4a3c98", "name": "float(5)", "type": "float", "comment": null}
+, {"addr": "0x4a3c9c", "name": "float(6)", "type": "float", "comment": null}
+, {"addr": "0x4a3ca0", "name": "float(2*PI)", "type": "float", "comment": null}
+, {"addr": "0x4a3ca4", "name": "float(7)", "type": "float", "comment": null}
+, {"addr": "0x4a3ca8", "name": "float(8)", "type": "float", "comment": null}
+, {"addr": "0x4a3cac", "name": "float(9)", "type": "float", "comment": null}
+, {"addr": "0x4a3cb0", "name": "float(9.424778)", "type": "float", "comment": null}
+, {"addr": "0x4a3cb4", "name": "float(10)", "type": "float", "comment": null}
+, {"addr": "0x4a3cb8", "name": "float(11)", "type": "float", "comment": null}
+, {"addr": "0x4a3cbc", "name": "float(12)", "type": "float", "comment": null}
+, {"addr": "0x4a3cc0", "name": "float(14)", "type": "float", "comment": null}
+, {"addr": "0x4a3cc4", "name": "float(15)", "type": "float", "comment": null}
+, {"addr": "0x4a3cc8", "name": "float(16)", "type": "float", "comment": null}
+, {"addr": "0x4a3ccc", "name": "float(18)", "type": "float", "comment": null}
+, {"addr": "0x4a3cd0", "name": "float(20)", "type": "float", "comment": null}
+, {"addr": "0x4a3cd4", "name": "float(21)", "type": "float", "comment": null}
+, {"addr": "0x4a3cd8", "name": "float(24)", "type": "float", "comment": null}
+, {"addr": "0x4a3cdc", "name": "float(26)", "type": "float", "comment": null}
+, {"addr": "0x4a3ce0", "name": "float(28)", "type": "float", "comment": null}
+, {"addr": "0x4a3ce4", "name": "float(30)", "type": "float", "comment": null}
+, {"addr": "0x4a3ce8", "name": "float(32)", "type": "float", "comment": null}
+, {"addr": "0x4a3cec", "name": "float(34)", "type": "float", "comment": null}
+, {"addr": "0x4a3cf0", "name": "float(36)", "type": "float", "comment": null}
+, {"addr": "0x4a3cf4", "name": "float(38)", "type": "float", "comment": null}
+, {"addr": "0x4a3cf8", "name": "float(40)", "type": "float", "comment": null}
+, {"addr": "0x4a3cfc", "name": "float(44)", "type": "float", "comment": null}
+, {"addr": "0x4a3d00", "name": "float(48)", "type": "float", "comment": null}
+, {"addr": "0x4a3d04", "name": "float(50)", "type": "float", "comment": null}
+, {"addr": "0x4a3d08", "name": "float(56)", "type": "float", "comment": null}
+, {"addr": "0x4a3d0c", "name": "float(57)", "type": "float", "comment": null}
+, {"addr": "0x4a3d10", "name": "float(58)", "type": "float", "comment": null}
+, {"addr": "0x4a3d14", "name": "float(60)", "type": "float", "comment": null}
+, {"addr": "0x4a3d18", "name": "float(64)", "type": "float", "comment": null}
+, {"addr": "0x4a3d1c", "name": "float(65)", "type": "float", "comment": null}
+, {"addr": "0x4a3d20", "name": "float(70)", "type": "float", "comment": null}
+, {"addr": "0x4a3d24", "name": "float(80)", "type": "float", "comment": null}
+, {"addr": "0x4a3d28", "name": "float(90)", "type": "float", "comment": null}
+, {"addr": "0x4a3d2c", "name": "float(96)", "type": "float", "comment": null}
+, {"addr": "0x4a3d30", "name": "float(100)", "type": "float", "comment": null}
+, {"addr": "0x4a3d34", "name": "float(112)", "type": "float", "comment": null}
+, {"addr": "0x4a3d38", "name": "float(128)", "type": "float", "comment": null}
+, {"addr": "0x4a3d3c", "name": "float(130)", "type": "float", "comment": null}
+, {"addr": "0x4a3d40", "name": "float(150)", "type": "float", "comment": null}
+, {"addr": "0x4a3d44", "name": "float(160)", "type": "float", "comment": null}
+, {"addr": "0x4a3d48", "name": "float(180)", "type": "float", "comment": null}
+, {"addr": "0x4a3d4c", "name": "float(191)", "type": "float", "comment": null}
+, {"addr": "0x4a3d50", "name": "float(192)", "type": "float", "comment": null}
+, {"addr": "0x4a3d54", "name": "float(200)", "type": "float", "comment": null}
+, {"addr": "0x4a3d58", "name": "float(208)", "type": "float", "comment": null}
+, {"addr": "0x4a3d5c", "name": "float(212)", "type": "float", "comment": null}
+, {"addr": "0x4a3d60", "name": "float(224)", "type": "float", "comment": null}
+, {"addr": "0x4a3d64", "name": "float(240)", "type": "float", "comment": null}
+, {"addr": "0x4a3d68", "name": "float(255)", "type": "float", "comment": null}
+, {"addr": "0x4a3d6c", "name": "float(256)", "type": "float", "comment": null}
+, {"addr": "0x4a3d70", "name": "float(260)", "type": "float", "comment": null}
+, {"addr": "0x4a3d74", "name": "float(288)", "type": "float", "comment": null}
+, {"addr": "0x4a3d78", "name": "float(300)", "type": "float", "comment": null}
+, {"addr": "0x4a3d7c", "name": "float(320)", "type": "float", "comment": null}
+, {"addr": "0x4a3d80", "name": "float(352)", "type": "float", "comment": null}
+, {"addr": "0x4a3d84", "name": "float(360)", "type": "float", "comment": null}
+, {"addr": "0x4a3d88", "name": "float(384)", "type": "float", "comment": null}
+, {"addr": "0x4a3d8c", "name": "float(392)", "type": "float", "comment": null}
+, {"addr": "0x4a3d90", "name": "float(400)", "type": "float", "comment": null}
+, {"addr": "0x4a3d94", "name": "float(408)", "type": "float", "comment": null}
+, {"addr": "0x4a3d98", "name": "float(416)", "type": "float", "comment": null}
+, {"addr": "0x4a3d9c", "name": "float(448)", "type": "float", "comment": null}
+, {"addr": "0x4a3da0", "name": "float(464)", "type": "float", "comment": null}
+, {"addr": "0x4a3da4", "name": "float(472)", "type": "float", "comment": null}
+, {"addr": "0x4a3da8", "name": "float(480)", "type": "float", "comment": null}
+, {"addr": "0x4a3dac", "name": "float(512)", "type": "float", "comment": null}
+, {"addr": "0x4a3db0", "name": "float(576)", "type": "float", "comment": null}
+, {"addr": "0x4a3db4", "name": "float(640)", "type": "float", "comment": null}
+, {"addr": "0x4a3db8", "name": "float(800)", "type": "float", "comment": null}
+, {"addr": "0x4a3dbc", "name": "float(990)", "type": "float", "comment": null}
+, {"addr": "0x4a3dc0", "name": "float(995)", "type": "float", "comment": null}
+, {"addr": "0x4a3dc4", "name": "float(999)", "type": "float", "comment": null}
+, {"addr": "0x4a3dc8", "name": "float(1000)", "type": "float", "comment": null}
+, {"addr": "0x4a3dcc", "name": "float(1024)", "type": "float", "comment": null}
+, {"addr": "0x4a3dd0", "name": "float(3072)", "type": "float", "comment": null}
+, {"addr": "0x4a3dd4", "name": "float(3600)", "type": "float", "comment": null}
+, {"addr": "0x4a3dd8", "name": "float(6400)", "type": "float", "comment": null}
+, {"addr": "0x4a3ddc", "name": "float(9216)", "type": "float", "comment": null}
+, {"addr": "0x4a3de0", "name": "float(999990)", "type": "float", "comment": null}
+, {"addr": "0x4a3de4", "name": "float(9999990)", "type": "float", "comment": null}
+, {"addr": "0x4a3dec", "name": "float(-0.005)", "type": "float", "comment": null}
+, {"addr": "0x4a3df0", "name": "float(-0.01)", "type": "float", "comment": null}
+, {"addr": "0x4a3df4", "name": "float(-0.03)", "type": "float", "comment": null}
+, {"addr": "0x4a3df8", "name": "float(-0.06666667)", "type": "float", "comment": null}
+, {"addr": "0x4a3dfc", "name": "float(-0.1)", "type": "float", "comment": null}
+, {"addr": "0x4a3e00", "name": "float(-0.3)", "type": "float", "comment": null}
+, {"addr": "0x4a3e04", "name": "float(-0.34906584)", "type": "float", "comment": null}
+, {"addr": "0x4a3e08", "name": "float(-0.5)", "type": "float", "comment": null}
+, {"addr": "0x4a3e0c", "name": "float(-0.5235988)", "type": "float", "comment": null}
+, {"addr": "0x4a3e10", "name": "float(-0.6632251)", "type": "float", "comment": null}
+, {"addr": "0x4a3e14", "name": "float(-0.7853982)", "type": "float", "comment": null}
+, {"addr": "0x4a3e18", "name": "float(-0.9075712)", "type": "float", "comment": null}
+, {"addr": "0x4a3e1c", "name": "float(-1)", "type": "float", "comment": null}
+, {"addr": "0x4a3e20", "name": "float(-1.0471976)", "type": "float", "comment": null}
+, {"addr": "0x4a3e24", "name": "float(-1.134464)", "type": "float", "comment": null}
+, {"addr": "0x4a3e28", "name": "float(-1.2217305)", "type": "float", "comment": null}
+, {"addr": "0x4a3e2c", "name": "float(-1.5207964)", "type": "float", "comment": null}
+, {"addr": "0x4a3e30", "name": "float(-1.5707964)", "type": "float", "comment": null}
+, {"addr": "0x4a3e34", "name": "float(-1.6207963)", "type": "float", "comment": null}
+, {"addr": "0x4a3e38", "name": "float(-1.9198623)", "type": "float", "comment": null}
+, {"addr": "0x4a3e3c", "name": "float(-2)", "type": "float", "comment": null}
+, {"addr": "0x4a3e40", "name": "float(-2.268928)", "type": "float", "comment": null}
+, {"addr": "0x4a3e44", "name": "float(-2.6179938)", "type": "float", "comment": null}
+, {"addr": "0x4a3e48", "name": "float(-2.792527)", "type": "float", "comment": null}
+, {"addr": "0x4a3e4c", "name": "float(-PI)", "type": "float", "comment": null}
+, {"addr": "0x4a3e50", "name": "float(-4)", "type": "float", "comment": null}
+, {"addr": "0x4a3e54", "name": "float(-5)", "type": "float", "comment": null}
+, {"addr": "0x4a3e58", "name": "float(-6.2831855)", "type": "float", "comment": null}
+, {"addr": "0x4a3e5c", "name": "float(-8)", "type": "float", "comment": null}
+, {"addr": "0x4a3e70", "name": "float(-15)", "type": "float", "comment": null}
+, {"addr": "0x4a3e74", "name": "float(-50)", "type": "float", "comment": null}
+, {"addr": "0x4a3e78", "name": "float(-64)", "type": "float", "comment": null}
+, {"addr": "0x4a3e7c", "name": "float(-80)", "type": "float", "comment": null}
+, {"addr": "0x4a3e80", "name": "float(-100)", "type": "float", "comment": null}
+, {"addr": "0x4a3e84", "name": "float(-128)", "type": "float", "comment": null}
+, {"addr": "0x4a3e88", "name": "float(-160)", "type": "float", "comment": null}
+, {"addr": "0x4a3e8c", "name": "float(-180)", "type": "float", "comment": null}
+, {"addr": "0x4a3e90", "name": "float(-192)", "type": "float", "comment": null}
+, {"addr": "0x4a3e94", "name": "float(-256)", "type": "float", "comment": null}
+, {"addr": "0x4a3e98", "name": "float(-384)", "type": "float", "comment": null}
+, {"addr": "0x4a3e9c", "name": "float(-990)", "type": "float", "comment": null}
+, {"addr": "0x4a3ea0", "name": "float(-998)", "type": "float", "comment": null}
+, {"addr": "0x4a3ea4", "name": "float(-999)", "type": "float", "comment": null}
+, {"addr": "0x4a3ea8", "name": "float(-5000)", "type": "float", "comment": null}
+, {"addr": "0x4a3eac", "name": "float(-999990)", "type": "float", "comment": null}
+, {"addr": "0x4a9740", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table [1]", "comment": null}
+, {"addr": "0x4a9760", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4a9804", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
+, {"addr": "0x4aea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4b23e4", "name": "IS_ACHIEVEMENT_MODE", "type": "int32_t", "comment": null}
+, {"addr": "0x4b3230", "name": "INPUT_STRUCT", "type": "struct zInput", "comment": null}
+, {"addr": "0x4b5918", "name": "GAME_SPEED", "type": "float", "comment": null}
+, {"addr": "0x4b5920", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data [5]", "comment": null}
+, {"addr": "0x4b59c0", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Okay, so I have to choose between type inference or being able\nto comment each global individually.  Thanks, Binary Ninja.\n\n- FLAGS: Bits 4 and 5 indicate whether this is spell practice or stage practice."}
+, {"addr": "0x4b5aa4", "name": "HYPER_TIMER", "type": "struct zTime", "comment": null}
+, {"addr": "0x4b5ac4", "name": "data_4b5ac4_has_hyperdying_flag", "type": "int32_t", "comment": null}
+, {"addr": "0x4b5ae0", "name": "data_4b5ae0__begin_struct", "type": "int32_t", "comment": null}
+, {"addr": "0x4b61d0", "name": "GAMEMODE_CURRENT", "type": "int32_t", "comment": null}
+, {"addr": "0x4b61d4", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
+, {"addr": "0x4b7660", "name": "REPLAY_UNSAFE_RNG", "type": "int64_t", "comment": null}
+, {"addr": "0x4b7668", "name": "REPLAY_SAFE_RNG", "type": "int64_t", "comment": null}
+, {"addr": "0x4b7674", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
+, {"addr": "0x4b7684", "name": "TOKEN_MANAGER_PTR", "type": "struct zGoastManager*", "comment": null}
+, {"addr": "0x4b7688", "name": "SHOTTYPE_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b768c", "name": "ET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4b7690", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
+, {"addr": "0x4b7698", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
+, {"addr": "0x4b769c", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
+, {"addr": "0x4b76a0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4b76a8", "name": "GLOBAL_38_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b76ac", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
+, {"addr": "0x4b76b0", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
+, {"addr": "0x4b76b4", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
+, {"addr": "0x4b76b8", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
+, {"addr": "0x4b76bc", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
+, {"addr": "0x4b76c0", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4b77c0", "name": "GLOBAL_640_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b77cc", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
+, {"addr": "0x4b77d0", "name": "PLAYER_STRUCT_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4b77d4", "name": "SHT_FUNCS_2", "type": "void", "comment": null}
+, {"addr": "0x4b77e0", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
+, {"addr": "0x4b77f0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x507a1c", "name": "ANM_ON_WAIT_FUNCS", "type": "void", "comment": null}
+, {"addr": "0x509a20", "name": "ANM_STRUCT_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x509a30", "name": "CRIT_SECTION__UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x509aa8", "name": "CRITICAL_SECTION_509aa8", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x529f20", "name": "RENDERING_QUADRILATERAL_529f20", "type": "struct zRenderSpriteVertex [4]", "comment": null}
+, {"addr": "0x52a920", "name": "KEY_STATES", "type": "uint8_t [256]", "comment": null}
+]
