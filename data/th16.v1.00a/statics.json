@@ -39,7 +39,7 @@
 , {"addr": "0x491d94", "name": "VTABLE_BOMB_SUMMER", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491db0", "name": "VTABLE_BOMB_WINTER", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491dcc", "name": "VTABLE_BOMB_SPRING", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491de8", "name": "VTABLE_SHOTTYPE_AYA", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x491de8", "name": "VTABLE_BOMB_AYA", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491e04", "name": "VTABLE_BOMB_CIRNO", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491e20", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491e3c", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
@@ -349,11 +349,11 @@
 , {"addr": "0x4a6d80", "name": "REPLAY_UNSAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4a6d88", "name": "REPLAY_SAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4a6d94", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
-, {"addr": "0x4a6d98", "name": "ASCII_INF_PTR", "type": "struct zAsciiInf*", "comment": null}
+, {"addr": "0x4a6d98", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiInf*", "comment": null}
 , {"addr": "0x4a6d9c", "name": "ANOTHER_STAGE_PTR???", "type": "struct zStage*", "comment": "All I know so far is that the same destructor is called on this pointer as the other stage pointer.\n\nMaybe this one exists for stage transitions."}
 , {"addr": "0x4a6da0", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
-, {"addr": "0x4a6da4", "name": "SUBSEASON_SHOTTYPE_PTR", "type": "struct zBomb*", "comment": null}
-, {"addr": "0x4a6da8", "name": "MAIN_SHOTTYPE_PTR", "type": "struct zBomb*", "comment": null}
+, {"addr": "0x4a6da4", "name": "SUBSEASON_BOMB_PTR", "type": "struct zBomb*", "comment": null}
+, {"addr": "0x4a6da8", "name": "MAIN_BOMB_PTR", "type": "struct zBomb*", "comment": null}
 , {"addr": "0x4a6dac", "name": "ET_OBJECT_PTR", "type": "struct zBulletManager*", "comment": null}
 , {"addr": "0x4a6db0", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4a6db8", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": "This type has almost no responsibilities.  99% of code accessing it is only using it to get the AnmLoaded for effect.anm.\n\nIn TH15-17, it is 0x2020 bytes large and holds an array of Anm IDs.  I think this array holds IDs for player bullet splash animations, as well as enemy death, and possibly anything that uses anmPlay.  Why? I don't have a clue. At first I suspected that maybe it is to give these anms a chance to run special cleanup callbacks when the game is closed, but the TH16 destructor does not iterate over these ids...  (it just loops over all ANMs period, setting flags on everything from bullet.anm and effect.anm)\n\nPrior to TH15, things get even weirder.  This type did exist in TH13 and TH14, but it was only 0x2c bytes. In TH14, I found only a SINGLE function that uses this pointer for some purpose other than getting effect.anm.  I set a breakpoint on that function, and found that it was triggered every time a boss made one of those dark blobby spiral-in effects they do when teleporting or charging spells.\n\nThat function has paths that write to an array at this+0x1c, but TH14 never enters those paths.  So I have basically no clue at all why this type exists in TH14. a\n"}
@@ -369,7 +369,7 @@
 , {"addr": "0x4a6ee0", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
 , {"addr": "0x4a6ee4", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
 , {"addr": "0x4a6ef4", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
-, {"addr": "0x4a6ef8", "name": "PLAYER_STRUCT_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4a6ef8", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4a6f04", "name": "SHT_SHOOTER_30_TABLE", "type": "void", "comment": null}
 , {"addr": "0x4a6f08", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x4a6f0c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}

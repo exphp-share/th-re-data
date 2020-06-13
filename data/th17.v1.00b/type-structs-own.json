@@ -1139,6 +1139,11 @@
   , ["0x10", "__end", null]
   ]
 
+, "zTrophyManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x244", "__end", null]
+  ]
+
 , "zUpdateFunc": 
   [ ["0x0", "priority__(lowest_goes_first)", "int32_t"]
   , ["0x4", "flags", "int32_t"]
@@ -1166,9 +1171,9 @@
   , ["0x54", "__end", null]
   ]
 
-, "zVTableShotType": 
-  [ ["0x0", "begin_bomb", "void*"]
-  , ["0x4", "on_tick_bomb", "void*"]
+, "zVTableBomb": 
+  [ ["0x0", "begin", "void*"]
+  , ["0x4", "on_tick", "void*"]
   , ["0x8", "on_draw", "void*"]
   , ["0xc", "method_c_2arg_always_returns_0", "void*"]
   , ["0x10", "method_10__called_by_method_4", "void*"]

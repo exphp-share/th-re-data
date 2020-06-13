@@ -381,10 +381,10 @@
 , {"addr": "0x45a3fd", "name": "AnmManager::sub_45a3fd", "comment": null}
 , {"addr": "0x45b000", "name": "ScreenEffect::constructor", "comment": null}
 , {"addr": "0x45b8b0", "name": "ScreenEffect::operator new", "comment": null}
-, {"addr": "0x45c0e0", "name": "ScreenEffect::on_register", "comment": null}
+, {"addr": "0x45c0e0", "name": "ScreenEffect::on_registration", "comment": null}
 , {"addr": "0x45c100", "name": "ScreenEffect::on_cleanup", "comment": null}
 , {"addr": "0x45d550", "name": "SoundManager::play_sound_centered", "comment": null}
-, {"addr": "0x45d660", "name": "SoundManager::play_sound_at_x_pos", "comment": null}
+, {"addr": "0x45d660", "name": "SoundManager::play_sound_at_position", "comment": null}
 , {"addr": "0x45d790", "name": "SoundManager::update_sound_thread", "comment": null}
 , {"addr": "0x45e1e0", "name": "SoundManager::modify_bgm", "comment": null}
 , {"addr": "0x45e320", "name": "SoundManager::constructor", "comment": null}

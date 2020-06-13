@@ -145,7 +145,7 @@
 , {"addr": "0x42f000", "name": "Supervisor::on_tick", "comment": null}
 , {"addr": "0x42f560", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x430500", "name": "create_game_thread", "comment": null}
-, {"addr": "0x4311e0", "name": "switch_gamemodes", "comment": null}
+, {"addr": "0x4311e0", "name": "Supervisor::switch_gamemodes", "comment": null}
 , {"addr": "0x431d00", "name": "PauseMenu::constructor", "comment": null}
 , {"addr": "0x431d70", "name": "PauseMenu::initialize", "comment": null}
 , {"addr": "0x431ed0", "name": "PauseMenu::destructor", "comment": null}
@@ -230,7 +230,7 @@
 , {"addr": "0x454d10", "name": "AnmLoaded::load_script_into_vm", "comment": null}
 , {"addr": "0x455630", "name": "AnmVm::run", "comment": null}
 , {"addr": "0x45dfa0", "name": "AnmManager::initialize", "comment": null}
-, {"addr": "0x45fe60", "name": "anm_preload", "comment": null}
+, {"addr": "0x45fe60", "name": "AnmManager::preload_anm", "comment": null}
 , {"addr": "0x460c30", "name": "AnmManager::on_tick_1b__stub", "comment": null}
 , {"addr": "0x460c40", "name": "AnmManager::on_tick_08__stub", "comment": null}
 , {"addr": "0x460fe0", "name": "AnmManager::on_tick_1b", "comment": null}

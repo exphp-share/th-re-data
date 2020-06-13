@@ -177,7 +177,7 @@
 , {"addr": "0x451720", "name": "ScreenEffect::operator new", "comment": null}
 , {"addr": "0x4517d0", "name": "ScreenEffect::initialize", "comment": null}
 , {"addr": "0x45d1b0", "name": "AnmManager::initialize", "comment": null}
-, {"addr": "0x45efb0", "name": "anm_preload", "comment": null}
+, {"addr": "0x45efb0", "name": "AnmManager::preload_anm", "comment": null}
 , {"addr": "0x45fd80", "name": "AnmManager::on_tick_1d", "comment": null}
 , {"addr": "0x45fdb0", "name": "AnmManager::on_tick_08__stub", "comment": null}
 , {"addr": "0x4602d0", "name": "AnmManager::on_tick_08", "comment": null}

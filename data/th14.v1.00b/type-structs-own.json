@@ -176,10 +176,10 @@
   , ["0x58", "__end", null]
   ]
 
-, "zVTableShotType": 
-  [ ["0x0", "method_0", "void*"]
-  , ["0x4", "method_4", "void*"]
-  , ["0x8", "method_8", "void*"]
+, "zVTableBomb": 
+  [ ["0x0", "begin", "void*"]
+  , ["0x4", "on_tick", "void*"]
+  , ["0x8", "on_draw", "void*"]
   , ["0xc", "method_c", "void*"]
   , ["0x10", "method_10", "void*"]
   , ["0x14", "method_14", "void*"]

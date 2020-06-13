@@ -6,11 +6,11 @@
 , {"addr": "0x4caf58", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[9]", "comment": null}
 , {"addr": "0x4cb4c8", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[4]", "comment": null}
 , {"addr": "0x4cb5e4", "name": "VTABLE_DELETE_THREAD", "type": "struct zVTableDelete", "comment": null}
-, {"addr": "0x4cb9d4", "name": "VTABLE_SHOTTYPE_REISEN", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x4cba00", "name": "VTABLE_SHOTTYPE_SANAE", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x4cba2c", "name": "VTABLE_SHOTTYPE_MARISA", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x4cba58", "name": "VTABLE_SHOTTYPE_REIMU", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x4cba84", "name": "VTABLE_SHOTTYPE_DEFAULT", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4cb9d4", "name": "VTABLE_BOMB_REISEN", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4cba00", "name": "VTABLE_BOMB_SANAE", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4cba2c", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4cba58", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4cba84", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4cc2e8", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
 , {"addr": "0x4cc304", "name": "VTABLE_ECL_DEFAULT", "type": "struct zVTableEcl", "comment": null}
 , {"addr": "0x4cfd7c", "name": "float(0)", "type": "float", "comment": null}

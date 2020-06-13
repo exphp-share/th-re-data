@@ -177,7 +177,7 @@
 , {"addr": "0x43dc90", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x43e460", "name": "SoundManager::modify_bgm", "comment": null}
 , {"addr": "0x445900", "name": "AnmManager::initialize", "comment": null}
-, {"addr": "0x447280", "name": "anm_preload", "comment": null}
+, {"addr": "0x447280", "name": "AnmManager::preload_anm", "comment": null}
 , {"addr": "0x448270", "name": "PauseMenu::grab_screenshot_for_blur", "comment": null}
 , {"addr": "0x4485d0", "name": "AnmManager::on_tick_1a__stub", "comment": null}
 , {"addr": "0x4485e0", "name": "AnmManager::on_tick_08__stub", "comment": null}

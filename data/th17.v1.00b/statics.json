@@ -16,10 +16,10 @@
 , {"addr": "0x4a1174", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[4]", "comment": null}
 , {"addr": "0x4a1184", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[8]", "comment": null}
 , {"addr": "0x4a11a4", "name": "ANM_ON_DESTROY_FUNCS", "type": "void*[5]", "comment": null}
-, {"addr": "0x4a13e4", "name": "VTABLE_SHOTTYPE_YOUMU", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x4a1400", "name": "VTABLE_SHOTTYPE_MARISA", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x4a141c", "name": "VTABLE_SHOTTYPE_REIMU", "type": "struct zVTableShotType", "comment": null}
-, {"addr": "0x4a1438", "name": "VTABLE_SHOTTYPE_DEFAULT", "type": "struct zVTableShotType", "comment": null}
+, {"addr": "0x4a13e4", "name": "VTABLE_BOMB_YOUMU", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4a1400", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4a141c", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4a1438", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4a1680", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[6]", "comment": null}
 , {"addr": "0x4a17e0", "name": "VTABLE_LASER_CURVE", "type": "void*[26]", "comment": null}
 , {"addr": "0x4a184c", "name": "VTABLE_LASER_BEAM", "type": "void*[26]", "comment": null}
@@ -266,13 +266,17 @@
 , {"addr": "0x4b5aa4", "name": "HYPER_TIMER", "type": "struct zTime", "comment": null}
 , {"addr": "0x4b5ac4", "name": "data_4b5ac4_has_hyperdying_flag", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5ae0", "name": "data_4b5ae0__begin_struct", "type": "int32_t", "comment": null}
+, {"addr": "0x4b5c9c", "name": "GLOBAL_600_4b5c9c", "type": "int32_t", "comment": null}
+, {"addr": "0x4b5ca0", "name": "GLOBAL_600_4b5ca0", "type": "int32_t", "comment": null}
+, {"addr": "0x4b5ca4", "name": "GLOBAL_600_4b5ca4", "type": "int32_t", "comment": null}
+, {"addr": "0x4b5ca8", "name": "GLOBAL_600_4b5ca8", "type": "int32_t", "comment": null}
 , {"addr": "0x4b61d0", "name": "GAMEMODE_CURRENT", "type": "int32_t", "comment": null}
 , {"addr": "0x4b61d4", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
 , {"addr": "0x4b7660", "name": "REPLAY_UNSAFE_RNG", "type": "int64_t", "comment": null}
 , {"addr": "0x4b7668", "name": "REPLAY_SAFE_RNG", "type": "int64_t", "comment": null}
 , {"addr": "0x4b7674", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
 , {"addr": "0x4b7684", "name": "TOKEN_MANAGER_PTR", "type": "struct zGoastManager*", "comment": null}
-, {"addr": "0x4b7688", "name": "SHOTTYPE_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b7688", "name": "BOMB_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4b768c", "name": "ET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
 , {"addr": "0x4b7690", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4b7698", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
@@ -287,12 +291,12 @@
 , {"addr": "0x4b76c0", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
 , {"addr": "0x4b77c0", "name": "GLOBAL_640_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4b77cc", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
-, {"addr": "0x4b77d0", "name": "PLAYER_STRUCT_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4b77d0", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4b77d4", "name": "SHT_FUNCS_2", "type": "void", "comment": null}
 , {"addr": "0x4b77e0", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4b77f0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x507a1c", "name": "ANM_ON_WAIT_FUNCS", "type": "void", "comment": null}
-, {"addr": "0x509a20", "name": "ANM_STRUCT_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x509a20", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x509a30", "name": "CRIT_SECTION__UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x509aa8", "name": "CRITICAL_SECTION_509aa8", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x529f20", "name": "RENDERING_QUADRILATERAL_529f20", "type": "struct zRenderSpriteVertex [4]", "comment": null}

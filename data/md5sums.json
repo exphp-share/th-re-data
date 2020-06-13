@@ -2,105 +2,108 @@
   { "bndb": "1baed8ff4700382373e08343a93b7e54"
   , "funcs.json": "4c7e88203d93b804251bba1c7cace352"
   , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
+  , "statics.json": "35d0e0b801444bb1f4c2115720f8e4f6"
   , "type-structs-own.json": "c443b04d0fc26b0a5a4573a78e0082a1"
   }
 
 , "th08.v1.00d": 
-  { "bndb": "5c3c98fe4cba80fafe8101cec4d6f700"
-  , "funcs.json": "5729674b42b2fbf91d16a2a8385cb5c2"
-  , "labels.json": "351491497b64c1ab8fe476e2626dfb52"
-  , "type-structs-own.json": "ab94183f28db993567aa108c7cacfd00"
+  { "bndb": "1d559955ff2ebca64b218dec176ba10c"
+  , "funcs.json": "16431a23e6c2710ce49b88fdf55f0c50"
+  , "statics.json": "4bacfee4c68d4c3a499c2f6c2d03e659"
   }
 
 , "th09.v1.50a": 
-  { "bndb": "ce4302e01a883fe2327ac1b47c6818bb"
-  , "funcs.json": "d8f848894fbdd18dc986466a13188134"
-  , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
-  , "type-structs-own.json": "c443b04d0fc26b0a5a4573a78e0082a1"
+  { "bndb": "c86dd04b7ecc8432a837ee53c07db059"
+  , "funcs.json": "467b73de62fc0cb14e8251b77ffa442c"
+  , "statics.json": "35d0e0b801444bb1f4c2115720f8e4f6"
   }
 
 , "th095.v1.02a": 
   { "bndb": "e7d0a68f332270dce6f468a53e2b30c2"
   , "funcs.json": "648e215921d9218d4e434f61d0083e0d"
   , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
+  , "statics.json": "35d0e0b801444bb1f4c2115720f8e4f6"
   , "type-structs-own.json": "c443b04d0fc26b0a5a4573a78e0082a1"
   }
 
 , "th10.v1.00a": 
-  { "bndb": "91a48d5563b46a1869f78a06f0364836"
-  , "funcs.json": "e4c57ac58d0928c3a845add54fc50535"
-  , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
-  , "type-structs-own.json": "43405b2983574de66612c692d1546609"
+  { "bndb": "86ac89da88bbe50126fc7e17ee2834c1"
+  , "funcs.json": "ad5f5166734f94915efc8934aa47bbb0"
+  , "statics.json": "823567f29db88fea12b6d5ee77ec0a55"
   }
 
 , "th11.v1.00a": 
-  { "bndb": "384848e49f5419b434a37ea687942faf"
-  , "funcs.json": "7bd6655cff0859773fc827b35313325c"
-  , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
-  , "type-structs-own.json": "1779202df5f05f1fec19f6246f818af0"
+  { "bndb": "7a04c3484903a155f4f0420040ba6062"
+  , "funcs.json": "257e8751336d313b3860ad98918433e0"
+  , "statics.json": "9450ef1eb8b2c94c40729fff2f78edac"
   }
 
 , "th12.v1.00b": 
-  { "bndb": "cea20f9ed3844b8b8f15ae7fd484e77f"
-  , "funcs.json": "934e0722abaec47c34df7ab2e93862ce"
-  , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
-  , "type-structs-own.json": "14f6d997aa4f9cf08ce2afd373db09d1"
+  { "bndb": "173965963a198f4a1b61463587819b82"
+  , "funcs.json": "4c792de3fa0cedbb73b1e73237c175b4"
+  , "statics.json": "f737c3e17d744d11eff2b89f53ed63d0"
   }
 
 , "th125.v1.00a": 
-  { "bndb": "d736aad65e140a870f124984dc72b669"
-  , "funcs.json": "509e7f475ccb7c75b3dc303ed9d67062"
-  , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
-  , "type-structs-own.json": "d13f521fa92b0b0ed4a63aa1310ff349"
+  { "bndb": "9835cc08e85c95eec6d822f1bf82e9bc"
+  , "funcs.json": "01c31b021679d67ee4c18e0ec7fe60bb"
+  , "statics.json": "edd58aaadba97b90f7ef2e808803af51"
   }
 
 , "th128.v1.00a": 
   { "bndb": "0ec0db06cc03dab1e9ef19dce761ae10"
   , "funcs.json": "e041f70eb2f4b461daa5a8e43e28d726"
   , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
+  , "statics.json": "abeb71f569b76caa89e9e55a71f5147d"
   , "type-structs-own.json": "7ecd980ad07f0ed37e69e1d607a5672d"
   }
 
 , "th13.v1.00c": 
-  { "bndb": "e40916816a7221fdce7735b5f2140d5a"
-  , "funcs.json": "f2f15aed265b294e09599a3cb2faabca"
+  { "bndb": "278b8871673c7297ece1788da4bf09b1"
+  , "funcs.json": "792c7749b0e3c2b7266916dbfb8970b2"
   , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
-  , "type-structs-own.json": "8985482dcc0cbc477f7ae056618be4a6"
+  , "statics.json": "d751f2efd27b3fd3828c2de2e71247c2"
+  , "type-structs-own.json": "c43d81249da3b0eae39bce926936bcda"
   }
 
 , "th14.v1.00b": 
-  { "bndb": "e033414c570f5d3ec156bc2996d5a45e"
-  , "funcs.json": "da4cfac2e274490b628962b01f8e485f"
+  { "bndb": "283a18bc3358e7587dee7a9c1223ecb3"
+  , "funcs.json": "685e57b6db7c18e003756f967d9f6b45"
   , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
-  , "type-structs-own.json": "b7994964b8966c1f41b3a5ea41342267"
+  , "statics.json": "ed50a01f84763317dc5ae40b6ab890e4"
+  , "type-structs-own.json": "1f3e60cb3b8a0e5ddf8681e9444adbd8"
   }
 
 , "th15.v.100b": 
-  { "bndb": "e19ee05b98d05c6a5efddae21ecaedd2"
-  , "funcs.json": "08533828bab12be3f6e84587127f530f"
+  { "bndb": "d31c97bc241873046682c63a00118246"
+  , "funcs.json": "b1b6b7620a8431cce83a464d4465f161"
   , "labels.json": "7c6f1235777214939a1a4509327da72a"
-  , "type-structs-own.json": "98c9d2d1eb9a40979c95dfae43868f60"
+  , "statics.json": "ae9f966345ea6272f8fe722eda1c2946"
+  , "type-structs-own.json": "e3e2412984caa5159c0528402e43843d"
   }
 
 , "th16.v1.00a": 
-  { "bndb": "ee91d3d8c5cff6e8e5b5dd7bcc242a30"
-  , "funcs.json": "3a7c8cb44a5802aaa4f0ebef41283819"
+  { "bndb": "ceaccf86f7fe26155da6412ea4ce8478"
+  , "funcs.json": "e02564232f640a1064ab7870c410a677"
   , "labels.json": "951402f78db1467491424a5f14e62ed6"
-  , "type-structs-own.json": "5fac3ec58c9a4a6ec9cd94cfa15b5a5e"
+  , "statics.json": "e309aa0d96fc38f524280583ac2ef79d"
+  , "type-structs-own.json": "1698d085370bccd2002eeff9801bbdfa"
   }
 
 , "th165.v1.00a": 
   { "bndb": "0eb24f36eed607f5272b50a149082e41"
   , "funcs.json": "aa42f97e631b267288ca87d9a87254e0"
   , "labels.json": "c443b04d0fc26b0a5a4573a78e0082a1"
+  , "statics.json": "520245eb9e75e70396a5583aa738a7f3"
   , "type-structs-own.json": "c443b04d0fc26b0a5a4573a78e0082a1"
   }
 
 , "th17.v1.00b": 
-  { "bndb": "6dea981a4b04e1a00b51f021941bb19a"
-  , "funcs.json": "021b68a271c2d42b9be884aaae2991ab"
+  { "bndb": "42e6b8ec3c6f0fc27c7fa109e632b699"
+  , "funcs.json": "ca824963f78fd27f15f61e0a00df9a38"
   , "labels.json": "a5ba019084e60b1a6e02d56e6751d4a6"
-  , "type-structs-own.json": "e17ad9e3144286979ba5afbf95180ed9"
+  , "statics.json": "f7c5ecc4e4012d135918ad4e6455f196"
+  , "type-structs-own.json": "741fc2e9552202c2679f261ce111b105"
   }
 
 }

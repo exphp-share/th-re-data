@@ -1,3 +1,3 @@
-[ {"addr": "0x43c7a0", "name": "anm_preload", "comment": null}
+[ {"addr": "0x43c7a0", "name": "AnmManager::preload_anm", "comment": null}
 , {"addr": "0x47d45f", "name": "_start", "comment": null}
 ]

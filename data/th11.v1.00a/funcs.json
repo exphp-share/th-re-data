@@ -183,7 +183,7 @@
 , {"addr": "0x448a90", "name": "ScreenEffect::initialize", "comment": null}
 , {"addr": "0x44a9c0", "name": "SoundManager::modify_bgm", "comment": null}
 , {"addr": "0x4526f0", "name": "AnmManager::initialize", "comment": null}
-, {"addr": "0x454360", "name": "anm_preload", "comment": null}
+, {"addr": "0x454360", "name": "AnmManager::preload_anm", "comment": null}
 , {"addr": "0x455120", "name": "AnmManager::on_tick_1a__stub", "comment": null}
 , {"addr": "0x455130", "name": "AnmManager::on_tick_08__stub", "comment": null}
 , {"addr": "0x455480", "name": "AnmManager::on_tick_1a", "comment": null}

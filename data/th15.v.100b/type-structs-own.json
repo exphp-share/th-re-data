@@ -856,6 +856,20 @@
   , ["0x58", "__end", null]
   ]
 
+, "zVTableBomb": 
+  [ ["0x0", "begin", "void*"]
+  , ["0x4", "on_tick", "void*"]
+  , ["0x8", "on_draw", "void*"]
+  , ["0xc", "method_c", "void*"]
+  , ["0x10", "method_10", "void*"]
+  , ["0x14", "method_14", "void*"]
+  , ["0x18", "store_snapshot", "void*"]
+  , ["0x1c", "restore_snapshot", "void*"]
+  , ["0x20", "write_autosave_data", "void*"]
+  , ["0x24", "read_autosave_data", "void*"]
+  , ["0x28", "__end", null]
+  ]
+
 , "zVTableDelete": 
   [ ["0x0", "operator delete", "void*"]
   , ["0x4", "__end", null]
@@ -869,20 +883,6 @@
   , ["0x10", "get_float_global_ptr", "void*"]
   , ["0x14", "operator delete", "void*"]
   , ["0x18", "__end", null]
-  ]
-
-, "zVTableShotType": 
-  [ ["0x0", "method_0", "void*"]
-  , ["0x4", "method_4", "void*"]
-  , ["0x8", "method_8", "void*"]
-  , ["0xc", "method_c", "void*"]
-  , ["0x10", "method_10", "void*"]
-  , ["0x14", "__autosave_related__see_0x43d8ca", "void*"]
-  , ["0x18", "store_snapshot", "void*"]
-  , ["0x1c", "restore_snapshot", "void*"]
-  , ["0x20", "write_autosave_data", "void*"]
-  , ["0x24", "read_autosave_data", "void*"]
-  , ["0x28", "__end", null]
   ]
 
 }
