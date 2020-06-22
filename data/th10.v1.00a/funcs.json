@@ -146,6 +146,9 @@
 , {"addr": "0x428f60", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x4294a0", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x429610", "name": "ReplayManager::operator new", "comment": null}
+, {"addr": "0x4297d0", "name": "ReplayManager::on_tick_0b__record_or_playback_replay", "comment": null}
+, {"addr": "0x42a3d0", "name": "ReplayManager::on_tick_0b__record_or_playback_replay__stub", "comment": null}
+, {"addr": "0x42a3e0", "name": "ReplayManager::on_tick_1b__replay_speedup", "comment": null}
 , {"addr": "0x42b430", "name": "PopupManager::constructor", "comment": null}
 , {"addr": "0x42b4d0", "name": "PopupManager::initialize", "comment": null}
 , {"addr": "0x42b570", "name": "PopupManager::destructor", "comment": null}

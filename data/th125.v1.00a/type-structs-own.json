@@ -70,6 +70,12 @@
   , ["0xb4", "__end", null]
   ]
 
+, "zFpsCounter": 
+  [ ["0x0", "__unknown", null]
+  , ["0x8c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x8c", "__end", null]
+  ]
+
 , "zGameThread": 
   [ ["0x0", "__unknown", null]
   , ["0x78", "__exact_size_known", "struct zCOMMENT [0]"]
@@ -170,6 +176,23 @@
   [ ["0x0", "__unknown", null]
   , ["0x377c", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x377c", "__end", null]
+  ]
+
+, "zSupervisor": 
+  [ ["0x0", "__unknown", null]
+  , ["0x554", "gamemode", "int32_t"]
+  , ["0x558", "gamemode_to_switch_to", "int32_t"]
+  , ["0x55c", "gamemode_prev", "int32_t"]
+  , ["0x560", "__unknown", null]
+  , ["0x564", "__field_564__used_by_ds1", "int32_t"]
+  , ["0x568", "__unknown", null]
+  , ["0x9c4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x9c4", "__end", null]
+  ]
+
+, "zUnknownGlobal118": 
+  [ ["0x0", "__unknown", null]
+  , ["0x118", "__end", null]
   ]
 
 , "zUpdateFunc": 

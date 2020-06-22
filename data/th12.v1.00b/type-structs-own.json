@@ -253,6 +253,60 @@
   , ["0x666fe4", "__end", null]
   ]
 
+, "zLaserBaseClass": 
+  [ ["0x0", "vtable", "struct zVTableLaser*"]
+  , ["0x4", "__unknown", null]
+  , ["0x454", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x454", "__end", null]
+  ]
+
+, "zLaserCurve": 
+  [ ["0x0", "super", "struct zLaserBaseClass"]
+  , ["0x454", "inner", "struct zLaserCurveInner"]
+  , ["0x634", "__vm_634", "struct zAnmVm"]
+  , ["0xae8", "__vm_ae8", "struct zAnmVm"]
+  , ["0xf9c", "__unknown", null]
+  , ["0xfa4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xfa4", "__end", null]
+  ]
+
+, "zLaserCurveInner": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1e0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x1e0", "__end", null]
+  ]
+
+, "zLaserInfinite": 
+  [ ["0x0", "super", "struct zLaserBaseClass"]
+  , ["0x454", "inner", "struct zLaserInfiniteInner"]
+  , ["0x65c", "__unknown", null]
+  , ["0x660", "__vm_660", "struct zAnmVm"]
+  , ["0xb14", "__vm_b14", "struct zAnmVm"]
+  , ["0xfc8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xfc8", "__end", null]
+  ]
+
+, "zLaserInfiniteInner": 
+  [ ["0x0", "__unknown", null]
+  , ["0x208", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x208", "__end", null]
+  ]
+
+, "zLaserLine": 
+  [ ["0x0", "super", "struct zLaserBaseClass"]
+  , ["0x454", "inner", "struct zLaserLineInner"]
+  , ["0x63c", "__vm_640", "struct zAnmVm"]
+  , ["0xaf0", "__vm_af0", "struct zAnmVm"]
+  , ["0xfa4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xfa4", "__end", null]
+  ]
+
+, "zLaserLineInner": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1e8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x1e8", "__end", null]
+  ]
+
 , "zLaserManager": 
   [ ["0x0", "__unknown", null]
   , ["0x490", "__exact_size_known", "struct zCOMMENT [0]"]
@@ -374,6 +428,31 @@
   , ["0x48", "__unknown", null]
   , ["0x4c", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x4c", "__end", null]
+  ]
+
+, "zVTableLaser": 
+  [ ["0x0", "method_0", "void*"]
+  , ["0x4", "method_4", "void*"]
+  , ["0x8", "method_8", "void*"]
+  , ["0xc", "method_c", "void*"]
+  , ["0x10", "method_10", "void*"]
+  , ["0x14", "method_14", "void*"]
+  , ["0x18", "method_18", "void*"]
+  , ["0x1c", "method_1c", "void*"]
+  , ["0x20", "method_20", "void*"]
+  , ["0x24", "method_24", "void*"]
+  , ["0x28", "method_28", "void*"]
+  , ["0x2c", "method_2c", "void*"]
+  , ["0x30", "method_30", "void*"]
+  , ["0x34", "method_34", "void*"]
+  , ["0x38", "method_38", "void*"]
+  , ["0x3c", "method_3c", "void*"]
+  , ["0x40", "method_40", "void*"]
+  , ["0x44", "method_44", "void*"]
+  , ["0x48", "method_48", "void*"]
+  , ["0x4c", "method_4c", "void*"]
+  , ["0x50", "method_50", "void*"]
+  , ["0x54", "__end", null]
   ]
 
 }

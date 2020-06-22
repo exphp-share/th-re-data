@@ -5,13 +5,19 @@
 , {"addr": "0x49eaa0", "name": "VTABLE_ECL", "type": "struct zVTableEcl", "comment": null}
 , {"addr": "0x49eabc", "name": "VTABLE_49eabc", "type": "void*[3]", "comment": null}
 , {"addr": "0x4a8b38", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4ac138", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5308", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
+, {"addr": "0x4b6770", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
+, {"addr": "0x4b6774", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
+, {"addr": "0x4b6778", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4b677c", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
 , {"addr": "0x4b6780", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4b6784", "name": "DEBUG_SPRT_VIEW_PTR", "type": "struct zDebugSprtView*", "comment": null}
 , {"addr": "0x4b6788", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
 , {"addr": "0x4b678c", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4b6790", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x4b6794", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
+, {"addr": "0x4b6798", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
 , {"addr": "0x4b6898", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
 , {"addr": "0x4b689c", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
 , {"addr": "0x4b68a0", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
@@ -26,5 +32,5 @@
 , {"addr": "0x4b68e8", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4d0c50", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
 , {"addr": "0x4d0cb4", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4d0cd0", "name": "SUPERVISOR", "type": "void", "comment": null}
+, {"addr": "0x4d0cd0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 ]

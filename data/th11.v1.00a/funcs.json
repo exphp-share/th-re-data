@@ -64,7 +64,6 @@
 , {"addr": "0x411120", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x4111a0", "name": "EnemyManager::on_tick__stub", "comment": null}
 , {"addr": "0x4111b0", "name": "EnemyManager::on_draw__noop", "comment": null}
-, {"addr": "0x417450", "name": "jump_table_417450", "comment": null}
 , {"addr": "0x419c30", "name": "FpsCounter::initialize", "comment": null}
 , {"addr": "0x419c90", "name": "FpsCounter::destructor", "comment": null}
 , {"addr": "0x419cf0", "name": "FpsCounter::operator new", "comment": null}
@@ -154,6 +153,11 @@
 , {"addr": "0x4356e0", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x435c50", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x435e00", "name": "ReplayManager::operator new", "comment": null}
+, {"addr": "0x435fe0", "name": "ReplayManager::on_tick_0b__record_replay", "comment": null}
+, {"addr": "0x436190", "name": "ReplayManager::on_tick_0b__playback_replay", "comment": null}
+, {"addr": "0x436d20", "name": "ReplayManager::on_tick_0b__record_replay__stub", "comment": null}
+, {"addr": "0x436d30", "name": "ReplayManager::on_tick_0b__playback_replay__stub", "comment": null}
+, {"addr": "0x436d40", "name": "ReplayManager::on_tick_1b__speedup_replay", "comment": null}
 , {"addr": "0x437490", "name": "ReplayStageData::constructor", "comment": null}
 , {"addr": "0x4374d0", "name": "ReplayStageData::destructor", "comment": null}
 , {"addr": "0x437d50", "name": "PopupManager::initialize", "comment": null}

@@ -591,7 +591,7 @@
 , {"addr": "0x448c10", "name": "ReplayManager::read_replay_file", "comment": null}
 , {"addr": "0x448e20", "name": "ReplayManager::on_tick_10__record_replay__stub", "comment": null}
 , {"addr": "0x448e30", "name": "ReplayManager::on_tick_10__playback_replay__stub", "comment": null}
-, {"addr": "0x448e40", "name": "ReplayManager::on_tick_22__speed_up_replay", "comment": null}
+, {"addr": "0x448e40", "name": "ReplayManager::on_tick_22__speedup_replay", "comment": null}
 , {"addr": "0x448e90", "name": "ReplayManager::on_draw_47", "comment": null}
 , {"addr": "0x449190", "name": "Globals::leaf_449190", "comment": null}
 , {"addr": "0x4491c0", "name": "ReplayManager::new_18b4_thing", "comment": null}
@@ -782,7 +782,8 @@
 , {"addr": "0x46f3b0", "name": "AnmVm::clear_ins_316_flag_recursively", "comment": null}
 , {"addr": "0x46f510", "name": "AnmVm::search_children", "comment": null}
 , {"addr": "0x46f600", "name": "AnmManager::allocate_vm", "comment": null}
-, {"addr": "0x46f720", "name": "AnmManager::sub_46f720__uses_array_2", "comment": null}
+, {"addr": "0x46f720", "name": "AnmManager::lolk_allocate_snapshot_vm", "comment": null}
+, {"addr": "0x46f810", "name": "AnmManager::lolk_store_snapshot_of_vm", "comment": null}
 , {"addr": "0x46fd50", "name": "AnmVm::constructor(const AnmVm&, int)", "comment": null}
 , {"addr": "0x46ffb0", "name": "AnmVm::constructor(const AnmVm&, uhh, erm)", "comment": null}
 , {"addr": "0x470240", "name": "disabled_logger_470240", "comment": null}

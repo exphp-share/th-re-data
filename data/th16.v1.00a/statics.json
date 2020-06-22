@@ -298,6 +298,7 @@
 , {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": "struct zFloat4 [3]", "comment": null}
 , {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS_I_THINK", "type": "char", "comment": null}
 , {"addr": "0x4a50b0", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": "Internal representation of the keys currently held on the keyboard.\n\nUnlike INPUT, this updates even while the game is paused or on the main menu.  It includes keys like ESC, P, R, and Enter that are not tracked in replays."}
+, {"addr": "0x4a50b4", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
 , {"addr": "0x4a52c8", "name": "INPUT", "type": "int32_t", "comment": "Keys currently held in this frame of the game world.\n\nIn contrast to HARDWARE_INPUT, this does not include keys like Esc. During replays, this variable is read from the replay."}
 , {"addr": "0x4a52cc", "name": "INPUT_PREV", "type": "int32_t", "comment": null}
 , {"addr": "0x4a52d4", "name": "INPUT_RISING_EDGE", "type": "int32_t", "comment": null}

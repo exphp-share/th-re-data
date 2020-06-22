@@ -185,20 +185,20 @@
   , ["0x18600ec", "freelist_head", "struct zAnmFastVmList"]
   , ["0x18600fc", "__unknown", null]
   , ["0x1860100", "preloaded", "struct zAnmPreloadedArray"]
-  , ["0x186017c", "__matrix_186017c__used_during_rendering", "struct zD3DMatrix"]
+  , ["0x186017c", "__matrix_186017c", "struct zD3DMatrix"]
   , ["0x18601bc", "__vm_18601bc", "struct zAnmVm"]
   , ["0x18607bc", "__unknown", null]
   , ["0x186082c", "d3d_unrendered_sprite_count", "int32_t"]
-  , ["0x1860830", "d3d_sprite_vertex_data", "struct zRenderSpriteVertex [131072]"]
+  , ["0x1860830", "d3d_sprite_vertex_data", "zRenderSpriteVertex [131072]"]
   , ["0x1be0830", "d3d_sprite_write_cursor", "struct zRenderSprite*"]
   , ["0x1be0834", "d3d_sprite_render_cursor", "struct zRenderSprite*"]
   , ["0x1be0838", "d3d_unrendered_primitive_count__always_zero", "int32_t"]
-  , ["0x1be083c", "d3d_primitive_vertex_data", "struct zRenderPrimitiveVertex [32768]"]
-  , ["0x1c8083c", "d3d_primitive_write_cursor", "struct zRenderPrimitiveVertex*"]
-  , ["0x1c80840", "d3d_primitive_render_cursor__unused", "struct zRenderPrimitiveVertex*"]
+  , ["0x1be083c", "d3d_primitive_vertex_data", "zRenderPrimitiveVertex [32768]"]
+  , ["0x1c8083c", "d3d_primitive_write_cursor", "zRenderPrimitiveVertex*"]
+  , ["0x1c80840", "d3d_primitive_render_cursor__unused", "zRenderPrimitiveVertex*"]
   , ["0x1c80844", "layer_list_dummy_heads__unused_as_of_1.00b", "struct zAnmVm [43]"]
   , ["0x1c90a44", "last_discriminator__18bit", "int32_t"]
-  , ["0x1c90a48", "__color__1c90a48", "struct zRgba"]
+  , ["0x1c90a48", "__color__1c90a48", "struct zD3DColor"]
   , ["0x1c90a4c", "__unknown", null]
   , ["0x1c90a50", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x1c90a50", "__end", null]
@@ -319,8 +319,8 @@
   , ["0x4e0", "alternate_pos__toggled_by_op_413", "struct zFloat3"]
   , ["0x4ec", "____field_4ec__quad_vertices", "struct zFloat3 [4]"]
   , ["0x51c", "mode_of_create_child", "int32_t"]
-  , ["0x520", "color_1", "struct zRgba"]
-  , ["0x524", "color_2", "struct zRgba"]
+  , ["0x520", "color_1", "struct zD3DColor"]
+  , ["0x524", "color_2", "struct zD3DColor"]
   , ["0x528", "__unknown", null]
   , ["0x530", "bitflags_lo", "int32_t"]
   , ["0x534", "bitflags_hi", "int32_t"]
@@ -357,6 +357,12 @@
   , ["0xbc", "__rotation_related", "struct zFloat3"]
   , ["0xc8", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0xc8", "__end", null]
+  ]
+
+, "zAsciiManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1925c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x1925c", "__end", null]
   ]
 
 , "zAsciiPopupManager": 
@@ -399,7 +405,7 @@
 
 , "zBulletMgr": 
   [ ["0x0", "type", "int32_t"]
-  , ["0x4", "color", "struct zRgba"]
+  , ["0x4", "color", "struct zD3DColor"]
   , ["0x8", "__unknown", null]
   , ["0x14", "__ang_aim", "float"]
   , ["0x18", "__ang_bullet_dist", "float"]
@@ -434,6 +440,14 @@
 , "zCOMMENT": 
   [ ["0x0", "__unused", "char"]
   , ["0x1", "__end", null]
+  ]
+
+, "zD3DColor": 
+  [ ["0x0", "b", "uint8_t"]
+  , ["0x1", "g", "uint8_t"]
+  , ["0x2", "r", "uint8_t"]
+  , ["0x3", "a", "uint8_t"]
+  , ["0x4", "__end", null]
   ]
 
 , "zD3DMatrix": 
@@ -922,6 +936,12 @@
   , ["0x610", "__end", null]
   ]
 
+, "zLoadingThread": 
+  [ ["0x0", "__unknown", null]
+  , ["0x640", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x640", "__end", null]
+  ]
+
 , "zMainMenu": 
   [ ["0x0", "__unknown", null]
   , ["0x5e18", "__exact_size_known", "struct zCOMMENT [0]"]
@@ -1026,44 +1046,34 @@
   , ["0x44", "__end", null]
   ]
 
-, "zRenderPrimitiveVertex": 
-  [ ["0x0", "transformed_pos", "struct zFloat4"]
-  , ["0x10", "diffuse_color_argb", "DWORD"]
-  , ["0x14", "__this_is_format_of_(D3DFVF_XYZRHW | D3DFVF_DIFFUSE)", "struct zCOMMENT [0]"]
-  , ["0x14", "__end", null]
-  ]
-
 , "zRenderSprite": 
   [ ["0x0", "triangles", "struct zRenderSpriteTriangle [2]"]
   , ["0xa8", "__end", null]
   ]
 
 , "zRenderSpriteTriangle": 
-  [ ["0x0", "a", "struct zRenderSpriteVertex"]
-  , ["0x1c", "b", "struct zRenderSpriteVertex"]
-  , ["0x38", "c", "struct zRenderSpriteVertex"]
+  [ ["0x0", "a", "zRenderSpriteVertex"]
+  , ["0x1c", "b", "zRenderSpriteVertex"]
+  , ["0x38", "c", "zRenderSpriteVertex"]
   , ["0x54", "__end", null]
   ]
 
-, "zRenderSpriteVertex": 
+, "zRenderVertex044": 
   [ ["0x0", "transformed_pos", "struct zFloat4"]
-  , ["0x10", "diffuse_color_argb", "DWORD"]
+  , ["0x10", "diffuse_color", "struct zD3DColor"]
+  , ["0x14", "__end", null]
+  ]
+
+, "zRenderVertex144": 
+  [ ["0x0", "transformed_pos", "struct zFloat4"]
+  , ["0x10", "diffuse_color", "struct zD3DColor"]
   , ["0x14", "texture_uv", "struct zFloat2"]
-  , ["0x1c", "__this_is_format_of_(D3DFVF_XYZRHW | D3DFVF_TEX1 | D3DFVF_DIFFUSE)", "struct zCOMMENT [0]"]
   , ["0x1c", "__end", null]
   ]
 
 , "zReplaySavedGlobals": 
   [ ["0x0", "__unknown", null]
   , ["0xf0", "__end", null]
-  ]
-
-, "zRgba": 
-  [ ["0x0", "b", "uint8_t"]
-  , ["0x1", "g", "uint8_t"]
-  , ["0x2", "r", "uint8_t"]
-  , ["0x3", "a", "uint8_t"]
-  , ["0x4", "__end", null]
   ]
 
 , "zRpyThing3": 
@@ -1087,6 +1097,12 @@
   , ["0x84", "__unknown", null]
   , ["0xc0", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0xc0", "__end", null]
+  ]
+
+, "zStage": 
+  [ ["0x0", "__unknown", null]
+  , ["0x67b8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x67b8", "__end", null]
   ]
 
 , "zTableAnm508Data": 

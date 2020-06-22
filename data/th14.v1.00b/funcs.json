@@ -168,6 +168,10 @@
 , {"addr": "0x454630", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x454b60", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x454e60", "name": "ReplayManager::operator new", "comment": null}
+, {"addr": "0x455040", "name": "ReplayManager::on_tick_0c__record_replay", "comment": null}
+, {"addr": "0x455180", "name": "ReplayManager::on_tick_0c__playback_replay__stub", "comment": null}
+, {"addr": "0x455e40", "name": "ReplayManager::on_tick_0c__record_replay__stub", "comment": null}
+, {"addr": "0x455e50", "name": "ReplayManager::on_tick_0c__playback_replay", "comment": null}
 , {"addr": "0x455e60", "name": "ReplayManager::on_tick_1e__replay_speedup", "comment": null}
 , {"addr": "0x4566b0", "name": "ReplayStageData::constructor", "comment": null}
 , {"addr": "0x456700", "name": "ReplayStageData::destructor", "comment": null}

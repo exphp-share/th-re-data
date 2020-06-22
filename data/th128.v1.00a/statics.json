@@ -1,3 +1,5 @@
 [ {"addr": "0x4ac8e8", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4d2e14", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
+, {"addr": "0x4daff8", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
+, {"addr": "0x4daffc", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
 ]

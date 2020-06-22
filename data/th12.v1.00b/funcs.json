@@ -35,6 +35,11 @@
 , {"addr": "0x40a020", "name": "BulletManager::on_tick__body", "comment": null}
 , {"addr": "0x40a1f0", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x40a220", "name": "BulletManager::on_draw", "comment": null}
+, {"addr": "0x40c8b0", "name": "Bullet::cancel", "comment": null}
+, {"addr": "0x40caa0", "name": "BulletManager::cancel_in_radius", "comment": null}
+, {"addr": "0x40cbe0", "name": "sub_40cbe0__unused", "comment": null}
+, {"addr": "0x40ce20", "name": "sub_40ce20__unused", "comment": null}
+, {"addr": "0x40d560", "name": "check_within_screen_boundaries", "comment": null}
 , {"addr": "0x40d880", "name": "Spellcard::initialize", "comment": null}
 , {"addr": "0x40d9c0", "name": "Spellcard::destructor", "comment": null}
 , {"addr": "0x40daa0", "name": "Spellcard::operator new", "comment": null}
@@ -101,6 +106,7 @@
 , {"addr": "0x421880", "name": "Globals::sub_421880", "comment": null}
 , {"addr": "0x421cd0", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x422280", "name": "GameThread::thread_start__stub", "comment": null}
+, {"addr": "0x422290", "name": "GameThread::destructor", "comment": null}
 , {"addr": "0x422700", "name": "GameThread::operator new", "comment": null}
 , {"addr": "0x4227c0", "name": "GameThread::on_tick", "comment": null}
 , {"addr": "0x422bd0", "name": "GameThread::on_tick__stub", "comment": null}
@@ -128,12 +134,74 @@
 , {"addr": "0x427230", "name": "ItemManager::on_draw__body", "comment": null}
 , {"addr": "0x427380", "name": "ItemManager::on_tick", "comment": null}
 , {"addr": "0x4273c0", "name": "ItemManager::on_draw", "comment": null}
+, {"addr": "0x4273f0", "name": "gen_items_from_cancel", "comment": null}
 , {"addr": "0x427ca0", "name": "Globals::sub_427ca0", "comment": null}
+, {"addr": "0x427d60", "name": "LaserBaseClass::method_0_noop", "comment": null}
+, {"addr": "0x427d70", "name": "LaserBaseClass::method_4_noop", "comment": null}
+, {"addr": "0x427d80", "name": "LaserBaseClass::method_8_noop", "comment": null}
+, {"addr": "0x427d90", "name": "LaserBaseClass::method_c_noop", "comment": null}
+, {"addr": "0x427da0", "name": "LaserBaseClass::method_10_noop", "comment": null}
+, {"addr": "0x427dc0", "name": "LaserBaseClass::method_1c_noop", "comment": null}
+, {"addr": "0x427dd0", "name": "LaserBaseClass::method_18_noop", "comment": null}
+, {"addr": "0x427de0", "name": "LaserBaseClass::method_20_noop", "comment": null}
+, {"addr": "0x427df0", "name": "LaserBaseClass::method_14_noop", "comment": null}
+, {"addr": "0x427e00", "name": "LaserBaseClass::method_24_noop", "comment": null}
+, {"addr": "0x427e10", "name": "LaserBaseClass::method_28_noop", "comment": null}
+, {"addr": "0x427e20", "name": "LaserBaseClass::method_2c_noop", "comment": null}
+, {"addr": "0x427e30", "name": "LaserBaseClass::method_30_noop", "comment": null}
+, {"addr": "0x427e40", "name": "LaserBaseClass::method_34_noop", "comment": null}
+, {"addr": "0x427e50", "name": "LaserBaseClass::method_38_noop", "comment": null}
+, {"addr": "0x427e60", "name": "LaserBaseClass::method_3c_noop", "comment": null}
+, {"addr": "0x427e70", "name": "LaserBaseClass::method_40_noop", "comment": null}
+, {"addr": "0x427e80", "name": "LaserBaseClass::method_44_noop", "comment": null}
+, {"addr": "0x427e90", "name": "LaserBaseClass::method_48_noop", "comment": null}
+, {"addr": "0x427ea0", "name": "LaserBaseClass::method_4c_noop", "comment": null}
+, {"addr": "0x427eb0", "name": "LaserBaseClass::method_50_noop", "comment": null}
+, {"addr": "0x427ec0", "name": "LaserBaseClass::constructor", "comment": null}
 , {"addr": "0x427fd0", "name": "LaserManager::initialize", "comment": null}
 , {"addr": "0x4280d0", "name": "LaserManager::destructor", "comment": null}
 , {"addr": "0x4281c0", "name": "LaserManager::operator new", "comment": null}
 , {"addr": "0x4283d0", "name": "LaserManager::on_tick", "comment": null}
 , {"addr": "0x428430", "name": "LaserManager::on_draw", "comment": null}
+, {"addr": "0x428450", "name": "Laser::operator new", "comment": null}
+, {"addr": "0x428520", "name": "LaserStraight::constructor", "comment": null}
+, {"addr": "0x428560", "name": "LaserInfinite::constructor", "comment": null}
+, {"addr": "0x4285b0", "name": "LaserCurve::constructor", "comment": null}
+, {"addr": "0x4286f0", "name": "LaserManager::cancel_in_radius", "comment": null}
+, {"addr": "0x4287c0", "name": "LaserLine::method_4", "comment": null}
+, {"addr": "0x428b00", "name": "LaserLine::method_0", "comment": null}
+, {"addr": "0x429150", "name": "LaserLine::method_40", "comment": null}
+, {"addr": "0x429400", "name": "LaserLine::method_34", "comment": null}
+, {"addr": "0x429520", "name": "LaserLine::method_2c", "comment": null}
+, {"addr": "0x429610", "name": "LaserLine::method_8", "comment": null}
+, {"addr": "0x429af0", "name": "LaserLine::method_c", "comment": null}
+, {"addr": "0x429bb0", "name": "LaserLine::method_10", "comment": null}
+, {"addr": "0x429bc0", "name": "LaserLine::method_18", "comment": null}
+, {"addr": "0x42a1f0", "name": "LaserLine::method_1c", "comment": null}
+, {"addr": "0x42a800", "name": "LaserLine::method_14", "comment": null}
+, {"addr": "0x42aa60", "name": "LaserLine::method_24", "comment": null}
+, {"addr": "0x42ab80", "name": "LaserInfinite::method_4", "comment": null}
+, {"addr": "0x42ada0", "name": "LaserInfinite::method_8", "comment": null}
+, {"addr": "0x42b100", "name": "LaserInfinite::method_c", "comment": null}
+, {"addr": "0x42b1c0", "name": "LaserInfinite::method_10", "comment": null}
+, {"addr": "0x42b1d0", "name": "LaserInfinite::method_18", "comment": null}
+, {"addr": "0x42b750", "name": "LaserInfinite::method_1c", "comment": null}
+, {"addr": "0x42bd90", "name": "LaserInfinite::method_14", "comment": null}
+, {"addr": "0x42c080", "name": "LaserInfinite::method_24", "comment": null}
+, {"addr": "0x42c1a0", "name": "LaserInfinite::method_0", "comment": null}
+, {"addr": "0x42c3f0", "name": "LaserCurve::method_4", "comment": null}
+, {"addr": "0x42c720", "name": "LaserCurve::method_10", "comment": null}
+, {"addr": "0x42c770", "name": "LaserCurve::method_8", "comment": null}
+, {"addr": "0x42cca0", "name": "LaserCurve::method_c", "comment": null}
+, {"addr": "0x42d030", "name": "LaserCurve::method_0", "comment": null}
+, {"addr": "0x42d6e0", "name": "LaserCurve::method_34", "comment": null}
+, {"addr": "0x42d800", "name": "LaserCurve::method_30", "comment": null}
+, {"addr": "0x42d890", "name": "LaserCurve::method_2c", "comment": null}
+, {"addr": "0x42d980", "name": "LaserCurve::method_50", "comment": null}
+, {"addr": "0x42d9c0", "name": "LaserCurve::method_18", "comment": null}
+, {"addr": "0x42df00", "name": "LaserCurve::method_1c", "comment": null}
+, {"addr": "0x42e3e0", "name": "LaserCurve::method_14", "comment": null}
+, {"addr": "0x42e5b0", "name": "LaserCurve::method_24", "comment": null}
 , {"addr": "0x42e9b0", "name": "LoadingThread::thread_start", "comment": null}
 , {"addr": "0x42eb10", "name": "LoadingThread::initialize", "comment": null}
 , {"addr": "0x42ec00", "name": "LoadingThread::destructor", "comment": null}
@@ -177,6 +245,12 @@
 , {"addr": "0x43ae80", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x43b450", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x43b600", "name": "ReplayManager::operator new", "comment": null}
+, {"addr": "0x43b7e0", "name": "ReplayManager::on_tick_0b__record_replay", "comment": null}
+, {"addr": "0x43b950", "name": "ReplayManager::on_tick_0b__playback_replay", "comment": null}
+, {"addr": "0x43c510", "name": "ReplayManager::on_tick_0b__record_replay__stub", "comment": null}
+, {"addr": "0x43c520", "name": "ReplayManager::on_tick_0b__playback_replay__stub", "comment": null}
+, {"addr": "0x43c530", "name": "ReplayManager::on_tick_1c__speedup_replay", "comment": null}
+, {"addr": "0x43c570", "name": "ReplayManager::on_draw", "comment": null}
 , {"addr": "0x43cd40", "name": "ReplayStageData::constructor", "comment": null}
 , {"addr": "0x43cd80", "name": "ReplayStageData::destructor", "comment": null}
 , {"addr": "0x43cf90", "name": "Scorefile::constructor", "comment": null}
@@ -207,6 +281,7 @@
 , {"addr": "0x43f250", "name": "MainMenu::constructor", "comment": null}
 , {"addr": "0x43f320", "name": "MainMenu::thread_start", "comment": null}
 , {"addr": "0x43f3d0", "name": "MainMenu::initialize", "comment": null}
+, {"addr": "0x43f4f0", "name": "MainMenu::destructor", "comment": null}
 , {"addr": "0x43f6b0", "name": "MainMenu::operator new", "comment": null}
 , {"addr": "0x43f760", "name": "MainMenu::on_tick", "comment": null}
 , {"addr": "0x43fc00", "name": "MainMenu::on_draw", "comment": null}
@@ -222,8 +297,10 @@
 , {"addr": "0x44a860", "name": "Ufo::on_tick__stub", "comment": null}
 , {"addr": "0x44a870", "name": "Ufo::on_draw_3c__stub", "comment": null}
 , {"addr": "0x44a880", "name": "Ufo::on_draw_16__stub", "comment": null}
+, {"addr": "0x44f200", "name": "UpdateFuncRegistry::destructor", "comment": null}
 , {"addr": "0x44f560", "name": "main", "comment": null}
 , {"addr": "0x452a60", "name": "ScreenEffect::initialize", "comment": null}
+, {"addr": "0x452f00", "name": "ScreenEffect::destructor", "comment": null}
 , {"addr": "0x453e20", "name": "SoundManager::play_sound_at_position", "comment": null}
 , {"addr": "0x453fa0", "name": "SoundManager::update_sound_thread", "comment": null}
 , {"addr": "0x454960", "name": "SoundManager::modify_bgm", "comment": null}

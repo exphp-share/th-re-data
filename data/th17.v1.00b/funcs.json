@@ -40,12 +40,14 @@
 , {"addr": "0x4065d0", "name": "InterpFloat3::step", "comment": null}
 , {"addr": "0x406920", "name": "Globals::get_chapter", "comment": null}
 , {"addr": "0x407230", "name": "anm_init_copy_vm_from_loaded", "comment": null}
-, {"addr": "0x407b80", "name": "AsciiManager::initialize", "comment": null}
+, {"addr": "0x407b80", "name": "AsciiManager::operator new", "comment": null}
 , {"addr": "0x408050", "name": "AsciiManager::on_tick", "comment": null}
-, {"addr": "0x4097d0", "name": "AnmFastVm::destructor", "comment": null}
-, {"addr": "0x409830", "name": "AnmFastVm::destructor_stub_409830", "comment": null}
+, {"addr": "0x4097d0", "name": "AnmVm::destructor", "comment": null}
+, {"addr": "0x409830", "name": "AnmVm::destructor_stub", "comment": null}
+, {"addr": "0x409840", "name": "AnmVm::constructor", "comment": null}
 , {"addr": "0x409880", "name": "InterpFloat::disable", "comment": null}
 , {"addr": "0x409990", "name": "Stage::initialize", "comment": null}
+, {"addr": "0x409cd0", "name": "Stage::destructor", "comment": null}
 , {"addr": "0x40a220", "name": "Stage::operator new", "comment": null}
 , {"addr": "0x40a390", "name": "Stage::on_tick", "comment": null}
 , {"addr": "0x40a580", "name": "Stage::on_draw_03", "comment": null}
@@ -293,8 +295,10 @@
 , {"addr": "0x440550", "name": "leaf_440550_ret0_6arg", "comment": null}
 , {"addr": "0x4405a0", "name": "cartesian_from_polar_4405a0", "comment": null}
 , {"addr": "0x4405c0", "name": "EffectManager::operator new", "comment": null}
+, {"addr": "0x440770", "name": "LoadingThread::thread_start", "comment": null}
 , {"addr": "0x440a30", "name": "LoadingThread::operator new", "comment": null}
 , {"addr": "0x440d90", "name": "LoadingThread::on_tick", "comment": null}
+, {"addr": "0x440e00", "name": "LoadingThread::on_draw", "comment": null}
 , {"addr": "0x440e70", "name": "on_tick_01__io", "comment": null}
 , {"addr": "0x442280", "name": "wait_for_game_thread", "comment": null}
 , {"addr": "0x4427d0", "name": "Supervisor::switch_gamemodes", "comment": null}
@@ -317,10 +321,10 @@
 , {"addr": "0x44db70", "name": "Rng::rand_dword_mod_n", "comment": null}
 , {"addr": "0x44db90", "name": "cartesian_from_polar_44db90", "comment": null}
 , {"addr": "0x44dbb0", "name": "ReplayManager::initialize", "comment": null}
-, {"addr": "0x44e610", "name": "ReplayManager::on_tick_24__body", "comment": null}
-, {"addr": "0x44f1a0", "name": "ReplayManager::on_tick_11__game_input_from_replay", "comment": null}
-, {"addr": "0x44f2f0", "name": "ReplayManager::on_tick_11__game_input__normal", "comment": null}
-, {"addr": "0x44f4b0", "name": "ReplayManager::on_tick_24", "comment": null}
+, {"addr": "0x44e610", "name": "ReplayManager::on_tick_24__speedup_replay__body", "comment": null}
+, {"addr": "0x44f1a0", "name": "ReplayManager::on_tick_11__record_replay", "comment": null}
+, {"addr": "0x44f2f0", "name": "ReplayManager::on_tick_11__playback_replay", "comment": null}
+, {"addr": "0x44f4b0", "name": "ReplayManager::on_tick_24__speedup_replay", "comment": null}
 , {"addr": "0x44f4d0", "name": "ReplayManager::on_draw_48", "comment": null}
 , {"addr": "0x44f840", "name": "Globals::sub_44f840", "comment": null}
 , {"addr": "0x450350", "name": "ScorePopups::initialize", "comment": null}
@@ -394,7 +398,7 @@
 , {"addr": "0x46deb0", "name": "AnmManager::render_sub_46deb0", "comment": null}
 , {"addr": "0x46e560", "name": "AnmManager::render_sub_46e560", "comment": null}
 , {"addr": "0x46e810", "name": "AnmManager::render_sub_46e810", "comment": null}
-, {"addr": "0x46f8c0", "name": "anm_draw_to_screen", "comment": null}
+, {"addr": "0x46f8c0", "name": "AnmManager::draw_vm", "comment": null}
 , {"addr": "0x470aa0", "name": "AnmManager::sub_470aa0_render_line", "comment": null}
 , {"addr": "0x471400", "name": "cartesian_from_polar_471400", "comment": null}
 , {"addr": "0x471930", "name": "cartesian_from_polar_471930", "comment": null}
@@ -469,7 +473,7 @@
 , {"addr": "0x47b23f", "name": "__security_check_cookie", "comment": null}
 , {"addr": "0x47b250", "name": "malloc", "comment": null}
 , {"addr": "0x47b280", "name": "free_sized", "comment": null}
-, {"addr": "0x47b502", "name": "vector_sub_47b502", "comment": null}
+, {"addr": "0x47b502", "name": "initialize_vector", "comment": null}
 , {"addr": "0x47b576", "name": "vector_2_sub_47b576", "comment": null}
 , {"addr": "0x47ba15", "name": "prolly_crt_start", "comment": null}
 , {"addr": "0x47bb91", "name": "_start", "comment": null}

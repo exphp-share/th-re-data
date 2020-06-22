@@ -150,4 +150,6 @@
 , "WORD": {"def": "uint16_t", "size": 2}
 , "va_list": {"def": "char*", "size": 4}
 , "wchar_t": {"def": "uint16_t", "size": 2}
+, "zRenderPrimitiveVertex": {"def": "struct zRenderVertex044 zRenderPrimitiveVertex", "size": 20}
+, "zRenderSpriteVertex": {"def": "struct zRenderVertex144 zRenderSpriteVertex", "size": 28}
 }

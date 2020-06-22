@@ -52,6 +52,11 @@
 , {"addr": "0x410ad0", "name": "EnemyManager::on_tick__stub", "comment": null}
 , {"addr": "0x410b50", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x410b90", "name": "EnemyManager::on_draw__stub", "comment": null}
+, {"addr": "0x41ac10", "name": "FpsCounter::initialize", "comment": null}
+, {"addr": "0x41ac70", "name": "FpsCounter::destructor", "comment": null}
+, {"addr": "0x41acd0", "name": "FpsCounter::operator new", "comment": null}
+, {"addr": "0x41ae80", "name": "FpsCounter::on_draw", "comment": null}
+, {"addr": "0x41af60", "name": "FpsCounter::on_draw__stub", "comment": null}
 , {"addr": "0x41b020", "name": "Gui::constructor", "comment": null}
 , {"addr": "0x41b0c0", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x41b540", "name": "Gui::destructor", "comment": null}
@@ -96,7 +101,7 @@
 , {"addr": "0x428ac0", "name": "LoadingThread::on_draw", "comment": null}
 , {"addr": "0x428b30", "name": "LoadingThread::on_tick__stub", "comment": null}
 , {"addr": "0x428b40", "name": "LoadingThread::on_draw__stub", "comment": null}
-, {"addr": "0x428bc0", "name": "Supervisor::function_pointer", "comment": null}
+, {"addr": "0x428bc0", "name": "Supervisor::on_tick", "comment": null}
 , {"addr": "0x428c70", "name": "Supervisor::on_draw_01", "comment": null}
 , {"addr": "0x428dc0", "name": "Supervisor::on_draw_0c", "comment": null}
 , {"addr": "0x428e50", "name": "Supervisor::on_draw_26", "comment": null}
@@ -108,6 +113,7 @@
 , {"addr": "0x429120", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x4294b0", "name": "Supervisor::initialize", "comment": null}
 , {"addr": "0x42a1a0", "name": "sub_42a1a0_creates_thread", "comment": null}
+, {"addr": "0x42ae50", "name": "Supervisor::switch_gamemodes", "comment": null}
 , {"addr": "0x42b9b0", "name": "PauseMenu::constructor", "comment": null}
 , {"addr": "0x42ba60", "name": "PauseMenu::initialize", "comment": null}
 , {"addr": "0x42bd00", "name": "PauseMenu::destructor", "comment": null}
