@@ -10,11 +10,12 @@ import os
 import json
 from collections import defaultdict
 import contextlib
-from binaryninja import SymbolType, Type, log, BinaryViewType
+from binaryninja import Symbol, SymbolType, Type, log, BinaryViewType
 
 BNDB_DIR = r"E:\Downloaded Software\Touhou Project"
 JSON_DIR = r"F:\asd\clone\th16re-data\data"
 MD5SUMS_FILENAME = 'md5sums.json'
+ALL_MD5_KEYS = ['bndb', 'funcs.json', 'labels.json', 'statics.json', 'type-structs-own.json']
 GAMES = [
     "th07.v1.00b",
     "th08.v1.00d",
@@ -34,8 +35,8 @@ GAMES = [
 ]
 
 def export(bv, path=r'F:\asd\clone\th16re-data\data\th16.v1.00a'):
-    do_symbols(bv, path=path)
-    do_types(bv, path=path)
+    export_symbols(bv, path=path)
+    export_types(bv, path=path)
 
 @contextlib.contextmanager
 def open_bv(path):
@@ -45,7 +46,7 @@ def open_bv(path):
     finally:
         bv.file.close()
 
-def get_md5sum(path):
+def compute_md5(path):
     import hashlib
     return hashlib.md5(open(path,'rb').read()).hexdigest()
 
@@ -59,15 +60,14 @@ def dict_get_path(d, parts, default=None):
 def export_all(games=GAMES, bndb_dir=BNDB_DIR, json_dir=JSON_DIR, emit_status=print):
     # we will autocreate some subdirs, but for safety against mistakes
     # we won't create anything above the output dir itself
-    if not os.path.exists(os.path.dirname(json_dir)):
-        raise IOError(f"{os.path.dirname(json_dir)}: No such directory")
+    require_dir_exists(os.path.dirname(json_dir))
 
     old_md5sums = read_md5s_file(json_dir)
 
     for game in games:
         bndb_path = os.path.join(bndb_dir, f'{game}.bndb')
         json_subdir = os.path.join(json_dir, f'{game}')
-        if get_md5sum(bndb_path) == dict_get_path(old_md5sums, [game, 'bndb']):
+        if compute_md5(bndb_path) == lookup_md5(old_md5sums, game, 'bndb'):
             emit_status(f"{game}: up to date")
             continue
 
@@ -76,32 +76,10 @@ def export_all(games=GAMES, bndb_dir=BNDB_DIR, json_dir=JSON_DIR, emit_status=pr
             os.makedirs(json_subdir, exist_ok=True)
             export(bv, path=json_subdir)
 
-        update_all_md5s(games=[game], bndb_dir=BNDB_DIR, json_dir=JSON_DIR)
+        update_md5s(games=[game], keys=ALL_MD5_KEYS, bndb_dir=bndb_dir, json_dir=json_dir)
     emit_status("done")
 
-def read_md5s_file(json_dir=JSON_DIR):
-    md5sum_path = os.path.join(json_dir, MD5SUMS_FILENAME)
-    try:
-        with open(md5sum_path) as f:
-            return json.load(f)
-    except IOError: return {}
-    except json.decoder.JSONDecodeError: return {}
-
-def update_all_md5s(games=GAMES, bndb_dir=BNDB_DIR, json_dir=JSON_DIR):
-    md5s = read_md5s_file(json_dir)
-
-    for game in games:
-        md5s[game] = {
-            'bndb': get_md5sum(os.path.join(bndb_dir, f'{game}.bndb')),
-            'funcs.json': get_md5sum(os.path.join(json_dir, game, 'funcs.json')),
-            'labels.json': get_md5sum(os.path.join(json_dir, game, 'labels.json')),
-            'type-structs-own.json': get_md5sum(os.path.join(json_dir, game, 'type-structs-own.json')),
-        }
-
-    with open(os.path.join(json_dir, MD5SUMS_FILENAME), 'w') as f:
-        nice_json_object_of_object(f, 0, md5s, lambda f, d: json.dump(d, f))
-
-def do_symbols(bv, path):
+def export_symbols(bv, path):
     # precompute expensive properties
     bv_data_vars = bv.data_vars
     bv_symbols = bv.symbols
@@ -115,8 +93,18 @@ def do_symbols(bv, path):
         address = symbol.address
         if symbol.type == SymbolType.DataSymbol:
             # Skip statics that I didn't rename.
-            if name.startswith('data_') and is_hex(name[5:]):
+            if any(
+                name.startswith(prefix) and is_hex(name[len(prefix):])
+                for prefix in ['data_', 'jump_table_']
+            ):
                 continue
+
+            if name in [
+                '__dos_header', '__dos_stub', '__rich_header', '__coff_header',
+                '__pe32_optional_header', '__section_headers',
+            ]:
+                continue
+
             try:
                 t = bv_data_vars[address].type
             except KeyError:
@@ -166,10 +154,10 @@ def do_symbols(bv, path):
         v.sort()
 
     with open_output_json_with_validation(os.path.join(path, 'statics.json')) as f:
-        nice_json_array(f, 0, datas, lambda f, d: json_object_with_key_order(f, d, ['addr', 'name', 'type', 'comment']))
+        nice_json_array(f, 0, datas, lambda f, d: json.dump(with_key_order(d, ['addr', 'name', 'type', 'comment']), f))
 
     with open_output_json_with_validation(os.path.join(path, 'funcs.json')) as f:
-        nice_json_array(f, 0, funcs, lambda f, d: json_object_with_key_order(f, d, ['addr', 'name', 'comment']))
+        nice_json_array(f, 0, funcs, lambda f, d: json.dump(with_key_order(d, ['addr', 'name', 'comment']), f))
 
     with open_output_json_with_validation(os.path.join(path, 'labels.json')) as f:
         nice_json_object_of_array(f, 0, labels, lambda f, x: json.dump(x, f))
@@ -181,7 +169,7 @@ def nice_hex(x):
     s = hex(x)
     return s[:-1] if s.endswith('L') else s
 
-def do_types(bv, path):
+def export_types(bv, path):
     bv_types = bv.types
 
     structures = {}
@@ -200,7 +188,7 @@ def do_types(bv, path):
             typedefs[str(type_name)] = {'size': bv_types[type_name].width, 'def': str(bv_types[type_name])}
 
     with open_output_json_with_validation(os.path.join(path, 'type-aliases.json')) as f:
-        nice_json_object(f, 0, typedefs, lambda f, d: json_object_with_key_order(f, d, ['def', 'size']))
+        nice_json_object(f, 0, typedefs, lambda f, d: json.dump(with_key_order(d, ['def', 'size']), f))
 
     # I name all of my structures starting with "z" so that they all appear together in binja,
     # which always sorts structures by name (and starts out preloaded with hundreds of
@@ -217,15 +205,90 @@ def do_types(bv, path):
     with open_output_json_with_validation(os.path.join(path, 'type-enums.json')) as f:
         nice_json_object_of_array(f, 0, enumerations, lambda f, d: json.dump(d, f))
 
-@contextlib.contextmanager
-def open_output_json_with_validation(path):
-    """ Open a file for writing json.  Once the 'with' block is exited, the file will be
-    reopened for reading to validate the JSON. """
-    with open(path, 'w') as f:
-        yield f
+def import_all_functions(games=GAMES, bndb_dir=BNDB_DIR, json_dir=JSON_DIR, emit_status=print):
+    return _import_all_symbols(
+        games=games, bndb_dir=bndb_dir, json_dir=json_dir, emit_status=print,
+        json_filename='funcs.json', symbol_type=SymbolType.FunctionSymbol,
+    )
 
-    with open(path) as f:
-        json.load(f) # this will fail if the JSON is invalid
+def import_all_statics(games=GAMES, bndb_dir=BNDB_DIR, json_dir=JSON_DIR, emit_status=print):
+    return _import_all_symbols(
+        games=games, bndb_dir=bndb_dir, json_dir=json_dir, emit_status=print,
+        json_filename='statics.json', symbol_type=SymbolType.DataSymbol,
+    )
+
+def _import_all_symbols(games, bndb_dir, json_dir, json_filename, symbol_type, emit_status):
+    old_md5sums = read_md5s_file(json_dir)
+
+    for game in games:
+        bndb_path = os.path.join(bndb_dir, f'{game}.bndb')
+        json_path = os.path.join(json_dir, f'{game}', json_filename)
+        try:
+            with open(json_path) as f:
+                funcs_json = json.load(f)
+        except (IOError, json.decoder.JSONDecodeError) as e:
+            emit_status(f'{game}: {e}')
+            continue
+
+        if compute_md5(json_path) == lookup_md5(old_md5sums, game, json_filename):
+            emit_status(f"{game}: up to date")
+            continue
+
+        emit_status(f"{game}: checking...")
+        with open_bv(bndb_path) as bv:
+            if _import_symbols_from_json(bv, funcs_json, symbol_type, emit_status=lambda s: emit_status(f'{game}: {s}')):
+                emit_status(f'{game}: saving...')
+                bv.save_auto_snapshot()
+
+        update_md5s(games=[game], keys=['bndb', json_filename], bndb_dir=bndb_dir, json_dir=json_dir)
+    emit_status("done")
+
+def import_funcs_from_json(bv, funcs, emit_status=None):
+    return _import_symbols_from_json(bv, funcs, SymbolType.FunctionSymbol, emit_status=emit_status)
+def import_statics_from_json(bv, statics, emit_status=None):
+    return _import_symbols_from_json(bv, statics, SymbolType.DataSymbol, emit_status=emit_status)
+
+def _import_symbols_from_json(bv, symbols, symbol_type, emit_status=None):
+    changed = False
+    for d in symbols:
+        addr = int(d['addr'], 16)
+        name = d['name']
+        existing = bv.get_symbol_at(addr)
+        if existing is not None:
+            if name == existing.name:
+                continue
+            else:
+                bv.define_user_symbol(Symbol(symbol_type, addr, name))
+                changed = True
+                if emit_status:
+                    emit_status(f'rename {existing.name} => {name}')
+        else:
+            bv.define_user_symbol(Symbol(symbol_type, addr, name))
+            changed = True
+            if emit_status:
+                emit_status(f'name {existing.name}')
+    return changed
+
+def merge_function_files(games=GAMES, json_dir=JSON_DIR, emit_status=print):
+    return _merge_symbol_files(games, json_dir, 'funcs.json', emit_status)
+def merge_static_files(games=GAMES, json_dir=JSON_DIR, emit_status=print):
+    return _merge_symbol_files(games, json_dir, 'statics.json', emit_status)
+
+def _merge_symbol_files(games, json_dir, filename, emit_status):
+    require_dir_exists(json_dir)
+    os.makedirs(os.path.join(json_dir, 'composite'), exist_ok=True)
+
+    composite_path = os.path.join(json_dir, 'composite', filename)
+    composite_items = []
+    for game in games:
+        with open(os.path.join(json_dir, f'{game}/{filename}')) as f:
+            game_items = json.load(f)
+        composite_items.extend(dict(game=game, **d) for d in game_items)
+
+    composite_items.sort(key=lambda d: d['name'])
+
+    with open(composite_path, 'w') as f:
+        nice_json_array(f, 0, composite_items, lambda f, d: json.dump(d, f))
 
 def structure_to_cereal(structure, ty):
     # Include a fake field at the max offset to help simplify things
@@ -250,31 +313,6 @@ def structure_to_cereal(structure, ty):
     output.append((nice_hex(structure.width), '__end', None))
     return output
 
-def window2(it):
-    it = iter(it)
-    prev = next(it)
-    for x in it:
-        yield prev, x
-        prev = x
-
-# Python3's insertion-order dicts would make the output of json.dump "nice enough",
-# but Python2's dict order is so bad we need to step in and do something about it.
-def json_object_with_key_order(file, obj, keys):
-    if not obj:
-        print('{}', file=file)
-        return
-    
-    first = True
-    for key in keys:
-        print('{' if first else ', ', end='', file=file)
-        first = False
-
-        json.dump(key, file)
-        print(': ', end='', file=file)
-        json.dump(obj[key], file)
-
-    print('}', end='', file=file)
-
 def nice_json_array(file, indent, arr, func):
     arr = list(arr)
     if not arr:
@@ -290,13 +328,27 @@ def nice_json_array(file, indent, arr, func):
 
     print(' ' * indent + ']', file=file)
 
+def nice_json_object(file, indent, obj, func):
+    if not obj:
+        print('{}', file=file)
+        return
+
+    first = True
+    for key in obj:
+        print(' ' * indent + ('{ ' if first else ', '), end='', file=file)
+        print(json.dumps(key) + ': ', end='', file=file)
+        first = False
+        func(file, obj[key])
+        print(file=file)
+    print(' ' * indent + '}', file=file)
+
 def nice_json_object_of_array(file, indent, obj, func):
     if not obj:
         print('{}', file=file)
         return
 
     first = True
-    for key in sorted(obj):
+    for key in obj:
         print('{ ' if first else ', ', end='', file=file)
         print(json.dumps(key) + ': ', end='', file=file)
         print(file=file)
@@ -311,7 +363,7 @@ def nice_json_object_of_object(file, indent, obj, func):
         return
     
     first = True
-    for key in sorted(obj):
+    for key in obj:
         print('{ ' if first else ', ', end='', file=file)
         print(json.dumps(key) + ': ', end='', file=file)
         print(file=file)
@@ -320,19 +372,63 @@ def nice_json_object_of_object(file, indent, obj, func):
         print(file=file)
     print(' ' * indent + '}', file=file)
 
-def nice_json_object(file, indent, obj, func):
-    if not obj:
-        print('{}', file=file)
-        return
+#============================================================================
 
-    first = True
-    for key in sorted(obj):
-        print(' ' * indent + ('{ ' if first else ', '), end='', file=file)
-        print(json.dumps(key) + ': ', end='', file=file)
-        first = False
-        func(file, obj[key])
-        print(file=file)
-    print(' ' * indent + '}', file=file)
+def read_md5s_file(json_dir=JSON_DIR):
+    md5sum_path = os.path.join(json_dir, MD5SUMS_FILENAME)
+    try:
+        with open(md5sum_path) as f:
+            return json.load(f)
+    except IOError: return {}
+    except json.decoder.JSONDecodeError: return {}
+
+def update_md5s(games, keys, bndb_dir, json_dir):
+    md5s = read_md5s_file(json_dir)
+
+    path_funcs = {
+        'bndb': (lambda game: os.path.join(bndb_dir, f'{game}.bndb')),
+        'funcs.json': (lambda game: os.path.join(json_dir, game, 'funcs.json')),
+        'labels.json': (lambda game: os.path.join(json_dir, game, 'labels.json')),
+        'statics.json': (lambda game: os.path.join(json_dir, game, 'statics.json')),
+        'type-structs-own.json': (lambda game: os.path.join(json_dir, game, 'type-structs-own.json')),
+    }
+    for game in games:
+        if game not in md5s:
+            md5s[game] = {}
+        for key in keys:
+            md5s[game][key] = compute_md5(path_funcs[key](game))
+
+    with open(os.path.join(json_dir, MD5SUMS_FILENAME), 'w') as f:
+        nice_json_object_of_object(f, 0, md5s, lambda f, d: json.dump(d, f))
+
+def lookup_md5(md5s_dict, game, key):
+    assert key in ALL_MD5_KEYS # protection against typos
+    return md5s_dict.get(game, None).get(key, None)
+
+@contextlib.contextmanager
+def open_output_json_with_validation(path):
+    """ Open a file for writing json.  Once the 'with' block is exited, the file will be
+    reopened for reading to validate the JSON. """
+    with open(path, 'w') as f:
+        yield f
+
+    with open(path) as f:
+        json.load(f) # this will fail if the JSON is invalid
+
+def window2(it):
+    it = iter(it)
+    prev = next(it)
+    for x in it:
+        yield prev, x
+        prev = x
+
+def with_key_order(d, keys):
+    """ Set order of keys in a dict. (Python 3.7+ only) """
+    return { k:d[k] for k in keys }
+
+def require_dir_exists(path):
+    if not os.path.exists(path):
+        raise IOError(f"{path}: No such directory")
 
 def is_hex(s):
     try:
