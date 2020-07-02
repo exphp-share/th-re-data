@@ -258,6 +258,7 @@
 , {"addr": "0x4a9760", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a9804", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x4aea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4af4c4", "name": "__FIRST_BULLETTYPE__DEFAULT_RADIUS", "type": "float", "comment": null}
 , {"addr": "0x4b23e4", "name": "IS_ACHIEVEMENT_MODE", "type": "int32_t", "comment": null}
 , {"addr": "0x4b3230", "name": "INPUT_STRUCT", "type": "struct zInput", "comment": null}
 , {"addr": "0x4b5918", "name": "GAME_SPEED", "type": "float", "comment": null}
@@ -280,7 +281,7 @@
 , {"addr": "0x4b7680", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4b7684", "name": "TOKEN_MANAGER_PTR", "type": "struct zGoastManager*", "comment": null}
 , {"addr": "0x4b7688", "name": "BOMB_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4b768c", "name": "ET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4b768c", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
 , {"addr": "0x4b7690", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4b7698", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
 , {"addr": "0x4b769c", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}

@@ -133,9 +133,12 @@
 , {"addr": "0x414650", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x4147c0", "name": "BulletManager::operator new", "comment": null}
 , {"addr": "0x414ae0", "name": "Bullet::step_interpolators", "comment": null}
+, {"addr": "0x415410", "name": "Bullet::check_player_collision", "comment": null}
+, {"addr": "0x4155f0", "name": "Bullet::sub_4155f0", "comment": null}
+, {"addr": "0x415770", "name": "BulletManager::on_tick__body", "comment": null}
 , {"addr": "0x415980", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x4159b0", "name": "BulletManager::on_draw", "comment": null}
-, {"addr": "0x4165b0", "name": "sub_4165b0_can_cancel_bullets", "comment": null}
+, {"addr": "0x4165b0", "name": "Bullet::run_et_ex", "comment": null}
 , {"addr": "0x419ac0", "name": "Bullet::cancel", "comment": null}
 , {"addr": "0x419c30", "name": "gen_items_from_et_cancel", "comment": null}
 , {"addr": "0x419cf0", "name": "cancel_bullets_in_radius", "comment": null}
@@ -144,6 +147,8 @@
 , {"addr": "0x41a3e0", "name": "InterpFloat::set_bezier_2", "comment": null}
 , {"addr": "0x41a3f0", "name": "InterpFloat::set_bezier_1", "comment": null}
 , {"addr": "0x41a400", "name": "cartesian_from_polar_41a400", "comment": null}
+, {"addr": "0x41a450", "name": "AnmVm::sub_41a450", "comment": null}
+, {"addr": "0x41a510", "name": "AnmVm::sub_41a510", "comment": null}
 , {"addr": "0x41a550", "name": "cartesian_from_polar_41a550", "comment": null}
 , {"addr": "0x41a5c0", "name": "get_boss_enemy_full", "comment": null}
 , {"addr": "0x41ab30", "name": "Spellcard::on_tick__stub", "comment": null}
@@ -308,10 +313,13 @@
 , {"addr": "0x4444f0", "name": "PauseMenu::take_snapshot_for_pause", "comment": null}
 , {"addr": "0x446300", "name": "PlayerInner::constructor", "comment": null}
 , {"addr": "0x4463f0", "name": "Player::initialize", "comment": null}
+, {"addr": "0x446d90", "name": "Player::operator new", "comment": null}
 , {"addr": "0x446ea0", "name": "Player::operator delete", "comment": null}
 , {"addr": "0x447970", "name": "Player::on_game_tick", "comment": null}
 , {"addr": "0x448ce0", "name": "Player::on_game_tick__stub", "comment": null}
 , {"addr": "0x448cf0", "name": "Player::on_draw", "comment": null}
+, {"addr": "0x448ef0", "name": "Bullet::try_kill_player", "comment": null}
+, {"addr": "0x449420", "name": "Player::die", "comment": null}
 , {"addr": "0x449c80", "name": "Player::create_damage_source_449c80", "comment": null}
 , {"addr": "0x449de0", "name": "Player::sub_449de0_creates_damage_source", "comment": null}
 , {"addr": "0x449fa0", "name": "Player::do_graze", "comment": null}
@@ -361,6 +369,7 @@
 , {"addr": "0x465450", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x4654f0", "name": "SoundManager::play_sound_at_position", "comment": null}
 , {"addr": "0x4655a0", "name": "sub_4655a0_youmu_only", "comment": null}
+, {"addr": "0x4665f0", "name": "AnmLoaded::sub_4665f0", "comment": null}
 , {"addr": "0x466730", "name": "AnmVm::get_float_var", "comment": null}
 , {"addr": "0x466a70", "name": "AnmVm::get_int_var", "comment": null}
 , {"addr": "0x466be0", "name": "AnmVm::get_float_var_ptr", "comment": null}

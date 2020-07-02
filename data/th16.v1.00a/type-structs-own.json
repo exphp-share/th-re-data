@@ -855,7 +855,7 @@
   , ["0x3dd8", "bullet_mgr_offsets", "struct zBulletOffset [16]"]
   , ["0x3e98", "bullet_mgr_origins", "struct zBulletOffset [16]"]
   , ["0x3f58", "__anm__unknown_306", "struct zFloat2"]
-  , ["0x3f60", "move_limit_min_pos", "struct zFloat2"]
+  , ["0x3f60", "move_limit_center", "struct zFloat2"]
   , ["0x3f68", "move_limit_size", "struct zFloat2"]
   , ["0x3f70", "score_reward", "int32_t"]
   , ["0x3f74", "life", "struct zEnemyLife"]
