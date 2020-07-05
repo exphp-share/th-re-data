@@ -40,8 +40,10 @@
 , {"addr": "0x4065d0", "name": "InterpFloat3::step", "comment": null}
 , {"addr": "0x406920", "name": "Globals::get_chapter", "comment": null}
 , {"addr": "0x407230", "name": "anm_init_copy_vm_from_loaded", "comment": null}
+, {"addr": "0x4073a0", "name": "EnemyManager::get_anim_slot", "comment": null}
 , {"addr": "0x407b80", "name": "AsciiManager::operator new", "comment": null}
 , {"addr": "0x408050", "name": "AsciiManager::on_tick", "comment": null}
+, {"addr": "0x409510", "name": "AnmVm::sub_409510__resets_a_ton_of_stuff", "comment": null}
 , {"addr": "0x4097d0", "name": "AnmVm::destructor", "comment": null}
 , {"addr": "0x409830", "name": "AnmVm::destructor_stub", "comment": null}
 , {"addr": "0x409840", "name": "AnmVm::constructor", "comment": null}
@@ -77,7 +79,7 @@
 , {"addr": "0x410af0", "name": "TokenManager::sub_410af0", "comment": null}
 , {"addr": "0x411180", "name": "cartesian_from_polar_411180", "comment": null}
 , {"addr": "0x4111a0", "name": "TokenList::insert_at_back", "comment": null}
-, {"addr": "0x4112b0", "name": "anm_4112b0", "comment": null}
+, {"addr": "0x4112b0", "name": "anm_create_4112b0", "comment": null}
 , {"addr": "0x4113b0", "name": "PosVel::get_pos", "comment": null}
 , {"addr": "0x4113c0", "name": "cartesian_from_polar_4113c0", "comment": null}
 , {"addr": "0x411430", "name": "Bomb::noop_method_0", "comment": null}
@@ -139,6 +141,14 @@
 , {"addr": "0x415980", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x4159b0", "name": "BulletManager::on_draw", "comment": null}
 , {"addr": "0x4165b0", "name": "Bullet::run_et_ex", "comment": null}
+, {"addr": "0x4183f0", "name": "Bullet::step_ex_accel_00000004", "comment": null}
+, {"addr": "0x418610", "name": "Bullet::step_ex_veltime_00200000", "comment": null}
+, {"addr": "0x418800", "name": "Bullet::step_ex_angleaccel_00000008", "comment": null}
+, {"addr": "0x418990", "name": "Bullet::step_ex_angle_00000010", "comment": null}
+, {"addr": "0x418b80", "name": "Bullet::step_ex_bounce_00000040", "comment": null}
+, {"addr": "0x419090", "name": "Bullet::step_ex_unused30_40000000", "comment": null}
+, {"addr": "0x419330", "name": "Bullet::step_ex_move_00020000", "comment": null}
+, {"addr": "0x419590", "name": "Bullet::step_ex_offscreen_00000100", "comment": null}
 , {"addr": "0x419ac0", "name": "Bullet::cancel", "comment": null}
 , {"addr": "0x419c30", "name": "gen_items_from_et_cancel", "comment": null}
 , {"addr": "0x419cf0", "name": "cancel_bullets_in_radius", "comment": null}
@@ -147,7 +157,7 @@
 , {"addr": "0x41a3e0", "name": "InterpFloat::set_bezier_2", "comment": null}
 , {"addr": "0x41a3f0", "name": "InterpFloat::set_bezier_1", "comment": null}
 , {"addr": "0x41a400", "name": "cartesian_from_polar_41a400", "comment": null}
-, {"addr": "0x41a450", "name": "AnmVm::sub_41a450", "comment": null}
+, {"addr": "0x41a450", "name": "AnmVm::set_pos_time", "comment": null}
 , {"addr": "0x41a510", "name": "AnmVm::sub_41a510", "comment": null}
 , {"addr": "0x41a550", "name": "cartesian_from_polar_41a550", "comment": null}
 , {"addr": "0x41a5c0", "name": "get_boss_enemy_full", "comment": null}
@@ -214,6 +224,7 @@
 , {"addr": "0x4292e0", "name": "InterpFloat2::set_goal", "comment": null}
 , {"addr": "0x429300", "name": "InterpFloat2::set_initial", "comment": null}
 , {"addr": "0x429320", "name": "InterpFloat2::set_method", "comment": null}
+, {"addr": "0x429330", "name": "InterpRadialDist::step", "comment": null}
 , {"addr": "0x429590", "name": "InterpStrange1::disable", "comment": null}
 , {"addr": "0x4295a0", "name": "Enemy::sub_4295a0", "comment": null}
 , {"addr": "0x4295d0", "name": "InterpStrange1::set_end_time", "comment": null}
@@ -222,6 +233,7 @@
 , {"addr": "0x429620", "name": "Enemy::sub_429620", "comment": null}
 , {"addr": "0x429640", "name": "InterpStrange1::set_initial", "comment": null}
 , {"addr": "0x429680", "name": "InterpStrange1::set_method_for_3d", "comment": null}
+, {"addr": "0x4296a0", "name": "InterpStrange1::step", "comment": null}
 , {"addr": "0x429b40", "name": "GlobalsInner::add_to_global_9c", "comment": null}
 , {"addr": "0x429b60", "name": "PosVel::getter_429b60", "comment": null}
 , {"addr": "0x429b70", "name": "PosVel::getter_429b70", "comment": null}
@@ -230,6 +242,7 @@
 , {"addr": "0x429ba0", "name": "PosVel::setter_429ba0__uhhhhhhhhh_why_four_loops", "comment": null}
 , {"addr": "0x429c50", "name": "PosVel::get_origin_dist", "comment": null}
 , {"addr": "0x429c60", "name": "PosVel::getter_429c60", "comment": null}
+, {"addr": "0x429cc0", "name": "AnmLoaded::sub_429cc0", "comment": null}
 , {"addr": "0x429dd0", "name": "cartesian_from_polar_429dd0", "comment": null}
 , {"addr": "0x429e20", "name": "PosVel::get_y", "comment": null}
 , {"addr": "0x429e30", "name": "PosVel::get_x", "comment": null}
@@ -469,6 +482,7 @@
 , {"addr": "0x476470", "name": "anm_476470_find_existing_with_id", "comment": null}
 , {"addr": "0x476510", "name": "anm_switch_impl", "comment": null}
 , {"addr": "0x476740", "name": "anm_find_existing_or_clear_id", "comment": null}
+, {"addr": "0x476910", "name": "sub_476910_creates_anm", "comment": null}
 , {"addr": "0x476960", "name": "AnmVM::search_children", "comment": null}
 , {"addr": "0x476a60", "name": "anm__pop_special_node_or_alloc_467a60", "comment": null}
 , {"addr": "0x478a70", "name": "ecl_run", "comment": null}

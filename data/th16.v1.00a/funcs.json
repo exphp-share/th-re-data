@@ -236,7 +236,7 @@
 , {"addr": "0x416e20", "name": "cancel_bullets_in_rectangle_as_bomb", "comment": null}
 , {"addr": "0x416f40", "name": "et_clear_all", "comment": null}
 , {"addr": "0x417140", "name": "AnmVm::on_sprite_set__1", "comment": null}
-, {"addr": "0x417180", "name": "anm_reset_common_thing", "comment": null}
+, {"addr": "0x417180", "name": "InterpFloat::reset", "comment": null}
 , {"addr": "0x4171c0", "name": "InterpFloat::step", "comment": null}
 , {"addr": "0x4173a0", "name": "cartesian_from_polar_4173a0", "comment": null}
 , {"addr": "0x4173c0", "name": "AnmVm::sub_4173c0", "comment": null}

@@ -111,6 +111,7 @@
 , {"addr": "0x422970", "name": "EnemyManager::on_tick__body", "comment": null}
 , {"addr": "0x422a60", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x422aa0", "name": "EnemyManager::on_draw", "comment": null}
+, {"addr": "0x425270", "name": "Enemy::ecl_run_over_300", "comment": null}
 , {"addr": "0x42ea30", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x42eb30", "name": "Gui::sub_42eb30", "comment": null}
 , {"addr": "0x42fa40", "name": "Gui::destructor", "comment": null}
@@ -218,6 +219,7 @@
 , {"addr": "0x47e7c0", "name": "AnmManager::on_tick_1d", "comment": null}
 , {"addr": "0x47e7f0", "name": "AnmManager::on_tick_08__stub", "comment": null}
 , {"addr": "0x47e810", "name": "AnmManager::render_layer", "comment": null}
+, {"addr": "0x483fc0", "name": "Enemy::get_float_arg", "comment": null}
 , {"addr": "0x4854af", "name": "malloc", "comment": null}
 , {"addr": "0x4854fe", "name": "free", "comment": null}
 , {"addr": "0x4855d2", "name": "free__checked", "comment": null}

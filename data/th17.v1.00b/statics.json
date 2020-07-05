@@ -258,7 +258,7 @@
 , {"addr": "0x4a9760", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a9804", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x4aea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x4af4c4", "name": "__FIRST_BULLETTYPE__DEFAULT_RADIUS", "type": "float", "comment": null}
+, {"addr": "0x4af3c0", "name": "BULLET_TYPE_DEFINITIONS", "type": "struct zTableBulletSpriteData [44]", "comment": null}
 , {"addr": "0x4b23e4", "name": "IS_ACHIEVEMENT_MODE", "type": "int32_t", "comment": null}
 , {"addr": "0x4b3230", "name": "INPUT_STRUCT", "type": "struct zInput", "comment": null}
 , {"addr": "0x4b5918", "name": "GAME_SPEED", "type": "float", "comment": null}
@@ -303,6 +303,7 @@
 , {"addr": "0x509a20", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x509a30", "name": "CRIT_SECTION__UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x509aa8", "name": "CRITICAL_SECTION_509aa8", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x522574", "name": "SEEMINGLY_CONST_ZERO_VEC3", "type": "struct zFloat3", "comment": null}
 , {"addr": "0x529f20", "name": "RENDERING_QUADRILATERAL_529f20", "type": "zRenderSpriteVertex [4]", "comment": null}
 , {"addr": "0x52a920", "name": "KEY_STATES", "type": "uint8_t [256]", "comment": null}
 ]
