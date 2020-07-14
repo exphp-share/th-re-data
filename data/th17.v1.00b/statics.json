@@ -21,11 +21,11 @@
 , {"addr": "0x4a141c", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4a1438", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4a1680", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[6]", "comment": null}
-, {"addr": "0x4a17e0", "name": "VTABLE_LASER_CURVE", "type": "void*[26]", "comment": null}
-, {"addr": "0x4a184c", "name": "VTABLE_LASER_BEAM", "type": "void*[26]", "comment": null}
-, {"addr": "0x4a18b8", "name": "VTABLE_LASER_INFINITE", "type": "void*[26]", "comment": null}
-, {"addr": "0x4a1924", "name": "VTABLE_LASER_LINE", "type": "void*[26]", "comment": null}
-, {"addr": "0x4a1990", "name": "VTABLE_LASER_DEFAULT", "type": "void*[26]", "comment": null}
+, {"addr": "0x4a17e0", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4a184c", "name": "VTABLE_LASER_BEAM", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4a18b8", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4a1924", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4a1990", "name": "VTABLE_LASER_DEFAULT", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a3a88", "name": "float(2**-32)", "type": "float", "comment": null}
 , {"addr": "0x4a3a8c", "name": "float(2**-31)", "type": "float", "comment": null}
 , {"addr": "0x4a3a90", "name": "float(1e-04)", "type": "float", "comment": null}
@@ -264,7 +264,7 @@
 , {"addr": "0x4b5918", "name": "GAME_SPEED", "type": "float", "comment": null}
 , {"addr": "0x4b5920", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data [5]", "comment": null}
 , {"addr": "0x4b59c0", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Okay, so I have to choose between type inference or being able\nto comment each global individually.  Thanks, Binary Ninja.\n\n- FLAGS: Bits 4 and 5 indicate whether this is spell practice or stage practice."}
-, {"addr": "0x4b5aa4", "name": "HYPER_TIMER", "type": "struct zTime", "comment": null}
+, {"addr": "0x4b5aa4", "name": "HYPER_TIMER", "type": "struct zTimer", "comment": null}
 , {"addr": "0x4b5ac4", "name": "data_4b5ac4_has_hyperdying_flag", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5ae0", "name": "data_4b5ae0__begin_struct", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5c9c", "name": "GLOBAL_600_4b5c9c", "type": "int32_t", "comment": null}
@@ -297,6 +297,7 @@
 , {"addr": "0x4b77cc", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
 , {"addr": "0x4b77d0", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4b77d4", "name": "SHT_FUNCS_2", "type": "void", "comment": null}
+, {"addr": "0x4b77d8", "name": "REPLAY_MANAGER_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4b77e0", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4b77f0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x507a1c", "name": "ANM_ON_WAIT_FUNCS", "type": "void", "comment": null}

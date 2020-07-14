@@ -76,6 +76,7 @@
 , {"addr": "0x492ccc", "name": "PLAYER_ANM_FILENAMES", "type": "char*[4]", "comment": null}
 , {"addr": "0x492cdc", "name": "SUB_ANM_FILENAMES", "type": "char*[5]", "comment": null}
 , {"addr": "0x493358", "name": "STRING_FULL_WIDTH_SPACE", "type": "char [3]", "comment": null}
+, {"addr": "0x493730", "name": "VTABLE_MAIN_MENU", "type": "struct zVTableMainMenu", "comment": null}
 , {"addr": "0x493768", "name": "vtable_493768", "type": "void*[9]", "comment": null}
 , {"addr": "0x493790", "name": "vtable_493790_baseclass", "type": "void*[8]", "comment": null}
 , {"addr": "0x4938f8", "name": "WINDOW TITLE", "type": "struct ShiftJis [54]", "comment": null}
@@ -355,7 +356,7 @@
 , {"addr": "0x4a6da0", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4a6da4", "name": "SUBSEASON_BOMB_PTR", "type": "struct zBomb*", "comment": null}
 , {"addr": "0x4a6da8", "name": "MAIN_BOMB_PTR", "type": "struct zBomb*", "comment": null}
-, {"addr": "0x4a6dac", "name": "ET_OBJECT_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4a6dac", "name": "BULLET_MANGER_PTR", "type": "struct zBulletManager*", "comment": null}
 , {"addr": "0x4a6db0", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4a6db8", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": "This type has almost no responsibilities.  99% of code accessing it is only using it to get the AnmLoaded for effect.anm.\n\nIn TH15-17, it is 0x2020 bytes large and holds an array of Anm IDs.  I think this array holds IDs for player bullet splash animations, as well as enemy death, and possibly anything that uses anmPlay.  Why? I don't have a clue. At first I suspected that maybe it is to give these anms a chance to run special cleanup callbacks when the game is closed, but the TH16 destructor does not iterate over these ids...  (it just loops over all ANMs period, setting flags on everything from bullet.anm and effect.anm)\n\nPrior to TH15, things get even weirder.  This type did exist in TH13 and TH14, but it was only 0x2c bytes. In TH14, I found only a SINGLE function that uses this pointer for some purpose other than getting effect.anm.  I set a breakpoint on that function, and found that it was triggered every time a boss made one of those dark blobby spiral-in effects they do when teleporting or charging spells.\n\nThat function has paths that write to an array at this+0x1c, but TH14 never enters those paths.  So I have basically no clue at all why this type exists in TH14. a\n"}
 , {"addr": "0x4a6dbc", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}

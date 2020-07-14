@@ -1,1 +1,90 @@
-{}
+{ "zCOMMENT": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1", "__end", null]
+  ]
+
+, "zEnding": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2530", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2530", "__end", null]
+  ]
+
+, "zEnemyManager": 
+  [ ["0x0", "__end", null]
+  ]
+
+, "zFloat2": 
+  [ ["0x0", "x", "float"]
+  , ["0x4", "y", "float"]
+  , ["0x8", "__end", null]
+  ]
+
+, "zFloat3": 
+  [ ["0x0", "x", "float"]
+  , ["0x4", "y", "float"]
+  , ["0x8", "z", "float"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zInt2": 
+  [ ["0x0", "x", "int32_t"]
+  , ["0x4", "y", "int32_t"]
+  , ["0x8", "__end", null]
+  ]
+
+, "zInt3": 
+  [ ["0x0", "x", "int32_t"]
+  , ["0x4", "y", "int32_t"]
+  , ["0x8", "z", "int32_t"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zPlayer": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2444", "bullets", "struct zPlayerBullet [96]"]
+  , ["0x169c4", "__end", null]
+  ]
+
+, "zPlayerBullet": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1c0", "flags", "uint32_t"]
+  , ["0x1c4", "__field_1c4", "int16_t"]
+  , ["0x1c6", "__unknown", null]
+  , ["0x1d8", "__field_1d8", "int16_t"]
+  , ["0x1da", "__unknown", null]
+  , ["0x24c", "__vec3_24c", "struct zFloat3"]
+  , ["0x258", "__unknown", null]
+  , ["0x338", "__field_338", "float"]
+  , ["0x33c", "__unknown", null]
+  , ["0x348", "__field_348", "int16_t"]
+  , ["0x34a", "in_use", "int16_t"]
+  , ["0x34c", "__field_34c", "int16_t"]
+  , ["0x34e", "__unknown", null]
+  , ["0x354", "func_2", "void*"]
+  , ["0x358", "on_draw", "void*"]
+  , ["0x35c", "func_4", "void*"]
+  , ["0x360", "shooter", "struct zShtShooter*"]
+  , ["0x364", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x364", "__end", null]
+  ]
+
+, "zShtShooter": 
+  [ ["0x0", "fire_rate", "int16_t"]
+  , ["0x2", "start_delay", "int16_t"]
+  , ["0x4", "offset", "struct zFloat2"]
+  , ["0xc", "hitbox", "struct zFloat2"]
+  , ["0x14", "angle", "float"]
+  , ["0x18", "speed", "float"]
+  , ["0x1c", "damage", "int16_t"]
+  , ["0x1e", "option", "uint8_t"]
+  , ["0x1f", "unknown_old_sht_1", "uint8_t"]
+  , ["0x20", "anm", "uint16_t"]
+  , ["0x22", "sfx", "uint16_t"]
+  , ["0x24", "on_init", "void*"]
+  , ["0x28", "__func_2", "void*"]
+  , ["0x2c", "__func_3", "void*"]
+  , ["0x30", "__func_4", "void*"]
+  , ["0x34", "__end", null]
+  ]
+
+}

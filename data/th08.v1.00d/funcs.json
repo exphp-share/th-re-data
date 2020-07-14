@@ -355,9 +355,10 @@
 , {"addr": "0x44fd80", "name": "Player::sub_44fd80", "comment": null}
 , {"addr": "0x450f60", "name": "Player::sub_450f60", "comment": null}
 , {"addr": "0x451150", "name": "Player::sub_451150", "comment": null}
+, {"addr": "0x4512f0", "name": "Player::draw_bullets", "comment": null}
 , {"addr": "0x451500", "name": "Player::sub_451500", "comment": null}
 , {"addr": "0x451640", "name": "Player::sub_451640", "comment": null}
-, {"addr": "0x451670", "name": "Player::sub_451670", "comment": null}
+, {"addr": "0x451670", "name": "Player::check_bullets_hitting_enemy", "comment": null}
 , {"addr": "0x451d50", "name": "Player::sub_451d50", "comment": null}
 , {"addr": "0x451f90", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x4522a0", "name": "ReplayManager::on_tick_07", "comment": null}
@@ -383,6 +384,7 @@
 , {"addr": "0x45b8b0", "name": "ScreenEffect::operator new", "comment": null}
 , {"addr": "0x45c0e0", "name": "ScreenEffect::on_registration", "comment": null}
 , {"addr": "0x45c100", "name": "ScreenEffect::on_cleanup", "comment": null}
+, {"addr": "0x45c190", "name": "SoundManager::sub_45c190", "comment": null}
 , {"addr": "0x45d550", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x45d660", "name": "SoundManager::play_sound_at_position", "comment": null}
 , {"addr": "0x45d790", "name": "SoundManager::update_sound_thread", "comment": null}

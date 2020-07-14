@@ -218,7 +218,7 @@
 , {"addr": "0x412c80", "name": "BulletManager::on_draw", "comment": null}
 , {"addr": "0x412cb0", "name": "do_shoot", "comment": null}
 , {"addr": "0x413860", "name": "et_413860", "comment": null}
-, {"addr": "0x414da0", "name": "shoot_bullets", "comment": null}
+, {"addr": "0x414da0", "name": "BulletManager::shoot_bullets", "comment": null}
 , {"addr": "0x414ec0", "name": "et_414ec0", "comment": null}
 , {"addr": "0x414fb0", "name": "et_414fb0", "comment": null}
 , {"addr": "0x4151e0", "name": "et_4151e0", "comment": null}
@@ -245,9 +245,9 @@
 , {"addr": "0x417700", "name": "Spellcard::initialize", "comment": null}
 , {"addr": "0x417790", "name": "Spellcard::destructor", "comment": null}
 , {"addr": "0x4178a0", "name": "Spellcard::operator new", "comment": null}
-, {"addr": "0x417930", "name": "Spellcard::on_game_tick", "comment": null}
+, {"addr": "0x417930", "name": "Spellcard::on_tick", "comment": null}
 , {"addr": "0x417d70", "name": "Spellcard::on_draw", "comment": null}
-, {"addr": "0x417ee0", "name": "Spellcard::on_game_tick__stub", "comment": null}
+, {"addr": "0x417ee0", "name": "Spellcard::on_tick__stub", "comment": null}
 , {"addr": "0x417ef0", "name": "Spellcard::on_draw__stub", "comment": null}
 , {"addr": "0x417f00", "name": "ecl_spell_417f00", "comment": null}
 , {"addr": "0x4182f0", "name": "spell_end", "comment": null}
@@ -305,7 +305,7 @@
 , {"addr": "0x41ba10", "name": "EnemyFull::destructor", "comment": null}
 , {"addr": "0x41bb50", "name": "Enemy::step_interpolators", "comment": null}
 , {"addr": "0x41c1f0", "name": "Enemy::update_final_pos", "comment": null}
-, {"addr": "0x41c330", "name": "Enemy::step_game_logic", "comment": null}
+, {"addr": "0x41c330", "name": "Enemy::step_logic", "comment": null}
 , {"addr": "0x41cbd0", "name": "Enemy::update_fog", "comment": null}
 , {"addr": "0x41d1e0", "name": "EnemyFull::update", "comment": null}
 , {"addr": "0x41d2e0", "name": "Enemy::update", "comment": null}
@@ -386,8 +386,8 @@
 , {"addr": "0x42e910", "name": "HelpManual::destructor", "comment": null}
 , {"addr": "0x42ea30", "name": "HelpManual::operator new", "comment": null}
 , {"addr": "0x42ea80", "name": "HelpManual::operator delete", "comment": null}
-, {"addr": "0x42eab0", "name": "HelpManual::on_game_tick", "comment": null}
-, {"addr": "0x42ef90", "name": "HelpManual::on_game_tick__stub", "comment": null}
+, {"addr": "0x42eab0", "name": "HelpManual::on_tick", "comment": null}
+, {"addr": "0x42ef90", "name": "HelpManual::on_tick__stub", "comment": null}
 , {"addr": "0x42efa0", "name": "HelpManual::on_draw__trivial", "comment": null}
 , {"addr": "0x42f090", "name": "Bomb::subseason_condition_42f090", "comment": null}
 , {"addr": "0x42f0b0", "name": "ItemManager::constructor", "comment": null}
@@ -454,7 +454,7 @@
 , {"addr": "0x431860", "name": "LaserInfinite::constructor", "comment": null}
 , {"addr": "0x4318c0", "name": "LaserBeam::constructor", "comment": null}
 , {"addr": "0x431900", "name": "LaserCurve::constructor", "comment": null}
-, {"addr": "0x4319e0", "name": "ecl_545_reset", "comment": null}
+, {"addr": "0x4319e0", "name": "LaserManager::ecl_545_impl__cancels_all", "comment": null}
 , {"addr": "0x431a70", "name": "et_cancel_special_in_radius", "comment": null}
 , {"addr": "0x431af0", "name": "et_clear_all_special", "comment": null}
 , {"addr": "0x431b30", "name": "LaserLine::method_c", "comment": null}
@@ -542,8 +542,8 @@
 , {"addr": "0x43e3f0", "name": "PauseMenu::initialize", "comment": null}
 , {"addr": "0x43e4c0", "name": "PauseMenu::destructor", "comment": null}
 , {"addr": "0x43e5a0", "name": "PauseMenu::operator new", "comment": null}
-, {"addr": "0x43e5f0", "name": "PauseMenu::on_game_tick", "comment": null}
-, {"addr": "0x43e720", "name": "PauseMenu::on_game_tick__stub", "comment": null}
+, {"addr": "0x43e5f0", "name": "PauseMenu::on_tick", "comment": null}
+, {"addr": "0x43e720", "name": "PauseMenu::on_tick__stub", "comment": null}
 , {"addr": "0x43e9b0", "name": "PauseMenu::on_draw_sub_43e9b0", "comment": null}
 , {"addr": "0x43eb50", "name": "PauseMenu::on_draw_sub_43eb50", "comment": null}
 , {"addr": "0x43ec10", "name": "PauseMenu::draw_highscore_table", "comment": null}
@@ -562,8 +562,8 @@
 , {"addr": "0x441c60", "name": "Player::operator new", "comment": null}
 , {"addr": "0x441cf0", "name": "Player::move", "comment": null}
 , {"addr": "0x442380", "name": "Player::update_options_position", "comment": null}
-, {"addr": "0x442560", "name": "Player::on_game_tick", "comment": null}
-, {"addr": "0x443720", "name": "Player::on_game_tick_stub", "comment": null}
+, {"addr": "0x442560", "name": "Player::on_tick", "comment": null}
+, {"addr": "0x443720", "name": "Player::on_tick_stub", "comment": null}
 , {"addr": "0x443730", "name": "Player::on_draw", "comment": null}
 , {"addr": "0x443790", "name": "read_sht_file_443790", "comment": null}
 , {"addr": "0x443840", "name": "get_angle_to_player", "comment": null}
@@ -615,9 +615,9 @@
 , {"addr": "0x44abc0", "name": "MainMenu::thread_start", "comment": null}
 , {"addr": "0x44ac70", "name": "MainMenu::initialize", "comment": null}
 , {"addr": "0x44aee0", "name": "MainMenu::operator new", "comment": null}
-, {"addr": "0x44af80", "name": "MainMenu::on_game_tick", "comment": null}
+, {"addr": "0x44af80", "name": "MainMenu::on_tick", "comment": null}
 , {"addr": "0x44b530", "name": "MainMenu::on_draw", "comment": null}
-, {"addr": "0x44b5d0", "name": "MainMenu::on_game_tick__stub", "comment": null}
+, {"addr": "0x44b5d0", "name": "MainMenu::on_tick__stub", "comment": null}
 , {"addr": "0x44b5e0", "name": "MainMenu::on_draw__stub", "comment": null}
 , {"addr": "0x44b5f0", "name": "MainMenu::do_title_screen", "comment": null}
 , {"addr": "0x44c570", "name": "MainMenu::do_options", "comment": null}

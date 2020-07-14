@@ -1,1 +1,11 @@
-[]
+[ {"addr": "0x49c000", "name": "LIFE_BEFORE_MAIN", "type": "void*[44]", "comment": null}
+, {"addr": "0x4b9e44", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4ba0d8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
+, {"addr": "0x575950", "name": "SUPERVISOR", "type": "void", "comment": null}
+, {"addr": "0x626218", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
+, {"addr": "0x626270", "name": "LOLIDFK", "type": "void", "comment": null}
+, {"addr": "0x9a9b00", "name": "ENEMY_MANAGER", "type": "struct zEnemyManager", "comment": null}
+, {"addr": "0x12fe250", "name": "EFFECT_MANAGER", "type": "void", "comment": null}
+, {"addr": "0x1347938", "name": "UNKNOWN_GLOBAL_W", "type": "void", "comment": null}
+, {"addr": "0x135e2a8", "name": "MUSIC_ROOM", "type": "void", "comment": null}
+]

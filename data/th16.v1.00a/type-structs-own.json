@@ -175,9 +175,9 @@
   , ["0x120", "scripts", "uint8_t**"]
   , ["0x124", "d3d", "struct zAnmLoadedD3D*"]
   , ["0x128", "load_wait", "int32_t"]
-  , ["0x12c", "__________1", "int32_t [2]"]
+  , ["0x12c", "__unknown", null]
   , ["0x134", "__field_134__some_kind_of_counter", "int32_t"]
-  , ["0x138", "__________2", "int32_t"]
+  , ["0x138", "__unknown", null]
   , ["0x13c", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x13c", "__end", null]
   ]
@@ -415,7 +415,7 @@
 , "zAsciiInf": 
   [ ["0x0", "__field_0__was_0", "uint32_t"]
   , ["0x4", "__flags", "uint32_t"]
-  , ["0x8", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x8", "on_tick", "struct zUpdateFunc*"]
   , ["0xc", "on_draw_1", "struct zUpdateFunc*"]
   , ["0x10", "anm_vm_1", "struct zAnmVm"]
   , ["0x60c", "anm_vm_2", "struct zAnmVm"]
@@ -491,7 +491,7 @@
 , "zBomb": 
   [ ["0x0", "vtable", "struct zVTableBomb*"]
   , ["0x4", "__unknown", null]
-  , ["0x8", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x8", "on_tick", "struct zUpdateFunc*"]
   , ["0xc", "on_draw", "struct zUpdateFunc*"]
   , ["0x10", "__field_10", "void*"]
   , ["0x14", "__field_14__init_for_anm_a8", "struct zFloat3"]
@@ -584,6 +584,21 @@
   , ["0x1478", "__end", null]
   ]
 
+, "zBulletEx": 
+  [ ["0x0", "r", "float"]
+  , ["0x4", "s", "float"]
+  , ["0x8", "m", "float"]
+  , ["0xc", "n", "float"]
+  , ["0x10", "a", "int32_t"]
+  , ["0x14", "b", "int32_t"]
+  , ["0x18", "c", "int32_t"]
+  , ["0x1c", "d", "int32_t"]
+  , ["0x20", "type", "int32_t"]
+  , ["0x24", "slot", "int32_t"]
+  , ["0x28", "__str", "uint32_t"]
+  , ["0x2c", "__end", null]
+  ]
+
 , "zBulletList": 
   [ ["0x0", "entry", "struct zBullet*"]
   , ["0x4", "next", "struct zBulletList*"]
@@ -597,10 +612,12 @@
   , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw", "struct zUpdateFunc*"]
   , ["0xc", "__ptr_c", "struct zBullet*"]
-  , ["0x10", "__unknown", null]
+  , ["0x10", "__stuff_10", "int32_t [13]"]
+  , ["0x44", "et_protect_range", "float"]
+  , ["0x48", "__unknown", null]
   , ["0x58", "bullet_count_canceled_by_bombs", "int32_t"]
   , ["0x5c", "list_0_head", "struct zBulletNullList"]
-  , ["0x6c", "list_4_head", "struct zBulletList"]
+  , ["0x6c", "tick_list_head", "struct zBulletList"]
   , ["0x7c", "__unknown", null]
   , ["0x9c", "list_0_tail_dummy_bullet", "struct zBullet"]
   , ["0x1514", "bullets", "struct zBullet [2000]"]
@@ -1019,12 +1036,6 @@
   , ["0x88", "__end", null]
   ]
 
-, "zEtExData": 
-  [ ["0x0", "__unknown", null]
-  , ["0x2c", "__exact_size_known", "struct zCOMMENT [0]"]
-  , ["0x2c", "__end", null]
-  ]
-
 , "zFloat2": 
   [ ["0x0", "x", "float"]
   , ["0x4", "y", "float"]
@@ -1107,7 +1118,7 @@
 
 , "zGui": 
   [ ["0x0", "__unknown", null]
-  , ["0x4", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw_1__trivial", "struct zUpdateFunc*"]
   , ["0xc", "life_counter_guids", "uint32_t [8]"]
   , ["0x2c", "bomb_counter_guids", "uint32_t [8]"]
@@ -1157,7 +1168,7 @@
 
 , "zHelpManual": 
   [ ["0x0", "__unknown", null]
-  , ["0x4", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw", "struct zUpdateFunc*"]
   , ["0xc", "__unknown", null]
   , ["0x10", "__timer_10", "struct zTimer"]
@@ -1297,7 +1308,7 @@
 
 , "zItemManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x4", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw_1", "struct zUpdateFunc*"]
   , ["0xc", "__unknown", null]
   , ["0x10", "on_draw_2", "struct zUpdateFunc*"]
@@ -1435,7 +1446,7 @@
   , ["0x54", "__bmgr_000__type", "int32_t"]
   , ["0x58", "__bmgr_004__color", "int32_t"]
   , ["0x5c", "__bmgr_360__flags", "int32_t"]
-  , ["0x60", "ex", "struct zEtExData [18]"]
+  , ["0x60", "ex", "struct zBulletEx [18]"]
   , ["0x378", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x378", "__end", null]
   ]
@@ -1471,7 +1482,7 @@
   , ["0x2c", "__bmgr_024__distance", "float"]
   , ["0x30", "__unknown", null]
   , ["0x34", "flags", "int32_t"]
-  , ["0x38", "et_ex", "struct zEtExData [18]"]
+  , ["0x38", "et_ex", "struct zBulletEx [18]"]
   , ["0x350", "shot_sfx", "int32_t"]
   , ["0x354", "shot_transform_sfx", "int32_t"]
   , ["0x358", "__exact_size_known", "struct zCOMMENT [0]"]
@@ -1480,7 +1491,7 @@
 
 , "zLaserManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x4", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw", "struct zUpdateFunc*"]
   , ["0xc", "dummy_laser_for_list_tail", "struct zLaserBaseClass"]
   , ["0x5e0", "list_head", "struct zLaserBaseClass*"]
@@ -1504,7 +1515,7 @@
 
 , "zLoadingThread": 
   [ ["0x0", "__unknown", null]
-  , ["0x4", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw", "struct zUpdateFunc*"]
   , ["0xc", "__field_c", "struct zThread"]
   , ["0x28", "__unknown", null]
@@ -1519,9 +1530,9 @@
   ]
 
 , "zMainMenu": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "vtable", "struct zVTableMainMenu"]
   , ["0x4", "__field_4", "int32_t"]
-  , ["0x8", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x8", "on_tick", "struct zUpdateFunc*"]
   , ["0xc", "on_draw", "struct zUpdateFunc*"]
   , ["0x10", "title_anm", "struct zAnmLoaded*"]
   , ["0x14", "title_v_anm", "struct zAnmLoaded*"]
@@ -1562,6 +1573,8 @@
   , ["0x5a44", "__unknown", null]
   , ["0x5b50", "__replay_ptrs", "void*[25]"]
   , ["0x5bb4", "__unknown", null]
+  , ["0x5de4", "thread", "struct zThread"]
+  , ["0x5e00", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x5e00", "__end", null]
   ]
 
@@ -1633,7 +1646,7 @@
 
 , "zPlayer": 
   [ ["0x0", "__unknown", null]
-  , ["0x4", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw", "struct zUpdateFunc*"]
   , ["0xc", "anm_file", "struct zAnmLoaded*"]
   , ["0x10", "subseason_anm_file", "struct zAnmLoaded*"]
@@ -1974,8 +1987,8 @@
   [ ["0x0", "header", "struct zShtRawFileHeader"]
   , ["0x40", "pos_nofocus", "struct zShtRawOptionPos"]
   , ["0xe8", "pos_focus", "struct zShtRawOptionPos"]
-  , ["0x190", "shooter_arrays", "struct zShtRawShooter*[10]"]
-  , ["0x1b8", "shooters", "struct zShtRawShooter [1]"]
+  , ["0x190", "shooter_arrays", "struct zShtShooter*[10]"]
+  , ["0x1b8", "shooters", "struct zShtShooter [1]"]
   , ["0x210", "__more_shooters_with_0xffffffff_sentinels_between", "struct zCOMMENT"]
   , ["0x211", "__on_file_load,_shooter_offsets_are_updated_to_point_directly_at_shooters", "struct zCOMMENT"]
   , ["0x212", "__end", null]
@@ -2011,7 +2024,7 @@
   , ["0xa8", "__end", null]
   ]
 
-, "zShtRawShooter": 
+, "zShtShooter": 
   [ ["0x0", "fire_rate", "uint8_t"]
   , ["0x1", "start_delay", "uint8_t"]
   , ["0x2", "damage", "uint16_t"]
@@ -2025,12 +2038,12 @@
   , ["0x22", "anm", "uint8_t"]
   , ["0x23", "anm_hit", "uint8_t"]
   , ["0x24", "sfx_id", "int16_t"]
-  , ["0x26", "__byte_26", "uint8_t"]
-  , ["0x27", "__byte_27", "uint8_t"]
-  , ["0x28", "__func_28", "void*"]
-  , ["0x2c", "__func_2c", "void*"]
-  , ["0x30", "__unknown_30__read_from_empty_array", "uint32_t"]
-  , ["0x34", "__func_34", "void*"]
+  , ["0x26", "fire_rate_long", "uint8_t"]
+  , ["0x27", "start_delay_long", "uint8_t"]
+  , ["0x28", "func_on_init", "void*"]
+  , ["0x2c", "func_on_tick", "void*"]
+  , ["0x30", "__func_3", "void*"]
+  , ["0x34", "func_on_hit", "void*"]
   , ["0x38", "__unknown", null]
   , ["0x58", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x58", "__end", null]
@@ -2038,7 +2051,7 @@
 
 , "zSpellcard": 
   [ ["0x0", "__unknown", null]
-  , ["0x4", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw", "struct zUpdateFunc*"]
   , ["0xc", "__unknown", null]
   , ["0x20", "time", "struct zTimer"]
@@ -2051,7 +2064,7 @@
 
 , "zStage": 
   [ ["0x0", "__unknown", null]
-  , ["0x4", "on_game_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_tick", "struct zUpdateFunc*"]
   , ["0x8", "on_draw_1", "struct zUpdateFunc*"]
   , ["0xc", "inner", "struct zStageInner"]
   , ["0x334c", "__unknown", null]
@@ -2193,7 +2206,7 @@
   ]
 
 , "zUpdateFuncRegistry": 
-  [ ["0x0", "on_game_tick__list_head", "struct zUpdateFunc"]
+  [ ["0x0", "on_tick__list_head", "struct zUpdateFunc"]
   , ["0x28", "on_draw__list_head", "struct zUpdateFunc"]
   , ["0x50", "__list_head_50", "struct zUpdateFuncList*"]
   , ["0x54", "is_cleaning_up", "int32_t"]
@@ -2261,6 +2274,11 @@
   , ["0x60", "method_60", "void*"]
   , ["0x64", "method_64", "void*"]
   , ["0x68", "__end", null]
+  ]
+
+, "zVTableMainMenu": 
+  [ ["0x0", "method_0", "void*"]
+  , ["0x4", "__end", null]
   ]
 
 , "zVTableUnknown2": 

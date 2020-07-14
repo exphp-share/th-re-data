@@ -64,6 +64,7 @@
 , {"addr": "0x40d750", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x40d810", "name": "EnemyManager::on_tick__stub", "comment": null}
 , {"addr": "0x40d820", "name": "EnemyManager::on_draw", "comment": null}
+, {"addr": "0x40dc80", "name": "Enemy::on_tick", "comment": null}
 , {"addr": "0x412ff0", "name": "Globals::sub_412ff0_faith_timer_related", "comment": null}
 , {"addr": "0x413350", "name": "FpsCounter::operator new", "comment": null}
 , {"addr": "0x4135d0", "name": "FpsCounter::on_draw", "comment": null}

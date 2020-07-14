@@ -1,3 +1,111 @@
-[ {"addr": "0x43c7a0", "name": "AnmManager::preload_anm", "comment": null}
+[ {"addr": "0x401380", "name": "sub_401380__unused_debug_thing", "comment": null}
+, {"addr": "0x401470", "name": "initialize_vector_without_destructor", "comment": null}
+, {"addr": "0x403390", "name": "Timer::constructor", "comment": null}
+, {"addr": "0x403a10", "name": "AnmVm::constructor", "comment": null}
+, {"addr": "0x403ae0", "name": "Stage::operator new", "comment": null}
+, {"addr": "0x403d80", "name": "CardAttack::on_registration", "comment": null}
+, {"addr": "0x403d90", "name": "Supervisor::sub_403d90", "comment": null}
+, {"addr": "0x4041f0", "name": "CardAttack::on_tick", "comment": null}
+, {"addr": "0x404410", "name": "CardAttack::on_draw", "comment": null}
+, {"addr": "0x404560", "name": "CardAttack::on_registration__stub", "comment": null}
+, {"addr": "0x4045b0", "name": "CardAttack::constructor", "comment": null}
+, {"addr": "0x404600", "name": "CardAttack::operator new", "comment": null}
+, {"addr": "0x40cfb0", "name": "EffectSys::on_draw_x", "comment": null}
+, {"addr": "0x40d070", "name": "EffectSys::on_draw_1e", "comment": null}
+, {"addr": "0x40d1c0", "name": "EffectSys::on_registration", "comment": null}
+, {"addr": "0x40d2e0", "name": "EffectSys::constructor", "comment": null}
+, {"addr": "0x40d320", "name": "EffectSys::operator new", "comment": null}
+, {"addr": "0x40e2f0", "name": "Ending::on_cleanup", "comment": null}
+, {"addr": "0x40e480", "name": "Ending::on_draw", "comment": null}
+, {"addr": "0x40e580", "name": "Ending::on_registration", "comment": null}
+, {"addr": "0x40ef60", "name": "Ending::constructor", "comment": null}
+, {"addr": "0x40efe0", "name": "Ending::on_tick", "comment": null}
+, {"addr": "0x40f080", "name": "Ending::operator new", "comment": null}
+, {"addr": "0x410730", "name": "EnemyManager::on_tick", "comment": null}
+, {"addr": "0x411d50", "name": "EnemyManager::on_draw_x", "comment": null}
+, {"addr": "0x411d80", "name": "EnemyManager::on_draw_y", "comment": null}
+, {"addr": "0x411db0", "name": "EnemyManager::on_registration", "comment": null}
+, {"addr": "0x412100", "name": "Enemy::constructor", "comment": null}
+, {"addr": "0x4121d0", "name": "EnemyManager::constructor", "comment": null}
+, {"addr": "0x412240", "name": "EnemyManager::operator new", "comment": null}
+, {"addr": "0x415050", "name": "Pofv25e188::constructor", "comment": null}
+, {"addr": "0x4150d0", "name": "BulletManager::operator new", "comment": null}
+, {"addr": "0x415340", "name": "ExAttackManager::on_tick", "comment": null}
+, {"addr": "0x415460", "name": "ExAttackManager::on_draw_10", "comment": null}
+, {"addr": "0x415580", "name": "ExAttackManager::on_draw_1d", "comment": null}
+, {"addr": "0x415750", "name": "ExAttackManager::on_registration", "comment": null}
+, {"addr": "0x4157a0", "name": "ExAttackManagerItem::constructor", "comment": null}
+, {"addr": "0x4157b0", "name": "ExAttackManager::constructor", "comment": null}
+, {"addr": "0x4157d0", "name": "ExAttackManager::operator new", "comment": null}
+, {"addr": "0x417630", "name": "Gui::on_tick", "comment": null}
+, {"addr": "0x417c10", "name": "Gui::on_draw", "comment": null}
+, {"addr": "0x418480", "name": "Gui::on_registration", "comment": null}
+, {"addr": "0x4187b0", "name": "Gui::constructor", "comment": null}
+, {"addr": "0x418840", "name": "Gui::operator new", "comment": null}
+, {"addr": "0x41a75f", "name": "Lolidfk::on_draw", "comment": null}
+, {"addr": "0x41a889", "name": "UpdateFunc::initialize", "comment": null}
+, {"addr": "0x41aa5f", "name": "Lolidfk::on_tick", "comment": null}
+, {"addr": "0x41b76f", "name": "Lolidfk::on_registration", "comment": null}
+, {"addr": "0x41b82a", "name": "Lolidfk::on_cleanup", "comment": null}
+, {"addr": "0x41b9d0", "name": "Lolidfk::initialize", "comment": null}
+, {"addr": "0x41cdc0", "name": "Player::on_draw_y", "comment": null}
+, {"addr": "0x41e900", "name": "Player::on_tick", "comment": null}
+, {"addr": "0x41eb10", "name": "Player::on_draw_x", "comment": null}
+, {"addr": "0x41ee50", "name": "Player::on_registration", "comment": null}
+, {"addr": "0x41f030", "name": "PlayerArray2Item::constructor", "comment": null}
+, {"addr": "0x41f070", "name": "Player::constructor", "comment": null}
+, {"addr": "0x41f170", "name": "Player::operator new", "comment": null}
+, {"addr": "0x41f680", "name": "Player::draw_bullets", "comment": null}
+, {"addr": "0x420180", "name": "Supervisor::sub_420180", "comment": null}
+, {"addr": "0x420190", "name": "ReplayManager::on_tick_07", "comment": null}
+, {"addr": "0x4202a0", "name": "ReplayManager::on_tick_1a", "comment": null}
+, {"addr": "0x420470", "name": "ReplayManager::on_tick_1b", "comment": null}
+, {"addr": "0x4204b0", "name": "ReplayManager::on_tick_06", "comment": null}
+, {"addr": "0x420840", "name": "ReplayManager::on_tick_06__on_registration", "comment": null}
+, {"addr": "0x421140", "name": "ReplayManager::on_tick_1a__on_registration", "comment": null}
+, {"addr": "0x421670", "name": "ReplayManager::operator new", "comment": null}
+, {"addr": "0x4228f0", "name": "ScreenEffect::on_registration", "comment": null}
+, {"addr": "0x422900", "name": "ScreenEffect::on_cleanup", "comment": null}
+, {"addr": "0x422950", "name": "ScreenEffect::constructor", "comment": null}
+, {"addr": "0x422d20", "name": "ScreenEffect::operator new", "comment": null}
+, {"addr": "0x42ab13", "name": "Pofv1b388::operator new", "comment": null}
+, {"addr": "0x42abe0", "name": "UpdateFuncRegistry::constructor", "comment": null}
+, {"addr": "0x42b130", "name": "Supervisor::sub_42b130", "comment": null}
+, {"addr": "0x42b160", "name": "Supervisor::sub_42b160", "comment": null}
+, {"addr": "0x42b1e0", "name": "register__on_tick", "comment": null}
+, {"addr": "0x42b270", "name": "register__on_draw", "comment": null}
+, {"addr": "0x42b300", "name": "UpdateFuncRegistry::new_update_func", "comment": null}
+, {"addr": "0x42c700", "name": "UpdateFuncRegistry::run_all_on_tick", "comment": null}
+, {"addr": "0x42c7e0", "name": "UpdateFuncRegistry::run_all_on_draw", "comment": null}
+, {"addr": "0x42cc10", "name": "NetworkManager::constructor", "comment": null}
+, {"addr": "0x42d2d0", "name": "Supervisor::sub_42d2d0", "comment": null}
+, {"addr": "0x42dc40", "name": "do_tick", "comment": null}
+, {"addr": "0x42e3b0", "name": "main", "comment": null}
+, {"addr": "0x42fe20", "name": "Supervisor::sub_42fe20", "comment": null}
+, {"addr": "0x42ff00", "name": "Supervisor::sub_42ff00", "comment": null}
+, {"addr": "0x430060", "name": "Supervisor::sub_430060", "comment": null}
+, {"addr": "0x430230", "name": "sub_430230__joins_thread", "comment": null}
+, {"addr": "0x431110", "name": "Supervisor::on_tick", "comment": null}
+, {"addr": "0x431b70", "name": "Supervisor::on_cleanup", "comment": null}
+, {"addr": "0x432090", "name": "Supervisor::on_registration", "comment": null}
+, {"addr": "0x432180", "name": "Supervisor::initialize", "comment": null}
+, {"addr": "0x4324c0", "name": "NetworkManager::initialize", "comment": null}
+, {"addr": "0x432eb0", "name": "NetworkManager::sub_432eb0", "comment": null}
+, {"addr": "0x434260", "name": "MainMenu::on_cleanup", "comment": null}
+, {"addr": "0x4343d0", "name": "Float3::constructor", "comment": null}
+, {"addr": "0x4344e0", "name": "MainMenu::on_registration", "comment": null}
+, {"addr": "0x435b00", "name": "MainMenu::on_tick", "comment": null}
+, {"addr": "0x435c00", "name": "MainMenu::on_draw_22", "comment": null}
+, {"addr": "0x435c60", "name": "MainMenu::on_draw_17", "comment": null}
+, {"addr": "0x435ca0", "name": "MainMenu::initialize", "comment": null}
+, {"addr": "0x439680", "name": "AnmManager::sub_439680", "comment": null}
+, {"addr": "0x4396a0", "name": "AnmManager::sub_4396a0", "comment": null}
+, {"addr": "0x43ab50", "name": "AnmManager::render_vm", "comment": null}
+, {"addr": "0x43c7a0", "name": "AnmManager::preload_anm", "comment": null}
+, {"addr": "0x43ce30", "name": "AnmManager::constructor", "comment": null}
+, {"addr": "0x43e2f0", "name": "SoundManager::sub_43e2f0", "comment": null}
+, {"addr": "0x43ee40", "name": "SoundManager::sub_43ee40", "comment": null}
+, {"addr": "0x43f1f0", "name": "SoundManager::update_sound_thread", "comment": null}
+, {"addr": "0x47b24e", "name": "malloc", "comment": null}
 , {"addr": "0x47d45f", "name": "_start", "comment": null}
 ]

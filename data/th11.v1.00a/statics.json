@@ -28,6 +28,8 @@
 , {"addr": "0x4a8ec4", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4a8ecc", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4c3234", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
+, {"addr": "0x4c3244", "name": "SHT_FUNC_3_FUNCS", "type": "void*[1]", "comment": null}
+, {"addr": "0x4c3248", "name": "SHT_ON_HIT_FUNCS", "type": "void*[1]", "comment": null}
 , {"addr": "0x4c3280", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4c3e80", "name": "SOUND_MANAGER", "type": "void", "comment": null}
 ]

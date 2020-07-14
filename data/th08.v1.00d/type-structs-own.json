@@ -662,7 +662,8 @@
   , ["0x404", "__unknown", null]
   , ["0x40c", "__array_1", "struct zPlayerArray1Item [4]"]
   , ["0xfdc", "inner", "struct zPlayerInner"]
-  , ["0xb8834", "__unknown", null]
+  , ["0xb8834", "__filler_02", "struct zPlayerArray3Item [384]"]
+  , ["0xbe834", "__unknown", null]
   , ["0xbe838", "__array_be838", "struct zPlayerArray2Item [128]"]
   , ["0xe2a38", "field_e2a38", "struct zEnemyManagerArray2Item [3]"]
   , ["0xe2a68", "__unknown", null]
@@ -705,6 +706,12 @@
   , ["0x460", "__unknown", null]
   , ["0x484", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x484", "__end", null]
+  ]
+
+, "zPlayerArray3Item": 
+  [ ["0x0", "__unknown", null]
+  , ["0x40", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x40", "__end", null]
   ]
 
 , "zPlayerInner": 

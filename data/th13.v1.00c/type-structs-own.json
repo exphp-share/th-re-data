@@ -129,6 +129,12 @@
   , ["0xc8", "__end", null]
   ]
 
+, "zFloat2": 
+  [ ["0x0", "x", "float"]
+  , ["0x4", "y", "float"]
+  , ["0x8", "__end", null]
+  ]
+
 , "zGameThread": 
   [ ["0x0", "__unknown", null]
   , ["0x7c", "__exact_size_known", "struct zCOMMENT [0]"]
@@ -233,6 +239,29 @@
   [ ["0x0", "__unknown", null]
   , ["0x320", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x320", "__end", null]
+  ]
+
+, "zShtShooter": 
+  [ ["0x0", "fire_rate", "uint8_t"]
+  , ["0x1", "start_delay", "uint8_t"]
+  , ["0x2", "damage", "uint16_t"]
+  , ["0x4", "offset_from_option", "struct zFloat2"]
+  , ["0xc", "hitbox", "struct zFloat2"]
+  , ["0x14", "angle", "float"]
+  , ["0x18", "speed", "float"]
+  , ["0x1c", "__dword_1c", "int32_t"]
+  , ["0x20", "option", "uint8_t"]
+  , ["0x21", "__byte_21", "uint8_t"]
+  , ["0x22", "anm", "uint8_t"]
+  , ["0x23", "anm_hit", "uint8_t"]
+  , ["0x24", "sfx_id", "int16_t"]
+  , ["0x26", "__not_fire_rate_2_and_start_delay_2", "int16_t"]
+  , ["0x28", "func_on_init", "void*"]
+  , ["0x2c", "func_on_tick", "void*"]
+  , ["0x30", "__func_3", "void*"]
+  , ["0x34", "func_on_hit", "void*"]
+  , ["0x38", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x38", "__end", null]
   ]
 
 , "zSoundManager": 

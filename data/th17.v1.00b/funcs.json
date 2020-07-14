@@ -8,7 +8,9 @@
 , {"addr": "0x4027b0", "name": "Rng::rand_dword", "comment": null}
 , {"addr": "0x402840", "name": "Rng::randf_0_to_1", "comment": null}
 , {"addr": "0x402880", "name": "Rng::randf_neg_1_to_1", "comment": null}
+, {"addr": "0x402920", "name": "math_wrap_angle_402920", "comment": null}
 , {"addr": "0x402b60", "name": "sub_402b60__calls_WaitForSingleObject", "comment": null}
+, {"addr": "0x402c20", "name": "PosVel::sub_402c20", "comment": null}
 , {"addr": "0x402cf0", "name": "PosVel::sub_402cf0", "comment": null}
 , {"addr": "0x402fc0", "name": "PosVel::sub_402fc0", "comment": null}
 , {"addr": "0x402fe0", "name": "interp_common_methods", "comment": null}
@@ -66,8 +68,9 @@
 , {"addr": "0x40d8d0", "name": "InterpFloat::step", "comment": null}
 , {"addr": "0x40dbe0", "name": "Timer::decrement", "comment": null}
 , {"addr": "0x40de60", "name": "Globals::get_global_1c", "comment": null}
+, {"addr": "0x40e330", "name": "TokenManager::destroy_all", "comment": null}
 , {"addr": "0x40e420", "name": "TokenManager::operator new", "comment": null}
-, {"addr": "0x40e640", "name": "TokenManager::destructor", "comment": null}
+, {"addr": "0x40e640", "name": "TokenManager::operator delete", "comment": null}
 , {"addr": "0x40e750", "name": "TokenManager::on_tick", "comment": null}
 , {"addr": "0x40e920", "name": "TokenManager::sub_40e920", "comment": null}
 , {"addr": "0x40ee70", "name": "TokenManager::sub_40ee70_beast_related", "comment": null}
@@ -134,13 +137,16 @@
 , {"addr": "0x414560", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x414650", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x4147c0", "name": "BulletManager::operator new", "comment": null}
+, {"addr": "0x4149b0", "name": "BulletManager::operator delete", "comment": null}
 , {"addr": "0x414ae0", "name": "Bullet::step_interpolators", "comment": null}
 , {"addr": "0x415410", "name": "Bullet::check_player_collision", "comment": null}
 , {"addr": "0x4155f0", "name": "Bullet::sub_4155f0", "comment": null}
 , {"addr": "0x415770", "name": "BulletManager::on_tick__body", "comment": null}
 , {"addr": "0x415980", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x4159b0", "name": "BulletManager::on_draw", "comment": null}
+, {"addr": "0x415ae0", "name": "BulletManager::shoot_one_bullet", "comment": null}
 , {"addr": "0x4165b0", "name": "Bullet::run_et_ex", "comment": null}
+, {"addr": "0x4182d0", "name": "BulletManager::shoot_bullets", "comment": null}
 , {"addr": "0x4183f0", "name": "Bullet::step_ex_accel_00000004", "comment": null}
 , {"addr": "0x418610", "name": "Bullet::step_ex_veltime_00200000", "comment": null}
 , {"addr": "0x418800", "name": "Bullet::step_ex_angleaccel_00000008", "comment": null}
@@ -154,6 +160,7 @@
 , {"addr": "0x419cf0", "name": "cancel_bullets_in_radius", "comment": null}
 , {"addr": "0x419df0", "name": "cancel_bullets_in_radius_as_bomb", "comment": null}
 , {"addr": "0x419f00", "name": "cancel_bullets_in_rectangle_as_bomb", "comment": null}
+, {"addr": "0x41a1e0", "name": "BulletManager::cancel_all", "comment": null}
 , {"addr": "0x41a3e0", "name": "InterpFloat::set_bezier_2", "comment": null}
 , {"addr": "0x41a3f0", "name": "InterpFloat::set_bezier_1", "comment": null}
 , {"addr": "0x41a400", "name": "cartesian_from_polar_41a400", "comment": null}
@@ -178,6 +185,7 @@
 , {"addr": "0x41c310", "name": "Ending::operator new", "comment": null}
 , {"addr": "0x41c390", "name": "Ending::on_tick", "comment": null}
 , {"addr": "0x41d4b0", "name": "get_recent_graze_count", "comment": null}
+, {"addr": "0x41d4e0", "name": "BulletManager::set_et_protect_range", "comment": null}
 , {"addr": "0x41d600", "name": "EnemyFull::sub_41d600", "comment": null}
 , {"addr": "0x41d6b0", "name": "EnemyFull::sub_41d6b0", "comment": null}
 , {"addr": "0x41d7b0", "name": "EnemyLife::get_current", "comment": null}
@@ -193,8 +201,12 @@
 , {"addr": "0x41dd20", "name": "EnemyManager::sub_41dd20", "comment": null}
 , {"addr": "0x41dd60", "name": "EnemyManager::sub_41dd60", "comment": null}
 , {"addr": "0x41ddd0", "name": "find_enemy_full_by_id", "comment": null}
+, {"addr": "0x41e060", "name": "Laser::sub_41e060", "comment": null}
+, {"addr": "0x41e080", "name": "LaserCurveInner::constructor", "comment": null}
+, {"addr": "0x41e0f0", "name": "LaserManager::find_laser_by_id", "comment": null}
 , {"addr": "0x41e140", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x41e550", "name": "EnemyManager::operator new", "comment": null}
+, {"addr": "0x41e700", "name": "EnemyManager::operator delete", "comment": null}
 , {"addr": "0x41e880", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x41e9d0", "name": "EnemyManager::on_draw", "comment": null}
 , {"addr": "0x41e9e0", "name": "sub_41e9e0_uses_enemy_mgr", "comment": null}
@@ -247,13 +259,15 @@
 , {"addr": "0x429e20", "name": "PosVel::get_y", "comment": null}
 , {"addr": "0x429e30", "name": "PosVel::get_x", "comment": null}
 , {"addr": "0x429e60", "name": "PosVel::getter_429e60", "comment": null}
+, {"addr": "0x429e70", "name": "sub_429e70_disabled_log_function", "comment": null}
 , {"addr": "0x429e80", "name": "PosVel::set_pos", "comment": null}
 , {"addr": "0x429ea0", "name": "cartesian_from_polar_429ea0", "comment": null}
+, {"addr": "0x42b010", "name": "Gui::destructor", "comment": null}
 , {"addr": "0x42b290", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x42d200", "name": "Gui::on_tick__stub", "comment": null}
 , {"addr": "0x42d210", "name": "Gui::on_draw_34", "comment": null}
 , {"addr": "0x42d220", "name": "Gui::on_draw_31__stub", "comment": null}
-, {"addr": "0x430020", "name": "LaserManager::sub_430020", "comment": null}
+, {"addr": "0x430020", "name": "LaserManager::destroy_all", "comment": null}
 , {"addr": "0x430080", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x430d60", "name": "start_game_thread", "comment": null}
 , {"addr": "0x431240", "name": "GameThread::operator new", "comment": null}
@@ -264,11 +278,17 @@
 , {"addr": "0x432840", "name": "HelpManual::operator new", "comment": null}
 , {"addr": "0x432af0", "name": "HelpManual::on_tick", "comment": null}
 , {"addr": "0x433020", "name": "HelpManual::on_tick__stub", "comment": null}
+, {"addr": "0x433040", "name": "Item::constructor", "comment": null}
+, {"addr": "0x433190", "name": "Item::destructor", "comment": null}
 , {"addr": "0x4331b0", "name": "ItemManager::operator new", "comment": null}
+, {"addr": "0x4332b0", "name": "ItemManager::operator delete", "comment": null}
 , {"addr": "0x433410", "name": "ItemManager::on_tick__body", "comment": null}
 , {"addr": "0x434200", "name": "Globals::collect_power_item", "comment": null}
 , {"addr": "0x434400", "name": "Globals::collect_point_item", "comment": null}
+, {"addr": "0x434570", "name": "ItemManager::on_draw_21__body", "comment": null}
 , {"addr": "0x4346d0", "name": "ItemManager::on_tick", "comment": null}
+, {"addr": "0x434700", "name": "ItemManager::on_draw_21", "comment": null}
+, {"addr": "0x434720", "name": "ItemManager::on_draw_13", "comment": null}
 , {"addr": "0x434740", "name": "ItemManager::spawn_item", "comment": null}
 , {"addr": "0x434b80", "name": "Item::sub_434b80", "comment": null}
 , {"addr": "0x434cf0", "name": "Float2::from_polar_434cf0", "comment": null}
@@ -278,6 +298,7 @@
 , {"addr": "0x434d40", "name": "leaf_434d40_ret0_1arg", "comment": null}
 , {"addr": "0x434d50", "name": "leaf_434d50_ret0", "comment": null}
 , {"addr": "0x434d60", "name": "leaf_434d60_ret0", "comment": null}
+, {"addr": "0x434d70", "name": "LaserBaseClass::method_18", "comment": null}
 , {"addr": "0x434d90", "name": "leaf_434d90_ret0_6arg", "comment": null}
 , {"addr": "0x434da0", "name": "leaf_434da0_ret0_5arg", "comment": null}
 , {"addr": "0x434db0", "name": "leaf_434db0_ret0_4arg", "comment": null}
@@ -297,20 +318,71 @@
 , {"addr": "0x434e90", "name": "leaf_434e90_ret0", "comment": null}
 , {"addr": "0x434ea0", "name": "leaf_434ea0_ret0", "comment": null}
 , {"addr": "0x434eb0", "name": "leaf_434eb0_ret0", "comment": null}
-, {"addr": "0x434ec0", "name": "LaserManager::constructor", "comment": null}
+, {"addr": "0x434ec0", "name": "LaserBaseClass::constructor", "comment": null}
+, {"addr": "0x434f30", "name": "LaserLine::method_0", "comment": null}
+, {"addr": "0x434f90", "name": "LaserLine::method_64", "comment": null}
+, {"addr": "0x434fd0", "name": "LaserLine::constructor", "comment": null}
+, {"addr": "0x4351c0", "name": "LaserCurve::method_0", "comment": null}
+, {"addr": "0x435220", "name": "LaserInfinite::method_0", "comment": null}
+, {"addr": "0x435280", "name": "LaserBeam::method_0", "comment": null}
+, {"addr": "0x4352e0", "name": "LaserBeam::method_8", "comment": null}
 , {"addr": "0x435300", "name": "LaserManager::operator delete", "comment": null}
 , {"addr": "0x435400", "name": "LaserManager::on_tick__body", "comment": null}
 , {"addr": "0x435510", "name": "LaserManager::on_tick", "comment": null}
 , {"addr": "0x435580", "name": "LaserManager::on_draw", "comment": null}
-, {"addr": "0x4359b0", "name": "cancel_lasers_in_rectangle", "comment": null}
-, {"addr": "0x435ab0", "name": "cancel_special_bullets_in_radius", "comment": null}
-, {"addr": "0x437b80", "name": "LaserLine::cancel_circle", "comment": null}
-, {"addr": "0x438490", "name": "LaserLine::cancel_rectangle", "comment": null}
-, {"addr": "0x438be0", "name": "LaserLine::cancel", "comment": null}
-, {"addr": "0x43a350", "name": "LaserInfinite::cancel_circle", "comment": null}
+, {"addr": "0x4355c0", "name": "Laser::operator new", "comment": null}
+, {"addr": "0x4359b0", "name": "LaserManager::cancel_in_rectangle", "comment": null}
+, {"addr": "0x435a40", "name": "LaserManager::ecl_545_impl__cancels_all", "comment": null}
+, {"addr": "0x435ab0", "name": "LaserManager::cancel_in_radius", "comment": null}
+, {"addr": "0x435b30", "name": "LaserManager::cancel_all", "comment": null}
+, {"addr": "0x435b70", "name": "LaserLine::method_c", "comment": null}
+, {"addr": "0x435f90", "name": "LaserLine::run_ex", "comment": null}
+, {"addr": "0x436840", "name": "LaserLine::method_50", "comment": null}
+, {"addr": "0x436d60", "name": "LaserLine::method_44", "comment": null}
+, {"addr": "0x436ee0", "name": "LaserLine::method_3c", "comment": null}
+, {"addr": "0x437060", "name": "LaserLine::on_tick", "comment": null}
+, {"addr": "0x437830", "name": "LaserLine::check_graze_or_kill", "comment": null}
+, {"addr": "0x437a40", "name": "LaserLine::on_draw", "comment": null}
+, {"addr": "0x437b70", "name": "LaserLine::method_18", "comment": null}
+, {"addr": "0x437b80", "name": "LaserLine::cancel_as_bomb_rectangle", "comment": null}
+, {"addr": "0x438490", "name": "LaserLine::method_1c", "comment": null}
+, {"addr": "0x438be0", "name": "LaserLine::cancel_as_bomb_circle", "comment": null}
+, {"addr": "0x4393d0", "name": "LaserLine::cancel", "comment": null}
+, {"addr": "0x4397d0", "name": "LaserLine::method_30", "comment": null}
+, {"addr": "0x4398b0", "name": "LaserInfinite::method_c", "comment": null}
+, {"addr": "0x439b20", "name": "LaserInfinite::on_tick", "comment": null}
+, {"addr": "0x43a0e0", "name": "LaserInfinite::check_graze_or_kill", "comment": null}
+, {"addr": "0x43a270", "name": "LaserInfinite::on_draw", "comment": null}
+, {"addr": "0x43a340", "name": "LaserInfinite::method_18", "comment": null}
+, {"addr": "0x43a350", "name": "LaserInfinite::cancel_as_bomb_rectangle", "comment": null}
 , {"addr": "0x43ac00", "name": "LaserInfinite::cancel_rectangle", "comment": null}
-, {"addr": "0x43b290", "name": "LaserInfinite::cancel", "comment": null}
+, {"addr": "0x43b290", "name": "LaserInfinite::cancel_as_bomb_circle", "comment": null}
+, {"addr": "0x43baa0", "name": "LaserInfinite::cancel", "comment": null}
+, {"addr": "0x43bf30", "name": "LaserInfinite::method_30", "comment": null}
+, {"addr": "0x43c010", "name": "LaserInfinite::run_ex", "comment": null}
+, {"addr": "0x43c0b0", "name": "LaserCurve::method_c", "comment": null}
+, {"addr": "0x43c730", "name": "LaserCurve::method_18", "comment": null}
+, {"addr": "0x43c7a0", "name": "LaserCurve::on_tick", "comment": null}
+, {"addr": "0x43d1d0", "name": "LaserCurve::check_graze_or_kill", "comment": null}
+, {"addr": "0x43dbe0", "name": "LaserCurve::on_draw", "comment": null}
+, {"addr": "0x43e140", "name": "LaserCurve::run_ex", "comment": null}
+, {"addr": "0x43ec50", "name": "LaserCurve::method_44", "comment": null}
+, {"addr": "0x43edd0", "name": "LaserCurve::method_40", "comment": null}
+, {"addr": "0x43ef20", "name": "LaserCurve::method_3c", "comment": null}
+, {"addr": "0x43f0a0", "name": "LaserCurve::method_60", "comment": null}
+, {"addr": "0x43f140", "name": "LaserCurve::cancel_as_bomb_rectangle", "comment": null}
+, {"addr": "0x43f690", "name": "LaserCurve::method_1c", "comment": null}
+, {"addr": "0x43fb70", "name": "LaserCurve::cancel_as_bomb_circle", "comment": null}
+, {"addr": "0x43ff40", "name": "LaserCurve::cancel", "comment": null}
+, {"addr": "0x440080", "name": "LaserCurve::method_30", "comment": null}
+, {"addr": "0x440180", "name": "LaserBeam::method_c", "comment": null}
+, {"addr": "0x440520", "name": "LaserBeam::on_tick__noop", "comment": null}
+, {"addr": "0x440530", "name": "LaserBeam::on_draw__noop", "comment": null}
+, {"addr": "0x440540", "name": "LaserBeam::method_18", "comment": null}
 , {"addr": "0x440550", "name": "leaf_440550_ret0_6arg", "comment": null}
+, {"addr": "0x440560", "name": "LaserBeam::cancel", "comment": null}
+, {"addr": "0x440580", "name": "LaserBeam::method_30", "comment": null}
+, {"addr": "0x440590", "name": "LaserBeam::run_ex__noop", "comment": null}
 , {"addr": "0x4405a0", "name": "cartesian_from_polar_4405a0", "comment": null}
 , {"addr": "0x4405c0", "name": "EffectManager::operator new", "comment": null}
 , {"addr": "0x440770", "name": "LoadingThread::thread_start", "comment": null}
@@ -321,6 +393,7 @@
 , {"addr": "0x442280", "name": "wait_for_game_thread", "comment": null}
 , {"addr": "0x4427d0", "name": "Supervisor::switch_gamemodes", "comment": null}
 , {"addr": "0x443700", "name": "Globals::collect_bomb_fragment", "comment": null}
+, {"addr": "0x443930", "name": "PauseMenu::operator delete", "comment": null}
 , {"addr": "0x443d20", "name": "PauseMenu::on_tick__stub", "comment": null}
 , {"addr": "0x4444e0", "name": "PauseMenu::on_draw__stub", "comment": null}
 , {"addr": "0x4444f0", "name": "PauseMenu::take_snapshot_for_pause", "comment": null}
@@ -328,16 +401,18 @@
 , {"addr": "0x4463f0", "name": "Player::initialize", "comment": null}
 , {"addr": "0x446d90", "name": "Player::operator new", "comment": null}
 , {"addr": "0x446ea0", "name": "Player::operator delete", "comment": null}
-, {"addr": "0x447970", "name": "Player::on_game_tick", "comment": null}
-, {"addr": "0x448ce0", "name": "Player::on_game_tick__stub", "comment": null}
+, {"addr": "0x447970", "name": "Player::on_tick", "comment": null}
+, {"addr": "0x448ce0", "name": "Player::on_tick__stub", "comment": null}
 , {"addr": "0x448cf0", "name": "Player::on_draw", "comment": null}
 , {"addr": "0x448ef0", "name": "Bullet::try_kill_player", "comment": null}
 , {"addr": "0x449420", "name": "Player::die", "comment": null}
 , {"addr": "0x449c80", "name": "Player::create_damage_source_449c80", "comment": null}
 , {"addr": "0x449de0", "name": "Player::sub_449de0_creates_damage_source", "comment": null}
 , {"addr": "0x449fa0", "name": "Player::do_graze", "comment": null}
+, {"addr": "0x44a180", "name": "PlayerBullet::fire", "comment": null}
 , {"addr": "0x44a710", "name": "Player::do_shooting", "comment": null}
 , {"addr": "0x44a8d0", "name": "Player::tick_shooting_state", "comment": null}
+, {"addr": "0x44ad70", "name": "PlayerBullet::on_tick", "comment": null}
 , {"addr": "0x44b090", "name": "enm_compute_damage_sources", "comment": null}
 , {"addr": "0x44db70", "name": "Rng::rand_dword_mod_n", "comment": null}
 , {"addr": "0x44db90", "name": "cartesian_from_polar_44db90", "comment": null}
@@ -349,6 +424,7 @@
 , {"addr": "0x44f4d0", "name": "ReplayManager::on_draw_48", "comment": null}
 , {"addr": "0x44f840", "name": "Globals::sub_44f840", "comment": null}
 , {"addr": "0x450350", "name": "ScorePopups::initialize", "comment": null}
+, {"addr": "0x4504d0", "name": "PopupManager::operator delete", "comment": null}
 , {"addr": "0x4505a0", "name": "ScorePopups::on_tick", "comment": null}
 , {"addr": "0x450b50", "name": "ScorePopups::on_tick__stub", "comment": null}
 , {"addr": "0x450b60", "name": "ScorePopups::on_draw__stub", "comment": null}

@@ -64,6 +64,9 @@
 , {"addr": "0x411120", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x4111a0", "name": "EnemyManager::on_tick__stub", "comment": null}
 , {"addr": "0x4111b0", "name": "EnemyManager::on_draw__noop", "comment": null}
+, {"addr": "0x411750", "name": "Enemy::on_tick", "comment": null}
+, {"addr": "0x417450", "name": "jump_table_417450", "comment": null}
+, {"addr": "0x417a60", "name": "jump_table_417a60", "comment": null}
 , {"addr": "0x419c30", "name": "FpsCounter::initialize", "comment": null}
 , {"addr": "0x419c90", "name": "FpsCounter::destructor", "comment": null}
 , {"addr": "0x419cf0", "name": "FpsCounter::operator new", "comment": null}
@@ -150,6 +153,9 @@
 , {"addr": "0x431c60", "name": "Player::on_draw__stub", "comment": null}
 , {"addr": "0x431c70", "name": "sub_431c70_load_sht_file", "comment": null}
 , {"addr": "0x432cc0", "name": "Player::repopulate_options", "comment": null}
+, {"addr": "0x433f90", "name": "Player::shoot_one_bullet", "comment": null}
+, {"addr": "0x4342f0", "name": "Player::do_shooting", "comment": null}
+, {"addr": "0x434380", "name": "Player::tick_shooting_state", "comment": null}
 , {"addr": "0x4356e0", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x435c50", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x435e00", "name": "ReplayManager::operator new", "comment": null}
