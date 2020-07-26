@@ -1,5 +1,7 @@
-[ {"addr": "0x49e078", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+[ {"addr": "0x494074", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
+, {"addr": "0x49e078", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a2088", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4a3d64", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[13]", "comment": null}
 , {"addr": "0x4a56e0", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
 , {"addr": "0x4a7948", "name": "GAME_SPEED", "type": "float", "comment": null}
 , {"addr": "0x4a8d58", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}

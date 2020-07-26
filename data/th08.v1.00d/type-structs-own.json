@@ -218,6 +218,12 @@
   , ["0x1", "__end", null]
   ]
 
+, "zConfig": 
+  [ ["0x0", "__unknown", null]
+  , ["0x3c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x3c", "__end", null]
+  ]
+
 , "zD3DMatrix": 
   [ ["0x0", "m00", "float"]
   , ["0x4", "m01", "float"]
@@ -526,7 +532,7 @@
   , ["0x2b0", "velocity", "struct zFloat3"]
   , ["0x2bc", "__vec3_2bc", "struct zFloat3"]
   , ["0x2c8", "timer", "struct zTimer"]
-  , ["0x2d4", "__field_2d4", "uint8_t"]
+  , ["0x2d4", "item_type", "uint8_t"]
   , ["0x2d5", "in_use", "uint8_t"]
   , ["0x2d6", "__field_2d6", "uint8_t"]
   , ["0x2d7", "state", "uint8_t"]
@@ -861,6 +867,8 @@
 , "zSupervisor": 
   [ ["0x0", "update_func_registry", "struct zUpdateFuncRegistry"]
   , ["0x40", "__unknown", null]
+  , ["0x118", "config", "struct zConfig"]
+  , ["0x154", "__unknown", null]
   , ["0x188", "game_speed", "float"]
   , ["0x18c", "__unknown", null]
   , ["0x1ac", "system_time", "int32_t"]

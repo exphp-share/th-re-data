@@ -38,13 +38,9 @@ def export(bv, path=r'F:\asd\clone\th16re-data\data\th16.v1.00a'):
     export_symbols(bv, path=path)
     export_types(bv, path=path)
 
-@contextlib.contextmanager
 def open_bv(path, **kw):
-    bv = BinaryViewType.get_view_of_file(path, **kw)
-    try:
-        yield bv
-    finally:
-        bv.file.close()
+    # Note: This is now a context manager, hurrah!
+    return BinaryViewType.get_view_of_file(path, **kw)
 
 def compute_md5(path):
     import hashlib

@@ -126,6 +126,7 @@
 , {"addr": "0x503c70", "name": "CRITICAL_SECTION_B", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x503d00", "name": "CRITICAL_SECTION_D__ANM_RELATED", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x503d18", "name": "CRITICAL_SECTION_C", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x503d30", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x51dfa4", "name": "CURRENT_MUSIC_FILENAME", "type": "char [256]", "comment": null}
 , {"addr": "0x5213c0", "name": "RENDER_QUADRILATERAL_5213C0", "type": "struct zRenderVertex144 [4]", "comment": null}
 ]

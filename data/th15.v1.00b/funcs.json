@@ -3,6 +3,7 @@
 , {"addr": "0x401440", "name": "register__on_draw", "comment": null}
 , {"addr": "0x4017e0", "name": "UpdateFunc::operator new", "comment": null}
 , {"addr": "0x4018a0", "name": "UpdateFuncRegistry::unregister", "comment": null}
+, {"addr": "0x401f50", "name": "Supervisor::read_keyboard_input", "comment": null}
 , {"addr": "0x402db0", "name": "sub_402db0_opens_existing_file", "comment": null}
 , {"addr": "0x402f70", "name": "sub_402f70_opens_existing_file", "comment": null}
 , {"addr": "0x4032b0", "name": "sub_4032b0_opens_existing_file", "comment": null}
@@ -31,8 +32,9 @@
 , {"addr": "0x40dfe0", "name": "Stage::initialize", "comment": null}
 , {"addr": "0x40e1c0", "name": "Stage::destructor", "comment": null}
 , {"addr": "0x40e5d0", "name": "Stage::operator new", "comment": null}
+, {"addr": "0x40e7f0", "name": "Stage::on_draw_03", "comment": null}
 , {"addr": "0x40f000", "name": "Stage::on_tick", "comment": null}
-, {"addr": "0x40f010", "name": "Stage::on_draw_03", "comment": null}
+, {"addr": "0x40f010", "name": "Stage::on_draw_03__stub", "comment": null}
 , {"addr": "0x40f020", "name": "Stage::on_draw_06", "comment": null}
 , {"addr": "0x411580", "name": "Stage::store_snapshot", "comment": null}
 , {"addr": "0x411630", "name": "Stage::restore_snapshot", "comment": null}
@@ -253,16 +255,16 @@
 , {"addr": "0x44def0", "name": "D3dStuff::load_view_and_projection", "comment": null}
 , {"addr": "0x44df60", "name": "D3dStuff::sub_44df60", "comment": null}
 , {"addr": "0x44e600", "name": "Supervisor::switch_gamemodes", "comment": null}
-, {"addr": "0x44e8d0", "name": "on_draw_01", "comment": null}
-, {"addr": "0x44ea80", "name": "on_draw_0f", "comment": null}
-, {"addr": "0x44eb90", "name": "on_draw_0e", "comment": null}
-, {"addr": "0x44ec30", "name": "on_draw_19", "comment": null}
-, {"addr": "0x44ed30", "name": "on_draw_18", "comment": null}
-, {"addr": "0x44edd0", "name": "on_draw_2a", "comment": null}
-, {"addr": "0x44ee80", "name": "on_draw_29", "comment": null}
-, {"addr": "0x44ef50", "name": "on_draw_37", "comment": null}
-, {"addr": "0x44efb0", "name": "on_draw_36", "comment": null}
-, {"addr": "0x44f000", "name": "on_draw_52", "comment": null}
+, {"addr": "0x44e8d0", "name": "Supervisor::on_draw_01", "comment": null}
+, {"addr": "0x44ea80", "name": "Supervisor::on_draw_0f", "comment": null}
+, {"addr": "0x44eb90", "name": "Supervisor::on_draw_0e", "comment": null}
+, {"addr": "0x44ec30", "name": "Supervisor::on_draw_19", "comment": null}
+, {"addr": "0x44ed30", "name": "Supervisor::on_draw_18", "comment": null}
+, {"addr": "0x44edd0", "name": "Supervisor::on_draw_2a", "comment": null}
+, {"addr": "0x44ee80", "name": "Supervisor::on_draw_29", "comment": null}
+, {"addr": "0x44ef50", "name": "Supervisor::on_draw_37", "comment": null}
+, {"addr": "0x44efb0", "name": "Supervisor::on_draw_36", "comment": null}
+, {"addr": "0x44f000", "name": "Supervisor::on_draw_52", "comment": null}
 , {"addr": "0x44f940", "name": "Globals::sub_44f940", "comment": null}
 , {"addr": "0x44fa20", "name": "Globals::collect_extend", "comment": null}
 , {"addr": "0x44ff60", "name": "PauseMenu::constructor", "comment": null}
@@ -353,9 +355,10 @@
 , {"addr": "0x475e20", "name": "sub_475e20_reads_bgmfile", "comment": null}
 , {"addr": "0x476360", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x476400", "name": "SoundManager::play_sound_at_position", "comment": null}
+, {"addr": "0x476570", "name": "SoundManager::update_sound_thread", "comment": null}
 , {"addr": "0x477160", "name": "AnmLoaded::init_matrices_with_scale_factors", "comment": null}
 , {"addr": "0x477e10", "name": "AnmVm::run", "comment": null}
-, {"addr": "0x47e3f0", "name": "AnmManager::sub_47e3f0_draw_sprites", "comment": null}
+, {"addr": "0x47e3f0", "name": "AnmManager::flush_sprites", "comment": null}
 , {"addr": "0x480ae0", "name": "AnmManager::sub_480ae0_d3d", "comment": null}
 , {"addr": "0x4811d0", "name": "AnmManager::sub_4811d0", "comment": null}
 , {"addr": "0x481690", "name": "AnmManager::sub_481690", "comment": null}
@@ -365,6 +368,7 @@
 , {"addr": "0x484540", "name": "AnmFastVm::destructor", "comment": null}
 , {"addr": "0x484590", "name": "AnmManager::destructor", "comment": null}
 , {"addr": "0x485f70", "name": "AnmManager::preload_anm", "comment": null}
+, {"addr": "0x486700", "name": "AnmLoaded::destructor", "comment": null}
 , {"addr": "0x4871e0", "name": "AnmManager::on_draw_0a__also_renders_layer_03", "comment": null}
 , {"addr": "0x487430", "name": "AnmManager::on_draw_2b__also_renders_layer_20", "comment": null}
 , {"addr": "0x4874d0", "name": "AnmManager::on_draw_38__also_renders_layer_24", "comment": null}

@@ -39,6 +39,39 @@
   , ["0x1bc", "__end", null]
   ]
 
+, "zBullet": 
+  [ ["0x0", "__unknown", null]
+  , ["0x10c4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x10c4", "__end", null]
+  ]
+
+, "zBulletManager": 
+  [ ["0x0", "array_1", "struct zBulletManagerArray1Item [32]"]
+  , ["0x1a900", "array_2", "struct zBullet [176]"]
+  , ["0xd2fc0", "array_3", "struct zBullet [361]"]
+  , ["0x24d424", "array_4", "struct zBulletManagerArray4Item [48]"]
+  , ["0x25e164", "__unknown", null]
+  , ["0x25e174", "__timer_25e174", "struct zTimer"]
+  , ["0x25e180", "__unknown", null]
+  , ["0x25e184", "on_tick", "struct zUpdateFunc*"]
+  , ["0x25e188", "on_draw", "struct zUpdateFunc*"]
+  , ["0x25e18c", "__unknown", null]
+  , ["0x25e1c0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x25e1c0", "__end", null]
+  ]
+
+, "zBulletManagerArray1Item": 
+  [ ["0x0", "__unknown", null]
+  , ["0xd48", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xd48", "__end", null]
+  ]
+
+, "zBulletManagerArray4Item": 
+  [ ["0x0", "__unknown", null]
+  , ["0x59c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x59c", "__end", null]
+  ]
+
 , "zCOMMENT": 
   [ ["0x0", "__unknown", null]
   , ["0x1", "__end", null]
@@ -117,6 +150,62 @@
   , ["0x1293c", "__end", null]
   ]
 
+, "zGuiSide": 
+  [ ["0x0", "__anms_1", "struct zAnmVm [11]"]
+  , ["0x1d0c", "__anms_2", "struct zAnmVm [5]"]
+  , ["0x2a40", "__anms_3", "struct zAnmVm [7]"]
+  , ["0x3cbc", "__anms_4", "struct zAnmVm"]
+  , ["0x3f60", "__anms_5", "struct zAnmVm [10]"]
+  , ["0x59c8", "__anms_6", "struct zAnmVm"]
+  , ["0x5c6c", "__anms_7", "struct zAnmVm [4]"]
+  , ["0x66fc", "__anms_8", "struct zAnmVm [3]"]
+  , ["0x6ee8", "__anms_9", "struct zAnmVm [2]"]
+  , ["0x7430", "__anms_10", "struct zAnmVm"]
+  , ["0x76d4", "__anms_11", "struct zAnmVm [6]"]
+  , ["0x86ac", "__anms_12", "struct zAnmVm [7]"]
+  , ["0x9928", "__anms_13", "struct zAnmVm [5]"]
+  , ["0xa65c", "inner", "struct zGuiSideInner"]
+  , ["0xabb0", "__unknown", null]
+  , ["0xabd0", "__timer_abd0", "struct zTimer"]
+  , ["0xabdc", "__timer_abdc", "struct zTimer"]
+  , ["0xabe8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xabe8", "__end", null]
+  ]
+
+, "zGuiSideInner": 
+  [ ["0x0", "__unknown", null]
+  , ["0xc", "vms", "struct zAnmVm [2]"]
+  , ["0x554", "__end", null]
+  ]
+
+, "zLolidfk": 
+  [ ["0x0", "side_1", "struct zLolidfkSide"]
+  , ["0x38", "side_2", "struct zLolidfkSide"]
+  , ["0x70", "side_3__used_for_effect_sys", "struct zLolidfkSide"]
+  , ["0xa8", "gui", "struct zGui*"]
+  , ["0xac", "ex_attack_manager", "struct zExAttackManager*"]
+  , ["0xb0", "__end", null]
+  ]
+
+, "zLolidfkSide": 
+  [ ["0x0", "__ptr_0", "void*"]
+  , ["0x4", "player", "struct zPlayer*"]
+  , ["0x8", "bullet_manager", "struct zBulletManager*"]
+  , ["0xc", "effect_sys", "struct zEffectSys*"]
+  , ["0x10", "enemy_manager", "struct zEnemyManager*"]
+  , ["0x14", "card_attack", "struct zCardAttack*"]
+  , ["0x18", "gui_side", "struct zGuiSide*"]
+  , ["0x1c", "__ptr_1c", "void*"]
+  , ["0x20", "__field_20", "int32_t"]
+  , ["0x24", "__field_24", "int32_t"]
+  , ["0x28", "__field_28", "int32_t"]
+  , ["0x2c", "__field_2c", "int32_t"]
+  , ["0x30", "__field_30", "int32_t"]
+  , ["0x34", "__field_34", "int32_t"]
+  , ["0x38", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x38", "__end", null]
+  ]
+
 , "zMainMenu": 
   [ ["0x0", "__end", null]
   ]
@@ -125,6 +214,10 @@
   [ ["0x0", "__unknown", null]
   , ["0xd4", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0xd4", "__end", null]
+  ]
+
+, "zPlayer": 
+  [ ["0x0", "__end", null]
   ]
 
 , "zPofv1b388": 

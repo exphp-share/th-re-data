@@ -1,4 +1,5 @@
-[ {"addr": "0x4a7d90", "name": "LOLIDFK", "type": "int32_t", "comment": null}
+[ {"addr": "0x4a7d90", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": null}
+, {"addr": "0x4a7e0c", "name": "EFFECT_SYS_PTR", "type": "struct zEffectSys*", "comment": null}
 , {"addr": "0x4a8120", "name": "LOLIDFK_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x4a8140", "name": "LOLIDFK_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x4acfc8", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}

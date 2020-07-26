@@ -25,7 +25,7 @@
 , {"addr": "0x491980", "name": "SHT_FUNC_34_TABLE", "type": "void*[8]", "comment": null}
 , {"addr": "0x4919a0", "name": "SHT_FUNC_2c_TABLE", "type": "void*[8]", "comment": null}
 , {"addr": "0x4919c0", "name": "SHT_FUNC_28_TABLE", "type": "void*[8]", "comment": null}
-, {"addr": "0x4919e8", "name": "ANM_508_CALLABLES", "type": "void*[5]", "comment": null}
+, {"addr": "0x4919e8", "name": "ANM_ON_TICK_CALLABLES", "type": "void*[5]", "comment": null}
 , {"addr": "0x491b0c", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[4]", "comment": null}
 , {"addr": "0x491b1c", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[4]", "comment": null}
 , {"addr": "0x491b2c", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[7]", "comment": null}
@@ -390,6 +390,8 @@
 , {"addr": "0x4c1078", "name": "CRIT_SECTION_T", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c10d0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4c10d8", "name": "GLOBAL_D3D_DEVICE", "type": "struct z0_IDirect3DDevice9*", "comment": null}
+, {"addr": "0x4c127c", "name": "D3D_SURFACE_4c127c", "type": "struct z0_IDirect3DSurface9*", "comment": null}
+, {"addr": "0x4c1284", "name": "D3D_SURFACE_4c1284", "type": "struct z0_IDirect3DSurface9*", "comment": null}
 , {"addr": "0x4c128c", "name": "ANM_VM_4c128c", "type": "struct zAnmVm*", "comment": null}
 , {"addr": "0x4c1290", "name": "ANM_VM_4c1290", "type": "struct zAnmVm*", "comment": null}
 , {"addr": "0x4c1294", "name": "ANM_VM_4c1294", "type": "struct zAnmVm*", "comment": null}
@@ -401,6 +403,7 @@
 , {"addr": "0x4c17b8", "name": "D3D_STUFF_PTR", "type": "struct zUnknownGlobalD3DStuff*", "comment": "At any given time this points to one of four instances of\nthis struct that all live in static memory."}
 , {"addr": "0x4c17c4", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
 , {"addr": "0x4c1a68", "name": "THREAD_4c1a68", "type": "struct zThread", "comment": null}
+, {"addr": "0x4c1b0c", "name": "BACKGROUND_COLOR", "type": "struct zD3DColor", "comment": null}
 , {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
 , {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": "struct zArcFile [20]", "comment": null}
 , {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": "int32_t", "comment": null}

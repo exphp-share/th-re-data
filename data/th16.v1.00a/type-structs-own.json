@@ -9,7 +9,36 @@
   ]
 
 , "z0_IDirect3DDevice9": 
-  [ ["0x0", "super", "struct z0_IUnknown"]
+  [ ["0x0", "vtable", "struct z0_VTableIDirect3DDevice9*"]
+  , ["0x4", "__make_struct_larger_to_force_type_analysis_to_read_the_pointer", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "z0_IDirect3DSurface9": 
+  [ ["0x0", "vtable", "struct z0_VTableIDirect3DSurface9*"]
+  , ["0x4", "__make_struct_larger_to_force_type_analysis_to_read_the_pointer", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "z0_IDirect3DTexture9": 
+  [ ["0x0", "vtable", "struct z0_VTableIDirect3DTexture9*"]
+  , ["0x4", "__make_struct_larger_to_force_type_analysis_to_read_the_pointer", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "z0_VTableIDirect3DBaseTexture9": 
+  [ ["0x0", "super", "struct z0_VTableIDirect3DResource9"]
+  , ["0x2c", "SetLOD", "void*"]
+  , ["0x30", "GetLOD", "void*"]
+  , ["0x34", "GetLevelCount", "void*"]
+  , ["0x38", "SetAutoGenFilterType", "void*"]
+  , ["0x3c", "GetAutoGenFilterType", "void*"]
+  , ["0x40", "GenerateMipSubLevels", "void*"]
+  , ["0x44", "__end", null]
+  ]
+
+, "z0_VTableIDirect3DDevice9": 
+  [ ["0x0", "super", "struct z0_VTableIUnknown"]
   , ["0xc", "TestCooperativeLevel", "void*"]
   , ["0x10", "GetAvailableTextureMem", "void*"]
   , ["0x14", "EvictManagedResources", "void*"]
@@ -129,12 +158,41 @@
   , ["0x1dc", "__end", null]
   ]
 
-, "z0_IDirect3DTexture9": 
-  [ ["0x0", "__abstract_type", "struct zCOMMENT [0]"]
-  , ["0x0", "__end", null]
+, "z0_VTableIDirect3DResource9": 
+  [ ["0x0", "super", "struct z0_VTableIUnknown"]
+  , ["0xc", "FreePrivateData", "void*"]
+  , ["0x10", "GetDevice", "void*"]
+  , ["0x14", "GetPriority", "void*"]
+  , ["0x18", "GetPrivateData", "void*"]
+  , ["0x1c", "GetType", "void*"]
+  , ["0x20", "PreLoad", "void*"]
+  , ["0x24", "SetPriority", "void*"]
+  , ["0x28", "SetPrivateData", "void*"]
+  , ["0x2c", "__end", null]
   ]
 
-, "z0_IUnknown": 
+, "z0_VTableIDirect3DSurface9": 
+  [ ["0x0", "super", "struct z0_VTableIDirect3DResource9"]
+  , ["0x2c", "GetContainer", "void*"]
+  , ["0x30", "GetDC", "void*"]
+  , ["0x34", "GetDesc", "void*"]
+  , ["0x38", "LockRect", "void*"]
+  , ["0x3c", "ReleaseDC", "void*"]
+  , ["0x40", "UnlockRect", "void*"]
+  , ["0x44", "__end", null]
+  ]
+
+, "z0_VTableIDirect3DTexture9": 
+  [ ["0x0", "super", "struct z0_VTableIDirect3DBaseTexture9"]
+  , ["0x44", "GetLevelDesc", "void*"]
+  , ["0x48", "GetSurfaceLevel", "void*"]
+  , ["0x4c", "LockRect", "void*"]
+  , ["0x50", "UnlockRect", "void*"]
+  , ["0x54", "AddDirtyRect", "void*"]
+  , ["0x58", "__end", null]
+  ]
+
+, "z0_VTableIUnknown": 
   [ ["0x0", "QueryInterface", "void*"]
   , ["0x4", "AddRef", "void*"]
   , ["0x8", "Release", "void*"]
@@ -227,6 +285,7 @@
   , ["0x184f56c", "__matrix_184f56c__used_during_rendering", "struct zD3DMatrix"]
   , ["0x184f5ac", "__vm_184f5ac", "struct zAnmVm"]
   , ["0x184fba8", "__unknown", null]
+  , ["0x184fc18", "vertex_buffers", "struct zAnmVertexBuffers"]
   , ["0x1c6fc30", "layer_list_dummy_heads", "struct zAnmVm [43]"]
   , ["0x1c7fd84", "last_discriminator__19bit", "int32_t"]
   , ["0x1c7fd88", "__unknown", null]
@@ -296,6 +355,18 @@
   , ["0x8", "args", "uint32_t [10]"]
   , ["0x30", "__args_is_variable_length", "struct zCOMMENT"]
   , ["0x31", "__end", null]
+  ]
+
+, "zAnmVertexBuffers": 
+  [ ["0x0", "unrendered_sprite_count", "int32_t"]
+  , ["0x4", "sprite_vertex_data", "struct zRenderVertex144 [131072]"]
+  , ["0x380004", "sprite_write_cursor", "struct zRenderVertex144*"]
+  , ["0x380008", "sprite_render_cursor", "struct zRenderVertex144*"]
+  , ["0x38000c", "unrendered_primitive_count", "int32_t"]
+  , ["0x380010", "primitive_vertex_data", "struct zRenderVertex044 [32768]"]
+  , ["0x420010", "primitive_write_cursor", "struct zRenderVertex044*"]
+  , ["0x420014", "primitive_render_cursor", "struct zRenderVertex044*"]
+  , ["0x420018", "__end", null]
   ]
 
 , "zAnmVm": 
@@ -379,7 +450,7 @@
 , "zAnmVmSuffix": 
   [ ["0x0", "id", "struct zAnmId"]
   , ["0x4", "fast_id", "uint32_t"]
-  , ["0x8", "time", "struct zTimer"]
+  , ["0x8", "script_time", "struct zTimer"]
   , ["0x1c", "__timer_1c", "struct zTimer"]
   , ["0x30", "node_in_global_list", "struct zAnmVmList"]
   , ["0x40", "node_as_child", "struct zAnmVmList"]
@@ -614,7 +685,8 @@
   , ["0xc", "__ptr_c", "struct zBullet*"]
   , ["0x10", "__stuff_10", "int32_t [13]"]
   , ["0x44", "et_protect_range", "float"]
-  , ["0x48", "__unknown", null]
+  , ["0x48", "ecl_unknown_560", "struct zFloat2"]
+  , ["0x50", "__unknown", null]
   , ["0x58", "bullet_count_canceled_by_bombs", "int32_t"]
   , ["0x5c", "list_0_head", "struct zBulletNullList"]
   , ["0x6c", "tick_list_head", "struct zBulletList"]
@@ -1790,6 +1862,19 @@
   , ["0x34", "velocity", "struct zFloat3"]
   , ["0x40", "flags", "int32_t"]
   , ["0x44", "__end", null]
+  ]
+
+, "zRenderVertex044": 
+  [ ["0x0", "transformed_pos", "struct zFloat4"]
+  , ["0x10", "diffuse_color", "struct zD3DColor"]
+  , ["0x14", "__end", null]
+  ]
+
+, "zRenderVertex144": 
+  [ ["0x0", "transformed_pos", "struct zFloat4"]
+  , ["0x10", "diffuse_color", "struct zD3DColor"]
+  , ["0x14", "texture_uv", "struct zFloat2"]
+  , ["0x1c", "__end", null]
   ]
 
 , "zReplayChunkList": 

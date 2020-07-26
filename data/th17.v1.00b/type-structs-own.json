@@ -9,7 +9,36 @@
   ]
 
 , "z0_IDirect3DDevice9": 
-  [ ["0x0", "super", "struct z0_IUnknown"]
+  [ ["0x0", "vtable", "struct z0_VTableIDirect3DDevice9*"]
+  , ["0x4", "__force_type_analysis_to_see_the_vtable_get_read", "char [1]"]
+  , ["0x5", "__end", null]
+  ]
+
+, "z0_IDirect3DSurface9": 
+  [ ["0x0", "vtable", "struct z0_VTableIDirect3DSurface9*"]
+  , ["0x4", "__make_struct_larger_to_force_type_analysis_to_read_the_pointer", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "z0_IDirect3DTexture9": 
+  [ ["0x0", "vtable", "struct z0_VTableIDirect3DTexture9*"]
+  , ["0x4", "__make_struct_larger_to_force_type_analysis_to_read_the_pointer", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "z0_VTableIDirect3DBaseTexture9": 
+  [ ["0x0", "super", "struct z0_VTableIDirect3DResource9"]
+  , ["0x2c", "SetLOD", "void*"]
+  , ["0x30", "GetLOD", "void*"]
+  , ["0x34", "GetLevelCount", "void*"]
+  , ["0x38", "SetAutoGenFilterType", "void*"]
+  , ["0x3c", "GetAutoGenFilterType", "void*"]
+  , ["0x40", "GenerateMipSubLevels", "void*"]
+  , ["0x44", "__end", null]
+  ]
+
+, "z0_VTableIDirect3DDevice9": 
+  [ ["0x0", "super", "struct z0_VTableIUnknown"]
   , ["0xc", "TestCooperativeLevel", "void*"]
   , ["0x10", "GetAvailableTextureMem", "void*"]
   , ["0x14", "EvictManagedResources", "void*"]
@@ -129,7 +158,41 @@
   , ["0x1dc", "__end", null]
   ]
 
-, "z0_IUnknown": 
+, "z0_VTableIDirect3DResource9": 
+  [ ["0x0", "super", "struct z0_VTableIUnknown"]
+  , ["0xc", "FreePrivateData", "void*"]
+  , ["0x10", "GetDevice", "void*"]
+  , ["0x14", "GetPriority", "void*"]
+  , ["0x18", "GetPrivateData", "void*"]
+  , ["0x1c", "GetType", "void*"]
+  , ["0x20", "PreLoad", "void*"]
+  , ["0x24", "SetPriority", "void*"]
+  , ["0x28", "SetPrivateData", "void*"]
+  , ["0x2c", "__end", null]
+  ]
+
+, "z0_VTableIDirect3DSurface9": 
+  [ ["0x0", "super", "struct z0_VTableIDirect3DResource9"]
+  , ["0x2c", "GetContainer", "void*"]
+  , ["0x30", "GetDC", "void*"]
+  , ["0x34", "GetDesc", "void*"]
+  , ["0x38", "LockRect", "void*"]
+  , ["0x3c", "ReleaseDC", "void*"]
+  , ["0x40", "UnlockRect", "void*"]
+  , ["0x44", "__end", null]
+  ]
+
+, "z0_VTableIDirect3DTexture9": 
+  [ ["0x0", "super", "struct z0_VTableIDirect3DBaseTexture9"]
+  , ["0x44", "GetLevelDesc", "void*"]
+  , ["0x48", "GetSurfaceLevel", "void*"]
+  , ["0x4c", "LockRect", "void*"]
+  , ["0x50", "UnlockRect", "void*"]
+  , ["0x54", "AddDirtyRect", "void*"]
+  , ["0x58", "__end", null]
+  ]
+
+, "z0_VTableIUnknown": 
   [ ["0x0", "QueryInterface", "void*"]
   , ["0x4", "AddRef", "void*"]
   , ["0x8", "Release", "void*"]
@@ -193,14 +256,7 @@
   , ["0x186017c", "__matrix_186017c", "struct zD3DMatrix"]
   , ["0x18601bc", "__vm_18601bc", "struct zAnmVm"]
   , ["0x18607bc", "__unknown", null]
-  , ["0x186082c", "d3d_unrendered_sprite_count", "int32_t"]
-  , ["0x1860830", "d3d_sprite_vertex_data", "zRenderSpriteVertex [131072]"]
-  , ["0x1be0830", "d3d_sprite_write_cursor", "struct zRenderSprite*"]
-  , ["0x1be0834", "d3d_sprite_render_cursor", "struct zRenderSprite*"]
-  , ["0x1be0838", "d3d_unrendered_primitive_count__always_zero", "int32_t"]
-  , ["0x1be083c", "d3d_primitive_vertex_data", "zRenderPrimitiveVertex [32768]"]
-  , ["0x1c8083c", "d3d_primitive_write_cursor", "zRenderPrimitiveVertex*"]
-  , ["0x1c80840", "d3d_primitive_render_cursor__unused", "zRenderPrimitiveVertex*"]
+  , ["0x186082c", "vertex_buffers", "struct zAnmVertexBuffers"]
   , ["0x1c80844", "layer_list_dummy_heads__unused_as_of_1.00b", "struct zAnmVm [43]"]
   , ["0x1c90a44", "last_discriminator__18bit", "int32_t"]
   , ["0x1c90a48", "__color__1c90a48", "struct zD3DColor"]
@@ -259,6 +315,18 @@
   , ["0x28", "__end", null]
   ]
 
+, "zAnmVertexBuffers": 
+  [ ["0x0", "unrendered_sprite_count", "int32_t"]
+  , ["0x4", "sprite_vertex_data", "struct zRenderVertex144 [131072]"]
+  , ["0x380004", "sprite_write_cursor", "struct zRenderVertex144*"]
+  , ["0x380008", "sprite_render_cursor", "struct zRenderVertex144*"]
+  , ["0x38000c", "unrendered_primitive_count__always_zero", "int32_t"]
+  , ["0x380010", "primitive_vertex_data", "struct zRenderVertex044 [32768]"]
+  , ["0x420010", "primitive_write_cursor", "struct zRenderVertex044*"]
+  , ["0x420014", "primitive_render_cursor__unused", "struct zRenderVertex044*"]
+  , ["0x420018", "__end", null]
+  ]
+
 , "zAnmVm": 
   [ ["0x0", "p", "struct zAnmVmPrefix"]
   , ["0x538", "s", "struct zAnmVmSuffix"]
@@ -289,8 +357,7 @@
   , ["0x60", "scale_2", "struct zFloat2"]
   , ["0x68", "window_blinds_inverse_len", "float"]
   , ["0x6c", "window_blinds_total_phase", "float"]
-  , ["0x70", "texture_shape_size", "struct zFloat2"]
-  , ["0x78", "__unknown", null]
+  , ["0x70", "__unknown", null]
   , ["0x80", "__vector_set_by_436", "struct zFloat2"]
   , ["0x88", "__unknown", null]
   , ["0x8c", "pos_i", "struct zInterpFloat3"]
@@ -713,6 +780,8 @@
 
 , "zEclRunContext": 
   [ ["0x0", "__unknown", null]
+  , ["0x1020", "difficulty_mask", "uint8_t"]
+  , ["0x1021", "__unknown", null]
   , ["0x11e8", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x11e8", "__end", null]
   ]
@@ -1571,6 +1640,32 @@
   , ["0x67b8", "__end", null]
   ]
 
+, "zSupervisor": 
+  [ ["0x0", "__unknown", null]
+  , ["0x8", "global_d3d_device", "struct z0_IDirect3DDevice9*"]
+  , ["0xc", "__unknown", null]
+  , ["0x1ac", "__surface_1ac", "struct z0_IDirect3DSurface9*"]
+  , ["0x1b0", "__unknown", null]
+  , ["0x1b4", "__surface_1b4", "struct z0_IDirect3DSurface9*"]
+  , ["0x1b8", "__unknown", null]
+  , ["0x238", "d3d_stuff_0", "struct zUnknownGlobalD3dStuff"]
+  , ["0x364", "d3d_stuff_1", "struct zUnknownGlobalD3dStuff"]
+  , ["0x490", "d3d_stuff_2", "struct zUnknownGlobalD3dStuff"]
+  , ["0x5bc", "d3d_stuff_3", "struct zUnknownGlobalD3dStuff"]
+  , ["0x6e8", "d3d_stuff_ptr", "struct zUnknownGlobalD3dStuff*"]
+  , ["0x6ec", "current_global_d3d_stuff_index", "int32_t"]
+  , ["0x6f0", "gamemode_current", "int32_t"]
+  , ["0x6f4", "gamemode_to_switch_to", "int32_t"]
+  , ["0x6f8", "gamemode_prev", "int32_t"]
+  , ["0x6fc", "__unknown", null]
+  , ["0x730", "flags", "int32_t"]
+  , ["0x734", "start_time_millis", "uint32_t"]
+  , ["0x738", "__unknown", null]
+  , ["0xa40", "background_color", "struct zD3DColor"]
+  , ["0xa44", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xa44", "__end", null]
+  ]
+
 , "zTableAnm508Data": 
   [ ["0x0", "anm_loaded_index", "int16_t"]
   , ["0x2", "script_index", "int16_t"]
@@ -1636,6 +1731,23 @@
 , "zTrophyManager": 
   [ ["0x0", "__unknown", null]
   , ["0x244", "__end", null]
+  ]
+
+, "zUnknownGlobalD3dStuff": 
+  [ ["0x0", "__unknown", null]
+  , ["0x54", "fov_y", "float"]
+  , ["0x58", "__unknown", null]
+  , ["0x60", "view_matrix", "struct zD3DMatrix"]
+  , ["0xa0", "projection_matrix", "struct zD3DMatrix"]
+  , ["0xe0", "viewport", "struct z0_D3D10_VIEWPORT"]
+  , ["0xf8", "__unknown", null]
+  , ["0xfc", "__vec2_fc", "struct zFloat2"]
+  , ["0x104", "__unknown", null]
+  , ["0x110", "__field_110", "float"]
+  , ["0x114", "__unknown", null]
+  , ["0x128", "__diffuse_color_argb_128", "uint32_t"]
+  , ["0x12c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x12c", "__end", null]
   ]
 
 , "zUpdateFunc": 

@@ -65,6 +65,19 @@
   , ["0x28", "__end", null]
   ]
 
+, "zEnemy": 
+  [ ["0x0", "__unknown", null]
+  , ["0x163c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x163c", "__end", null]
+  ]
+
+, "zEnemyFull": 
+  [ ["0x0", "__unknown", null]
+  , ["0x103c", "enemy", "struct zEnemy"]
+  , ["0x2678", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2678", "__end", null]
+  ]
+
 , "zEnemyManager": 
   [ ["0x0", "__unknown", null]
   , ["0x78", "__exact_size_known", "struct zCOMMENT [0]"]
@@ -207,6 +220,16 @@
   , ["0xc", "game_speed", "float*"]
   , ["0x10", "control", "int32_t"]
   , ["0x14", "__end", null]
+  ]
+
+, "zVTableEcl": 
+  [ ["0x0", "run_over_256", "void*"]
+  , ["0x4", "get_int_global", "void*"]
+  , ["0x8", "get_int_global_ptr", "void*"]
+  , ["0xc", "get_float_global", "void*"]
+  , ["0x10", "get_float_global_ptr", "void*"]
+  , ["0x14", "operator delete", "void*"]
+  , ["0x18", "__end", null]
   ]
 
 }

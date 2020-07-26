@@ -15,6 +15,7 @@
 , {"addr": "0x4016b0", "name": "UpdateFuncRegistry::unregister_all_in_list", "comment": null}
 , {"addr": "0x401730", "name": "UpdateFunc::operator new", "comment": null}
 , {"addr": "0x4017a0", "name": "UpdateFuncRegistry::unregister", "comment": null}
+, {"addr": "0x401d50", "name": "Supervisor::read_keyboard_input", "comment": null}
 , {"addr": "0x402220", "name": "zun_decrypt", "comment": null}
 , {"addr": "0x402330", "name": "zun_encrypt", "comment": null}
 , {"addr": "0x402440", "name": "reads_file_into_new_allocation_402440", "comment": null}
@@ -107,11 +108,11 @@
 , {"addr": "0x409d90", "name": "Fog::operator delete", "comment": null}
 , {"addr": "0x409db0", "name": "Stage::operator new", "comment": null}
 , {"addr": "0x409e50", "name": "Stage::on_tick_11", "comment": null}
-, {"addr": "0x409f90", "name": "Stage::on_draw_1", "comment": null}
-, {"addr": "0x40a410", "name": "Stage::on_draw_2", "comment": null}
+, {"addr": "0x409f90", "name": "Stage::on_draw_03", "comment": null}
+, {"addr": "0x40a410", "name": "Stage::on_draw_06", "comment": null}
 , {"addr": "0x40a7a0", "name": "Stage::on_tick_11__stub", "comment": null}
-, {"addr": "0x40a7b0", "name": "Stage::on_draw_1__stub", "comment": null}
-, {"addr": "0x40a7c0", "name": "Stage::on_draw_2__stub", "comment": null}
+, {"addr": "0x40a7b0", "name": "Stage::on_draw_03__stub", "comment": null}
+, {"addr": "0x40a7c0", "name": "Stage::on_draw_06__stub", "comment": null}
 , {"addr": "0x40a7d0", "name": "d3d_40a7d0", "comment": null}
 , {"addr": "0x40ac30", "name": "Stage::sub_40ac30", "comment": null}
 , {"addr": "0x40aed0", "name": "Stage::sub_40aed0", "comment": null}
@@ -528,6 +529,16 @@
 , {"addr": "0x43c630", "name": "Supervisor::sub_43c630", "comment": null}
 , {"addr": "0x43c6a0", "name": "Supervisor::sub_43c6a0", "comment": null}
 , {"addr": "0x43ce10", "name": "Supervisor::switch_gamemodes", "comment": null}
+, {"addr": "0x43d140", "name": "Supervisor::on_draw_01", "comment": null}
+, {"addr": "0x43d2f0", "name": "Supervisor::on_draw_0f", "comment": null}
+, {"addr": "0x43d400", "name": "Supervisor::on_draw_0e", "comment": null}
+, {"addr": "0x43d4a0", "name": "Supervisor::on_draw_1a", "comment": null}
+, {"addr": "0x43d5a0", "name": "Supervisor::on_draw_19", "comment": null}
+, {"addr": "0x43d640", "name": "Supervisor::on_draw_2c", "comment": null}
+, {"addr": "0x43d6f0", "name": "Supervisor::on_draw_2b", "comment": null}
+, {"addr": "0x43d7c0", "name": "Supervisor::on_draw_39", "comment": null}
+, {"addr": "0x43d820", "name": "Supervisor::on_draw_38", "comment": null}
+, {"addr": "0x43d870", "name": "Supervisor::on_draw_55", "comment": null}
 , {"addr": "0x43dce0", "name": "leaf_43dce0_disabled_log_function", "comment": null}
 , {"addr": "0x43ddd0", "name": "get_score_extend_quota", "comment": null}
 , {"addr": "0x43ddf0", "name": "Globals::sub_43ddf0", "comment": null}
@@ -699,6 +710,7 @@
 , {"addr": "0x464d60", "name": "cartesian_from_polar_464d60", "comment": null}
 , {"addr": "0x464d80", "name": "Timer::copy", "comment": null}
 , {"addr": "0x464dd0", "name": "AnmVm::sub_464dd0_recursive", "comment": null}
+, {"addr": "0x465a80", "name": "AnmManager::flush_sprites", "comment": null}
 , {"addr": "0x466390", "name": "AnmManager::render_sub_466390", "comment": null}
 , {"addr": "0x466820", "name": "AnmManager::render_sub_466820", "comment": null}
 , {"addr": "0x466f00", "name": "AnmManager::render_sub_466f00", "comment": null}
@@ -712,10 +724,10 @@
 , {"addr": "0x46a3a0", "name": "AnmManager::initialize", "comment": null}
 , {"addr": "0x46b770", "name": "AnmFastVm::constructor", "comment": null}
 , {"addr": "0x46b790", "name": "AnmFastVm::destructor", "comment": null}
-, {"addr": "0x46cdd0", "name": "anm_load", "comment": null}
-, {"addr": "0x46cf80", "name": "sub_preload_anim_46cf80", "comment": null}
+, {"addr": "0x46cdd0", "name": "AnmManager::do_load_anm", "comment": null}
+, {"addr": "0x46cf80", "name": "AnmManager::do_preload_anm", "comment": null}
 , {"addr": "0x46d020", "name": "AnmManager::preload_anm", "comment": null}
-, {"addr": "0x46d0c0", "name": "AnmLoaded::load_46d0c0", "comment": null}
+, {"addr": "0x46d0c0", "name": "AnmLoaded::load_one_script", "comment": null}
 , {"addr": "0x46d770", "name": "AnmLoaded::destructor", "comment": null}
 , {"addr": "0x46dab0", "name": "draw_rtext", "comment": null}
 , {"addr": "0x46dd90", "name": "AnmManager::on_draw_05__just_renders_layer_00", "comment": null}
@@ -823,7 +835,7 @@
 , {"addr": "0x4774b0", "name": "sub_4774b0_exception_handler", "comment": null}
 , {"addr": "0x477920", "name": "memset", "comment": null}
 , {"addr": "0x477fa4", "name": "sub_477fa4_stub", "comment": null}
-, {"addr": "0x477fa7", "name": "global_heap_alloc_maybeinit_stub_477fa7", "comment": null}
+, {"addr": "0x477fa7", "name": "malloc_", "comment": null}
 , {"addr": "0x477fb2", "name": "free__unsized", "comment": null}
 , {"addr": "0x4792cc", "name": "sub_4792cc_noreturn", "comment": null}
 , {"addr": "0x47933f", "name": "sub_47933f_noreturn", "comment": null}

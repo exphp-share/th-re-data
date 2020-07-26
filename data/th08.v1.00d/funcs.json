@@ -272,7 +272,7 @@
 , {"addr": "0x43d7e0", "name": "sub_43d7e0_joypad_stuff", "comment": null}
 , {"addr": "0x43e160", "name": "sub_43e160__calls_keyboard_funcs", "comment": null}
 , {"addr": "0x43e4a0", "name": "zun_crypt", "comment": null}
-, {"addr": "0x43ea00", "name": "UnknownGlobalY::sub_43ea00", "comment": null}
+, {"addr": "0x43ea00", "name": "UnknownGlobalY::sub_43ea00_logs_debug", "comment": null}
 , {"addr": "0x43eb60", "name": "UnknownGlobalY::sub_43eb60", "comment": null}
 , {"addr": "0x43ed20", "name": "Rng::rand_dword", "comment": null}
 , {"addr": "0x43ed50", "name": "Rng::randf_0_to_1", "comment": null}

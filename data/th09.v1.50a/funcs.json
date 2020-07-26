@@ -28,7 +28,13 @@
 , {"addr": "0x412100", "name": "Enemy::constructor", "comment": null}
 , {"addr": "0x4121d0", "name": "EnemyManager::constructor", "comment": null}
 , {"addr": "0x412240", "name": "EnemyManager::operator new", "comment": null}
-, {"addr": "0x415050", "name": "Pofv25e188::constructor", "comment": null}
+, {"addr": "0x413be0", "name": "BulletManager::on_draw", "comment": null}
+, {"addr": "0x413e40", "name": "BulletManager::on_registration", "comment": null}
+, {"addr": "0x4146f0", "name": "BulletManager::on_tick", "comment": null}
+, {"addr": "0x414fa0", "name": "BulletManagerArray1Item::constructor", "comment": null}
+, {"addr": "0x414fe0", "name": "Bullet::constructor", "comment": null}
+, {"addr": "0x415020", "name": "BulletManagerArray4Item::constructor", "comment": null}
+, {"addr": "0x415050", "name": "BulletManager::constructor", "comment": null}
 , {"addr": "0x4150d0", "name": "BulletManager::operator new", "comment": null}
 , {"addr": "0x415340", "name": "ExAttackManager::on_tick", "comment": null}
 , {"addr": "0x415460", "name": "ExAttackManager::on_draw_10", "comment": null}
@@ -42,6 +48,11 @@
 , {"addr": "0x418480", "name": "Gui::on_registration", "comment": null}
 , {"addr": "0x4187b0", "name": "Gui::constructor", "comment": null}
 , {"addr": "0x418840", "name": "Gui::operator new", "comment": null}
+, {"addr": "0x418a90", "name": "GuiSide::on_tick", "comment": null}
+, {"addr": "0x4193e0", "name": "GuiSide::on_draw", "comment": null}
+, {"addr": "0x41a000", "name": "GuiSide::on_registration", "comment": null}
+, {"addr": "0x41a490", "name": "GuiSide::constructor", "comment": null}
+, {"addr": "0x41a5d0", "name": "GuiSide::operator new", "comment": null}
 , {"addr": "0x41a75f", "name": "Lolidfk::on_draw", "comment": null}
 , {"addr": "0x41a889", "name": "UpdateFunc::initialize", "comment": null}
 , {"addr": "0x41aa5f", "name": "Lolidfk::on_tick", "comment": null}

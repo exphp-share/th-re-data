@@ -1,4 +1,12 @@
 [ {"addr": "0x4384d1", "name": "float(303.00317)", "type": "float", "comment": null}
+, {"addr": "0x472d60", "name": "jump_table_anm_under_300", "type": "uint32_t [53]", "comment": null}
+, {"addr": "0x472e34", "name": "jump_table_anm_under_300_indirect", "type": "uint8_t [215]", "comment": null}
+, {"addr": "0x472f0c", "name": "jump_table_472f0c_under_600", "type": "uint32_t [65]", "comment": null}
+, {"addr": "0x473010", "name": "jump_table_473010_under_600_indirect", "type": "uint8_t [209]", "comment": null}
+, {"addr": "0x4730e4", "name": "jump_table_4730e4_anm_over_600", "type": "uint32_t [10]", "comment": null}
+, {"addr": "0x4b277c", "name": "IID_IDirectInput8A", "type": "GUID", "comment": null}
+, {"addr": "0x4b28dc", "name": "GUID_SysMouse", "type": "GUID", "comment": null}
+, {"addr": "0x4b28ec", "name": "GUID_SysKeyboard", "type": "GUID", "comment": null}
 , {"addr": "0x4bd7c4", "name": "VTABLE_BOMB_SAKUYA_B", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bd7e0", "name": "VTABLE_BOMB_SAKUYA_A", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bd7fc", "name": "VTABLE_BOMB_MARISA_B", "type": "struct zVTableBomb", "comment": null}
@@ -6,9 +14,28 @@
 , {"addr": "0x4bd834", "name": "VTABLE_BOMB_REIMU_B", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bd850", "name": "VTABLE_BOMB_REIMU_A", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bd86c", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4bde7c", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
+, {"addr": "0x4c1a44", "name": "float(1.5)", "type": "float", "comment": null}
+, {"addr": "0x4c1a48", "name": "double(0.125)", "type": "double", "comment": null}
+, {"addr": "0x4c1a60", "name": "double(1)", "type": "double", "comment": null}
+, {"addr": "0x4c1aa8", "name": "double(60)", "type": "double", "comment": null}
+, {"addr": "0x4c1ab8", "name": "float(3.6)", "type": "float", "comment": null}
+, {"addr": "0x4c1b30", "name": "float(57)", "type": "float", "comment": null}
+, {"addr": "0x4c1b3c", "name": "float(65)", "type": "float", "comment": null}
+, {"addr": "0x4c1bac", "name": "float(384)", "type": "float", "comment": null}
+, {"addr": "0x4c1bc0", "name": "float(448)", "type": "float", "comment": null}
 , {"addr": "0x4cbb00", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4d0cc0", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4d1d68", "name": "FILE_BEING_WRITTEN", "type": "HANDLE", "comment": "because of course it's a global"}
+, {"addr": "0x4d4cec", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[7]", "comment": null}
+, {"addr": "0x4d6878", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
+, {"addr": "0x4d687c", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
+, {"addr": "0x4d6884", "name": "HARDWARE_INPUT_RISING_EDGE", "type": "uint32_t", "comment": null}
+, {"addr": "0x4d6f50", "name": "DEBUG_MESSAGE_THING", "type": "void", "comment": null}
 , {"addr": "0x4d8f58", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
+, {"addr": "0x4d8f60", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
+, {"addr": "0x4db508", "name": "REPLAY_UNSAFE_RNG", "type": "uint32_t", "comment": null}
+, {"addr": "0x4db510", "name": "REPLAY_SAFE_RNG", "type": "uint32_t", "comment": null}
 , {"addr": "0x4db51c", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
 , {"addr": "0x4db520", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
 , {"addr": "0x4db528", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
@@ -19,13 +46,16 @@
 , {"addr": "0x4db53c", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
 , {"addr": "0x4db540", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
 , {"addr": "0x4db544", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4db54c", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x4db550", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4db558", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
 , {"addr": "0x4db55c", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
 , {"addr": "0x4db560", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
 , {"addr": "0x4db660", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
 , {"addr": "0x4db664", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
-, {"addr": "0x4db668", "name": "THREAD_610_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4db668", "name": "LOADING_THREAD_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4db66c", "name": "SUPERVISOR_ON_DRAW_19_OVERRIDE", "type": "void*", "comment": null}
+, {"addr": "0x4db670", "name": "SUPERVISOR_ON_DRAW_0F_OVERRIDE", "type": "void*", "comment": null}
 , {"addr": "0x4db678", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
 , {"addr": "0x4db67c", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4db688", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
@@ -34,7 +64,20 @@
 , {"addr": "0x4db698", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4db6a4", "name": "MAIN_MENU_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4f56cc", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x4f5700", "name": "CRIT_SECTION_FILES_04F5700", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4f5718", "name": "CRIT_SECTION_DEBUG_LOG", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4f5730", "name": "CRIT_SECTION_J", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4f5748", "name": "CRIT_SECTION_K", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4f5760", "name": "CRIT_SECTION_H", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4f57d8", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4f5828", "name": "CHARACTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4f582c", "name": "SUBSHOT", "type": "int32_t", "comment": null}
+, {"addr": "0x4f5834", "name": "DIFFICULTY", "type": "int32_t", "comment": null}
+, {"addr": "0x4f583c", "name": "RANK", "type": "int32_t", "comment": null}
+, {"addr": "0x4f5844", "name": "SPELL_ID", "type": "int32_t", "comment": null}
 , {"addr": "0x4f58a4", "name": "CUR_STAGE_NUM", "type": "int32_t", "comment": null}
+, {"addr": "0x4f5a18", "name": "WINDOW", "type": "struct zWindow", "comment": null}
+, {"addr": "0x4f7b58", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
+, {"addr": "0x4fd2f0", "name": "JOYPAD_CAPABILITIES", "type": "struct JOYCAPSA", "comment": null}
+, {"addr": "0x4fd84c", "name": "MUTEX_Touhou12App", "type": "HANDLE", "comment": null}
 ]
