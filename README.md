@@ -20,8 +20,8 @@ Coverage varies wildly between games depending on how much I've needed to revers
 
 * [Structs for TH16](data/th16.v1.00a/type-structs-own.json) — As noted above, this has some of the "fullest" definition of most structs in this repo. (the files for many other games have little info beyond struct sizes)
   * [For TH17](data/th17.v1.00b/type-structs-own.json) — Has a block of fields on AnmManager that I haven't yet added to TH16
-  * [For TH14](data/th14.v1.00b/type-structs-own.json) — Has the most filled out Supervisor (ZUN's `MotherInf`) type and Window type.
-    - (this type is poorly filled out in TH16 because I don't like annotating its type in static memory since I would lose the ability to write comments)
+  * [For TH14](data/th14.v1.00b/type-structs-own.json) — Has the most filled out Supervisor (ZUN's `MotherInf`) type and `Window` type.
+    - (these are poorly filled out in TH16 because I don't like annotating types that live in static memory since I would lose the ability to write comments)
 * [Funcs for TH15](data/th15.v1.00b/funcs.json) — Tons of pointdevice-related functions are labeled.
 * [Funcs for TH14](data/th14.v1.00b/funcs.json) — Lots of functions that use Direct3D and DirectInput are identified.
 * [Statics for TH08](data/th08.v1.00d/statics.json) — Unlike TH10 and later, most statics in TH08 are embedded directly in static memory rather than behind pointers.  Thankfully, I was able to map a whole bunch of them after happening upon a table full of "life before main" static initializers. :D

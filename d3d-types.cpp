@@ -1,3 +1,5 @@
+// This garbage can be pasted into the "C syntax structs" window of binja
+// to add a bunch of Direct3D and DirectInput stuff.
 
 struct HMONITOR__;
 struct HDC__;
