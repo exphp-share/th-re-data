@@ -84,7 +84,7 @@
 , {"addr": "0x4943d0", "name": "float(2**-32)", "type": "float", "comment": null}
 , {"addr": "0x4943d4", "name": "float(2**-31)", "type": "float", "comment": null}
 , {"addr": "0x4943d8", "name": "float(1e-4)", "type": "float", "comment": null}
-, {"addr": "0x4943dc", "name": "float(5e-4)", "type": "float", "comment": null}
+, {"addr": "0x4943dc", "name": "float(1/2048)", "type": "float", "comment": null}
 , {"addr": "0x4943e0", "name": "float(0.0009765625)", "type": "float", "comment": null}
 , {"addr": "0x4943e4", "name": "float(1e-3)", "type": "float", "comment": null}
 , {"addr": "0x4943e8", "name": "float(0.001953125)", "type": "float", "comment": null}
@@ -372,6 +372,8 @@
 , {"addr": "0x4a6ee4", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
 , {"addr": "0x4a6ef4", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
 , {"addr": "0x4a6ef8", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4a6efc", "name": "CACHED_PLAYER_SUBSEASON_SHT_FILE", "type": "struct zShtRawFile*", "comment": null}
+, {"addr": "0x4a6f00", "name": "CACHED_PLAYER_SHT_FILE", "type": "struct zShtRawFile*", "comment": null}
 , {"addr": "0x4a6f04", "name": "SHT_SHOOTER_30_TABLE", "type": "void", "comment": null}
 , {"addr": "0x4a6f08", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x4a6f0c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
@@ -396,14 +398,14 @@
 , {"addr": "0x4c1290", "name": "ANM_VM_4c1290", "type": "struct zAnmVm*", "comment": null}
 , {"addr": "0x4c1294", "name": "ANM_VM_4c1294", "type": "struct zAnmVm*", "comment": null}
 , {"addr": "0x4c1298", "name": "ANM_VM_4c1298", "type": "struct zAnmVm*", "comment": null}
-, {"addr": "0x4c1308", "name": "D3D_STUFF_4c1308", "type": "struct zUnknownGlobalD3DStuff", "comment": null}
-, {"addr": "0x4c1434", "name": "D3D_STUFF_4c1434", "type": "struct zUnknownGlobalD3DStuff", "comment": null}
-, {"addr": "0x4c1560", "name": "D3D_STUFF_4c1560__HAS_ANM_VARS_16_TO_21", "type": "struct zUnknownGlobalD3DStuff", "comment": "ANM vars 10016-10018 are the sum of field_0 + field_3c.\nANM vars 10019-10021 are field_24.\n\nNotice there are at least 3 other instances of this struct\nliving in static memory, but only this one has any\nconnection to ANM vars."}
-, {"addr": "0x4c168c", "name": "D3D_STUFF_4c168c", "type": "struct zUnknownGlobalD3DStuff", "comment": null}
-, {"addr": "0x4c17b8", "name": "D3D_STUFF_PTR", "type": "struct zUnknownGlobalD3DStuff*", "comment": "At any given time this points to one of four instances of\nthis struct that all live in static memory."}
+, {"addr": "0x4c1308", "name": "CAMERA_4c1308", "type": "struct zCamera", "comment": null}
+, {"addr": "0x4c1434", "name": "CAMERA_4c1434", "type": "struct zCamera", "comment": null}
+, {"addr": "0x4c1560", "name": "CAMERA_4c1560__HAS_ANM_VARS_16_TO_21", "type": "struct zCamera", "comment": "ANM vars 10016-10018 are the sum of field_0 + field_3c.\nANM vars 10019-10021 are field_24.\n\nNotice there are at least 3 other instances of this struct\nliving in static memory, but only this one has any\nconnection to ANM vars."}
+, {"addr": "0x4c168c", "name": "CAMERA_4c168c", "type": "struct zCamera", "comment": null}
+, {"addr": "0x4c17b8", "name": "CURRENT_CAMERA_PTR", "type": "struct zCamera*", "comment": "At any given time this points to one of four instances of\nthis struct that all live in static memory."}
 , {"addr": "0x4c17c4", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
 , {"addr": "0x4c1a68", "name": "THREAD_4c1a68", "type": "struct zThread", "comment": null}
-, {"addr": "0x4c1b0c", "name": "BACKGROUND_COLOR", "type": "struct zD3DColor", "comment": null}
+, {"addr": "0x4c1b0c", "name": "BACKGROUND_COLOR", "type": "struct D3DCOLOR", "comment": null}
 , {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
 , {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": "struct zArcFile [20]", "comment": null}
 , {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": "int32_t", "comment": null}
@@ -414,12 +416,14 @@
 , {"addr": "0x4d9d2c", "name": "RESOLUTION_X", "type": "int32_t", "comment": null}
 , {"addr": "0x4d9d30", "name": "RESOLUTION_Y", "type": "int32_t", "comment": null}
 , {"addr": "0x4d9d34", "name": "SCREEN_COORD_SCALE", "type": "float", "comment": "This is set to 1.0, 1.5, or 2.0 depending on the selected resolution.\nIt causes all drawn things to be scaled by that factor;\narcade region, ui, and all."}
+, {"addr": "0x4d9d38", "name": "EARLY_RENDERING_ARCADE_OFFSET_X", "type": "int32_t", "comment": "These two integers are the position of the top left coordinate\nof the arcade region inside the temporary \"@R\" surfaces used\nfor the first three stages of rendering (prior to resolution\nupscaling of the arcade region).\n\nThis region is always rendered at the default resolution\n(so it is always 384x448 during these stages), but it is\nplaced centered in a surface that is as large as the full\nwindow.  Therefore, the expression for them is:\n\n0.5 * (SCALED window size\n       - UNSCALED arcade region size)\n"}
+, {"addr": "0x4d9d3c", "name": "EARLY_RENDERING_ARCADE_OFFSET_Y", "type": "int32_t", "comment": null}
 , {"addr": "0x4d9d40", "name": "ARCADE_HEIGHT", "type": "int32_t", "comment": "These hold the dimensions of the \"arcade\" region of the\nscreen (the portion that contains displays the game world).\n\nFor a 640x480 game window, the arcade region is 384x448.\nAt any given point in time, these variables either hold\nthose exact values (448, 384), or they hold numbers that\nare scaled according to the current resolution.\n\n(the game rapidly switches between scaled and unscaled\n values multiple times in each frame)"}
 , {"addr": "0x4d9d44", "name": "ARCADE_WIDTH", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d48", "name": "ARCADE_HUD_ORIGIN_X", "type": "int32_t", "comment": "This is 1/2 of the current window width, scaled to the\ncurrent resolution.  (so depending on res, it is 320,\n480, or 640).\n\nChanging this moves HUD elements in the arcade region.\nThis includes:\n + Boss name and stars (but not spell info or boss timer,\n   which actually live outside the arcade surface)\n + Music title, season gauge\n + Boss HP circle gauge\n + \"Item Get Border Line\""}
+, {"addr": "0x4d9d48", "name": "ARCADE_HUD_ORIGIN_X", "type": "int32_t", "comment": "This is 1/2 of the current window width, scaled to the\ncurrent resolution.  (so depending on res, it is 320,\n480, or 640).\n\nIt is used to position things that are drawn at full\nresolution inside the arcade region (usually HUD elements,\nespecially text). This includes:\n + Boss name and stars (but not spell info or boss timer,\n   which actually live outside the arcade surface)\n + Music title, season gauge\n + Boss HP circle gauge\n + \"Item Get Border Line\""}
 , {"addr": "0x4d9d4c", "name": "ARCADE_HUD_ORIGIN_Y", "type": "int32_t", "comment": "Number of pixels from top of the window drawing surface to\nthe top of the arcade screen, scaled for resolution.\n(so depending on res, it is either 16, 24, or 32)"}
-, {"addr": "0x4d9d50", "name": "GAME_2D_ORIGIN_X", "type": "int32_t", "comment": "This is always equal to ARCADE_ORIGIN_X.\n\nIt is used to position non HUD 2d elements in the arcade region.  These are:\n\n  - The player and enemies (but not the boss HP bar)\n  - Danmaku and items\n  - Decorative spell backgrounds (but not the 3d stage BG)\n"}
-, {"addr": "0x4d9d54", "name": "GAME_2D_ORIGIN_Y", "type": "int32_t", "comment": "Y coordinate governing the same objects as GAME_2D_ORIGIN_X.\nIts value is........wait, what the *actual fuck*?\n\nIt's value is equal to 0.5 * (SCALED window height - UNSCALED\narcade region height). This is 16, 136, or 256 depending\non resolution.\n\n...yeah that's pretty messed up.\n"}
+, {"addr": "0x4d9d50", "name": "GAME_2D_ORIGIN_X", "type": "int32_t", "comment": "This vector is EARLY_RENDERING_ARCADE_OFFSET with 192 added\nto x to provide the location of (0,0) in game space.\n\nBasically it is used to position elements in the arcade region\nthat are always drawn at 640x480.  These are:\n\n  - The player and enemies (but not the boss HP bar)\n  - Danmaku and items\n  - Decorative spell backgrounds (but not the 3d stage BG)\n"}
+, {"addr": "0x4d9d54", "name": "GAME_2D_ORIGIN_Y", "type": "int32_t", "comment": null}
 , {"addr": "0x4d9d58", "name": "TOTAL_APPLICATION_RUNTIME", "type": "double [3]", "comment": "All three of these appear to be the total time in seconds\nsince the EXE was started (including time spent on the\n\"choose resolution\" dialog; though these variables only\nstart getting written once you get past that dialog).\n\nThe first two appear to be rounded to 7 places after the\ndecimal point and are usually nearly equal, while the\nthird one tends to be slightly larger and is not as\nharshly rounded."}
 , {"addr": "0x4d9dc4", "name": "SEEMINGLY_CONST_ZERO_VEC_4d9dc4", "type": "struct zFloat3", "comment": null}
 ]

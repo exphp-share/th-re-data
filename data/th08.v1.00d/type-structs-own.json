@@ -14,6 +14,8 @@
   [ ["0x0", "__unknown", null]
   , ["0x24", "preloaded_anms", "struct zAnmLoaded [256]"]
   , ["0x1d24", "__unknown", null]
+  , ["0x2038", "__array_of_something_stored_here", "struct IDirect3DTexture8*[1]"]
+  , ["0x203c", "__unknown", null]
   , ["0x2524", "vertex_buffer", "struct zRenderTextureVertex [98304]"]
   , ["0x2a2524", "__unknown", null]
   , ["0x2a2570", "__exact_size_known", "struct zCOMMENT [0]"]
@@ -220,6 +222,7 @@
 
 , "zConfig": 
   [ ["0x0", "__unknown", null]
+  , ["0x38", "flags_38", "uint32_t"]
   , ["0x3c", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x3c", "__end", null]
   ]
@@ -242,6 +245,12 @@
   , ["0x38", "m32", "float"]
   , ["0x3c", "m33", "float"]
   , ["0x40", "__end", null]
+  ]
+
+, "zDebugLog": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2008", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2008", "__end", null]
   ]
 
 , "zEclInstrHeader": 
@@ -651,6 +660,8 @@
   , ["0x4", "__unknown", null]
   , ["0x5", "is_youkai", "uint8_t"]
   , ["0x6", "__unknown", null]
+  , ["0x8", "__maybe_time_in_focused_unfocused_state", "int32_t"]
+  , ["0xc", "__unknown", null]
   , ["0x10", "vm", "struct zAnmVm"]
   , ["0x2b4", "final_pos", "struct zFloat3"]
   , ["0x2c0", "__vec3_2c0", "struct zFloat3"]
@@ -676,6 +687,8 @@
   , ["0xe2a74", "__probably_human_data", "void*"]
   , ["0xe2a78", "__probably_youkai_data", "void*"]
   , ["0xe2a7c", "__unknown", null]
+  , ["0xe2a98", "attempted_direction", "int32_t"]
+  , ["0xe2a9c", "__unknown", null]
   , ["0xe2aa4", "__vec3_e2aa4", "struct zFloat3"]
   , ["0xe2ab0", "__vec3_e2ab0", "struct zFloat3"]
   , ["0xe2abc", "__unknown", null]
@@ -781,7 +794,21 @@
   ]
 
 , "zSoundManager": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "dsound_api", "struct IDirectSound*"]
+  , ["0x4", "__unknown", null]
+  , ["0x8", "__ptrs_8", "struct IUnknown*[128]"]
+  , ["0x208", "__ptrs_208", "struct IUnknown*[128]"]
+  , ["0x408", "__array_408__init_minus_1", "int32_t [128]"]
+  , ["0x608", "buffer", "struct IDirectSoundBuffer*"]
+  , ["0x60c", "main_window", "HWND"]
+  , ["0x610", "dsound", "struct IDirectSound**"]
+  , ["0x614", "thread_id", "DWORD"]
+  , ["0x618", "thread", "HANDLE"]
+  , ["0x61c", "__unknown", null]
+  , ["0x1ce0", "__owned_ptrs_1ce0", "void*[16]"]
+  , ["0x1d20", "__unknown", null]
+  , ["0x1f84", "__owned_ptr_1d84", "void*"]
+  , ["0x1f88", "__unknown", null]
   , ["0x5224", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x5224", "__end", null]
   ]
@@ -865,14 +892,25 @@
   ]
 
 , "zSupervisor": 
-  [ ["0x0", "update_func_registry", "struct zUpdateFuncRegistry"]
-  , ["0x40", "__unknown", null]
+  [ ["0x0", "exe_module", "HINSTANCE"]
+  , ["0x4", "d3d", "struct IDirect3D8*"]
+  , ["0x8", "d3d_device", "struct IDirect3DDevice8*"]
+  , ["0xc", "__unknown", null]
+  , ["0x44", "main_window", "HWND"]
+  , ["0x48", "view_matrix", "struct D3DMATRIX"]
+  , ["0x88", "projection_matrix", "struct D3DMATRIX"]
+  , ["0xc8", "viewport", "struct D3DVIEWPORT8"]
+  , ["0xe0", "present_parameters", "struct D3DPRESENT_PARAMETERS"]
   , ["0x118", "config", "struct zConfig"]
   , ["0x154", "__unknown", null]
   , ["0x188", "game_speed", "float"]
   , ["0x18c", "__unknown", null]
+  , ["0x1a4", "flags", "uint32_t"]
+  , ["0x1a8", "__unknown", null]
   , ["0x1ac", "system_time", "int32_t"]
-  , ["0x1b0", "__unknown", null]
+  , ["0x1b0", "device_caps", "struct D3DCAPS8"]
+  , ["0x284", "__handle_to_a_thread_goes_here", "void*"]
+  , ["0x288", "__unknown", null]
   , ["0x298", "critical_sections", "struct CRITICAL_SECTION [4]"]
   , ["0x2f8", "__unknown", null]
   , ["0x364", "__exact_size_known", "struct zCOMMENT [0]"]
@@ -885,12 +923,6 @@
   , ["0x8", "current", "int32_t"]
   , ["0xc", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0xc", "__end", null]
-  ]
-
-, "zUnknownGlobal44": 
-  [ ["0x0", "__unknown", null]
-  , ["0x44", "__exact_size_known", "struct zCOMMENT [0]"]
-  , ["0x44", "__end", null]
   ]
 
 , "zUnknownGlobalW": 
@@ -910,12 +942,6 @@
 , "zUnknownGlobalXChild": 
   [ ["0x0", "vm", "struct zAnmVm"]
   , ["0x2a4", "__end", null]
-  ]
-
-, "zUnknownGlobalY": 
-  [ ["0x0", "__unknown", null]
-  , ["0x2008", "__exact_size_known", "struct zCOMMENT [0]"]
-  , ["0x2008", "__end", null]
   ]
 
 , "zUnusedDebugThing": 
@@ -947,6 +973,27 @@
   , ["0x20", "on_draw_list_head", "struct zUpdateFunc"]
   , ["0x40", "__exact_size_known", "struct zCOMMENT [0]"]
   , ["0x40", "__end", null]
+  ]
+
+, "zWindow": 
+  [ ["0x0", "main_window", "HWND"]
+  , ["0x4", "__unknown", null]
+  , ["0x8", "wparam__why_is_this_fucking_global", "UINT"]
+  , ["0xc", "__bool__wparam_is_zero", "int32_t"]
+  , ["0x10", "__unknown", null]
+  , ["0x1c", "__field_1c", "uint8_t"]
+  , ["0x1d", "__unknown", null]
+  , ["0x20", "saved_system_params", "struct zWindowSavedSystemParameters"]
+  , ["0x2c", "__unknown", null]
+  , ["0x44", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x44", "__end", null]
+  ]
+
+, "zWindowSavedSystemParameters": 
+  [ ["0x0", "screen_save_active", "int32_t"]
+  , ["0x4", "low_power_active", "int32_t"]
+  , ["0x8", "power_off_active", "int32_t"]
+  , ["0xc", "__end", null]
   ]
 
 }

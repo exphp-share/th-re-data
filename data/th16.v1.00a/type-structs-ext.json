@@ -49,6 +49,44 @@
   , ["0x18", "__end", null]
   ]
 
+, "D3DCOLOR": 
+  [ ["0x0", "b", "uint8_t"]
+  , ["0x1", "g", "uint8_t"]
+  , ["0x2", "r", "uint8_t"]
+  , ["0x3", "a", "uint8_t"]
+  , ["0x4", "__end", null]
+  ]
+
+, "D3DMATRIX": 
+  [ ["0x0", "m00", "float"]
+  , ["0x4", "m01", "float"]
+  , ["0x8", "m02", "float"]
+  , ["0xc", "m03", "float"]
+  , ["0x10", "m10", "float"]
+  , ["0x14", "m11", "float"]
+  , ["0x18", "m12", "float"]
+  , ["0x1c", "m13", "float"]
+  , ["0x20", "m20", "float"]
+  , ["0x24", "m21", "float"]
+  , ["0x28", "m22", "float"]
+  , ["0x2c", "m23", "float"]
+  , ["0x30", "m30", "float"]
+  , ["0x34", "m31", "float"]
+  , ["0x38", "m32", "float"]
+  , ["0x3c", "m33", "float"]
+  , ["0x40", "__end", null]
+  ]
+
+, "D3DVIEWPORT9": 
+  [ ["0x0", "X", "uint32_t"]
+  , ["0x4", "Y", "uint32_t"]
+  , ["0x8", "Width", "uint32_t"]
+  , ["0xc", "Height", "uint32_t"]
+  , ["0x10", "MinZ", "float"]
+  , ["0x14", "MaxZ", "float"]
+  , ["0x18", "__end", null]
+  ]
+
 , "DOS_Header": 
   [ ["0x0", "e_magic", "char [2]"]
   , ["0x2", "e_cblp", "uint16_t"]

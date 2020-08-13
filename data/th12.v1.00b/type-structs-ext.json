@@ -123,6 +123,14 @@
   , ["0x8", "__end", null]
   ]
 
+, "D3DCOLOR": 
+  [ ["0x0", "b", "uint8_t"]
+  , ["0x1", "g", "uint8_t"]
+  , ["0x2", "r", "uint8_t"]
+  , ["0x3", "a", "uint8_t"]
+  , ["0x4", "__end", null]
+  ]
+
 , "D3DCOLORVALUE": 
   [ ["0x0", "r", "float"]
   , ["0x4", "g", "float"]

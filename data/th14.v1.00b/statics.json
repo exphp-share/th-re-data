@@ -15,6 +15,10 @@
 , {"addr": "0x4bd850", "name": "VTABLE_BOMB_REIMU_A", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bd86c", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bde7c", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
+, {"addr": "0x4c19b0", "name": "float(0.5)", "type": "float", "comment": null}
+, {"addr": "0x4c19f8", "name": "float(0.99)", "type": "float", "comment": null}
+, {"addr": "0x4c19fc", "name": "float(1)", "type": "float", "comment": null}
+, {"addr": "0x4c1a08", "name": "float(1.01)", "type": "float", "comment": null}
 , {"addr": "0x4c1a44", "name": "float(1.5)", "type": "float", "comment": null}
 , {"addr": "0x4c1a48", "name": "double(0.125)", "type": "double", "comment": null}
 , {"addr": "0x4c1a60", "name": "double(1)", "type": "double", "comment": null}
@@ -24,10 +28,12 @@
 , {"addr": "0x4c1b3c", "name": "float(65)", "type": "float", "comment": null}
 , {"addr": "0x4c1bac", "name": "float(384)", "type": "float", "comment": null}
 , {"addr": "0x4c1bc0", "name": "float(448)", "type": "float", "comment": null}
+, {"addr": "0x4c1c50", "name": "float(-1)", "type": "float", "comment": null}
 , {"addr": "0x4cbb00", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4d0cc0", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4d1d68", "name": "FILE_BEING_WRITTEN", "type": "HANDLE", "comment": "because of course it's a global"}
 , {"addr": "0x4d4cec", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[7]", "comment": null}
+, {"addr": "0x4d5618", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data [9]", "comment": null}
 , {"addr": "0x4d6878", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4d687c", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
 , {"addr": "0x4d6884", "name": "HARDWARE_INPUT_RISING_EDGE", "type": "uint32_t", "comment": null}

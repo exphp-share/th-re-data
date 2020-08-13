@@ -9,7 +9,10 @@
 , "FILETIME": {"def": "struct _FILETIME FILETIME", "size": 8}
 , "GUID": {"def": "struct _GUID GUID", "size": 16}
 , "HANDLE": {"def": "void*", "size": 4}
+, "HBRUSH": {"def": "struct BRUSH__*", "size": 4}
+, "HCURSOR": {"def": "struct CURSOR__*", "size": 4}
 , "HGLOBAL": {"def": "HANDLE HGLOBAL", "size": 4}
+, "HICON": {"def": "struct ICON__*", "size": 4}
 , "HINSTANCE": {"def": "struct HINSTANCE__*", "size": 4}
 , "HKEY": {"def": "struct HKEY__*", "size": 4}
 , "HMODULE": {"def": "HINSTANCE HMODULE", "size": 4}

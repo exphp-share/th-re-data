@@ -4,6 +4,7 @@
 , {"addr": "0x4a06ac", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a0704", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a2458", "name": "VTABLE_4a2458", "type": "void*", "comment": null}
+, {"addr": "0x4a3ce0", "name": "double(1)", "type": "double", "comment": null}
 , {"addr": "0x4a3cf8", "name": "double(0.5)", "type": "double", "comment": null}
 , {"addr": "0x4a3d28", "name": "double(192)", "type": "double", "comment": null}
 , {"addr": "0x4a3d50", "name": "double(448)", "type": "double", "comment": null}
@@ -11,11 +12,14 @@
 , {"addr": "0x4a3d60", "name": "double(-192)", "type": "double", "comment": null}
 , {"addr": "0x4a3d68", "name": "double(16)", "type": "double", "comment": null}
 , {"addr": "0x4a3d70", "name": "double(32)", "type": "double", "comment": null}
+, {"addr": "0x4a3e0c", "name": "float(0.5235988)", "type": "float", "comment": null}
+, {"addr": "0x4a3e10", "name": "float(4294967300)", "type": "float", "comment": null}
 , {"addr": "0x4a3fd8", "name": "double(3)", "type": "double", "comment": null}
 , {"addr": "0x4a3ff0", "name": "double(1e-4)", "type": "double", "comment": null}
 , {"addr": "0x4a4000", "name": "double(0.05)", "type": "double", "comment": null}
 , {"addr": "0x4a4014", "name": "float(2)", "type": "float", "comment": null}
 , {"addr": "0x4a4060", "name": "float(-1.5707964)", "type": "float", "comment": null}
+, {"addr": "0x4a4098", "name": "float(3.1415927)", "type": "float", "comment": null}
 , {"addr": "0x4a42b8", "name": "double(0.25)", "type": "double", "comment": null}
 , {"addr": "0x4a42c0", "name": "float(2.2)", "type": "float", "comment": null}
 , {"addr": "0x4a42d0", "name": "float(56)", "type": "float", "comment": null}
@@ -26,6 +30,7 @@
 , {"addr": "0x4aee10", "name": "SHT_ON_HIT_FUNCS", "type": "void*[2]", "comment": null}
 , {"addr": "0x4af0fc", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[7]", "comment": null}
 , {"addr": "0x4b0c40", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
+, {"addr": "0x4b0ec8", "name": "DEBUG_MESSAGE_THING", "type": "void", "comment": null}
 , {"addr": "0x4b2ed0", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
 , {"addr": "0x4b3358", "name": "SHT_SHOOTER__SANAE_B_FROG_SPLASH", "type": "struct zShtShooter", "comment": null}
 , {"addr": "0x4b43b8", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
@@ -55,13 +60,17 @@
 , {"addr": "0x4b4528", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4b4530", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4b4534", "name": "UFO_PTR", "type": "struct zUfo*", "comment": "Responsible for summoning a UFO once three tokens are collected,\nand ticking the state of the UFO.\n\nDoesn't seem to be responsible for updating the tokens."}
+, {"addr": "0x4ce560", "name": "RNG_1", "type": "void", "comment": null}
+, {"addr": "0x4ce568", "name": "RNG_2", "type": "void", "comment": null}
 , {"addr": "0x4ce89c", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
 , {"addr": "0x4ce8ac", "name": "SHT_FUNCS_3", "type": "void*[1]", "comment": null}
 , {"addr": "0x4ce8cc", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4ce8e8", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4cf200", "name": "CRITICAL_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4cf3f0", "name": "WINDOW", "type": "struct zWindow", "comment": null}
 , {"addr": "0x4cf4e8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
 , {"addr": "0x4d0e70", "name": "data_4d0e70__mystery", "type": "void", "comment": null}
+, {"addr": "0x4d47e8", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144 [4]", "comment": null}
 , {"addr": "0x4d48b8", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4d49d0", "name": "INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4d49d4", "name": "INPUT_PREV", "type": "int32_t", "comment": null}

@@ -115,12 +115,13 @@
 , {"addr": "0x40a7c0", "name": "Stage::on_draw_06__stub", "comment": null}
 , {"addr": "0x40a7d0", "name": "d3d_40a7d0", "comment": null}
 , {"addr": "0x40ac30", "name": "Stage::sub_40ac30", "comment": null}
-, {"addr": "0x40aed0", "name": "Stage::sub_40aed0", "comment": null}
+, {"addr": "0x40aed0", "name": "Stage::tick_first_8_vms", "comment": null}
 , {"addr": "0x40af70", "name": "Stage::sub_40af70", "comment": null}
 , {"addr": "0x40b3b0", "name": "StageInner::run_std", "comment": null}
 , {"addr": "0x40c040", "name": "ecl_callSTD_40c040", "comment": null}
-, {"addr": "0x40c4a0", "name": "StageInner::sub_40c4a0", "comment": null}
-, {"addr": "0x40cd10", "name": "interp_step_40cd10", "comment": null}
+, {"addr": "0x40c4a0", "name": "StageInner::step_fog", "comment": null}
+, {"addr": "0x40cd10", "name": "InterpCameraFog::step", "comment": null}
+, {"addr": "0x40d370", "name": "zCameraFog::operator +", "comment": null}
 , {"addr": "0x40d400", "name": "ecl_leaf_40d400_usedonce", "comment": null}
 , {"addr": "0x40d490", "name": "Timer::decrement", "comment": null}
 , {"addr": "0x40d510", "name": "leaf_40d510_ret_ecx_0arg", "comment": null}
@@ -217,8 +218,8 @@
 , {"addr": "0x412a60", "name": "BulletManager::on_draw__body", "comment": null}
 , {"addr": "0x412c50", "name": "BulletManager::on_tick_1c", "comment": null}
 , {"addr": "0x412c80", "name": "BulletManager::on_draw", "comment": null}
-, {"addr": "0x412cb0", "name": "do_shoot", "comment": null}
-, {"addr": "0x413860", "name": "et_413860", "comment": null}
+, {"addr": "0x412cb0", "name": "BulletManager::shoot_one", "comment": null}
+, {"addr": "0x413860", "name": "Bullet::run_ex", "comment": null}
 , {"addr": "0x414da0", "name": "BulletManager::shoot_bullets", "comment": null}
 , {"addr": "0x414ec0", "name": "et_414ec0", "comment": null}
 , {"addr": "0x414fb0", "name": "et_414fb0", "comment": null}
@@ -260,8 +261,9 @@
 , {"addr": "0x4188d0", "name": "EffectManager::destructor", "comment": null}
 , {"addr": "0x418ab0", "name": "EffectManager::on_tick_1f", "comment": null}
 , {"addr": "0x418ae0", "name": "EffectManager::on_draw__trivial", "comment": null}
-, {"addr": "0x418af0", "name": "anm_create_child_508_wrapper", "comment": null}
+, {"addr": "0x418af0", "name": "EffectManager::create_anm_508", "comment": null}
 , {"addr": "0x418c60", "name": "AnmVm::on_draw__4", "comment": null}
+, {"addr": "0x418c70", "name": "Fog::initialize", "comment": null}
 , {"addr": "0x418fe0", "name": "AnmLoaded::copy_vm_418fe0", "comment": null}
 , {"addr": "0x4190b0", "name": "sub_4190b0_destructor", "comment": null}
 , {"addr": "0x4191f0", "name": "Ending::initialize", "comment": null}
@@ -586,9 +588,10 @@
 , {"addr": "0x444b20", "name": "Player::sub_444b20_prolly_creates_rectangular_damage_source", "comment": null}
 , {"addr": "0x444cf0", "name": "Player::do_graze", "comment": null}
 , {"addr": "0x444e10", "name": "PlayerBullet::create", "comment": null}
-, {"addr": "0x445360", "name": "Player::find_unused_bullet_and_shoot", "comment": null}
+, {"addr": "0x445360", "name": "Player::shoot_one_bullet", "comment": null}
 , {"addr": "0x445470", "name": "Player::do_shooting", "comment": null}
 , {"addr": "0x4455d0", "name": "Player::tick_shooting_state", "comment": null}
+, {"addr": "0x4456d0", "name": "Player::tick_bullets", "comment": null}
 , {"addr": "0x445a30", "name": "enm_compute_damage_sources_445a30", "comment": null}
 , {"addr": "0x445e20", "name": "PlayerBullet::sub_445e20__collide__i_think", "comment": null}
 , {"addr": "0x447550", "name": "AnmVm::set_scale_time", "comment": null}
@@ -702,7 +705,7 @@
 , {"addr": "0x4643b0", "name": "InterpInt::step", "comment": null}
 , {"addr": "0x464590", "name": "InterpInt3::step", "comment": null}
 , {"addr": "0x464930", "name": "cartesian_from_polar_464930", "comment": null}
-, {"addr": "0x464960", "name": "AnmVm::set_window_blinds_time", "comment": null}
+, {"addr": "0x464960", "name": "AnmVm::set_uv_scale_time", "comment": null}
 , {"addr": "0x464a00", "name": "AnmVm::set_434_time", "comment": null}
 , {"addr": "0x464aa0", "name": "AnmVm::set_alpha2_time_4arg", "comment": null}
 , {"addr": "0x464b40", "name": "AnmVm::set_rgb1_time", "comment": null}
@@ -716,7 +719,7 @@
 , {"addr": "0x466f00", "name": "AnmManager::render_sub_466f00", "comment": null}
 , {"addr": "0x4671b0", "name": "AnmManager::render_sub_4671b0", "comment": null}
 , {"addr": "0x467d00", "name": "sub_467d00__interesting", "comment": null}
-, {"addr": "0x468490", "name": "anm_draw_to_screen__i_think", "comment": null}
+, {"addr": "0x468490", "name": "AnmManager::draw_vm", "comment": null}
 , {"addr": "0x468c00", "name": "AnmVm::sub_468c00__uses_render_mode", "comment": null}
 , {"addr": "0x469e00", "name": "cartesian_from_polar_469e00", "comment": null}
 , {"addr": "0x46a330", "name": "AnmVm::on_draw__6", "comment": null}

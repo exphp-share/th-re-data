@@ -35,6 +35,8 @@
 , {"addr": "0x405b60", "name": "AnmVm::get_rotation", "comment": null}
 , {"addr": "0x405b70", "name": "cartesian_from_polar_405b70", "comment": null}
 , {"addr": "0x405bc0", "name": "Timer::set_value", "comment": null}
+, {"addr": "0x406250", "name": "AnmVm::transform_coordinate", "comment": null}
+, {"addr": "0x406420", "name": "AnmVm::get_own_transformed_pos", "comment": null}
 , {"addr": "0x406490", "name": "cartesian_from_polar_406490", "comment": null}
 , {"addr": "0x4064b0", "name": "AnmVm::set_alpha1_time", "comment": null}
 , {"addr": "0x406530", "name": "AnmVm::set_layer", "comment": null}
@@ -257,6 +259,7 @@
 , {"addr": "0x429c60", "name": "PosVel::getter_429c60", "comment": null}
 , {"addr": "0x429cc0", "name": "AnmLoaded::sub_429cc0", "comment": null}
 , {"addr": "0x429dd0", "name": "cartesian_from_polar_429dd0", "comment": null}
+, {"addr": "0x429df0", "name": "GameSpeed::set", "comment": null}
 , {"addr": "0x429e20", "name": "PosVel::get_y", "comment": null}
 , {"addr": "0x429e30", "name": "PosVel::get_x", "comment": null}
 , {"addr": "0x429e60", "name": "PosVel::getter_429e60", "comment": null}
@@ -477,6 +480,7 @@
 , {"addr": "0x466be0", "name": "AnmVm::get_float_var_ptr", "comment": null}
 , {"addr": "0x466cf0", "name": "AnmVm::get_int_var_ptr", "comment": null}
 , {"addr": "0x466de0", "name": "AnmVm::run", "comment": null}
+, {"addr": "0x46a970", "name": "AnmVm::write_texture_circle_vertices", "comment": null}
 , {"addr": "0x46b1c0", "name": "AnmVm::step_interpolators", "comment": null}
 , {"addr": "0x46b3d0", "name": "InterpFloat2::step", "comment": null}
 , {"addr": "0x46b630", "name": "InterpAngle::reset_timer", "comment": null}
@@ -490,7 +494,7 @@
 , {"addr": "0x46b9b0", "name": "InterpInt::step", "comment": null}
 , {"addr": "0x46bb90", "name": "InterpInt3::step", "comment": null}
 , {"addr": "0x46bee0", "name": "cartesian_from_polar_46bee0", "comment": null}
-, {"addr": "0x46bf70", "name": "AnmVm::set_window_blinds_time", "comment": null}
+, {"addr": "0x46bf70", "name": "AnmVm::set_uv_scale_time", "comment": null}
 , {"addr": "0x46bff0", "name": "AnmVm::set_434_time", "comment": null}
 , {"addr": "0x46c070", "name": "AnmVm::set_scale_time", "comment": null}
 , {"addr": "0x46c100", "name": "AnmVm::set_alpha2_time", "comment": null}
@@ -499,7 +503,7 @@
 , {"addr": "0x46c380", "name": "cartesian_from_polar_46c380", "comment": null}
 , {"addr": "0x46c3a0", "name": "AnmVm::set_scale_2", "comment": null}
 , {"addr": "0x46c3c0", "name": "AnmVm::set_angular_velocity", "comment": null}
-, {"addr": "0x46c540", "name": "AnmManager::sub_46c540", "comment": null}
+, {"addr": "0x46c540", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
 , {"addr": "0x46d050", "name": "sub_46d050__render_init", "comment": null}
 , {"addr": "0x46d0a0", "name": "AnmManager::flush_sprites", "comment": null}
 , {"addr": "0x46d170", "name": "AnmManager::sub_46d170__render_quadrilateral", "comment": null}
@@ -510,7 +514,13 @@
 , {"addr": "0x46e560", "name": "AnmManager::render_sub_46e560", "comment": null}
 , {"addr": "0x46e810", "name": "AnmManager::render_sub_46e810", "comment": null}
 , {"addr": "0x46f8c0", "name": "AnmManager::draw_vm", "comment": null}
-, {"addr": "0x470aa0", "name": "AnmManager::sub_470aa0_render_line", "comment": null}
+, {"addr": "0x4703d0", "name": "AnmManager::draw_vm__ins_603", "comment": null}
+, {"addr": "0x470730", "name": "AnmManager::draw_vm__ins_612", "comment": null}
+, {"addr": "0x470aa0", "name": "AnmManager::draw_vm__ins_613", "comment": null}
+, {"addr": "0x470ce0", "name": "AnmManager::draw_vm__ins_607", "comment": null}
+, {"addr": "0x470db0", "name": "AnmManager::draw_vm__mode_17__drawCircle", "comment": null}
+, {"addr": "0x471000", "name": "AnmManager::draw_vm__mode_18__drawCircleBorder", "comment": null}
+, {"addr": "0x4711d0", "name": "AnmManager::draw_vm__mode_18__ins_611", "comment": null}
 , {"addr": "0x471400", "name": "cartesian_from_polar_471400", "comment": null}
 , {"addr": "0x471930", "name": "cartesian_from_polar_471930", "comment": null}
 , {"addr": "0x471950", "name": "AnmManager::initialize", "comment": null}
@@ -571,6 +581,7 @@
 , {"addr": "0x476470", "name": "anm_476470_find_existing_with_id", "comment": null}
 , {"addr": "0x476510", "name": "anm_switch_impl", "comment": null}
 , {"addr": "0x476740", "name": "anm_find_existing_or_clear_id", "comment": null}
+, {"addr": "0x476760", "name": "anm_switch_impl_", "comment": null}
 , {"addr": "0x476910", "name": "sub_476910_creates_anm", "comment": null}
 , {"addr": "0x476960", "name": "AnmVM::search_children", "comment": null}
 , {"addr": "0x476a60", "name": "anm__pop_special_node_or_alloc_467a60", "comment": null}
