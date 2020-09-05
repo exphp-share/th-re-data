@@ -94,7 +94,7 @@
 , {"addr": "0x411460", "name": "Bomb::noop_method_c", "comment": null}
 , {"addr": "0x411470", "name": "Bomb::noop_method_10", "comment": null}
 , {"addr": "0x411480", "name": "Bomb::noop_method_14", "comment": null}
-, {"addr": "0x4115b0", "name": "allocate_shot_type", "comment": null}
+, {"addr": "0x4115b0", "name": "Bomb::operator new", "comment": null}
 , {"addr": "0x411760", "name": "BombReimu::Initialize", "comment": null}
 , {"addr": "0x4117a0", "name": "BombMarisa::initialize", "comment": null}
 , {"addr": "0x4117e0", "name": "BombYoumu::initialize", "comment": null}
@@ -451,11 +451,11 @@
 , {"addr": "0x451dd0", "name": "MainMenu::on_draw", "comment": null}
 , {"addr": "0x451e90", "name": "MainMenu::on_tick__stub", "comment": null}
 , {"addr": "0x451ea0", "name": "MainMenu::on_draw_stub", "comment": null}
-, {"addr": "0x45d8a0", "name": "sub_45d8a0_achievement_related", "comment": null}
-, {"addr": "0x45dba0", "name": "TrophyManager::on_tick", "comment": null}
-, {"addr": "0x45ddb0", "name": "TrophyManager::on_tick__stub", "comment": null}
-, {"addr": "0x45ddc0", "name": "TrophyManager::on_draw__noop", "comment": null}
-, {"addr": "0x460490", "name": "main", "comment": null}
+, {"addr": "0x45d8a0", "name": "TrophyAnimation::award_trophy", "comment": null}
+, {"addr": "0x45dba0", "name": "TrophyAnimation::on_tick", "comment": null}
+, {"addr": "0x45ddb0", "name": "TrophyAnimation::on_tick__stub", "comment": null}
+, {"addr": "0x45ddc0", "name": "TrophyAnimation::on_draw__noop", "comment": null}
+, {"addr": "0x460490", "name": "WinMain", "comment": null}
 , {"addr": "0x463dc0", "name": "ScreenEffect::on_tick_463dc0", "comment": null}
 , {"addr": "0x463ff0", "name": "ScreenEffect::on_draw_463ff0", "comment": null}
 , {"addr": "0x464090", "name": "ScreenEffect::on_tick_464090", "comment": null}
@@ -578,7 +578,7 @@
 , {"addr": "0x475e70", "name": "anm_put_in_ui_list_front", "comment": null}
 , {"addr": "0x475f00", "name": "AnmManager::remove_from_global_lists", "comment": null}
 , {"addr": "0x476220", "name": "anm_create_child", "comment": null}
-, {"addr": "0x476470", "name": "anm_476470_find_existing_with_id", "comment": null}
+, {"addr": "0x476470", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x476510", "name": "anm_switch_impl", "comment": null}
 , {"addr": "0x476740", "name": "anm_find_existing_or_clear_id", "comment": null}
 , {"addr": "0x476760", "name": "anm_switch_impl_", "comment": null}
@@ -612,6 +612,6 @@
 , {"addr": "0x496e70", "name": "math_atan2_496e70", "comment": null}
 , {"addr": "0x496e80", "name": "math_fmod_496e80", "comment": null}
 , {"addr": "0x4976b0", "name": "double_math_sub_4976b0", "comment": null}
-, {"addr": "0x497870", "name": "double_math_sub_497870", "comment": null}
+, {"addr": "0x497870", "name": "sind", "comment": null}
 , {"addr": "0x497f70", "name": "math_call_by_name_497f70", "comment": null}
 ]

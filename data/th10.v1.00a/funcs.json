@@ -19,6 +19,7 @@
 , {"addr": "0x403050", "name": "Stage::on_tick__stub", "comment": null}
 , {"addr": "0x403060", "name": "Stage::on_draw_07_08__stub", "comment": null}
 , {"addr": "0x403070", "name": "Stage::on_draw_0a_0b__stub", "comment": null}
+, {"addr": "0x404610", "name": "InterpFloat3::step", "comment": null}
 , {"addr": "0x4055c0", "name": "Bomb::initialize", "comment": null}
 , {"addr": "0x405620", "name": "Bomb::destructor", "comment": null}
 , {"addr": "0x4056b0", "name": "Bomb::operator new", "comment": null}
@@ -180,6 +181,15 @@
 , {"addr": "0x43c970", "name": "ScreenEffect::initialize", "comment": null}
 , {"addr": "0x43dc90", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x43e460", "name": "SoundManager::modify_bgm", "comment": null}
+, {"addr": "0x43e5a0", "name": "AnmVm::setup_texture_quad_and_matrices", "comment": null}
+, {"addr": "0x43eac0", "name": "AnmVm::get_float_var", "comment": null}
+, {"addr": "0x43ec70", "name": "AnmVm::get_int_var", "comment": null}
+, {"addr": "0x43ed00", "name": "AnmVm::get_float_var_ptr", "comment": null}
+, {"addr": "0x43eda0", "name": "AnmVm::get_int_var_ptr", "comment": null}
+, {"addr": "0x43ee30", "name": "AnmVm::run", "comment": null}
+, {"addr": "0x441600", "name": "InterpInt3::step", "comment": null}
+, {"addr": "0x441950", "name": "InterpInt::step", "comment": null}
+, {"addr": "0x441ad0", "name": "InterpFloat2::step", "comment": null}
 , {"addr": "0x445900", "name": "AnmManager::initialize", "comment": null}
 , {"addr": "0x447280", "name": "AnmManager::preload_anm", "comment": null}
 , {"addr": "0x448270", "name": "PauseMenu::grab_screenshot_for_blur", "comment": null}
@@ -187,6 +197,7 @@
 , {"addr": "0x4485e0", "name": "AnmManager::on_tick_08__stub", "comment": null}
 , {"addr": "0x448860", "name": "AnmManager::on_tick_1a", "comment": null}
 , {"addr": "0x448900", "name": "AnmManager::on_tick_08", "comment": null}
+, {"addr": "0x448980", "name": "AnmManager::render_layer", "comment": null}
 , {"addr": "0x449aa0", "name": "UpdateFuncRegistry::constructor", "comment": null}
 , {"addr": "0x449ae0", "name": "register__on_tick", "comment": null}
 , {"addr": "0x449b70", "name": "register__on_draw", "comment": null}
@@ -201,7 +212,9 @@
 , {"addr": "0x4524a1", "name": "free", "comment": null}
 , {"addr": "0x45252d", "name": "initialize_vector", "comment": null}
 , {"addr": "0x4526da", "name": "malloc_", "comment": null}
+, {"addr": "0x452706", "name": "malloc__", "comment": null}
 , {"addr": "0x453683", "name": "sub_453683_creates_thread", "comment": null}
 , {"addr": "0x4537dc", "name": "_start", "comment": null}
 , {"addr": "0x458ea5", "name": "__security_check_cookie", "comment": null}
+, {"addr": "0x463b2c", "name": "float_to_int_463b2c", "comment": null}
 ]

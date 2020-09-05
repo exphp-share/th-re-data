@@ -20,6 +20,8 @@
 , {"addr": "0x403900", "name": "Stage::on_tick__stub", "comment": null}
 , {"addr": "0x403910", "name": "Stage::on_draw_02__stub", "comment": null}
 , {"addr": "0x403920", "name": "Stage::on_draw_05__stub", "comment": null}
+, {"addr": "0x405240", "name": "InterpFloat3::step", "comment": null}
+, {"addr": "0x406100", "name": "Timer::set_current", "comment": null}
 , {"addr": "0x4061b0", "name": "Bomb::initialize", "comment": null}
 , {"addr": "0x406260", "name": "Bomb::destructor", "comment": null}
 , {"addr": "0x406440", "name": "Bomb::operator new", "comment": null}
@@ -72,6 +74,7 @@
 , {"addr": "0x412e30", "name": "Enemy::run_ecl_over_256", "comment": null}
 , {"addr": "0x416ee0", "name": "EnemyFull::get_int_global", "comment": null}
 , {"addr": "0x4173a0", "name": "EnemyFull::get_int_global_ptr", "comment": null}
+, {"addr": "0x417450", "name": "jump_table_417450", "comment": null}
 , {"addr": "0x4174b0", "name": "EnemyFull::get_float_global", "comment": null}
 , {"addr": "0x4179b0", "name": "EnemyFull::get_float_global_ptr", "comment": null}
 , {"addr": "0x418520", "name": "sub_418520_koishi_funcset_card5", "comment": null}
@@ -205,6 +208,23 @@
 , {"addr": "0x445510", "name": "main", "comment": null}
 , {"addr": "0x448a90", "name": "ScreenEffect::initialize", "comment": null}
 , {"addr": "0x44a9c0", "name": "SoundManager::modify_bgm", "comment": null}
+, {"addr": "0x44ab40", "name": "AnmVm::setup_texture_quad_and_matrices", "comment": null}
+, {"addr": "0x44b080", "name": "AnmVm::get_float_var", "comment": null}
+, {"addr": "0x44b2a0", "name": "AnmVm::get_int_var", "comment": null}
+, {"addr": "0x44b380", "name": "AnmVm::get_float_var_ptr", "comment": null}
+, {"addr": "0x44b400", "name": "AnmVm::get_int_var_ptr", "comment": null}
+, {"addr": "0x44b4b0", "name": "AnmVm::run", "comment": null}
+, {"addr": "0x44e4b0", "name": "InterpInt3::step", "comment": null}
+, {"addr": "0x44e7c0", "name": "InterpInt::step", "comment": null}
+, {"addr": "0x44e910", "name": "InterpFloat2::step", "comment": null}
+, {"addr": "0x44ebd0", "name": "InterpFloat::step", "comment": null}
+, {"addr": "0x44f490", "name": "color_component_multiply", "comment": null}
+, {"addr": "0x44f710", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
+, {"addr": "0x44f880", "name": "AnmManager::draw_vm__sprite_2d", "comment": null}
+, {"addr": "0x44fda0", "name": "AnmManager::write_sprite", "comment": null}
+, {"addr": "0x44fe30", "name": "AnmVm::write_sprite_corners__without_rot", "comment": null}
+, {"addr": "0x451ef0", "name": "AnmManager::draw_vm", "comment": null}
+, {"addr": "0x4520c0", "name": "complicated_looking_stdlib_function_4520c0", "comment": null}
 , {"addr": "0x4526f0", "name": "AnmManager::initialize", "comment": null}
 , {"addr": "0x454360", "name": "AnmManager::preload_anm", "comment": null}
 , {"addr": "0x455120", "name": "AnmManager::on_tick_1a__stub", "comment": null}
@@ -216,6 +236,7 @@
 , {"addr": "0x457080", "name": "UpdateFuncRegistry::unregister", "comment": null}
 , {"addr": "0x458a10", "name": "sub_458a10_logs_debug_message", "comment": null}
 , {"addr": "0x458af0", "name": "sub_458af0_logs_debug_messages", "comment": null}
+, {"addr": "0x458e30", "name": "math_reduce_angle_458e30", "comment": null}
 , {"addr": "0x459430", "name": "sub_459430__calls_WaitForSingleObject", "comment": null}
 , {"addr": "0x45fc2c", "name": "__security_check_cookie", "comment": null}
 , {"addr": "0x45fc3b", "name": "free_", "comment": null}

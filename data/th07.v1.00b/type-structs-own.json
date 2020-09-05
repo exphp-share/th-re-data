@@ -1,6 +1,144 @@
-{ "zCOMMENT": 
+{ "zAnmLoaded": 
+  [ ["0x0", "preloaded_index", "int32_t"]
+  , ["0x4", "__ptr_4", "void*"]
+  , ["0x8", "__field_8", "int32_t"]
+  , ["0xc", "__ptr_c", "void*"]
+  , ["0x10", "__ptr_10", "void*"]
+  , ["0x14", "__ptr_14", "void*"]
+  , ["0x18", "__unknown", null]
+  , ["0x1d", "__end", null]
+  ]
+
+, "zAnmLoadedSprite": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2c", "height_px", "float"]
+  , ["0x30", "width_px", "float"]
+  , ["0x34", "__unknown", null]
+  , ["0x60", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x60", "__end", null]
+  ]
+
+, "zAnmManager": 
+  [ ["0x0", "__end", null]
+  ]
+
+, "zAnmRawInstr": 
+  [ ["0x0", "opcode", "uint16_t"]
+  , ["0x2", "offset_to_next", "uint16_t"]
+  , ["0x4", "time", "uint16_t"]
+  , ["0x6", "var_mask", "uint16_t"]
+  , ["0x8", "args", "uint32_t [10]"]
+  , ["0x30", "__args_is_variable_length", "struct zCOMMENT"]
+  , ["0x31", "__end", null]
+  ]
+
+, "zAnmVm": 
+  [ ["0x0", "rotation", "struct zFloat3"]
+  , ["0xc", "angular_velocity", "struct zFloat3"]
+  , ["0x18", "scale", "struct zFloat2"]
+  , ["0x20", "scale_growth", "struct zFloat2"]
+  , ["0x28", "uv_scroll_pos", "struct zFloat2"]
+  , ["0x30", "current_time_in_script", "struct zTimer"]
+  , ["0x3c", "wait_timer", "struct zTimer"]
+  , ["0x48", "interp_cur_times", "struct zAnmVmInterpTimers"]
+  , ["0x84", "interp_end_times", "struct zAnmVmInterpTimers"]
+  , ["0xc0", "interp_modes", "struct zAnmVmInterpModes"]
+  , ["0xc8", "int_vars", "int32_t [4]"]
+  , ["0xd8", "float_vars", "float [4]"]
+  , ["0xe8", "int_var_8", "int32_t"]
+  , ["0xec", "int_var_9", "int32_t"]
+  , ["0xf0", "uv_scroll_vel", "struct zFloat2"]
+  , ["0xf8", "__matrix_1", "struct D3DMATRIX"]
+  , ["0x138", "__matrix_2", "struct D3DMATRIX"]
+  , ["0x178", "__matrix_3", "struct D3DMATRIX"]
+  , ["0x1b8", "color_1", "struct D3DCOLOR"]
+  , ["0x1bc", "color_2", "struct D3DCOLOR"]
+  , ["0x1c0", "flags", "uint32_t"]
+  , ["0x1c4", "__ins_25", "int16_t"]
+  , ["0x1c6", "pending_switch_label", "int16_t"]
+  , ["0x1c8", "pos", "struct zFloat3"]
+  , ["0x1d4", "sprite_number", "int16_t"]
+  , ["0x1d6", "__unknown", null]
+  , ["0x1d8", "anm_file_index", "int16_t"]
+  , ["0x1da", "__unknown", null]
+  , ["0x1dc", "beginning_of_function", "struct zAnmRawInstr*"]
+  , ["0x1e0", "current_instr", "struct zAnmRawInstr*"]
+  , ["0x1e4", "sprite", "struct zAnmLoadedSprite*"]
+  , ["0x1e8", "interp_data", "struct zAnmVmInterpData"]
+  , ["0x230", "__pos_2", "struct zFloat3"]
+  , ["0x23c", "time_of_last_sprite_set", "int32_t"]
+  , ["0x240", "__unknown", null]
+  , ["0x244", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x244", "__end", null]
+  ]
+
+, "zAnmVmInterpData": 
+  [ ["0x0", "pos_initial", "struct zFloat3"]
+  , ["0xc", "pos_goal", "struct zFloat3"]
+  , ["0x18", "rotate_initial", "struct zFloat3"]
+  , ["0x24", "rotate_goal", "struct zFloat3"]
+  , ["0x30", "scale_initial", "struct zFloat2"]
+  , ["0x38", "scale_goal", "struct zFloat2"]
+  , ["0x40", "color_1_initial", "struct D3DCOLOR"]
+  , ["0x44", "color_1_goal", "struct D3DCOLOR"]
+  , ["0x48", "__end", null]
+  ]
+
+, "zAnmVmInterpModes": 
+  [ ["0x0", "pos", "uint8_t"]
+  , ["0x1", "rgb_1", "uint8_t"]
+  , ["0x2", "alpha_1", "uint8_t"]
+  , ["0x3", "rotate", "uint8_t"]
+  , ["0x4", "scale", "uint8_t"]
+  , ["0x5", "__unknown", null]
+  , ["0x8", "__end", null]
+  ]
+
+, "zAnmVmInterpTimers": 
+  [ ["0x0", "pos", "struct zTimer"]
+  , ["0xc", "rgb_1", "struct zTimer"]
+  , ["0x18", "alpha_1", "struct zTimer"]
+  , ["0x24", "rotate", "struct zTimer"]
+  , ["0x30", "scale", "struct zTimer"]
+  , ["0x3c", "__end", null]
+  ]
+
+, "zAsciiManager": 
+  [ ["0x0", "__end", null]
+  ]
+
+, "zBulletManager": 
+  [ ["0x0", "__end", null]
+  ]
+
+, "zCOMMENT": 
   [ ["0x0", "__unknown", null]
   , ["0x1", "__end", null]
+  ]
+
+, "zConfig": 
+  [ ["0x0", "__unknown", null]
+  , ["0x38", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x38", "__end", null]
+  ]
+
+, "zEffectManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1c", "array", "struct zEffectManagerItem [409]"]
+  , ["0x48b34", "__another_0", "struct zEffectManagerItem"]
+  , ["0x48e0c", "__another_1", "struct zEffectManagerItem"]
+  , ["0x490e4", "__another_2", "struct zEffectManagerItem"]
+  , ["0x493bc", "__another_3", "struct zEffectManagerItem"]
+  , ["0x49694", "__unknown", null]
+  , ["0x496a8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x496a8", "__end", null]
+  ]
+
+, "zEffectManagerItem": 
+  [ ["0x0", "vm", "struct zAnmVm"]
+  , ["0x244", "__unknown", null]
+  , ["0x2d8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2d8", "__end", null]
   ]
 
 , "zEnding": 
@@ -26,6 +164,20 @@
   , ["0xc", "__end", null]
   ]
 
+, "zFloat4": 
+  [ ["0x0", "x", "float"]
+  , ["0x4", "y", "float"]
+  , ["0x8", "z", "float"]
+  , ["0xc", "w", "float"]
+  , ["0x10", "__end", null]
+  ]
+
+, "zGui": 
+  [ ["0x0", "__unknown", null]
+  , ["0x20a30", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x20a30", "__end", null]
+  ]
+
 , "zInt2": 
   [ ["0x0", "x", "int32_t"]
   , ["0x4", "y", "int32_t"]
@@ -39,10 +191,24 @@
   , ["0xc", "__end", null]
   ]
 
+, "zLolidfk": 
+  [ ["0x0", "__unknown", null]
+  , ["0x9644", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x9644", "__end", null]
+  ]
+
+, "zMainMenu": 
+  [ ["0x0", "__unknown", null]
+  , ["0xd158", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xd158", "__end", null]
+  ]
+
 , "zPlayer": 
   [ ["0x0", "__unknown", null]
   , ["0x2444", "bullets", "struct zPlayerBullet [96]"]
-  , ["0x169c4", "__end", null]
+  , ["0x169c4", "__unknown", null]
+  , ["0xb7e78", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xb7e78", "__end", null]
   ]
 
 , "zPlayerBullet": 
@@ -68,6 +234,26 @@
   , ["0x364", "__end", null]
   ]
 
+, "zRenderVertex142": 
+  [ ["0x0", "pos_3d", "struct zFloat3"]
+  , ["0xc", "diffuse_color", "struct D3DCOLOR"]
+  , ["0x10", "texture_uv", "struct zFloat2"]
+  , ["0x18", "__end", null]
+  ]
+
+, "zRenderVertex144": 
+  [ ["0x0", "pos_2d", "struct zFloat4"]
+  , ["0x10", "diffuse_color", "struct D3DCOLOR"]
+  , ["0x14", "texture_uv", "struct zFloat2"]
+  , ["0x1c", "__end", null]
+  ]
+
+, "zResultScreen": 
+  [ ["0x0", "__unknown", null]
+  , ["0xce6c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xce6c", "__end", null]
+  ]
+
 , "zShtShooter": 
   [ ["0x0", "fire_rate", "int16_t"]
   , ["0x2", "start_delay", "int16_t"]
@@ -85,6 +271,161 @@
   , ["0x2c", "__func_3", "void*"]
   , ["0x30", "__func_4", "void*"]
   , ["0x34", "__end", null]
+  ]
+
+, "zStage": 
+  [ ["0x0", "__unknown", null]
+  , ["0x4", "__vm_0", "struct zAnmVm"]
+  , ["0x248", "__unknown", null]
+  , ["0x250", "__vm_1", "struct zAnmVm"]
+  , ["0x494", "__unknown", null]
+  , ["0x4b0", "beginning_of_script", "struct zStdRawInstr*"]
+  , ["0x4b4", "time_in_script", "struct zTimer"]
+  , ["0x4c0", "current_instr_index", "int32_t"]
+  , ["0x4c4", "__field_4c4", "int32_t"]
+  , ["0x4c8", "__unknown", null]
+  , ["0x4cc", "_another_ins_0_pos", "struct zFloat3"]
+  , ["0x4d8", "clear_color", "struct D3DCOLOR"]
+  , ["0x4dc", "sky_fog", "struct zStageCameraSky"]
+  , ["0x4e8", "interp_sky_fog__initial", "struct zStageCameraSky"]
+  , ["0x4f4", "interp_sky_fog__final", "struct zStageCameraSky"]
+  , ["0x500", "interp_sky_fog__duration", "int32_t"]
+  , ["0x504", "interp_sky_fog__cur_time", "struct zTimer"]
+  , ["0x510", "__unknown", null]
+  , ["0x514", "__field_514", "int32_t"]
+  , ["0x518", "__field_518", "int32_t"]
+  , ["0x51c", "__unknown", null]
+  , ["0x520", "__field_520", "int32_t"]
+  , ["0x524", "__unknown", null]
+  , ["0x528", "__array", "struct zStageArrayItem [32]"]
+  , ["0x4ea8", "__vm_2", "struct zAnmVm"]
+  , ["0x50ec", "__unknown", null]
+  , ["0x50f4", "pending_interrupt", "uint32_t"]
+  , ["0x50f8", "interp_data__final", "struct zStageCameraData"]
+  , ["0x5138", "interp_data__initial", "struct zStageCameraData"]
+  , ["0x5178", "interp_data__final_deriv", "struct zStageCameraData"]
+  , ["0x51b8", "interp_data__initial_deriv", "struct zStageCameraData"]
+  , ["0x51f8", "camera_data", "struct zStageCameraData"]
+  , ["0x5238", "interp__durations", "struct zStageInterpInts"]
+  , ["0x5248", "interp__cur_times", "struct zStageInterpTimers"]
+  , ["0x5278", "interp__modes", "struct zStageInterpInts"]
+  , ["0x5288", "next_ins_0_pos", "struct zFloat3"]
+  , ["0x5294", "next_ins_0_time", "int32_t"]
+  , ["0x5298", "prev_ins_0_pos", "struct zFloat3"]
+  , ["0x52a4", "prev_ins_0_time", "int32_t"]
+  , ["0x52a8", "__wtfisthisicanteven", "uint8_t"]
+  , ["0x52a9", "__unknown", null]
+  , ["0x52b4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x52b4", "__end", null]
+  ]
+
+, "zStageArrayItem": 
+  [ ["0x0", "vm", "struct zAnmVm"]
+  , ["0x244", "__unknown", null]
+  , ["0x24c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x24c", "__end", null]
+  ]
+
+, "zStageCameraData": 
+  [ ["0x0", "position", "struct zFloat3"]
+  , ["0xc", "facing_dir", "struct zFloat3"]
+  , ["0x18", "up", "struct zFloat3"]
+  , ["0x24", "__unknown", null]
+  , ["0x30", "__right_dir", "struct zFloat3"]
+  , ["0x3c", "fov_y", "float"]
+  , ["0x40", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x40", "__end", null]
+  ]
+
+, "zStageCameraSky": 
+  [ ["0x0", "near_plane", "float"]
+  , ["0x4", "far_plane", "float"]
+  , ["0x8", "color", "struct D3DCOLOR"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zStageInterpInts": 
+  [ ["0x0", "pos", "int32_t"]
+  , ["0x4", "facing_dir", "int32_t"]
+  , ["0x8", "up", "int32_t"]
+  , ["0xc", "fov_y", "int32_t"]
+  , ["0x10", "__end", null]
+  ]
+
+, "zStageInterpTimers": 
+  [ ["0x0", "pos", "struct zTimer"]
+  , ["0xc", "facing_dir", "struct zTimer"]
+  , ["0x18", "up", "struct zTimer"]
+  , ["0x24", "fov_y", "struct zTimer"]
+  , ["0x30", "__end", null]
+  ]
+
+, "zStdRawInstr": 
+  [ ["0x0", "__unknown", null]
+  , ["0x4", "opcode", "uint16_t"]
+  , ["0x6", "__unknown", null]
+  , ["0x8", "args", "struct zStdRawInstrArgs"]
+  , ["0x14", "next", "struct zStdRawInstr"]
+  , ["0x58", "__unknown", null]
+  , ["0x44", "__end", null]
+  ]
+
+, "zStdRawInstrArgs": 
+  [ ["0x0", "args", "int32_t [3]"]
+  , ["0xc", "__i_only_made_this_to_trick_binja_into_labeling_the_code_better", "struct zCOMMENT [0]"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zSupervisor": 
+  [ ["0x0", "__unknown", null]
+  , ["0x4", "d3d", "struct IDirect3D8*"]
+  , ["0x8", "d3d_device", "struct IDirect3DDevice8*"]
+  , ["0xc", "__unknown", null]
+  , ["0x48", "view_matrix", "struct D3DMATRIX"]
+  , ["0x88", "projection_matrix", "struct D3DMATRIX"]
+  , ["0xc8", "viewport", "struct D3DVIEWPORT8"]
+  , ["0xe0", "present_params", "struct D3DPRESENT_PARAMETERS"]
+  , ["0x118", "config", "struct zConfig"]
+  , ["0x150", "__unknown", null]
+  , ["0x198", "device_caps", "struct D3DCAPS8"]
+  , ["0x26c", "__unknown", null]
+  , ["0x2bc", "current_fog_enabled", "uint8_t"]
+  , ["0x2bd", "__unknown", null]
+  , ["0x2d0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2d0", "__end", null]
+  ]
+
+, "zTimer": 
+  [ ["0x0", "previous", "int32_t"]
+  , ["0x4", "subframe", "float"]
+  , ["0x8", "current", "int32_t"]
+  , ["0xc", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zUpdateFunc": 
+  [ ["0x0", "priority__(lowest_goes_first)", "int16_t"]
+  , ["0x2", "flags", "uint16_t"]
+  , ["0x4", "function_pointer", "void*"]
+  , ["0x8", "on_registration", "void*"]
+  , ["0xc", "on_cleanup", "void*"]
+  , ["0x10", "list_node", "struct zUpdateFuncList"]
+  , ["0x1c", "ecx_arg_to_function", "void*"]
+  , ["0x20", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x20", "__end", null]
+  ]
+
+, "zUpdateFuncList": 
+  [ ["0x0", "entry", "struct zUpdateFunc*"]
+  , ["0x4", "next", "struct zUpdateFuncList*"]
+  , ["0x8", "prev", "struct zUpdateFuncList*"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zWindow": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2c", "__end", null]
   ]
 
 }

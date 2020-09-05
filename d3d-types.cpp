@@ -848,7 +848,7 @@ struct DIDEVICEOBJECTINSTANCEA {
     WORD    wReportId;
 };
 
-typedef struct DIDEVICEINSTANCEA {
+struct DIDEVICEINSTANCEA {
     DWORD   dwSize;
     GUID    guidInstance;
     GUID    guidProduct;
@@ -921,26 +921,33 @@ struct IDirectInputDevice8A {
     char __make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read;
 };
 
+struct DIOBJECTDATAFORMAT {
+    GUID * pguid;
+    DWORD dwOfs;
+    DWORD dwType;
+    DWORD dwFlags;
+};
+
 struct DIDATAFORMAT {
     DWORD dwSize;
     DWORD dwObjSize;
     DWORD dwFlags;
     DWORD dwDataSize;
     DWORD dwNumObjs;
-    LPDIOBJECTDATAFORMAT rgodf;
+    DIOBJECTDATAFORMAT *rgodf;
 };
 
-struct DIDEVICEINSTANCEA {
-    DWORD dwSize;
-    GUID guidInstance;
-    GUID guidProduct;
-    DWORD dwDevType;
-    char tszInstanceName[260];
-    char tszProductName[260];
-    GUID guidFFDriver;
-    WORD wUsagePage;
-    WORD wUsage;
-}
+// struct DIDEVICEINSTANCEA {
+//     DWORD dwSize;
+//     GUID guidInstance;
+//     GUID guidProduct;
+//     DWORD dwDevType;
+//     char tszInstanceName[260];
+//     char tszProductName[260];
+//     GUID guidFFDriver;
+//     WORD wUsagePage;
+//     WORD wUsage;
+// }
 
 struct DIDEVCAPS {
     DWORD dwSize;
@@ -956,21 +963,21 @@ struct DIDEVCAPS {
     DWORD dwFFDriverVersion;
 }
 
-struct DIDEVICEOBJECTINSTANCEA
-{
-    DWORD dwSize;
-    GUID guidType;
-    DWORD dwOfs;
-    DWORD dwType;
-    DWORD dwFlags;
-    char tszName[260];
-    DWORD dwFFMaxForce;
-    DWORD dwFFForceResolution;
-    WORD wCollectionNumber;
-    WORD wDesignatorIndex;
-    WORD wUsagePage;
-    WORD wUsage;
-    DWORD dwDimension;
-    WORD wExponent;
-    WORD wReportId;
-};
+// struct DIDEVICEOBJECTINSTANCEA
+// {
+//     DWORD dwSize;
+//     GUID guidType;
+//     DWORD dwOfs;
+//     DWORD dwType;
+//     DWORD dwFlags;
+//     char tszName[260];
+//     DWORD dwFFMaxForce;
+//     DWORD dwFFForceResolution;
+//     WORD wCollectionNumber;
+//     WORD wDesignatorIndex;
+//     WORD wUsagePage;
+//     WORD wUsage;
+//     DWORD dwDimension;
+//     WORD wExponent;
+//     WORD wReportId;
+// };

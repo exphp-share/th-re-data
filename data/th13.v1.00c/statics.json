@@ -28,6 +28,11 @@
 , {"addr": "0x4af028", "name": "float(-14)", "type": "float", "comment": null}
 , {"addr": "0x4b4d48", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4b9c34", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4bad30", "name": "ANM_X_ANCHOR_DATA", "type": "struct zFloat4 [3]", "comment": null}
+, {"addr": "0x4bad60", "name": "ANM_Y_ANCHOR_DATA", "type": "struct zFloat4 [3]", "comment": null}
+, {"addr": "0x4bb4d4", "name": "SHT_ON_TICK_FUNCS", "type": "void*[6]", "comment": null}
+, {"addr": "0x4bb8d0", "name": "SHT_ON_INIT_FUNCS", "type": "void*[5]", "comment": null}
+, {"addr": "0x4bb8e8", "name": "SHT_ON_HIT_FUNCS", "type": "void*[5]", "comment": null}
 , {"addr": "0x4be7b8", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Beginning of globals object"}
 , {"addr": "0x4be808", "name": "CURRENT_SPIRIT_GAUGE", "type": "int32_t", "comment": null}
 , {"addr": "0x4be810", "name": "HIGH_SCORE_DISPLAY", "type": "int32_t", "comment": null}
@@ -59,10 +64,14 @@
 , {"addr": "0x4c22d4", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4c22d8", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4c22e0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x4dc31c", "name": "ANIMATION_RNG", "type": "void", "comment": null}
+, {"addr": "0x4dc324", "name": "REPLAY_RNG", "type": "void", "comment": null}
 , {"addr": "0x4dc658", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
+, {"addr": "0x4dc66c", "name": "SHT_ON_DRAW_FUNCS", "type": "void*[1]", "comment": null}
 , {"addr": "0x4dc688", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4dc6a0", "name": "SUPERVISOR", "type": "int32_t", "comment": "The supervisor is stored directly here and not as a pointer\nbut I haven't made a type for it yet in this binary"}
 , {"addr": "0x4dcc24", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
+, {"addr": "0x4dd0a8", "name": "WINDOW", "type": "int32_t", "comment": null}
 , {"addr": "0x4df120", "name": "data_4df120__mystery", "type": "int32_t", "comment": "0 while loading\n0 while game is paused\n1 on main menu\n2 while playing game"}
 , {"addr": "0x4df1a0", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
 , {"addr": "0x4e4740", "name": "data_4e4740__seems_sound_related", "type": "void*", "comment": null}

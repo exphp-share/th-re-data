@@ -1,4 +1,27 @@
 [ {"addr": "0x4a46f0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table [1]", "comment": null}
 , {"addr": "0x4a4710", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a47b0", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
+, {"addr": "0x4b19c8", "name": "DEBUG_THING", "type": "void", "comment": null}
+, {"addr": "0x4b3b10", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
+, {"addr": "0x4b54f4", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
+, {"addr": "0x4b54f8", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
+, {"addr": "0x4b5500", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
+, {"addr": "0x4b5504", "name": "GLOBAL_VEE_DEE_PTR", "type": "struct zGlobal15cVeeDee*", "comment": null}
+, {"addr": "0x4b550c", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4b5510", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
+, {"addr": "0x4b5518", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
+, {"addr": "0x4b551c", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4b5530", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4b5630", "name": "HELP_MANUAL_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b5634", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
+, {"addr": "0x4b5638", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
+, {"addr": "0x4b563c", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
+, {"addr": "0x4b5648", "name": "NOTICE_MANAGER_PTR", "type": "struct zNoticeManager*", "comment": null}
+, {"addr": "0x4b564c", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
+, {"addr": "0x4b5650", "name": "PHOTO_MANAGER_PTR", "type": "struct zPhotoManager*", "comment": null}
+, {"addr": "0x4b5654", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4b565c", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
+, {"addr": "0x4b5674", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x4ed880", "name": "HELP_MANUAL_2_PTR", "type": "struct zHelpManual2*", "comment": null}
+, {"addr": "0x4ed88c", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 ]

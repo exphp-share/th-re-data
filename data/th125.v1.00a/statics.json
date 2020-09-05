@@ -31,6 +31,8 @@
 , {"addr": "0x4b68dc", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4b68e8", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4d0c50", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
-, {"addr": "0x4d0cb4", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4d0cb4", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4d0cd0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
+, {"addr": "0x4d17d8", "name": "WINDOW", "type": "int32_t", "comment": null}
+, {"addr": "0x4d8cd0", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144 [4]", "comment": null}
 ]

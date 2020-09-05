@@ -418,7 +418,8 @@
 
 , "IDirect3D9": 
   [ ["0x0", "vtable", "struct IDirect3D9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3D9Vtbl": 
@@ -442,7 +443,8 @@
 
 , "IDirect3DBaseTexture9": 
   [ ["0x0", "vtable", "struct IDirect3DBaseTexture9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DBaseTexture9Vtbl": 
@@ -458,7 +460,8 @@
 
 , "IDirect3DCubeTexture9": 
   [ ["0x0", "vtable", "struct IDirect3DCubeTexture9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DCubeTexture9Vtbl": 
@@ -473,7 +476,8 @@
 
 , "IDirect3DDevice9": 
   [ ["0x0", "vtable", "struct IDirect3DDevice9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DDevice9Vtbl": 
@@ -599,7 +603,8 @@
 
 , "IDirect3DIndexBuffer9": 
   [ ["0x0", "vtable", "struct IDirect3DIndexBuffer9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DIndexBuffer9Vtbl": 
@@ -612,7 +617,8 @@
 
 , "IDirect3DPixelShader9": 
   [ ["0x0", "vtable", "struct IDirect3DPixelShader9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DPixelShader9Vtbl": 
@@ -624,7 +630,8 @@
 
 , "IDirect3DQuery9": 
   [ ["0x0", "vtable", "struct IDirect3DQuery9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DQuery9Vtbl": 
@@ -639,7 +646,8 @@
 
 , "IDirect3DResource9": 
   [ ["0x0", "vtable", "struct IDirect3DResource9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DResource9Vtbl": 
@@ -657,7 +665,8 @@
 
 , "IDirect3DStateBlock9": 
   [ ["0x0", "vtable", "struct IDirect3DStateBlock9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DStateBlock9Vtbl": 
@@ -670,7 +679,8 @@
 
 , "IDirect3DSurface9": 
   [ ["0x0", "vtable", "struct IDirect3DSurface9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DSurface9Vtbl": 
@@ -686,7 +696,8 @@
 
 , "IDirect3DSwapChain9": 
   [ ["0x0", "vtable", "struct IDirect3DSwapChain9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DSwapChain9Vtbl": 
@@ -703,7 +714,8 @@
 
 , "IDirect3DTexture9": 
   [ ["0x0", "vtable", "struct IDirect3DTexture9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DTexture9Vtbl": 
@@ -718,7 +730,8 @@
 
 , "IDirect3DVertexBuffer9": 
   [ ["0x0", "vtable", "struct IDirect3DVertexBuffer9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DVertexBuffer9Vtbl": 
@@ -731,7 +744,8 @@
 
 , "IDirect3DVertexDeclaration9": 
   [ ["0x0", "vtable", "struct IDirect3DVertexDeclaration9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DVertexDeclaration9Vtbl": 
@@ -743,7 +757,8 @@
 
 , "IDirect3DVertexShader9": 
   [ ["0x0", "vtable", "struct IDirect3DVertexShader9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DVertexShader9Vtbl": 
@@ -755,7 +770,8 @@
 
 , "IDirect3DVolume9": 
   [ ["0x0", "vtable", "struct IDirect3DVolume9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DVolume9Vtbl": 
@@ -773,7 +789,8 @@
 
 , "IDirect3DVolumeTexture9": 
   [ ["0x0", "vtable", "struct IDirect3DVolumeTexture9Vtbl*"]
-  , ["0x4", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
   ]
 
 , "IDirect3DVolumeTexture9Vtbl": 
@@ -786,15 +803,10 @@
   , ["0x58", "__end", null]
   ]
 
-, "IUnknown": 
-  [ ["0x0", "vtable", "struct IUnknownVtbl*"]
-  , ["0x4", "__end", null]
-  ]
-
 , "IUnknownVtbl": 
-  [ ["0x0", "QueryInterface", "int32_t (*)(struct IUnknown*, GUID*, void**)"]
-  , ["0x4", "AddRef", "uint32_t (*)(struct IUnknown*)"]
-  , ["0x8", "Release", "uint32_t (*)(struct IUnknown*)"]
+  [ ["0x0", "QueryInterface", "int32_t (*)(IUnknown*, GUID*, void**)"]
+  , ["0x4", "AddRef", "uint32_t (*)(IUnknown*)"]
+  , ["0x8", "Release", "uint32_t (*)(IUnknown*)"]
   , ["0xc", "__end", null]
   ]
 

@@ -1,0 +1,30 @@
+[ {"addr": "0x4d3e40", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4e40b0", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
+, {"addr": "0x4e69f4", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
+, {"addr": "0x4e69f8", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
+, {"addr": "0x4e6a00", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
+, {"addr": "0x4e6a08", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4e6a0c", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
+, {"addr": "0x4e6a3c", "name": "DEBUG_SPRT_VIEW_PTR", "type": "struct zDebugSprtView*", "comment": null}
+, {"addr": "0x4e6a40", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
+, {"addr": "0x4e6a44", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
+, {"addr": "0x4e6a48", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4e6a54", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
+, {"addr": "0x4e6a5c", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
+, {"addr": "0x4e6b60", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
+, {"addr": "0x4e6b64", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
+, {"addr": "0x4e6b68", "name": "ITEM_EQUIP_PTR", "type": "struct zItemEquip*", "comment": null}
+, {"addr": "0x4e6b6c", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
+, {"addr": "0x4e6b70", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
+, {"addr": "0x4e6b80", "name": "ISC_GLOBAL_1B8_PTR", "type": "struct zIscGlobal1b8*", "comment": null}
+, {"addr": "0x4e6b84", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
+, {"addr": "0x4e6b88", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4e6b90", "name": "ISC_GLOBAL_3C_PTR", "type": "struct zIscGlobal3c*", "comment": null}
+, {"addr": "0x4e6b98", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
+, {"addr": "0x4e6ba4", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
+, {"addr": "0x4e6ba8", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
+, {"addr": "0x4e6bb4", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x4e6bc8", "name": "TUTORIAL_PTR", "type": "struct zTutorial*", "comment": null}
+, {"addr": "0x538de8", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x5390a0", "name": "WINDOW", "type": "void", "comment": null}
+]

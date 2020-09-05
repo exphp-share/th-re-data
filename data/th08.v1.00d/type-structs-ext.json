@@ -85,6 +85,14 @@
   , ["0xd4", "__end", null]
   ]
 
+, "D3DCOLOR": 
+  [ ["0x0", "b", "uint8_t"]
+  , ["0x1", "g", "uint8_t"]
+  , ["0x2", "r", "uint8_t"]
+  , ["0x3", "a", "uint8_t"]
+  , ["0x4", "__end", null]
+  ]
+
 , "D3DMATRIX": 
   [ ["0x0", "m00", "float"]
   , ["0x4", "m01", "float"]
@@ -163,6 +171,12 @@
   , ["0xc", "dwUnlockTransferRate", "uint32_t"]
   , ["0x10", "dwPlayCpuOverhead", "uint32_t"]
   , ["0x14", "__end", null]
+  ]
+
+, "DSBPOSITIONNOTIFY": 
+  [ ["0x0", "dwOffset", "DWORD"]
+  , ["0x4", "hEventNotify", "HANDLE"]
+  , ["0x8", "__end", null]
   ]
 
 , "DSBUFFERDESC": 
@@ -445,6 +459,18 @@
   , ["0x4c", "Unlock", "int32_t (*)(struct IDirectSoundBuffer*, void*, uint32_t, void*, uint32_t)"]
   , ["0x50", "Restore", "int32_t (*)(struct IDirectSoundBuffer*)"]
   , ["0x54", "__end", null]
+  ]
+
+, "IDirectSoundNotify": 
+  [ ["0x0", "vtable", "struct IDirectSoundNotifyVtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "IDirectSoundNotifyVtbl": 
+  [ ["0x0", "super", "struct IUnknownVtbl"]
+  , ["0xc", "SetNotificationPositions", "int32_t (*)(struct IDirectSoundNotify*, DWORD, struct DSBPOSITIONNOTIFY const*)"]
+  , ["0x10", "__end", null]
   ]
 
 , "IDirectSoundVtbl": 

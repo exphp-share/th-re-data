@@ -1,1 +1,22 @@
-[]
+[ {"addr": "0x4952bc", "name": "float(1)", "type": "float", "comment": null}
+, {"addr": "0x4958b0", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[8]", "comment": null}
+, {"addr": "0x4a9f80", "name": "ASCII_MANAGER", "type": "void", "comment": null}
+, {"addr": "0x4bdd2c", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4bdd4c", "name": "ASCII_MANAGER_ON_DRAW_1c", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4bdd6c", "name": "ASCII_MANAGER_ON_DRAW_15", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4bdd90", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
+, {"addr": "0x4bdd98", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4bdd9c", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
+, {"addr": "0x4bddc0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4bddc4", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
+, {"addr": "0x4be3c8", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
+, {"addr": "0x4c45dc", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
+, {"addr": "0x4c45e0", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
+, {"addr": "0x4c45e8", "name": "WINDOW", "type": "int32_t", "comment": null}
+, {"addr": "0x4c4670", "name": "SUPERVISOR", "type": "void", "comment": null}
+, {"addr": "0x4c4e38", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
+, {"addr": "0x4c4e6c", "name": "PHOTO_MANAGER_PTR", "type": "struct zPhotoManager*", "comment": null}
+, {"addr": "0x4c4e70", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4c4ee8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
+, {"addr": "0x4ca1b8", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
+]
