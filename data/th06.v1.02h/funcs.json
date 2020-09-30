@@ -17,6 +17,7 @@
 , {"addr": "0x404970", "name": "Stage::draw_vms", "comment": null}
 , {"addr": "0x4074a0", "name": "UnknownGlobalW::run_ecl", "comment": null}
 , {"addr": "0x40e2d0", "name": "EffectManager::constructor", "comment": null}
+, {"addr": "0x40ef50", "name": "EffectManager::spawn_effect", "comment": null}
 , {"addr": "0x40f100", "name": "EffectManager::on_tick_0a", "comment": null}
 , {"addr": "0x40f1f0", "name": "EffectManager::on_draw_08", "comment": null}
 , {"addr": "0x40f280", "name": "EffectManager::on_registration", "comment": null}
@@ -68,6 +69,7 @@
 , {"addr": "0x41e620", "name": "sub_41e620_debug", "comment": null}
 , {"addr": "0x41e850", "name": "math_reduce_angle_41e850", "comment": null}
 , {"addr": "0x41f230", "name": "ItemManager::constructor", "comment": null}
+, {"addr": "0x41f290", "name": "ItemManager::spawn_item", "comment": null}
 , {"addr": "0x420330", "name": "WinMain", "comment": null}
 , {"addr": "0x4206e0", "name": "Window::do_tick", "comment": null}
 , {"addr": "0x420bd0", "name": "Supervisor::create_d3d", "comment": null}

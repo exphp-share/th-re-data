@@ -1,5 +1,5 @@
 [ {"addr": "0x4952bc", "name": "float(1)", "type": "float", "comment": null}
-, {"addr": "0x4958b0", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[8]", "comment": null}
+, {"addr": "0x4958b0", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[0x8]", "comment": null}
 , {"addr": "0x4a9f80", "name": "ASCII_MANAGER", "type": "void", "comment": null}
 , {"addr": "0x4bdd2c", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x4bdd4c", "name": "ASCII_MANAGER_ON_DRAW_1c", "type": "struct zUpdateFunc", "comment": null}

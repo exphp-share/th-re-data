@@ -12,6 +12,7 @@
 , {"addr": "0x40b5b0", "name": "AsciiManager::on_draw_4e__stub", "comment": null}
 , {"addr": "0x40b5c0", "name": "AsciiManager::on_draw_33__stub", "comment": null}
 , {"addr": "0x40b5d0", "name": "AsciiManager::on_draw_3f", "comment": null}
+, {"addr": "0x40ba50", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x40bac0", "name": "AsciiManager::on_draw_4e", "comment": null}
 , {"addr": "0x40c460", "name": "AsciiManager::on_draw_33", "comment": null}
 , {"addr": "0x40cc80", "name": "AnmVm::destructor", "comment": null}
@@ -66,6 +67,9 @@
 , {"addr": "0x41ec00", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x41edb0", "name": "EnemyManager::on_tick_1a", "comment": null}
 , {"addr": "0x41edf0", "name": "EnemyManager::on_draw_16", "comment": null}
+, {"addr": "0x42bc40", "name": "FpsCounter::initialize", "comment": null}
+, {"addr": "0x42bec0", "name": "FpsCounter::on_draw", "comment": null}
+, {"addr": "0x42bf70", "name": "FpsCounter::on_draw__stub", "comment": null}
 , {"addr": "0x42c3c0", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x42ce90", "name": "Gui::destructor", "comment": null}
 , {"addr": "0x42d1b0", "name": "Gui::operator new", "comment": null}
@@ -109,6 +113,11 @@
 , {"addr": "0x438dd0", "name": "LaserManager::operator new", "comment": null}
 , {"addr": "0x438fb0", "name": "LaserManager::on_tick_1b", "comment": null}
 , {"addr": "0x439020", "name": "LaserManager::on_draw_22", "comment": null}
+, {"addr": "0x439060", "name": "LaserManager::allocate_new_laser", "comment": null}
+, {"addr": "0x4391b0", "name": "LaserLine::constructor", "comment": null}
+, {"addr": "0x439200", "name": "LaserInfinite::constructor", "comment": null}
+, {"addr": "0x439250", "name": "LaserBeam::constructor", "comment": null}
+, {"addr": "0x439290", "name": "LaserCurve::constructor", "comment": null}
 , {"addr": "0x4430b0", "name": "LoadingThread::thread_start", "comment": null}
 , {"addr": "0x443200", "name": "LoadingThread::initialize", "comment": null}
 , {"addr": "0x443280", "name": "LoadingThread::destructor", "comment": null}

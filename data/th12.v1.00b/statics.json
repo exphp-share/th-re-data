@@ -1,4 +1,4 @@
-[ {"addr": "0x49fc50", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[6]", "comment": null}
+[ {"addr": "0x49fc50", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[0x6]", "comment": null}
 , {"addr": "0x4a05fc", "name": "VTABLE_LASER_BASE_CLASS", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a0654", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a06ac", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": null}
@@ -25,15 +25,18 @@
 , {"addr": "0x4a4060", "name": "float(-1.5707964)", "type": "float", "comment": null}
 , {"addr": "0x4a4098", "name": "float(3.1415927)", "type": "float", "comment": null}
 , {"addr": "0x4a40d4", "name": "float(224)", "type": "float", "comment": null}
+, {"addr": "0x4a4274", "name": "float(0.7853982)", "type": "float", "comment": null}
+, {"addr": "0x4a4278", "name": "float(2.3561945)", "type": "float", "comment": null}
 , {"addr": "0x4a42b8", "name": "double(0.25)", "type": "double", "comment": null}
 , {"addr": "0x4a42c0", "name": "float(2.2)", "type": "float", "comment": null}
 , {"addr": "0x4a42d0", "name": "float(56)", "type": "float", "comment": null}
 , {"addr": "0x4a9fe8", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4ad138", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x4aebd4", "name": "SHT_FUNCS_2", "type": "void*[6]", "comment": null}
-, {"addr": "0x4aedf0", "name": "__FUNC_LIST_4AEDF0", "type": "void*[7]", "comment": "Takes Player in ecx"}
-, {"addr": "0x4aee10", "name": "SHT_ON_HIT_FUNCS", "type": "void*[2]", "comment": null}
-, {"addr": "0x4af0fc", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[7]", "comment": null}
+, {"addr": "0x4aebd4", "name": "SHT_FUNCS_2", "type": "void*[0x6]", "comment": null}
+, {"addr": "0x4aedf0", "name": "__FUNC_LIST_4AEDF0", "type": "void*[0x7]", "comment": "Takes Player in ecx"}
+, {"addr": "0x4aee10", "name": "SHT_ON_HIT_FUNCS", "type": "void*[0x2]", "comment": null}
+, {"addr": "0x4af0fc", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[0x7]", "comment": null}
+, {"addr": "0x4af280", "name": "BULLET_TYPE_DATA_START", "type": "struct zTableBulletTypeData", "comment": "This table has 31 entries but I only type annotate the first\nbecause typing this as an array of length 31 makes binja\nbecome slow LITERALLY EVERYWHERE"}
 , {"addr": "0x4b0c40", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
 , {"addr": "0x4b0ec8", "name": "DEBUG_MESSAGE_THING", "type": "void", "comment": null}
 , {"addr": "0x4b2ed0", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
@@ -50,7 +53,7 @@
 , {"addr": "0x4b43dc", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
 , {"addr": "0x4b43e0", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x4b43e4", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
-, {"addr": "0x4b43e8", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4b43e8", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4b44e8", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
 , {"addr": "0x4b44ec", "name": "HINT_MANAGER_PTR", "type": "struct zHintManager*", "comment": null}
 , {"addr": "0x4b44f0", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
@@ -68,13 +71,13 @@
 , {"addr": "0x4ce560", "name": "ANIMATION_RNG", "type": "void", "comment": null}
 , {"addr": "0x4ce568", "name": "REPLAY_RNG", "type": "void", "comment": null}
 , {"addr": "0x4ce89c", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
-, {"addr": "0x4ce8ac", "name": "SHT_FUNCS_3", "type": "void*[1]", "comment": null}
+, {"addr": "0x4ce8ac", "name": "SHT_FUNCS_3", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x4ce8cc", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4ce8e8", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4cf3f0", "name": "WINDOW", "type": "struct zWindow", "comment": null}
 , {"addr": "0x4cf4e8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
 , {"addr": "0x4d0e70", "name": "data_4d0e70__mystery", "type": "void", "comment": null}
-, {"addr": "0x4d47e8", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144 [4]", "comment": null}
+, {"addr": "0x4d47e8", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
 , {"addr": "0x4d48b8", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4d49d0", "name": "INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4d49d4", "name": "INPUT_PREV", "type": "int32_t", "comment": null}

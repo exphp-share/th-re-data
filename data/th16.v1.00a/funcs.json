@@ -93,6 +93,7 @@
 , {"addr": "0x4080b0", "name": "AsciiInf::on_draw_3__draws_group_2", "comment": null}
 , {"addr": "0x408140", "name": "AsciiInf::leaf_408140", "comment": null}
 , {"addr": "0x408260", "name": "ascii_sprintf_408260", "comment": null}
+, {"addr": "0x4084f0", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x408560", "name": "AsciiInf::draw_group", "comment": null}
 , {"addr": "0x408ef0", "name": "AsciiInf::on_draw_2__draws_group_1", "comment": null}
 , {"addr": "0x408fb0", "name": "AsciiInf::on_tick", "comment": null}
@@ -310,8 +311,8 @@
 , {"addr": "0x41c1f0", "name": "Enemy::update_final_pos", "comment": null}
 , {"addr": "0x41c330", "name": "Enemy::step_logic", "comment": null}
 , {"addr": "0x41cbd0", "name": "Enemy::update_fog", "comment": null}
-, {"addr": "0x41d1e0", "name": "EnemyFull::update", "comment": null}
-, {"addr": "0x41d2e0", "name": "Enemy::update", "comment": null}
+, {"addr": "0x41d1e0", "name": "EnemyFull::on_tick", "comment": null}
+, {"addr": "0x41d2e0", "name": "Enemy::on_tick", "comment": null}
 , {"addr": "0x41d520", "name": "EnemyFull::die", "comment": null}
 , {"addr": "0x41d700", "name": "EnemyDrop::eject_extra_drops", "comment": null}
 , {"addr": "0x41d900", "name": "ecl_525_killAll", "comment": null}
@@ -348,6 +349,8 @@
 , {"addr": "0x426160", "name": "sub_426160__anm_set_main", "comment": null}
 , {"addr": "0x426240", "name": "cartesian_from_polar_426240", "comment": null}
 , {"addr": "0x426260", "name": "cartesian_from_polar_426260", "comment": null}
+, {"addr": "0x4263e0", "name": "FpsCounter::on_draw", "comment": null}
+, {"addr": "0x426490", "name": "FpsCounter::on_draw__stub", "comment": null}
 , {"addr": "0x4268c0", "name": "Gui::constructor", "comment": null}
 , {"addr": "0x426b00", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x426c10", "name": "Gui::sub_426c10", "comment": null}
@@ -453,7 +456,7 @@
 , {"addr": "0x431510", "name": "LaserManager::on_tick_1b__body", "comment": null}
 , {"addr": "0x4316b0", "name": "LaserManager::on_tick_1b", "comment": null}
 , {"addr": "0x431720", "name": "LaserManager::on_draw", "comment": null}
-, {"addr": "0x431760", "name": "Laser::operator new", "comment": null}
+, {"addr": "0x431760", "name": "LaserManager::allocate_new_laser", "comment": null}
 , {"addr": "0x431860", "name": "LaserInfinite::constructor", "comment": null}
 , {"addr": "0x4318c0", "name": "LaserBeam::constructor", "comment": null}
 , {"addr": "0x431900", "name": "LaserCurve::constructor", "comment": null}
@@ -818,6 +821,7 @@
 , {"addr": "0x474510", "name": "cartesian_from_polar_474510", "comment": null}
 , {"addr": "0x474530", "name": "method_474530", "comment": null}
 , {"addr": "0x474740", "name": "EclFileManager::find_sub_by_name", "comment": null}
+, {"addr": "0x4747d0", "name": "EclRunContext::get_subroutine_ptr", "comment": null}
 , {"addr": "0x474890", "name": "EnemyFull::load_sub_by_name", "comment": null}
 , {"addr": "0x4748df", "name": "leaf_4748df_bad_allocation", "comment": null}
 , {"addr": "0x47499b", "name": "__security_check_cookie", "comment": null}

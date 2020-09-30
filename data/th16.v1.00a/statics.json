@@ -3,35 +3,35 @@
 , {"addr": "0x41d498", "name": "float(-7.863328e-38)", "type": "float", "comment": null}
 , {"addr": "0x41d880", "name": "float(-0.00019931947)", "type": "float", "comment": null}
 , {"addr": "0x422a9b", "name": "ecl_run_over_300__default", "type": "void", "comment": "default case"}
-, {"addr": "0x422ab8", "name": "ecl_run_over_300__jump_table", "type": "uint32_t [174]", "comment": null}
-, {"addr": "0x422d70", "name": "ecl_run_over_300__indirect_table", "type": "uint8_t [702]", "comment": null}
-, {"addr": "0x423df4", "name": "ecl_get_int_global__jump_table", "type": "uint32_t [98]", "comment": null}
+, {"addr": "0x422ab8", "name": "ecl_run_over_300__jump_table", "type": "uint32_t[0xae]", "comment": null}
+, {"addr": "0x422d70", "name": "ecl_run_over_300__indirect_table", "type": "uint8_t[0x2be]", "comment": null}
+, {"addr": "0x423df4", "name": "ecl_get_int_global__jump_table", "type": "uint32_t[0x62]", "comment": null}
 , {"addr": "0x428edd", "name": "float(2.94846e-38)", "type": "float", "comment": null}
-, {"addr": "0x462cb8", "name": "anm_run_jumptable_1", "type": "uint32_t [53]", "comment": null}
-, {"addr": "0x462d8c", "name": "anm_run_jumptable_1_indirect", "type": "uint8_t [215]", "comment": null}
-, {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": "uint32_t [81]", "comment": null}
-, {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x462cb8", "name": "anm_run_jumptable_1", "type": "uint32_t[0x35]", "comment": null}
+, {"addr": "0x462d8c", "name": "anm_run_jumptable_1_indirect", "type": "uint8_t[0xd7]", "comment": null}
+, {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": "uint32_t[0x51]", "comment": null}
+, {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": "uint8_t[0x139]", "comment": null}
 , {"addr": "0x463460", "name": "float(36879.95)", "type": "float", "comment": null}
 , {"addr": "0x46ee12", "name": "float(7.361264e-36)", "type": "float", "comment": null}
-, {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t [67]", "comment": null}
-, {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t [94]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
+, {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t[0x43]", "comment": null}
+, {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t[0x5e]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
 , {"addr": "0x490eb0", "name": "__ptr_GAME_SPEED_MULT_FROM_ECL", "type": "float*", "comment": null}
-, {"addr": "0x490eb4", "name": "FUNCS_FOR_ECL_FLAG_EXT_DMG", "type": "void*[3]", "comment": null}
-, {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": "void*[3]", "comment": null}
-, {"addr": "0x4917c4", "name": "SCORE_EXTEND_QUOTAS_EXTRA", "type": "int32_t [6]", "comment": null}
-, {"addr": "0x4917e0", "name": "ITEM_PIV_AMOUNTS__ITEMS_8_TO_D", "type": "float [6]", "comment": null}
-, {"addr": "0x4917f8", "name": "ITEM_ANM_SCRIPT_IDS", "type": "struct zInt2 [17]", "comment": null}
-, {"addr": "0x491880", "name": "SCORE_EXTEND_QUOTAS_STANDARD", "type": "int32_t [11]", "comment": null}
-, {"addr": "0x491980", "name": "SHT_FUNC_34_TABLE", "type": "void*[8]", "comment": null}
-, {"addr": "0x4919a0", "name": "SHT_FUNC_2c_TABLE", "type": "void*[8]", "comment": null}
-, {"addr": "0x4919c0", "name": "SHT_FUNC_28_TABLE", "type": "void*[8]", "comment": null}
-, {"addr": "0x4919e8", "name": "ANM_ON_TICK_CALLABLES", "type": "void*[5]", "comment": null}
-, {"addr": "0x491b0c", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[4]", "comment": null}
-, {"addr": "0x491b1c", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[4]", "comment": null}
-, {"addr": "0x491b2c", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[7]", "comment": null}
-, {"addr": "0x491b48", "name": "ANM_ON_COPY_FUNC_1", "type": "void*[2]", "comment": null}
-, {"addr": "0x491b50", "name": "ANM_ON_COPY_FUNC_2", "type": "void*[2]", "comment": null}
-, {"addr": "0x491b58", "name": "ANM_ON_DELETE_FUNCS", "type": "void*[4]", "comment": null}
+, {"addr": "0x490eb4", "name": "FUNCS_FOR_ECL_FLAG_EXT_DMG", "type": "void*[0x3]", "comment": null}
+, {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": "void*[0x3]", "comment": null}
+, {"addr": "0x4917c4", "name": "SCORE_EXTEND_QUOTAS_EXTRA", "type": "int32_t[0x6]", "comment": null}
+, {"addr": "0x4917e0", "name": "ITEM_PIV_AMOUNTS__ITEMS_8_TO_D", "type": "float[0x6]", "comment": null}
+, {"addr": "0x4917f8", "name": "ITEM_ANM_SCRIPT_IDS", "type": "struct zInt2[0x11]", "comment": null}
+, {"addr": "0x491880", "name": "SCORE_EXTEND_QUOTAS_STANDARD", "type": "int32_t[0xb]", "comment": null}
+, {"addr": "0x491980", "name": "SHT_FUNC_34_TABLE", "type": "void*[0x8]", "comment": null}
+, {"addr": "0x4919a0", "name": "SHT_FUNC_2c_TABLE", "type": "void*[0x8]", "comment": null}
+, {"addr": "0x4919c0", "name": "SHT_FUNC_28_TABLE", "type": "void*[0x8]", "comment": null}
+, {"addr": "0x4919e8", "name": "ANM_ON_TICK_CALLABLES", "type": "void*[0x5]", "comment": null}
+, {"addr": "0x491b0c", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[0x4]", "comment": null}
+, {"addr": "0x491b1c", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[0x4]", "comment": null}
+, {"addr": "0x491b2c", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[0x7]", "comment": null}
+, {"addr": "0x491b48", "name": "ANM_ON_COPY_FUNC_1", "type": "void*[0x2]", "comment": null}
+, {"addr": "0x491b50", "name": "ANM_ON_COPY_FUNC_2", "type": "void*[0x2]", "comment": null}
+, {"addr": "0x491b58", "name": "ANM_ON_DELETE_FUNCS", "type": "void*[0x4]", "comment": null}
 , {"addr": "0x491c34", "name": "VTABLE_DELETE_THREAD", "type": "struct zVTableDelete", "comment": null}
 , {"addr": "0x491ce0", "name": "__ptr_leaf_409030", "type": "void*", "comment": null}
 , {"addr": "0x491d5c", "name": "VTABLE_BOMB_DOYOU", "type": "struct zVTableBomb", "comment": null}
@@ -44,18 +44,18 @@
 , {"addr": "0x491e20", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491e3c", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x491e58", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491e70", "name": "RELEASE_LEVEL_DURATION_DOYOU", "type": "int32_t [7]", "comment": null}
-, {"addr": "0x491e8c", "name": "RELEASE_LEVEL_RADIUS_2_DOYOU", "type": "float [7]", "comment": null}
-, {"addr": "0x491eb0", "name": "RELEASE_LEVEL_RADIUS_DOYOU", "type": "float [7]", "comment": null}
-, {"addr": "0x491ed4", "name": "RELEASE_LEVEL_DURATION_FALL", "type": "int32_t [7]", "comment": null}
-, {"addr": "0x491ef0", "name": "RELEASE_LEVEL_RADIUS_2_FALL", "type": "float [7]", "comment": null}
-, {"addr": "0x491f14", "name": "RELEASE_LEVEL_RADIUS_FALL", "type": "float [7]", "comment": null}
-, {"addr": "0x491f38", "name": "RELEASE_LEVEL_DURATION_SUMMER", "type": "int32_t [7]", "comment": null}
-, {"addr": "0x491f54", "name": "RELEASE_LEVEL_RADIUS_SUMMER", "type": "float [7]", "comment": null}
-, {"addr": "0x491f78", "name": "RELEASE_LEVEL_DURATION_WINTER", "type": "int32_t [7]", "comment": null}
-, {"addr": "0x491f94", "name": "RELEASE_LEVEL_RADIUS_WINTER", "type": "float [7]", "comment": null}
-, {"addr": "0x491fb8", "name": "RELEASE_LEVEL_DURATION_SPRING", "type": "int32_t [7]", "comment": null}
-, {"addr": "0x491fd4", "name": "RELEASE_LEVEL_RADIUS_SPRING", "type": "float [7]", "comment": null}
+, {"addr": "0x491e70", "name": "RELEASE_LEVEL_DURATION_DOYOU", "type": "int32_t[0x7]", "comment": null}
+, {"addr": "0x491e8c", "name": "RELEASE_LEVEL_RADIUS_2_DOYOU", "type": "float[0x7]", "comment": null}
+, {"addr": "0x491eb0", "name": "RELEASE_LEVEL_RADIUS_DOYOU", "type": "float[0x7]", "comment": null}
+, {"addr": "0x491ed4", "name": "RELEASE_LEVEL_DURATION_FALL", "type": "int32_t[0x7]", "comment": null}
+, {"addr": "0x491ef0", "name": "RELEASE_LEVEL_RADIUS_2_FALL", "type": "float[0x7]", "comment": null}
+, {"addr": "0x491f14", "name": "RELEASE_LEVEL_RADIUS_FALL", "type": "float[0x7]", "comment": null}
+, {"addr": "0x491f38", "name": "RELEASE_LEVEL_DURATION_SUMMER", "type": "int32_t[0x7]", "comment": null}
+, {"addr": "0x491f54", "name": "RELEASE_LEVEL_RADIUS_SUMMER", "type": "float[0x7]", "comment": null}
+, {"addr": "0x491f78", "name": "RELEASE_LEVEL_DURATION_WINTER", "type": "int32_t[0x7]", "comment": null}
+, {"addr": "0x491f94", "name": "RELEASE_LEVEL_RADIUS_WINTER", "type": "float[0x7]", "comment": null}
+, {"addr": "0x491fb8", "name": "RELEASE_LEVEL_DURATION_SPRING", "type": "int32_t[0x7]", "comment": null}
+, {"addr": "0x491fd4", "name": "RELEASE_LEVEL_RADIUS_SPRING", "type": "float[0x7]", "comment": null}
 , {"addr": "0x492198", "name": "VTABLE_ENEMY_MANAGER", "type": "struct zVTableEnemyManager", "comment": null}
 , {"addr": "0x4921a8", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
 , {"addr": "0x4921c4", "name": "VTABLE_ECL_BASECLASS", "type": "struct zVTableEcl", "comment": null}
@@ -66,20 +66,20 @@
 , {"addr": "0x492424", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": "Straight lasers with shiny, tapered points at the ends.\n- Straight satono lasers\n- Ex seven swords spell lasers once they gain hitboxes\n- Stage 6 first spell lasers"}
 , {"addr": "0x492490", "name": "VTABLE_LASER_DEFAULT", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x492c10", "name": "PLAYER_OPTION_ANM_SCRIPT_IDS_2", "type": "void", "comment": null}
-, {"addr": "0x492c20", "name": "PLAYER_DIRECTION_DEFS", "type": "struct zInt2 [9]", "comment": null}
-, {"addr": "0x492c68", "name": "CHARACTER_ATTRACTBOX_FOCUSED_TABLE", "type": "float [4]", "comment": null}
-, {"addr": "0x492c78", "name": "CHARACTER_GRAZEBOX_SIZE_TABLE", "type": "float [4]", "comment": null}
-, {"addr": "0x492c88", "name": "CHARACTER_ATTRACTBOX_UNFOCUSED_TABLE", "type": "float [4]", "comment": null}
-, {"addr": "0x492c98", "name": "CHARACTER_HITBOX_SIZE_TABLE", "type": "float [4]", "comment": null}
-, {"addr": "0x492ca8", "name": "PLAYER_SHT_FILENAMES", "type": "char*[4]", "comment": null}
-, {"addr": "0x492cb8", "name": "SUB_SHT_FILENAMES", "type": "char*[5]", "comment": null}
-, {"addr": "0x492ccc", "name": "PLAYER_ANM_FILENAMES", "type": "char*[4]", "comment": null}
-, {"addr": "0x492cdc", "name": "SUB_ANM_FILENAMES", "type": "char*[5]", "comment": null}
-, {"addr": "0x493358", "name": "STRING_FULL_WIDTH_SPACE", "type": "char [3]", "comment": null}
+, {"addr": "0x492c20", "name": "PLAYER_DIRECTION_DEFS", "type": "struct zInt2[0x9]", "comment": null}
+, {"addr": "0x492c68", "name": "CHARACTER_ATTRACTBOX_FOCUSED_TABLE", "type": "float[0x4]", "comment": null}
+, {"addr": "0x492c78", "name": "CHARACTER_GRAZEBOX_SIZE_TABLE", "type": "float[0x4]", "comment": null}
+, {"addr": "0x492c88", "name": "CHARACTER_ATTRACTBOX_UNFOCUSED_TABLE", "type": "float[0x4]", "comment": null}
+, {"addr": "0x492c98", "name": "CHARACTER_HITBOX_SIZE_TABLE", "type": "float[0x4]", "comment": null}
+, {"addr": "0x492ca8", "name": "PLAYER_SHT_FILENAMES", "type": "char*[0x4]", "comment": null}
+, {"addr": "0x492cb8", "name": "SUB_SHT_FILENAMES", "type": "char*[0x5]", "comment": null}
+, {"addr": "0x492ccc", "name": "PLAYER_ANM_FILENAMES", "type": "char*[0x4]", "comment": null}
+, {"addr": "0x492cdc", "name": "SUB_ANM_FILENAMES", "type": "char*[0x5]", "comment": null}
+, {"addr": "0x493358", "name": "STRING_FULL_WIDTH_SPACE", "type": "char[0x3]", "comment": null}
 , {"addr": "0x493730", "name": "VTABLE_MAIN_MENU", "type": "struct zVTableMainMenu", "comment": null}
-, {"addr": "0x493768", "name": "vtable_493768", "type": "void*[9]", "comment": null}
-, {"addr": "0x493790", "name": "vtable_493790_baseclass", "type": "void*[8]", "comment": null}
-, {"addr": "0x4938f8", "name": "WINDOW TITLE", "type": "struct ShiftJis [54]", "comment": null}
+, {"addr": "0x493768", "name": "vtable_493768", "type": "void*[0x9]", "comment": null}
+, {"addr": "0x493790", "name": "vtable_493790_baseclass", "type": "void*[0x8]", "comment": null}
+, {"addr": "0x4938f8", "name": "WINDOW TITLE", "type": "struct ShiftJis[0x36]", "comment": null}
 , {"addr": "0x4943c0", "name": "float(0)", "type": "float", "comment": null}
 , {"addr": "0x4943d0", "name": "float(2**-32)", "type": "float", "comment": null}
 , {"addr": "0x4943d4", "name": "float(2**-31)", "type": "float", "comment": null}
@@ -290,13 +290,13 @@
 , {"addr": "0x494788", "name": "float(-999990)", "type": "float", "comment": null}
 , {"addr": "0x494880", "name": "CONST_USED_FOR_FABS", "type": "int64_t", "comment": "ANDing this with a 32bit or 64bit floating point number\nwill produce its absolute value."}
 , {"addr": "0x4948a0", "name": "_128_BIT_CONSTANT_ALL_FFFF", "type": "int128_t", "comment": null}
-, {"addr": "0x49a0a0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table [1]", "comment": null}
+, {"addr": "0x49a0a0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table[0x1]", "comment": null}
 , {"addr": "0x49a0c0", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x49a128", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x49ea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a2250", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data [4]", "comment": null}
-, {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": "struct zFloat4 [3]", "comment": null}
-, {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": "struct zFloat4 [3]", "comment": null}
+, {"addr": "0x4a2250", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x4]", "comment": null}
+, {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": "struct zFloat4[0x3]", "comment": null}
+, {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": "struct zFloat4[0x3]", "comment": null}
 , {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS_I_THINK", "type": "char", "comment": null}
 , {"addr": "0x4a50b0", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": "Internal representation of the keys currently held on the keyboard.\n\nUnlike INPUT, this updates even while the game is paused or on the main menu.  It includes keys like ESC, P, R, and Enter that are not tracked in replays."}
 , {"addr": "0x4a50b4", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
@@ -336,17 +336,17 @@
 , {"addr": "0x4a5804", "name": "CURRENT_BOMB_FRAGMENTS", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5808", "name": "CURRENT_SEASON_POWER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a580c", "name": "MAX_SEASON_POWER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5810", "name": "SEASON_POWER_LEVEL_DELTAS", "type": "int32_t [7]", "comment": "=============\n============= offset 0x80\n============="}
-, {"addr": "0x4a583c", "name": "SEASON_POWER_LEVEL_REQUIREMENTS", "type": "int32_t [6]", "comment": null}
+, {"addr": "0x4a5810", "name": "SEASON_POWER_LEVEL_DELTAS", "type": "int32_t[0x7]", "comment": "=============\n============= offset 0x80\n============="}
+, {"addr": "0x4a583c", "name": "SEASON_POWER_LEVEL_REQUIREMENTS", "type": "int32_t[0x6]", "comment": null}
 , {"addr": "0x4a5854", "name": "MAX_SEASON_POWER_COPY", "type": "int32_t", "comment": null}
 , {"addr": "0x4a586c", "name": "DATA_4a586c_RELATED_TO_PIV_ITEMS__SEEMS_UNUSED", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5870", "name": "__LAST_POINT_OR_POWER_COLLECTED_POS", "type": "struct zFloat3", "comment": "Probably used by DDC to position the PoC bonus?\n"}
 , {"addr": "0x4a587c", "name": "__DDC_ITEM_SPAWN_COUNT", "type": "int32_t", "comment": "Presumably used to schedule guaranteed life pieces in DDC"}
 , {"addr": "0x4a5880", "name": "__LOLK_ENEMIES_SPAWNED_IN_CHAPTER", "type": "int32_t", "comment": "I'm not sure if these get reset to zero every chapter in HSiFS.\n(TODO: test)"}
 , {"addr": "0x4a5884", "name": "__LOLK_ENEMIES_DESTROYED_IN_CHAPTER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5888", "name": "music_filename", "type": "char [256]", "comment": null}
+, {"addr": "0x4a5888", "name": "music_filename", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4a5bfc", "name": "CONTINUES_REMAINING", "type": "int32_t", "comment": null}
-, {"addr": "0x4a6be0", "name": "CRITICAL_SECTION_ARRAY", "type": "struct CRITICAL_SECTION [11]", "comment": null}
+, {"addr": "0x4a6be0", "name": "CRITICAL_SECTION_ARRAY", "type": "struct CRITICAL_SECTION[0xb]", "comment": null}
 , {"addr": "0x4a6d54", "name": "HEAP_4A6D54", "type": "HANDLE", "comment": null}
 , {"addr": "0x4a6d80", "name": "REPLAY_UNSAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4a6d88", "name": "REPLAY_SAFE_RNG", "type": "struct zRng", "comment": null}
@@ -361,13 +361,13 @@
 , {"addr": "0x4a6db8", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": "This type has almost no responsibilities.  99% of code accessing it is only using it to get the AnmLoaded for effect.anm.\n\nIn TH15-17, it is 0x2020 bytes large and holds an array of Anm IDs.  I think this array holds IDs for player bullet splash animations, as well as enemy death, and possibly anything that uses anmPlay.  Why? I don't have a clue. At first I suspected that maybe it is to give these anms a chance to run special cleanup callbacks when the game is closed, but the TH16 destructor does not iterate over these ids...  (it just loops over all ANMs period, setting flags on everything from bullet.anm and effect.anm)\n\nPrior to TH15, things get even weirder.  This type did exist in TH13 and TH14, but it was only 0x2c bytes. In TH14, I found only a SINGLE function that uses this pointer for some purpose other than getting effect.anm.  I set a breakpoint on that function, and found that it was triggered every time a boss made one of those dark blobby spiral-in effects they do when teleporting or charging spells.\n\nThat function has paths that write to an array at this+0x1c, but TH14 never enters those paths.  So I have basically no clue at all why this type exists in TH14. a\n"}
 , {"addr": "0x4a6dbc", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
 , {"addr": "0x4a6dc0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
-, {"addr": "0x4a6dc4", "name": "FUNCS_FOR_ECL_UNKNOWN_634", "type": "void*[1]", "comment": null}
-, {"addr": "0x4a6dc8", "name": "GLOBAL_88_PTR", "type": "struct zFpsCounter*", "comment": null}
+, {"addr": "0x4a6dc4", "name": "FUNCS_FOR_ECL_UNKNOWN_634", "type": "void*[0x1]", "comment": null}
+, {"addr": "0x4a6dc8", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x4a6dcc", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4a6dd4", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
 , {"addr": "0x4a6dd8", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
 , {"addr": "0x4a6ddc", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
-, {"addr": "0x4a6de0", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4a6de0", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4a6ee0", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
 , {"addr": "0x4a6ee4", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
 , {"addr": "0x4a6ef4", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
@@ -379,7 +379,7 @@
 , {"addr": "0x4a6f0c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4a6f10", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4a6f20", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4c0f44", "name": "ANM_ON_WAIT_FUNCS", "type": "void*[1]", "comment": null}
+, {"addr": "0x4c0f44", "name": "ANM_ON_WAIT_FUNCS", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x4c0f48", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4c0f58", "name": "CRIT_SECTION__UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": "This critical section serializes all access to the UpdateFuncRegistry.\n\n"}
 , {"addr": "0x4c0f88", "name": "CRIT_SECTION_V", "type": "struct CRITICAL_SECTION", "comment": null}
@@ -391,9 +391,9 @@
 , {"addr": "0x4c1060", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c1078", "name": "CRIT_SECTION_T", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c10d0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
-, {"addr": "0x4c10d8", "name": "GLOBAL_D3D_DEVICE", "type": "struct z0_IDirect3DDevice9*", "comment": null}
-, {"addr": "0x4c127c", "name": "D3D_SURFACE_4c127c", "type": "struct z0_IDirect3DSurface9*", "comment": null}
-, {"addr": "0x4c1284", "name": "D3D_SURFACE_4c1284", "type": "struct z0_IDirect3DSurface9*", "comment": null}
+, {"addr": "0x4c10d8", "name": "GLOBAL_D3D_DEVICE", "type": "z0_IDirect3DDevice9*", "comment": null}
+, {"addr": "0x4c127c", "name": "D3D_SURFACE_4c127c", "type": "z0_IDirect3DSurface9*", "comment": null}
+, {"addr": "0x4c1284", "name": "D3D_SURFACE_4c1284", "type": "z0_IDirect3DSurface9*", "comment": null}
 , {"addr": "0x4c128c", "name": "ANM_VM_4c128c", "type": "struct zAnmVm*", "comment": null}
 , {"addr": "0x4c1290", "name": "ANM_VM_4c1290", "type": "struct zAnmVm*", "comment": null}
 , {"addr": "0x4c1294", "name": "ANM_VM_4c1294", "type": "struct zAnmVm*", "comment": null}
@@ -407,7 +407,7 @@
 , {"addr": "0x4c1a68", "name": "THREAD_4c1a68", "type": "struct zThread", "comment": null}
 , {"addr": "0x4c1b0c", "name": "BACKGROUND_COLOR", "type": "struct D3DCOLOR", "comment": null}
 , {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
-, {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": "struct zArcFile [20]", "comment": null}
+, {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": "struct zArcFile[0x14]", "comment": null}
 , {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": "int32_t", "comment": null}
 , {"addr": "0x4d7d04", "name": "INITIAL_PERFORMANCE_COUNTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4d9d10", "name": "SYSPARAM_SCREEN_SAVE_ACTIVE", "type": "int32_t", "comment": null}
@@ -424,6 +424,6 @@
 , {"addr": "0x4d9d4c", "name": "ARCADE_HUD_ORIGIN_Y", "type": "int32_t", "comment": "Number of pixels from top of the window drawing surface to\nthe top of the arcade screen, scaled for resolution.\n(so depending on res, it is either 16, 24, or 32)"}
 , {"addr": "0x4d9d50", "name": "GAME_2D_ORIGIN_X", "type": "int32_t", "comment": "This vector is EARLY_RENDERING_ARCADE_OFFSET with 192 added\nto x to provide the location of (0,0) in game space.\n\nBasically it is used to position elements in the arcade region\nthat are always drawn at 640x480.  These are:\n\n  - The player and enemies (but not the boss HP bar)\n  - Danmaku and items\n  - Decorative spell backgrounds (but not the 3d stage BG)\n"}
 , {"addr": "0x4d9d54", "name": "GAME_2D_ORIGIN_Y", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d58", "name": "TOTAL_APPLICATION_RUNTIME", "type": "double [3]", "comment": "All three of these appear to be the total time in seconds\nsince the EXE was started (including time spent on the\n\"choose resolution\" dialog; though these variables only\nstart getting written once you get past that dialog).\n\nThe first two appear to be rounded to 7 places after the\ndecimal point and are usually nearly equal, while the\nthird one tends to be slightly larger and is not as\nharshly rounded."}
+, {"addr": "0x4d9d58", "name": "TOTAL_APPLICATION_RUNTIME", "type": "double[0x3]", "comment": "All three of these appear to be the total time in seconds\nsince the EXE was started (including time spent on the\n\"choose resolution\" dialog; though these variables only\nstart getting written once you get past that dialog).\n\nThe first two appear to be rounded to 7 places after the\ndecimal point and are usually nearly equal, while the\nthird one tends to be slightly larger and is not as\nharshly rounded."}
 , {"addr": "0x4d9dc4", "name": "SEEMINGLY_CONST_ZERO_VEC_4d9dc4", "type": "struct zFloat3", "comment": null}
 ]

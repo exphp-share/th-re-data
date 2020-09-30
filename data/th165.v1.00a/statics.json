@@ -1,4 +1,8 @@
-[ {"addr": "0x4a46f0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table [1]", "comment": null}
+[ {"addr": "0x49c888", "name": "VTABLE_LASER_CURVE", "type": "void*[0x1a]", "comment": null}
+, {"addr": "0x49c8f4", "name": "VTABLE_LASER_BEAM", "type": "void*[0x1a]", "comment": null}
+, {"addr": "0x49c960", "name": "VTABLE_LASER_INFINITE", "type": "void*[0x1a]", "comment": null}
+, {"addr": "0x49c9cc", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[0x1a]", "comment": null}
+, {"addr": "0x4a46f0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table[0x1]", "comment": null}
 , {"addr": "0x4a4710", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a47b0", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x4b19c8", "name": "DEBUG_THING", "type": "void", "comment": null}
@@ -11,7 +15,9 @@
 , {"addr": "0x4b5510", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4b5518", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
 , {"addr": "0x4b551c", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
-, {"addr": "0x4b5530", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4b5524", "name": "FPS_COUNTER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b5528", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
+, {"addr": "0x4b5530", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4b5630", "name": "HELP_MANUAL_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5634", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
 , {"addr": "0x4b5638", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}

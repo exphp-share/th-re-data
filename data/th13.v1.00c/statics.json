@@ -3,6 +3,11 @@
 , {"addr": "0x4aa5f4", "name": "VTABLE_BOMB_SANAE", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4aa610", "name": "VTABLE_BOMB_YOUMU", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4aa62c", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4ab064", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[0x18]", "comment": null}
+, {"addr": "0x4ab0cc", "name": "VTABLE_LASER_LINE", "type": "void*[0x18]", "comment": null}
+, {"addr": "0x4ab134", "name": "VTABLE_LASER_CURVE", "type": "void*[0x18]", "comment": null}
+, {"addr": "0x4ab19c", "name": "VTABLE_LASER_INFINITE", "type": "void*[0x18]", "comment": null}
+, {"addr": "0x4ab204", "name": "VTABLE_LASER_BEAM", "type": "void*[0x18]", "comment": null}
 , {"addr": "0x4ae868", "name": "double(100)", "type": "double", "comment": null}
 , {"addr": "0x4ae8a0", "name": "double(192)", "type": "double", "comment": null}
 , {"addr": "0x4ae8a8", "name": "double(1000)", "type": "double", "comment": null}
@@ -28,11 +33,11 @@
 , {"addr": "0x4af028", "name": "float(-14)", "type": "float", "comment": null}
 , {"addr": "0x4b4d48", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4b9c34", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x4bad30", "name": "ANM_X_ANCHOR_DATA", "type": "struct zFloat4 [3]", "comment": null}
-, {"addr": "0x4bad60", "name": "ANM_Y_ANCHOR_DATA", "type": "struct zFloat4 [3]", "comment": null}
-, {"addr": "0x4bb4d4", "name": "SHT_ON_TICK_FUNCS", "type": "void*[6]", "comment": null}
-, {"addr": "0x4bb8d0", "name": "SHT_ON_INIT_FUNCS", "type": "void*[5]", "comment": null}
-, {"addr": "0x4bb8e8", "name": "SHT_ON_HIT_FUNCS", "type": "void*[5]", "comment": null}
+, {"addr": "0x4bad30", "name": "ANM_X_ANCHOR_DATA", "type": "struct zFloat4[0x3]", "comment": null}
+, {"addr": "0x4bad60", "name": "ANM_Y_ANCHOR_DATA", "type": "struct zFloat4[0x3]", "comment": null}
+, {"addr": "0x4bb4d4", "name": "SHT_ON_TICK_FUNCS", "type": "void*[0x6]", "comment": null}
+, {"addr": "0x4bb8d0", "name": "SHT_ON_INIT_FUNCS", "type": "void*[0x5]", "comment": null}
+, {"addr": "0x4bb8e8", "name": "SHT_ON_HIT_FUNCS", "type": "void*[0x5]", "comment": null}
 , {"addr": "0x4be7b8", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Beginning of globals object"}
 , {"addr": "0x4be808", "name": "CURRENT_SPIRIT_GAUGE", "type": "int32_t", "comment": null}
 , {"addr": "0x4be810", "name": "HIGH_SCORE_DISPLAY", "type": "int32_t", "comment": null}
@@ -53,7 +58,7 @@
 , {"addr": "0x4c2188", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
 , {"addr": "0x4c2190", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4c2194", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
-, {"addr": "0x4c2198", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4c2198", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4c229c", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
 , {"addr": "0x4c22a0", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
 , {"addr": "0x4c22a4", "name": "SPIRIT_ITEM_MANAGER_PTR", "type": "struct zSpiritItemManager*", "comment": null}
@@ -67,7 +72,7 @@
 , {"addr": "0x4dc31c", "name": "ANIMATION_RNG", "type": "void", "comment": null}
 , {"addr": "0x4dc324", "name": "REPLAY_RNG", "type": "void", "comment": null}
 , {"addr": "0x4dc658", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
-, {"addr": "0x4dc66c", "name": "SHT_ON_DRAW_FUNCS", "type": "void*[1]", "comment": null}
+, {"addr": "0x4dc66c", "name": "SHT_ON_DRAW_FUNCS", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x4dc688", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4dc6a0", "name": "SUPERVISOR", "type": "int32_t", "comment": "The supervisor is stored directly here and not as a pointer\nbut I haven't made a type for it yet in this binary"}
 , {"addr": "0x4dcc24", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}

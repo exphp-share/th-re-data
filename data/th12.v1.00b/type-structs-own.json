@@ -14,7 +14,7 @@
   , ["0xc", "bytes_per_pixel", "int32_t"]
   , ["0x10", "__image_file_entry", "struct zAnmRawFileEntry*"]
   , ["0x14", "flags", "int32_t"]
-  , ["0x18", "__IMPORTED_FROM_TH14__MAY_HAVE_ERRORS", "struct zCOMMENT [0]"]
+  , ["0x18", "__IMPORTED_FROM_TH14__MAY_HAVE_ERRORS", "struct zCOMMENT[0x0]"]
   , ["0x18", "__end", null]
   ]
 
@@ -32,16 +32,16 @@
   , ["0x38", "sprite_width", "float"]
   , ["0x3c", "__unknown__usually_1_1", "struct zFloat2"]
   , ["0x44", "__field_44", "struct zUnknown"]
-  , ["0x48", "__IMPORTED_FROM_TH14__MAY_HAVE_ERRORS", "struct zCOMMENT [0]"]
+  , ["0x48", "__IMPORTED_FROM_TH14__MAY_HAVE_ERRORS", "struct zCOMMENT[0x0]"]
   , ["0x48", "__end", null]
   ]
 
 , "zAnmManager": 
   [ ["0x0", "__unknown", null]
-  , ["0xbc", "fast_array", "struct zAnmVm [4096]"]
-  , ["0x4b40bc", "fast_array__is_alive", "uint8_t [4096]"]
+  , ["0xbc", "fast_array", "struct zAnmVm[0x1000]"]
+  , ["0x4b40bc", "fast_array__is_alive", "uint8_t[0x1000]"]
   , ["0x4b50bc", "next_fast_array_index", "int32_t"]
-  , ["0x4b50c0", "preloaded", "struct zAnmLoaded*[32]"]
+  , ["0x4b50c0", "preloaded", "struct zAnmLoaded*[0x20]"]
   , ["0x4b5140", "__unknown", null]
   , ["0x4b5180", "__mystery_vm", "struct zAnmVm"]
   , ["0x4b5634", "__unknown", null]
@@ -50,10 +50,10 @@
   , ["0x8856bc", "world_list_tail", "struct zAnmVmList*"]
   , ["0x8856c0", "ui_list_head", "struct zAnmManager*"]
   , ["0x8856c4", "ui_list_tail", "struct zAnmManager*"]
-  , ["0x8856c8", "layer_list_dummy_heads", "struct zAnmVm [32]"]
+  , ["0x8856c8", "layer_list_dummy_heads", "struct zAnmVm[0x20]"]
   , ["0x88ed48", "last_id", "struct zAnmId"]
   , ["0x88ed4c", "__unknown", null]
-  , ["0x88ed54", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x88ed54", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x88ed54", "__end", null]
   ]
 
@@ -66,18 +66,18 @@
   , ["0x2", "offset_to_next", "uint16_t"]
   , ["0x4", "time", "uint16_t"]
   , ["0x6", "var_mask", "uint16_t"]
-  , ["0x8", "args", "uint32_t [10]"]
+  , ["0x8", "args", "uint32_t[0xa]"]
   , ["0x30", "__args_is_variable_length", "struct zCOMMENT"]
   , ["0x31", "__end", null]
   ]
 
 , "zAnmVertexBuffers": 
   [ ["0x0", "unrendered_sprite_count", "int32_t"]
-  , ["0x4", "sprite_vertex_data", "struct zRenderVertex144 [131072]"]
+  , ["0x4", "sprite_vertex_data", "struct zRenderVertex144[0x20000]"]
   , ["0x380004", "sprite_write_cursor", "struct zRenderVertex144*"]
   , ["0x380008", "sprite_render_cursor", "struct zRenderVertex144*"]
   , ["0x38000c", "unrendered_primitive_count", "int32_t"]
-  , ["0x380010", "primitive_vertex_data", "struct zRenderVertex044 [16384]"]
+  , ["0x380010", "primitive_vertex_data", "struct zRenderVertex044[0x4000]"]
   , ["0x3d0010", "primitive_write_cursor", "struct zRenderVertex044*"]
   , ["0x3d0014", "primitive_render_cursor", "struct zRenderVertex044*"]
   , ["0x3d0018", "__end", null]
@@ -98,7 +98,7 @@
   , ["0x58", "sprite_size", "struct zFloat2"]
   , ["0x60", "uv_scroll_pos", "struct zFloat2"]
   , ["0x68", "time_in_script", "struct zTimer"]
-  , ["0x7c", "uv_quad_of_sprite", "struct zFloat2 [4]"]
+  , ["0x7c", "uv_quad_of_sprite", "struct zFloat2[0x4]"]
   , ["0x9c", "pos_i", "struct zInterpFloat3"]
   , ["0xe8", "rgb_i", "struct zInterpInt3"]
   , ["0x134", "alpha_i", "struct zInterpInt"]
@@ -128,21 +128,22 @@
   , ["0x3f0", "current_instr", "struct zAnmRawInstr*"]
   , ["0x3f4", "sprite", "struct zAnmLoadedSprite*"]
   , ["0x3f8", "anm_file", "struct zAnmLoaded*"]
-  , ["0x3fc", "int_vars", "int32_t [4]"]
-  , ["0x40c", "float_vars", "float [4]"]
+  , ["0x3fc", "int_vars", "int32_t[0x4]"]
+  , ["0x40c", "float_vars", "float[0x4]"]
   , ["0x41c", "int_var_8", "int32_t"]
   , ["0x420", "int_var_9", "int32_t"]
   , ["0x424", "pos", "struct zFloat3"]
   , ["0x430", "__pos_3", "struct zFloat3"]
   , ["0x43c", "__pos_2", "struct zFloat3"]
-  , ["0x448", "last_rendered_quad_in_surface_space", "struct zFloat3 [4]"]
+  , ["0x448", "last_rendered_quad_in_surface_space", "struct zFloat3[0x4]"]
   , ["0x478", "special_render_data", "void*"]
   , ["0x47c", "flags_lo", "uint32_t"]
   , ["0x480", "flags_hi", "uint32_t"]
   , ["0x484", "__unknown", null]
+  , ["0x4a8", "data_for_sprite_mapping_func", "void*"]
   , ["0x4ac", "sprite_mapping_func", "void*"]
-  , ["0x4b0", "data_for_sprite_mapping_func", "void*"]
-  , ["0x4b4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x4b0", "ecx_arg_for_sprite_mapping_func", "void*"]
+  , ["0x4b4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4b4", "__end", null]
   ]
 
@@ -155,19 +156,19 @@
 
 , "zAsciiManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x18fc4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x18fc4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x18fc4", "__end", null]
   ]
 
 , "zAsciiPopupManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x80c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x80c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x80c", "__end", null]
   ]
 
 , "zBomb": 
   [ ["0x0", "__unknown", null]
-  , ["0x524", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x524", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x524", "__end", null]
   ]
 
@@ -176,14 +177,19 @@
   , ["0x4", "ex_invuln_remaining_frames", "int32_t"]
   , ["0x8", "vm", "struct zAnmVm"]
   , ["0x4bc", "pos", "struct zFloat3"]
-  , ["0x4c8", "__unknown", null]
+  , ["0x4c8", "velocity", "struct zFloat3"]
+  , ["0x4d4", "speed", "float"]
+  , ["0x4d8", "angle", "float"]
+  , ["0x4dc", "__prolly_hitbox_size_or_halfsize", "struct zFloat2"]
+  , ["0x4e4", "__unknown", null]
   , ["0x50c", "__ex_21_a", "int32_t"]
   , ["0x510", "__unknown", null]
+  , ["0x524", "__something_set_based_on_color_and_type", "int32_t"]
   , ["0x528", "active_ex_flags", "int32_t"]
   , ["0x52c", "__unknown", null]
   , ["0x548", "ex_index", "int32_t"]
   , ["0x54c", "__unknown", null]
-  , ["0x550", "ex", "struct zBulletEx [18]"]
+  , ["0x550", "ex", "struct zBulletEx[0x12]"]
   , ["0x700", "ex_dist_timer", "struct zTimer"]
   , ["0x714", "__unknown", null]
   , ["0x724", "__ex_dist__unknown", "float"]
@@ -196,6 +202,8 @@
   , ["0x760", "__unknown", null]
   , ["0x768", "ex_angleaccel_timer", "struct zTimer"]
   , ["0x77c", "__unknown", null]
+  , ["0x790", "ex_angleaccel_maxtime", "int32_t"]
+  , ["0x794", "__unknown", null]
   , ["0x79c", "ex_turn_timer", "struct zTimer"]
   , ["0x7b0", "__unknown", null]
   , ["0x7d0", "__ex_bounce_timer__unused", "struct zTimer"]
@@ -226,11 +234,10 @@
   , ["0x984", "__unknown", null]
   , ["0x998", "__ex_offscreen__b", "int32_t"]
   , ["0x99c", "__unknown", null]
-  , ["0x9ec", "__ex_steer__a", "int32_t"]
-  , ["0x9f0", "__ex_steer__b", "int32_t"]
+  , ["0x9a8", "__ex_steer_i", "struct zInterpFloat3"]
   , ["0x9f4", "type", "int16_t"]
   , ["0x9f6", "color", "int16_t"]
-  , ["0x9f8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x9f8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x9f8", "__end", null]
   ]
 
@@ -246,12 +253,12 @@
 
 , "zBulletManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x14", "__stuff_14", "int32_t [13]"]
+  , ["0x14", "__stuff_14", "int32_t[0xd]"]
   , ["0x48", "__unknown", null]
   , ["0x60", "et_protect_range", "float"]
-  , ["0x64", "bullets", "struct zBullet [2001]"]
+  , ["0x64", "bullets", "struct zBullet[0x7d1]"]
   , ["0x4debdc", "bullet_anm", "struct zAnmLoaded*"]
-  , ["0x4debe0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x4debe0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4debe0", "__end", null]
   ]
 
@@ -281,51 +288,51 @@
   , ["0xe8", "__vec2_fc", "struct zFloat2"]
   , ["0xf0", "__vec3_104", "struct zFloat3"]
   , ["0xfc", "sky", "struct zCameraSky"]
-  , ["0x118", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x118", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x118", "__end", null]
   ]
 
 , "zCameraSky": 
   [ ["0x0", "begin_distance", "float"]
   , ["0x4", "end_distance", "float"]
-  , ["0x8", "color_components", "float [4]"]
+  , ["0x8", "color_components", "float[0x4]"]
   , ["0x18", "color", "struct D3DCOLOR"]
   , ["0x1c", "__end", null]
   ]
 
 , "zConfig": 
   [ ["0x0", "__unknown", null]
-  , ["0x3c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x3c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x3c", "__end", null]
   ]
 
 , "zDebugSoundTest": 
   [ ["0x0", "__unknown", null]
-  , ["0x2bc", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2bc", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x2bc", "__end", null]
   ]
 
 , "zDebugSprtView": 
   [ ["0x0", "__unknown", null]
-  , ["0x790", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x790", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x790", "__end", null]
   ]
 
 , "zDebugSptTest": 
   [ ["0x0", "__unknown", null]
-  , ["0x2e4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2e4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x2e4", "__end", null]
   ]
 
 , "zEffectManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x24", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x24", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x24", "__end", null]
   ]
 
 , "zEnding": 
   [ ["0x0", "__unknown", null]
-  , ["0x28", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x28", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x28", "__end", null]
   ]
 
@@ -336,9 +343,9 @@
   , ["0x9c", "rel_pos", "struct zPosVel"]
   , ["0xd0", "hurtbox_size", "struct zFloat2"]
   , ["0xd8", "hitbox_size", "struct zFloat2"]
-  , ["0xe0", "anm_ids", "struct zAnmId [16]"]
-  , ["0x120", "anm_pos", "struct zFloat3 [16]"]
-  , ["0x1e0", "__byakuren_butterfly", "int32_t [16]"]
+  , ["0xe0", "anm_ids", "struct zAnmId[0x10]"]
+  , ["0x120", "anm_pos", "struct zFloat3[0x10]"]
+  , ["0x1e0", "__byakuren_butterfly", "int32_t[0x10]"]
   , ["0x220", "selected_anm_index", "int32_t"]
   , ["0x224", "anm_slot_0_anm_index", "int32_t"]
   , ["0x228", "anm_slot_0_script", "int32_t"]
@@ -346,8 +353,8 @@
   , ["0x230", "__unknown", null]
   , ["0x234", "__ecl_450__not_used_since_th11", "int32_t"]
   , ["0x238", "anm_layers", "int32_t"]
-  , ["0x23c", "int_vars", "int32_t [4]"]
-  , ["0x24c", "float_vars", "float [8]"]
+  , ["0x23c", "int_vars", "int32_t[0x4]"]
+  , ["0x24c", "float_vars", "float[0x8]"]
   , ["0x26c", "__unknown", null]
   , ["0x28c", "abs_pos_i", "struct zInterpFloat3"]
   , ["0x2d8", "rel_pos_i", "struct zInterpFloat3"]
@@ -357,18 +364,18 @@
   , ["0x3d8", "rel_radial_dist_i", "struct zInterpFloat2"]
   , ["0x414", "abs_ellipse_i", "struct zInterpFloat2"]
   , ["0x450", "rel_ellipse_i", "struct zInterpFloat2"]
-  , ["0x48c", "bullet_mgrs", "struct zEnemyBulletMgr [8]"]
-  , ["0x152c", "bullet_offsets", "struct zBulletOffset [8]"]
-  , ["0x158c", "bullet_origins", "struct zBulletOffset [8]"]
+  , ["0x48c", "bullet_mgrs", "struct zEnemyBulletMgr[0x8]"]
+  , ["0x152c", "bullet_offsets", "struct zBulletOffset[0x8]"]
+  , ["0x158c", "bullet_origins", "struct zBulletOffset[0x8]"]
   , ["0x15ec", "__unknown", null]
   , ["0x15f4", "move_limit_center", "struct zFloat2"]
   , ["0x15fc", "move_limit_size", "struct zFloat2"]
   , ["0x1604", "score_reward", "int32_t"]
   , ["0x1608", "life", "struct zEnemyLife"]
   , ["0x1620", "drop", "struct zEnemyDrop"]
-  , ["0x1678", "__unknown", null]
+  , ["0x1678", "death_sound", "int32_t"]
   , ["0x167c", "death_anm_script", "int32_t"]
-  , ["0x1680", "__death_anm_index", "int32_t"]
+  , ["0x1680", "death_anm_index", "int32_t"]
   , ["0x1684", "__unknown", null]
   , ["0x168c", "hit_sound", "int32_t"]
   , ["0x1690", "timer_for_set_invuln", "struct zTimer"]
@@ -384,7 +391,7 @@
   , ["0x1768", "func_from_ecl_func_set", "void*"]
   , ["0x176c", "func_from_ecl_flag_ext_damage", "void*"]
   , ["0x1770", "func_from_ecl_unknown_531", "void*"]
-  , ["0x1774", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x1774", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1774", "__end", null]
   ]
 
@@ -397,7 +404,7 @@
   , ["0x18", "speed_first", "float"]
   , ["0x1c", "speed_last", "float"]
   , ["0x20", "distance", "float"]
-  , ["0x24", "ex", "struct zBulletEx [18]"]
+  , ["0x24", "ex", "struct zBulletEx[0x12]"]
   , ["0x1d4", "__unknown", null]
   , ["0x1f8", "count_bullets", "int16_t"]
   , ["0x1fa", "count_layers", "int16_t"]
@@ -406,13 +413,13 @@
   , ["0x204", "sfx_shot", "int32_t"]
   , ["0x208", "sfx_transform", "int32_t"]
   , ["0x20c", "__unknown", null]
-  , ["0x214", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x214", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x214", "__end", null]
   ]
 
 , "zEnemyDrop": 
   [ ["0x0", "main_drop", "int32_t"]
-  , ["0x4", "ex_drop", "int32_t [19]"]
+  , ["0x4", "ex_drop", "int32_t[0x13]"]
   , ["0x50", "area", "struct zFloat2"]
   , ["0x58", "__end", null]
   ]
@@ -421,7 +428,7 @@
   [ ["0x0", "__unknown", null]
   , ["0x1040", "enemy", "struct zEnemy"]
   , ["0x27b4", "__unknown", null]
-  , ["0x27b8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x27b8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x27b8", "__end", null]
   ]
 
@@ -441,7 +448,7 @@
   , ["0x14", "bomb_count", "int32_t"]
   , ["0x18", "capture", "int32_t"]
   , ["0x1c", "__unknown", null]
-  , ["0x40", "anms", "struct zAnmLoaded*[1]"]
+  , ["0x40", "anms", "struct zAnmLoaded*[0x1]"]
   , ["0x44", "anms__len_unknown_in_ufo", "struct zAnmLoaded*"]
   , ["0x48", "__unknown", null]
   , ["0x50", "time_in_stage", "struct zTimer"]
@@ -449,7 +456,7 @@
   , ["0x70", "enemy_count_real", "int32_t"]
   , ["0x74", "__unknown", null]
   , ["0x78", "last_enemy_id", "int32_t"]
-  , ["0x7c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x7c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x7c", "__end", null]
   ]
 
@@ -467,13 +474,13 @@
   ]
 
 , "zFloat4": 
-  [ ["0x0", "a", "float [4]"]
+  [ ["0x0", "a", "float[0x4]"]
   , ["0x10", "__end", null]
   ]
 
 , "zFpsCounter": 
   [ ["0x0", "__unknown", null]
-  , ["0x8c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x8c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x8c", "__end", null]
   ]
 
@@ -481,7 +488,7 @@
   [ ["0x0", "__unknown", null]
   , ["0x60", "flags", "int32_t"]
   , ["0x64", "__unknown", null]
-  , ["0x78", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x78", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x78", "__end", null]
   ]
 
@@ -489,7 +496,7 @@
   [ ["0x0", "HIGH_SCORE", "int32_t"]
   , ["0x4", "CURRENT_SCORE", "int32_t"]
   , ["0x8", "CURRENT_POWER", "int32_t"]
-  , ["0xc", "COLLECTED_UFOS", "int32_t [3]"]
+  , ["0xc", "COLLECTED_UFOS", "int32_t[0x3]"]
   , ["0x18", "__UFO_COUNT__COPY_18", "int32_t"]
   , ["0x1c", "__UFO_COUNT__COPY_1C", "int32_t"]
   , ["0x20", "__field_20", "int32_t"]
@@ -523,26 +530,26 @@
   , ["0xa0", "__unknown", null]
   , ["0xb0", "CURRENT_PIV", "int32_t"]
   , ["0xb4", "MAXIMUM_PIV", "int32_t"]
-  , ["0xb8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xb8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xb8", "__end", null]
   ]
 
 , "zGui": 
   [ ["0x0", "__unknown", null]
-  , ["0x10", "__vms_10", "struct zAnmVm [8]"]
-  , ["0x25b0", "__vms_25b0", "struct zAnmVm [8]"]
-  , ["0x4b50", "__vms_4b50", "struct zAnmVm [2]"]
-  , ["0x54b8", "__vms_54b8", "struct zAnmVm [4]"]
+  , ["0x10", "__vms_10", "struct zAnmVm[0x8]"]
+  , ["0x25b0", "__vms_25b0", "struct zAnmVm[0x8]"]
+  , ["0x4b50", "__vms_4b50", "struct zAnmVm[0x2]"]
+  , ["0x54b8", "__vms_54b8", "struct zAnmVm[0x4]"]
   , ["0x6788", "__unknown", null]
   , ["0x678c", "__vm_678c", "struct zAnmVm"]
   , ["0x6c40", "__unknown", null]
-  , ["0x6d50", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x6d50", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x6d50", "__end", null]
   ]
 
 , "zHintManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x1a8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x1a8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1a8", "__end", null]
   ]
 
@@ -627,20 +634,27 @@
 
 , "zItem": 
   [ ["0x0", "__unknown", null]
-  , ["0x9d8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x9d8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x9d8", "__end", null]
   ]
 
 , "zItemManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x666fe4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x14", "normal_items", "struct zItem[0x258]"]
+  , ["0x171254", "token_items", "struct zItem[0x10]"]
+  , ["0x17afd4", "cancel_items", "struct zItem[0x800]"]
+  , ["0x666fd4", "num_items_alive", "int32_t"]
+  , ["0x666fd8", "next_cancel_item_index", "int32_t"]
+  , ["0x666fdc", "num_cancel_items_spawned_this_frame", "int32_t"]
+  , ["0x666fe0", "ufos_spawned_since_stage_begin", "int32_t"]
+  , ["0x666fe4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x666fe4", "__end", null]
   ]
 
 , "zLaserBaseClass": 
   [ ["0x0", "vtable", "struct zVTableLaser*"]
   , ["0x4", "__unknown", null]
-  , ["0x454", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x454", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x454", "__end", null]
   ]
 
@@ -650,13 +664,13 @@
   , ["0x634", "__vm_634", "struct zAnmVm"]
   , ["0xae8", "__vm_ae8", "struct zAnmVm"]
   , ["0xf9c", "__unknown", null]
-  , ["0xfa4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xfa4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xfa4", "__end", null]
   ]
 
 , "zLaserCurveInner": 
   [ ["0x0", "__unknown", null]
-  , ["0x1e0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x1e0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1e0", "__end", null]
   ]
 
@@ -666,13 +680,13 @@
   , ["0x65c", "__unknown", null]
   , ["0x660", "__vm_660", "struct zAnmVm"]
   , ["0xb14", "__vm_b14", "struct zAnmVm"]
-  , ["0xfc8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xfc8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xfc8", "__end", null]
   ]
 
 , "zLaserInfiniteInner": 
   [ ["0x0", "__unknown", null]
-  , ["0x208", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x208", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x208", "__end", null]
   ]
 
@@ -681,31 +695,31 @@
   , ["0x454", "inner", "struct zLaserLineInner"]
   , ["0x63c", "__vm_640", "struct zAnmVm"]
   , ["0xaf0", "__vm_af0", "struct zAnmVm"]
-  , ["0xfa4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xfa4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xfa4", "__end", null]
   ]
 
 , "zLaserLineInner": 
   [ ["0x0", "__unknown", null]
-  , ["0x1e8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x1e8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1e8", "__end", null]
   ]
 
 , "zLaserManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x490", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x490", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x490", "__end", null]
   ]
 
 , "zLoadingThread": 
   [ ["0x0", "__unknown", null]
-  , ["0x4f8", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x4f8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4f8", "__end", null]
   ]
 
 , "zMainMenu": 
   [ ["0x0", "__unknown", null]
-  , ["0x5c38", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x5c38", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x5c38", "__end", null]
   ]
 
@@ -726,7 +740,7 @@
   , ["0x204", "__unknown", null]
   , ["0x2d8", "saved_game_speed", "float"]
   , ["0x2dc", "front_anm", "struct zAnmLoaded*"]
-  , ["0x2e0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2e0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x2e0", "__end", null]
   ]
 
@@ -737,17 +751,17 @@
   , ["0x97c", "position", "struct zFloat3"]
   , ["0x988", "scaled_position", "struct zInt2"]
   , ["0x990", "__unknown", null]
-  , ["0xa58", "bullets", "struct zPlayerBullet [256]"]
+  , ["0xa58", "bullets", "struct zPlayerBullet[0x100]"]
   , ["0x8258", "__unknown", null]
-  , ["0x8259", "__options__offset_unknown", "struct zPlayerOption [8]"]
+  , ["0x8259", "__options__offset_unknown", "struct zPlayerOption[0x8]"]
   , ["0x8979", "__unknown", null]
-  , ["0x8988", "damage_sources", "struct zPlayerDamageSource [129]"]
+  , ["0x8988", "damage_sources", "struct zPlayerDamageSource[0x81]"]
   , ["0xc3fc", "__unknown", null]
   , ["0xc400", "__timer__c400", "struct zTimer"]
   , ["0xc414", "__unknown", null]
   , ["0xc420", "__timer__c420", "struct zTimer"]
   , ["0xc434", "__unknown", null]
-  , ["0xc59c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xc59c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xc59c", "__end", null]
   ]
 
@@ -755,25 +769,25 @@
   [ ["0x0", "__unknown", null]
   , ["0x22", "sfx_hit", "int16_t"]
   , ["0x24", "__unknown", null]
-  , ["0x78", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x78", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x78", "__end", null]
   ]
 
 , "zPlayerDamageSource": 
   [ ["0x0", "__unknown", null]
-  , ["0x74", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x74", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x74", "__end", null]
   ]
 
 , "zPlayerOption": 
   [ ["0x0", "__unknown", null]
-  , ["0xe4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xe4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xe4", "__end", null]
   ]
 
 , "zPopupManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x840", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x840", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x840", "__end", null]
   ]
 
@@ -785,7 +799,7 @@
   , ["0x20", "radial_dist", "float"]
   , ["0x24", "__unknown", null]
   , ["0x30", "flags", "int32_t"]
-  , ["0x34", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x34", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x34", "__end", null]
   ]
 
@@ -804,13 +818,13 @@
 
 , "zReplayManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x2e0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x2e0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x2e0", "__end", null]
   ]
 
 , "zScorefile": 
   [ ["0x0", "__unknown", null]
-  , ["0x1edfc", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x1edfc", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1edfc", "__end", null]
   ]
 
@@ -836,14 +850,14 @@
 
 , "zSpellcard": 
   [ ["0x0", "__unknown", null]
-  , ["0xc0", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xc0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xc0", "__end", null]
   ]
 
 , "zStage": 
   [ ["0x0", "__unknown", null]
   , ["0x360c", "camera", "struct zCamera"]
-  , ["0x3724", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x3724", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x3724", "__end", null]
   ]
 
@@ -880,8 +894,18 @@
   , ["0x810", "crit_section_update_func_registry", "struct CRITICAL_SECTION"]
   , ["0x828", "__unknown", null]
   , ["0x9c0", "background_color", "struct D3DCOLOR"]
-  , ["0x9c4", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x9c4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x9c4", "__end", null]
+  ]
+
+, "zTableBulletTypeData": 
+  [ ["0x0", "anm_script", "int32_t"]
+  , ["0x4", "__unknown", null]
+  , ["0xc4", "__field", "float"]
+  , ["0xc8", "__unknown", null]
+  , ["0xcc", "color_indexing_type", "int32_t"]
+  , ["0xd0", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0xd0", "__end", null]
   ]
 
 , "zTimer": 
@@ -895,7 +919,7 @@
 
 , "zUfo": 
   [ ["0x0", "__unknown", null]
-  , ["0x6c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x6c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x6c", "__end", null]
   ]
 
@@ -912,7 +936,7 @@
   , ["0x10", "on_cleanup", "void*"]
   , ["0x14", "list_node", "struct zUpdateFuncList"]
   , ["0x20", "ecx_arg_to_function", "void*"]
-  , ["0x24", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x24", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x24", "__end", null]
   ]
 
@@ -927,7 +951,7 @@
   [ ["0x0", "on_tick_list_head", "struct zUpdateFunc"]
   , ["0x24", "on_draw_list_head", "struct zUpdateFunc"]
   , ["0x48", "__unknown", null]
-  , ["0x4c", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0x4c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4c", "__end", null]
   ]
 
@@ -966,7 +990,7 @@
   , ["0x60", "field_60", "double"]
   , ["0x68", "field_68", "double"]
   , ["0x70", "__unknown", null]
-  , ["0xac", "__exact_size_known", "struct zCOMMENT [0]"]
+  , ["0xac", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xac", "__end", null]
   ]
 

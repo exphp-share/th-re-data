@@ -7,6 +7,7 @@
 , {"addr": "0x403d60", "name": "AsciiManager::on_tick", "comment": null}
 , {"addr": "0x403d80", "name": "AsciiManager::on_draw_4a", "comment": null}
 , {"addr": "0x403d90", "name": "AsciiManager::on_draw_2f", "comment": null}
+, {"addr": "0x4040e0", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x404db0", "name": "AsciiManager::on_tick__body", "comment": null}
 , {"addr": "0x405010", "name": "AnmVm::wipe", "comment": null}
 , {"addr": "0x405240", "name": "AnmVm::destructor", "comment": null}
@@ -64,15 +65,20 @@
 , {"addr": "0x40cf30", "name": "BombYoumu::method_c", "comment": null}
 , {"addr": "0x40cf40", "name": "BombYoumu::method_10", "comment": null}
 , {"addr": "0x40cf50", "name": "BombYoumu::method_14", "comment": null}
+, {"addr": "0x40cfc0", "name": "BulletManager::iter_start", "comment": null}
+, {"addr": "0x40cff0", "name": "BulletManager::iter_next", "comment": null}
 , {"addr": "0x40d090", "name": "BulletManager::constructor", "comment": null}
 , {"addr": "0x40d0d0", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x40d120", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x40d170", "name": "BulletManager::initialize", "comment": null}
 , {"addr": "0x40d7b0", "name": "BulletManager::destructor", "comment": null}
 , {"addr": "0x40d920", "name": "BulletManager::operator new", "comment": null}
+, {"addr": "0x40e360", "name": "BulletManager::on_tick__body", "comment": null}
+, {"addr": "0x40e4d0", "name": "BulletManager::on_draw__common", "comment": null}
 , {"addr": "0x40e780", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x40e7b0", "name": "BulletManager::on_draw_1f", "comment": null}
 , {"addr": "0x40e7e0", "name": "BulletManager::on_draw_10", "comment": null}
+, {"addr": "0x40e840", "name": "BulletManager::shoot_one", "comment": null}
 , {"addr": "0x4122b0", "name": "InterpFloat::reset_timer", "comment": null}
 , {"addr": "0x4129b0", "name": "Spellcard::initialize", "comment": null}
 , {"addr": "0x412b00", "name": "Spellcard::destructor", "comment": null}
@@ -106,6 +112,10 @@
 , {"addr": "0x418d30", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x418ef0", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x418f30", "name": "EnemyManager::on_draw", "comment": null}
+, {"addr": "0x4247b0", "name": "FpsCounter::initialize", "comment": null}
+, {"addr": "0x424870", "name": "FpsCounter::operator new", "comment": null}
+, {"addr": "0x424a90", "name": "FpsCounter::on_draw", "comment": null}
+, {"addr": "0x424b70", "name": "FpsCounter::on_draw__stub", "comment": null}
 , {"addr": "0x424f00", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x426250", "name": "Gui::destructor", "comment": null}
 , {"addr": "0x4264f0", "name": "Gui::operator new", "comment": null}
@@ -136,20 +146,27 @@
 , {"addr": "0x42ee90", "name": "ItemManager::on_draw__body", "comment": null}
 , {"addr": "0x42efb0", "name": "ItemManager::on_tick", "comment": null}
 , {"addr": "0x42eff0", "name": "ItemManager::on_draw", "comment": null}
-, {"addr": "0x42f020", "name": "spawn_item", "comment": null}
+, {"addr": "0x42f020", "name": "ItemManager::spawn_item", "comment": null}
 , {"addr": "0x42fa30", "name": "LaserManager::initialize", "comment": null}
 , {"addr": "0x42fb40", "name": "LaserManager::destructor", "comment": null}
 , {"addr": "0x42fc20", "name": "LaserManager::operator new", "comment": null}
 , {"addr": "0x42fcd0", "name": "LaserManager::on_tick__body", "comment": null}
 , {"addr": "0x42fe30", "name": "LaserManager::on_tick", "comment": null}
 , {"addr": "0x42fea0", "name": "LaserManager::on_draw", "comment": null}
+, {"addr": "0x42fed0", "name": "LaserManager::allocate_new_laser", "comment": null}
+, {"addr": "0x42ffd0", "name": "LaserLine::constructor", "comment": null}
+, {"addr": "0x430020", "name": "LaserInfinite::constructor", "comment": null}
+, {"addr": "0x430070", "name": "LaserBeam::constructor", "comment": null}
+, {"addr": "0x4300b0", "name": "LaserCurve::constructor", "comment": null}
 , {"addr": "0x4383a0", "name": "SpiritItemManager::constructor", "comment": null}
 , {"addr": "0x438400", "name": "SpiritItemManager::initialize", "comment": null}
 , {"addr": "0x438520", "name": "SpiritItemManager::destructor", "comment": null}
 , {"addr": "0x4385d0", "name": "SpiritItemManager::operator new", "comment": null}
 , {"addr": "0x438660", "name": "SpiritItemManager::on_tick__body", "comment": null}
+, {"addr": "0x438730", "name": "SpiritItem::on_tick", "comment": null}
 , {"addr": "0x438e70", "name": "SpiritItemManager::on_tick", "comment": null}
 , {"addr": "0x438eb0", "name": "SpiritItemManager::on_draw", "comment": null}
+, {"addr": "0x438ec0", "name": "SpiritItemManager::spawn_spirit", "comment": null}
 , {"addr": "0x439730", "name": "LoadingThread::thread_start", "comment": null}
 , {"addr": "0x4398e0", "name": "LoadingThread::initialize", "comment": null}
 , {"addr": "0x4399e0", "name": "LoadingThread::destructor", "comment": null}

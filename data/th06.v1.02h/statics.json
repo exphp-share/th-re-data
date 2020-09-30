@@ -1,8 +1,8 @@
-[ {"addr": "0x4105ef", "name": "lookup_table_4105ef", "type": "uint8_t [3]", "comment": null}
-, {"addr": "0x410678", "name": "lookup_table_410678", "type": "uint8_t [18]", "comment": null}
-, {"addr": "0x42310f", "name": "lookup_table_42310f", "type": "uint8_t [4]", "comment": null}
-, {"addr": "0x423194", "name": "lookup_table_423194", "type": "uint8_t [5]", "comment": null}
-, {"addr": "0x4231f5", "name": "lookup_table_4231f5", "type": "uint8_t [8]", "comment": null}
+[ {"addr": "0x4105ef", "name": "lookup_table_4105ef", "type": "uint8_t[0x3]", "comment": null}
+, {"addr": "0x410678", "name": "lookup_table_410678", "type": "uint8_t[0x12]", "comment": null}
+, {"addr": "0x42310f", "name": "lookup_table_42310f", "type": "uint8_t[0x4]", "comment": null}
+, {"addr": "0x423194", "name": "lookup_table_423194", "type": "uint8_t[0x5]", "comment": null}
+, {"addr": "0x4231f5", "name": "lookup_table_4231f5", "type": "uint8_t[0x8]", "comment": null}
 , {"addr": "0x46a2b4", "name": "float(16)", "type": "float", "comment": null}
 , {"addr": "0x46a2b8", "name": "float(14)", "type": "float", "comment": null}
 , {"addr": "0x46a2bc", "name": "float(8)", "type": "float", "comment": null}
@@ -101,7 +101,7 @@
 , {"addr": "0x69e268", "name": "ITEM_MANAGER", "type": "struct zItemManager", "comment": null}
 , {"addr": "0x6c6bb4", "name": "UNKNOWN_UPDATE_FUNC_6C6BB4", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x6c6bd4", "name": "WINDOW", "type": "struct zWindow", "comment": null}
-, {"addr": "0x6c6c08", "name": "ASCII_SPRINTF_BUFFER", "type": "char [256]", "comment": null}
+, {"addr": "0x6c6c08", "name": "ASCII_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
 , {"addr": "0x6c6d18", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x6c71f0", "name": "MUSIC_ROOM", "type": "struct zMusicRoom", "comment": null}
 , {"addr": "0x6ca628", "name": "PLAYER", "type": "struct zPlayer", "comment": null}

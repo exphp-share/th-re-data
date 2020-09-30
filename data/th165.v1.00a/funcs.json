@@ -5,6 +5,7 @@
 , {"addr": "0x402560", "name": "sub_402560_debug_thing", "comment": null}
 , {"addr": "0x402ac0", "name": "sub_402ac0_join_thread", "comment": null}
 , {"addr": "0x4078a0", "name": "AsciiManager::operator new", "comment": null}
+, {"addr": "0x408310", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x409040", "name": "AnmVm::destructor", "comment": null}
 , {"addr": "0x409080", "name": "AnmVm::constructor", "comment": null}
 , {"addr": "0x409390", "name": "Stage::initialize", "comment": null}
@@ -33,6 +34,7 @@
 , {"addr": "0x4174f0", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x417960", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x4179a0", "name": "EnemyManager::on_draw", "comment": null}
+, {"addr": "0x4241d0", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x424cf0", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x424ec0", "name": "Gui::on_tick_20", "comment": null}
 , {"addr": "0x425c80", "name": "Gui::on_tick_0c", "comment": null}
@@ -55,8 +57,11 @@
 , {"addr": "0x42bb00", "name": "ItemManager::operator new", "comment": null}
 , {"addr": "0x42c0d0", "name": "ItemManager::on_tick", "comment": null}
 , {"addr": "0x42c100", "name": "ItemManager::on_draw", "comment": null}
+, {"addr": "0x42c520", "name": "LaserBaseClass::constructor", "comment": null}
+, {"addr": "0x42c690", "name": "LaserLine::constructor", "comment": null}
 , {"addr": "0x42caa0", "name": "LaserManager::on_tick", "comment": null}
 , {"addr": "0x42cb10", "name": "LaserManager::on_draw", "comment": null}
+, {"addr": "0x42cb50", "name": "LaserManager::allocate_new_laser", "comment": null}
 , {"addr": "0x437f40", "name": "LoadingThread::thread_start", "comment": null}
 , {"addr": "0x4383e0", "name": "LoadingThread::on_tick", "comment": null}
 , {"addr": "0x4384c0", "name": "LoadingThread::on_draw", "comment": null}

@@ -1,13 +1,19 @@
 [ {"addr": "0x41bea4", "name": "float(-2.9700563e-20)_1", "type": "float", "comment": null}
+, {"addr": "0x470b0c", "name": "float(0.5)", "type": "float", "comment": null}
 , {"addr": "0x470dd8", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x473660", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x47476c", "name": "SHT_ON_INIT_FUNCS", "type": "void*[2]", "comment": null}
-, {"addr": "0x474778", "name": "SHT_ON_SHOT_FUNCS", "type": "void*[3]", "comment": null}
+, {"addr": "0x47476c", "name": "SHT_ON_INIT_FUNCS", "type": "void*[0x2]", "comment": null}
+, {"addr": "0x474778", "name": "SHT_ON_SHOT_FUNCS", "type": "void*[0x3]", "comment": null}
 , {"addr": "0x474c40", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
 , {"addr": "0x474c44", "name": "CURRENT_SCORE", "type": "int32_t", "comment": null}
 , {"addr": "0x474c48", "name": "CURRENT_POWER", "type": "uint16_t", "comment": null}
 , {"addr": "0x474c54", "name": "FAITH_TIMER", "type": "struct zTimer", "comment": null}
+, {"addr": "0x474e5c", "name": "INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x476f78", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
+, {"addr": "0x476fa0", "name": "__blargsb", "type": "float[0x2]", "comment": null}
+, {"addr": "0x476fa8", "name": "__blargsc", "type": "float[0x2]", "comment": null}
+, {"addr": "0x476fb0", "name": "__blargsa", "type": "float[0x2]", "comment": null}
+, {"addr": "0x476fb8", "name": "PLAYER_HITBOX_DIAMETER", "type": "float[0x2]", "comment": "Yes, these are diameters, not radii.  MoF's hitbox radii are 1 and 1.75.  I think this is half the size of most games?"}
 , {"addr": "0x4776e0", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
 , {"addr": "0x4776e4", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4776e8", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
@@ -20,7 +26,7 @@
 , {"addr": "0x477704", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
 , {"addr": "0x477708", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x47770c", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
-, {"addr": "0x477710", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x477710", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
 , {"addr": "0x477810", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
 , {"addr": "0x477814", "name": "HINT_MANAGER_PTR", "type": "struct zHintManager*", "comment": null}
 , {"addr": "0x477818", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
@@ -34,9 +40,10 @@
 , {"addr": "0x477844", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x47784c", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x491be4", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
-, {"addr": "0x491bf4", "name": "SHT_FUNC_3_FUNCS", "type": "void*[1]", "comment": null}
-, {"addr": "0x491bf8", "name": "SHT_ON_HIT_FUNCS", "type": "void*[1]", "comment": null}
+, {"addr": "0x491bf4", "name": "SHT_FUNC_3_FUNCS", "type": "void*[0x1]", "comment": null}
+, {"addr": "0x491bf8", "name": "SHT_ON_HIT_FUNCS", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x491c10", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x492274", "name": "CRITICAL_SECTION_UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x492590", "name": "SOUND_MANAGER", "type": "void", "comment": null}
+, {"addr": "0x4978c0", "name": "SPRITE_TEMP_BUFFER", "type": "int32_t", "comment": null}
 ]

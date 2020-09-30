@@ -1,26 +1,26 @@
 [ {"addr": "0x4274b9", "name": "float(2.0675518e+18)", "type": "float", "comment": null}
-, {"addr": "0x427b40", "name": "jump_table_427b40_int_global", "type": "uint32_t [102]", "comment": null}
-, {"addr": "0x46a2fc", "name": "anm_jump_table_from_neg_1__addresses", "type": "uint32_t [53]", "comment": null}
-, {"addr": "0x46a3d0", "name": "anm_jump_table_from_neg_1__indices", "type": "uint8_t [215]", "comment": null}
-, {"addr": "0x46a4a8", "name": "anm_jump_table_for_jmpDec__indices", "type": "uint32_t [8]", "comment": null}
-, {"addr": "0x46a4c8", "name": "anm_jump_table_for_jmpDec__addresses", "type": "uint8_t [30]", "comment": null}
-, {"addr": "0x46a4e8", "name": "anm_jump_table_from_301__addresses", "type": "uint32_t [81]", "comment": null}
-, {"addr": "0x46a62c", "name": "anm_jump_table_from_301__indices", "type": "uint8_t [313]", "comment": null}
+, {"addr": "0x427b40", "name": "jump_table_427b40_int_global", "type": "uint32_t[0x66]", "comment": null}
+, {"addr": "0x46a2fc", "name": "anm_jump_table_from_neg_1__addresses", "type": "uint32_t[0x35]", "comment": null}
+, {"addr": "0x46a3d0", "name": "anm_jump_table_from_neg_1__indices", "type": "uint8_t[0xd7]", "comment": null}
+, {"addr": "0x46a4a8", "name": "anm_jump_table_for_jmpDec__indices", "type": "uint32_t[0x8]", "comment": null}
+, {"addr": "0x46a4c8", "name": "anm_jump_table_for_jmpDec__addresses", "type": "uint8_t[0x1e]", "comment": null}
+, {"addr": "0x46a4e8", "name": "anm_jump_table_from_301__addresses", "type": "uint32_t[0x51]", "comment": null}
+, {"addr": "0x46a62c", "name": "anm_jump_table_from_301__indices", "type": "uint8_t[0x139]", "comment": null}
 , {"addr": "0x478f08", "name": "float(-2.1036966e-34)", "type": "float", "comment": null}
-, {"addr": "0x4a0da8", "name": "ITEM_ANM_SCRIPT_IDS", "type": "struct zInt2 [32]", "comment": null}
-, {"addr": "0x4a0f68", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[5]", "comment": null}
-, {"addr": "0x4a0f80", "name": "SHT_FUNCS_1", "type": "void*[7]", "comment": null}
-, {"addr": "0x4a0fa0", "name": "SHT_FUNCS_3", "type": "void*[7]", "comment": null}
-, {"addr": "0x4a0fc0", "name": "SHT_FUNCS_4", "type": "void*[6]", "comment": null}
-, {"addr": "0x4a0ff4", "name": "ANM_ON_TICK_FUNCS", "type": "void*[6]", "comment": null}
-, {"addr": "0x4a1174", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[4]", "comment": null}
-, {"addr": "0x4a1184", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[8]", "comment": null}
-, {"addr": "0x4a11a4", "name": "ANM_ON_DESTROY_FUNCS", "type": "void*[5]", "comment": null}
+, {"addr": "0x4a0da8", "name": "ITEM_ANM_SCRIPT_IDS", "type": "struct zInt2[0x20]", "comment": null}
+, {"addr": "0x4a0f68", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[0x5]", "comment": null}
+, {"addr": "0x4a0f80", "name": "SHT_FUNCS_1", "type": "void*[0x7]", "comment": null}
+, {"addr": "0x4a0fa0", "name": "SHT_FUNCS_3", "type": "void*[0x7]", "comment": null}
+, {"addr": "0x4a0fc0", "name": "SHT_FUNCS_4", "type": "void*[0x6]", "comment": null}
+, {"addr": "0x4a0ff4", "name": "ANM_ON_TICK_FUNCS", "type": "void*[0x6]", "comment": null}
+, {"addr": "0x4a1174", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[0x4]", "comment": null}
+, {"addr": "0x4a1184", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[0x8]", "comment": null}
+, {"addr": "0x4a11a4", "name": "ANM_ON_DESTROY_FUNCS", "type": "void*[0x5]", "comment": null}
 , {"addr": "0x4a13e4", "name": "VTABLE_BOMB_YOUMU", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4a1400", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4a141c", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4a1438", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x4a1680", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[6]", "comment": null}
+, {"addr": "0x4a1680", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[0x6]", "comment": null}
 , {"addr": "0x4a17e0", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a184c", "name": "VTABLE_LASER_BEAM", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a18b8", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": null}
@@ -254,15 +254,15 @@
 , {"addr": "0x4a3ea4", "name": "float(-999)", "type": "float", "comment": null}
 , {"addr": "0x4a3ea8", "name": "float(-5000)", "type": "float", "comment": null}
 , {"addr": "0x4a3eac", "name": "float(-999990)", "type": "float", "comment": null}
-, {"addr": "0x4a9740", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table [1]", "comment": null}
+, {"addr": "0x4a9740", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table[0x1]", "comment": null}
 , {"addr": "0x4a9760", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a9804", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x4aea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x4af3c0", "name": "BULLET_TYPE_DEFINITIONS", "type": "struct zTableBulletSpriteData [44]", "comment": null}
+, {"addr": "0x4af3c0", "name": "BULLET_TYPE_DEFINITIONS", "type": "struct zTableBulletSpriteData[0x2c]", "comment": null}
 , {"addr": "0x4b23e4", "name": "IS_ACHIEVEMENT_MODE", "type": "int32_t", "comment": null}
 , {"addr": "0x4b3230", "name": "INPUT_STRUCT", "type": "struct zInput", "comment": null}
 , {"addr": "0x4b5918", "name": "GAME_SPEED", "type": "float", "comment": null}
-, {"addr": "0x4b5920", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data [5]", "comment": null}
+, {"addr": "0x4b5920", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x5]", "comment": null}
 , {"addr": "0x4b59c0", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Okay, so I have to choose between type inference or being able\nto comment each global individually.  Thanks, Binary Ninja.\n\n- FLAGS: Bits 4 and 5 indicate whether this is spell practice or stage practice."}
 , {"addr": "0x4b5aa4", "name": "HYPER_TIMER", "type": "struct zTimer", "comment": null}
 , {"addr": "0x4b5ac4", "name": "data_4b5ac4_has_hyperdying_flag", "type": "int32_t", "comment": null}
@@ -291,7 +291,7 @@
 , {"addr": "0x4b76b4", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
 , {"addr": "0x4b76b8", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
 , {"addr": "0x4b76bc", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
-, {"addr": "0x4b76c0", "name": "CURRENT_REPLAY_FILENAME", "type": "char [256]", "comment": null}
+, {"addr": "0x4b76c0", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4b77c0", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
 , {"addr": "0x4b77cc", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
 , {"addr": "0x4b77d0", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
@@ -306,6 +306,6 @@
 , {"addr": "0x509aa8", "name": "CRITICAL_SECTION_509aa8", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x509b38", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x522574", "name": "ZERO_VEC3", "type": "struct zFloat3", "comment": null}
-, {"addr": "0x529f20", "name": "RENDERING_QUADRILATERAL_529f20", "type": "zRenderSpriteVertex [4]", "comment": null}
-, {"addr": "0x52a920", "name": "KEY_STATES", "type": "uint8_t [256]", "comment": null}
+, {"addr": "0x529f20", "name": "RENDERING_QUADRILATERAL_529f20", "type": "zRenderSpriteVertex[0x4]", "comment": null}
+, {"addr": "0x52a920", "name": "KEY_STATES", "type": "uint8_t[0x100]", "comment": null}
 ]

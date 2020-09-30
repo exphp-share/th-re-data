@@ -8,6 +8,7 @@
 , {"addr": "0x402f70", "name": "sub_402f70_opens_existing_file", "comment": null}
 , {"addr": "0x4032b0", "name": "sub_4032b0_opens_existing_file", "comment": null}
 , {"addr": "0x403490", "name": "sub_403490_logs_debug_strings", "comment": null}
+, {"addr": "0x403840", "name": "Rng::sub_403840", "comment": null}
 , {"addr": "0x403ee0", "name": "Thread::operator delete", "comment": null}
 , {"addr": "0x403f30", "name": "Thread::join_if_running", "comment": null}
 , {"addr": "0x404050", "name": "PosVel::update_secondary_fields", "comment": null}
@@ -15,6 +16,7 @@
 , {"addr": "0x407630", "name": "math_wrap_angle_407630", "comment": null}
 , {"addr": "0x4078a0", "name": "initialize_vector_without_destructor", "comment": null}
 , {"addr": "0x409040", "name": "Timer::set_value", "comment": null}
+, {"addr": "0x409a30", "name": "AnmVm::set_layer", "comment": null}
 , {"addr": "0x40b790", "name": "AnmVm::wipe_suffix", "comment": null}
 , {"addr": "0x40b880", "name": "AnmLoaded::copy_vm", "comment": null}
 , {"addr": "0x40be70", "name": "AsciiManager::constructor", "comment": null}
@@ -25,6 +27,7 @@
 , {"addr": "0x40c360", "name": "AsciiManager::on_draw_4e", "comment": null}
 , {"addr": "0x40c370", "name": "AsciiManager::on_draw_33", "comment": null}
 , {"addr": "0x40c380", "name": "AsciiManager::on_draw_3f", "comment": null}
+, {"addr": "0x40c800", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x40d680", "name": "AnmVm::wipe", "comment": null}
 , {"addr": "0x40d9f0", "name": "AnmVm::destructor", "comment": null}
 , {"addr": "0x40db10", "name": "AnmVm::constructor", "comment": null}
@@ -104,6 +107,7 @@
 , {"addr": "0x418d20", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x418d80", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x418e00", "name": "BulletManager::initialize", "comment": null}
+, {"addr": "0x418f40", "name": "BulletManager::destroy_all", "comment": null}
 , {"addr": "0x419090", "name": "BulletManager::destructor", "comment": null}
 , {"addr": "0x4191d0", "name": "BulletManager::operator new", "comment": null}
 , {"addr": "0x41a5b0", "name": "BulletManager::on_tick", "comment": null}
@@ -229,13 +233,19 @@
 , {"addr": "0x440760", "name": "ItemManager::on_draw__body", "comment": null}
 , {"addr": "0x440870", "name": "ItemManager::on_tick", "comment": null}
 , {"addr": "0x4408a0", "name": "ItemManager::on_draw", "comment": null}
-, {"addr": "0x441160", "name": "LaserManager::constructor", "comment": null}
+, {"addr": "0x4408d0", "name": "ItemManager::spawn_item", "comment": null}
+, {"addr": "0x441160", "name": "LaserBaseClass::constructor", "comment": null}
+, {"addr": "0x441300", "name": "LaserLine::constructor", "comment": null}
 , {"addr": "0x4415f0", "name": "LaserManager::initialize", "comment": null}
 , {"addr": "0x441670", "name": "LaserManager::destructor", "comment": null}
 , {"addr": "0x441730", "name": "LaserManager::operator new", "comment": null}
 , {"addr": "0x4417e0", "name": "LaserManager::on_tick__body", "comment": null}
 , {"addr": "0x441920", "name": "LaserManager::on_tick", "comment": null}
 , {"addr": "0x441990", "name": "LaserManager::on_draw", "comment": null}
+, {"addr": "0x4419d0", "name": "LaserManager::allocate_new_laser", "comment": null}
+, {"addr": "0x441b20", "name": "LaserInfinite::constructor", "comment": null}
+, {"addr": "0x441b70", "name": "LaserBeam::constructor", "comment": null}
+, {"addr": "0x441bb0", "name": "LaserCurve::constructor", "comment": null}
 , {"addr": "0x44bc00", "name": "LoadingThread::constructor", "comment": null}
 , {"addr": "0x44bd00", "name": "LoadingThread::thread_start", "comment": null}
 , {"addr": "0x44be50", "name": "LoadingThread::initialize", "comment": null}
@@ -348,7 +358,7 @@
 , {"addr": "0x460e20", "name": "MainMenu::on_draw", "comment": null}
 , {"addr": "0x460ea0", "name": "MainMenu::on_tick__stub", "comment": null}
 , {"addr": "0x460eb0", "name": "MainMenu::on_draw__stub", "comment": null}
-, {"addr": "0x471340", "name": "main", "comment": null}
+, {"addr": "0x471340", "name": "WinMain", "comment": null}
 , {"addr": "0x474a10", "name": "ScreenEffect::on_tick_474a10", "comment": null}
 , {"addr": "0x4751f0", "name": "ScreenEffect::operator new", "comment": null}
 , {"addr": "0x4752c0", "name": "ScreenEffect::initialize", "comment": null}
@@ -356,13 +366,15 @@
 , {"addr": "0x476360", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x476400", "name": "SoundManager::play_sound_at_position", "comment": null}
 , {"addr": "0x476570", "name": "SoundManager::update_sound_thread", "comment": null}
-, {"addr": "0x477160", "name": "AnmLoaded::init_matrices_with_scale_factors", "comment": null}
+, {"addr": "0x477160", "name": "AnmLoaded::set_sprite", "comment": null}
+, {"addr": "0x477aa0", "name": "AnmVm::get_int_var", "comment": null}
 , {"addr": "0x477e10", "name": "AnmVm::run", "comment": null}
 , {"addr": "0x47e3f0", "name": "AnmManager::flush_sprites", "comment": null}
 , {"addr": "0x480ae0", "name": "AnmManager::sub_480ae0_d3d", "comment": null}
 , {"addr": "0x4811d0", "name": "AnmManager::sub_4811d0", "comment": null}
 , {"addr": "0x481690", "name": "AnmManager::sub_481690", "comment": null}
 , {"addr": "0x4817d0", "name": "AnmManager::draw_vm", "comment": null}
+, {"addr": "0x482b20", "name": "AnmVm::after_set_type_10", "comment": null}
 , {"addr": "0x483100", "name": "AnmManager::initialize", "comment": null}
 , {"addr": "0x484530", "name": "AnmFastVm::constructor", "comment": null}
 , {"addr": "0x484540", "name": "AnmFastVm::destructor", "comment": null}

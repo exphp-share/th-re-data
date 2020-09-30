@@ -10,10 +10,12 @@
 , "FILETIME": {"def": "struct _FILETIME FILETIME", "size": 8}
 , "GUID": {"def": "struct _GUID GUID", "size": 16}
 , "HANDLE": {"def": "void*", "size": 4}
+, "HDC": {"def": "struct HDC__*", "size": 4}
 , "HGLOBAL": {"def": "HANDLE HGLOBAL", "size": 4}
 , "HINSTANCE": {"def": "struct HINSTANCE__*", "size": 4}
 , "HKEY": {"def": "struct HKEY__*", "size": 4}
 , "HMODULE": {"def": "HINSTANCE HMODULE", "size": 4}
+, "HMONITOR": {"def": "struct HMONITOR__*", "size": 4}
 , "HRESULT": {"def": "int32_t", "size": 4}
 , "HRSRC": {"def": "HANDLE HRSRC", "size": 4}
 , "HWND": {"def": "struct HWND__*", "size": 4}

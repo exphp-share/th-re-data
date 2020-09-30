@@ -1,5 +1,5 @@
 { "BITMAPFILEHEADER": 
-  [ ["0x0", "bfType", "char [2]"]
+  [ ["0x0", "bfType", "char[0x2]"]
   , ["0x2", "__unknown", null]
   , ["0x4", "bfSize", "DWORD"]
   , ["0x8", "bfReserved1", "WORD"]
@@ -24,7 +24,7 @@
   ]
 
 , "COFF_Header": 
-  [ ["0x0", "magic", "char [4]"]
+  [ ["0x0", "magic", "char[0x4]"]
   , ["0x4", "machine", "enum coff_machine"]
   , ["0x6", "numberOfSections", "uint16_t"]
   , ["0x8", "timeDateStamp", "uint32_t"]
@@ -46,9 +46,9 @@
   ]
 
 , "D3DADAPTER_IDENTIFIER9": 
-  [ ["0x0", "Driver", "char [512]"]
-  , ["0x200", "Description", "char [512]"]
-  , ["0x400", "DeviceName", "char [32]"]
+  [ ["0x0", "Driver", "char[0x200]"]
+  , ["0x200", "Description", "char[0x200]"]
+  , ["0x400", "DeviceName", "char[0x20]"]
   , ["0x420", "DriverVersion", "struct LARGE_INTEGER"]
   , ["0x428", "VendorId", "uint32_t"]
   , ["0x42c", "DeviceId", "uint32_t"]
@@ -181,9 +181,9 @@
   ]
 
 , "D3DGAMMARAMP": 
-  [ ["0x0", "red", "uint16_t [256]"]
-  , ["0x200", "green", "uint16_t [256]"]
-  , ["0x400", "blue", "uint16_t [256]"]
+  [ ["0x0", "red", "uint16_t[0x100]"]
+  , ["0x200", "green", "uint16_t[0x100]"]
+  , ["0x400", "blue", "uint16_t[0x100]"]
   , ["0x600", "__end", null]
   ]
 
@@ -413,8 +413,8 @@
   , ["0x4", "guidInstance", "GUID"]
   , ["0x14", "guidProduct", "GUID"]
   , ["0x24", "dwDevType", "DWORD"]
-  , ["0x28", "tszInstanceName", "CHAR [260]"]
-  , ["0x12c", "tszProductName", "CHAR [260]"]
+  , ["0x28", "tszInstanceName", "CHAR[0x104]"]
+  , ["0x12c", "tszProductName", "CHAR[0x104]"]
   , ["0x230", "guidFFDriver", "GUID"]
   , ["0x240", "wUsagePage", "WORD"]
   , ["0x242", "wUsage", "WORD"]
@@ -427,7 +427,7 @@
   , ["0x14", "dwOfs", "DWORD"]
   , ["0x18", "dwType", "DWORD"]
   , ["0x1c", "dwFlags", "DWORD"]
-  , ["0x20", "tszName", "CHAR [260]"]
+  , ["0x20", "tszName", "CHAR[0x104]"]
   , ["0x124", "dwFFMaxForce", "DWORD"]
   , ["0x128", "dwFFForceResolution", "DWORD"]
   , ["0x12c", "wCollectionNumber", "WORD"]
@@ -449,7 +449,7 @@
   ]
 
 , "DOS_Header": 
-  [ ["0x0", "e_magic", "char [2]"]
+  [ ["0x0", "e_magic", "char[0x2]"]
   , ["0x2", "e_cblp", "uint16_t"]
   , ["0x4", "e_cp", "uint16_t"]
   , ["0x6", "e_crlc", "uint16_t"]
@@ -463,10 +463,10 @@
   , ["0x16", "e_cs", "uint16_t"]
   , ["0x18", "e_lfarlc", "uint16_t"]
   , ["0x1a", "e_ovno", "uint16_t"]
-  , ["0x1c", "e_res1", "char [8]"]
+  , ["0x1c", "e_res1", "char[0x8]"]
   , ["0x24", "e_oemid", "uint16_t"]
   , ["0x26", "e_oeminfo", "uint16_t"]
-  , ["0x28", "e_res2", "char [20]"]
+  , ["0x28", "e_res2", "char[0x14]"]
   , ["0x3c", "e_lfanew", "uint32_t"]
   , ["0x40", "__end", null]
   ]
@@ -477,7 +477,7 @@
 
 , "HINSTANCERGNDATA": 
   [ ["0x0", "rdh", "struct HINSTANCERGNDATAHEADER"]
-  , ["0x20", "Buffer", "char [1]"]
+  , ["0x20", "Buffer", "char[0x1]"]
   , ["0x21", "__end", null]
   ]
 
@@ -975,7 +975,7 @@
 , "JOYCAPSA": 
   [ ["0x0", "wMid", "WORD"]
   , ["0x2", "wPid", "WORD"]
-  , ["0x4", "szPname", "CHAR [32]"]
+  , ["0x4", "szPname", "CHAR[0x20]"]
   , ["0x24", "wXmin", "UINT"]
   , ["0x28", "wXmax", "UINT"]
   , ["0x2c", "wYmin", "UINT"]
@@ -995,8 +995,8 @@
   , ["0x64", "wMaxAxes", "UINT"]
   , ["0x68", "wNumAxes", "UINT"]
   , ["0x6c", "wMaxButtons", "UINT"]
-  , ["0x70", "szRegKey", "CHAR [32]"]
-  , ["0x90", "szOEMVxD", "CHAR [260]"]
+  , ["0x70", "szRegKey", "CHAR[0x20]"]
+  , ["0x90", "szOEMVxD", "CHAR[0x104]"]
   , ["0x194", "__end", null]
   ]
 
@@ -1116,7 +1116,7 @@
 
 , "Rich_Header": 
   [ ["0x0", "e_magic__DanS", "uint32_t"]
-  , ["0x4", "e_align", "uint32_t [3]"]
+  , ["0x4", "e_align", "uint32_t[0x3]"]
   , ["0x10", "e_entry_id0__00984e93", "uint32_t"]
   , ["0x14", "e_entry_count0__1", "uint32_t"]
   , ["0x18", "e_entry_id1__009e766f", "uint32_t"]
@@ -1145,13 +1145,13 @@
   , ["0x74", "e_entry_count12__1", "uint32_t"]
   , ["0x78", "e_entry_id13__009d766f", "uint32_t"]
   , ["0x7c", "e_entry_count13__1", "uint32_t"]
-  , ["0x80", "e_magic", "char [4]"]
+  , ["0x80", "e_magic", "char[0x4]"]
   , ["0x84", "e_checksum", "uint32_t"]
   , ["0x88", "__end", null]
   ]
 
 , "Section_Header": 
-  [ ["0x0", "name", "char [8]"]
+  [ ["0x0", "name", "char[0x8]"]
   , ["0x8", "virtualSize", "uint32_t"]
   , ["0xc", "virtualAddress", "uint32_t"]
   , ["0x10", "sizeOfRawData", "uint32_t"]
@@ -1178,8 +1178,8 @@
   , ["0x20", "nFileSizeLow", "DWORD"]
   , ["0x24", "dwReserved0", "DWORD"]
   , ["0x28", "dwReserved1", "DWORD"]
-  , ["0x2c", "cFileName", "CHAR [260]"]
-  , ["0x130", "cAlternateFileName", "CHAR [14]"]
+  , ["0x2c", "cFileName", "CHAR[0x104]"]
+  , ["0x130", "cAlternateFileName", "CHAR[0xe]"]
   , ["0x13e", "__unknown", null]
   , ["0x140", "dwFileType", "DWORD"]
   , ["0x144", "dwCreatorType", "DWORD"]
@@ -1197,7 +1197,7 @@
   [ ["0x0", "Data1", "DWORD"]
   , ["0x4", "Data2", "WORD"]
   , ["0x6", "Data3", "WORD"]
-  , ["0x8", "Data4", "BYTE [8]"]
+  , ["0x8", "Data4", "BYTE[0x8]"]
   , ["0x10", "__end", null]
   ]
 

@@ -47,6 +47,7 @@
 , {"addr": "0x4073a0", "name": "EnemyManager::get_anim_slot", "comment": null}
 , {"addr": "0x407b80", "name": "AsciiManager::operator new", "comment": null}
 , {"addr": "0x408050", "name": "AsciiManager::on_tick", "comment": null}
+, {"addr": "0x408530", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x409510", "name": "AnmVm::sub_409510__resets_a_ton_of_stuff", "comment": null}
 , {"addr": "0x4097d0", "name": "AnmVm::destructor", "comment": null}
 , {"addr": "0x409830", "name": "AnmVm::destructor_stub", "comment": null}
@@ -139,25 +140,26 @@
 , {"addr": "0x4144f0", "name": "cartesian_from_polar_4144f0", "comment": null}
 , {"addr": "0x414560", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x414650", "name": "Bullet::destructor", "comment": null}
+, {"addr": "0x414660", "name": "BulletManager::destroy_all", "comment": null}
 , {"addr": "0x4147c0", "name": "BulletManager::operator new", "comment": null}
 , {"addr": "0x4149b0", "name": "BulletManager::operator delete", "comment": null}
 , {"addr": "0x414ae0", "name": "Bullet::on_tick", "comment": null}
 , {"addr": "0x415410", "name": "Bullet::check_player_collision", "comment": null}
-, {"addr": "0x4155f0", "name": "Bullet::sub_4155f0", "comment": null}
+, {"addr": "0x4155f0", "name": "Bullet::delete", "comment": null}
 , {"addr": "0x415770", "name": "BulletManager::on_tick__body", "comment": null}
 , {"addr": "0x415980", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x4159b0", "name": "BulletManager::on_draw", "comment": null}
-, {"addr": "0x415ae0", "name": "BulletManager::shoot_one_bullet", "comment": null}
+, {"addr": "0x415ae0", "name": "BulletManager::shoot_one", "comment": null}
 , {"addr": "0x4165b0", "name": "Bullet::run_et_ex", "comment": null}
 , {"addr": "0x4182d0", "name": "BulletManager::shoot_bullets", "comment": null}
-, {"addr": "0x4183f0", "name": "Bullet::step_ex_accel_00000004", "comment": null}
-, {"addr": "0x418610", "name": "Bullet::step_ex_veltime_00200000", "comment": null}
-, {"addr": "0x418800", "name": "Bullet::step_ex_angleaccel_00000008", "comment": null}
-, {"addr": "0x418990", "name": "Bullet::step_ex_angle_00000010", "comment": null}
-, {"addr": "0x418b80", "name": "Bullet::step_ex_bounce_00000040", "comment": null}
-, {"addr": "0x419090", "name": "Bullet::step_ex_unused30_40000000", "comment": null}
-, {"addr": "0x419330", "name": "Bullet::step_ex_move_00020000", "comment": null}
-, {"addr": "0x419590", "name": "Bullet::step_ex_offscreen_00000100", "comment": null}
+, {"addr": "0x4183f0", "name": "Bullet::step_ex_02_accel", "comment": null}
+, {"addr": "0x418610", "name": "Bullet::step_ex_21_veltime", "comment": null}
+, {"addr": "0x418800", "name": "Bullet::step_ex_03_angleaccel", "comment": null}
+, {"addr": "0x418990", "name": "Bullet::step_ex_04_turn", "comment": null}
+, {"addr": "0x418b80", "name": "Bullet::step_ex_06_bounce", "comment": null}
+, {"addr": "0x419090", "name": "Bullet::step_ex_30", "comment": null}
+, {"addr": "0x419330", "name": "Bullet::step_ex_17_move", "comment": null}
+, {"addr": "0x419590", "name": "Bullet::step_ex_08_offscreen", "comment": null}
 , {"addr": "0x419ac0", "name": "Bullet::cancel", "comment": null}
 , {"addr": "0x419c30", "name": "gen_items_from_et_cancel", "comment": null}
 , {"addr": "0x419cf0", "name": "cancel_bullets_in_radius", "comment": null}
@@ -204,7 +206,7 @@
 , {"addr": "0x41dd20", "name": "EnemyManager::sub_41dd20", "comment": null}
 , {"addr": "0x41dd60", "name": "EnemyManager::sub_41dd60", "comment": null}
 , {"addr": "0x41ddd0", "name": "find_enemy_full_by_id", "comment": null}
-, {"addr": "0x41e060", "name": "Laser::sub_41e060", "comment": null}
+, {"addr": "0x41e060", "name": "Laser::set_speed", "comment": null}
 , {"addr": "0x41e080", "name": "LaserCurveInner::constructor", "comment": null}
 , {"addr": "0x41e0f0", "name": "LaserManager::find_laser_by_id", "comment": null}
 , {"addr": "0x41e140", "name": "EnemyManager::allocate_new_enemy", "comment": null}
@@ -266,6 +268,7 @@
 , {"addr": "0x429e70", "name": "sub_429e70_disabled_log_function", "comment": null}
 , {"addr": "0x429e80", "name": "PosVel::set_pos", "comment": null}
 , {"addr": "0x429ea0", "name": "cartesian_from_polar_429ea0", "comment": null}
+, {"addr": "0x429f30", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x42b010", "name": "Gui::destructor", "comment": null}
 , {"addr": "0x42b290", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x42d200", "name": "Gui::on_tick__stub", "comment": null}
@@ -334,7 +337,7 @@
 , {"addr": "0x435400", "name": "LaserManager::on_tick__body", "comment": null}
 , {"addr": "0x435510", "name": "LaserManager::on_tick", "comment": null}
 , {"addr": "0x435580", "name": "LaserManager::on_draw", "comment": null}
-, {"addr": "0x4355c0", "name": "Laser::operator new", "comment": null}
+, {"addr": "0x4355c0", "name": "LaserManager::allocate_new_laser", "comment": null}
 , {"addr": "0x4359b0", "name": "LaserManager::cancel_in_rectangle", "comment": null}
 , {"addr": "0x435a40", "name": "LaserManager::ecl_545_impl__cancels_all", "comment": null}
 , {"addr": "0x435ab0", "name": "LaserManager::cancel_in_radius", "comment": null}
@@ -417,11 +420,13 @@
 , {"addr": "0x4463f0", "name": "Player::initialize", "comment": null}
 , {"addr": "0x446d90", "name": "Player::operator new", "comment": null}
 , {"addr": "0x446ea0", "name": "Player::operator delete", "comment": null}
+, {"addr": "0x446ff0", "name": "Player::move", "comment": null}
 , {"addr": "0x447970", "name": "Player::on_tick", "comment": null}
 , {"addr": "0x448ce0", "name": "Player::on_tick__stub", "comment": null}
 , {"addr": "0x448cf0", "name": "Player::on_draw", "comment": null}
 , {"addr": "0x448ef0", "name": "Bullet::try_kill_player", "comment": null}
 , {"addr": "0x449420", "name": "Player::die", "comment": null}
+, {"addr": "0x4495e0", "name": "Player::cancel_impending_death", "comment": null}
 , {"addr": "0x449c80", "name": "Player::create_damage_source_449c80", "comment": null}
 , {"addr": "0x449de0", "name": "Player::sub_449de0_creates_damage_source", "comment": null}
 , {"addr": "0x449fa0", "name": "Player::do_graze", "comment": null}
@@ -506,7 +511,7 @@
 , {"addr": "0x46c540", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
 , {"addr": "0x46d050", "name": "sub_46d050__render_init", "comment": null}
 , {"addr": "0x46d0a0", "name": "AnmManager::flush_sprites", "comment": null}
-, {"addr": "0x46d170", "name": "AnmManager::sub_46d170__render_quadrilateral", "comment": null}
+, {"addr": "0x46d170", "name": "AnmManager::write_sprite", "comment": null}
 , {"addr": "0x46d260", "name": "AnmVm::sub_46d260", "comment": null}
 , {"addr": "0x46d6d0", "name": "AnmVm::sub_46d6d0", "comment": null}
 , {"addr": "0x46da20", "name": "AnmManager::render_sub_46da20", "comment": null}

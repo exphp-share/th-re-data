@@ -30,12 +30,12 @@
 , {"addr": "0x498ac0", "name": "float(160)", "type": "float", "comment": null}
 , {"addr": "0x498ac4", "name": "float(57)", "type": "float", "comment": null}
 , {"addr": "0x498b58", "name": "float(1e-05)", "type": "float", "comment": null}
-, {"addr": "0x49c000", "name": "LIFE_BEFORE_MAIN", "type": "void*[44]", "comment": null}
+, {"addr": "0x49c000", "name": "LIFE_BEFORE_MAIN", "type": "void*[0x2c]", "comment": null}
 , {"addr": "0x49fbf0", "name": "UNKNOWN_GLOBAL_T", "type": "void", "comment": null}
 , {"addr": "0x49fc88", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
 , {"addr": "0x49fe20", "name": "REPLAY_RNG", "type": "void", "comment": null}
 , {"addr": "0x4b9e44", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4b9fa8", "name": "SPRITE_TEMP_VERTEX_BUFFER", "type": "struct zRenderVertex144 [4]", "comment": null}
+, {"addr": "0x4b9fa8", "name": "SPRITE_TEMP_VERTEX_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
 , {"addr": "0x4ba0d8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
 , {"addr": "0x4bdad8", "name": "PLAYER", "type": "struct zPlayer", "comment": null}
 , {"addr": "0x575950", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}

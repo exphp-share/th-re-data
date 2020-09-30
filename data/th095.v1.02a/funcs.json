@@ -4,6 +4,7 @@
 , {"addr": "0x401280", "name": "AsciiManager::initialize", "comment": null}
 , {"addr": "0x401360", "name": "AsciiManager::on_registration", "comment": null}
 , {"addr": "0x4013f0", "name": "AsciiManager::on_cleanup", "comment": null}
+, {"addr": "0x401610", "name": "AsciiManager::drawf_left", "comment": null}
 , {"addr": "0x401eb0", "name": "AnmVm::constructor", "comment": null}
 , {"addr": "0x4020c0", "name": "Stage::constructor", "comment": null}
 , {"addr": "0x4024a0", "name": "Stage::initialize", "comment": null}
@@ -20,10 +21,12 @@
 , {"addr": "0x408850", "name": "Spellcard::operator new", "comment": null}
 , {"addr": "0x408c60", "name": "Spellcard::on_tick_10", "comment": null}
 , {"addr": "0x408cb0", "name": "Spellcard::on_draw_13", "comment": null}
+, {"addr": "0x408e70", "name": "ecl_run", "comment": null}
 , {"addr": "0x412180", "name": "sub_412180_debug_log", "comment": null}
 , {"addr": "0x4149f0", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x415040", "name": "Enemy::constructor", "comment": null}
 , {"addr": "0x4152d0", "name": "Enemy::destructor", "comment": null}
+, {"addr": "0x415970", "name": "EnemyManager::on_tick__body", "comment": null}
 , {"addr": "0x416290", "name": "EnemyManager::on_tick_0c", "comment": null}
 , {"addr": "0x4162f0", "name": "EnemyManager::on_draw_0a", "comment": null}
 , {"addr": "0x417070", "name": "Gui::constructor", "comment": null}

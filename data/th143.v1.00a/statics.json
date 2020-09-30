@@ -1,4 +1,8 @@
-[ {"addr": "0x4d3e40", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+[ {"addr": "0x4c5da0", "name": "VTABLE_LASER_CURVE", "type": "void*[0x19]", "comment": null}
+, {"addr": "0x4c5e08", "name": "VTABLE_LASER_BEAM", "type": "void*[0x19]", "comment": null}
+, {"addr": "0x4c5e70", "name": "VTABLE_LASER_INFINITE", "type": "void*[0x19]", "comment": null}
+, {"addr": "0x4c5ed8", "name": "VTABLE_LASER_LINE", "type": "void*[0x19]", "comment": null}
+, {"addr": "0x4d3e40", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4e40b0", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
 , {"addr": "0x4e69f4", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
 , {"addr": "0x4e69f8", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
@@ -25,6 +29,6 @@
 , {"addr": "0x4e6ba8", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4e6bb4", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4e6bc8", "name": "TUTORIAL_PTR", "type": "struct zTutorial*", "comment": null}
-, {"addr": "0x538de8", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x538de8", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x5390a0", "name": "WINDOW", "type": "void", "comment": null}
 ]

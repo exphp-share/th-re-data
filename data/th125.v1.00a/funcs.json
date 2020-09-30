@@ -5,6 +5,7 @@
 , {"addr": "0x4014d0", "name": "AsciiManager::on_tick", "comment": null}
 , {"addr": "0x4014f0", "name": "AsciiManager::on_draw_48", "comment": null}
 , {"addr": "0x401500", "name": "AsciiManager::on_draw_2e__stub", "comment": null}
+, {"addr": "0x401830", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x4018b0", "name": "AsciiManager::render_group", "comment": null}
 , {"addr": "0x402650", "name": "AsciiManager::on_draw_2e", "comment": null}
 , {"addr": "0x403140", "name": "AnmVm::destructor", "comment": null}
@@ -23,17 +24,21 @@
 , {"addr": "0x4073c0", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x407410", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x407450", "name": "BulletManager::initialize", "comment": null}
+, {"addr": "0x407550", "name": "BulletManager::destroy_all", "comment": null}
 , {"addr": "0x4075f0", "name": "BulletManager::destructor", "comment": null}
 , {"addr": "0x407710", "name": "BulletManager::operator new", "comment": null}
-, {"addr": "0x408740", "name": "BulletManager::on_tick__stub", "comment": null}
+, {"addr": "0x408740", "name": "BulletManager::on_tick__body", "comment": null}
 , {"addr": "0x408950", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x408980", "name": "BulletManager::on_draw", "comment": null}
+, {"addr": "0x4089b0", "name": "BulletManager::shoot_one", "comment": null}
 , {"addr": "0x40c8d0", "name": "Spellcard::initialize", "comment": null}
 , {"addr": "0x40ca10", "name": "Spellcard::destructor", "comment": null}
 , {"addr": "0x40caf0", "name": "Spellcard::operator new", "comment": null}
 , {"addr": "0x40cb90", "name": "Spellcard::on_tick", "comment": null}
 , {"addr": "0x40cee0", "name": "Spellcard::on_tick__stub", "comment": null}
 , {"addr": "0x40cef0", "name": "Spellcard::on_draw", "comment": null}
+, {"addr": "0x40d370", "name": "ItemManager::destroy_all", "comment": null}
+, {"addr": "0x40d410", "name": "EnemyManager::destroy_all", "comment": null}
 , {"addr": "0x40d510", "name": "DebugSprtView::constructor", "comment": null}
 , {"addr": "0x40d5b0", "name": "DebugSprtView::initialize", "comment": null}
 , {"addr": "0x40d680", "name": "DebugSprtView::destructor", "comment": null}
@@ -47,6 +52,7 @@
 , {"addr": "0x40e600", "name": "EffectManager::operator new", "comment": null}
 , {"addr": "0x40e6c0", "name": "EffectManager::on_tick__stub", "comment": null}
 , {"addr": "0x40e6d0", "name": "EffectManager::on_draw__stub", "comment": null}
+, {"addr": "0x40f640", "name": "ItemManager::set_ecl_461", "comment": null}
 , {"addr": "0x410580", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x410850", "name": "EnemyManager::destructor", "comment": null}
 , {"addr": "0x410a20", "name": "EnemyManager::operator new", "comment": null}
@@ -54,7 +60,8 @@
 , {"addr": "0x410b50", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x410b90", "name": "EnemyManager::on_draw__stub", "comment": null}
 , {"addr": "0x411210", "name": "Enemy::on_tick", "comment": null}
-, {"addr": "0x413110", "name": "Enemy::ecl_run_over_", "comment": null}
+, {"addr": "0x413110", "name": "Enemy::ecl_run_over_256", "comment": null}
+, {"addr": "0x418c50", "name": "ecl_get_float", "comment": null}
 , {"addr": "0x419f00", "name": "InterpFloat2::step", "comment": null}
 , {"addr": "0x41ac10", "name": "FpsCounter::initialize", "comment": null}
 , {"addr": "0x41ac70", "name": "FpsCounter::destructor", "comment": null}
@@ -69,6 +76,7 @@
 , {"addr": "0x41bd60", "name": "Gui::on_draw__body", "comment": null}
 , {"addr": "0x41bed0", "name": "Gui::on_tick", "comment": null}
 , {"addr": "0x41bef0", "name": "Gui::on_draw", "comment": null}
+, {"addr": "0x41d050", "name": "LaserManager::destroy_all", "comment": null}
 , {"addr": "0x41d190", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x41d570", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x41d940", "name": "GameThread::operator new", "comment": null}
@@ -82,15 +90,19 @@
 , {"addr": "0x41ea80", "name": "HelpManual::on_tick", "comment": null}
 , {"addr": "0x41eec0", "name": "HelpManual::on_tick__stub", "comment": null}
 , {"addr": "0x41eed0", "name": "HelpManual::on_draw", "comment": null}
+, {"addr": "0x41efe0", "name": "Player::get_camera_charge", "comment": null}
+, {"addr": "0x41eff0", "name": "Player::add_to_camera_charge", "comment": null}
+, {"addr": "0x41f040", "name": "ItemManager::constructor", "comment": null}
 , {"addr": "0x41f080", "name": "Item::constructor", "comment": null}
 , {"addr": "0x41f0a0", "name": "Item::destructor", "comment": null}
 , {"addr": "0x41f0d0", "name": "ItemManager::initialize", "comment": null}
 , {"addr": "0x41f1b0", "name": "ItemManager::destructor", "comment": null}
 , {"addr": "0x41f2d0", "name": "ItemManager::operator new", "comment": null}
-, {"addr": "0x41f3e0", "name": "ItemManager::on_tick__stub", "comment": null}
-, {"addr": "0x41f850", "name": "ItemManager::on_draw__stub", "comment": null}
+, {"addr": "0x41f3e0", "name": "ItemManager::on_tick__body", "comment": null}
+, {"addr": "0x41f850", "name": "ItemManager::on_draw__body", "comment": null}
 , {"addr": "0x41f9d0", "name": "ItemManager::on_tick", "comment": null}
 , {"addr": "0x41fa00", "name": "ItemManager::on_draw", "comment": null}
+, {"addr": "0x41fa20", "name": "ItemManager::spawn_item", "comment": null}
 , {"addr": "0x41ff80", "name": "LaserManager::initialize", "comment": null}
 , {"addr": "0x420080", "name": "LaserManager::destructor", "comment": null}
 , {"addr": "0x420170", "name": "LaserManager::operator new", "comment": null}
@@ -98,6 +110,10 @@
 , {"addr": "0x420350", "name": "LaserManager::on_draw__stub", "comment": null}
 , {"addr": "0x420380", "name": "LaserManager::on_tick", "comment": null}
 , {"addr": "0x4203e0", "name": "LaserManager::on_draw", "comment": null}
+, {"addr": "0x420400", "name": "LaserManager::allocate_new_laser", "comment": null}
+, {"addr": "0x4204d0", "name": "LaserLine::constructor", "comment": null}
+, {"addr": "0x420510", "name": "LaserInfinite::constructor", "comment": null}
+, {"addr": "0x420560", "name": "LaserCurve::constructor", "comment": null}
 , {"addr": "0x4286f0", "name": "LoadingThread::initialize", "comment": null}
 , {"addr": "0x4287e0", "name": "LoadingThread::destructor", "comment": null}
 , {"addr": "0x4289a0", "name": "LoadingThread::operator new", "comment": null}
