@@ -2,6 +2,8 @@ Exported reverse engineering data from binja for various Touhou games.  Binja do
 
 The primary product here is [this file of struct fields for TH16](data/th16.v1.00a/type-structs-own.json).
 
+**Note:** Currently there are *many* things that are better documented in one of the other games, and there is currently no single game whose files I would say paint a complete picture of my current understanding of how the games work.  So browse around!  Someday I may return to TH16 (or TH17) and try to add all the stuff I labeled in other games.
+
 The notable files for each game:
 
 * **`type-structs-own.json`** — WIP struct defs
