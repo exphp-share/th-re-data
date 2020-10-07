@@ -24,6 +24,8 @@
 , {"addr": "0x4b8a7c", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
 , {"addr": "0x4b8a80", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4b8a84", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
+, {"addr": "0x4b8a88", "name": "SCOREFILE_PTR", "type": "struct zScorefile*", "comment": null}
+, {"addr": "0x4b8a8c", "name": "DEBUG_SOUND_TEST_PTR", "type": "struct zDebugSoundTest*", "comment": null}
 , {"addr": "0x4b8a90", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4b8a94", "name": "DEBUG_SPT_TEST", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4b8a9c", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}

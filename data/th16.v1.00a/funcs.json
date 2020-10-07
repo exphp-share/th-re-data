@@ -10,12 +10,15 @@
 , {"addr": "0x401280", "name": "UpdateFuncRegistry::initialize", "comment": null}
 , {"addr": "0x401300", "name": "register__on_tick", "comment": null}
 , {"addr": "0x4013b0", "name": "register__on_draw", "comment": null}
-, {"addr": "0x401460", "name": "call_all_on_tick_functions", "comment": null}
-, {"addr": "0x4015a0", "name": "call_all_on_draw_functions", "comment": null}
+, {"addr": "0x401460", "name": "UpdateFuncRegistry::run_all_on_tick", "comment": null}
+, {"addr": "0x4015a0", "name": "UpdateFuncRegistry::run_all_on_draw", "comment": null}
 , {"addr": "0x4016b0", "name": "UpdateFuncRegistry::unregister_all_in_list", "comment": null}
 , {"addr": "0x401730", "name": "UpdateFunc::operator new", "comment": null}
 , {"addr": "0x4017a0", "name": "UpdateFuncRegistry::unregister", "comment": null}
+, {"addr": "0x401850", "name": "get_joypad_capabilities", "comment": null}
+, {"addr": "0x4018e0", "name": "Supervisor::read_joypad_input_to_integer", "comment": null}
 , {"addr": "0x401d50", "name": "Supervisor::read_keyboard_input", "comment": null}
+, {"addr": "0x4021a0", "name": "clear_all_keydown_states", "comment": null}
 , {"addr": "0x402220", "name": "zun_decrypt", "comment": null}
 , {"addr": "0x402330", "name": "zun_encrypt", "comment": null}
 , {"addr": "0x402440", "name": "reads_file_into_new_allocation_402440", "comment": null}
@@ -210,16 +213,17 @@
 , {"addr": "0x411940", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x4119b0", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x411a30", "name": "BulletManager::initialize", "comment": null}
+, {"addr": "0x411b70", "name": "BulletManager::destroy_all", "comment": null}
 , {"addr": "0x411ca0", "name": "BulletManager::destructor", "comment": null}
 , {"addr": "0x411dd0", "name": "BulletManager::operator new", "comment": null}
 , {"addr": "0x411e70", "name": "Bullet::step_interpolators", "comment": null}
-, {"addr": "0x4124b0", "name": "et_4124b0", "comment": null}
-, {"addr": "0x412670", "name": "et_412670", "comment": null}
+, {"addr": "0x4124b0", "name": "Bullet::sub_4124b0", "comment": null}
+, {"addr": "0x412670", "name": "Bullet::sub_412670", "comment": null}
 , {"addr": "0x412860", "name": "BulletManager::on_tick_1c__body", "comment": null}
 , {"addr": "0x412a60", "name": "BulletManager::on_draw__body", "comment": null}
 , {"addr": "0x412c50", "name": "BulletManager::on_tick_1c", "comment": null}
 , {"addr": "0x412c80", "name": "BulletManager::on_draw", "comment": null}
-, {"addr": "0x412cb0", "name": "BulletManager::shoot_one", "comment": null}
+, {"addr": "0x412cb0", "name": "BulletManager::shoot_one_bullet", "comment": null}
 , {"addr": "0x413860", "name": "Bullet::run_ex", "comment": null}
 , {"addr": "0x414da0", "name": "BulletManager::shoot_bullets", "comment": null}
 , {"addr": "0x414ec0", "name": "et_414ec0", "comment": null}
@@ -227,7 +231,11 @@
 , {"addr": "0x4151e0", "name": "et_4151e0", "comment": null}
 , {"addr": "0x4153e0", "name": "et_4153e0", "comment": null}
 , {"addr": "0x415570", "name": "et_415570", "comment": null}
-, {"addr": "0x415bb0", "name": "et_415bb0", "comment": null}
+, {"addr": "0x415790", "name": "Bullet::leaf_415790", "comment": null}
+, {"addr": "0x4158d0", "name": "Bullet::leaf_4158d0", "comment": null}
+, {"addr": "0x415a10", "name": "Bullet::leaf_415a10", "comment": null}
+, {"addr": "0x415ae0", "name": "Bullet::leaf_415ae0", "comment": null}
+, {"addr": "0x415bb0", "name": "Bullet::sub_415bb0", "comment": null}
 , {"addr": "0x415d80", "name": "et_anm_415d80", "comment": null}
 , {"addr": "0x415f90", "name": "et_415f90", "comment": null}
 , {"addr": "0x4161f0", "name": "et_4161f0", "comment": null}
@@ -237,7 +245,7 @@
 , {"addr": "0x416c20", "name": "cancel_bullets_in_radius", "comment": null}
 , {"addr": "0x416d20", "name": "cancel_bullets_in_radius_as_bomb", "comment": null}
 , {"addr": "0x416e20", "name": "cancel_bullets_in_rectangle_as_bomb", "comment": null}
-, {"addr": "0x416f40", "name": "et_clear_all", "comment": null}
+, {"addr": "0x416f40", "name": "BulletManager::clear_all", "comment": null}
 , {"addr": "0x417140", "name": "AnmVm::on_sprite_set__1", "comment": null}
 , {"addr": "0x417180", "name": "InterpFloat::reset", "comment": null}
 , {"addr": "0x4171c0", "name": "InterpFloat::step", "comment": null}
@@ -249,6 +257,7 @@
 , {"addr": "0x417790", "name": "Spellcard::destructor", "comment": null}
 , {"addr": "0x4178a0", "name": "Spellcard::operator new", "comment": null}
 , {"addr": "0x417930", "name": "Spellcard::on_tick", "comment": null}
+, {"addr": "0x417bc0", "name": "Spellcard::sub_417bc0", "comment": null}
 , {"addr": "0x417d70", "name": "Spellcard::on_draw", "comment": null}
 , {"addr": "0x417ee0", "name": "Spellcard::on_tick__stub", "comment": null}
 , {"addr": "0x417ef0", "name": "Spellcard::on_draw__stub", "comment": null}
@@ -349,6 +358,7 @@
 , {"addr": "0x426160", "name": "sub_426160__anm_set_main", "comment": null}
 , {"addr": "0x426240", "name": "cartesian_from_polar_426240", "comment": null}
 , {"addr": "0x426260", "name": "cartesian_from_polar_426260", "comment": null}
+, {"addr": "0x4262f0", "name": "FpsCounter::sub_4262f0", "comment": null}
 , {"addr": "0x4263e0", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x426490", "name": "FpsCounter::on_draw__stub", "comment": null}
 , {"addr": "0x4268c0", "name": "Gui::constructor", "comment": null}
@@ -382,6 +392,8 @@
 , {"addr": "0x42d7b0", "name": "GameThread::on_tick_0f", "comment": null}
 , {"addr": "0x42db70", "name": "GameThread::on_tick_0f__stub", "comment": null}
 , {"addr": "0x42db80", "name": "on_draw_42db80", "comment": null}
+, {"addr": "0x42dc50", "name": "GameThread::sub_42dc50", "comment": null}
+, {"addr": "0x42dee0", "name": "GameThread::sub_42dee0", "comment": null}
 , {"addr": "0x42e520", "name": "Globals::leaf_42e520", "comment": null}
 , {"addr": "0x42e590", "name": "Globals::sub_42e590", "comment": null}
 , {"addr": "0x42e630", "name": "GameThreadChild64::constructor", "comment": null}
@@ -411,7 +423,7 @@
 , {"addr": "0x4308f0", "name": "ItemManager::on_tick_1d", "comment": null}
 , {"addr": "0x430920", "name": "ItemManager::on_draw_1", "comment": null}
 , {"addr": "0x430940", "name": "ItemManager::on_draw_2", "comment": null}
-, {"addr": "0x430960", "name": "spawn_item", "comment": null}
+, {"addr": "0x430960", "name": "ItemManager::spawn_item", "comment": null}
 , {"addr": "0x430c90", "name": "Item::init_anm_for_piv_or_season", "comment": null}
 , {"addr": "0x430d10", "name": "Item::sub_430d10__items_4_5_6_7_f", "comment": null}
 , {"addr": "0x430d90", "name": "Item::delete", "comment": null}
@@ -525,14 +537,15 @@
 , {"addr": "0x43b520", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x43b900", "name": "AnmVm::clear_ins_508", "comment": null}
 , {"addr": "0x43ba40", "name": "Supervisor::initialize", "comment": null}
-, {"addr": "0x43c050", "name": "Supervisor::sub_43c050", "comment": null}
+, {"addr": "0x43c050", "name": "Supervisor::load_game_config", "comment": null}
 , {"addr": "0x43c4b0", "name": "Supervisor::sub_43c4b0", "comment": null}
-, {"addr": "0x43c4f0", "name": "Supervisor::sub_43c4f0", "comment": null}
+, {"addr": "0x43c4f0", "name": "Supervisor::disable_d3d_fog", "comment": null}
 , {"addr": "0x43c530", "name": "Supervisor::sub_43c530", "comment": null}
 , {"addr": "0x43c570", "name": "Supervisor::sub_43c570", "comment": null}
 , {"addr": "0x43c5b0", "name": "sub_43c5b0_creates_thread", "comment": null}
 , {"addr": "0x43c630", "name": "Supervisor::sub_43c630", "comment": null}
 , {"addr": "0x43c6a0", "name": "Supervisor::sub_43c6a0", "comment": null}
+, {"addr": "0x43c710", "name": "Supervisor::swap_transform_matrices", "comment": null}
 , {"addr": "0x43ce10", "name": "Supervisor::switch_gamemodes", "comment": null}
 , {"addr": "0x43d140", "name": "Supervisor::on_draw_01", "comment": null}
 , {"addr": "0x43d2f0", "name": "Supervisor::on_draw_0f", "comment": null}
@@ -544,6 +557,8 @@
 , {"addr": "0x43d7c0", "name": "Supervisor::on_draw_39", "comment": null}
 , {"addr": "0x43d820", "name": "Supervisor::on_draw_38", "comment": null}
 , {"addr": "0x43d870", "name": "Supervisor::on_draw_55", "comment": null}
+, {"addr": "0x43d970", "name": "Supervisor::setup_special_anms", "comment": null}
+, {"addr": "0x43dc30", "name": "Supervisor::release_surfaces", "comment": null}
 , {"addr": "0x43dce0", "name": "leaf_43dce0_disabled_log_function", "comment": null}
 , {"addr": "0x43ddd0", "name": "get_score_extend_quota", "comment": null}
 , {"addr": "0x43ddf0", "name": "Globals::sub_43ddf0", "comment": null}
@@ -573,7 +588,7 @@
 , {"addr": "0x440e40", "name": "Player::set_position", "comment": null}
 , {"addr": "0x440ec0", "name": "PlayerInner::constructor", "comment": null}
 , {"addr": "0x440fb0", "name": "Player::initialize", "comment": null}
-, {"addr": "0x441740", "name": "destroy_player", "comment": null}
+, {"addr": "0x441740", "name": "Player::destroy", "comment": null}
 , {"addr": "0x441a50", "name": "Player::destructor", "comment": null}
 , {"addr": "0x441c60", "name": "Player::operator new", "comment": null}
 , {"addr": "0x441cf0", "name": "Player::move", "comment": null}
@@ -665,12 +680,20 @@
 , {"addr": "0x456fd0", "name": "Arcfile::destructor", "comment": null}
 , {"addr": "0x4572e0", "name": "sub_4572e0_reads_th16_dat", "comment": null}
 , {"addr": "0x459240", "name": "draw_text", "comment": null}
-, {"addr": "0x459830", "name": "main", "comment": null}
+, {"addr": "0x4595c0", "name": "AnmManager::release_textures", "comment": null}
+, {"addr": "0x459640", "name": "AnmManager::create_d3d_textures_for_loaded_anms", "comment": null}
+, {"addr": "0x459830", "name": "WinMain", "comment": null}
 , {"addr": "0x45a3a0", "name": "UpdateFuncRegistry::operator delete", "comment": null}
-, {"addr": "0x45a8a0", "name": "sub_45a8a0__calls_all_update_funcs", "comment": null}
-, {"addr": "0x45ac50", "name": "sub_45ac50__calls_all_update_funcs", "comment": null}
-, {"addr": "0x45ae70", "name": "sub_45ae70__calls_all_update_funcs", "comment": null}
+, {"addr": "0x45a700", "name": "Window::make_dirs_and_disable_screensaver", "comment": null}
+, {"addr": "0x45a8a0", "name": "Window::do_frame__normal_version", "comment": null}
+, {"addr": "0x45a9f0", "name": "Window::update_window__normal_version", "comment": null}
+, {"addr": "0x45ac50", "name": "Window::do_frame__frameskip_version", "comment": null}
+, {"addr": "0x45ae70", "name": "Window::do_frame__idfk_version", "comment": null}
+, {"addr": "0x45b130", "name": "sub_45b130_get_runtime", "comment": null}
 , {"addr": "0x45b280", "name": "set_window_resolution_from_cfg", "comment": null}
+, {"addr": "0x45b7d0", "name": "sub_45b7d0_lots_of_d3d_init", "comment": null}
+, {"addr": "0x45ba80", "name": "Supervisor::reset_render_state", "comment": null}
+, {"addr": "0x45c110", "name": "resolution_dialog__DialogProc", "comment": null}
 , {"addr": "0x45c360", "name": "Supervisor::dx_direct_input_initialize", "comment": null}
 , {"addr": "0x45c630", "name": "ScreenEffect::on_tick_13_e", "comment": null}
 , {"addr": "0x45c860", "name": "ScreenEffect::on_draw_??_b", "comment": null}
@@ -686,6 +709,9 @@
 , {"addr": "0x45d150", "name": "ScreenEffect::operator new", "comment": null}
 , {"addr": "0x45d1a0", "name": "ScreenEffect::initialize", "comment": null}
 , {"addr": "0x45d360", "name": "ScreenEffect::destructor", "comment": null}
+, {"addr": "0x45d420", "name": "SoundManager::sub_45d420", "comment": null}
+, {"addr": "0x45d4d0", "name": "SoundManager::thread_init", "comment": null}
+, {"addr": "0x45d850", "name": "SoundManager::sub_45d850", "comment": null}
 , {"addr": "0x45e150", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x45e1f0", "name": "SoundManager::play_sound_at_position", "comment": null}
 , {"addr": "0x45e330", "name": "SoundManager::update_sound_thread", "comment": null}
@@ -716,6 +742,7 @@
 , {"addr": "0x464d60", "name": "cartesian_from_polar_464d60", "comment": null}
 , {"addr": "0x464d80", "name": "Timer::copy", "comment": null}
 , {"addr": "0x464dd0", "name": "AnmVm::sub_464dd0_recursive", "comment": null}
+, {"addr": "0x465a30", "name": "AnmManager::reset_vertex_buffers", "comment": null}
 , {"addr": "0x465a80", "name": "AnmManager::flush_sprites", "comment": null}
 , {"addr": "0x466390", "name": "AnmManager::render_sub_466390", "comment": null}
 , {"addr": "0x466820", "name": "AnmManager::render_sub_466820", "comment": null}
@@ -828,7 +855,7 @@
 , {"addr": "0x4749ac", "name": "malloc", "comment": null}
 , {"addr": "0x4749df", "name": "free__sized", "comment": null}
 , {"addr": "0x474ca8", "name": "initialize_vector", "comment": null}
-, {"addr": "0x474d11", "name": "run_on_array_474d11", "comment": null}
+, {"addr": "0x474d11", "name": "initialize_vector_without_destructor", "comment": null}
 , {"addr": "0x474f35", "name": "sub_474f35_terminate_current_process", "comment": null}
 , {"addr": "0x474f5d", "name": "sub_474f5d_die", "comment": null}
 , {"addr": "0x47514b", "name": "global_heap_free_stub_47514b", "comment": null}
@@ -884,4 +911,6 @@
 , {"addr": "0x4884c0", "name": "math_sin", "comment": null}
 , {"addr": "0x488690", "name": "_math_sqrt", "comment": null}
 , {"addr": "0x488bb0", "name": "math_call_by_name_488bb0", "comment": null}
+, {"addr": "0x48a500", "name": "BulletManager::sub_48a500_destructor_related", "comment": null}
+, {"addr": "0x48a560", "name": "BulletManager::sub_48a560_destruction_related", "comment": null}
 ]

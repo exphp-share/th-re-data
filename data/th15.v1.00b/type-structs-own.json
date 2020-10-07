@@ -309,7 +309,9 @@
   ]
 
 , "zBullet": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "freelist_node", "struct zBulletNullList"]
+  , ["0x10", "tick_list_node", "struct zBulletList"]
+  , ["0x20", "__unknown", null]
   , ["0x1494", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1494", "__end", null]
   ]

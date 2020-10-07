@@ -398,7 +398,7 @@
 
 , "zBullet": 
   [ ["0x0", "freelist_node", "struct zBulletNullList"]
-  , ["0x10", "__node_10", "struct zBulletList"]
+  , ["0x10", "tick_list_node", "struct zBulletList"]
   , ["0x20", "flags", "int32_t"]
   , ["0x24", "ex_invuln__remaining_frames", "int32_t"]
   , ["0x28", "vms", "struct zAnmVm[0x2]"]
@@ -410,6 +410,8 @@
   , ["0xc44", "__unknown", null]
   , ["0xc68", "__bitflags_c68", "int32_t"]
   , ["0xc6c", "__unknown", null]
+  , ["0xc72", "state", "uint16_t"]
+  , ["0xc74", "__unknown", null]
   , ["0xc78", "__field_c78", "struct zBullet*"]
   , ["0xc7c", "__unknown", null]
   , ["0xc88", "et_ex", "struct zBulletEx[0x12]"]
@@ -474,8 +476,8 @@
   , ["0x13ffc8c", "anm_ids", "struct zAnmId[0x7d1]"]
   , ["0x1401bd0", "__lolk_snapshot_anm_ids", "struct zAnmId[0x7d1]"]
   , ["0x1403b14", "__unknown", null]
-  , ["0x1403b1c", "__node_1403b1c", "struct zBulletList*"]
-  , ["0x1403b20", "__node_1403b20", "struct zBulletList*"]
+  , ["0x1403b1c", "iter_current", "struct zBulletList*"]
+  , ["0x1403b20", "iter_next", "struct zBulletList*"]
   , ["0x1403b24", "bullet_anm", "struct zAnmLoaded*"]
   , ["0x1403b28", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1403b28", "__end", null]
@@ -565,6 +567,26 @@
   , ["0x8", "color_components", "float[0x4]"]
   , ["0x18", "color", "struct D3DCOLOR"]
   , ["0x1c", "__end", null]
+  ]
+
+, "zConfig": 
+  [ ["0x0", "field_0__looks_like_flags", "uint32_t"]
+  , ["0x4", "field_4", "uint32_t[0x4]"]
+  , ["0x14", "__unknown", null]
+  , ["0x18", "field_18", "uint32_t"]
+  , ["0x1c", "field_1c", "uint16_t"]
+  , ["0x1e", "field_1e", "uint16_t"]
+  , ["0x20", "field_20", "uint8_t"]
+  , ["0x21", "field_21__wait_thats_misaligned_wut", "uint16_t"]
+  , ["0x23", "field_23", "uint8_t"]
+  , ["0x24", "field_24", "uint16_t"]
+  , ["0x26", "__unknown", null]
+  , ["0x28", "field_28__bitflags", "uint32_t"]
+  , ["0x2c", "field_2c", "uint32_t"]
+  , ["0x30", "field_30", "uint32_t"]
+  , ["0x34", "__unknown", null]
+  , ["0x64", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x64", "__end", null]
   ]
 
 , "zEclEx": 
@@ -938,7 +960,7 @@
   , ["0x8", "on_draw", "struct zUpdateFunc*"]
   , ["0xc", "time_in_stage", "struct zTimer"]
   , ["0x20", "__unknown", null]
-  , ["0x24", "inner_24", "struct zGameThreadChild64"]
+  , ["0x24", "inner_24", "struct zConfig"]
   , ["0x88", "flags", "int32_t"]
   , ["0x8c", "__unknown", null]
   , ["0x94", "field_94", "int32_t"]
@@ -948,26 +970,6 @@
   , ["0xb0", "__some_fade_timer", "int32_t"]
   , ["0xb4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xb4", "__end", null]
-  ]
-
-, "zGameThreadChild64": 
-  [ ["0x0", "field_0__looks_like_flags", "uint32_t"]
-  , ["0x4", "field_4", "uint32_t[0x4]"]
-  , ["0x14", "__unknown", null]
-  , ["0x18", "field_18", "uint32_t"]
-  , ["0x1c", "field_1c", "uint16_t"]
-  , ["0x1e", "field_1e", "uint16_t"]
-  , ["0x20", "field_20", "uint8_t"]
-  , ["0x21", "field_21__wait_thats_misaligned_wut", "uint16_t"]
-  , ["0x23", "field_23", "uint8_t"]
-  , ["0x24", "field_24", "uint16_t"]
-  , ["0x26", "__unknown", null]
-  , ["0x28", "field_28__bitflags", "uint32_t"]
-  , ["0x2c", "field_2c", "uint32_t"]
-  , ["0x30", "field_30", "uint32_t"]
-  , ["0x34", "__unknown", null]
-  , ["0x64", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x64", "__end", null]
   ]
 
 , "zGui": 
@@ -1201,10 +1203,10 @@
   ]
 
 , "zItemManagerInner": 
-  [ ["0x0", "general_items", "struct zItem[0x258]"]
-  , ["0x1d3940", "piv_items", "struct zItem[0x1000]"]
-  , ["0xe4b940", "general_items_freelist_head", "struct zItemListHead"]
-  , ["0xe4b950", "piv_items_freelist_head", "struct zItemListHead"]
+  [ ["0x0", "normal_items", "struct zItem[0x258]"]
+  , ["0x1d3940", "cancel_items", "struct zItem[0x1000]"]
+  , ["0xe4b940", "normal_items_freelist_head", "struct zItemListHead"]
+  , ["0xe4b950", "cancel_items_freelist_head", "struct zItemListHead"]
   , ["0xe4b960", "lolk_item_slowdown_factor", "float"]
   , ["0xe4b964", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xe4b964", "__end", null]
@@ -1838,7 +1840,7 @@
 
 , "zRpyThingA0": 
   [ ["0x0", "__unknown", null]
-  , ["0x18", "__inner", "struct zGameThreadChild64"]
+  , ["0x18", "__inner", "struct zConfig"]
   , ["0x7c", "__field_7c", "int32_t"]
   , ["0x80", "__field_80", "int32_t"]
   , ["0x84", "character", "int32_t"]
@@ -1938,6 +1940,12 @@
   , ["0x38", "__unknown", null]
   , ["0x58", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x58", "__end", null]
+  ]
+
+, "zSoundManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x5698", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x5698", "__end", null]
   ]
 
 , "zSpellcard": 

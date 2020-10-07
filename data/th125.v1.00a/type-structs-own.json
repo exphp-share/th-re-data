@@ -408,6 +408,12 @@
   , ["0x24", "__end", null]
   ]
 
+, "zScorefile": 
+  [ ["0x0", "__unknown", null]
+  , ["0x15e1c", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x15e1c", "__end", null]
+  ]
+
 , "zSpellcard": 
   [ ["0x0", "__unknown", null]
   , ["0xc0", "__exact_size_known", "struct zCOMMENT[0x0]"]

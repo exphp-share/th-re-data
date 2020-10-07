@@ -370,6 +370,12 @@
   , ["0x4b4", "__end", null]
   ]
 
+, "zScorefile": 
+  [ ["0x0", "__unknown", null]
+  , ["0xcc10", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0xcc10", "__end", null]
+  ]
+
 , "zStage": 
   [ ["0x0", "__unknown", null]
   , ["0x3960", "__exact_size_known", "struct zCOMMENT[0x0]"]

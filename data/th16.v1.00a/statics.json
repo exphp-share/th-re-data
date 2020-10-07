@@ -408,6 +408,7 @@
 , {"addr": "0x4c1b0c", "name": "BACKGROUND_COLOR", "type": "struct D3DCOLOR", "comment": null}
 , {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
 , {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": "struct zArcFile[0x14]", "comment": null}
+, {"addr": "0x4d7ce0", "name": "WINDOW", "type": "HWND", "comment": null}
 , {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": "int32_t", "comment": null}
 , {"addr": "0x4d7d04", "name": "INITIAL_PERFORMANCE_COUNTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4d9d10", "name": "SYSPARAM_SCREEN_SAVE_ACTIVE", "type": "int32_t", "comment": null}
@@ -426,4 +427,5 @@
 , {"addr": "0x4d9d54", "name": "GAME_2D_ORIGIN_Y", "type": "int32_t", "comment": null}
 , {"addr": "0x4d9d58", "name": "TOTAL_APPLICATION_RUNTIME", "type": "double[0x3]", "comment": "All three of these appear to be the total time in seconds\nsince the EXE was started (including time spent on the\n\"choose resolution\" dialog; though these variables only\nstart getting written once you get past that dialog).\n\nThe first two appear to be rounded to 7 places after the\ndecimal point and are usually nearly equal, while the\nthird one tends to be slightly larger and is not as\nharshly rounded."}
 , {"addr": "0x4d9dc4", "name": "SEEMINGLY_CONST_ZERO_VEC_4d9dc4", "type": "struct zFloat3", "comment": null}
+, {"addr": "0x4d9e10", "name": "SOUND_MANAGER", "type": "int32_t", "comment": null}
 ]

@@ -54,6 +54,7 @@
 , {"addr": "0x4b490c", "name": "float(124.117744)", "type": "float", "comment": null}
 , {"addr": "0x4b4940", "name": "float(448)", "type": "float", "comment": null}
 , {"addr": "0x4b4980", "name": "float(100)", "type": "float", "comment": null}
+, {"addr": "0x4b4ad8", "name": "BULLET_TYPE_DATA", "type": "struct zTableBulletTypeScripts[0x15]", "comment": null}
 , {"addr": "0x4b4c90", "name": "double(0)", "type": "double", "comment": null}
 , {"addr": "0x4b6944", "name": "float(0.99)", "type": "float", "comment": null}
 , {"addr": "0x4b847c", "name": "float(0.5)", "type": "float", "comment": null}
@@ -61,6 +62,7 @@
 , {"addr": "0x4bd700", "name": "GUID_NULL", "type": "GUID", "comment": null}
 , {"addr": "0x4c6000", "name": "LIFE_BEFORE_MAIN", "type": "void*[0x2e]", "comment": null}
 , {"addr": "0x4c6cb0", "name": "FUNC_SET_FUNCS", "type": "void*[0x20]", "comment": null}
+, {"addr": "0x4c6d30", "name": "EFFECT_TABLE", "type": "struct zTableEffectData", "comment": "This array actually has 0x42 entries but annotating tables of structures types makes binja slow."}
 , {"addr": "0x4c7480", "name": "EFFECT_ANM_FILENAMES", "type": "char*[0xf]", "comment": null}
 , {"addr": "0x4c74c0", "name": "MSG_DAT_FILENAMES", "type": "char*[0x6c]", "comment": null}
 , {"addr": "0x4c78c8", "name": "DEFAULT_CONFIG", "type": "struct zConfig", "comment": null}
@@ -93,7 +95,7 @@
 , {"addr": "0xf54e70", "name": "BULLET_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0xf54e90", "name": "BULLET_MANAGER", "type": "struct zBulletManager", "comment": null}
 , {"addr": "0x160f408", "name": "BULLET_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x160f428", "name": "UNKNOWN_GLOBAL_T", "type": "void", "comment": null}
+, {"addr": "0x160f428", "name": "UNKNOWN_GLOBAL_T", "type": "struct zGui", "comment": null}
 , {"addr": "0x160f4c4", "name": "GUI_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x160f4e4", "name": "GUI_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x160f508", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": "This thing... um...\n\nIt's important.  That's for sure.  Commenting out its on_tick\ncrashes the game; commenting out its on_draw during a game\ndoes nothing, but commenting it out before starting the game\ncauses a crash.\n\nIts 'on_tick' is MASSIVE.  If you look inside, you'll see\na string somewhere that says Pause.  But... I think this thing\nrepresents a fair bit more than just the pause menu!\n\nIf you look at the object itself, it has a pointer to a thing\nholding important variables like lives and bombs (which become\nfields of a static global in modern games), and it also\ncontains a very, very large array holding what is apparently\ndata for spell practice.  It has, like, ZUN's spell comments\nand stuff. It's weird.  It's just... weird.\n\nIt no longer exists in MoF.  Maybe.\n\n...or maybe it's that Globals struct."}
@@ -114,12 +116,15 @@
 , {"addr": "0x17ce750", "name": "A_GLOBAL_SCREEN_EFFECT_PTR", "type": "struct zScreenEffect*", "comment": null}
 , {"addr": "0x17ce758", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x17ceac0", "name": "STATIC_VMS_17CEAC0", "type": "struct zAnmVm[0x3]", "comment": null}
+, {"addr": "0x17cf2b8", "name": "REPLAY_FPS_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
+, {"addr": "0x17cf3b8", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
 , {"addr": "0x17cf4c8", "name": "MUSIC_ROOM", "type": "struct zMusicRoom", "comment": null}
 , {"addr": "0x17d5ef8", "name": "PLAYER", "type": "struct zPlayer", "comment": null}
+, {"addr": "0x18b8a28", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x18b8a30", "name": "SOME_GLOBAL_SCREEN_EFFECT", "type": "struct zScreenEffect", "comment": null}
 , {"addr": "0x18b8a68", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
 , {"addr": "0x18bdc90", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x18bdc98", "name": "ARRAY_18bdc98", "type": "struct zSize1c_1[0x4]", "comment": null}
+, {"addr": "0x18bdc98", "name": "TEMPORARY_SPRITE_VERTICES", "type": "struct zRenderVertex144[0x4]", "comment": null}
 , {"addr": "0x18bdd08", "name": "ARRAY_18bdd08", "type": "struct zSize18[0x4]", "comment": null}
 , {"addr": "0x18bdd68", "name": "ARRAY_18bdd68", "type": "struct zSize18[0x4]", "comment": null}
 , {"addr": "0x18bde08", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}

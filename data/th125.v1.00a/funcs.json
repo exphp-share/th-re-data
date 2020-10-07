@@ -171,6 +171,8 @@
 , {"addr": "0x43c890", "name": "ReplayManager::on_draw", "comment": null}
 , {"addr": "0x43d0d0", "name": "ReplayStageData::constructor", "comment": null}
 , {"addr": "0x43d110", "name": "ReplayStageData::destructor", "comment": null}
+, {"addr": "0x43d1c0", "name": "Scorefile::initialize", "comment": null}
+, {"addr": "0x43d330", "name": "Scorefile::operator new", "comment": null}
 , {"addr": "0x43e620", "name": "DebugSoundTest::constructor", "comment": null}
 , {"addr": "0x43e6b0", "name": "DebugSoundTest::initialize", "comment": null}
 , {"addr": "0x43e780", "name": "DebugSoundTest::destructor", "comment": null}

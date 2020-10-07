@@ -149,6 +149,8 @@
 , {"addr": "0x440990", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x440e80", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x441000", "name": "ReplayManager::operator new", "comment": null}
+, {"addr": "0x442cb0", "name": "Scorefile::initialize", "comment": null}
+, {"addr": "0x442d90", "name": "Scorefile::operator new", "comment": null}
 , {"addr": "0x4433a0", "name": "DebugSoundTest::constructor", "comment": null}
 , {"addr": "0x443430", "name": "DebugSoundTest::initialize", "comment": null}
 , {"addr": "0x4434f0", "name": "DebugSoundTest::destructor", "comment": null}

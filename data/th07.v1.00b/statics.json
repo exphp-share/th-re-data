@@ -41,6 +41,7 @@
 , {"addr": "0x575950", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x575c20", "name": "WINDOW", "type": "struct zWindow", "comment": null}
 , {"addr": "0x575c4c", "name": "UNUSED_UPDATE_FUNC_575c4c", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x575c70", "name": "ITEM_MANAGER", "type": "struct zItemManager", "comment": null}
 , {"addr": "0x626218", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
 , {"addr": "0x626270", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": null}
 , {"addr": "0x62f8b4", "name": "LOLIDFK_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
