@@ -252,8 +252,30 @@
   , ["0x2530", "__end", null]
   ]
 
+, "zEnemy": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2e4c", "damage_taken_last_frame", "int32_t"]
+  , ["0x2e50", "__unknown", null]
+  , ["0x4f48", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x4f48", "__end", null]
+  ]
+
 , "zEnemyManager": 
-  [ ["0x0", "__end", null]
+  [ ["0x0", "__unknown", null]
+  , ["0x8", "template", "struct zEnemy"]
+  , ["0x4f50", "enemies", "struct zEnemy[0x1e1]"]
+  , ["0x954598", "__unknown", null]
+  , ["0x9545f0", "__ecl_ins_147", "int32_t"]
+  , ["0x9545f4", "__array_2", "struct zEnemyManagerArray2Item[0x10]"]
+  , ["0x9546f4", "__timer", "struct zTimer"]
+  , ["0x954700", "__end", null]
+  ]
+
+, "zEnemyManagerArray2Item": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0xc", "__unknown", null]
+  , ["0x10", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x10", "__end", null]
   ]
 
 , "zFloat2": 

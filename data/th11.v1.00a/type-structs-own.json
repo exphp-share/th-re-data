@@ -472,8 +472,21 @@
   , ["0x18", "__end", null]
   ]
 
+, "zEnemyList": 
+  [ ["0x0", "entry", "struct zEnemy*"]
+  , ["0x4", "next", "struct zEnemyList*"]
+  , ["0x8", "prev", "struct zEnemyList*"]
+  , ["0xc", "__end", null]
+  ]
+
 , "zEnemyManager": 
   [ ["0x0", "__unknown", null]
+  , ["0x10", "miss_count", "int32_t"]
+  , ["0x14", "bomb_count", "int32_t"]
+  , ["0x18", "capture", "int32_t"]
+  , ["0x1c", "__unknown", null]
+  , ["0x68", "list_head", "struct zEnemyList*"]
+  , ["0x6c", "__unknown", null]
   , ["0x70", "enemy_count_real", "int32_t"]
   , ["0x74", "__unknown", null]
   , ["0x78", "__exact_size_known", "struct zCOMMENT[0x0]"]

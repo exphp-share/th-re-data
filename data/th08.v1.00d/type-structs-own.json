@@ -481,7 +481,8 @@
   , ["0x2e00", "_related_to_life_2e00", "int32_t"]
   , ["0x2e04", "_related_to_life_2e04", "int32_t"]
   , ["0x2e08", "score_reward", "int32_t"]
-  , ["0x2e0c", "__unknown", null]
+  , ["0x2e0c", "__flag_field_used_by_familiars__see_0x41b246", "int32_t"]
+  , ["0x2e10", "__unknown", null]
   , ["0x2e14", "spell_and_nonspell_timer", "struct zTimer"]
   , ["0x2e20", "__unknown", null]
   , ["0x2e24", "bullet_data", "struct zBulletManagerInputData"]
@@ -512,12 +513,12 @@
   , ["0x333e", "__unknown", null]
   , ["0x3340", "move_limit", "float[0x4]"]
   , ["0x3350", "bullet_protect__sqdist", "float"]
-  , ["0x3354", "__ecl_var_83", "int32_t"]
+  , ["0x3354", "damage_taken_last_frame", "int32_t"]
   , ["0x3358", "life_thresholds", "int32_t[0x4]"]
   , ["0x3368", "life_threshold_subs", "int32_t[0x4]"]
   , ["0x3378", "timer_threshold", "int32_t"]
   , ["0x337c", "timer_threshold_sub", "int32_t"]
-  , ["0x3380", "__possibly_related_to_familiars", "int32_t"]
+  , ["0x3380", "__familiar_count__but_not_total", "int32_t"]
   , ["0x3384", "async", "void*[0x4]"]
   , ["0x3394", "_trail_data", "struct zEnemyTrail[0x60]"]
   , ["0x3e14", "field_3e14", "struct zRenderVertex144[0xc2]"]
@@ -530,18 +531,10 @@
   , ["0x5360", "card_effects", "struct zEffect*[0x18]"]
   , ["0x53c0", "next_card_effect_index", "int32_t"]
   , ["0x53c4", "__related_to_card_effect_field_314", "float"]
-  , ["0x53c8", "some_effect_set_on_familiars", "struct zEffect*"]
+  , ["0x53c8", "familiar_circle_effect", "struct zEffect*"]
   , ["0x53cc", "__unknown", null]
   , ["0x53d0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x53d0", "__end", null]
-  ]
-
-, "zEnemy228_30": 
-  [ ["0x0", "__unknown", null]
-  , ["0x4", "__field_4", "struct zTimer"]
-  , ["0x10", "__unknown", null]
-  , ["0x30", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x30", "__end", null]
   ]
 
 , "zEnemyAsync": 
@@ -561,7 +554,7 @@
   , ["0x14", "func_set__ecl_instr", "struct zEclInstrHeader*"]
   , ["0x18", "vars", "struct zEnemyFuncLocalVars"]
   , ["0x90", "__field_90", "struct zTimer"]
-  , ["0x9c", "__array_9c", "struct zEnemy228_30[0x8]"]
+  , ["0x9c", "float_interpolators", "struct zEnemyFloatInterp[0x8]"]
   , ["0x21c", "__unknown", null]
   , ["0x220", "async_index", "int32_t"]
   , ["0x224", "sub", "int16_t"]
@@ -589,6 +582,14 @@
   , ["0x1c", "transform_flags", "int32_t"]
   , ["0x20", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x20", "__end", null]
+  ]
+
+, "zEnemyFloatInterp": 
+  [ ["0x0", "__unknown", null]
+  , ["0x4", "timer", "struct zTimer"]
+  , ["0x10", "__unknown", null]
+  , ["0x30", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x30", "__end", null]
   ]
 
 , "zEnemyFuncLocalVars": 

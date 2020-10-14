@@ -428,4 +428,5 @@
 , {"addr": "0x4d9d58", "name": "TOTAL_APPLICATION_RUNTIME", "type": "double[0x3]", "comment": "All three of these appear to be the total time in seconds\nsince the EXE was started (including time spent on the\n\"choose resolution\" dialog; though these variables only\nstart getting written once you get past that dialog).\n\nThe first two appear to be rounded to 7 places after the\ndecimal point and are usually nearly equal, while the\nthird one tends to be slightly larger and is not as\nharshly rounded."}
 , {"addr": "0x4d9dc4", "name": "SEEMINGLY_CONST_ZERO_VEC_4d9dc4", "type": "struct zFloat3", "comment": null}
 , {"addr": "0x4d9e10", "name": "SOUND_MANAGER", "type": "int32_t", "comment": null}
+, {"addr": "0x4df830", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
 ]

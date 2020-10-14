@@ -177,8 +177,21 @@
   , ["0x28", "__end", null]
   ]
 
+, "zEnemyFull": 
+  [ ["0x0", "__end", null]
+  ]
+
+, "zEnemyList": 
+  [ ["0x0", "entry", "struct zEnemyFull*"]
+  , ["0x4", "next", "struct zEnemyList*"]
+  , ["0x8", "prev", "struct zEnemyList*"]
+  , ["0xc", "__end", null]
+  ]
+
 , "zEnemyManager": 
   [ ["0x0", "__unknown", null]
+  , ["0x58", "list_head", "struct zEnemyList*"]
+  , ["0x5c", "__unknown", null]
   , ["0x68", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x68", "__end", null]
   ]

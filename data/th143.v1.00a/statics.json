@@ -31,4 +31,5 @@
 , {"addr": "0x4e6bc8", "name": "TUTORIAL_PTR", "type": "struct zTutorial*", "comment": null}
 , {"addr": "0x538de8", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x5390a0", "name": "WINDOW", "type": "void", "comment": null}
+, {"addr": "0x5409f0", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
 ]

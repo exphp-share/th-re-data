@@ -225,6 +225,7 @@
 , {"addr": "0x424810", "name": "Enemy::on_tick", "comment": null}
 , {"addr": "0x425260", "name": "EnemyFull::run_over_300__trampoline", "comment": null}
 , {"addr": "0x425270", "name": "Enemy::ecl_run_over_300", "comment": null}
+, {"addr": "0x42a1e0", "name": "EnemyManager::ecl_enm_create", "comment": null}
 , {"addr": "0x42a920", "name": "EnemyFull::get_int_global", "comment": null}
 , {"addr": "0x42b0b0", "name": "EnemyFull::get_int_global_ptr", "comment": null}
 , {"addr": "0x42b230", "name": "EnemyFull::get_float_global", "comment": null}

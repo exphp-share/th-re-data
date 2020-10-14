@@ -265,7 +265,6 @@
 , {"addr": "0x4b5920", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x5]", "comment": null}
 , {"addr": "0x4b59c0", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Okay, so I have to choose between type inference or being able\nto comment each global individually.  Thanks, Binary Ninja.\n\n- FLAGS: Bits 4 and 5 indicate whether this is spell practice or stage practice."}
 , {"addr": "0x4b5aa4", "name": "HYPER_TIMER", "type": "struct zTimer", "comment": null}
-, {"addr": "0x4b5ac4", "name": "data_4b5ac4_has_hyperdying_flag", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5ae0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4b5c94", "name": "D3D_SURFACE_4b5c94", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5c9c", "name": "GLOBAL_600_4b5c9c", "type": "int32_t", "comment": null}
@@ -306,6 +305,7 @@
 , {"addr": "0x509aa8", "name": "CRITICAL_SECTION_509aa8", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x509b38", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x522574", "name": "ZERO_VEC3", "type": "struct zFloat3", "comment": null}
+, {"addr": "0x5226c0", "name": "WINDOW", "type": "int32_t", "comment": null}
 , {"addr": "0x529f20", "name": "RENDERING_QUADRILATERAL_529f20", "type": "zRenderSpriteVertex[0x4]", "comment": null}
 , {"addr": "0x52a920", "name": "KEY_STATES", "type": "uint8_t[0x100]", "comment": null}
 ]

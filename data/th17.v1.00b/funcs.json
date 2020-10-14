@@ -71,7 +71,7 @@
 , {"addr": "0x40d8d0", "name": "InterpFloat::step", "comment": null}
 , {"addr": "0x40dbe0", "name": "Timer::decrement", "comment": null}
 , {"addr": "0x40dc60", "name": "Supervisor::sub_40dc60", "comment": null}
-, {"addr": "0x40de60", "name": "Globals::get_global_1c", "comment": null}
+, {"addr": "0x40de60", "name": "Globals::get_stage_num", "comment": null}
 , {"addr": "0x40e330", "name": "TokenManager::destroy_all", "comment": null}
 , {"addr": "0x40e420", "name": "TokenManager::operator new", "comment": null}
 , {"addr": "0x40e640", "name": "TokenManager::operator delete", "comment": null}
@@ -438,6 +438,7 @@
 , {"addr": "0x44db70", "name": "Rng::rand_dword_mod_n", "comment": null}
 , {"addr": "0x44db90", "name": "cartesian_from_polar_44db90", "comment": null}
 , {"addr": "0x44dbb0", "name": "ReplayManager::initialize", "comment": null}
+, {"addr": "0x44e0f0", "name": "GlobalsInner::copy constructor", "comment": null}
 , {"addr": "0x44e610", "name": "ReplayManager::on_tick_24__speedup_replay__body", "comment": null}
 , {"addr": "0x44f1a0", "name": "ReplayManager::on_tick_11__record_replay", "comment": null}
 , {"addr": "0x44f2f0", "name": "ReplayManager::on_tick_11__playback_replay", "comment": null}
@@ -461,6 +462,7 @@
 , {"addr": "0x45ddb0", "name": "TrophyAnimation::on_tick__stub", "comment": null}
 , {"addr": "0x45ddc0", "name": "TrophyAnimation::on_draw__noop", "comment": null}
 , {"addr": "0x460490", "name": "WinMain", "comment": null}
+, {"addr": "0x462190", "name": "Window::update_window__normal_version", "comment": null}
 , {"addr": "0x463dc0", "name": "ScreenEffect::on_tick_463dc0", "comment": null}
 , {"addr": "0x463ff0", "name": "ScreenEffect::on_draw_463ff0", "comment": null}
 , {"addr": "0x464090", "name": "ScreenEffect::on_tick_464090", "comment": null}
@@ -509,7 +511,7 @@
 , {"addr": "0x46c3a0", "name": "AnmVm::set_scale_2", "comment": null}
 , {"addr": "0x46c3c0", "name": "AnmVm::set_angular_velocity", "comment": null}
 , {"addr": "0x46c540", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
-, {"addr": "0x46d050", "name": "sub_46d050__render_init", "comment": null}
+, {"addr": "0x46d050", "name": "AnmManager::reset_vertex_buffers", "comment": null}
 , {"addr": "0x46d0a0", "name": "AnmManager::flush_sprites", "comment": null}
 , {"addr": "0x46d170", "name": "AnmManager::write_sprite", "comment": null}
 , {"addr": "0x46d260", "name": "AnmVm::sub_46d260", "comment": null}

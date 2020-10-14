@@ -1,4 +1,6 @@
-[ {"addr": "0x4a2bb4", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[0x18]", "comment": null}
+[ {"addr": "0x4a26e8", "name": "VTABLE_ECL_DEFAULT", "type": "void*[0x6]", "comment": null}
+, {"addr": "0x4a2704", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[0x6]", "comment": null}
+, {"addr": "0x4a2bb4", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[0x18]", "comment": null}
 , {"addr": "0x4a2c1c", "name": "VTABLE_LASER_LINE", "type": "void*[0x18]", "comment": null}
 , {"addr": "0x4a2c84", "name": "VTABLE_LASER_CURVE", "type": "void*[0x18]", "comment": null}
 , {"addr": "0x4a2cec", "name": "VTABLE_LASER_INFINITE", "type": "void*[0x18]", "comment": null}
@@ -15,6 +17,7 @@
 , {"addr": "0x4b8934", "name": "CARD_PTR", "type": "struct zCard*", "comment": null}
 , {"addr": "0x4b8938", "name": "CHARGE_ATTACK_PTR", "type": "struct zChargeAttack*", "comment": null}
 , {"addr": "0x4b8940", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
+, {"addr": "0x4b8948", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
 , {"addr": "0x4b894c", "name": "FPS_COUNTER", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x4b8950", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4b8954", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}

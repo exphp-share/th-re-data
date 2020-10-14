@@ -66,6 +66,8 @@
 , {"addr": "0x4c7480", "name": "EFFECT_ANM_FILENAMES", "type": "char*[0xf]", "comment": null}
 , {"addr": "0x4c74c0", "name": "MSG_DAT_FILENAMES", "type": "char*[0x6c]", "comment": null}
 , {"addr": "0x4c78c8", "name": "DEFAULT_CONFIG", "type": "struct zConfig", "comment": null}
+, {"addr": "0x4c7a84", "name": "POINT_EXTEND_REQUIREMENTS", "type": "int32_t[0x6]", "comment": null}
+, {"addr": "0x4c7a9c", "name": "POINT_EXTEND_REQUIREMENTS_EXTRA", "type": "int32_t[0x3]", "comment": null}
 , {"addr": "0x4cce00", "name": "ASCII_MANAGER_ON_DRAW_14", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x4cce20", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
 , {"addr": "0x4e3fd0", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
@@ -95,7 +97,7 @@
 , {"addr": "0xf54e70", "name": "BULLET_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0xf54e90", "name": "BULLET_MANAGER", "type": "struct zBulletManager", "comment": null}
 , {"addr": "0x160f408", "name": "BULLET_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x160f428", "name": "UNKNOWN_GLOBAL_T", "type": "struct zGui", "comment": null}
+, {"addr": "0x160f428", "name": "GUI", "type": "struct zGui", "comment": null}
 , {"addr": "0x160f4c4", "name": "GUI_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x160f4e4", "name": "GUI_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x160f508", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": "This thing... um...\n\nIt's important.  That's for sure.  Commenting out its on_tick\ncrashes the game; commenting out its on_draw during a game\ndoes nothing, but commenting it out before starting the game\ncauses a crash.\n\nIts 'on_tick' is MASSIVE.  If you look inside, you'll see\na string somewhere that says Pause.  But... I think this thing\nrepresents a fair bit more than just the pause menu!\n\nIf you look at the object itself, it has a pointer to a thing\nholding important variables like lives and bombs (which become\nfields of a static global in modern games), and it also\ncontains a very, very large array holding what is apparently\ndata for spell practice.  It has, like, ZUN's spell comments\nand stuff. It's weird.  It's just... weird.\n\nIt no longer exists in MoF.  Maybe.\n\n...or maybe it's that Globals struct."}

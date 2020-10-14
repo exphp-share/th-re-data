@@ -159,6 +159,7 @@
 , {"addr": "0x428830", "name": "EnemyFull::update", "comment": null}
 , {"addr": "0x4291d0", "name": "EnemyFull::ecl_run_over_300__trampoline", "comment": null}
 , {"addr": "0x4291e0", "name": "Enemy::ecl_run_over_300", "comment": null}
+, {"addr": "0x42e160", "name": "EnemyManager::ecl_enm_create", "comment": null}
 , {"addr": "0x42e360", "name": "Enemy::ecl_anm_set_sprite_impl", "comment": null}
 , {"addr": "0x42e910", "name": "EnemyFull::ecl_get_int_global", "comment": null}
 , {"addr": "0x42f0b0", "name": "EnemyFull::ecl_get_int_global_ptr", "comment": null}

@@ -67,6 +67,8 @@
 , {"addr": "0x41ec00", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x41edb0", "name": "EnemyManager::on_tick_1a", "comment": null}
 , {"addr": "0x41edf0", "name": "EnemyManager::on_draw_16", "comment": null}
+, {"addr": "0x421e40", "name": "Enemy::ecl_run_over_300", "comment": null}
+, {"addr": "0x426db0", "name": "EnemyManager::ecl_enm_create", "comment": null}
 , {"addr": "0x42bc40", "name": "FpsCounter::initialize", "comment": null}
 , {"addr": "0x42bec0", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x42bf70", "name": "FpsCounter::on_draw__stub", "comment": null}
@@ -220,8 +222,12 @@
 , {"addr": "0x474510", "name": "AnmVm::get_float_var_ptr", "comment": null}
 , {"addr": "0x474620", "name": "AnmVm::get_int_var_ptr", "comment": null}
 , {"addr": "0x474710", "name": "AnmVm::run", "comment": null}
+, {"addr": "0x479d50", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
+, {"addr": "0x47a0b0", "name": "AnmManager::render_sprite_2d", "comment": null}
 , {"addr": "0x47a870", "name": "AnmManager::reset_vertex_buffers", "comment": null}
 , {"addr": "0x47a8c0", "name": "AnmManager::flush_sprites", "comment": null}
+, {"addr": "0x47a990", "name": "AnmManager::write_sprite", "comment": null}
+, {"addr": "0x47db40", "name": "AnmManager::draw_vm", "comment": null}
 , {"addr": "0x47f3c0", "name": "AnmManager::initialize", "comment": null}
 , {"addr": "0x480780", "name": "AnmFastVm::constructor", "comment": null}
 , {"addr": "0x480790", "name": "AnmFastVm::destructor", "comment": null}

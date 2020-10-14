@@ -133,7 +133,7 @@
 , {"addr": "0x4180f0", "name": "Spellcard::unregister_update_funcs", "comment": null}
 , {"addr": "0x418110", "name": "Timer::sub_418110", "comment": null}
 , {"addr": "0x418130", "name": "Lolidfk::sub_418130", "comment": null}
-, {"addr": "0x4181f0", "name": "Lolidfk::sub_4181f0", "comment": null}
+, {"addr": "0x4181f0", "name": "Lolidfk::add_to_score", "comment": null}
 , {"addr": "0x418220", "name": "Lolidfk::sub_418220", "comment": null}
 , {"addr": "0x4182e0", "name": "zUnknownGlobalW::constructor", "comment": null}
 , {"addr": "0x418300", "name": "zUnknownGlobalWInner::constructor", "comment": null}
@@ -142,8 +142,8 @@
 , {"addr": "0x41efc0", "name": "Enemy::sub_41efc0", "comment": null}
 , {"addr": "0x41f000", "name": "Enemy::sub_41f000__possibly__is_familiar", "comment": null}
 , {"addr": "0x41f0b0", "name": "Spellcard::sub_41f0b0", "comment": null}
-, {"addr": "0x41f110", "name": "Enemy::sub_41f110", "comment": null}
-, {"addr": "0x41f280", "name": "Enemy::sub_41f280", "comment": null}
+, {"addr": "0x41f110", "name": "Enemy::create_enemy_familiar_2", "comment": null}
+, {"addr": "0x41f280", "name": "Enemy::enemy_create_familiar", "comment": null}
 , {"addr": "0x41f420", "name": "Enemy::ecl_get_int_var", "comment": null}
 , {"addr": "0x41fd20", "name": "Enemy::sub_41fd20__possibly__get_parent_of_familiar", "comment": null}
 , {"addr": "0x41fd40", "name": "Enemy::sub_41fd40__possibly__get_familiar_count", "comment": null}
@@ -154,6 +154,7 @@
 , {"addr": "0x420950", "name": "ecl_get_float_ptr", "comment": null}
 , {"addr": "0x420d10", "name": "Enemy::move_dir_time_impl", "comment": null}
 , {"addr": "0x420f40", "name": "Enemy::move_pos_time_impl", "comment": null}
+, {"addr": "0x4213f0", "name": "Enemy::set_floatTime", "comment": null}
 , {"addr": "0x421b60", "name": "Lolidfk::get_current_time_orb_count", "comment": null}
 , {"addr": "0x421b80", "name": "Lolidfk::get_required_time_orbs", "comment": null}
 , {"addr": "0x421ba0", "name": "Lolidfk::linterp_int_by_rank", "comment": null}
@@ -295,7 +296,7 @@
 , {"addr": "0x42f1f0", "name": "EnemyManager::sub_42f1f0", "comment": null}
 , {"addr": "0x42f230", "name": "Lolidfk::sub_42f230__shottype_has_a_human__i_think", "comment": null}
 , {"addr": "0x42f270", "name": "Lolidfk::sub_42f270__shottype_has_a_youkai__i_think", "comment": null}
-, {"addr": "0x42f2b0", "name": "Lolidfk::sub_42f2b0", "comment": null}
+, {"addr": "0x42f2b0", "name": "Lolidfk::lives_remaining", "comment": null}
 , {"addr": "0x42f2d0", "name": "AsciiManager::sub_42f2d0_set_something_for_boss_indicators", "comment": null}
 , {"addr": "0x42f2f0", "name": "AsciiManager::set_scale", "comment": null}
 , {"addr": "0x42f360", "name": "BulletManager::reset", "comment": null}
@@ -397,6 +398,7 @@
 , {"addr": "0x440010", "name": "ItemManager::constructor", "comment": null}
 , {"addr": "0x440050", "name": "Item::constructor", "comment": null}
 , {"addr": "0x4400a0", "name": "ItemManager::spawn_item", "comment": null}
+, {"addr": "0x440470", "name": "Lolidfk::set_next_point_item_extend", "comment": null}
 , {"addr": "0x440500", "name": "ItemManager::on_tick__(called_by_BulletManager)", "comment": null}
 , {"addr": "0x440cf0", "name": "Item::collect_power_item", "comment": null}
 , {"addr": "0x440e40", "name": "Item::collect_point_item", "comment": null}
@@ -409,7 +411,7 @@
 , {"addr": "0x4415a0", "name": "ItemManager::on_draw", "comment": null}
 , {"addr": "0x441770", "name": "Item::remove_from_active_list", "comment": null}
 , {"addr": "0x4417e0", "name": "ItemManager::count_time_orbs", "comment": null}
-, {"addr": "0x441850", "name": "Lolidfk::sub_441850", "comment": null}
+, {"addr": "0x441850", "name": "Lolidfk::add_to_power", "comment": null}
 , {"addr": "0x4418a0", "name": "UnknownGlobal44::constructor", "comment": null}
 , {"addr": "0x4418c0", "name": "WinMain", "comment": null}
 , {"addr": "0x441e70", "name": "Window::do_frame", "comment": null}
@@ -620,6 +622,7 @@
 , {"addr": "0x474c70", "name": "ArcFile::sub_474c70", "comment": null}
 , {"addr": "0x478395", "name": "sub_478395_do_something_to_matrix", "comment": null}
 , {"addr": "0x4784dd", "name": "sub_4784dd_do_something_to_matrix", "comment": null}
+, {"addr": "0x479520", "name": "jump_table_479520", "comment": null}
 , {"addr": "0x4a3e70", "name": "float_to_int_4a3e70", "comment": null}
 , {"addr": "0x4a427b", "name": "free_4", "comment": null}
 , {"addr": "0x4a43cf", "name": "free_3", "comment": null}

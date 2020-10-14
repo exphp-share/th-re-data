@@ -227,6 +227,9 @@
 
 , "zEnemyManager": 
   [ ["0x0", "__unknown", null]
+  , ["0xd8", "enemy_count_real", "int32_t"]
+  , ["0xdc", "__unknown", null]
+  , ["0xe4", "enemy_limit", "int32_t"]
   , ["0xe8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xe8", "__end", null]
   ]
@@ -242,6 +245,11 @@
   , ["0x4", "y", "float"]
   , ["0x8", "z", "float"]
   , ["0xc", "__end", null]
+  ]
+
+, "zFloat4": 
+  [ ["0x0", "a", "float[0x4]"]
+  , ["0x10", "__end", null]
   ]
 
 , "zGameThread": 
@@ -389,6 +397,19 @@
   [ ["0x0", "__unknown", null]
   , ["0x184cc", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x184cc", "__end", null]
+  ]
+
+, "zRenderVertex044": 
+  [ ["0x0", "transformed_pos", "struct zFloat4"]
+  , ["0x10", "diffuse_color", "struct D3DCOLOR"]
+  , ["0x14", "__end", null]
+  ]
+
+, "zRenderVertex144": 
+  [ ["0x0", "transformed_pos", "struct zFloat4"]
+  , ["0x10", "diffuse_color", "struct D3DCOLOR"]
+  , ["0x14", "texture_uv", "struct zFloat2"]
+  , ["0x1c", "__end", null]
   ]
 
 , "zReplayManager": 

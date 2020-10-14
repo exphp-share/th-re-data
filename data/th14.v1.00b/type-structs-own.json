@@ -759,7 +759,7 @@
   , ["0xd8", "enemy_count_real", "int32_t"]
   , ["0xdc", "__unknown", null]
   , ["0xe0", "last_enemy_id", "int32_t"]
-  , ["0xe4", "__unknown", null]
+  , ["0xe4", "enemy_limit", "int32_t"]
   , ["0xe8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xe8", "__end", null]
   ]

@@ -1,10 +1,12 @@
-[ {"addr": "0x49c888", "name": "VTABLE_LASER_CURVE", "type": "void*[0x1a]", "comment": null}
+[ {"addr": "0x49c0c4", "name": "ECL_EXT_DAMAGE_FUNCS", "type": "void*[0x3]", "comment": null}
+, {"addr": "0x49c888", "name": "VTABLE_LASER_CURVE", "type": "void*[0x1a]", "comment": null}
 , {"addr": "0x49c8f4", "name": "VTABLE_LASER_BEAM", "type": "void*[0x1a]", "comment": null}
 , {"addr": "0x49c960", "name": "VTABLE_LASER_INFINITE", "type": "void*[0x1a]", "comment": null}
 , {"addr": "0x49c9cc", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[0x1a]", "comment": null}
 , {"addr": "0x4a46f0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table[0x1]", "comment": null}
 , {"addr": "0x4a4710", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a47b0", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
+, {"addr": "0x4a8a48", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4b19c8", "name": "DEBUG_THING", "type": "void", "comment": null}
 , {"addr": "0x4b3b10", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4b54f4", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
@@ -15,6 +17,7 @@
 , {"addr": "0x4b5510", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4b5518", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
 , {"addr": "0x4b551c", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
+, {"addr": "0x4b5520", "name": "ECL_HITBOX_FUNCS", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x4b5524", "name": "FPS_COUNTER_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5528", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4b5530", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
@@ -30,4 +33,6 @@
 , {"addr": "0x4b5674", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4ed880", "name": "HELP_MANUAL_2_PTR", "type": "struct zHelpManual2*", "comment": null}
 , {"addr": "0x4ed88c", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x507b70", "name": "WINDOW", "type": "void", "comment": null}
+, {"addr": "0x50f810", "name": "SPRITE_TEMP_BUFFER", "type": "int32_t", "comment": null}
 ]

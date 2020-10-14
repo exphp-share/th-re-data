@@ -29,6 +29,7 @@
 , {"addr": "0x4077f0", "name": "Stage::sub_4077f0", "comment": null}
 , {"addr": "0x407900", "name": "Stage::draw_vms", "comment": null}
 , {"addr": "0x4082b0", "name": "Stage::set_transform_matrices_from_camera", "comment": null}
+, {"addr": "0x40e5b0", "name": "Enemy::ecl_get_int_var", "comment": null}
 , {"addr": "0x410520", "name": "UnknownGlobalW::ecl_parser", "comment": null}
 , {"addr": "0x41a210", "name": "EffectManager::constructor", "comment": null}
 , {"addr": "0x41a350", "name": "EffectManager::set_zero", "comment": null}
@@ -48,6 +49,7 @@
 , {"addr": "0x41e920", "name": "Enemy::sub_41e920", "comment": null}
 , {"addr": "0x41ea60", "name": "EnemyManager::sub_41ea60", "comment": null}
 , {"addr": "0x41ee70", "name": "EnemyManager::constructor", "comment": null}
+, {"addr": "0x41ef70", "name": "Enemy::constructor", "comment": null}
 , {"addr": "0x4203b0", "name": "Enemy::restrict_to_move_limits", "comment": null}
 , {"addr": "0x420620", "name": "EnemyManager::on_tick_0a", "comment": null}
 , {"addr": "0x422ca0", "name": "EnemyManager::on_draw_05", "comment": null}

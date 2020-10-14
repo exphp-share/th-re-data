@@ -338,6 +338,9 @@
 
 , "zEnemyManager": 
   [ ["0x0", "__unknown", null]
+  , ["0xb8", "enemy_count_real", "int32_t"]
+  , ["0xbc", "__unknown", null]
+  , ["0xc4", "enemy_limit", "int32_t"]
   , ["0xc8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xc8", "__end", null]
   ]
@@ -495,7 +498,10 @@
   , ["0x1b9cd4", "normal_items", "struct zItem[0x800]"]
   , ["0x79dcd4", "normal_item_freelist_head", "struct zItemListHead"]
   , ["0x79dce4", "cancel_item_freelist_head", "struct zItemListHead"]
-  , ["0x79dcf4", "__unknown", null]
+  , ["0x79dcf4", "num_items_alive", "int32_t"]
+  , ["0x79dcf8", "__disused__next_cancel_item_index", "int32_t"]
+  , ["0x79dcfc", "__disused__num_cancel_items_spawned_this_frame", "int32_t"]
+  , ["0x79dd00", "__disused__ufos_spawned_since_stage_begin", "int32_t"]
   , ["0x79dd04", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x79dd04", "__end", null]
   ]
