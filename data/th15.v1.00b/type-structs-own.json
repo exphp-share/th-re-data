@@ -61,7 +61,7 @@
   , ["0xdc", "world_list_head", "struct zAnmVmList*"]
   , ["0xe0", "__world_list_tail", "struct zAnmVmList*"]
   , ["0xe4", "ui_list_head", "struct zAnmVmList*"]
-  , ["0xe8", "__ui_list_tail", "struct zAnmVmList*"]
+  , ["0xe8", "ui_list_tail", "struct zAnmVmList*"]
   , ["0xec", "fast_array", "struct zAnmFastVm[0x1fff]"]
   , ["0xc3facc", "next_snapshot_fast_id", "int32_t"]
   , ["0xc3fad0", "__unknown", null]
@@ -224,7 +224,7 @@
   , ["0x8", "time_in_script", "struct zTimer"]
   , ["0x1c", "__timer_1c", "struct zTimer"]
   , ["0x30", "node_in_global_list", "struct zAnmVmList"]
-  , ["0x40", "__prolly_node_as_child", "struct zAnmVmList"]
+  , ["0x40", "node_as_child", "struct zAnmVmList"]
   , ["0x50", "list_of_children", "struct zAnmVmList"]
   , ["0x60", "__prolly_weird_list_seen_in_th16", "struct zAnmVmList"]
   , ["0x70", "__prolly_next_in_layer", "struct zAnmVm*"]
@@ -341,9 +341,10 @@
   , ["0xa0d96c", "snapshot_bullets", "struct zBullet[0x7d1]"]
   , ["0x141b240", "anm_ids", "struct zAnmId[0x7d1]"]
   , ["0x141d184", "snapshot_anm_ids", "struct zAnmId[0x7d1]"]
-  , ["0x141f0c8", "__field_141f0c8", "int32_t"]
-  , ["0x141f0cc", "__snapshot_field_141f0c8", "int32_t"]
-  , ["0x141f0d0", "__unknown", null]
+  , ["0x141f0c8", "__unknown_cancel_counter", "int32_t"]
+  , ["0x141f0cc", "__unknown_snapshot_cancel_counter", "int32_t"]
+  , ["0x141f0d0", "iter_current", "struct zBulletList*"]
+  , ["0x141f0d4", "iter_next", "struct zBulletList*"]
   , ["0x141f0d8", "bullet_anm", "struct zAnmLoaded*"]
   , ["0x141f0dc", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x141f0dc", "__end", null]
@@ -499,7 +500,7 @@
   , ["0x406c", "bombshield_off_anm_main", "struct zAnmId"]
   , ["0x4070", "own_boss_id", "int32_t"]
   , ["0x4074", "et_protect_range", "float"]
-  , ["0x4078", "set_next", "struct zEnemySetNextSlot[0x8]"]
+  , ["0x4078", "interrupts", "struct zEnemyInterrupt[0x8]"]
   , ["0x44b8", "full", "struct zEnemyFull*"]
   , ["0x44bc", "fog", "struct zEnemyFog"]
   , ["0x44d8", "set_death", "char[0x40]"]
@@ -533,6 +534,15 @@
   , ["0x5744", "__unknown", null]
   , ["0x574c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x574c", "__end", null]
+  ]
+
+, "zEnemyInterrupt": 
+  [ ["0x0", "life__for_set_next", "int32_t"]
+  , ["0x4", "time__for_set_next", "int32_t"]
+  , ["0x8", "sub__for_set_next", "char[0x40]"]
+  , ["0x48", "sub__for_set_timeout", "char[0x40]"]
+  , ["0x88", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x88", "__end", null]
   ]
 
 , "zEnemyLife": 
@@ -585,15 +595,6 @@
   , ["0xa0", "__unknown", null]
   , ["0xa8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xa8", "__end", null]
-  ]
-
-, "zEnemySetNextSlot": 
-  [ ["0x0", "life__for_set_next", "int32_t"]
-  , ["0x4", "time__for_set_next", "int32_t"]
-  , ["0x8", "sub__for_set_next", "char[0x40]"]
-  , ["0x48", "sub__for_set_timeout", "char[0x40]"]
-  , ["0x88", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x88", "__end", null]
   ]
 
 , "zFloat2": 

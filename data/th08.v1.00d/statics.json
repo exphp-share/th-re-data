@@ -56,11 +56,47 @@
 , {"addr": "0x4b4980", "name": "float(100)", "type": "float", "comment": null}
 , {"addr": "0x4b4ad8", "name": "BULLET_TYPE_DATA", "type": "struct zTableBulletTypeScripts[0x15]", "comment": null}
 , {"addr": "0x4b4c90", "name": "double(0)", "type": "double", "comment": null}
+, {"addr": "0x4b4cf4", "name": "float(368)", "type": "float", "comment": null}
+, {"addr": "0x4b4cf8", "name": "float(0.46)", "type": "float", "comment": null}
+, {"addr": "0x4b4cfc", "name": "float(488)", "type": "float", "comment": null}
+, {"addr": "0x4b4d00", "name": "float(624)", "type": "float", "comment": null}
+, {"addr": "0x4b4d04", "name": "float(512)", "type": "float", "comment": null}
+, {"addr": "0x4b4d08", "name": "float(464)", "type": "float", "comment": null}
+, {"addr": "0x4b4d0c", "name": "float(184)", "type": "float", "comment": null}
+, {"addr": "0x4b4d10", "name": "float(168)", "type": "float", "comment": null}
+, {"addr": "0x4b4d14", "name": "float(152)", "type": "float", "comment": null}
+, {"addr": "0x4b4d18", "name": "float(136)", "type": "float", "comment": null}
+, {"addr": "0x4b4d1c", "name": "float(0.48)", "type": "float", "comment": null}
+, {"addr": "0x4b4d20", "name": "float(0.49)", "type": "float", "comment": null}
+, {"addr": "0x4b4d24", "name": "float(29)", "type": "float", "comment": null}
 , {"addr": "0x4b6944", "name": "float(0.99)", "type": "float", "comment": null}
 , {"addr": "0x4b847c", "name": "float(0.5)", "type": "float", "comment": null}
 , {"addr": "0x4bd610", "name": "IID_IDirectSoundNotify", "type": "GUID", "comment": null}
 , {"addr": "0x4bd700", "name": "GUID_NULL", "type": "GUID", "comment": null}
 , {"addr": "0x4c6000", "name": "LIFE_BEFORE_MAIN", "type": "void*[0x2e]", "comment": null}
+, {"addr": "0x4c6120", "name": "SPELL_NUMBERS_EASY", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c61c8", "name": "SPELL_NUMBERS_NORMAL", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6290", "name": "SPELL_NUMBERS_HARD", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6358", "name": "SPELL_NUMBERS_LUNATIC", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6420", "name": "SPELL_NUMBERS_EXTRA", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6458", "name": "SPELL_NUMBERS_COMPLETE", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c67d0", "name": "RESULT_SPELL_NUMBERS_BY_DIFFICULTY", "type": "int32_t*[0x6]", "comment": null}
+, {"addr": "0x4c67e8", "name": "RESULT_SPELL_COUNTS_BY_DIFFICULTY", "type": "int32_t[0x6]", "comment": null}
+, {"addr": "0x4c6800", "name": "SPELL_NUMBERS_STAGE_1", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6838", "name": "SPELL_NUMBERS_STAGE_2", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6888", "name": "SPELL_NUMBERS_STAGE_3", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c68e0", "name": "SPELL_NUMBERS_STAGE_4A", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6940", "name": "SPELL_NUMBERS_STAGE_4B", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c69a0", "name": "SPELL_NUMBERS_STAGE_5", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c69f0", "name": "SPELL_NUMBERS_STAGE_6A", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6a60", "name": "SPELL_NUMBERS_STAGE_6B", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6b10", "name": "SPELL_NUMBERS_STAGE_EX", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6b48", "name": "SPELL_NUMBERS_STAGE_LW", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6b90", "name": "__UKNOWN_SPELL_PRACTICE_ARRAY", "type": "int32_t[0x1]", "comment": null}
+, {"addr": "0x4c6c3c", "name": "__UNKNOWN_SPELL_PRACTICE_ARRAY_LENGTH", "type": "int32_t", "comment": null}
+, {"addr": "0x4c6c40", "name": "SPELL_PRACTICE_NUMBERS_BY_STAGE", "type": "int32_t*[0xa]", "comment": null}
+, {"addr": "0x4c6c68", "name": "SPELL_PRACTICE_COUNTS_BY_STAGE", "type": "int32_t*[0xa]", "comment": null}
+, {"addr": "0x4c6c90", "name": "ECL_FLOAT_TIME_FUNCS", "type": "void*[0x8]", "comment": null}
 , {"addr": "0x4c6cb0", "name": "FUNC_SET_FUNCS", "type": "void*[0x20]", "comment": null}
 , {"addr": "0x4c6d30", "name": "EFFECT_TABLE", "type": "struct zTableEffectData", "comment": "This array actually has 0x42 entries but annotating tables of structures types makes binja slow."}
 , {"addr": "0x4c7480", "name": "EFFECT_ANM_FILENAMES", "type": "char*[0xf]", "comment": null}
@@ -100,9 +136,9 @@
 , {"addr": "0x160f428", "name": "GUI", "type": "struct zGui", "comment": null}
 , {"addr": "0x160f4c4", "name": "GUI_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x160f4e4", "name": "GUI_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x160f508", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": "This thing... um...\n\nIt's important.  That's for sure.  Commenting out its on_tick\ncrashes the game; commenting out its on_draw during a game\ndoes nothing, but commenting it out before starting the game\ncauses a crash.\n\nIts 'on_tick' is MASSIVE.  If you look inside, you'll see\na string somewhere that says Pause.  But... I think this thing\nrepresents a fair bit more than just the pause menu!\n\nIf you look at the object itself, it has a pointer to a thing\nholding important variables like lives and bombs (which become\nfields of a static global in modern games), and it also\ncontains a very, very large array holding what is apparently\ndata for spell practice.  It has, like, ZUN's spell comments\nand stuff. It's weird.  It's just... weird.\n\nIt no longer exists in MoF.  Maybe.\n\n...or maybe it's that Globals struct."}
-, {"addr": "0x164d344", "name": "LOLIDFK_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x164d364", "name": "LOLIDFK_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x160f508", "name": "GAME_MANAGER", "type": "struct zGameManager", "comment": "This thing... um...\n\nIt's important.  That's for sure.  Commenting out its on_tick\ncrashes the game; commenting out its on_draw during a game\ndoes nothing, but commenting it out before starting the game\ncauses a crash.\n\nIts 'on_tick' is MASSIVE.  If you look inside, you'll see\na string somewhere that says Pause.  But... I think this thing\nrepresents a fair bit more than just the pause menu!\n\nThe loaded scorefile is directly embedded in this struct and\nnot behind a pointer or anything.  That's kind of crazeballs?\n\nIt no longer exists in MoF.\nWell.  It's more like... it gets split into GameThread and Globals.\nAnd PauseMenu.  And LoadingThread."}
+, {"addr": "0x164d344", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x164d364", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x164d388", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
 , {"addr": "0x164d520", "name": "REPLAY_RNG", "type": "void", "comment": null}
 , {"addr": "0x164d52c", "name": "INPUT", "type": "int16_t", "comment": null}

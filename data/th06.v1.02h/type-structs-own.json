@@ -323,6 +323,12 @@
   , ["0xc", "__end", null]
   ]
 
+, "zGameManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1a80", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x1a80", "__end", null]
+  ]
+
 , "zGui": 
   [ ["0x0", "__unknown", null]
   , ["0x2c44", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -353,12 +359,6 @@
   , ["0x268", "__unknown", null]
   , ["0x270", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x270", "__end", null]
-  ]
-
-, "zLolidfk": 
-  [ ["0x0", "__unknown", null]
-  , ["0x1a80", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x1a80", "__end", null]
   ]
 
 , "zMainMenu": 

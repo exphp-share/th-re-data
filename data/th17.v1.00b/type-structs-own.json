@@ -681,7 +681,7 @@
   , ["0x408c", "bombshield_off_anm_main", "int32_t"]
   , ["0x4090", "own_boss_id", "int32_t"]
   , ["0x4094", "et_protect_range", "float"]
-  , ["0x4098", "set_next", "struct zEnemySetNext[0x8]"]
+  , ["0x4098", "interrupts", "struct zEnemyInterrupt[0x8]"]
   , ["0x44d8", "full", "struct zEnemyFull*"]
   , ["0x44dc", "fog", "struct zEnemyFog"]
   , ["0x44f8", "set_death", "char[0x40]"]
@@ -729,6 +729,15 @@
   , ["0x576c", "__end", null]
   ]
 
+, "zEnemyInterrupt": 
+  [ ["0x0", "hp_value", "int32_t"]
+  , ["0x4", "time", "int32_t"]
+  , ["0x8", "__sub_name_1", "char[0x40]"]
+  , ["0x48", "__sub_name_2", "char[0x40]"]
+  , ["0x88", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x88", "__end", null]
+  ]
+
 , "zEnemyLife": 
   [ ["0x0", "current", "int32_t"]
   , ["0x4", "maximum", "int32_t"]
@@ -774,15 +783,6 @@
   , ["0x190", "__unknown", null]
   , ["0x194", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x194", "__end", null]
-  ]
-
-, "zEnemySetNext": 
-  [ ["0x0", "hp_value", "int32_t"]
-  , ["0x4", "time", "int32_t"]
-  , ["0x8", "__sub_name_1", "char[0x40]"]
-  , ["0x48", "__sub_name_2", "char[0x40]"]
-  , ["0x88", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x88", "__end", null]
   ]
 
 , "zFloat2": 

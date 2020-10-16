@@ -253,7 +253,9 @@
   ]
 
 , "zEnemy": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "primary_vm", "struct zAnmVm"]
+  , ["0x24c", "slotted_vms", "struct zAnmVm[0x2]"]
+  , ["0x6e4", "__unknown", null]
   , ["0x2e4c", "damage_taken_last_frame", "int32_t"]
   , ["0x2e50", "__unknown", null]
   , ["0x4f48", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -297,6 +299,12 @@
   , ["0x8", "z", "float"]
   , ["0xc", "w", "float"]
   , ["0x10", "__end", null]
+  ]
+
+, "zGameManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x9644", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x9644", "__end", null]
   ]
 
 , "zGui": 
@@ -349,12 +357,6 @@
   , ["0x498", "__unknown", null]
   , ["0x4ec", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4ec", "__end", null]
-  ]
-
-, "zLolidfk": 
-  [ ["0x0", "__unknown", null]
-  , ["0x9644", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x9644", "__end", null]
   ]
 
 , "zMainMenu": 

@@ -1,6 +1,6 @@
 [ {"addr": "0x4105ef", "name": "lookup_table_4105ef", "type": "uint8_t[0x3]", "comment": null}
 , {"addr": "0x410678", "name": "lookup_table_410678", "type": "uint8_t[0x12]", "comment": null}
-, {"addr": "0x42310f", "name": "lookup_table_42310f", "type": "uint8_t[0x4]", "comment": null}
+, {"addr": "0x42310f", "name": "lookup_table_42310f", "type": "uint8_t[0x3]", "comment": null}
 , {"addr": "0x423194", "name": "lookup_table_423194", "type": "uint8_t[0x5]", "comment": null}
 , {"addr": "0x4231f5", "name": "lookup_table_4231f5", "type": "uint8_t[0x8]", "comment": null}
 , {"addr": "0x46a2b4", "name": "float(16)", "type": "float", "comment": null}
@@ -91,9 +91,9 @@
 , {"addr": "0x69bc10", "name": "BULLET_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x69bc5c", "name": "GUI_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x69bc7c", "name": "GUI_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x69bca0", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": null}
-, {"addr": "0x69d720", "name": "LOLIDFK_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x69d740", "name": "LOLIDFK_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x69bca0", "name": "GAME_MANAGER", "type": "struct zGameManager", "comment": null}
+, {"addr": "0x69d720", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x69d740", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x69d760", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
 , {"addr": "0x69d918", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
 , {"addr": "0x69d998", "name": "DEBUG_LOG", "type": "struct zDebugLog", "comment": null}

@@ -16,7 +16,7 @@
 , {"addr": "0x4024f0", "name": "AsciiManager::sub_4024f0_makes_array_1_popup", "comment": null}
 , {"addr": "0x402630", "name": "AsciiManager::sub_402630_makes_array_2_popup", "comment": null}
 , {"addr": "0x404eb0", "name": "D3DVec3Cross", "comment": null}
-, {"addr": "0x404fe0", "name": "Lolidfk::sub_404fe0", "comment": null}
+, {"addr": "0x404fe0", "name": "GameManager::sub_404fe0", "comment": null}
 , {"addr": "0x405080", "name": "Stage::constructor", "comment": null}
 , {"addr": "0x4052d0", "name": "compute_bezier", "comment": null}
 , {"addr": "0x405370", "name": "Stage::interpolate_camera_field", "comment": null}
@@ -80,13 +80,13 @@
 , {"addr": "0x42d04b", "name": "Gui::on_cleanup", "comment": null}
 , {"addr": "0x42d136", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x42d24d", "name": "Gui::constructor", "comment": null}
-, {"addr": "0x42d560", "name": "Lolidfk::constructor", "comment": null}
-, {"addr": "0x42d6d8", "name": "Lolidfk::sub_42d6d8", "comment": null}
-, {"addr": "0x42d8d5", "name": "Lolidfk::on_tick_02", "comment": null}
-, {"addr": "0x42e1d4", "name": "Lolidfk::on_draw_02", "comment": null}
-, {"addr": "0x42e83e", "name": "Lolidfk::on_registration", "comment": null}
-, {"addr": "0x42f2e4", "name": "Lolidfk::on_cleanup", "comment": null}
-, {"addr": "0x42f3c5", "name": "Lolidfk::initialize", "comment": null}
+, {"addr": "0x42d560", "name": "GameManager::constructor", "comment": null}
+, {"addr": "0x42d6d8", "name": "GameManager::sub_42d6d8", "comment": null}
+, {"addr": "0x42d8d5", "name": "GameManager::on_tick_02", "comment": null}
+, {"addr": "0x42e1d4", "name": "GameManager::on_draw_02", "comment": null}
+, {"addr": "0x42e83e", "name": "GameManager::on_registration", "comment": null}
+, {"addr": "0x42f2e4", "name": "GameManager::on_cleanup", "comment": null}
+, {"addr": "0x42f3c5", "name": "GameManager::initialize", "comment": null}
 , {"addr": "0x42fb20", "name": "UpdateFunc::constructor", "comment": null}
 , {"addr": "0x42fbd0", "name": "register__on_tick", "comment": null}
 , {"addr": "0x42fca0", "name": "register__on_draw", "comment": null}
@@ -192,7 +192,7 @@
 , {"addr": "0x48c880", "name": "life_before_main_48c880_BULLET_MANAGER", "comment": null}
 , {"addr": "0x48c88f", "name": "life_before_main_48c88f_upd", "comment": null}
 , {"addr": "0x48c8a9", "name": "life_before_main_48c8a9_upd", "comment": null}
-, {"addr": "0x48c8c3", "name": "life_before_main_48c8c3_LOLIDFK", "comment": null}
+, {"addr": "0x48c8c3", "name": "life_before_main_48c8c3_GAME_MANAGER", "comment": null}
 , {"addr": "0x48c8d2", "name": "life_before_main_48c8d2_upd", "comment": null}
 , {"addr": "0x48c8ec", "name": "life_before_main_48c8ec_upd", "comment": null}
 , {"addr": "0x48c910", "name": "life_before_main_48c910_UPDATE_FUNC_REGISTRY", "comment": null}

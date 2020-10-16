@@ -291,7 +291,7 @@
 , {"addr": "0x41a4d0", "name": "method_41a4d0_1arg_loads_zero_on_fpu", "comment": null}
 , {"addr": "0x41a4e0", "name": "method_41a4e0_1arg_returns_0", "comment": null}
 , {"addr": "0x41a4f0", "name": "EnemyFull::free_all_async", "comment": null}
-, {"addr": "0x41a530", "name": "EnemyFull::initialize_41a530", "comment": null}
+, {"addr": "0x41a530", "name": "EnemyBaseClass::constructor", "comment": null}
 , {"addr": "0x41a5a0", "name": "EnemyFull::reset_run_context", "comment": null}
 , {"addr": "0x41a670", "name": "method_41a670_destructor", "comment": null}
 , {"addr": "0x41a6d0", "name": "EnemyLife::receive_damage", "comment": null}

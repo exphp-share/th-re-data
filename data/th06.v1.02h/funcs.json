@@ -51,12 +51,12 @@
 , {"addr": "0x41b1b1", "name": "Gui::on_cleanup", "comment": null}
 , {"addr": "0x41b252", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x41b34b", "name": "Gui::constructor", "comment": null}
-, {"addr": "0x41b663", "name": "Lolidfk::on_tick_04", "comment": null}
-, {"addr": "0x41ba4a", "name": "Lolidfk::on_draw_02", "comment": null}
-, {"addr": "0x41ba6a", "name": "Lolidfk::initialize", "comment": null}
-, {"addr": "0x41bb02", "name": "Lolidfk::on_registration", "comment": null}
-, {"addr": "0x41c1f7", "name": "Lolidfk::on_cleanup", "comment": null}
-, {"addr": "0x41c676", "name": "Lolidfk::constructor", "comment": null}
+, {"addr": "0x41b663", "name": "GameManager::on_tick_04", "comment": null}
+, {"addr": "0x41ba4a", "name": "GameManager::on_draw_02", "comment": null}
+, {"addr": "0x41ba6a", "name": "GameManager::initialize", "comment": null}
+, {"addr": "0x41bb02", "name": "GameManager::on_registration", "comment": null}
+, {"addr": "0x41c1f7", "name": "GameManager::on_cleanup", "comment": null}
+, {"addr": "0x41c676", "name": "GameManager::constructor", "comment": null}
 , {"addr": "0x41c720", "name": "UpdateFunc::constructor", "comment": null}
 , {"addr": "0x41c7f0", "name": "UpdateFuncRegistry::constructor", "comment": null}
 , {"addr": "0x41c860", "name": "UpdateFuncRegistry::register__on_tick", "comment": null}
@@ -157,7 +157,7 @@
 , {"addr": "0x469620", "name": "life_before_main_469620_BULLET_MANAGER", "comment": null}
 , {"addr": "0x46962f", "name": "life_before_main_46962f_upd", "comment": null}
 , {"addr": "0x469649", "name": "life_before_main_469649_upd", "comment": null}
-, {"addr": "0x469663", "name": "life_before_main_469663_LOLIDFK", "comment": null}
+, {"addr": "0x469663", "name": "life_before_main_469663_GAME_MANAGER", "comment": null}
 , {"addr": "0x469672", "name": "life_before_main_469672_upd", "comment": null}
 , {"addr": "0x46968c", "name": "life_before_main_46968c_upd", "comment": null}
 , {"addr": "0x4696b0", "name": "life_before_main_4696b0_UPDATE_FUNC_REGISTRY", "comment": null}

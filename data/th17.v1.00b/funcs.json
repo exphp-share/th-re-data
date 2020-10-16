@@ -72,18 +72,18 @@
 , {"addr": "0x40dbe0", "name": "Timer::decrement", "comment": null}
 , {"addr": "0x40dc60", "name": "Supervisor::sub_40dc60", "comment": null}
 , {"addr": "0x40de60", "name": "Globals::get_stage_num", "comment": null}
-, {"addr": "0x40e330", "name": "TokenManager::destroy_all", "comment": null}
-, {"addr": "0x40e420", "name": "TokenManager::operator new", "comment": null}
-, {"addr": "0x40e640", "name": "TokenManager::operator delete", "comment": null}
-, {"addr": "0x40e750", "name": "TokenManager::on_tick", "comment": null}
-, {"addr": "0x40e920", "name": "TokenManager::sub_40e920", "comment": null}
-, {"addr": "0x40ee70", "name": "TokenManager::sub_40ee70_beast_related", "comment": null}
-, {"addr": "0x40f6d0", "name": "TokenManager::do_hyper_cancel", "comment": null}
-, {"addr": "0x40f960", "name": "TokenManager::on_tick__stub", "comment": null}
-, {"addr": "0x40f970", "name": "TokenManager::on_draw", "comment": null}
-, {"addr": "0x410380", "name": "TokenManager::spawn_token", "comment": null}
-, {"addr": "0x410570", "name": "TokenManager::sub_410570", "comment": null}
-, {"addr": "0x410af0", "name": "TokenManager::sub_410af0", "comment": null}
+, {"addr": "0x40e330", "name": "GoastManager::destroy_all", "comment": null}
+, {"addr": "0x40e420", "name": "GoastManager::operator new", "comment": null}
+, {"addr": "0x40e640", "name": "GoastManager::operator delete", "comment": null}
+, {"addr": "0x40e750", "name": "GoastManager::on_tick", "comment": null}
+, {"addr": "0x40e920", "name": "GoastManager::sub_40e920", "comment": null}
+, {"addr": "0x40ee70", "name": "GoastManager::sub_40ee70_beast_related", "comment": null}
+, {"addr": "0x40f6d0", "name": "GoastManager::do_hyper_cancel", "comment": null}
+, {"addr": "0x40f960", "name": "GoastManager::on_tick__stub", "comment": null}
+, {"addr": "0x40f970", "name": "GoastManager::on_draw", "comment": null}
+, {"addr": "0x410380", "name": "GoastManager::spawn_token", "comment": null}
+, {"addr": "0x410570", "name": "GoastManager::sub_410570", "comment": null}
+, {"addr": "0x410af0", "name": "GoastManager::sub_410af0", "comment": null}
 , {"addr": "0x411180", "name": "cartesian_from_polar_411180", "comment": null}
 , {"addr": "0x4111a0", "name": "TokenList::insert_at_back", "comment": null}
 , {"addr": "0x4112b0", "name": "anm_create_4112b0", "comment": null}

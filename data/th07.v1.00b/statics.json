@@ -43,9 +43,9 @@
 , {"addr": "0x575c4c", "name": "UNUSED_UPDATE_FUNC_575c4c", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x575c70", "name": "ITEM_MANAGER", "type": "struct zItemManager", "comment": null}
 , {"addr": "0x626218", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
-, {"addr": "0x626270", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": null}
-, {"addr": "0x62f8b4", "name": "LOLIDFK_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x62f8d4", "name": "LOLIDFK_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x626270", "name": "GAME_MANAGER", "type": "struct zGameManager", "comment": null}
+, {"addr": "0x62f8b4", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x62f8d4", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x62f8f4", "name": "GUI_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x62f914", "name": "GUI_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x62f934", "name": "BULLET_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}

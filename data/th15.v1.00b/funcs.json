@@ -8,7 +8,8 @@
 , {"addr": "0x402f70", "name": "sub_402f70_opens_existing_file", "comment": null}
 , {"addr": "0x4032b0", "name": "sub_4032b0_opens_existing_file", "comment": null}
 , {"addr": "0x403490", "name": "sub_403490_logs_debug_strings", "comment": null}
-, {"addr": "0x403840", "name": "Rng::sub_403840", "comment": null}
+, {"addr": "0x403800", "name": "Rng::sub_403800", "comment": null}
+, {"addr": "0x403840", "name": "Rng::randf_neg_1_to_1", "comment": null}
 , {"addr": "0x403ee0", "name": "Thread::operator delete", "comment": null}
 , {"addr": "0x403f30", "name": "Thread::join_if_running", "comment": null}
 , {"addr": "0x404050", "name": "PosVel::update_secondary_fields", "comment": null}
@@ -103,6 +104,9 @@
 , {"addr": "0x418890", "name": "BombSanae::restore_snapshot", "comment": null}
 , {"addr": "0x4188f0", "name": "BombSanae::write_autosave_data", "comment": null}
 , {"addr": "0x4189d0", "name": "BombSanae::read_autosave_data", "comment": null}
+, {"addr": "0x418b30", "name": "BulletManager::first_bullet", "comment": null}
+, {"addr": "0x418b60", "name": "BulletManager::next_bullet", "comment": null}
+, {"addr": "0x418bc0", "name": "ItemManager::get_lolk_slowdown_factor", "comment": null}
 , {"addr": "0x418c60", "name": "BulletManager::constructor", "comment": null}
 , {"addr": "0x418d20", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x418d80", "name": "Bullet::destructor", "comment": null}
@@ -110,8 +114,19 @@
 , {"addr": "0x418f40", "name": "BulletManager::destroy_all", "comment": null}
 , {"addr": "0x419090", "name": "BulletManager::destructor", "comment": null}
 , {"addr": "0x4191d0", "name": "BulletManager::operator new", "comment": null}
+, {"addr": "0x419a50", "name": "Bullet::sub_419a50", "comment": null}
+, {"addr": "0x41a000", "name": "BulletManager::sub_41a000", "comment": null}
 , {"addr": "0x41a5b0", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x41a5e0", "name": "BulletManager::on_draw", "comment": null}
+, {"addr": "0x41a600", "name": "BulletManager::shoot_one_bullet", "comment": null}
+, {"addr": "0x41b180", "name": "Bullet::run_ex", "comment": null}
+, {"addr": "0x41c5c0", "name": "BulletManager::shoot_bullets", "comment": null}
+, {"addr": "0x41e250", "name": "Bullet::cancel", "comment": null}
+, {"addr": "0x41e4b0", "name": "gen_items_from_cancel", "comment": null}
+, {"addr": "0x41e650", "name": "BulletManager::sub_41e650_cancels_bullets", "comment": null}
+, {"addr": "0x41e750", "name": "BulletManager::sub_41e750_cancels_bullets", "comment": null}
+, {"addr": "0x41e850", "name": "sub_41e850_cancels_bullets", "comment": null}
+, {"addr": "0x41ebf0", "name": "sub_41ebf0_cancels_bullets", "comment": null}
 , {"addr": "0x41f490", "name": "AnmVm::sub_41f490", "comment": null}
 , {"addr": "0x41fa90", "name": "Spellcard::initialize", "comment": null}
 , {"addr": "0x41fb70", "name": "Spellcard::destructor", "comment": null}
@@ -173,10 +188,14 @@
 , {"addr": "0x4309a0", "name": "EnemyManager::write_autosave_data", "comment": null}
 , {"addr": "0x430a50", "name": "EnemyManager::read_autosave_data", "comment": null}
 , {"addr": "0x430e50", "name": "Enemy::write_autosave_data", "comment": null}
+, {"addr": "0x4315f0", "name": "BulletManager::sub_4315f0", "comment": null}
+, {"addr": "0x431720", "name": "BulletManager::sub_431720_cancels_bullets", "comment": null}
+, {"addr": "0x4318a0", "name": "BulletManager::sub_4318a0", "comment": null}
 , {"addr": "0x431a30", "name": "ecl_ext_damage__callback_01", "comment": null}
 , {"addr": "0x431a50", "name": "ecl_ext_damage__callback_02", "comment": null}
 , {"addr": "0x431b70", "name": "ecl_funcSet__you_grow_bigger", "comment": null}
 , {"addr": "0x431b80", "name": "ecl_funcSet__you_become_normal_size", "comment": null}
+, {"addr": "0x431d00", "name": "BulletManager::sub_431d00", "comment": null}
 , {"addr": "0x432ec0", "name": "set_chapter", "comment": null}
 , {"addr": "0x433450", "name": "FpsCounter::constructor", "comment": null}
 , {"addr": "0x433500", "name": "FpsCounter::operator new", "comment": null}
@@ -198,6 +217,7 @@
 , {"addr": "0x43a960", "name": "Gui::update_bombs", "comment": null}
 , {"addr": "0x43b7d0", "name": "BulletManager::store_snapshot", "comment": null}
 , {"addr": "0x43b860", "name": "BulletManager::restore_snapshot", "comment": null}
+, {"addr": "0x43ba70", "name": "ItemManager::store_item_array", "comment": null}
 , {"addr": "0x43baa0", "name": "ItemManager::restore_snapshot", "comment": null}
 , {"addr": "0x43bc50", "name": "Player::prolly_hides_all_options", "comment": null}
 , {"addr": "0x43bca0", "name": "EffectManager::store_snapshot", "comment": null}
@@ -224,6 +244,8 @@
 , {"addr": "0x43f2a0", "name": "HelpManual::on_tick__stub", "comment": null}
 , {"addr": "0x43f2b0", "name": "HelpManual::on_draw__noop", "comment": null}
 , {"addr": "0x43f420", "name": "ItemManager::constructor", "comment": null}
+, {"addr": "0x43f4c0", "name": "ItemManager::sub_43f4c0", "comment": null}
+, {"addr": "0x43f4f0", "name": "ItemManager::sub_43f4f0", "comment": null}
 , {"addr": "0x43f510", "name": "Item::constructor", "comment": null}
 , {"addr": "0x43f540", "name": "Item::destructor", "comment": null}
 , {"addr": "0x43f5c0", "name": "ItemManager::initialize", "comment": null}
@@ -235,6 +257,7 @@
 , {"addr": "0x440870", "name": "ItemManager::on_tick", "comment": null}
 , {"addr": "0x4408a0", "name": "ItemManager::on_draw", "comment": null}
 , {"addr": "0x4408d0", "name": "ItemManager::spawn_item", "comment": null}
+, {"addr": "0x440d80", "name": "ItemManager::sub_440d80", "comment": null}
 , {"addr": "0x441160", "name": "LaserBaseClass::constructor", "comment": null}
 , {"addr": "0x441300", "name": "LaserLine::constructor", "comment": null}
 , {"addr": "0x4415f0", "name": "LaserManager::initialize", "comment": null}
@@ -247,6 +270,9 @@
 , {"addr": "0x441b20", "name": "LaserInfinite::constructor", "comment": null}
 , {"addr": "0x441b70", "name": "LaserBeam::constructor", "comment": null}
 , {"addr": "0x441bb0", "name": "LaserCurve::constructor", "comment": null}
+, {"addr": "0x443640", "name": "LaserLine::method_34", "comment": null}
+, {"addr": "0x445b50", "name": "LaserInfinite::method_34", "comment": null}
+, {"addr": "0x4486c0", "name": "LaserCurve::method_34", "comment": null}
 , {"addr": "0x44bc00", "name": "LoadingThread::constructor", "comment": null}
 , {"addr": "0x44bd00", "name": "LoadingThread::thread_start", "comment": null}
 , {"addr": "0x44be50", "name": "LoadingThread::initialize", "comment": null}
@@ -257,6 +283,7 @@
 , {"addr": "0x44c370", "name": "LoadingThread::on_draw__stub", "comment": null}
 , {"addr": "0x44c3f0", "name": "Supervisor::on_tick", "comment": null}
 , {"addr": "0x44c550", "name": "Supervisor::on_registration", "comment": null}
+, {"addr": "0x44c940", "name": "AnmVm::deallocate_slow_vm", "comment": null}
 , {"addr": "0x44ca60", "name": "Supervisor::initialize", "comment": null}
 , {"addr": "0x44d5f0", "name": "Supervisor::sub_44d5f0", "comment": null}
 , {"addr": "0x44d630", "name": "Supervisor::sub_44d630", "comment": null}
@@ -360,6 +387,7 @@
 , {"addr": "0x460ea0", "name": "MainMenu::on_tick__stub", "comment": null}
 , {"addr": "0x460eb0", "name": "MainMenu::on_draw__stub", "comment": null}
 , {"addr": "0x471340", "name": "WinMain", "comment": null}
+, {"addr": "0x4723d0", "name": "Window::do_frame__normal_version", "comment": null}
 , {"addr": "0x474a10", "name": "ScreenEffect::on_tick_474a10", "comment": null}
 , {"addr": "0x4751f0", "name": "ScreenEffect::operator new", "comment": null}
 , {"addr": "0x4752c0", "name": "ScreenEffect::initialize", "comment": null}
@@ -370,7 +398,11 @@
 , {"addr": "0x477160", "name": "AnmLoaded::set_sprite", "comment": null}
 , {"addr": "0x477aa0", "name": "AnmVm::get_int_var", "comment": null}
 , {"addr": "0x477e10", "name": "AnmVm::run", "comment": null}
+, {"addr": "0x47d840", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
+, {"addr": "0x47dba0", "name": "AnmManager::render_sprite_2d", "comment": null}
+, {"addr": "0x47e3a0", "name": "AnmManager::reset_vertex_buffers", "comment": null}
 , {"addr": "0x47e3f0", "name": "AnmManager::flush_sprites", "comment": null}
+, {"addr": "0x47e4c0", "name": "AnmManager::write_sprite", "comment": null}
 , {"addr": "0x480ae0", "name": "AnmManager::sub_480ae0_d3d", "comment": null}
 , {"addr": "0x4811d0", "name": "AnmManager::sub_4811d0", "comment": null}
 , {"addr": "0x481690", "name": "AnmManager::sub_481690", "comment": null}
@@ -393,7 +425,8 @@
 , {"addr": "0x487b10", "name": "AnmManager::on_tick_22", "comment": null}
 , {"addr": "0x487b40", "name": "AnmManager::on_tick_09__stub", "comment": null}
 , {"addr": "0x487b60", "name": "AnmManager::render_layer", "comment": null}
-, {"addr": "0x488090", "name": "AnmManager::sub_488090__maybe_lolk_stuff", "comment": null}
+, {"addr": "0x487eb0", "name": "AnmManager::destroy_possibly_managed_vm", "comment": null}
+, {"addr": "0x488090", "name": "AnmManager::destroy_possibly_managed_snapshot_vm", "comment": null}
 , {"addr": "0x488510", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x4885b0", "name": "AnmManager::find_snapshot_vm_by_id", "comment": null}
 , {"addr": "0x488620", "name": "anm_switch_impl", "comment": null}

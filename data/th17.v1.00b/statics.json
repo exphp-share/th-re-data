@@ -277,7 +277,7 @@
 , {"addr": "0x4b7678", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
 , {"addr": "0x4b767c", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4b7680", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
-, {"addr": "0x4b7684", "name": "TOKEN_MANAGER_PTR", "type": "struct zGoastManager*", "comment": null}
+, {"addr": "0x4b7684", "name": "GOAST_MANAGER_PTR", "type": "struct zGoastManager*", "comment": null}
 , {"addr": "0x4b7688", "name": "BOMB_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4b768c", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
 , {"addr": "0x4b7690", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
