@@ -31,6 +31,7 @@
 , {"addr": "0x4082b0", "name": "Stage::set_transform_matrices_from_camera", "comment": null}
 , {"addr": "0x40e5b0", "name": "Enemy::ecl_get_int_var", "comment": null}
 , {"addr": "0x410520", "name": "UnknownGlobalW::ecl_parser", "comment": null}
+, {"addr": "0x417b20", "name": "Bullet::destroy", "comment": null}
 , {"addr": "0x41a210", "name": "EffectManager::constructor", "comment": null}
 , {"addr": "0x41a350", "name": "EffectManager::set_zero", "comment": null}
 , {"addr": "0x41adf0", "name": "sub_41adf0__loops_over_effect_manager__whyyyyyyy", "comment": null}
@@ -50,6 +51,7 @@
 , {"addr": "0x41ea60", "name": "EnemyManager::sub_41ea60", "comment": null}
 , {"addr": "0x41ee70", "name": "EnemyManager::constructor", "comment": null}
 , {"addr": "0x41ef70", "name": "Enemy::constructor", "comment": null}
+, {"addr": "0x41f6f0", "name": "run_timeline", "comment": null}
 , {"addr": "0x4203b0", "name": "Enemy::restrict_to_move_limits", "comment": null}
 , {"addr": "0x420620", "name": "EnemyManager::on_tick_0a", "comment": null}
 , {"addr": "0x422ca0", "name": "EnemyManager::on_draw_05", "comment": null}
@@ -69,6 +71,13 @@
 , {"addr": "0x424c00", "name": "BulletManager::sub_424c00_cancels_bullets", "comment": null}
 , {"addr": "0x424d20", "name": "BulletManager::shoot_bullets", "comment": null}
 , {"addr": "0x424e00", "name": "BulletManager::shoot_laser", "comment": null}
+, {"addr": "0x4250d0", "name": "Bullet::step_ex_00", "comment": null}
+, {"addr": "0x4251a0", "name": "Bullet::step_ex_04", "comment": null}
+, {"addr": "0x425310", "name": "Bullet::step_ex_05", "comment": null}
+, {"addr": "0x425400", "name": "Bullet::step_ex_06", "comment": null}
+, {"addr": "0x425580", "name": "Bullet::step_ex_08", "comment": null}
+, {"addr": "0x425700", "name": "Bullet::step_ex_07", "comment": null}
+, {"addr": "0x4258a0", "name": "Bullet::step_ex_10_11", "comment": null}
 , {"addr": "0x425a50", "name": "BulletManager::on_tick_0c", "comment": null}
 , {"addr": "0x426c40", "name": "BulletManager::on_draw_0a", "comment": null}
 , {"addr": "0x426f60", "name": "BulletManager::on_registration", "comment": null}
@@ -81,7 +90,7 @@
 , {"addr": "0x42d136", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x42d24d", "name": "Gui::constructor", "comment": null}
 , {"addr": "0x42d560", "name": "GameManager::constructor", "comment": null}
-, {"addr": "0x42d6d8", "name": "GameManager::sub_42d6d8", "comment": null}
+, {"addr": "0x42d6d8", "name": "GameManager::is_rect_partially_onscreen", "comment": null}
 , {"addr": "0x42d8d5", "name": "GameManager::on_tick_02", "comment": null}
 , {"addr": "0x42e1d4", "name": "GameManager::on_draw_02", "comment": null}
 , {"addr": "0x42e83e", "name": "GameManager::on_registration", "comment": null}

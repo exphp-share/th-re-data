@@ -104,6 +104,18 @@
 , {"addr": "0x4c78c8", "name": "DEFAULT_CONFIG", "type": "struct zConfig", "comment": null}
 , {"addr": "0x4c7a84", "name": "POINT_EXTEND_REQUIREMENTS", "type": "int32_t[0x6]", "comment": null}
 , {"addr": "0x4c7a9c", "name": "POINT_EXTEND_REQUIREMENTS_EXTRA", "type": "int32_t[0x3]", "comment": null}
+, {"addr": "0x4c7ad0", "name": "BOMB_FUNCTIONS_BORDER", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7af8", "name": "BOMB_FUNCTIONS_MAGIC", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7b20", "name": "BOMB_FUNCTIONS_SCARLET", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7b48", "name": "BOMB_FUNCTIONS_PHANTOM", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7b70", "name": "BOMB_FUNCTIONS_SOLO_REIMU", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7b98", "name": "BOMB_FUNCTIONS_SOLO_YUKARI", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7bc0", "name": "BOMB_FUNCTIONS_SOLO_MARISA", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7be8", "name": "BOMB_FUNCTIONS_SOLO_ALICE", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7c10", "name": "BOMB_FUNCTIONS_SOLO_SAKUYA", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7c38", "name": "BOMB_FUNCTIONS_SOLO_REMILIA", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7c60", "name": "BOMB_FUNCTIONS_SOLO_YOUMU", "type": "struct zPlayerBombFunctions", "comment": null}
+, {"addr": "0x4c7c88", "name": "BOMB_FUNCTIONS_SOLO_YUYUKO", "type": "struct zPlayerBombFunctions", "comment": null}
 , {"addr": "0x4cce00", "name": "ASCII_MANAGER_ON_DRAW_14", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x4cce20", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
 , {"addr": "0x4e3fd0", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
@@ -142,6 +154,7 @@
 , {"addr": "0x164d388", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
 , {"addr": "0x164d520", "name": "REPLAY_RNG", "type": "void", "comment": null}
 , {"addr": "0x164d52c", "name": "INPUT", "type": "int16_t", "comment": null}
+, {"addr": "0x164d534", "name": "INPUT_PREV", "type": "int16_t", "comment": null}
 , {"addr": "0x164d540", "name": "DEBUG_LOG", "type": "struct zDebugLog", "comment": null}
 , {"addr": "0x164f548", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry", "comment": null}
 , {"addr": "0x164f588", "name": "UNKNOWN_GLOBAL_ARCFILE", "type": "struct zArcFile", "comment": null}
@@ -163,8 +176,8 @@
 , {"addr": "0x18b8a68", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
 , {"addr": "0x18bdc90", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x18bdc98", "name": "TEMPORARY_SPRITE_VERTICES", "type": "struct zRenderVertex144[0x4]", "comment": null}
-, {"addr": "0x18bdd08", "name": "ARRAY_18bdd08", "type": "struct zSize18[0x4]", "comment": null}
-, {"addr": "0x18bdd68", "name": "ARRAY_18bdd68", "type": "struct zSize18[0x4]", "comment": null}
+, {"addr": "0x18bdd08", "name": "ARRAY_18bdd08", "type": "zSize18[0x4]", "comment": null}
+, {"addr": "0x18bdd68", "name": "ARRAY_18bdd68", "type": "zSize18[0x4]", "comment": null}
 , {"addr": "0x18bde08", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x18bde18", "name": "ARCFILES_18bde18", "type": "struct zArcFile[0x14]", "comment": null}
 ]

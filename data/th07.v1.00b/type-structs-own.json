@@ -170,7 +170,13 @@
 
 , "zBullet": 
   [ ["0x0", "__child_0", "struct zBulletTypeVms"]
-  , ["0xb8c", "__unknown", null]
+  , ["0xb8c", "pos", "struct zFloat2"]
+  , ["0xb94", "__unknown", null]
+  , ["0xbc8", "__timer_bc8", "struct zTimer"]
+  , ["0xbd4", "__timer_bd4", "struct zTimer"]
+  , ["0xbe0", "__unknown", null]
+  , ["0xbf4", "active_ex_flags", "uint16_t"]
+  , ["0xbf6", "__unknown", null]
   , ["0xbfc", "state", "uint16_t"]
   , ["0xbfe", "__unknown", null]
   , ["0xc10", "current_ex_index", "int32_t"]

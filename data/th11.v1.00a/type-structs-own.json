@@ -514,6 +514,8 @@
 
 , "zGameThread": 
   [ ["0x0", "__unknown", null]
+  , ["0x24", "config", "struct zConfig"]
+  , ["0x60", "__unknown", null]
   , ["0x78", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x78", "__end", null]
   ]

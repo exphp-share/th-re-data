@@ -126,6 +126,7 @@
 , {"addr": "0x4173a0", "name": "EnemyFull::get_int_global_ptr", "comment": null}
 , {"addr": "0x4174b0", "name": "EnemyFull::get_float_global", "comment": null}
 , {"addr": "0x4179b0", "name": "EnemyFull::get_float_global_ptr", "comment": null}
+, {"addr": "0x417a60", "name": "jump_table_417a60", "comment": null}
 , {"addr": "0x418520", "name": "sub_418520_koishi_funcset_card5", "comment": null}
 , {"addr": "0x4188c0", "name": "sub_4188c0_koishi_funcset_card7", "comment": null}
 , {"addr": "0x4189b0", "name": "sub_4189b0_koishi_funccall_card_9", "comment": null}
@@ -158,6 +159,7 @@
 , {"addr": "0x4209b0", "name": "Globals::collect_life_fragment", "comment": null}
 , {"addr": "0x420a00", "name": "Globals::collect_power", "comment": null}
 , {"addr": "0x420ba0", "name": "SoundManager::pause_bgm", "comment": null}
+, {"addr": "0x420d80", "name": "Config::constructor", "comment": null}
 , {"addr": "0x420e90", "name": "HintManager::constructor", "comment": null}
 , {"addr": "0x420f90", "name": "HintManager::initialize", "comment": null}
 , {"addr": "0x4210a0", "name": "HintManager::destructor", "comment": null}
