@@ -132,6 +132,8 @@
 
 , "zBomb": 
   [ ["0x0", "__unknown", null]
+  , ["0x4c", "vm", "struct zAnmVm"]
+  , ["0x534", "__unknown", null]
   , ["0x558", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x558", "__end", null]
   ]
@@ -155,14 +157,6 @@
   , ["0x1", "__end", null]
   ]
 
-, "zCard": 
-  [ ["0x0", "__unknown", null]
-  , ["0x24", "config", "struct zConfig"]
-  , ["0x60", "__unknown", null]
-  , ["0xc0", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0xc0", "__end", null]
-  ]
-
 , "zChargeAttack": 
   [ ["0x0", "__unknown", null]
   , ["0x6b21c", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -179,6 +173,12 @@
   [ ["0x0", "__unknown", null]
   , ["0x2bc", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x2bc", "__end", null]
+  ]
+
+, "zDebugSprtView": 
+  [ ["0x0", "__unknown", null]
+  , ["0x7c4", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x7c4", "__end", null]
   ]
 
 , "zDebugSptTest": 
@@ -238,6 +238,8 @@
 
 , "zGameThread": 
   [ ["0x0", "__unknown", null]
+  , ["0x24", "config", "struct zConfig"]
+  , ["0x60", "__unknown", null]
   , ["0x78", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x78", "__end", null]
   ]
@@ -386,6 +388,14 @@
   [ ["0x0", "__unknown", null]
   , ["0xcc10", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xcc10", "__end", null]
+  ]
+
+, "zSpellcard": 
+  [ ["0x0", "__unknown", null]
+  , ["0xb8", "card_anm", "struct zAnmLoaded*"]
+  , ["0xbc", "__unknown", null]
+  , ["0xc0", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0xc0", "__end", null]
   ]
 
 , "zStage": 

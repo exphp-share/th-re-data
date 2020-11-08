@@ -15,6 +15,7 @@
 , {"addr": "0x46ee12", "name": "float(7.361264e-36)", "type": "float", "comment": null}
 , {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t[0x43]", "comment": null}
 , {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t[0x5e]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
+, {"addr": "0x48b2c0", "name": "LIFE_BEFORE_MAIN", "type": "void*[0x11]", "comment": null}
 , {"addr": "0x490eb0", "name": "__ptr_GAME_SPEED_MULT_FROM_ECL", "type": "float*", "comment": null}
 , {"addr": "0x490eb4", "name": "FUNCS_FOR_ECL_FLAG_EXT_DMG", "type": "void*[0x3]", "comment": null}
 , {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": "void*[0x3]", "comment": null}
@@ -297,7 +298,7 @@
 , {"addr": "0x4a2250", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x4]", "comment": null}
 , {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": "struct zFloat4[0x3]", "comment": null}
 , {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": "struct zFloat4[0x3]", "comment": null}
-, {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS_I_THINK", "type": "char", "comment": null}
+, {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
 , {"addr": "0x4a50b0", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": "Internal representation of the keys currently held on the keyboard.\n\nUnlike INPUT, this updates even while the game is paused or on the main menu.  It includes keys like ESC, P, R, and Enter that are not tracked in replays."}
 , {"addr": "0x4a50b4", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
 , {"addr": "0x4a52c8", "name": "INPUT", "type": "int32_t", "comment": "Keys currently held in this frame of the game world.\n\nIn contrast to HARDWARE_INPUT, this does not include keys like Esc. During replays, this variable is read from the replay."}
@@ -390,21 +391,8 @@
 , {"addr": "0x4c1048", "name": "CRIT_SECTION_W", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c1060", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4c1078", "name": "CRIT_SECTION_T", "type": "struct CRITICAL_SECTION", "comment": null}
+, {"addr": "0x4c10b8", "name": "ARCFILE_4c10b8", "type": "struct zArcFile", "comment": null}
 , {"addr": "0x4c10d0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
-, {"addr": "0x4c10d8", "name": "GLOBAL_D3D_DEVICE", "type": "z0_IDirect3DDevice9*", "comment": null}
-, {"addr": "0x4c127c", "name": "D3D_SURFACE_4c127c", "type": "z0_IDirect3DSurface9*", "comment": null}
-, {"addr": "0x4c1284", "name": "D3D_SURFACE_4c1284", "type": "z0_IDirect3DSurface9*", "comment": null}
-, {"addr": "0x4c128c", "name": "ANM_VM_4c128c", "type": "struct zAnmVm*", "comment": null}
-, {"addr": "0x4c1290", "name": "ANM_VM_4c1290", "type": "struct zAnmVm*", "comment": null}
-, {"addr": "0x4c1294", "name": "ANM_VM_4c1294", "type": "struct zAnmVm*", "comment": null}
-, {"addr": "0x4c1298", "name": "ANM_VM_4c1298", "type": "struct zAnmVm*", "comment": null}
-, {"addr": "0x4c1308", "name": "CAMERA_4c1308", "type": "struct zCamera", "comment": null}
-, {"addr": "0x4c1434", "name": "CAMERA_4c1434", "type": "struct zCamera", "comment": null}
-, {"addr": "0x4c1560", "name": "CAMERA_4c1560__HAS_ANM_VARS_16_TO_21", "type": "struct zCamera", "comment": "ANM vars 10016-10018 are the sum of field_0 + field_3c.\nANM vars 10019-10021 are field_24.\n\nNotice there are at least 3 other instances of this struct\nliving in static memory, but only this one has any\nconnection to ANM vars."}
-, {"addr": "0x4c168c", "name": "CAMERA_4c168c", "type": "struct zCamera", "comment": null}
-, {"addr": "0x4c17b8", "name": "CURRENT_CAMERA_PTR", "type": "struct zCamera*", "comment": "At any given time this points to one of four instances of\nthis struct that all live in static memory."}
-, {"addr": "0x4c17c4", "name": "GAMEMODE_TO_SWITCH_TO", "type": "int32_t", "comment": null}
-, {"addr": "0x4c1a68", "name": "THREAD_4c1a68", "type": "struct zThread", "comment": null}
 , {"addr": "0x4c1b0c", "name": "BACKGROUND_COLOR", "type": "struct D3DCOLOR", "comment": null}
 , {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
 , {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": "struct zArcFile[0x14]", "comment": null}
@@ -429,4 +417,5 @@
 , {"addr": "0x4d9dc4", "name": "SEEMINGLY_CONST_ZERO_VEC_4d9dc4", "type": "struct zFloat3", "comment": null}
 , {"addr": "0x4d9e10", "name": "SOUND_MANAGER", "type": "int32_t", "comment": null}
 , {"addr": "0x4df830", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
+, {"addr": "0x4dfb4c", "name": "MUTEX_Touhou12App", "type": "HANDLE", "comment": null}
 ]

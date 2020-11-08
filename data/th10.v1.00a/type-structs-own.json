@@ -38,6 +38,12 @@
 
 , "zAnmManager": 
   [ ["0x0", "__unknown", null]
+  , ["0x68", "fast_array", "struct zAnmVm[0x1000]"]
+  , ["0x3ac068", "__unknown", null]
+  , ["0x3adac8", "vertex_buffers", "struct zAnmVertexBuffers"]
+  , ["0x72dad4", "__filler_02", "char[0x10]"]
+  , ["0x72dae4", "__prolly_layer_list_heads", "struct zAnmVm[0x14]"]
+  , ["0x732454", "__filler_03", "char[0xc]"]
   , ["0x732460", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x732460", "__end", null]
   ]
@@ -54,6 +60,14 @@
   , ["0x8", "args", "uint32_t[0xa]"]
   , ["0x30", "__args_is_variable_length", "struct zCOMMENT"]
   , ["0x31", "__end", null]
+  ]
+
+, "zAnmVertexBuffers": 
+  [ ["0x0", "unrendered_sprite_count", "int32_t"]
+  , ["0x4", "sprite_vertex_data", "struct zRenderVertex144[0x20000]"]
+  , ["0x380004", "sprite_write_cursor", "struct zRenderVertex144*"]
+  , ["0x380008", "sprite_render_cursor", "struct zRenderVertex144*"]
+  , ["0x38000c", "__end", null]
   ]
 
 , "zAnmVm": 
@@ -207,6 +221,14 @@
   , ["0x4", "y", "float"]
   , ["0x8", "z", "float"]
   , ["0xc", "__end", null]
+  ]
+
+, "zFloat4": 
+  [ ["0x0", "x", "float"]
+  , ["0x4", "y", "float"]
+  , ["0x8", "z", "float"]
+  , ["0xc", "w", "float"]
+  , ["0x10", "__end", null]
   ]
 
 , "zFpsCounter": 
@@ -436,6 +458,13 @@
   [ ["0x0", "__unknown", null]
   , ["0x98", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x98", "__end", null]
+  ]
+
+, "zRenderVertex144": 
+  [ ["0x0", "pos_2d", "struct zFloat4"]
+  , ["0x10", "diffuse_color", "struct D3DCOLOR"]
+  , ["0x14", "texture_uv", "struct zFloat2"]
+  , ["0x1c", "__end", null]
   ]
 
 , "zReplayManager": 

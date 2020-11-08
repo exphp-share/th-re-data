@@ -18,5 +18,6 @@
 , {"addr": "0x4c4e6c", "name": "PHOTO_MANAGER_PTR", "type": "struct zPhotoManager*", "comment": null}
 , {"addr": "0x4c4e70", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4c4ee8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
-, {"addr": "0x4ca1b8", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4ca1b8", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x4ca1c0", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
 ]

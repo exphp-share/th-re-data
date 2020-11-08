@@ -10,9 +10,12 @@
 
 , "zAnmManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x17c8", "vertex_buffers", "struct zAnmVertexBuffers"]
-  , ["0x3817d4", "__unknown", null]
-  , ["0x381820", "layer_list_dummy_heads", "struct zAnmVm[0x9]"]
+  , ["0xf0c", "__wierd_vm", "struct zAnmVm"]
+  , ["0x11d8", "__unknown", null]
+  , ["0x17c4", "vertex_buffers", "struct zAnmVertexBuffers"]
+  , ["0x3817d0", "__unknown", null]
+  , ["0x38181c", "__layer_list_heads_prolly", "struct zAnmVm[0x9]"]
+  , ["0x383148", "__unknown", null]
   , ["0x38314c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x38314c", "__end", null]
   ]
@@ -36,11 +39,11 @@
   ]
 
 , "zAnmVm": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "next_in_tick_list", "struct zAnmVm*"]
   , ["0x4", "next_in_layer_list", "struct zAnmVm*"]
   , ["0x8", "__unknown", null]
   , ["0xc", "layer", "int32_t"]
-  , ["0x10", "__unknown", null]
+  , ["0x10", "id", "int32_t"]
   , ["0x14", "special_render_data", "void*"]
   , ["0x18", "rotation", "struct zFloat3"]
   , ["0x24", "angular_velocity", "struct zFloat3"]
@@ -131,7 +134,10 @@
 , "zBulletManager": 
   [ ["0x0", "__unknown", null]
   , ["0x4c", "bullets", "struct zBullet[0x641]"]
-  , ["0x27c5a8", "__unknown", null]
+  , ["0x27c5a8", "on_tick", "struct zUpdateFunc*"]
+  , ["0x27c5ac", "on_draw", "struct zUpdateFunc*"]
+  , ["0x27c5b0", "bullet_anm", "struct zAnmLoaded*"]
+  , ["0x27c5b4", "__unknown", null]
   , ["0x27c5b8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x27c5b8", "__end", null]
   ]
@@ -195,8 +201,10 @@
   ]
 
 , "zItemManager": 
-  [ ["0x0", "items", "struct zItem[0x96]"]
-  , ["0x1bd50", "__unknown", null]
+  [ ["0x0", "__unknown", null]
+  , ["0x4", "items", "struct zItem[0x96]"]
+  , ["0x1bd54", "on_tick", "struct zUpdateFunc*"]
+  , ["0x1bd58", "on_draw", "struct zUpdateFunc*"]
   , ["0x1bd5c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1bd5c", "__end", null]
   ]
@@ -210,6 +218,8 @@
 , "zLaserManager": 
   [ ["0x0", "laser_list_dummy_head", "struct zLaserBaseClass"]
   , ["0x50", "__unknown", null]
+  , ["0x54", "laser_count", "int32_t"]
+  , ["0x58", "__unknown", null]
   , ["0x80", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x80", "__end", null]
   ]

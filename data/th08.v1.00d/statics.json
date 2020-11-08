@@ -33,7 +33,14 @@
 , {"addr": "0x4b4460", "name": "float(2*PI)", "type": "float", "comment": null}
 , {"addr": "0x4b4464", "name": "float(-PI)", "type": "float", "comment": null}
 , {"addr": "0x4b4468", "name": "float(PI/2)", "type": "float", "comment": null}
+, {"addr": "0x4b4520", "name": "float(2**-0.5)", "type": "float", "comment": null}
+, {"addr": "0x4b4524", "name": "float(0.25*pi)", "type": "float", "comment": null}
 , {"addr": "0x4b4528", "name": "float(384)", "type": "float", "comment": null}
+, {"addr": "0x4b4878", "name": "float(10044)", "type": "float", "comment": null}
+, {"addr": "0x4b487c", "name": "float(10043)", "type": "float", "comment": null}
+, {"addr": "0x4b4880", "name": "float(10042)", "type": "float", "comment": null}
+, {"addr": "0x4b4884", "name": "float(0.75*pi)", "type": "float", "comment": null}
+, {"addr": "0x4b4888", "name": "float(288)", "type": "float", "comment": null}
 , {"addr": "0x4b48c8", "name": "float(48)", "type": "float", "comment": null}
 , {"addr": "0x4b48cc", "name": "float(-1.5707964)", "type": "float", "comment": null}
 , {"addr": "0x4b48d0", "name": "float(0.3)", "type": "float", "comment": null}
@@ -69,9 +76,14 @@
 , {"addr": "0x4b4d1c", "name": "float(0.48)", "type": "float", "comment": null}
 , {"addr": "0x4b4d20", "name": "float(0.49)", "type": "float", "comment": null}
 , {"addr": "0x4b4d24", "name": "float(29)", "type": "float", "comment": null}
+, {"addr": "0x4b6550", "name": "VTABLE_MIDI_BASE_CLASS", "type": "struct zVTableMidi", "comment": null}
+, {"addr": "0x4b6554", "name": "VTABLE_MIDI", "type": "struct zVTableMidi", "comment": null}
 , {"addr": "0x4b6944", "name": "float(0.99)", "type": "float", "comment": null}
 , {"addr": "0x4b847c", "name": "float(0.5)", "type": "float", "comment": null}
+, {"addr": "0x4b9d9c", "name": "DI_DATA_FORMAT", "type": "struct DIDATAFORMAT", "comment": null}
 , {"addr": "0x4bd610", "name": "IID_IDirectSoundNotify", "type": "GUID", "comment": null}
+, {"addr": "0x4bd620", "name": "GUID_SysKeyboard", "type": "GUID", "comment": null}
+, {"addr": "0x4bd6c0", "name": "IID_IDirectInput8A", "type": "GUID", "comment": null}
 , {"addr": "0x4bd700", "name": "GUID_NULL", "type": "GUID", "comment": null}
 , {"addr": "0x4c6000", "name": "LIFE_BEFORE_MAIN", "type": "void*[0x2e]", "comment": null}
 , {"addr": "0x4c6120", "name": "SPELL_NUMBERS_EASY", "type": "int32_t[0x1]", "comment": null}
@@ -97,7 +109,7 @@
 , {"addr": "0x4c6c40", "name": "SPELL_PRACTICE_NUMBERS_BY_STAGE", "type": "int32_t*[0xa]", "comment": null}
 , {"addr": "0x4c6c68", "name": "SPELL_PRACTICE_COUNTS_BY_STAGE", "type": "int32_t*[0xa]", "comment": null}
 , {"addr": "0x4c6c90", "name": "ECL_FLOAT_TIME_FUNCS", "type": "void*[0x8]", "comment": null}
-, {"addr": "0x4c6cb0", "name": "FUNC_SET_FUNCS", "type": "void*[0x20]", "comment": null}
+, {"addr": "0x4c6cb0", "name": "ECL_HARDCODED_FUNCS", "type": "void*[0x20]", "comment": null}
 , {"addr": "0x4c6d30", "name": "EFFECT_TABLE", "type": "struct zTableEffectData", "comment": "This array actually has 0x42 entries but annotating tables of structures types makes binja slow."}
 , {"addr": "0x4c7480", "name": "EFFECT_ANM_FILENAMES", "type": "char*[0xf]", "comment": null}
 , {"addr": "0x4c74c0", "name": "MSG_DAT_FILENAMES", "type": "char*[0x6c]", "comment": null}

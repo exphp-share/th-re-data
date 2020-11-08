@@ -28,6 +28,7 @@
 , {"addr": "0x405840", "name": "Bomb::on_tick__stub", "comment": null}
 , {"addr": "0x405850", "name": "Bomb::on_draw__noop", "comment": null}
 , {"addr": "0x405b60", "name": "Globals::add_to_rank", "comment": null}
+, {"addr": "0x405cc0", "name": "BulletManager::constructor", "comment": null}
 , {"addr": "0x405d00", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x405de0", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x405e20", "name": "BulletManager::initialize", "comment": null}
@@ -102,6 +103,7 @@
 , {"addr": "0x419650", "name": "HintManager::on_tick", "comment": null}
 , {"addr": "0x4198a0", "name": "HintManager::on_tick__stub", "comment": null}
 , {"addr": "0x4198b0", "name": "HintManager::on_draw__noop", "comment": null}
+, {"addr": "0x41acb0", "name": "ItemManager::constructor", "comment": null}
 , {"addr": "0x41acf0", "name": "Item::constructor", "comment": null}
 , {"addr": "0x41ad60", "name": "Item::destructor", "comment": null}
 , {"addr": "0x41ad90", "name": "ItemManager::initialize", "comment": null}
@@ -207,6 +209,7 @@
 , {"addr": "0x441600", "name": "InterpInt3::step", "comment": null}
 , {"addr": "0x441950", "name": "InterpInt::step", "comment": null}
 , {"addr": "0x441ad0", "name": "InterpFloat2::step", "comment": null}
+, {"addr": "0x4425a0", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
 , {"addr": "0x442f50", "name": "AnmManager::flush_sprites", "comment": null}
 , {"addr": "0x442fe0", "name": "AnmManager::write_sprite", "comment": null}
 , {"addr": "0x4451c0", "name": "AnmManager::draw_vm", "comment": null}

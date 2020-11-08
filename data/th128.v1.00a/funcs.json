@@ -52,7 +52,10 @@
 , {"addr": "0x40feb0", "name": "ChargeAttack::on_draw", "comment": null}
 , {"addr": "0x4101b0", "name": "ChargeAttack::on_tick__stub", "comment": null}
 , {"addr": "0x4101c0", "name": "ChargeAttack::on_draw__stub", "comment": null}
-, {"addr": "0x411040", "name": "DebugSprtView::operator new", "comment": null}
+, {"addr": "0x410fa0", "name": "DebugSprtView::constructor", "comment": null}
+, {"addr": "0x411040", "name": "DebugSprtView::initialize", "comment": null}
+, {"addr": "0x411100", "name": "DebugSprtView::destructor", "comment": null}
+, {"addr": "0x411340", "name": "DebugSprtView::operator new", "comment": null}
 , {"addr": "0x4113d0", "name": "DebugSprtView::on_tick", "comment": null}
 , {"addr": "0x4118a0", "name": "DebugSprtView::on_draw", "comment": null}
 , {"addr": "0x411bb0", "name": "DebugSprtView::on_tick__stub", "comment": null}

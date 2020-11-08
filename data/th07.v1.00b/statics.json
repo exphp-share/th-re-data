@@ -70,10 +70,12 @@
 , {"addr": "0x498bc0", "name": "double(16.666666666666668)", "type": "double", "comment": null}
 , {"addr": "0x498bc8", "name": "double(0.016666666666666666)", "type": "double", "comment": null}
 , {"addr": "0x49c000", "name": "LIFE_BEFORE_MAIN", "type": "void*[0x2c]", "comment": null}
-, {"addr": "0x49fbf0", "name": "UNKNOWN_GLOBAL_T", "type": "void", "comment": null}
+, {"addr": "0x49f158", "name": "ECL_HARDCODED_FUNCS", "type": "void*[0x18]", "comment": null}
+, {"addr": "0x49fbf0", "name": "GUI", "type": "struct zGui", "comment": null}
 , {"addr": "0x49fc88", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
 , {"addr": "0x49fe20", "name": "REPLAY_RNG", "type": "void", "comment": null}
-, {"addr": "0x4b9e44", "name": "ANM_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b9e44", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x4b9e48", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x4b9fa8", "name": "SPRITE_TEMP_VERTEX_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
 , {"addr": "0x4ba0d8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
 , {"addr": "0x4bdad8", "name": "PLAYER", "type": "struct zPlayer", "comment": null}
@@ -97,7 +99,7 @@
 , {"addr": "0x12fe250", "name": "EFFECT_MANAGER", "type": "struct zEffectManager", "comment": null}
 , {"addr": "0x13478f8", "name": "EFFECT_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x1347918", "name": "EFFECT_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x1347938", "name": "UNKNOWN_GLOBAL_W", "type": "void", "comment": null}
+, {"addr": "0x1347938", "name": "ECL_MANAGER", "type": "void", "comment": null}
 , {"addr": "0x1347ac0", "name": "UNUSED_UPDATE_FUNC_1347AC0", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x1347ae0", "name": "STAGE_ON_DRAW_03", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x1347b00", "name": "STAGE", "type": "struct zStage", "comment": null}
@@ -107,5 +109,7 @@
 , {"addr": "0x134ce18", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
 , {"addr": "0x135dfac", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x135dfcc", "name": "ASCII_MANAGER_ON_DRAW_0b", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x135dff0", "name": "REPLAY_FPS_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
+, {"addr": "0x135e0f0", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
 , {"addr": "0x135e2a8", "name": "MUSIC_ROOM", "type": "void", "comment": null}
 ]

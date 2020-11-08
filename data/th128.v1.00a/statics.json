@@ -12,15 +12,21 @@
 , {"addr": "0x4ac8e8", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4b6f58", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
 , {"addr": "0x4b8920", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
+, {"addr": "0x4b8924", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4b8928", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
+, {"addr": "0x4b892c", "name": "BOMB_PTR", "type": "struct zBomb*", "comment": null}
 , {"addr": "0x4b8930", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
-, {"addr": "0x4b8934", "name": "CARD_PTR", "type": "struct zCard*", "comment": null}
+, {"addr": "0x4b8934", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4b8938", "name": "CHARGE_ATTACK_PTR", "type": "struct zChargeAttack*", "comment": null}
+, {"addr": "0x4b893c", "name": "DEBUG_SPRT_VIEW_PTR", "type": "struct zDebugSprtView*", "comment": null}
 , {"addr": "0x4b8940", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
+, {"addr": "0x4b8944", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
 , {"addr": "0x4b8948", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
 , {"addr": "0x4b894c", "name": "FPS_COUNTER", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x4b8950", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4b8954", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
+, {"addr": "0x4b8958", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
+, {"addr": "0x4b8a58", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
 , {"addr": "0x4b8a5c", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
 , {"addr": "0x4b8a60", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
 , {"addr": "0x4b8a64", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}

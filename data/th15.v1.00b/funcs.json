@@ -104,8 +104,8 @@
 , {"addr": "0x418890", "name": "BombSanae::restore_snapshot", "comment": null}
 , {"addr": "0x4188f0", "name": "BombSanae::write_autosave_data", "comment": null}
 , {"addr": "0x4189d0", "name": "BombSanae::read_autosave_data", "comment": null}
-, {"addr": "0x418b30", "name": "BulletManager::first_bullet", "comment": null}
-, {"addr": "0x418b60", "name": "BulletManager::next_bullet", "comment": null}
+, {"addr": "0x418b30", "name": "BulletManager::iter_start", "comment": null}
+, {"addr": "0x418b60", "name": "BulletManager::iter_next", "comment": null}
 , {"addr": "0x418bc0", "name": "ItemManager::get_lolk_slowdown_factor", "comment": null}
 , {"addr": "0x418c60", "name": "BulletManager::constructor", "comment": null}
 , {"addr": "0x418d20", "name": "Bullet::constructor", "comment": null}
@@ -118,7 +118,7 @@
 , {"addr": "0x41a000", "name": "BulletManager::sub_41a000", "comment": null}
 , {"addr": "0x41a5b0", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x41a5e0", "name": "BulletManager::on_draw", "comment": null}
-, {"addr": "0x41a600", "name": "BulletManager::shoot_one_bullet", "comment": null}
+, {"addr": "0x41a600", "name": "BulletManager::shoot_one", "comment": null}
 , {"addr": "0x41b180", "name": "Bullet::run_ex", "comment": null}
 , {"addr": "0x41c5c0", "name": "BulletManager::shoot_bullets", "comment": null}
 , {"addr": "0x41e250", "name": "Bullet::cancel", "comment": null}
@@ -290,8 +290,8 @@
 , {"addr": "0x44d670", "name": "Supervisor::sub_44d670", "comment": null}
 , {"addr": "0x44d6b0", "name": "Supervisor::sub_44d6b0", "comment": null}
 , {"addr": "0x44d7f0", "name": "sub_44d7f0__creates_thread", "comment": null}
-, {"addr": "0x44def0", "name": "D3dStuff::load_view_and_projection", "comment": null}
-, {"addr": "0x44df60", "name": "D3dStuff::sub_44df60", "comment": null}
+, {"addr": "0x44def0", "name": "Supervisor::swap_transform_matrices", "comment": null}
+, {"addr": "0x44df60", "name": "Camera::sub_44df60", "comment": null}
 , {"addr": "0x44e600", "name": "Supervisor::switch_gamemodes", "comment": null}
 , {"addr": "0x44e8d0", "name": "Supervisor::on_draw_01", "comment": null}
 , {"addr": "0x44ea80", "name": "Supervisor::on_draw_0f", "comment": null}
@@ -370,7 +370,7 @@
 , {"addr": "0x45eb10", "name": "PopupManager::on_draw", "comment": null}
 , {"addr": "0x45ef40", "name": "PopupManager::on_tick__stub", "comment": null}
 , {"addr": "0x45ef50", "name": "PopupManager::on_draw__stub", "comment": null}
-, {"addr": "0x45ef60", "name": "generate_small_score_popup", "comment": null}
+, {"addr": "0x45ef60", "name": "PopupManager::generate_small_score_popup", "comment": null}
 , {"addr": "0x45f1d0", "name": "DebugSptTest::constructor", "comment": null}
 , {"addr": "0x45f2b0", "name": "DebugSptTest::initialize", "comment": null}
 , {"addr": "0x45f620", "name": "DebugSptTest::operator new", "comment": null}
@@ -429,7 +429,7 @@
 , {"addr": "0x488090", "name": "AnmManager::destroy_possibly_managed_snapshot_vm", "comment": null}
 , {"addr": "0x488510", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x4885b0", "name": "AnmManager::find_snapshot_vm_by_id", "comment": null}
-, {"addr": "0x488620", "name": "anm_switch_impl", "comment": null}
+, {"addr": "0x488620", "name": "AnmManager::interrupt_tree", "comment": null}
 , {"addr": "0x489460", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x489590", "name": "AnmManager::sub_489590__prolly_deletes_all_snapshot_vms", "comment": null}
 , {"addr": "0x489600", "name": "AnmManager::allocate_snapshot_vm", "comment": null}
@@ -453,7 +453,7 @@
 , {"addr": "0x49120b", "name": "create_directory", "comment": null}
 , {"addr": "0x491256", "name": "delete_file", "comment": null}
 , {"addr": "0x49269d", "name": "_start", "comment": null}
-, {"addr": "0x492870", "name": "__prolly_memcpy_or_memmove_or_similar", "comment": null}
+, {"addr": "0x492870", "name": "memcpy", "comment": null}
 , {"addr": "0x4938b5", "name": "stdlib__prolly_ansi_to_wide", "comment": null}
 , {"addr": "0x4986c3", "name": "stdlib__create_directory", "comment": null}
 , {"addr": "0x49b080", "name": "memset", "comment": null}

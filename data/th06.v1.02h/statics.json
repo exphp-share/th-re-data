@@ -78,7 +78,7 @@
 , {"addr": "0x487b10", "name": "STAGE", "type": "struct zStage", "comment": null}
 , {"addr": "0x487e04", "name": "STAGE_ON_DRAW_04", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x487e24", "name": "STAGE_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x487e50", "name": "UNKNOWN_GLOBAL_W", "type": "void", "comment": null}
+, {"addr": "0x487e50", "name": "ECL_MANAGER", "type": "void", "comment": null}
 , {"addr": "0x487fbc", "name": "UNKNOWN_UPDATE_FUNC_487FBC", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x487fe0", "name": "EFFECT_MANAGER", "type": "struct zEffectManager", "comment": null}
 , {"addr": "0x4b7964", "name": "EFFECT_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
@@ -101,10 +101,11 @@
 , {"addr": "0x69e268", "name": "ITEM_MANAGER", "type": "struct zItemManager", "comment": null}
 , {"addr": "0x6c6bb4", "name": "UNKNOWN_UPDATE_FUNC_6C6BB4", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x6c6bd4", "name": "WINDOW", "type": "struct zWindow", "comment": null}
-, {"addr": "0x6c6c08", "name": "ASCII_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
+, {"addr": "0x6c6c08", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
 , {"addr": "0x6c6d18", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x6c71f0", "name": "MUSIC_ROOM", "type": "struct zMusicRoom", "comment": null}
 , {"addr": "0x6ca628", "name": "PLAYER", "type": "struct zPlayer", "comment": null}
+, {"addr": "0x6d3f18", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x6d3f50", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
 , {"addr": "0x6d4588", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x6d46c0", "name": "MAIN_MENU", "type": "struct zMainMenu", "comment": null}

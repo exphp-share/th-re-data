@@ -71,6 +71,7 @@
 , {"addr": "0x40d0d0", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x40d120", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x40d170", "name": "BulletManager::initialize", "comment": null}
+, {"addr": "0x40d4c0", "name": "BulletManager::destroy_all", "comment": null}
 , {"addr": "0x40d7b0", "name": "BulletManager::destructor", "comment": null}
 , {"addr": "0x40d920", "name": "BulletManager::operator new", "comment": null}
 , {"addr": "0x40e360", "name": "BulletManager::on_tick__body", "comment": null}
@@ -87,6 +88,8 @@
 , {"addr": "0x413080", "name": "Spellcard::on_draw", "comment": null}
 , {"addr": "0x413250", "name": "Spellcard::on_tick__stub", "comment": null}
 , {"addr": "0x413260", "name": "Spellcard::on_draw__stub", "comment": null}
+, {"addr": "0x413e50", "name": "ItemManager::destroy_all", "comment": null}
+, {"addr": "0x414180", "name": "EnemyManager::destroy_all", "comment": null}
 , {"addr": "0x414260", "name": "DebugSprtView::constructor", "comment": null}
 , {"addr": "0x414300", "name": "DebugSprtView::initialize", "comment": null}
 , {"addr": "0x4143d0", "name": "DebugSprtView::destructor", "comment": null}
@@ -107,6 +110,7 @@
 , {"addr": "0x416610", "name": "Ending::on_tick", "comment": null}
 , {"addr": "0x4166b0", "name": "Ending::on_tick__stub", "comment": null}
 , {"addr": "0x4166c0", "name": "Ending::on_draw", "comment": null}
+, {"addr": "0x4183f0", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x4187d0", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x418b50", "name": "EnemyManager::destructor", "comment": null}
 , {"addr": "0x418d30", "name": "EnemyManager::operator new", "comment": null}
@@ -131,9 +135,14 @@
 , {"addr": "0x42ae90", "name": "Gui::update_lives", "comment": null}
 , {"addr": "0x42af60", "name": "Gui::update_bombs", "comment": null}
 , {"addr": "0x42b030", "name": "Gui::sub_42b030_spirit_related", "comment": null}
+, {"addr": "0x42b870", "name": "LaserManager::destroy_all", "comment": null}
 , {"addr": "0x42b990", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x42bf90", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x42c490", "name": "GameThread::operator new", "comment": null}
+, {"addr": "0x42c550", "name": "GameThread::on_tick", "comment": null}
+, {"addr": "0x42cb90", "name": "GameThread::on_tick__stub", "comment": null}
+, {"addr": "0x42cba0", "name": "GameThread::on_draw", "comment": null}
+, {"addr": "0x42d4d0", "name": "Config::constructor", "comment": null}
 , {"addr": "0x42d740", "name": "HelpManual::initialize", "comment": null}
 , {"addr": "0x42d860", "name": "HelpManual::destructor", "comment": null}
 , {"addr": "0x42d940", "name": "HelpManual::operator new", "comment": null}
@@ -179,6 +188,7 @@
 , {"addr": "0x439ee0", "name": "Supervisor::on_tick", "comment": null}
 , {"addr": "0x43a040", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x43a440", "name": "Supervisor::initialize", "comment": null}
+, {"addr": "0x43ab60", "name": "Supervisor::load_game_config", "comment": null}
 , {"addr": "0x43b080", "name": "Supervisor::disable_d3d_fog", "comment": null}
 , {"addr": "0x43b900", "name": "Supervisor::swap_transform_matrices", "comment": null}
 , {"addr": "0x43c1c0", "name": "Supervisor::switch_gamemodes", "comment": null}
@@ -207,6 +217,7 @@
 , {"addr": "0x441850", "name": "sub_441850__mystery__used_during_unpause", "comment": null}
 , {"addr": "0x441c90", "name": "Player::constructor", "comment": null}
 , {"addr": "0x441dd0", "name": "Player::initialize", "comment": null}
+, {"addr": "0x4424d0", "name": "Player::reset", "comment": null}
 , {"addr": "0x442700", "name": "Player::destructor", "comment": null}
 , {"addr": "0x442880", "name": "Player::operator new", "comment": null}
 , {"addr": "0x442960", "name": "Player::move", "comment": null}
@@ -256,6 +267,7 @@
 , {"addr": "0x44cb60", "name": "MainMenu::on_tick__stub", "comment": null}
 , {"addr": "0x44cb70", "name": "MainMenu::on_draw__stub", "comment": null}
 , {"addr": "0x45c110", "name": "WinMain", "comment": null}
+, {"addr": "0x45ccf0", "name": "Window::make_dirs_and_disable_screensaver", "comment": null}
 , {"addr": "0x45cef0", "name": "Window::do_frame__normal_version", "comment": null}
 , {"addr": "0x45d2f0", "name": "Window::do_frame__frameskip_version", "comment": null}
 , {"addr": "0x45d570", "name": "Window::do_frame__idfk_version", "comment": null}
@@ -294,7 +306,7 @@
 , {"addr": "0x46f240", "name": "AnmManager::on_tick_08", "comment": null}
 , {"addr": "0x46f330", "name": "AnmManager::on_tick_1d", "comment": null}
 , {"addr": "0x46f360", "name": "AnmManager::on_tick_08__stub", "comment": null}
-, {"addr": "0x46f990", "name": "AnmLoaded::create_anm", "comment": null}
+, {"addr": "0x46f990", "name": "AnmLoaded::create_managed_child", "comment": null}
 , {"addr": "0x46fb90", "name": "AnmManager::get_vm_by_id", "comment": null}
 , {"addr": "0x4706c0", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x470990", "name": "register__on_tick", "comment": null}

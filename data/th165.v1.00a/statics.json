@@ -32,7 +32,7 @@
 , {"addr": "0x4b5654", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4b565c", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x4b5674", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4ed880", "name": "HELP_MANUAL_2_PTR", "type": "struct zHelpManual2*", "comment": null}
+, {"addr": "0x4ed880", "name": "TUTORIAL_PTR", "type": "struct zTutorial*", "comment": null}
 , {"addr": "0x4ed88c", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x507b70", "name": "WINDOW", "type": "void", "comment": null}
 , {"addr": "0x50f810", "name": "SPRITE_TEMP_BUFFER", "type": "int32_t", "comment": null}

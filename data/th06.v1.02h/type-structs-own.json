@@ -77,16 +77,42 @@
   ]
 
 , "zAsciiManager": 
-  [ ["0x0", "__unknown", null]
-  , ["0x7134", "array", "struct zAsciiManagerItem[0x203]"]
+  [ ["0x0", "_vm_0", "struct zAnmVm"]
+  , ["0x110", "_vm_1", "struct zAnmVm"]
+  , ["0x220", "strings", "struct zAsciiManagerString[0x100]"]
+  , ["0x6220", "num_strings", "int32_t"]
+  , ["0x6224", "color", "struct D3DCOLOR"]
+  , ["0x6228", "scale", "struct zFloat2"]
+  , ["0x6230", "__unknown", null]
+  , ["0x6244", "child_1", "struct zAsciiManagerBigChild"]
+  , ["0x69bc", "child_2", "struct zAsciiManagerBigChild"]
+  , ["0x7134", "array", "struct zAsciiManagerPopup[0x200]"]
+  , ["0xc134", "array", "struct zAsciiManagerPopup[0x3]"]
   , ["0xc1ac", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xc1ac", "__end", null]
   ]
 
-, "zAsciiManagerItem": 
+, "zAsciiManagerBigChild": 
+  [ ["0x0", "__unknown", null]
+  , ["0x8", "_vms_0", "struct zAnmVm[0x6]"]
+  , ["0x668", "_vm_1", "struct zAnmVm"]
+  , ["0x778", "__end", null]
+  ]
+
+, "zAsciiManagerPopup": 
   [ ["0x0", "__unknown", null]
   , ["0x28", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x28", "__end", null]
+  ]
+
+, "zAsciiManagerString": 
+  [ ["0x0", "text", "char[0x40]"]
+  , ["0x40", "position", "struct zFloat3"]
+  , ["0x4c", "color", "struct D3DCOLOR"]
+  , ["0x50", "scale", "struct zFloat2"]
+  , ["0x58", "__unknown", null]
+  , ["0x60", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x60", "__end", null]
   ]
 
 , "zBullet": 
@@ -123,9 +149,10 @@
   [ ["0x0", "bullet_type_templates", "struct zBulletTypeVms[0x10]"]
   , ["0x5600", "bullets", "struct zBullet[0x280]"]
   , ["0xec000", "lasers", "struct zLaser[0x40]"]
-  , ["0xf5c00", "__unknown", null]
-  , ["0xf5c08", "__timer", "struct zTimer"]
-  , ["0xf5c14", "__unknown", null]
+  , ["0xf5c00", "next_bullet_index", "int32_t"]
+  , ["0xf5c04", "bullet_count", "int32_t"]
+  , ["0xf5c08", "time", "struct zTimer"]
+  , ["0xf5c14", "etama_anm_filename", "char*"]
   , ["0xf5c18", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xf5c18", "__end", null]
   ]
@@ -165,20 +192,20 @@
   , ["0x34", "__end", null]
   ]
 
-, "zEffectManager": 
-  [ ["0x0", "__unknown", null]
-  , ["0x8", "array", "struct zEffectManagerItem[0x201]"]
-  , ["0x2f984", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x2f984", "__end", null]
-  ]
-
-, "zEffectManagerItem": 
+, "zEffect": 
   [ ["0x0", "vm", "struct zAnmVm"]
   , ["0x110", "__unknown", null]
   , ["0x164", "timer", "struct zTimer"]
   , ["0x170", "__unknown", null]
   , ["0x17c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x17c", "__end", null]
+  ]
+
+, "zEffectManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x8", "array", "struct zEffect[0x201]"]
+  , ["0x2f984", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x2f984", "__end", null]
   ]
 
 , "zEnding": 
@@ -220,7 +247,7 @@
   , ["0xcec", "__unknown", null]
   , ["0xcf0", "__timer_cf0", "struct zTimer"]
   , ["0xcfc", "__unknown", null]
-  , ["0xd00", "__inner_d00", "struct zEnemyBulletShooter"]
+  , ["0xd00", "et_props", "struct zEnemyBulletShooter"]
   , ["0xd54", "__et_auto", "int32_t"]
   , ["0xd58", "__et_delay", "struct zTimer"]
   , ["0xd64", "laser", "struct zEnemyLaserShooter"]
@@ -246,7 +273,7 @@
 , "zEnemyBulletShooter": 
   [ ["0x0", "sprite", "uint16_t"]
   , ["0x2", "color", "uint16_t"]
-  , ["0x4", "pos", "struct zFloat3"]
+  , ["0x4", "position", "struct zFloat3"]
   , ["0x10", "angle_1", "float"]
   , ["0x14", "angle_2", "float"]
   , ["0x18", "speed_1", "float"]
@@ -302,9 +329,13 @@
 
 , "zEnemyManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x8", "__enemy_0", "struct zEnemy"]
-  , ["0xed0", "__array", "struct zEnemy[0x101]"]
-  , ["0xee598", "__unknown", null]
+  , ["0x8", "template", "struct zEnemy"]
+  , ["0xed0", "enemies", "struct zEnemy[0x101]"]
+  , ["0xee598", "bosses", "struct zEnemy*[0x8]"]
+  , ["0xee5b8", "__word_field_1", "uint16_t"]
+  , ["0xee5ba", "__word_field_2", "uint16_t"]
+  , ["0xee5bc", "enemy_count_real", "int32_t"]
+  , ["0xee5c0", "__unknown", null]
   , ["0xee5e0", "__timer_ee5e0", "struct zTimer"]
   , ["0xee5ec", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xee5ec", "__end", null]
@@ -345,8 +376,10 @@
   ]
 
 , "zItemManager": 
-  [ ["0x0", "items", "struct zItem[0x201]"]
-  , ["0x28944", "__unknown", null]
+  [ ["0x0", "items", "struct zItem[0x200]"]
+  , ["0x28800", "dummy_item_for_failed_spawns", "struct zItem"]
+  , ["0x28944", "next_index", "int32_t"]
+  , ["0x28948", "item_count", "int32_t"]
   , ["0x2894c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x2894c", "__end", null]
   ]
@@ -380,7 +413,17 @@
   , ["0xa28", "field_a28", "struct zUnknownLargeGlobalItem[0x50]"]
   , ["0x75a8", "__unknown", null]
   , ["0x75c8", "inner", "struct zUnknownLargeGlobalInner"]
-  , ["0x98e4", "__end", null]
+  , ["0x98e4", "on_tick", "struct zUpdateFunc*"]
+  , ["0x98e8", "on_draw_1", "struct zUpdateFunc*"]
+  , ["0x98ec", "on_draw_2", "struct zUpdateFunc*"]
+  , ["0x98f0", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x98f0", "__end", null]
+  ]
+
+, "zReplayManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x74", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x74", "__end", null]
   ]
 
 , "zResultScreen": 

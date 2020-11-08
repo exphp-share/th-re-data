@@ -400,5 +400,5 @@
 , {"addr": "0x461b1d", "name": "_start", "comment": null}
 , {"addr": "0x46a720", "name": "memset", "comment": null}
 , {"addr": "0x4864e0", "name": "float_to_int_4864e0", "comment": null}
-, {"addr": "0x486c9a", "name": "atan2", "comment": null}
+, {"addr": "0x486c9a", "name": "math_atan2", "comment": null}
 ]

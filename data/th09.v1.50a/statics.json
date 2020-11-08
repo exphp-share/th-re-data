@@ -2,20 +2,24 @@
 , {"addr": "0x48e2a8", "name": "float(4294967300)", "type": "float", "comment": null}
 , {"addr": "0x48e314", "name": "float(0)", "type": "float", "comment": null}
 , {"addr": "0x48fb7c", "name": "float(2.3283064e-10)", "type": "float", "comment": null}
-, {"addr": "0x4a7d90", "name": "LOLIDFK", "type": "struct zLolidfk", "comment": null}
+, {"addr": "0x4a7d90", "name": "GAME_MANAGER", "type": "struct zGameManager", "comment": null}
 , {"addr": "0x4a7e0c", "name": "EFFECT_SYS_PTR", "type": "struct zEffectSys*", "comment": null}
-, {"addr": "0x4a8120", "name": "LOLIDFK_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4a8140", "name": "LOLIDFK_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4a7e64", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
+, {"addr": "0x4a8120", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4a8140", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4ac8c0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4ace0c", "name": "RNG", "type": "void", "comment": null}
 , {"addr": "0x4acfc8", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
 , {"addr": "0x4ad018", "name": "UNUSED_DEBUG_THING", "type": "void", "comment": null}
 , {"addr": "0x4b30b0", "name": "WINDOW", "type": "int32_t", "comment": null}
 , {"addr": "0x4b3100", "name": "SUPERVISOR", "type": "void", "comment": null}
+, {"addr": "0x4b41b8", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4b42d0", "name": "NETWORK_MANAGER_PTR", "type": "struct zNetworkManager*", "comment": null}
-, {"addr": "0x4ce438", "name": "MAIN_MENU_ON_DRAW_22", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4ce458", "name": "MAIN_MENU", "type": "struct zMainMenu", "comment": null}
-, {"addr": "0x4dc504", "name": "UPDATE_FUNC__MAIN_MENU__ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4dc524", "name": "MAIN_MENU_ON_DRAW_17", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4ce438", "name": "ASCII_MANAGER_ON_DRAW_22", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4ce458", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
+, {"addr": "0x4dc504", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
+, {"addr": "0x4dc524", "name": "ASCII_MANAGER_ON_DRAW_17", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x4dc550", "name": "ANM_MANAGER_PTR", "type": "void*", "comment": null}
+, {"addr": "0x4dc558", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
 , {"addr": "0x4dc698", "name": "SOUND_MANAGER", "type": "void", "comment": null}
 ]

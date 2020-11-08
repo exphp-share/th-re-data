@@ -691,6 +691,11 @@
   , ["0x28", "__end", null]
   ]
 
+, "ShiftJis": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1", "__end", null]
+  ]
+
 , "ULARGE_INTEGER": 
   [ ["0x0", "QuadPart", "uint64_t"]
   , ["0x8", "__end", null]

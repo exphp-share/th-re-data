@@ -141,6 +141,56 @@
   , ["0x18", "__end", null]
   ]
 
+, "DIDATAFORMAT": 
+  [ ["0x0", "dwSize", "DWORD"]
+  , ["0x4", "dwObjSize", "DWORD"]
+  , ["0x8", "dwFlags", "DWORD"]
+  , ["0xc", "dwDataSize", "DWORD"]
+  , ["0x10", "dwNumObjs", "DWORD"]
+  , ["0x14", "rgodf", "struct DIOBJECTDATAFORMAT*"]
+  , ["0x18", "__end", null]
+  ]
+
+, "DIDEVICEINSTANCEA": 
+  [ ["0x0", "dwSize", "DWORD"]
+  , ["0x4", "guidInstance", "GUID"]
+  , ["0x14", "guidProduct", "GUID"]
+  , ["0x24", "dwDevType", "DWORD"]
+  , ["0x28", "tszInstanceName", "CHAR[0x104]"]
+  , ["0x12c", "tszProductName", "CHAR[0x104]"]
+  , ["0x230", "guidFFDriver", "GUID"]
+  , ["0x240", "wUsagePage", "WORD"]
+  , ["0x242", "wUsage", "WORD"]
+  , ["0x244", "__end", null]
+  ]
+
+, "DIDEVICEOBJECTINSTANCEA": 
+  [ ["0x0", "dwSize", "DWORD"]
+  , ["0x4", "guidType", "GUID"]
+  , ["0x14", "dwOfs", "DWORD"]
+  , ["0x18", "dwType", "DWORD"]
+  , ["0x1c", "dwFlags", "DWORD"]
+  , ["0x20", "tszName", "CHAR[0x104]"]
+  , ["0x124", "dwFFMaxForce", "DWORD"]
+  , ["0x128", "dwFFForceResolution", "DWORD"]
+  , ["0x12c", "wCollectionNumber", "WORD"]
+  , ["0x12e", "wDesignatorIndex", "WORD"]
+  , ["0x130", "wUsagePage", "WORD"]
+  , ["0x132", "wUsage", "WORD"]
+  , ["0x134", "dwDimension", "DWORD"]
+  , ["0x138", "wExponent", "WORD"]
+  , ["0x13a", "wReportId", "WORD"]
+  , ["0x13c", "__end", null]
+  ]
+
+, "DIOBJECTDATAFORMAT": 
+  [ ["0x0", "pguid", "GUID*"]
+  , ["0x4", "dwOfs", "DWORD"]
+  , ["0x8", "dwType", "DWORD"]
+  , ["0xc", "dwFlags", "DWORD"]
+  , ["0x10", "__end", null]
+  ]
+
 , "DOS_Header": 
   [ ["0x0", "e_magic", "char[0x2]"]
   , ["0x2", "e_cblp", "uint16_t"]
@@ -426,6 +476,65 @@
   , ["0x4c", "__end", null]
   ]
 
+, "IDirectInput8A": 
+  [ ["0x0", "vtable", "struct IDirectInput8AVtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "IDirectInput8AVtbl": 
+  [ ["0x0", "super", "struct IUnknownVtbl"]
+  , ["0xc", "CreateDevice", "void*"]
+  , ["0x10", "EnumDevices", "void*"]
+  , ["0x14", "GetDeviceStatus", "void*"]
+  , ["0x18", "RunControlPanel", "void*"]
+  , ["0x1c", "Initialize", "void*"]
+  , ["0x20", "FindDevice", "void*"]
+  , ["0x24", "EnumDevicesBySemantics", "void*"]
+  , ["0x28", "ConfigureDevices", "void*"]
+  , ["0x2c", "__end", null]
+  ]
+
+, "IDirectInputDevice8A": 
+  [ ["0x0", "vtable", "struct IDirectInputDevice8AVTbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "IDirectInputDevice8AVTbl": 
+  [ ["0x0", "super", "struct IUnknownVtbl"]
+  , ["0xc", "GetCapabilities", "void*"]
+  , ["0x10", "EnumObjects", "void*"]
+  , ["0x14", "GetProperty", "void*"]
+  , ["0x18", "SetProperty", "void*"]
+  , ["0x1c", "Acquire", "void*"]
+  , ["0x20", "Unacquire", "void*"]
+  , ["0x24", "GetDeviceState", "void*"]
+  , ["0x28", "GetDeviceData", "void*"]
+  , ["0x2c", "SetDataFormat", "void*"]
+  , ["0x30", "SetEventNotification", "void*"]
+  , ["0x34", "SetCooperativeLevel", "void*"]
+  , ["0x38", "GetObjectInfo", "void*"]
+  , ["0x3c", "GetDeviceInfo", "void*"]
+  , ["0x40", "RunControlPanel", "void*"]
+  , ["0x44", "Initialize", "void*"]
+  , ["0x48", "CreateEffect", "void*"]
+  , ["0x4c", "EnumEffects", "void*"]
+  , ["0x50", "GetEffectInfo", "void*"]
+  , ["0x54", "GetForceFeedbackState", "void*"]
+  , ["0x58", "SendForceFeedbackCommand", "void*"]
+  , ["0x5c", "EnumCreatedEffectObjects", "void*"]
+  , ["0x60", "Escape", "void*"]
+  , ["0x64", "Poll", "void*"]
+  , ["0x68", "SendDeviceData", "void*"]
+  , ["0x6c", "EnumEffectsInFile", "void*"]
+  , ["0x70", "WriteEffectToFile", "void*"]
+  , ["0x74", "BuildActionMap", "void*"]
+  , ["0x78", "SetActionMap", "void*"]
+  , ["0x7c", "GetImageInfo", "void*"]
+  , ["0x80", "__end", null]
+  ]
+
 , "IDirectSound": 
   [ ["0x0", "vtable", "struct IDirectSoundVtbl*"]
   , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
@@ -688,6 +797,12 @@
 , "ShiftJis": 
   [ ["0x0", "__unknown", null]
   , ["0x1", "__end", null]
+  ]
+
+, "TIMECAPS": 
+  [ ["0x0", "wPeriodMin", "UINT"]
+  , ["0x4", "wPeriodMax", "UINT"]
+  , ["0x8", "__end", null]
   ]
 
 , "ULARGE_INTEGER": 

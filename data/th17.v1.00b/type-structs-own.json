@@ -256,6 +256,33 @@
   , ["0x48", "__end", null]
   ]
 
+, "zBomb": 
+  [ ["0x0", "vtable", "struct zVTableBomb*"]
+  , ["0x4", "__unknown", null]
+  , ["0x8", "on_tick", "struct zUpdateFunc*"]
+  , ["0xc", "on_draw", "struct zUpdateFunc*"]
+  , ["0x10", "__unknown", null]
+  , ["0x9c", "__end", null]
+  ]
+
+, "zBombMarisa": 
+  [ ["0x0", "super", "struct zBomb"]
+  , ["0x9c", "__unknown", null]
+  , ["0xa0", "__end", null]
+  ]
+
+, "zBombReimu": 
+  [ ["0x0", "super", "struct zBomb"]
+  , ["0x9c", "__unknown", null]
+  , ["0xa0", "__end", null]
+  ]
+
+, "zBombYoumu": 
+  [ ["0x0", "super", "struct zBomb"]
+  , ["0x9c", "lolololololololololololo", "char[0x20a0]"]
+  , ["0x213c", "__end", null]
+  ]
+
 , "zBoundingBox3": 
   [ ["0x0", "min_pos", "struct zFloat3"]
   , ["0xc", "max_pos", "struct zFloat3"]
@@ -808,6 +835,12 @@
 
 , "zFog": 
   [ ["0x0", "__end", null]
+  ]
+
+, "zFpsCounter": 
+  [ ["0x0", "__unknown", null]
+  , ["0x38", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x38", "__end", null]
   ]
 
 , "zGameThread": 
@@ -1410,6 +1443,12 @@
   , ["0x1c", "__end", null]
   ]
 
+, "zReplayManager": 
+  [ ["0x0", "__unknown", null]
+  , ["0x320", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x320", "__end", null]
+  ]
+
 , "zReplaySavedGlobals": 
   [ ["0x0", "__unknown", null]
   , ["0xf0", "__end", null]
@@ -1509,7 +1548,18 @@
   [ ["0x0", "__unknown", null]
   , ["0x4", "d3d", "struct IDirect3D9*"]
   , ["0x8", "d3d_device", "struct IDirect3DDevice9*"]
-  , ["0xc", "__end", null]
+  , ["0xc", "__unknown", null]
+  , ["0x1bc", "__vm_1bc", "struct zAnmVm*"]
+  , ["0x1c0", "__unknown", null]
+  , ["0x238", "camera_0", "struct zCamera"]
+  , ["0x364", "camera_1", "struct zCamera"]
+  , ["0x490", "camera_2", "struct zCamera"]
+  , ["0x5bc", "camera_3", "struct zCamera"]
+  , ["0x6e8", "current_camera", "struct zCamera*"]
+  , ["0x6ec", "current_camera_index", "int32_t"]
+  , ["0x6f0", "__unknown", null]
+  , ["0xa40", "background_color", "struct D3DCOLOR"]
+  , ["0xa44", "__end", null]
   ]
 
 , "zTableAnm508Data": 

@@ -261,16 +261,12 @@
 , {"addr": "0x4af3c0", "name": "BULLET_TYPE_DEFINITIONS", "type": "struct zTableBulletSpriteData[0x2c]", "comment": null}
 , {"addr": "0x4b23e4", "name": "IS_ACHIEVEMENT_MODE", "type": "int32_t", "comment": null}
 , {"addr": "0x4b3230", "name": "INPUT_STRUCT", "type": "struct zInput", "comment": null}
+, {"addr": "0x4b3910", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
 , {"addr": "0x4b5918", "name": "GAME_SPEED", "type": "float", "comment": null}
 , {"addr": "0x4b5920", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x5]", "comment": null}
 , {"addr": "0x4b59c0", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Okay, so I have to choose between type inference or being able\nto comment each global individually.  Thanks, Binary Ninja.\n\n- FLAGS: Bits 4 and 5 indicate whether this is spell practice or stage practice."}
 , {"addr": "0x4b5aa4", "name": "HYPER_TIMER", "type": "struct zTimer", "comment": null}
 , {"addr": "0x4b5ae0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
-, {"addr": "0x4b5c94", "name": "D3D_SURFACE_4b5c94", "type": "int32_t", "comment": null}
-, {"addr": "0x4b5c9c", "name": "GLOBAL_600_4b5c9c", "type": "int32_t", "comment": null}
-, {"addr": "0x4b5ca0", "name": "GLOBAL_600_4b5ca0", "type": "int32_t", "comment": null}
-, {"addr": "0x4b5ca4", "name": "GLOBAL_600_4b5ca4", "type": "int32_t", "comment": null}
-, {"addr": "0x4b5ca8", "name": "GLOBAL_600_4b5ca8", "type": "int32_t", "comment": null}
 , {"addr": "0x4b7660", "name": "REPLAY_UNSAFE_RNG", "type": "int64_t", "comment": null}
 , {"addr": "0x4b7668", "name": "REPLAY_SAFE_RNG", "type": "int64_t", "comment": null}
 , {"addr": "0x4b7674", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
@@ -278,13 +274,13 @@
 , {"addr": "0x4b767c", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4b7680", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4b7684", "name": "GOAST_MANAGER_PTR", "type": "struct zGoastManager*", "comment": null}
-, {"addr": "0x4b7688", "name": "BOMB_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b7688", "name": "BOMB_PTR", "type": "struct zBomb*", "comment": null}
 , {"addr": "0x4b768c", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
 , {"addr": "0x4b7690", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
 , {"addr": "0x4b7698", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
 , {"addr": "0x4b769c", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
 , {"addr": "0x4b76a0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
-, {"addr": "0x4b76a8", "name": "GLOBAL_38_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b76a8", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
 , {"addr": "0x4b76ac", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4b76b0", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
 , {"addr": "0x4b76b4", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
@@ -295,7 +291,8 @@
 , {"addr": "0x4b77cc", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
 , {"addr": "0x4b77d0", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4b77d4", "name": "SHT_FUNCS_2", "type": "void", "comment": null}
-, {"addr": "0x4b77d8", "name": "REPLAY_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4b77d8", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
+, {"addr": "0x4b77dc", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4b77e0", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4b77f0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4b7804", "name": "TROPHY_ANIMATION_PTR", "type": "struct zTrophyAnimation*", "comment": null}
@@ -306,6 +303,7 @@
 , {"addr": "0x509b38", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x522574", "name": "ZERO_VEC3", "type": "struct zFloat3", "comment": null}
 , {"addr": "0x5226c0", "name": "WINDOW", "type": "int32_t", "comment": null}
-, {"addr": "0x529f20", "name": "RENDERING_QUADRILATERAL_529f20", "type": "zRenderSpriteVertex[0x4]", "comment": null}
+, {"addr": "0x5247f0", "name": "SOUND_MANAGER", "type": "int32_t", "comment": null}
+, {"addr": "0x529f20", "name": "SPRITE_TEMP_BUFFER", "type": "zRenderSpriteVertex[0x4]", "comment": null}
 , {"addr": "0x52a920", "name": "KEY_STATES", "type": "uint8_t[0x100]", "comment": null}
 ]

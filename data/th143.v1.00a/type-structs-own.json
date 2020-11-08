@@ -181,10 +181,20 @@
   , ["0x13f4", "__end", null]
   ]
 
+, "zBulletList": 
+  [ ["0x0", "entry", "struct zBullet*"]
+  , ["0x4", "next", "struct zBulletList*"]
+  , ["0x8", "prev", "struct zBulletList*"]
+  , ["0xc", "__seldom_used", "struct zBulletList*"]
+  , ["0x10", "__end", null]
+  ]
+
 , "zBulletManager": 
   [ ["0x0", "__unknown", null]
   , ["0x8c", "bullets", "struct zBullet[0x7d1]"]
-  , ["0x9bf6c0", "__unknown", null]
+  , ["0x9bf6c0", "iter_current", "struct zBulletList*"]
+  , ["0x9bf6c4", "iter_next", "struct zBulletList*"]
+  , ["0x9bf6c8", "__unknown_counter__affects_cancel_items", "int32_t"]
   , ["0x9bf6cc", "bullet_anm", "struct zAnmLoaded*"]
   , ["0x9bf6d0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x9bf6d0", "__end", null]
@@ -232,6 +242,12 @@
   , ["0xe4", "enemy_limit", "int32_t"]
   , ["0xe8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xe8", "__end", null]
+  ]
+
+, "zEquipItem": 
+  [ ["0x0", "__unknown", null]
+  , ["0x498", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x498", "__end", null]
   ]
 
 , "zFloat2": 
@@ -337,12 +353,6 @@
   , ["0x58", "__end", null]
   ]
 
-, "zIscGlobal1b8": 
-  [ ["0x0", "__unknown", null]
-  , ["0x1b8", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x1b8", "__end", null]
-  ]
-
 , "zIscGlobal3c": 
   [ ["0x0", "__unknown", "char[0x3c]"]
   , ["0x3c", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -351,20 +361,32 @@
 
 , "zItem": 
   [ ["0x0", "__unknown", null]
+  , ["0xc1c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xc1c", "__end", null]
   ]
 
-, "zItemEquip": 
-  [ ["0x0", "__unknown", null]
-  , ["0x498", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x498", "__end", null]
+, "zItemListHead": 
+  [ ["0x0", "__entry__always_null", "void*"]
+  , ["0x4", "next", "struct zItem*"]
+  , ["0x8", "__prev__always_null", "void*"]
+  , ["0xc", "__field_c__always_null", "void*"]
+  , ["0x10", "__end", null]
   ]
 
 , "zItemManager": 
   [ ["0x0", "__unknown", null]
+  , ["0x8", "on_tick", "struct zUpdateFunc*"]
+  , ["0xc", "on_draw", "struct zUpdateFunc*"]
+  , ["0x10", "__unknown", null]
   , ["0x14", "normal_items", "struct zItem[0x258]"]
   , ["0x1c61b4", "cancel_items", "struct zItem[0x1000]"]
-  , ["0xde21b4", "__unknown", null]
+  , ["0xde21b4", "normal_item_freelist_head", "struct zItemListHead"]
+  , ["0xde21c4", "cancel_item_freelist_head", "struct zItemListHead"]
+  , ["0xde21d4", "num_items_alive", "int32_t"]
+  , ["0xde21d8", "__num_cancel_items_since_stage_begin__mebbe", "int32_t"]
+  , ["0xde21dc", "num_cancel_items_spawned_this_frame", "int32_t"]
+  , ["0xde21e0", "__dumb_field__always_zero__copied_onto_piv_items", "int32_t"]
+  , ["0xde21e4", "__disused__ufos_spawned_since_stage_begin", "int32_t"]
   , ["0xde21e8", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xde21e8", "__end", null]
   ]
@@ -385,6 +407,12 @@
   [ ["0x0", "__unknown", null]
   , ["0xef78", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xef78", "__end", null]
+  ]
+
+, "zNotice": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1b8", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x1b8", "__end", null]
   ]
 
 , "zPauseMenu": 
@@ -454,6 +482,10 @@
 , "zUnknown": 
   [ ["0x0", "value", "uint32_t"]
   , ["0x4", "__end", null]
+  ]
+
+, "zUpdateFunc": 
+  [ ["0x0", "__end", null]
   ]
 
 }

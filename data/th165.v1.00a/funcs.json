@@ -33,7 +33,7 @@
 , {"addr": "0x4100c0", "name": "BulletManager::on_tick__body", "comment": null}
 , {"addr": "0x4102b0", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x4102e0", "name": "BulletManager::on_draw", "comment": null}
-, {"addr": "0x410410", "name": "BulletManager::shoot_one_bullet", "comment": null}
+, {"addr": "0x410410", "name": "BulletManager::shoot_one", "comment": null}
 , {"addr": "0x410f70", "name": "Bullet::run_ex", "comment": null}
 , {"addr": "0x412a90", "name": "BulletManager::shoot_bullets", "comment": null}
 , {"addr": "0x412fe0", "name": "Bullet::sub_412fe0", "comment": null}
@@ -148,11 +148,11 @@
 , {"addr": "0x45be40", "name": "TrophyManager::on_tick", "comment": null}
 , {"addr": "0x45c050", "name": "TrophyManager::on_tick__stub", "comment": null}
 , {"addr": "0x45c060", "name": "TrophyManager::on_draw", "comment": null}
-, {"addr": "0x45c200", "name": "HelpManual2::thread_start", "comment": null}
-, {"addr": "0x45c2b0", "name": "HelpManual2::operator new", "comment": null}
-, {"addr": "0x45c590", "name": "HelpManual2::on_tick", "comment": null}
-, {"addr": "0x45c9e0", "name": "HelpManual2::on_tick__stub", "comment": null}
-, {"addr": "0x45c9f0", "name": "HelpManual2::on_draw", "comment": null}
+, {"addr": "0x45c200", "name": "Tutorial::thread_start", "comment": null}
+, {"addr": "0x45c2b0", "name": "Tutorial::operator new", "comment": null}
+, {"addr": "0x45c590", "name": "Tutorial::on_tick", "comment": null}
+, {"addr": "0x45c9e0", "name": "Tutorial::on_tick__stub", "comment": null}
+, {"addr": "0x45c9f0", "name": "Tutorial::on_draw", "comment": null}
 , {"addr": "0x45f310", "name": "WinMain", "comment": null}
 , {"addr": "0x460f50", "name": "Window::do_frame__normal_version", "comment": null}
 , {"addr": "0x462c70", "name": "ScreenEffect::on_tick_1", "comment": null}

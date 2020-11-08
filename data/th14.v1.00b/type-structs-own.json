@@ -505,7 +505,9 @@
   , ["0x6c", "freelist_head", "struct zBulletNullList"]
   , ["0x7c", "tick_list_head", "struct zBulletList"]
   , ["0x8c", "bullets", "struct zBullet[0x7d1]"]
-  , ["0x9bf6c0", "__unknown", null]
+  , ["0x9bf6c0", "iter_current", "struct zBulletList*"]
+  , ["0x9bf6c4", "iter_next", "struct zBulletList*"]
+  , ["0x9bf6c8", "__unknown_counter__affects_cancel_items", "int32_t"]
   , ["0x9bf6cc", "bullet_anm", "struct zAnmLoaded*"]
   , ["0x9bf6d0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x9bf6d0", "__end", null]
@@ -599,6 +601,12 @@
   , ["0x5c", "__end", null]
   ]
 
+, "zDebugSoundTest": 
+  [ ["0x0", "__unknown", null]
+  , ["0x2bc", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x2bc", "__end", null]
+  ]
+
 , "zDebugSprtView": 
   [ ["0x0", "__unknown", null]
   , ["0x8a8", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -618,6 +626,7 @@
   , ["0x10", "effect_anm", "struct zAnmLoaded*"]
   , ["0x14", "bullet_anm", "struct zAnmLoaded*"]
   , ["0x18", "__unknown", null]
+  , ["0x1c", "__list_head__related_to_unused_fog_effects", "struct zZunList"]
   , ["0x2c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x2c", "__end", null]
   ]
@@ -932,11 +941,28 @@
   , ["0xc18", "__end", null]
   ]
 
+, "zItemListHead": 
+  [ ["0x0", "__entry__always_null", "void*"]
+  , ["0x4", "next", "struct zItem*"]
+  , ["0x8", "__prev__always_null", "void*"]
+  , ["0xc", "__field_c__always_null", "void*"]
+  , ["0x10", "__end", null]
+  ]
+
 , "zItemManager": 
   [ ["0x0", "__unknown", null]
+  , ["0x8", "on_tick", "struct zUpdateFunc*"]
+  , ["0xc", "on_draw", "struct zUpdateFunc*"]
+  , ["0x10", "__unknown", null]
   , ["0x14", "normal_items", "struct zItem[0x258]"]
   , ["0x1c5854", "cancel_items", "struct zItem[0x1000]"]
-  , ["0xddd854", "__unknown", null]
+  , ["0xddd854", "normal_item_freelist_head", "struct zItemListHead"]
+  , ["0xddd864", "cancel_item_freelist_head", "struct zItemListHead"]
+  , ["0xddd874", "num_items_alive", "int32_t"]
+  , ["0xddd878", "__num_cancel_items_since_stage_begin__mebbe", "int32_t"]
+  , ["0xddd87c", "__disused__num_cancel_items_spawned_this_frame", "int32_t"]
+  , ["0xddd880", "__dumb_field__always_zero__copied_onto_piv_items", "int32_t"]
+  , ["0xddd884", "__disused__ufos_spawned_since_stage_begin", "int32_t"]
   , ["0xddd888", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xddd888", "__end", null]
   ]
@@ -945,6 +971,12 @@
   [ ["0x0", "__unknown", null]
   , ["0x600", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x600", "__end", null]
+  ]
+
+, "zLoadingThread": 
+  [ ["0x0", "__unknown", null]
+  , ["0x610", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x610", "__end", null]
   ]
 
 , "zMainMenu": 
@@ -961,6 +993,8 @@
 
 , "zPlayer": 
   [ ["0x0", "__unknown", null]
+  , ["0x8", "on_tick", "struct zUpdateFunc*"]
+  , ["0xc", "on_draw", "struct zUpdateFunc*"]
   , ["0x10", "pl_anm", "struct zAnmLoaded*"]
   , ["0x14", "vm", "struct zAnmVm"]
   , ["0x5e0", "pos", "struct zFloat3"]
@@ -991,7 +1025,8 @@
   , ["0xde0c", "__unknown", null]
   , ["0xde18", "damage_sources", "struct zPlayerDamageSource[0x101]"]
   , ["0x182bc", "percent_moved_by_options", "int32_t"]
-  , ["0x182c0", "__unknown", null]
+  , ["0x182c0", "iframes", "struct zTimer"]
+  , ["0x182d4", "__unknown", null]
   , ["0x182d8", "scale_i", "struct zInterpFloat"]
   , ["0x18308", "player_scale", "float"]
   , ["0x1830c", "__unknown", null]
@@ -1213,9 +1248,9 @@
   , ["0x128", "__end", null]
   ]
 
-, "zTableAnm508Data": 
-  [ ["0x0", "field_0", "int16_t"]
-  , ["0x2", "field_2", "int16_t"]
+, "zTableEffectData": 
+  [ ["0x0", "is_bullet_anm", "int16_t"]
+  , ["0x2", "script", "int16_t"]
   , ["0x4", "on_create", "void*"]
   , ["0x8", "on_tick", "void*"]
   , ["0xc", "on_draw", "void*"]
@@ -1368,6 +1403,14 @@
   , ["0x4", "low_power_active", "int32_t"]
   , ["0x8", "power_off_active", "int32_t"]
   , ["0xc", "__end", null]
+  ]
+
+, "zZunList": 
+  [ ["0x0", "entry", "void*"]
+  , ["0x4", "next", "struct zZunList*"]
+  , ["0x8", "prev", "struct zZunList*"]
+  , ["0xc", "__seldom_used", "struct zZunList*"]
+  , ["0x10", "__end", null]
   ]
 
 }

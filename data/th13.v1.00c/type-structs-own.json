@@ -366,6 +366,12 @@
   , ["0x10", "__end", null]
   ]
 
+, "zFpsCounter": 
+  [ ["0x0", "__unknown", null]
+  , ["0x8c", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x8c", "__end", null]
+  ]
+
 , "zGameThread": 
   [ ["0x0", "__unknown", null]
   , ["0x7c", "__exact_size_known", "struct zCOMMENT[0x0]"]

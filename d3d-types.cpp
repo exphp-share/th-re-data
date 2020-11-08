@@ -981,3 +981,8 @@ struct DIDEVCAPS {
 //     WORD wExponent;
 //     WORD wReportId;
 // };
+
+struct TIMECAPS {
+  UINT wPeriodMin;
+  UINT wPeriodMax;
+};

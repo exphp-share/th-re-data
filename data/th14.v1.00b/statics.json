@@ -1,5 +1,4 @@
-[ {"addr": "0x4384d1", "name": "float(303.00317)", "type": "float", "comment": null}
-, {"addr": "0x472d60", "name": "jump_table_anm_under_300", "type": "uint32_t[0x35]", "comment": null}
+[ {"addr": "0x472d60", "name": "jump_table_anm_under_300", "type": "uint32_t[0x35]", "comment": null}
 , {"addr": "0x472e34", "name": "jump_table_anm_under_300_indirect", "type": "uint8_t[0xd7]", "comment": null}
 , {"addr": "0x472f0c", "name": "jump_table_472f0c_under_600", "type": "uint32_t[0x41]", "comment": null}
 , {"addr": "0x473010", "name": "jump_table_473010_under_600_indirect", "type": "uint8_t[0xd1]", "comment": null}
@@ -18,6 +17,11 @@
 , {"addr": "0x4bd850", "name": "VTABLE_BOMB_REIMU_A", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bd86c", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bde7c", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
+, {"addr": "0x4be2fc", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4be364", "name": "VTABLE_LASER_BEAM", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4be3cc", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4be434", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4be49c", "name": "VTABLE_LASER_BASE_CLASS", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4beed8", "name": "PLAYER_DIRECTION_DEFS", "type": "struct zInt2[0x9]", "comment": null}
 , {"addr": "0x4c10d4", "name": "float(0.5)_1", "type": "float", "comment": null}
 , {"addr": "0x4c18e4", "name": "float(1/2048)", "type": "float", "comment": null}
@@ -105,7 +109,7 @@
 , {"addr": "0x4d0cc0", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4d1d68", "name": "FILE_BEING_WRITTEN", "type": "HANDLE", "comment": "because of course it's a global"}
 , {"addr": "0x4d4cec", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[0x7]", "comment": null}
-, {"addr": "0x4d5618", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x9]", "comment": null}
+, {"addr": "0x4d5618", "name": "EFFECT_TABLE", "type": "struct zTableEffectData[0x8]", "comment": null}
 , {"addr": "0x4d6878", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4d687c", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
 , {"addr": "0x4d6884", "name": "HARDWARE_INPUT_RISING_EDGE", "type": "uint32_t", "comment": null}
@@ -117,6 +121,7 @@
 , {"addr": "0x4db510", "name": "REPLAY_SAFE_RNG", "type": "uint32_t", "comment": null}
 , {"addr": "0x4db51c", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
 , {"addr": "0x4db520", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
+, {"addr": "0x4db524", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4db528", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4db52c", "name": "BOMB_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4db530", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
@@ -132,17 +137,18 @@
 , {"addr": "0x4db560", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4db660", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
 , {"addr": "0x4db664", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
-, {"addr": "0x4db668", "name": "LOADING_THREAD_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4db668", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
 , {"addr": "0x4db66c", "name": "SUPERVISOR_ON_DRAW_19_OVERRIDE", "type": "void*", "comment": null}
 , {"addr": "0x4db670", "name": "SUPERVISOR_ON_DRAW_0F_OVERRIDE", "type": "void*", "comment": null}
 , {"addr": "0x4db678", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
 , {"addr": "0x4db67c", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4db680", "name": "CACHED_PLAYER_SHT_FILE", "type": "int32_t", "comment": null}
 , {"addr": "0x4db688", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
-, {"addr": "0x4db690", "name": "DEBUG_SOUND_TEST_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4db694", "name": "POPUP_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4db68c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4db690", "name": "DEBUG_SOUND_TEST_PTR", "type": "struct zDebugSoundTest*", "comment": null}
+, {"addr": "0x4db694", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4db698", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
-, {"addr": "0x4db6a4", "name": "MAIN_MENU_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4db6a4", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4f56cc", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4f56d0", "name": "CRIT_SECTION_UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x4f5700", "name": "CRIT_SECTION_FILES_04F5700", "type": "struct CRITICAL_SECTION", "comment": null}

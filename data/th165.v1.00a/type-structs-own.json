@@ -606,12 +606,6 @@
   , ["0x1bc", "__end", null]
   ]
 
-, "zHelpManual2": 
-  [ ["0x0", "__unknown", null]
-  , ["0x1c0", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x1c0", "__end", null]
-  ]
-
 , "zInt2": 
   [ ["0x0", "x", "int32_t"]
   , ["0x4", "y", "int32_t"]
@@ -890,6 +884,12 @@
   , ["0xc", "game_speed", "float*"]
   , ["0x10", "control", "int32_t"]
   , ["0x14", "__end", null]
+  ]
+
+, "zTutorial": 
+  [ ["0x0", "__unknown", null]
+  , ["0x1c0", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x1c0", "__end", null]
   ]
 
 , "zUnknown": 
