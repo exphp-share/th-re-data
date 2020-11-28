@@ -149,7 +149,7 @@
   ]
 
 , "zBullet": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "bullet_manager", "struct zBulletManager*"]
   , ["0x4", "vms", "struct zBulletTypeVms"]
   , ["0xd4c", "__unknown", null]
   , ["0xdb4", "active_ex_flags", "uint32_t"]
@@ -189,9 +189,7 @@
   , ["0x25e180", "__total_tick_count_maybe", "int32_t"]
   , ["0x25e184", "on_tick", "struct zUpdateFunc*"]
   , ["0x25e188", "on_draw", "struct zUpdateFunc*"]
-  , ["0x25e18c", "side_num", "int32_t"]
-  , ["0x25e190", "side_ptr", "struct zGameManagerSide*"]
-  , ["0x25e194", "__weird__offset_from_side_ptr_to_side_2", "int32_t"]
+  , ["0x25e18c", "side", "struct zSideData"]
   , ["0x25e198", "layer_list_heads", "struct zBullet*[0x6]"]
   , ["0x25e1b0", "next_fairy_bullet", "struct zBullet*"]
   , ["0x25e1b4", "next_rival_bullet", "struct zBullet*"]
@@ -217,15 +215,17 @@
   , ["0x1", "__end", null]
   ]
 
+, "zCamera": 
+  [ ["0x0", "__end", null]
+  ]
+
 , "zDebugSprtCtrl": 
   [ ["0x0", "__end", null]
   ]
 
 , "zEffectSys": 
   [ ["0x0", "__unknown", null]
-  , ["0xc", "side_num", "int32_t"]
-  , ["0x10", "side_ptr", "struct zGameManagerSide*"]
-  , ["0x14", "__weird__offset_from_side_ptr_to_side_2", "int32_t"]
+  , ["0xc", "side", "struct zSideData"]
   , ["0x18", "on_tick", "struct zUpdateFunc*"]
   , ["0x1c", "on_draw", "struct zUpdateFunc*"]
   , ["0x20", "__unknown", null]
@@ -240,13 +240,48 @@
   ]
 
 , "zEnemy": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "manager", "struct zEnemyManager*"]
+  , ["0x4", "__unknown", null]
   , ["0x5430", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x5430", "__end", null]
   ]
 
+, "zEnemyBulletShooter": 
+  [ ["0x0", "sprite", "uint16_t"]
+  , ["0x2", "color", "uint16_t"]
+  , ["0x4", "position", "struct zFloat3"]
+  , ["0x10", "aim_offset", "float"]
+  , ["0x14", "angle_between_bullets", "float"]
+  , ["0x18", "speed_first_layer", "float"]
+  , ["0x1c", "speed_last_layer", "float"]
+  , ["0x20", "et_ex", "struct zBulletEx[0x12]"]
+  , ["0x1d0", "__laser_unk1", "float"]
+  , ["0x1d4", "laser_start_length", "float"]
+  , ["0x1d8", "laser_final_length", "float"]
+  , ["0x1dc", "laser_width", "float"]
+  , ["0x1e0", "laser_spawn_time", "int32_t"]
+  , ["0x1e4", "laser_duration", "int32_t"]
+  , ["0x1e8", "laser_despawan_time", "int32_t"]
+  , ["0x1ec", "laser_graze_delay", "int32_t"]
+  , ["0x1f0", "laser_graze_interval", "int32_t"]
+  , ["0x1f4", "bullets_per_layer", "int16_t"]
+  , ["0x1f6", "layer_count", "int16_t"]
+  , ["0x1f8", "aim_type", "uint16_t"]
+  , ["0x1fa", "__unknown", null]
+  , ["0x1fc", "transform_flags", "int32_t"]
+  , ["0x200", "shot_sfx", "int32_t"]
+  , ["0x204", "transform_sfx", "int32_t"]
+  , ["0x208", "__unknown", null]
+  , ["0x210", "SIZE_NOT_KNOWN", "struct zCOMMENT[0x0]"]
+  , ["0x210", "__end", null]
+  ]
+
 , "zEnemyManager": 
   [ ["0x0", "__unknown", null]
+  , ["0x310", "on_tick", "struct zUpdateFunc*"]
+  , ["0x314", "on_draw_1", "struct zUpdateFunc*"]
+  , ["0x318", "on_draw_2", "struct zUpdateFunc*"]
+  , ["0x31c", "side", "struct zSideData"]
   , ["0x328", "template", "struct zEnemy"]
   , ["0x5758", "enemies", "struct zEnemy[0x81]"]
   , ["0x2ac388", "bosses", "struct zEnemy*[0x8]"]
@@ -312,7 +347,7 @@
   ]
 
 , "zGameManagerSide": 
-  [ ["0x0", "__ptr_0", "void*"]
+  [ ["0x0", "stage", "struct zStage*"]
   , ["0x4", "player", "struct zPlayer*"]
   , ["0x8", "bullet_manager", "struct zBulletManager*"]
   , ["0xc", "effect_sys", "struct zEffectSys*"]
@@ -350,8 +385,12 @@
   , ["0x76d4", "__anms_11", "struct zAnmVm[0x6]"]
   , ["0x86ac", "__anms_12", "struct zAnmVm[0x7]"]
   , ["0x9928", "__anms_13", "struct zAnmVm[0x5]"]
-  , ["0xa65c", "inner", "struct zGuiSideInner"]
-  , ["0xabb0", "__unknown", null]
+  , ["0xa65c", "__unknown", null]
+  , ["0xa660", "on_tick", "struct zUpdateFunc*"]
+  , ["0xa664", "on_draw", "struct zUpdateFunc*"]
+  , ["0xa668", "__unknown", null]
+  , ["0xa678", "inner", "struct zGuiSideInner"]
+  , ["0xabcc", "__unknown", null]
   , ["0xabd0", "__timer_abd0", "struct zTimer"]
   , ["0xabdc", "__timer_abdc", "struct zTimer"]
   , ["0xabe8", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -391,6 +430,11 @@
 
 , "zPlayer": 
   [ ["0x0", "__unknown", null]
+  , ["0x8", "side", "struct zSideData"]
+  , ["0x14", "on_tick", "struct zUpdateFunc*"]
+  , ["0x18", "on_draw_1", "struct zUpdateFunc*"]
+  , ["0x1c", "on_draw_2", "struct zUpdateFunc*"]
+  , ["0x20", "__unknown", null]
   , ["0xc0", "__vm", "struct zAnmVm"]
   , ["0x364", "__filler_01", "char[0x8]"]
   , ["0x36c", "bomb", "struct zPlayerBomb"]
@@ -459,8 +503,18 @@
   , ["0x38", "__end", null]
   ]
 
+, "zSideData": 
+  [ ["0x0", "side_num", "int32_t"]
+  , ["0x4", "side_ptr", "struct zGameManagerSide*"]
+  , ["0x8", "__weird_offset_from_side_ptr_to_side_2", "int32_t"]
+  , ["0xc", "__end", null]
+  ]
+
 , "zSpellcard": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "side", "struct zSideData"]
+  , ["0xc", "on_tick", "struct zUpdateFunc*"]
+  , ["0x10", "on_draw", "struct zUpdateFunc*"]
+  , ["0x14", "__unknown", null]
   , ["0x98", "__timer_98", "struct zTimer"]
   , ["0xa4", "__unknown", null]
   , ["0xac", "__vms_ac", "struct zAnmVm[0x2]"]
@@ -471,13 +525,18 @@
   ]
 
 , "zStage": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "on_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_draw_1", "struct zUpdateFunc*"]
+  , ["0x8", "on_draw_2", "struct zUpdateFunc*"]
+  , ["0xc", "side", "struct zSideData"]
+  , ["0x18", "__unknown", null]
   , ["0x65c4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x65c4", "__end", null]
   ]
 
 , "zSupervisor": 
-  [ ["0x0", "__end", null]
+  [ ["0x0", "__unknown", null]
+  , ["0x7b0", "__end", null]
   ]
 
 , "zTimer": 

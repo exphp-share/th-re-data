@@ -13,6 +13,9 @@
 , {"addr": "0x4ad018", "name": "UNUSED_DEBUG_THING", "type": "void", "comment": null}
 , {"addr": "0x4b30b0", "name": "WINDOW", "type": "int32_t", "comment": null}
 , {"addr": "0x4b3100", "name": "SUPERVISOR", "type": "void", "comment": null}
+, {"addr": "0x4b38b0", "name": "STATIC_VM_4b38b0", "type": "struct zAnmVm", "comment": null}
+, {"addr": "0x4b3b54", "name": "STATIC_VM_4b3b54", "type": "struct zAnmVm", "comment": null}
+, {"addr": "0x4b3df8", "name": "STATIC_VM_4b3df8", "type": "struct zAnmVm", "comment": null}
 , {"addr": "0x4b41b8", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
 , {"addr": "0x4b42d0", "name": "NETWORK_MANAGER_PTR", "type": "struct zNetworkManager*", "comment": null}
 , {"addr": "0x4ce438", "name": "ASCII_MANAGER_ON_DRAW_22", "type": "struct zUpdateFunc", "comment": null}

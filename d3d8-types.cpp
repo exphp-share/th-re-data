@@ -156,6 +156,13 @@ struct IDirect3DSurface8Vtbl {
     void* UnlockRect;
 };
 
+struct IDirect3DVertexBuffer8Vtbl {
+    struct IDirect3DResource8Vtbl super;
+    void* Lock;
+    void* Unlock;
+    void* GetDesc;
+};
+
 struct IDirect3D8 {
     struct IDirect3D8Vtbl* vtable;
     char __make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read;
@@ -183,6 +190,11 @@ struct IDirect3DTexture8 {
 
 struct IDirect3DSurface8 {
     struct IDirect3DSurface8Vtbl* vtable;
+    char __make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read;
+};
+
+struct IDirect3DVertexBuffer8 {
+    struct IDirect3DVertexBuffer8Vtbl* vtable;
     char __make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read;
 };
 
@@ -426,3 +438,62 @@ struct IDirectSoundNotify {
     struct IDirectSoundNotifyVtbl* vtable;
     char __make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read;
 };
+
+struct HTASK__;
+struct HMMIO__;
+typedef struct HTASK__* HTASK;
+typedef struct HMMIO__* HMMIO;
+
+struct MMIOINFO {
+  DWORD      dwFlags;
+  char       fccIOProc[4];
+  LRESULT    (*pIOProc)(LPSTR lpmmioinfo, UINT uMsg, LPARAM lParam1, LPARAM lParam2);
+  UINT       wErrorRet;
+  HTASK      hTask;
+  LONG       cchBuffer;
+  uint8_t*   pchBuffer;
+  uint8_t*   pchNext;
+  uint8_t*   pchEndRead;
+  uint8_t*   pchEndWrite;
+  LONG       lBufOffset;
+  LONG       lDiskOffset;
+  DWORD      adwInfo[4];
+  DWORD      dwReserved1;
+  DWORD      dwReserved2;
+  HMMIO      hmmio;
+};
+
+struct MMCKINFO {
+  char   ckid[4];
+  DWORD  cksize;
+  char   fccType[4];
+  DWORD  dwDataOffset;
+  DWORD  dwFlags;
+};
+
+struct CWaveFile { // DirectX crap
+    WAVEFORMATEX* m_pwfx;
+    HMMIO         m_hmmio;
+    MMCKINFO      m_ck;
+    MMCKINFO      m_ckRiff;
+    DWORD         m_dwSize;
+    MMIOINFO      m_mmioinfoOut;
+    DWORD         m_dwFlags;
+    BOOL          m_bIsReadingFromMemory;
+    BYTE*         m_pbData;
+    BYTE*         m_pbDataCur;
+    ULONG         m_ulDataSize;
+    CHAR*         m_pResourceBuffer;
+}
+
+struct CSound {
+    IDirectSoundBuffer*  m_apDSBuffer;
+    DWORD                m_dwDSBufferSize;
+    CWaveFile*           m_pWaveFile;
+    DWORD                m_dwNumBuffers;
+    DWORD                m_dwCreationFlags;
+}
+
+struct CSoundManager {
+    IDirectSound* m_pDS;
+}

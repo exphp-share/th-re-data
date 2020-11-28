@@ -477,7 +477,7 @@
 , {"addr": "0x4752f0", "name": "Timer::copy", "comment": null}
 , {"addr": "0x4753a0", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
 , {"addr": "0x4756d0", "name": "sub_4756d0__unused?", "comment": null}
-, {"addr": "0x4756e0", "name": "AnmManager::draw_vm__modes_0_1_2_3", "comment": null}
+, {"addr": "0x4756e0", "name": "AnmManager::render_sprite_2d", "comment": null}
 , {"addr": "0x475e60", "name": "AnmManager::reset_vertex_buffers", "comment": null}
 , {"addr": "0x475eb0", "name": "AnmManager::flush_sprites", "comment": null}
 , {"addr": "0x475f80", "name": "AnmManager::write_sprite", "comment": null}

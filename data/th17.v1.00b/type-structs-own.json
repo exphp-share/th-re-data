@@ -1593,6 +1593,17 @@
   , ["0x8", "__end", null]
   ]
 
+, "zTableUnknownE8": 
+  [ ["0x0", "__unknown", null]
+  , ["0x48", "spell_effects", "struct zTableUnknownE8ArrayItem[0x4]"]
+  , ["0xe8", "__end", null]
+  ]
+
+, "zTableUnknownE8ArrayItem": 
+  [ ["0x0", "__unknown", null]
+  , ["0x28", "__end", null]
+  ]
+
 , "zTimer": 
   [ ["0x0", "previous", "int32_t"]
   , ["0x4", "current", "int32_t"]

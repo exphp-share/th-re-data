@@ -333,7 +333,7 @@
   ]
 
 , "zEclRunContext": 
-  [ ["0x0", "field_0_usually_nonposive_integer", "float"]
+  [ ["0x0", "time", "float"]
   , ["0x4", "cur_subroutine_index", "int32_t"]
   , ["0x8", "cur_offset_from_first_instruction", "int32_t"]
   , ["0xc", "inner", "struct zEclRunContextInner"]
