@@ -69,6 +69,7 @@
 , {"addr": "0x46a7c8", "name": "float(2.5)", "type": "float", "comment": null}
 , {"addr": "0x46a7ec", "name": "float(416)", "type": "float", "comment": null}
 , {"addr": "0x46a7f0", "name": "float(232)", "type": "float", "comment": null}
+, {"addr": "0x46afac", "name": "VTABLE_46afac", "type": "void*[0x3]", "comment": null}
 , {"addr": "0x47a630", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x47b8e0", "name": "ASCII_MANAGER_ON_DRAW_0F", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x47b900", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
@@ -97,6 +98,7 @@
 , {"addr": "0x69d760", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
 , {"addr": "0x69d918", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
 , {"addr": "0x69d998", "name": "DEBUG_LOG", "type": "struct zDebugLog", "comment": null}
+, {"addr": "0x69e1b0", "name": "DINPUT_RELATED", "type": "void", "comment": null}
 , {"addr": "0x69e248", "name": "UNKNOWN_UPDATE_FUNC_69E248", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x69e268", "name": "ITEM_MANAGER", "type": "struct zItemManager", "comment": null}
 , {"addr": "0x6c6bb4", "name": "UNKNOWN_UPDATE_FUNC_6C6BB4", "type": "struct zUpdateFunc", "comment": null}

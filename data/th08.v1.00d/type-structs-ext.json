@@ -24,8 +24,38 @@
   , ["0x18", "__end", null]
   ]
 
+, "CSound": 
+  [ ["0x0", "m_apDSBuffer", "struct IDirectSoundBuffer*"]
+  , ["0x4", "m_dwDSBufferSize", "DWORD"]
+  , ["0x8", "m_pWaveFile", "struct CWaveFile*"]
+  , ["0xc", "m_dwNumBuffers", "DWORD"]
+  , ["0x10", "m_dwCreationFlags", "DWORD"]
+  , ["0x14", "__end", null]
+  ]
+
+, "CSoundManager": 
+  [ ["0x0", "m_pDS", "struct IDirectSound*"]
+  , ["0x4", "__end", null]
+  ]
+
 , "CURSOR__": 
   [ ["0x0", "__end", null]
+  ]
+
+, "CWaveFile": 
+  [ ["0x0", "m_pwfx", "struct WAVEFORMATEX*"]
+  , ["0x4", "m_hmmio", "HMMIO"]
+  , ["0x8", "m_ck", "struct MMCKINFO"]
+  , ["0x1c", "m_ckRiff", "struct MMCKINFO"]
+  , ["0x30", "m_dwSize", "DWORD"]
+  , ["0x34", "m_mmioinfoOut", "struct MMIOINFO"]
+  , ["0x80", "m_dwFlags", "DWORD"]
+  , ["0x84", "m_bIsReadingFromMemory", "BOOL"]
+  , ["0x88", "m_pbData", "BYTE*"]
+  , ["0x8c", "m_pbDataCur", "BYTE*"]
+  , ["0x90", "m_ulDataSize", "ULONG"]
+  , ["0x94", "m_pResourceBuffer", "CHAR*"]
+  , ["0x98", "__end", null]
   ]
 
 , "D3DCAPS8": 
@@ -275,6 +305,14 @@
   [ ["0x0", "__end", null]
   ]
 
+, "HMMIO__": 
+  [ ["0x0", "__end", null]
+  ]
+
+, "HTASK__": 
+  [ ["0x0", "__end", null]
+  ]
+
 , "HWND__": 
   [ ["0x0", "__end", null]
   ]
@@ -476,6 +514,20 @@
   , ["0x4c", "__end", null]
   ]
 
+, "IDirect3DVertexBuffer8": 
+  [ ["0x0", "vtable", "struct IDirect3DVertexBuffer8Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__end", null]
+  ]
+
+, "IDirect3DVertexBuffer8Vtbl": 
+  [ ["0x0", "super", "struct IDirect3DResource8Vtbl"]
+  , ["0x2c", "Lock", "void*"]
+  , ["0x30", "Unlock", "void*"]
+  , ["0x34", "GetDesc", "void*"]
+  , ["0x38", "__end", null]
+  ]
+
 , "IDirectInput8A": 
   [ ["0x0", "vtable", "struct IDirectInput8AVtbl*"]
   , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
@@ -660,6 +712,35 @@
   , ["0x14", "Protect", "DWORD"]
   , ["0x18", "Type", "DWORD"]
   , ["0x1c", "__end", null]
+  ]
+
+, "MMCKINFO": 
+  [ ["0x0", "ckid", "char[0x4]"]
+  , ["0x4", "cksize", "DWORD"]
+  , ["0x8", "fccType", "char[0x4]"]
+  , ["0xc", "dwDataOffset", "DWORD"]
+  , ["0x10", "dwFlags", "DWORD"]
+  , ["0x14", "__end", null]
+  ]
+
+, "MMIOINFO": 
+  [ ["0x0", "dwFlags", "DWORD"]
+  , ["0x4", "fccIOProc", "char[0x4]"]
+  , ["0x8", "pIOProc", "LRESULT (*)(LPSTR lpmmioinfo, UINT uMsg, LPARAM lParam1, LPARAM lParam2)"]
+  , ["0xc", "wErrorRet", "UINT"]
+  , ["0x10", "hTask", "HTASK"]
+  , ["0x14", "cchBuffer", "LONG"]
+  , ["0x18", "pchBuffer", "uint8_t*"]
+  , ["0x1c", "pchNext", "uint8_t*"]
+  , ["0x20", "pchEndRead", "uint8_t*"]
+  , ["0x24", "pchEndWrite", "uint8_t*"]
+  , ["0x28", "lBufOffset", "LONG"]
+  , ["0x2c", "lDiskOffset", "LONG"]
+  , ["0x30", "adwInfo", "DWORD[0x4]"]
+  , ["0x40", "dwReserved1", "DWORD"]
+  , ["0x44", "dwReserved2", "DWORD"]
+  , ["0x48", "hmmio", "HMMIO"]
+  , ["0x4c", "__end", null]
   ]
 
 , "OVERLAPPED": 

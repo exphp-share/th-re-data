@@ -498,6 +498,7 @@
 , {"addr": "0x4418c0", "name": "WinMain", "comment": null}
 , {"addr": "0x441e70", "name": "Window::do_frame", "comment": null}
 , {"addr": "0x442200", "name": "Supervisor::create_d3d", "comment": null}
+, {"addr": "0x442240", "name": "Supervisor::create_game_window", "comment": null}
 , {"addr": "0x442390", "name": "main__WindowProc", "comment": null}
 , {"addr": "0x4424c0", "name": "Supervisor::init_d3d_device", "comment": null}
 , {"addr": "0x442a80", "name": "generate_gpu_device_logs__or_something", "comment": null}
@@ -520,6 +521,7 @@
 , {"addr": "0x445fa3", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x446a37", "name": "Supervisor::sub_446a37__also_creates_d3d", "comment": null}
 , {"addr": "0x446d06", "name": "Supervisor::on_cleanup", "comment": null}
+, {"addr": "0x446f0b", "name": "AnmManager::cleanup_stream_source", "comment": null}
 , {"addr": "0x447295", "name": "Timer::sub_447295", "comment": null}
 , {"addr": "0x44735b", "name": "Timer::sub_44735b", "comment": null}
 , {"addr": "0x447421", "name": "Supervisor::tick_time_parts", "comment": null}
@@ -632,7 +634,7 @@
 , {"addr": "0x45c100", "name": "ScreenEffect::on_cleanup", "comment": null}
 , {"addr": "0x45c160", "name": "ScreenEffect::sub_45c160", "comment": null}
 , {"addr": "0x45c190", "name": "SoundManager::initialize_dsound", "comment": null}
-, {"addr": "0x45c480", "name": "SoundManagerDSound::operator delete", "comment": null}
+, {"addr": "0x45c480", "name": "CSoundManager::operator delete", "comment": null}
 , {"addr": "0x45c4b0", "name": "SoundManager::deinitialize", "comment": null}
 , {"addr": "0x45c6b0", "name": "SoundManager::sub_45c6b0", "comment": null}
 , {"addr": "0x45cc30", "name": "SoundManager::sub_45cc30", "comment": null}
@@ -645,7 +647,7 @@
 , {"addr": "0x45d790", "name": "SoundManager::update_sound_thread", "comment": null}
 , {"addr": "0x45e0f0", "name": "thread_start__\"streaming_BGM_start\"", "comment": null}
 , {"addr": "0x45e1e0", "name": "SoundManager::modify_bgm", "comment": null}
-, {"addr": "0x45e2f0", "name": "SoundManagerDSound::get_dsound", "comment": null}
+, {"addr": "0x45e2f0", "name": "CSoundManager::GetDirectSound", "comment": null}
 , {"addr": "0x45e300", "name": "SoundManagerChild78::get_child_94", "comment": null}
 , {"addr": "0x45e320", "name": "SoundManager::constructor", "comment": null}
 , {"addr": "0x45e370", "name": "SoundManager::sub_45e370__free_ptr", "comment": null}
@@ -702,10 +704,10 @@
 , {"addr": "0x471586", "name": "MainMenu::constructor", "comment": null}
 , {"addr": "0x471651", "name": "MainMenu::on_registration", "comment": null}
 , {"addr": "0x471662", "name": "MainMenu::on_cleanup", "comment": null}
-, {"addr": "0x4716e0", "name": "SoundManagerDSound::constructor", "comment": null}
-, {"addr": "0x471700", "name": "SoundManagerDSound::destructor", "comment": null}
-, {"addr": "0x471730", "name": "SoundManagerDSound::initialize", "comment": null}
-, {"addr": "0x4717c0", "name": "SoundManagerDSound::check_format_is_supported", "comment": null}
+, {"addr": "0x4716e0", "name": "CSoundManager::constructor", "comment": null}
+, {"addr": "0x471700", "name": "CSoundManager::destructor", "comment": null}
+, {"addr": "0x471730", "name": "CSoundManager::init_sub_471730", "comment": null}
+, {"addr": "0x4717c0", "name": "CSoundManager::check_format_supported", "comment": null}
 , {"addr": "0x4718d0", "name": "SoundManagerDSound::sub_4718d0", "comment": null}
 , {"addr": "0x471f60", "name": "SoundManagerChild78::sub_471f60", "comment": null}
 , {"addr": "0x4723b0", "name": "SoundManagerChild78::sub_4723b0", "comment": null}

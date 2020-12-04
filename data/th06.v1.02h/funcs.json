@@ -25,7 +25,7 @@
 , {"addr": "0x404650", "name": "Stage::unregister_update_funcs", "comment": null}
 , {"addr": "0x404970", "name": "Stage::draw_vms", "comment": null}
 , {"addr": "0x407400", "name": "EclManager::sub_407400", "comment": null}
-, {"addr": "0x4074a0", "name": "UnknownGlobalW::run_ecl", "comment": null}
+, {"addr": "0x4074a0", "name": "EclManager::run_ecl", "comment": null}
 , {"addr": "0x40b8e0", "name": "Enemy::hardcoded_func_00", "comment": null}
 , {"addr": "0x40ba80", "name": "Enemy::hardcoded_func_01", "comment": null}
 , {"addr": "0x40bb80", "name": "Enemy::hardcoded_func_02", "comment": null}
@@ -84,7 +84,8 @@
 , {"addr": "0x41b1a4", "name": "Gui::on_registration", "comment": null}
 , {"addr": "0x41b1b1", "name": "Gui::on_cleanup", "comment": null}
 , {"addr": "0x41b252", "name": "Gui::operator new", "comment": null}
-, {"addr": "0x41b34b", "name": "Gui::constructor", "comment": null}
+, {"addr": "0x41b34b", "name": "GuiImpl::constructor", "comment": null}
+, {"addr": "0x41b4c4", "name": "GuiImplChildA::constructor", "comment": null}
 , {"addr": "0x41b58c", "name": "Gui::unregister_update_funcs", "comment": null}
 , {"addr": "0x41b663", "name": "GameManager::on_tick_04", "comment": null}
 , {"addr": "0x41ba4a", "name": "GameManager::on_draw_02", "comment": null}
@@ -102,6 +103,7 @@
 , {"addr": "0x41cde0", "name": "UpdateFuncRegistry::unregister", "comment": null}
 , {"addr": "0x41cf60", "name": "get_joypad_capabilities", "comment": null}
 , {"addr": "0x41e0c0", "name": "clear_all_keydown_states", "comment": null}
+, {"addr": "0x41e4d0", "name": "DebugLog::sub_41e4d0", "comment": null}
 , {"addr": "0x41e620", "name": "sub_41e620_debug", "comment": null}
 , {"addr": "0x41e850", "name": "math_reduce_angle_41e850", "comment": null}
 , {"addr": "0x41f230", "name": "ItemManager::constructor", "comment": null}
@@ -112,6 +114,8 @@
 , {"addr": "0x420330", "name": "WinMain", "comment": null}
 , {"addr": "0x4206e0", "name": "Window::do_tick", "comment": null}
 , {"addr": "0x420bd0", "name": "Supervisor::create_d3d", "comment": null}
+, {"addr": "0x420c10", "name": "Supervisor::create_game_window", "comment": null}
+, {"addr": "0x420d40", "name": "main__WindowProc", "comment": null}
 , {"addr": "0x420e60", "name": "Supervisor::init_d3d_device", "comment": null}
 , {"addr": "0x421950", "name": "sub_421950_debug", "comment": null}
 , {"addr": "0x42333b", "name": "Supervisor::on_tick_00", "comment": null}
@@ -119,9 +123,12 @@
 , {"addr": "0x42386b", "name": "Supervisor::initialize", "comment": null}
 , {"addr": "0x42390a", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x423ddf", "name": "Supervisor::on_cleanup", "comment": null}
+, {"addr": "0x4240f0", "name": "AnmManager::cleanup_stream_source", "comment": null}
 , {"addr": "0x424127", "name": "Timer::constructor", "comment": null}
 , {"addr": "0x424285", "name": "Supervisor::tick_timer", "comment": null}
+, {"addr": "0x42464d", "name": "Supervisor::load_config", "comment": null}
 , {"addr": "0x42523a", "name": "MusicRoom::initialize", "comment": null}
+, {"addr": "0x425318", "name": "MusicRoom::constructor", "comment": null}
 , {"addr": "0x4253dd", "name": "MusicRoom::on_tick_02", "comment": null}
 , {"addr": "0x42545a", "name": "MusicRoom::on_draw_00", "comment": null}
 , {"addr": "0x42564c", "name": "MusicRoom::on_registration", "comment": null}
@@ -157,6 +164,7 @@
 , {"addr": "0x4311e0", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x431420", "name": "SoundManager::constructor", "comment": null}
 , {"addr": "0x431470", "name": "AnmManager::constructor", "comment": null}
+, {"addr": "0x431660", "name": "AnmManager::create_stream_source", "comment": null}
 , {"addr": "0x4323a0", "name": "AnmManager::set_vm_sprite", "comment": null}
 , {"addr": "0x4324d0", "name": "AnmManager::set_render_state_for_vm", "comment": null}
 , {"addr": "0x433150", "name": "AnmManager::draw_vm", "comment": null}
@@ -177,8 +185,10 @@
 , {"addr": "0x45ba68", "name": "check_security_cookie", "comment": null}
 , {"addr": "0x45bf24", "name": "malloc", "comment": null}
 , {"addr": "0x45c386", "name": "sprintf", "comment": null}
+, {"addr": "0x45c3e0", "name": "set_exception_handler", "comment": null}
 , {"addr": "0x45cc30", "name": "memset", "comment": null}
 , {"addr": "0x45d746", "name": "_start", "comment": null}
+, {"addr": "0x469238", "name": "MusicRoom::initialize__exception_handler_", "comment": null}
 , {"addr": "0x4693c0", "name": "life_before_main_4693c0_ASCII_MANAGER", "comment": null}
 , {"addr": "0x4693e0", "name": "life_before_main_4693e0_upd", "comment": null}
 , {"addr": "0x469400", "name": "life_before_main_469400_upd", "comment": null}
