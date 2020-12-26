@@ -11,6 +11,7 @@
 , {"addr": "0x4018b0", "name": "Supervisor::read_joypad_input_to_integer", "comment": null}
 , {"addr": "0x401cd0", "name": "Supervisor::read_keyboard_input", "comment": null}
 , {"addr": "0x402890", "name": "clear_all_keydown_states", "comment": null}
+, {"addr": "0x402b00", "name": "sub_402b00_loads_file", "comment": null}
 , {"addr": "0x402cc0", "name": "zun_402cc0_create_file", "comment": null}
 , {"addr": "0x402d40", "name": "sub_402d40_writes_a_file", "comment": null}
 , {"addr": "0x402e80", "name": "zun_open_file_for_writing", "comment": null}
@@ -90,9 +91,11 @@
 , {"addr": "0x40eb70", "name": "Stage::on_tick__stub", "comment": null}
 , {"addr": "0x40eb80", "name": "Stage::on_draw_03__stub", "comment": null}
 , {"addr": "0x40eb90", "name": "Stage::on_draw_06__stub", "comment": null}
-, {"addr": "0x40f250", "name": "Stage::sub_40f250", "comment": null}
+, {"addr": "0x40f030", "name": "sub_40f030_reads_std_file", "comment": null}
+, {"addr": "0x40f250", "name": "Stage::sub_40f250_may_run_quad_vms", "comment": null}
 , {"addr": "0x40f2f0", "name": "Stage::sub_40f2f0", "comment": null}
 , {"addr": "0x40f670", "name": "Stage::run_std", "comment": null}
+, {"addr": "0x4107b0", "name": "Stage::sub_4107b0_draws_vms_in_render_group", "comment": null}
 , {"addr": "0x410940", "name": "InterpCameraFog::step", "comment": null}
 , {"addr": "0x4113e0", "name": "AnmVm::set_interrupt", "comment": null}
 , {"addr": "0x4115a0", "name": "Timer::decrement", "comment": null}

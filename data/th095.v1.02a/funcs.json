@@ -8,9 +8,11 @@
 , {"addr": "0x401eb0", "name": "AnmVm::constructor", "comment": null}
 , {"addr": "0x4020c0", "name": "Stage::constructor", "comment": null}
 , {"addr": "0x4024a0", "name": "Stage::initialize", "comment": null}
+, {"addr": "0x402750", "name": "Stage::on_draw_04__body", "comment": null}
 , {"addr": "0x402b80", "name": "Stage::on_tick_0a", "comment": null}
 , {"addr": "0x402bf0", "name": "Stage::on_draw_04", "comment": null}
 , {"addr": "0x402c20", "name": "Stage::on_draw_06", "comment": null}
+, {"addr": "0x402f60", "name": "Stage::draw_vms", "comment": null}
 , {"addr": "0x404c80", "name": "BulletManager::constructor", "comment": null}
 , {"addr": "0x404d00", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x404dc0", "name": "Bullet::destructor", "comment": null}

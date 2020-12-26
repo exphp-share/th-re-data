@@ -649,7 +649,12 @@
   ]
 
 , "zStage": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "quad_vms", "struct zAnmVm*"]
+  , ["0x4", "std_file", "struct zStdRawHeader*"]
+  , ["0x8", "num_quads", "int32_t"]
+  , ["0xc", "num_objects", "int32_t"]
+  , ["0x10", "objects", "struct zStdRawObject**"]
+  , ["0x14", "object_instances", "struct zStdRawInstance*"]
   , ["0x18", "beginning_of_script", "struct zStdRawInstr*"]
   , ["0x1c", "time_in_script", "struct zTimer"]
   , ["0x28", "instr_index", "int32_t"]
@@ -687,12 +692,40 @@
   , ["0xc", "__end", null]
   ]
 
+, "zStdRawHeader": 
+  [ ["0x0", "num_objects", "uint16_t"]
+  , ["0x2", "num_quads", "uint16_t"]
+  , ["0x4", "offset_to_instances", "uint32_t"]
+  , ["0x8", "offset_to_script", "uint32_t"]
+  , ["0xc", "__unknown", "uint32_t"]
+  , ["0x10", "stage_name", "char[0x80]"]
+  , ["0x90", "bgm_name_1", "char[0x80]"]
+  , ["0x110", "bgm_name_2", "char[0x80]"]
+  , ["0x190", "bgm_name_3", "char[0x80]"]
+  , ["0x210", "bgm_name_4", "char[0x80]"]
+  , ["0x290", "bgm_path_1", "char[0x80]"]
+  , ["0x310", "bgm_path_2", "char[0x80]"]
+  , ["0x390", "bgm_path_3", "char[0x80]"]
+  , ["0x410", "bgm_path_4", "char[0x80]"]
+  , ["0x490", "objects", "struct zStdRawObject*[0x10]"]
+  , ["0x4d0", "__ends_in_variable_length_array", "struct zCOMMENT[0x0]"]
+  , ["0x4d0", "__end", null]
+  ]
+
+, "zStdRawInstance": 
+  [ ["0x0", "object_id", "uint16_t"]
+  , ["0x2", "unknown", "uint16_t"]
+  , ["0x4", "pos", "struct zFloat3"]
+  , ["0x10", "__end", null]
+  ]
+
 , "zStdRawInstr": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "time", "int32_t"]
   , ["0x4", "opcode", "uint16_t"]
-  , ["0x6", "__unknown", null]
+  , ["0x6", "args_size", "uint16_t"]
   , ["0x8", "args", "struct zStdRawInstrArgs"]
   , ["0x14", "next", "struct zStdRawInstr"]
+  , ["0x6c", "__unknown", null]
   , ["0x58", "__end", null]
   ]
 
@@ -700,6 +733,27 @@
   [ ["0x0", "args", "int32_t[0x3]"]
   , ["0xc", "__i_only_made_this_to_trick_binja_into_labeling_the_code_better", "struct zCOMMENT[0x0]"]
   , ["0xc", "__end", null]
+  ]
+
+, "zStdRawObject": 
+  [ ["0x0", "id", "uint16_t"]
+  , ["0x2", "__unknown_always_zero", "uint8_t"]
+  , ["0x3", "flags", "uint8_t"]
+  , ["0x4", "pos", "struct zFloat3"]
+  , ["0x10", "__size", "struct zFloat3"]
+  , ["0x1c", "first_quad", "struct zStdRawQuadBasic"]
+  , ["0x3c", "__there_is_a_stream_of_variably_sized_quads", "struct zCOMMENT[0x0]"]
+  , ["0x3c", "__end", null]
+  ]
+
+, "zStdRawQuadBasic": 
+  [ ["0x0", "type", "int16_t"]
+  , ["0x2", "byte_size", "uint16_t"]
+  , ["0x4", "anm_script", "uint16_t"]
+  , ["0x6", "index__assigned_after_reading", "uint16_t"]
+  , ["0x8", "pos", "struct zFloat3"]
+  , ["0x14", "size", "struct zFloat3"]
+  , ["0x20", "__end", null]
   ]
 
 , "zSupervisor": 

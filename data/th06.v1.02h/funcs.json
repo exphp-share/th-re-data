@@ -23,7 +23,9 @@
 , {"addr": "0x4044c0", "name": "Stage::initialize", "comment": null}
 , {"addr": "0x4045e0", "name": "Stage::on_cleanup", "comment": null}
 , {"addr": "0x404650", "name": "Stage::unregister_update_funcs", "comment": null}
+, {"addr": "0x404690", "name": "Stage::load_anm_and_std", "comment": null}
 , {"addr": "0x404970", "name": "Stage::draw_vms", "comment": null}
+, {"addr": "0x4051b0", "name": "AnmManager::sub_4051b0", "comment": null}
 , {"addr": "0x407400", "name": "EclManager::sub_407400", "comment": null}
 , {"addr": "0x4074a0", "name": "EclManager::run_ecl", "comment": null}
 , {"addr": "0x40b8e0", "name": "Enemy::hardcoded_func_00", "comment": null}
@@ -103,6 +105,7 @@
 , {"addr": "0x41cde0", "name": "UpdateFuncRegistry::unregister", "comment": null}
 , {"addr": "0x41cf60", "name": "get_joypad_capabilities", "comment": null}
 , {"addr": "0x41e0c0", "name": "clear_all_keydown_states", "comment": null}
+, {"addr": "0x41e290", "name": "sub_41e290_load_file", "comment": null}
 , {"addr": "0x41e4d0", "name": "DebugLog::sub_41e4d0", "comment": null}
 , {"addr": "0x41e620", "name": "sub_41e620_debug", "comment": null}
 , {"addr": "0x41e850", "name": "math_reduce_angle_41e850", "comment": null}
@@ -183,6 +186,7 @@
 , {"addr": "0x43ee15", "name": "D3DMATRIX::make_y_rotation", "comment": null}
 , {"addr": "0x43ee90", "name": "D3DMATRIX::make_z_rotation", "comment": null}
 , {"addr": "0x45ba68", "name": "check_security_cookie", "comment": null}
+, {"addr": "0x45bc05", "name": "sub_45bc05_allocates", "comment": null}
 , {"addr": "0x45bf24", "name": "malloc", "comment": null}
 , {"addr": "0x45c386", "name": "sprintf", "comment": null}
 , {"addr": "0x45c3e0", "name": "set_exception_handler", "comment": null}

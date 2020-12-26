@@ -24,6 +24,8 @@
 , {"addr": "0x403900", "name": "Stage::on_tick__stub", "comment": null}
 , {"addr": "0x403910", "name": "Stage::on_draw_02__stub", "comment": null}
 , {"addr": "0x403920", "name": "Stage::on_draw_05__stub", "comment": null}
+, {"addr": "0x4040f0", "name": "Stage::sub_4040f0_may_run_quad_vms", "comment": null}
+, {"addr": "0x404470", "name": "Stage::run_std", "comment": null}
 , {"addr": "0x405240", "name": "InterpFloat3::step", "comment": null}
 , {"addr": "0x406100", "name": "Timer::set_current", "comment": null}
 , {"addr": "0x4061b0", "name": "Bomb::initialize", "comment": null}

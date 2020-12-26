@@ -19,12 +19,14 @@
 , {"addr": "0x498150", "name": "double(0.7853981852531433)", "type": "double", "comment": null}
 , {"addr": "0x498160", "name": "double(5.0)", "type": "double", "comment": null}
 , {"addr": "0x498168", "name": "double(3.0)", "type": "double", "comment": null}
+, {"addr": "0x498178", "name": "float(0.001)", "type": "float", "comment": null}
 , {"addr": "0x49822c", "name": "float(10)", "type": "float", "comment": null}
 , {"addr": "0x49e078", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a2088", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4a3d64", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[0xd]", "comment": null}
 , {"addr": "0x4a3ec0", "name": "BULLET_TYPE_DATA_START", "type": "struct zTableBulletTypeData", "comment": null}
 , {"addr": "0x4a56e0", "name": "GLOBALS", "type": "int32_t", "comment": null}
+, {"addr": "0x4a56e8", "name": "CURRENT_POWER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5710", "name": "CHARACTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5714", "name": "SUBSHOT", "type": "int32_t", "comment": null}
 , {"addr": "0x4a7948", "name": "GAME_SPEED", "type": "float", "comment": null}

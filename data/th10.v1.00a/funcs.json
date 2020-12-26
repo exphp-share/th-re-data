@@ -20,6 +20,7 @@
 , {"addr": "0x403050", "name": "Stage::on_tick__stub", "comment": null}
 , {"addr": "0x403060", "name": "Stage::on_draw_07_08__stub", "comment": null}
 , {"addr": "0x403070", "name": "Stage::on_draw_0a_0b__stub", "comment": null}
+, {"addr": "0x403a30", "name": "Stage::draw_vms", "comment": null}
 , {"addr": "0x404610", "name": "InterpFloat3::step", "comment": null}
 , {"addr": "0x4055c0", "name": "Bomb::initialize", "comment": null}
 , {"addr": "0x405620", "name": "Bomb::destructor", "comment": null}
