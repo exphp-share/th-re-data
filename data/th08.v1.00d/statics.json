@@ -81,6 +81,8 @@
 , {"addr": "0x4b6944", "name": "float(0.99)", "type": "float", "comment": null}
 , {"addr": "0x4b847c", "name": "float(0.5)", "type": "float", "comment": null}
 , {"addr": "0x4b9d9c", "name": "DI_DATA_FORMAT", "type": "struct DIDATAFORMAT", "comment": null}
+, {"addr": "0x4b9db4", "name": "float(1.1920929e-07)", "type": "float", "comment": null}
+, {"addr": "0x4b9db8", "name": "float(-1.1920929e-07)", "type": "float", "comment": null}
 , {"addr": "0x4bd610", "name": "IID_IDirectSoundNotify", "type": "GUID", "comment": null}
 , {"addr": "0x4bd620", "name": "GUID_SysKeyboard", "type": "GUID", "comment": null}
 , {"addr": "0x4bd6c0", "name": "IID_IDirectInput8A", "type": "GUID", "comment": null}
