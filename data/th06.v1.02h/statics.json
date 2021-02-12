@@ -111,5 +111,6 @@
 , {"addr": "0x6d3f18", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x6d3f50", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
 , {"addr": "0x6d4588", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x6d4660", "name": "GLOBAL_VERTEX_BUFFER_6D4660", "type": "struct zRenderVertex142[0x4]", "comment": null}
 , {"addr": "0x6d46c0", "name": "MAIN_MENU", "type": "struct zMainMenu", "comment": null}
 ]

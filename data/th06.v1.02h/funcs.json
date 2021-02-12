@@ -99,6 +99,8 @@
 , {"addr": "0x41ba6a", "name": "GameManager::initialize", "comment": null}
 , {"addr": "0x41bb02", "name": "GameManager::on_registration", "comment": null}
 , {"addr": "0x41c1f7", "name": "GameManager::on_cleanup", "comment": null}
+, {"addr": "0x41c57e", "name": "GameManager::rank_increase", "comment": null}
+, {"addr": "0x41c5fa", "name": "GameManager::rank_decrease", "comment": null}
 , {"addr": "0x41c676", "name": "GameManager::constructor", "comment": null}
 , {"addr": "0x41c720", "name": "UpdateFunc::constructor", "comment": null}
 , {"addr": "0x41c7f0", "name": "UpdateFuncRegistry::constructor", "comment": null}
@@ -126,6 +128,8 @@
 , {"addr": "0x420d40", "name": "main__WindowProc", "comment": null}
 , {"addr": "0x420e60", "name": "Supervisor::init_d3d_device", "comment": null}
 , {"addr": "0x421950", "name": "sub_421950_debug", "comment": null}
+, {"addr": "0x4219d0", "name": "AnmManager::__render_surfaces", "comment": null}
+, {"addr": "0x421a40", "name": "AnmManager::__render_wierd_texture", "comment": null}
 , {"addr": "0x42333b", "name": "Supervisor::on_tick_00", "comment": null}
 , {"addr": "0x423785", "name": "Supervisor::on_draw_0e", "comment": null}
 , {"addr": "0x42386b", "name": "Supervisor::initialize", "comment": null}
@@ -174,12 +178,24 @@
 , {"addr": "0x431420", "name": "SoundManager::constructor", "comment": null}
 , {"addr": "0x431470", "name": "AnmManager::constructor", "comment": null}
 , {"addr": "0x431660", "name": "AnmManager::create_stream_source", "comment": null}
-, {"addr": "0x431dc0", "name": "AnmManager::sub_431dc0", "comment": null}
+, {"addr": "0x431920", "name": "AnmManager::create_texture_from_file", "comment": null}
+, {"addr": "0x431a10", "name": "AnmManager::__probably_apply_colorkey", "comment": null}
+, {"addr": "0x431d70", "name": "AnmManager::create_texture", "comment": null}
+, {"addr": "0x431dc0", "name": "AnmManager::load_anm_file", "comment": null}
+, {"addr": "0x432030", "name": "AnmManager::free_anm_file", "comment": null}
+, {"addr": "0x4321e0", "name": "AnmManager::free_texture", "comment": null}
+, {"addr": "0x432260", "name": "AnmManager::load_sprite", "comment": null}
 , {"addr": "0x4323a0", "name": "AnmManager::set_vm_sprite", "comment": null}
 , {"addr": "0x432430", "name": "AnmManager::load_script_into_vm", "comment": null}
 , {"addr": "0x4324d0", "name": "AnmManager::set_render_state_for_vm", "comment": null}
 , {"addr": "0x433150", "name": "AnmManager::draw_vm", "comment": null}
 , {"addr": "0x433960", "name": "AnmManager::run_vm", "comment": null}
+, {"addr": "0x434af0", "name": "AnmManager::sub_434af0__possibly_font_related", "comment": null}
+, {"addr": "0x435010", "name": "AnmManager::set_surface_image", "comment": null}
+, {"addr": "0x435270", "name": "AnmManager::free_surface", "comment": null}
+, {"addr": "0x435300", "name": "AnmManager::surface_copy(int surface_index, long SrcX, long SrcY, long DstX, long DstY)", "comment": null}
+, {"addr": "0x4354c0", "name": "AnmManager::surface_copy(int surface_index, long SrcX, long SrcY, long DstX, long DstY, long Width, long Height)", "comment": null}
+, {"addr": "0x435670", "name": "AnmManager::surface_copy(int texture_index, long X, long Y, long Width, long Height)", "comment": null}
 , {"addr": "0x43575d", "name": "MainMenu::constructor", "comment": null}
 , {"addr": "0x43579f", "name": "MainMenu::on_tick_02", "comment": null}
 , {"addr": "0x439ad6", "name": "MainMenu::on_draw_00", "comment": null}

@@ -255,8 +255,8 @@
   , ["0x28", "__unknown", null]
   , ["0x5c", "scale", "struct zFloat2"]
   , ["0x64", "__unknown", null]
-  , ["0x53c", "__color_2_prolly", "D3DCOLOR"]
-  , ["0x53c", "__unknown", null]
+  , ["0x53c", "__color_2_prolly", "struct D3DCOLOR"]
+  , ["0x540", "__unknown", null]
   , ["0x544", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x544", "__end", null]
   ]
@@ -1009,23 +1009,20 @@
 
 , "zRenderVertex044": 
   [ ["0x0", "transformed_pos", "struct zFloat4"]
-  , ["0x10", "diffuse_color", "D3DCOLOR"]
-  , ["0x10", "__unknown", null]
+  , ["0x10", "diffuse_color", "struct D3DCOLOR"]
   , ["0x14", "__end", null]
   ]
 
 , "zRenderVertex142": 
   [ ["0x0", "pos", "struct zFloat3"]
-  , ["0xc", "diffuse_color", "D3DCOLOR"]
-  , ["0xc", "__unknown", null]
+  , ["0xc", "diffuse_color", "struct D3DCOLOR"]
   , ["0x10", "texture_uv", "struct zFloat2"]
   , ["0x18", "__end", null]
   ]
 
 , "zRenderVertex144": 
   [ ["0x0", "transformed_pos", "struct zFloat4"]
-  , ["0x10", "diffuse_color", "D3DCOLOR"]
-  , ["0x10", "__unknown", null]
+  , ["0x10", "diffuse_color", "struct D3DCOLOR"]
   , ["0x14", "texture_uv", "struct zFloat2"]
   , ["0x1c", "__end", null]
   ]

@@ -171,6 +171,15 @@
   , ["0x18", "__end", null]
   ]
 
+, "D3DXIMAGE_INFO": 
+  [ ["0x0", "Width", "UINT"]
+  , ["0x4", "Height", "UINT"]
+  , ["0x8", "Depth", "UINT"]
+  , ["0xc", "MipLevels", "UINT"]
+  , ["0x10", "Format", "UINT"]
+  , ["0x14", "__end", null]
+  ]
+
 , "DOS_Header": 
   [ ["0x0", "e_magic", "char[0x2]"]
   , ["0x2", "e_cblp", "uint16_t"]
