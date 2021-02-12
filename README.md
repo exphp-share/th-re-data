@@ -1,8 +1,8 @@
 Exported reverse engineering data from binja for various Touhou games.  Binja doesn't have nice export facilities so I just made some simple json files.
 
-The primary product here is [this file of struct fields for TH16](data/th16.v1.00a/type-structs-own.json).
+**Note about EoSD:** Addresses for EoSD may be unreliable.  The executable I am using has MD5 3878F9321F9F9F2ED3EFEF0A6F539A5E.  It is a version of 1.02h where the DAT files have been renamed to ASCII.  I cannot recall where it came from, unfortunately.
 
-**Note:** Currently there are *many* things that are better documented in one of the other games, and there is currently no single game whose files I would say paint a complete picture of my current understanding of how the games work.  So browse around!  Someday I may return to TH16 (or TH17) and try to add all the stuff I labeled in other games.
+**Note:** Currently there are *many* things that are documented better in one game than in any other, and there is currently no single game whose files I would say paint a complete picture of my current understanding of how the games work.  So browse around!  Someday I may return to TH16 (or TH17) and try to add all the stuff I labeled in other games.
 
 The notable files for each game:
 
