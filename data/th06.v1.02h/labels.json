@@ -121,6 +121,23 @@
   , ["0x40a008", "default"]
   ]
 
+, "msg": 
+  [ ["0x41899e", "0__end"]
+  , ["0x4189b0", "1__enter"]
+  , ["0x418a29", "2__face"]
+  , ["0x418a7c", "3__textSet"]
+  , ["0x418be1", "4__textPause"]
+  , ["0x418c6a", "5__anmInterrupt"]
+  , ["0x418ccb", "6__enemyAppear"]
+  , ["0x418ce3", "7__music"]
+  , ["0x418db9", "8__intro"]
+  , ["0x418e7b", "9__stageResults"]
+  , ["0x418edb", "10__stop"]
+  , ["0x418ee0", "12__musicFadeout"]
+  , ["0x418ef9", "11__stageNext"]
+  , ["0x418f95", "13__skippable"]
+  ]
+
 , "anm": 
   [ ["0x4339e4", "0__delete"]
   , ["0x4339f9", "15__static"]

@@ -20,6 +20,30 @@
   , ["0x38314c", "__end", null]
   ]
 
+, "zAnmRawEntry": 
+  [ ["0x0", "num_sprites", "uint32_t"]
+  , ["0x4", "num_scripts", "uint32_t"]
+  , ["0x8", "rt_texture_slot", "uint32_t"]
+  , ["0xc", "width", "uint32_t"]
+  , ["0x10", "height", "uint32_t"]
+  , ["0x14", "format", "uint32_t"]
+  , ["0x18", "colorkey", "struct D3DCOLOR"]
+  , ["0x1c", "path_1", "char*"]
+  , ["0x20", "__unused_1", "uint32_t"]
+  , ["0x24", "path_2", "char*"]
+  , ["0x28", "version", "uint32_t"]
+  , ["0x2c", "memory_priority", "uint32_t"]
+  , ["0x30", "texture", "struct zAnmRawTexture*"]
+  , ["0x34", "has_data", "uint16_t"]
+  , ["0x36", "__unused_2", "uint16_t"]
+  , ["0x38", "offset_to_next", "uint32_t"]
+  , ["0x3c", "__unused_3", "uint32_t"]
+  , ["0x40", "sprites", "struct zAnmRawSprite*[0xa]"]
+  , ["0x68", "scripts", "struct zAnmRawScript[0xa]"]
+  , ["0xb8", "__the_arrays_are_variable_length___pointers_are_stored_as_offsets", "struct zCOMMENT[0x0]"]
+  , ["0xb8", "__end", null]
+  ]
+
 , "zAnmRawInstr": 
   [ ["0x0", "opcode", "uint16_t"]
   , ["0x2", "offset_to_next", "uint16_t"]
@@ -28,6 +52,30 @@
   , ["0x8", "args", "uint32_t[0xa]"]
   , ["0x30", "__args_is_variable_length", "struct zCOMMENT"]
   , ["0x31", "__end", null]
+  ]
+
+, "zAnmRawScript": 
+  [ ["0x0", "id", "uint32_t"]
+  , ["0x4", "first_instr", "struct zAnmRawInstr*"]
+  , ["0x8", "__end", null]
+  ]
+
+, "zAnmRawSprite": 
+  [ ["0x0", "id", "uint32_t"]
+  , ["0x4", "offset", "struct zFloat2"]
+  , ["0xc", "size", "struct zFloat2"]
+  , ["0x14", "__end", null]
+  ]
+
+, "zAnmRawTexture": 
+  [ ["0x0", "magic__THTX", "char[0x4]"]
+  , ["0x4", "__zero", "uint16_t"]
+  , ["0x6", "format", "uint16_t"]
+  , ["0x8", "width", "uint16_t"]
+  , ["0xa", "height", "uint16_t"]
+  , ["0xc", "num_bytes", "uint32_t"]
+  , ["0x10", "data", "uint8_t[0x0]"]
+  , ["0x10", "__end", null]
   ]
 
 , "zAnmVertexBuffers": 
@@ -311,6 +359,7 @@
   , ["0x4", "pos", "struct zFloat3"]
   , ["0x10", "__size", "struct zFloat3"]
   , ["0x1c", "first_quad", "struct zStdRawQuadBasic"]
+  , ["0x38", "__unknown", null]
   , ["0x3c", "__there_is_a_stream_of_variably_sized_quads", "struct zCOMMENT[0x0]"]
   , ["0x3c", "__end", null]
   ]
@@ -321,8 +370,8 @@
   , ["0x4", "anm_script", "uint16_t"]
   , ["0x6", "index__assigned_after_reading", "uint16_t"]
   , ["0x8", "pos", "struct zFloat3"]
-  , ["0x14", "size", "struct zFloat3"]
-  , ["0x20", "__end", null]
+  , ["0x14", "size", "struct zFloat2"]
+  , ["0x1c", "__end", null]
   ]
 
 , "zTimer": 

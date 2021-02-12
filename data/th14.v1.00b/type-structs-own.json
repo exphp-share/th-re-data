@@ -49,7 +49,7 @@
   , ["0x4", "src_data", "LPVOID"]
   , ["0x8", "src_data_size", "UINT"]
   , ["0xc", "bytes_per_pixel", "int32_t"]
-  , ["0x10", "__image_file_entry", "struct zAnmRawFileEntry*"]
+  , ["0x10", "entry", "struct zAnmRawEntry*"]
   , ["0x14", "flags", "int32_t"]
   , ["0x18", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x18", "__end", null]
@@ -132,8 +132,27 @@
   , ["0x68", "__end", null]
   ]
 
-, "zAnmRawFileEntry": 
-  [ ["0x0", "__end", null]
+, "zAnmRawEntry": 
+  [ ["0x0", "version", "uint32_t"]
+  , ["0x4", "num_sprites", "uint16_t"]
+  , ["0x6", "num_scripts", "uint16_t"]
+  , ["0x8", "__field_8", "uint16_t"]
+  , ["0xa", "width", "uint16_t"]
+  , ["0xc", "height", "uint16_t"]
+  , ["0xe", "format", "uint16_t"]
+  , ["0x10", "image_path", "char*"]
+  , ["0x14", "offset_x", "uint16_t"]
+  , ["0x16", "offset_y", "uint16_t"]
+  , ["0x18", "memory_priority", "uint32_t"]
+  , ["0x1c", "texture", "struct zAnmRawTexture*"]
+  , ["0x20", "has_data", "uint16_t"]
+  , ["0x22", "low_res_scale", "uint16_t"]
+  , ["0x24", "offset_to_next", "uint32_t"]
+  , ["0x28", "__unused", "uint32_t[0x6]"]
+  , ["0x40", "sprites", "struct zAnmRawSprite*[0xa]"]
+  , ["0x68", "scripts", "struct zAnmRawScript[0xa]"]
+  , ["0xb8", "__the_arrays_are_variable_length___pointers_are_stored_as_offsets", "struct zCOMMENT[0x0]"]
+  , ["0xb8", "__end", null]
   ]
 
 , "zAnmRawInstr": 
@@ -142,8 +161,32 @@
   , ["0x4", "time", "uint16_t"]
   , ["0x6", "var_mask", "uint16_t"]
   , ["0x8", "args", "uint32_t[0xa]"]
-  , ["0x30", "__args_is_variable_length", "struct zCOMMENT"]
-  , ["0x31", "__end", null]
+  , ["0x30", "__args_is_variable_length", "struct zCOMMENT[0x0]"]
+  , ["0x30", "__end", null]
+  ]
+
+, "zAnmRawScript": 
+  [ ["0x0", "id", "uint32_t"]
+  , ["0x4", "first_instr", "struct zAnmRawInstr*"]
+  , ["0x8", "__end", null]
+  ]
+
+, "zAnmRawSprite": 
+  [ ["0x0", "id", "uint32_t"]
+  , ["0x4", "offset", "struct zFloat2"]
+  , ["0xc", "size", "struct zFloat2"]
+  , ["0x14", "__end", null]
+  ]
+
+, "zAnmRawTexture": 
+  [ ["0x0", "magic__THTX", "char[0x4]"]
+  , ["0x4", "__zero", "uint16_t"]
+  , ["0x6", "format", "uint16_t"]
+  , ["0x8", "width", "uint16_t"]
+  , ["0xa", "height", "uint16_t"]
+  , ["0xc", "num_bytes", "uint32_t"]
+  , ["0x10", "data", "uint8_t[0x0]"]
+  , ["0x10", "__end", null]
   ]
 
 , "zAnmVertexBuffers": 
@@ -619,6 +662,10 @@
   , ["0x2e4", "__end", null]
   ]
 
+, "zDistortion": 
+  [ ["0x0", "__end", null]
+  ]
+
 , "zEffectManager": 
   [ ["0x0", "__unknown", null]
   , ["0x8", "on_tick", "struct zUpdateFunc*"]
@@ -800,10 +847,6 @@
   , ["0x8", "z", "float"]
   , ["0xc", "w", "float"]
   , ["0x10", "__end", null]
-  ]
-
-, "zFog": 
-  [ ["0x0", "__end", null]
   ]
 
 , "zFpsCounter": 
@@ -1150,8 +1193,8 @@
   , ["0x20", "rocking_mode", "uint8_t"]
   , ["0x21", "__unknown", null]
   , ["0x24", "rocking_timer", "struct zTimer"]
-  , ["0x38", "__timer_2", "struct zTimer"]
-  , ["0x4c", "current_instruction", "void*"]
+  , ["0x38", "script_time", "struct zTimer"]
+  , ["0x4c", "current_instruction", "struct zStdRawInstr*"]
   , ["0x50", "camera_facing_i", "struct zInterpFloat3"]
   , ["0xa8", "camera_pos_i", "struct zInterpFloat3"]
   , ["0x100", "camera_up_i", "struct zInterpFloat3"]
@@ -1161,7 +1204,7 @@
   , ["0x208", "quad_vms", "struct zAnmVm*"]
   , ["0x20c", "__vms_0", "struct zAnmVm[0x8]"]
   , ["0x306c", "vm_render_group_numbers", "uint32_t[0x8]"]
-  , ["0x308c", "__ins_20", "float"]
+  , ["0x308c", "__ins_20_distsq", "float"]
   , ["0x3090", "__unknown", null]
   , ["0x30b4", "__vms_1", "struct zAnmVm[0x3]"]
   , ["0x4218", "__unknown", null]
@@ -1170,18 +1213,19 @@
   , ["0x4228", "__timer_3", "struct zTimer"]
   , ["0x423c", "stage_num", "uint32_t"]
   , ["0x4240", "__unknown", null]
-  , ["0x4244", "fog", "struct zStageFog"]
-  , ["0x425c", "__fog_related", "void*"]
+  , ["0x4244", "distortion", "struct zStageDistortion"]
+  , ["0x425c", "__distortion_related", "void*"]
   , ["0x4260", "__unknown", null]
   , ["0x4268", "on_draw_2", "struct zUpdateFunc*"]
-  , ["0x426c", "__unknown", null]
+  , ["0x426c", "__std_file_buffer", "struct zStdRawHeader*"]
+  , ["0x4270", "__std_file_out_ptr", "struct zStdRawHeader*"]
   , ["0x4274", "camera", "struct zCamera"]
   , ["0x43a0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x43a0", "__end", null]
   ]
 
-, "zStageFog": 
-  [ ["0x0", "fog", "struct zFog*"]
+, "zStageDistortion": 
+  [ ["0x0", "fog", "struct zDistortion*"]
   , ["0x4", "__field_4", "float"]
   , ["0x8", "__field_8", "float"]
   , ["0xc", "__unknown", null]

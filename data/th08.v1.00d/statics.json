@@ -30,6 +30,8 @@
 , {"addr": "0x4b4394", "name": "float(-100)", "type": "float", "comment": null}
 , {"addr": "0x4b4398", "name": "float(3.2)", "type": "float", "comment": null}
 , {"addr": "0x4b439c", "name": "float(0.3926991)", "type": "float", "comment": null}
+, {"addr": "0x4b4434", "name": "float(256)", "type": "float", "comment": null}
+, {"addr": "0x4b443c", "name": "float(128)", "type": "float", "comment": null}
 , {"addr": "0x4b4460", "name": "float(2*PI)", "type": "float", "comment": null}
 , {"addr": "0x4b4464", "name": "float(-PI)", "type": "float", "comment": null}
 , {"addr": "0x4b4468", "name": "float(PI/2)", "type": "float", "comment": null}

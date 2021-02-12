@@ -152,6 +152,24 @@
   , ["0x41677b", "0__nop"]
   ]
 
+, "msg": 
+  [ ["0x429d42", "0__end"]
+  , ["0x429d54", "1__enter"]
+  , ["0x429e29", "2__face"]
+  , ["0x429f38", "3__textSet"]
+  , ["0x42a09d", "4__textPause"]
+  , ["0x42a126", "5__anmInterrupt"]
+  , ["0x42a187", "6__enemyAppear"]
+  , ["0x42a19f", "7__music"]
+  , ["0x42a28e", "8__intro"]
+  , ["0x42a350", "9__stageResults"]
+  , ["0x42a51d", "10__stop"]
+  , ["0x42a522", "12__musicFadeout"]
+  , ["0x42a53b", "14__screenFade"]
+  , ["0x42a560", "11__stageNext"]
+  , ["0x42a71b", "13__skippable"]
+  ]
+
 , "anm": 
   [ ["0x450df3", "1__end"]
   , ["0x450e08", "2__static"]

@@ -148,12 +148,15 @@
 , {"addr": "0x427760", "name": "BulletManager::unregister_update_funcs__and_more", "comment": null}
 , {"addr": "0x4277a0", "name": "BulletManager::sub_4277a0", "comment": null}
 , {"addr": "0x427be2", "name": "Gui::sub_427be2", "comment": null}
+, {"addr": "0x427c81", "name": "Gui::sub_427c81", "comment": null}
 , {"addr": "0x427e7c", "name": "Gui::on_tick_0d", "comment": null}
 , {"addr": "0x427f22", "name": "Gui::on_draw_0c", "comment": null}
-, {"addr": "0x429c42", "name": "GuiImpl::on_tick", "comment": null}
+, {"addr": "0x428b19", "name": "Gui::on_registration", "comment": null}
+, {"addr": "0x429935", "name": "Gui::load_msg", "comment": null}
+, {"addr": "0x429c42", "name": "GuiImpl::run_msg", "comment": null}
 , {"addr": "0x42ad66", "name": "Gui::sub_42ad66", "comment": null}
 , {"addr": "0x42adab", "name": "Gui::sub_42adab", "comment": null}
-, {"addr": "0x42d03a", "name": "Gui::on_registration", "comment": null}
+, {"addr": "0x42d03a", "name": "Gui::on_registration__stub", "comment": null}
 , {"addr": "0x42d04b", "name": "Gui::on_cleanup", "comment": null}
 , {"addr": "0x42d136", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x42d24d", "name": "GuiImpl::constructor", "comment": null}
@@ -166,6 +169,8 @@
 , {"addr": "0x42e83e", "name": "GameManager::on_registration", "comment": null}
 , {"addr": "0x42f2e4", "name": "GameManager::on_cleanup", "comment": null}
 , {"addr": "0x42f3c5", "name": "GameManager::initialize", "comment": null}
+, {"addr": "0x42f736", "name": "GameManager::sub_42f736", "comment": null}
+, {"addr": "0x42f789", "name": "GameManager::sub_42f789", "comment": null}
 , {"addr": "0x42fb20", "name": "UpdateFunc::constructor", "comment": null}
 , {"addr": "0x42fbd0", "name": "register__on_tick", "comment": null}
 , {"addr": "0x42fca0", "name": "register__on_draw", "comment": null}
@@ -175,6 +180,7 @@
 , {"addr": "0x430140", "name": "UpdateFuncRegistry::unregister", "comment": null}
 , {"addr": "0x430290", "name": "sub_430290__calls_joypad_funcs", "comment": null}
 , {"addr": "0x4312c0", "name": "sub_4312c0__calls_keyboard_funcs", "comment": null}
+, {"addr": "0x431330", "name": "sub_431330_load_file", "comment": null}
 , {"addr": "0x4315f0", "name": "DebugLog::sub_4315f0", "comment": null}
 , {"addr": "0x431730", "name": "DebugLog::sub_43eb60", "comment": null}
 , {"addr": "0x432630", "name": "ItemManager::constructor", "comment": null}
@@ -199,6 +205,9 @@
 , {"addr": "0x439000", "name": "Supervisor::initialize", "comment": null}
 , {"addr": "0x43958d", "name": "Supervisor::sub_43958d", "comment": null}
 , {"addr": "0x4398b6", "name": "Supervisor::load_config", "comment": null}
+, {"addr": "0x439ec1", "name": "Supervisor::sub_439ec1", "comment": null}
+, {"addr": "0x439f4d", "name": "Supervisor::sub_439f4d", "comment": null}
+, {"addr": "0x43a0d6", "name": "Supervisor::fade_out_music", "comment": null}
 , {"addr": "0x43a1bd", "name": "Supervisor::enable_d3d_fog", "comment": null}
 , {"addr": "0x43a207", "name": "Supervisor::disable_d3d_fog", "comment": null}
 , {"addr": "0x43a24e", "name": "Supervisor::set_render_state", "comment": null}
@@ -221,6 +230,7 @@
 , {"addr": "0x440cf0", "name": "Player::sub_440cf0", "comment": null}
 , {"addr": "0x4411c0", "name": "Player::sub_4411c0", "comment": null}
 , {"addr": "0x441330", "name": "Player::sub_441330", "comment": null}
+, {"addr": "0x441670", "name": "Player::sub_441670", "comment": null}
 , {"addr": "0x441fb0", "name": "Player::on_tick_08", "comment": null}
 , {"addr": "0x4420b0", "name": "Player::on_draw_06", "comment": null}
 , {"addr": "0x442350", "name": "Player::on_draw_08", "comment": null}

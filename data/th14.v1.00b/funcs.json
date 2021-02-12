@@ -91,7 +91,7 @@
 , {"addr": "0x40eb70", "name": "Stage::on_tick__stub", "comment": null}
 , {"addr": "0x40eb80", "name": "Stage::on_draw_03__stub", "comment": null}
 , {"addr": "0x40eb90", "name": "Stage::on_draw_06__stub", "comment": null}
-, {"addr": "0x40f030", "name": "sub_40f030_reads_std_file", "comment": null}
+, {"addr": "0x40f030", "name": "Stage::read_std_file", "comment": null}
 , {"addr": "0x40f250", "name": "Stage::sub_40f250_may_run_quad_vms", "comment": null}
 , {"addr": "0x40f2f0", "name": "Stage::sub_40f2f0", "comment": null}
 , {"addr": "0x40f670", "name": "Stage::run_std", "comment": null}

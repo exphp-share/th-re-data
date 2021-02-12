@@ -83,11 +83,16 @@
 , {"addr": "0x4172b0", "name": "BulletManager::unregister_update_funcs", "comment": null}
 , {"addr": "0x4174d7", "name": "Gui::on_tick_0c", "comment": null}
 , {"addr": "0x417502", "name": "Gui::on_draw_0b", "comment": null}
-, {"addr": "0x41b1a4", "name": "Gui::on_registration", "comment": null}
+, {"addr": "0x417d29", "name": "Gui::on_registration", "comment": null}
+, {"addr": "0x418665", "name": "Gui::load_msg", "comment": null}
+, {"addr": "0x418768", "name": "Gui::load_msg_entry", "comment": null}
+, {"addr": "0x41878b", "name": "GuiImpl::load_msg_entry", "comment": null}
+, {"addr": "0x4188c9", "name": "Gui::run_msg", "comment": null}
+, {"addr": "0x41b1a4", "name": "Gui::on_registration__stub", "comment": null}
 , {"addr": "0x41b1b1", "name": "Gui::on_cleanup", "comment": null}
 , {"addr": "0x41b252", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x41b34b", "name": "GuiImpl::constructor", "comment": null}
-, {"addr": "0x41b4c4", "name": "GuiImplChildA::constructor", "comment": null}
+, {"addr": "0x41b4c4", "name": "GuiMsgVm::constructor", "comment": null}
 , {"addr": "0x41b58c", "name": "Gui::unregister_update_funcs", "comment": null}
 , {"addr": "0x41b663", "name": "GameManager::on_tick_04", "comment": null}
 , {"addr": "0x41ba4a", "name": "GameManager::on_draw_02", "comment": null}
@@ -130,6 +135,7 @@
 , {"addr": "0x424127", "name": "Timer::constructor", "comment": null}
 , {"addr": "0x424285", "name": "Supervisor::tick_timer", "comment": null}
 , {"addr": "0x42464d", "name": "Supervisor::load_config", "comment": null}
+, {"addr": "0x424d82", "name": "Supervisor::fade_out_music", "comment": null}
 , {"addr": "0x42523a", "name": "MusicRoom::initialize", "comment": null}
 , {"addr": "0x425318", "name": "MusicRoom::constructor", "comment": null}
 , {"addr": "0x4253dd", "name": "MusicRoom::on_tick_02", "comment": null}
@@ -168,7 +174,9 @@
 , {"addr": "0x431420", "name": "SoundManager::constructor", "comment": null}
 , {"addr": "0x431470", "name": "AnmManager::constructor", "comment": null}
 , {"addr": "0x431660", "name": "AnmManager::create_stream_source", "comment": null}
+, {"addr": "0x431dc0", "name": "AnmManager::sub_431dc0", "comment": null}
 , {"addr": "0x4323a0", "name": "AnmManager::set_vm_sprite", "comment": null}
+, {"addr": "0x432430", "name": "AnmManager::load_script_into_vm", "comment": null}
 , {"addr": "0x4324d0", "name": "AnmManager::set_render_state_for_vm", "comment": null}
 , {"addr": "0x433150", "name": "AnmManager::draw_vm", "comment": null}
 , {"addr": "0x433960", "name": "AnmManager::run_vm", "comment": null}

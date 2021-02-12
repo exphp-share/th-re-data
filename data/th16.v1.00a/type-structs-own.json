@@ -23,7 +23,7 @@
 , "zAnmLoaded": 
   [ ["0x0", "slot_num", "int32_t"]
   , ["0x4", "name", "char[0x104]"]
-  , ["0x108", "anm_file", "struct zAnmRawFileHeader*"]
+  , ["0x108", "anm_file", "struct zAnmRawEntry*"]
   , ["0x10c", "vms", "struct zAnmVm*"]
   , ["0x110", "entry_count", "int32_t"]
   , ["0x114", "script_count", "int32_t"]
@@ -41,9 +41,11 @@
 
 , "zAnmLoadedD3D": 
   [ ["0x0", "texture", "struct IDirect3DTexture9*"]
-  , ["0x4", "__unknown", null]
-  , ["0x10", "__image_file_entry", "struct zAnmRawFileEntry*"]
-  , ["0x14", "__unknown", null]
+  , ["0x4", "src_data", "void*"]
+  , ["0x8", "src_data_size", "uint32_t"]
+  , ["0xc", "bytes_per_pixel", "int32_t"]
+  , ["0x10", "entry", "struct zAnmRawEntry*"]
+  , ["0x14", "flags", "int32_t"]
   , ["0x18", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x18", "__end", null]
   ]
@@ -115,35 +117,27 @@
   , ["0x7c", "__end", null]
   ]
 
-, "zAnmRawFileEntry": 
-  [ ["0x0", "__end", null]
-  ]
-
-, "zAnmRawFileHeader": 
-  [ ["0x0", "version", "int32_t"]
-  , ["0x4", "__unknown", null]
-  , ["0x10", "offset_of_first_file_entry", "int32_t"]
-  , ["0x14", "__unknown", null]
-  , ["0x20", "__end", null]
-  ]
-
-, "zAnmRawHeader11": 
+, "zAnmRawEntry": 
   [ ["0x0", "version", "uint32_t"]
   , ["0x4", "num_sprites", "uint16_t"]
   , ["0x6", "num_scripts", "uint16_t"]
-  , ["0x8", "field_8", "uint16_t"]
+  , ["0x8", "__field_8", "uint16_t"]
   , ["0xa", "width", "uint16_t"]
   , ["0xc", "height", "uint16_t"]
   , ["0xe", "format", "uint16_t"]
-  , ["0x10", "name_offset", "uint32_t"]
-  , ["0x14", "x", "uint16_t"]
-  , ["0x16", "y", "uint16_t"]
+  , ["0x10", "image_path", "char*"]
+  , ["0x14", "offset_x", "uint16_t"]
+  , ["0x16", "offset_y", "uint16_t"]
   , ["0x18", "memory_priority", "uint32_t"]
-  , ["0x1c", "thtx_offset", "uint32_t"]
+  , ["0x1c", "texture", "struct zAnmRawTexture*"]
   , ["0x20", "has_data", "uint16_t"]
-  , ["0x22", "lowres_scale", "uint16_t"]
-  , ["0x24", "offset_to_next_header", "uint32_t"]
-  , ["0x28", "__end", null]
+  , ["0x22", "low_res_scale", "uint16_t"]
+  , ["0x24", "offset_to_next", "uint32_t"]
+  , ["0x28", "__unused", "uint32_t[0x6]"]
+  , ["0x40", "sprites", "struct zAnmRawSprite*[0xa]"]
+  , ["0x68", "scripts", "struct zAnmRawScript[0xa]"]
+  , ["0xb8", "__the_arrays_are_variable_length___pointers_are_stored_as_offsets", "struct zCOMMENT[0x0]"]
+  , ["0xb8", "__end", null]
   ]
 
 , "zAnmRawInstr": 
@@ -152,8 +146,32 @@
   , ["0x4", "time", "uint16_t"]
   , ["0x6", "var_mask", "uint16_t"]
   , ["0x8", "args", "uint32_t[0xa]"]
-  , ["0x30", "__args_is_variable_length", "struct zCOMMENT"]
-  , ["0x31", "__end", null]
+  , ["0x30", "__args_is_variable_length", "struct zCOMMENT[0x0]"]
+  , ["0x30", "__end", null]
+  ]
+
+, "zAnmRawScript": 
+  [ ["0x0", "id", "uint32_t"]
+  , ["0x4", "first_instr", "struct zAnmRawInstr*"]
+  , ["0x8", "__end", null]
+  ]
+
+, "zAnmRawSprite": 
+  [ ["0x0", "id", "uint32_t"]
+  , ["0x4", "offset", "struct zFloat2"]
+  , ["0xc", "size", "struct zFloat2"]
+  , ["0x14", "__end", null]
+  ]
+
+, "zAnmRawTexture": 
+  [ ["0x0", "magic__THTX", "char[0x4]"]
+  , ["0x4", "__zero", "uint16_t"]
+  , ["0x6", "format", "uint16_t"]
+  , ["0x8", "width", "uint16_t"]
+  , ["0xa", "height", "uint16_t"]
+  , ["0xc", "num_bytes", "uint32_t"]
+  , ["0x10", "data", "uint8_t[0x0]"]
+  , ["0x10", "__end", null]
   ]
 
 , "zAnmVertexBuffers": 

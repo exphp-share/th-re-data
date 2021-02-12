@@ -189,6 +189,7 @@
 , {"addr": "0x47aaed", "name": "destruct_vector", "comment": null}
 , {"addr": "0x47b18e", "name": "_start", "comment": null}
 , {"addr": "0x47c200", "name": "memset", "comment": null}
+, {"addr": "0x47e044", "name": "jump_table_47e044", "comment": null}
 , {"addr": "0x47e35f", "name": "free__unsized", "comment": null}
 , {"addr": "0x47f8d8", "name": "sub_47f8d8_spawn_thread", "comment": null}
 , {"addr": "0x486a77", "name": "free__unsized_", "comment": null}

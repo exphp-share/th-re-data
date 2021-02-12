@@ -405,7 +405,7 @@
 , {"addr": "0x433850", "name": "BulletManager::unregister_update_funcs", "comment": null}
 , {"addr": "0x4338ca", "name": "Gui::on_tick", "comment": null}
 , {"addr": "0x433927", "name": "Gui::on_draw", "comment": null}
-, {"addr": "0x433db3", "name": "GuiImpl::on_tick", "comment": null}
+, {"addr": "0x433db3", "name": "GuiImpl::run_msg", "comment": null}
 , {"addr": "0x43587e", "name": "Gui::timeline_ins_wait_msg_impl", "comment": null}
 , {"addr": "0x4358bb", "name": "Gui::sub_4358bb", "comment": null}
 , {"addr": "0x435900", "name": "Gui::sub_435900", "comment": null}
@@ -451,6 +451,7 @@
 , {"addr": "0x43c23b", "name": "GameManager::sub_43c23b", "comment": null}
 , {"addr": "0x43c2c5", "name": "GameManager::sub_43c2c5", "comment": null}
 , {"addr": "0x43c317", "name": "sub_43c317_ret0", "comment": null}
+, {"addr": "0x43c35f", "name": "GameManager::num_half_hours_to_add", "comment": null}
 , {"addr": "0x43c4b3", "name": "GameManager::select_next_stage", "comment": null}
 , {"addr": "0x43c5e1", "name": "GameManager::constructor", "comment": null}
 , {"addr": "0x43c641", "name": "GameManager::add_to_lives", "comment": null}
