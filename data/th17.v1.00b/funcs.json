@@ -1,5 +1,6 @@
 [ {"addr": "0x401140", "name": "register__on_tick", "comment": null}
 , {"addr": "0x4011f0", "name": "register__on_draw", "comment": null}
+, {"addr": "0x4013e0", "name": "UpdateFuncRegistry::run_all_on_draw", "comment": null}
 , {"addr": "0x401570", "name": "UpdateFunc::operator new", "comment": null}
 , {"addr": "0x4015e0", "name": "UpdateFuncRegistry::unregister", "comment": null}
 , {"addr": "0x401690", "name": "Supervisor::read_joypad_input_to_integer", "comment": null}
@@ -494,6 +495,7 @@
 , {"addr": "0x4654f0", "name": "SoundManager::play_sound_at_position", "comment": null}
 , {"addr": "0x4655a0", "name": "sub_4655a0_youmu_only", "comment": null}
 , {"addr": "0x465660", "name": "SoundManager::update_sound_thread", "comment": null}
+, {"addr": "0x466390", "name": "AnmLoaded::set_sprite", "comment": null}
 , {"addr": "0x4665f0", "name": "AnmLoaded::sub_4665f0", "comment": null}
 , {"addr": "0x466730", "name": "AnmVm::get_float_var", "comment": null}
 , {"addr": "0x466a70", "name": "AnmVm::get_int_var", "comment": null}
@@ -729,7 +731,6 @@
 , {"addr": "0x495380", "name": "__startTwoArgErrorHandling", "comment": null}
 , {"addr": "0x495397", "name": "__startOneArgErrorHandling", "comment": null}
 , {"addr": "0x495b10", "name": "__87except", "comment": null}
-, {"addr": "0x496518", "name": "IsProcessorFeaturePresent", "comment": null}
 , {"addr": "0x496520", "name": "__FindPESection", "comment": null}
 , {"addr": "0x496570", "name": "__IsNonwritableInCurrentImage", "comment": null}
 , {"addr": "0x496630", "name": "__ValidateImageBase", "comment": null}

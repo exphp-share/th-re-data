@@ -427,6 +427,7 @@
 , {"addr": "0x439050", "name": "prolly_night_end", "comment": null}
 , {"addr": "0x439093", "name": "prolly_night_advance_30_min", "comment": null}
 , {"addr": "0x4390d6", "name": "Gui::sub_4390d6__makes_something_disappear", "comment": null}
+, {"addr": "0x4390ee", "name": "Gui::on_registration__body", "comment": null}
 , {"addr": "0x4396f8", "name": "AnmVm::get_flag_14", "comment": null}
 , {"addr": "0x439810", "name": "Gui::sub_439810", "comment": null}
 , {"addr": "0x439883", "name": "GameManager::add_to_bombs", "comment": null}
@@ -1250,6 +1251,7 @@
 , {"addr": "0x4a28ed", "name": "D3DX::pidct8x8aan", "comment": null}
 , {"addr": "0x4a2c48", "name": "D3DX::midct8x8aan", "comment": null}
 , {"addr": "0x4a3a1b", "name": "D3DX::inflate_fast", "comment": null}
+, {"addr": "0x4a3db6", "name": "atexit", "comment": null}
 , {"addr": "0x4a3e70", "name": "float_to_int_4a3e70", "comment": null}
 , {"addr": "0x4a3ef0", "name": "__CIcos", "comment": null}
 , {"addr": "0x4a4050", "name": "__CIsqrt", "comment": null}
@@ -1381,7 +1383,6 @@
 , {"addr": "0x4b0f38", "name": "___addl", "comment": null}
 , {"addr": "0x4b0fe5", "name": "___shr_12", "comment": null}
 , {"addr": "0x4b2720", "name": "___ascii_strnicmp", "comment": null}
-, {"addr": "0x4b2f80", "name": "RtlUnwind", "comment": null}
 , {"addr": "0x4b3540", "name": "life_before_main_4b3540_ASCII_MANAGER", "comment": null}
 , {"addr": "0x4b3550", "name": "life_before_main_4b3550_upd", "comment": null}
 , {"addr": "0x4b3570", "name": "life_before_main_4b3570_upd", "comment": null}

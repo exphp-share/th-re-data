@@ -870,6 +870,7 @@
   , ["0x22d54", "__unknown", null]
   , ["0x22d74", "__related_to_stage_6_selection_box", "uint8_t"]
   , ["0x22d75", "__unknown", null]
+  , ["0x22d78", "__counter_incremented_by_enemyAppear", "int32_t"]
   , ["0x22d7c", "dialog_skippable", "uint8_t"]
   , ["0x22d7d", "__first_arg_of_ins_15_or_17", "uint8_t"]
   , ["0x22d7e", "__flag_related_to_ins_16", "uint8_t"]

@@ -158,7 +158,7 @@
   , ["0x37c", "__matrix_37c", "struct D3DMATRIX"]
   , ["0x3bc", "color_1", "struct D3DCOLOR"]
   , ["0x3c0", "color_2", "struct D3DCOLOR"]
-  , ["0x3c4", "pending_switch_label", "uint16_t"]
+  , ["0x3c4", "pending_interrupt", "uint16_t"]
   , ["0x3c6", "__unknown", null]
   , ["0x3c8", "case_return_time", "struct zTimer"]
   , ["0x3dc", "case_return_instr", "struct zAnmRawInstr*"]
@@ -594,8 +594,43 @@
   , ["0x6788", "__unknown", null]
   , ["0x678c", "__vm_678c", "struct zAnmVm"]
   , ["0x6c40", "__unknown", null]
+  , ["0x6cc0", "__timer_6cc0", "struct zTimer"]
+  , ["0x6cd4", "__unknown", null]
+  , ["0x6cdc", "__related_to_score", "int32_t"]
+  , ["0x6ce0", "__unknown", null]
+  , ["0x6ce4", "__some_anm_file", "struct zAnmLoaded*"]
+  , ["0x6ce8", "__unknown", null]
+  , ["0x6d30", "msg", "struct zGuiMsgVm*"]
+  , ["0x6d34", "msg_file", "struct zMsgRawHeader*"]
+  , ["0x6d38", "__unknown", null]
+  , ["0x6d44", "front_anm", "struct zAnmLoaded*"]
+  , ["0x6d48", "__unknown", null]
   , ["0x6d50", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x6d50", "__end", null]
+  ]
+
+, "zGuiMsgVm": 
+  [ ["0x0", "__unknown", null]
+  , ["0x4", "__timer_4", "struct zTimer"]
+  , ["0x18", "__timer_18", "struct zTimer"]
+  , ["0x2c", "__timer_2c", "struct zTimer"]
+  , ["0x40", "__anm_ids", "struct zAnmId[0x8]"]
+  , ["0x60", "__unknown", null]
+  , ["0x64", "current_instr", "struct zMsgRawInstr*"]
+  , ["0x68", "__unknown", null]
+  , ["0x74", "__field_6c", "float"]
+  , ["0x78", "__field_70", "float"]
+  , ["0x7c", "__field_7c", "float"]
+  , ["0x80", "__field_80", "float"]
+  , ["0x84", "__field_84", "float"]
+  , ["0x88", "__field_88", "float"]
+  , ["0x8c", "__dword_incremented_by_enemyAppear", "int32_t"]
+  , ["0x90", "__unknown", null]
+  , ["0xa0", "__color_1", "struct D3DCOLOR"]
+  , ["0xa4", "__color_2", "struct D3DCOLOR"]
+  , ["0xa8", "__color_3", "struct D3DCOLOR"]
+  , ["0xac", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0xac", "__end", null]
   ]
 
 , "zHintManager": 
@@ -772,6 +807,35 @@
   [ ["0x0", "__unknown", null]
   , ["0x5c38", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x5c38", "__end", null]
+  ]
+
+, "zMsgRawEntry": 
+  [ ["0x0", "script", "struct zMsgRawInstr*"]
+  , ["0x4", "__unknown", null]
+  , ["0x8", "__end", null]
+  ]
+
+, "zMsgRawHeader": 
+  [ ["0x0", "num_entries", "uint32_t"]
+  , ["0x4", "entries", "struct zMsgRawEntry[0x0]"]
+  , ["0x4", "__end", null]
+  ]
+
+, "zMsgRawInstr": 
+  [ ["0x0", "time", "int16_t"]
+  , ["0x2", "opcode", "uint8_t"]
+  , ["0x3", "args_size", "uint8_t"]
+  , ["0x4", "args", "struct zMsgRawInstrArgs"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zMsgRawInstrArgs": 
+  [ ["0x0", "offset_00", "uint16_t"]
+  , ["0x2", "offset_02", "uint16_t"]
+  , ["0x4", "offset_04", "uint16_t"]
+  , ["0x6", "offset_06", "uint16_t"]
+  , ["0x8", "__the_actual_argument_layout_depend_on_the_instruction_but_i_put_words_to_let_binja_be_helpful", "struct zCOMMENT[0x0]"]
+  , ["0x8", "__end", null]
   ]
 
 , "zPauseMenu": 

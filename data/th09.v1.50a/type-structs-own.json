@@ -111,7 +111,9 @@
   , ["0x204", "anm_file", "struct zAnmLoaded*"]
   , ["0x208", "pos", "struct zFloat3"]
   , ["0x214", "sprite_number", "int16_t"]
-  , ["0x216", "__unknown", null]
+  , ["0x216", "anm_file_index", "uint16_t"]
+  , ["0x218", "__unknown", null]
+  , ["0x21a", "script_number", "uint16_t"]
   , ["0x21c", "beginning_of_script", "struct zAnmRawInstr*"]
   , ["0x220", "current_instr", "struct zAnmRawInstr*"]
   , ["0x224", "sprite", "struct zAnmLoadedSprite*"]
@@ -120,7 +122,9 @@
   , ["0x238", "interp_data", "struct zAnmVmInterpData"]
   , ["0x288", "__pos_2", "struct zFloat3"]
   , ["0x294", "time_of_last_sprite_set", "int32_t"]
-  , ["0x298", "__unknown", null]
+  , ["0x298", "__byte_298", "uint8_t"]
+  , ["0x299", "__byte_299__used_by_msg", "uint8_t"]
+  , ["0x29a", "__unknown", null]
   , ["0x2a4", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x2a4", "__end", null]
   ]
@@ -403,7 +407,7 @@
   , ["0x14", "spellcard", "struct zSpellcard*"]
   , ["0x18", "gui_side", "struct zGuiSide*"]
   , ["0x1c", "__ptr_1c", "void*"]
-  , ["0x20", "__field_20", "int32_t"]
+  , ["0x20", "character", "int32_t"]
   , ["0x24", "__field_24", "int32_t"]
   , ["0x28", "__field_28", "int32_t"]
   , ["0x2c", "__field_2c", "int32_t"]
@@ -414,9 +418,51 @@
   ]
 
 , "zGui": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "on_tick", "struct zUpdateFunc*"]
+  , ["0x4", "on_draw", "struct zUpdateFunc*"]
+  , ["0x8", "__unknown", null]
+  , ["0xc", "__vms_0", "struct zAnmVm[0x58]"]
+  , ["0xe86c", "__line_strip_0", "struct zRenderVertex044[0x5]"]
+  , ["0xe8d0", "__line_strip_1", "struct zRenderVertex044[0x5]"]
+  , ["0xe934", "__unknown", null]
+  , ["0xe944", "msg", "struct zGuiMsgVm"]
+  , ["0x106b4", "__vm_1", "struct zAnmVm"]
+  , ["0x10958", "__unknown", null]
+  , ["0x10968", "__vms_2", "struct zAnmVm[0x8]"]
+  , ["0x11e88", "__unknown", null]
+  , ["0x11eac", "__vms_3", "struct zAnmVm[0x2]"]
+  , ["0x123f4", "__vms_4", "struct zAnmVm[0x2]"]
   , ["0x1293c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x1293c", "__end", null]
+  ]
+
+, "zGuiMsgVm": 
+  [ ["0x0", "msg_file_1", "struct zMsgRawHeader*"]
+  , ["0x4", "current_instr_1", "struct zMsgRawInstr*"]
+  , ["0x8", "__field_8", "int32_t"]
+  , ["0xc", "msg_file_2", "struct zMsgRawHeader*"]
+  , ["0x10", "__flag_used_internally_by_ins_15_and_17", "int32_t"]
+  , ["0x14", "__vms_0", "struct zAnmVm[0x8]"]
+  , ["0x1534", "dialogue_lines", "struct zAnmVm[0x2]"]
+  , ["0x1a7c", "intro_vm", "struct zAnmVm"]
+  , ["0x1d20", "__unknown_array_0", "uint32_t[0x1]"]
+  , ["0x1d24", "__unknown", null]
+  , ["0x1d30", "__unknown_array_1", "uint32_t[0x1]"]
+  , ["0x1d34", "__unknown", null]
+  , ["0x1d40", "__timer_0", "struct zTimer"]
+  , ["0x1d4c", "msg_frames_elapsed_during_pause", "int32_t"]
+  , ["0x1d50", "__something_related_to_pause", "uint32_t"]
+  , ["0x1d54", "__unknown", null]
+  , ["0x1d58", "__timer_1", "struct zTimer"]
+  , ["0x1d64", "__some_index_into_the_unknown_arrays", "uint8_t"]
+  , ["0x1d65", "__flag_related_to_ins_16", "uint8_t"]
+  , ["0x1d66", "ins_16_next_line_number", "uint8_t"]
+  , ["0x1d67", "__unknown", null]
+  , ["0x1d68", "__dword_incremented_by_enemyAppear", "uint32_t"]
+  , ["0x1d6c", "dialog_skippable", "uint8_t"]
+  , ["0x1d6d", "__ins_18", "uint8_t"]
+  , ["0x1d6e", "__unknown", null]
+  , ["0x1d70", "__end", null]
   ]
 
 , "zGuiSide": 
@@ -446,7 +492,8 @@
   ]
 
 , "zGuiSideInner": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "anm_file", "struct zAnmLoaded*"]
+  , ["0x4", "__unknown", null]
   , ["0xc", "vms", "struct zAnmVm[0x2]"]
   , ["0x554", "__end", null]
   ]
@@ -470,6 +517,35 @@
   , ["0x1b388", "__end", null]
   ]
 
+, "zMsgRawEntry": 
+  [ ["0x0", "script", "struct zMsgRawInstr*"]
+  , ["0x4", "__unknown", null]
+  , ["0x8", "__end", null]
+  ]
+
+, "zMsgRawHeader": 
+  [ ["0x0", "num_entries", "uint32_t"]
+  , ["0x4", "entries", "struct zMsgRawEntry[0x0]"]
+  , ["0x4", "__end", null]
+  ]
+
+, "zMsgRawInstr": 
+  [ ["0x0", "time", "int16_t"]
+  , ["0x2", "opcode", "uint8_t"]
+  , ["0x3", "args_size", "uint8_t"]
+  , ["0x4", "args", "struct zMsgRawInstrArgs"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zMsgRawInstrArgs": 
+  [ ["0x0", "offset_00", "uint16_t"]
+  , ["0x2", "offset_02", "uint16_t"]
+  , ["0x4", "offset_04", "uint16_t"]
+  , ["0x6", "offset_06", "uint16_t"]
+  , ["0x8", "__the_actual_argument_layout_depend_on_the_instruction_but_i_put_words_to_let_binja_be_helpful", "struct zCOMMENT[0x0]"]
+  , ["0x8", "__end", null]
+  ]
+
 , "zNetworkManager": 
   [ ["0x0", "__unknown", null]
   , ["0xd4", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -477,7 +553,8 @@
   ]
 
 , "zPlayer": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "__some_state_enum", "int32_t"]
+  , ["0x4", "__unknown", null]
   , ["0x8", "side", "struct zSideData"]
   , ["0x14", "on_tick", "struct zUpdateFunc*"]
   , ["0x18", "on_draw_1", "struct zUpdateFunc*"]
@@ -532,6 +609,12 @@
   , ["0x1b388", "__end", null]
   ]
 
+, "zRenderVertex044": 
+  [ ["0x0", "transformed_pos", "struct zFloat4"]
+  , ["0x10", "diffuse_color", "struct D3DCOLOR"]
+  , ["0x14", "__end", null]
+  ]
+
 , "zRenderVertex144": 
   [ ["0x0", "pos_2d", "struct zFloat4"]
   , ["0x10", "diffuse_color", "struct D3DCOLOR"]
@@ -583,7 +666,10 @@
   ]
 
 , "zSupervisor": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "exe_module", "HINSTANCE"]
+  , ["0x4", "d3d", "struct IDirect3D8*"]
+  , ["0x8", "d3d_device", "struct IDirect3DDevice8*"]
+  , ["0xc", "__unknown", null]
   , ["0x7b0", "__end", null]
   ]
 

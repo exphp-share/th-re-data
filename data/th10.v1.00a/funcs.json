@@ -24,6 +24,7 @@
 , {"addr": "0x403a30", "name": "Stage::draw_vms", "comment": null}
 , {"addr": "0x403c80", "name": "Stage::run_std", "comment": null}
 , {"addr": "0x404610", "name": "InterpFloat3::step", "comment": null}
+, {"addr": "0x405410", "name": "Timer::set", "comment": null}
 , {"addr": "0x4055c0", "name": "Bomb::initialize", "comment": null}
 , {"addr": "0x405620", "name": "Bomb::destructor", "comment": null}
 , {"addr": "0x4056b0", "name": "Bomb::operator new", "comment": null}
@@ -48,6 +49,7 @@
 , {"addr": "0x408af0", "name": "Spellcard::destructor", "comment": null}
 , {"addr": "0x408c90", "name": "Spellcard::operator new", "comment": null}
 , {"addr": "0x409d90", "name": "Globals::add_to_score", "comment": null}
+, {"addr": "0x409e50", "name": "anm_trigger_leave_by_id", "comment": null}
 , {"addr": "0x40a040", "name": "DebugSprtView::constructor", "comment": null}
 , {"addr": "0x40a130", "name": "DebugSprtView::initialize", "comment": null}
 , {"addr": "0x40a1a0", "name": "DebugSprtView::destructor", "comment": null}
@@ -67,6 +69,8 @@
 , {"addr": "0x40b9f0", "name": "Ending::on_tick", "comment": null}
 , {"addr": "0x40ba70", "name": "Ending::on_tick__stub", "comment": null}
 , {"addr": "0x40ba80", "name": "Ending::on_draw__noop", "comment": null}
+, {"addr": "0x40c480", "name": "anm_set_interrupt_2_by_id", "comment": null}
+, {"addr": "0x40c4d0", "name": "anm_set_interrupt_3_by_id", "comment": null}
 , {"addr": "0x40cfb0", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x40d280", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x40d530", "name": "EnemyManager::destructor", "comment": null}
@@ -90,6 +94,9 @@
 , {"addr": "0x415800", "name": "Gui::on_draw", "comment": null}
 , {"addr": "0x415ae0", "name": "Gui::on_tick__stub", "comment": null}
 , {"addr": "0x415af0", "name": "Gui::on_draw__stub", "comment": null}
+, {"addr": "0x415b00", "name": "GuiMsgVm::constructor", "comment": null}
+, {"addr": "0x415e90", "name": "GuiMsgVm::run", "comment": null}
+, {"addr": "0x417010", "name": "zun_decrypt_msg_string", "comment": null}
 , {"addr": "0x417870", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x417c70", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x4180e0", "name": "GameThread::operator new", "comment": null}
@@ -224,7 +231,10 @@
 , {"addr": "0x448860", "name": "AnmManager::on_tick_1a", "comment": null}
 , {"addr": "0x448900", "name": "AnmManager::on_tick_08", "comment": null}
 , {"addr": "0x448980", "name": "AnmManager::render_layer", "comment": null}
+, {"addr": "0x448d00", "name": "sub_448d00_creates_anm_vm", "comment": null}
 , {"addr": "0x4491c0", "name": "AnmManager::get_vm_by_id", "comment": null}
+, {"addr": "0x4492f0", "name": "anm_set_pos3_by_id", "comment": null}
+, {"addr": "0x449470", "name": "anm_set_interrupt_by_id", "comment": null}
 , {"addr": "0x449950", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x449aa0", "name": "UpdateFuncRegistry::constructor", "comment": null}
 , {"addr": "0x449ae0", "name": "register__on_tick", "comment": null}

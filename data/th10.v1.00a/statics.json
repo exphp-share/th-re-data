@@ -2,8 +2,10 @@
 , {"addr": "0x470b0c", "name": "float(0.5)", "type": "float", "comment": null}
 , {"addr": "0x470dd8", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x473660", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x474440", "name": "ENDING_MSG_FILENAMES", "type": "char*[0xd]", "comment": null}
 , {"addr": "0x47476c", "name": "SHT_ON_INIT_FUNCS", "type": "void*[0x2]", "comment": null}
 , {"addr": "0x474778", "name": "SHT_ON_SHOT_FUNCS", "type": "void*[0x3]", "comment": null}
+, {"addr": "0x474784", "name": "STAGE_DATA", "type": "char*[0x64]", "comment": null}
 , {"addr": "0x474c40", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
 , {"addr": "0x474c44", "name": "CURRENT_SCORE", "type": "int32_t", "comment": null}
 , {"addr": "0x474c48", "name": "CURRENT_POWER", "type": "uint16_t", "comment": null}
@@ -46,4 +48,5 @@
 , {"addr": "0x492274", "name": "CRITICAL_SECTION_UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": null}
 , {"addr": "0x492590", "name": "SOUND_MANAGER", "type": "void", "comment": null}
 , {"addr": "0x4978c0", "name": "SPRITE_TEMP_BUFFER", "type": "int32_t", "comment": null}
+, {"addr": "0x497d40", "name": "MSG_STRING_DECRYPT_BUF", "type": "char[0x40]", "comment": null}
 ]

@@ -132,6 +132,7 @@
 , {"addr": "0x41cad0", "name": "FpsCounter::operator new", "comment": null}
 , {"addr": "0x41cc80", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x41cd60", "name": "FpsCounter::on_draw__stub", "comment": null}
+, {"addr": "0x41cd90", "name": "GuiMsgVm::destructor", "comment": null}
 , {"addr": "0x41ce60", "name": "Gui::update_lives", "comment": null}
 , {"addr": "0x41cf40", "name": "Gui::update_bombs", "comment": null}
 , {"addr": "0x41d150", "name": "Gui::constructor", "comment": null}
@@ -144,6 +145,8 @@
 , {"addr": "0x41f8d0", "name": "Gui::on_tick__stub", "comment": null}
 , {"addr": "0x41f8e0", "name": "Gui::on_draw_3b__stub", "comment": null}
 , {"addr": "0x41f8f0", "name": "Gui::on_draw_2c__stub", "comment": null}
+, {"addr": "0x41f900", "name": "GuiMsgVm::constructor", "comment": null}
+, {"addr": "0x41fcc0", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x420f90", "name": "Gui::sub_420f90", "comment": null}
 , {"addr": "0x421880", "name": "Globals::sub_421880", "comment": null}
 , {"addr": "0x421cd0", "name": "GameThread::thread_start", "comment": null}
@@ -450,6 +453,7 @@
 , {"addr": "0x461a70", "name": "anm_461a70", "comment": null}
 , {"addr": "0x461be0", "name": "AnmManager::stop_all_vms_from_anm_file__prolly", "comment": null}
 , {"addr": "0x461c50", "name": "AnmManager::find_existing_or_clear_id", "comment": null}
+, {"addr": "0x461dd0", "name": "set_anm_vm_pos_3_by_id", "comment": null}
 , {"addr": "0x461f40", "name": "Enemy::change_anm_main", "comment": null}
 , {"addr": "0x4621c0", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x462380", "name": "UpdateFuncRegistry::register__on_tick", "comment": null}

@@ -168,7 +168,7 @@
 , {"addr": "0x164d344", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x164d364", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x164d388", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
-, {"addr": "0x164d520", "name": "REPLAY_RNG", "type": "void", "comment": null}
+, {"addr": "0x164d520", "name": "REPLAY_RNG", "type": "int16_t", "comment": null}
 , {"addr": "0x164d52c", "name": "INPUT", "type": "int16_t", "comment": null}
 , {"addr": "0x164d534", "name": "INPUT_PREV", "type": "int16_t", "comment": null}
 , {"addr": "0x164d540", "name": "DEBUG_LOG", "type": "struct zDebugLog", "comment": null}

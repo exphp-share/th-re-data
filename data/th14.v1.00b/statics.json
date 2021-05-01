@@ -114,7 +114,7 @@
 , {"addr": "0x4d687c", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
 , {"addr": "0x4d6884", "name": "HARDWARE_INPUT_RISING_EDGE", "type": "uint32_t", "comment": null}
 , {"addr": "0x4d6a90", "name": "INPUT", "type": "int32_t", "comment": null}
-, {"addr": "0x4d6f50", "name": "DEBUG_MESSAGE_THING", "type": "void", "comment": null}
+, {"addr": "0x4d6f50", "name": "DEBUG_MESSAGE_THING", "type": "char", "comment": null}
 , {"addr": "0x4d8f58", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
 , {"addr": "0x4d8f60", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4db508", "name": "REPLAY_UNSAFE_RNG", "type": "uint32_t", "comment": null}

@@ -257,7 +257,7 @@
   , ["0x3e0", "__scales_by_sprite_size_over_256__wtf", "struct D3DMATRIX"]
   , ["0x420", "world_matrix_0__(3D_scale_and_rotation)", "struct D3DMATRIX"]
   , ["0x460", "__matrix_460__modified_at_0x46f2ff", "struct D3DMATRIX"]
-  , ["0x4a0", "pending_switch_label", "int32_t"]
+  , ["0x4a0", "pending_interrupt", "int32_t"]
   , ["0x4a4", "__time_of_last_sprite_set__unused?", "int32_t"]
   , ["0x4a8", "__unknown", null]
   , ["0x4aa", "script_number", "int16_t"]
