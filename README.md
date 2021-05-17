@@ -36,7 +36,7 @@ I'll update these frequently to keep up to date with my current binja database. 
 
 A lot of disassembly tools have python interfaces, so here's the basic structure of a python script you could write to read one of these files.
 
-**funcs.json**
+**funcs.json** or **statics.json**
 ```python
 import json
 
@@ -46,11 +46,29 @@ with open('path/to/funcs.json') as f:
 for row in dic:
   ea = int(row['addr'], 16)
   name = row['name']
+  # NOTE: statics.json also has a 'type' field with a string
 
   print(hex(ea), name)
 ```
 
-**type-structs-own.json**
+**labels.json**
+```python
+import json
+
+with open('/mnt/f/asd/clone/th16re-data/data/th06.v1.02h/labels.json') as f:
+    all_labels = json.load(f)
+
+for group, labels in all_labels.items():
+    for addr, suffix in labels:
+        # E.g. constructs full labels like  'std__case_0__posKeyframe'
+        addr = int(addr, 16)
+        full_label = '{}__case_{}'.format(group, suffix)
+
+        print(hex(addr), full_label)
+    print()
+```
+
+**type-structs-*.json**
 ```python
 import json
 
