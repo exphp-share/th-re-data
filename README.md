@@ -34,7 +34,7 @@ I'll update these frequently to keep up to date with my current binja database.
 
 Feel free to submit corrections as issues or PRs.  In particular I can easily accept PRs that modify **`funcs.json`** or **`statics.json`**.
 
-At this time, I am not capable of importing a modified version of `type-structs-*.json`.  The easiest way to contribute struct fields would be to provide me with C-style definitions; you can do this in an [issue](https://github.com/exphp-share/th-re-data/issues) if need be.  (ideally, these definitions should include char array spacer fields for any unknown regions)
+At this time, I am not capable of importing a modified version of `type-structs-*.json`.  The easiest way to contribute struct fields would be to provide me with C-style definitions; you can do this in an [issue](https://github.com/exphp-share/th-re-data/issues) if need be.  (ideally, these definitions should include char array spacer fields for any unknown regions or padding)
 
 ---
 
