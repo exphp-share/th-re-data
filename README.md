@@ -32,7 +32,7 @@ I'll update these frequently to keep up to date with my current binja database. 
 
 ---
 
-# Example scripts for reading the files
+## Example scripts for reading the files
 
 A lot of disassembly tools have python interfaces, so here's the basic structure of a python script you could write to read one of these files.
 
