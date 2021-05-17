@@ -28,7 +28,13 @@ Coverage varies wildly between games depending on how much I've needed to revers
 * [Funcs for TH14](data/th14.v1.00b/funcs.json) — Lots of functions that use Direct3D and DirectInput are identified.
 * [Statics for TH08](data/th08.v1.00d/statics.json) — Unlike TH10 and later, most statics in TH08 are embedded directly in static memory rather than behind pointers.  Thankfully, I was able to map a whole bunch of them after happening upon a table full of "life before main" static initializers. :D
 
-I'll update these frequently to keep up to date with my current binja database.  Also feel free to submit corrections as issues or PRs. (just note I have no facilities for importing data beyond the names of funcs and statics, so for most changes I'll have to add them to BN manually...)
+I'll update these frequently to keep up to date with my current binja database.
+
+## Contributing
+
+Feel free to submit corrections as issues or PRs.  In particular I can easily accept PRs that modify **funcs.json** or **statics.json**.
+
+At this time, I am not capable of importing a modified version of `type-structs-*.json`.  The easiest way to contribute struct fields would be to provide me with C-style definitions; you can do this in an [issue](https://github.com/exphp-share/th-re-data/issues) if need be.  (ideally, these definitions should include char array spacer fields for any unknown regions)
 
 ---
 
