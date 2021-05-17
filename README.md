@@ -29,3 +29,55 @@ Coverage varies wildly between games depending on how much I've needed to revers
 * [Statics for TH08](data/th08.v1.00d/statics.json) — Unlike TH10 and later, most statics in TH08 are embedded directly in static memory rather than behind pointers.  Thankfully, I was able to map a whole bunch of them after happening upon a table full of "life before main" static initializers. :D
 
 I'll update these frequently to keep up to date with my current binja database.  Also feel free to submit corrections as issues or PRs. (just note I have no facilities for importing data beyond the names of funcs and statics, so for most changes I'll have to add them to BN manually...)
+
+---
+
+# Example scripts for reading the files
+
+A lot of disassembly tools have python interfaces, so here's the basic structure of a python script you could write to read one of these files.
+
+**funcs.json**
+```python
+import json
+
+with open('path/to/funcs.json') as f:
+  dic = json.load(f)
+
+for row in dic:
+  ea = int(row['addr'], 16)
+  name = row['name']
+
+  print(hex(ea), name)
+```
+
+**type-structs-own.json**
+```python
+import json
+
+with open('/mnt/f/asd/clone/th16re-data/data/th06.v1.02h/type-structs-own.json') as f:
+    structs = json.load(f)
+
+for struct_name, struct in structs.items():
+    # convert addresses to integers
+    struct = [(int(addr, 16), member, ty) for (addr, member, ty) in struct]
+
+    print('struct {}'.format(struct_name))
+    for (offset, member_name, member_ty), (next_offset, _1, _2) in zip(struct, struct[1:]):
+        member_size = next_offset - offset
+        if member_ty is None:
+            # these bytes are unlabeled;  you might want to e.g. put a filler here
+            print('  - (filler)  - {:#x} bytes'.format(member_size))
+
+        elif member_ty == 'struct zCOMMENT[0x0]':
+            # these fields are dumb workarounds to write comments sometimes.
+            # You might not care about them.
+            pass
+
+        else:
+            # field with known type and label.
+            # Parsing the type might be difficult but you at least know its size...
+            print('  - {}  - {:#x} bytes'.format(member_name, member_size))
+    print()
+```
+
+If you have written scripts for importing into a tool like ghidra or IDA, please share them in an [issue](https://github.com/exphp-share/th-re-data/issues) or on Discord and I can add them or link to them here.
