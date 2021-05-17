@@ -104,4 +104,4 @@ for struct_name, struct in structs.items():
     print()
 ```
 
-If you have written scripts for importing into a tool like ghidra or IDA, please share them in an [issue](https://github.com/exphp-share/th-re-data/issues) or on Discord and I can add them or link to them here.
+If you have written scripts for importing into a tool like ghidra or IDA, please share them in an [issue](https://github.com/exphp-share/th-re-data/issues) or [on Discord](https://discord.gg/fvPJvHJ) and I can add them or link to them here.
