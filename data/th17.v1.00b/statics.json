@@ -282,7 +282,6 @@
 , {"addr": "0x4b5918", "name": "GAME_SPEED", "type": "float", "comment": null}
 , {"addr": "0x4b5920", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x5]", "comment": null}
 , {"addr": "0x4b59c0", "name": "GLOBALS", "type": "struct zGlobals", "comment": "Okay, so I have to choose between type inference or being able\nto comment each global individually.  Thanks, Binary Ninja.\n\n- FLAGS: Bits 4 and 5 indicate whether this is spell practice or stage practice."}
-, {"addr": "0x4b5aa4", "name": "HYPER_TIMER", "type": "struct zTimer", "comment": null}
 , {"addr": "0x4b5ae0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4b7660", "name": "REPLAY_UNSAFE_RNG", "type": "int64_t", "comment": null}
 , {"addr": "0x4b7668", "name": "REPLAY_SAFE_RNG", "type": "int64_t", "comment": null}

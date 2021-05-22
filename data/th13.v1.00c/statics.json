@@ -75,8 +75,8 @@
 , {"addr": "0x4c22d4", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4c22d8", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4c22e0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4dc31c", "name": "ANIMATION_RNG", "type": "void", "comment": null}
-, {"addr": "0x4dc324", "name": "REPLAY_RNG", "type": "void", "comment": null}
+, {"addr": "0x4dc31c", "name": "ANIMATION_RNG", "type": "int32_t", "comment": null}
+, {"addr": "0x4dc324", "name": "REPLAY_RNG", "type": "int16_t", "comment": null}
 , {"addr": "0x4dc658", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
 , {"addr": "0x4dc66c", "name": "SHT_ON_DRAW_FUNCS", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x4dc688", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}

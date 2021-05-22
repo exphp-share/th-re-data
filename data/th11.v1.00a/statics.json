@@ -12,10 +12,35 @@
 , {"addr": "0x497f00", "name": "float(192)", "type": "float", "comment": null}
 , {"addr": "0x497f18", "name": "double(-64.0)", "type": "double", "comment": null}
 , {"addr": "0x497f28", "name": "double(0.9900000095367432)", "type": "double", "comment": null}
+, {"addr": "0x497f50", "name": "double(0.00390625)", "type": "double", "comment": null}
+, {"addr": "0x497f58", "name": "double(-5000.0)", "type": "double", "comment": null}
+, {"addr": "0x497f60", "name": "float(5000)", "type": "float", "comment": null}
+, {"addr": "0x497f64", "name": "float(1000)", "type": "float", "comment": null}
+, {"addr": "0x497f68", "name": "double(0.016666666666666666)", "type": "double", "comment": null}
+, {"addr": "0x497f70", "name": "double(224.0)", "type": "double", "comment": null}
 , {"addr": "0x497f78", "name": "double(0.10471975803375244)", "type": "double", "comment": null}
 , {"addr": "0x497f80", "name": "double(-128.0)", "type": "double", "comment": null}
 , {"addr": "0x497f88", "name": "float(24)", "type": "float", "comment": null}
 , {"addr": "0x497f8c", "name": "float(64)", "type": "float", "comment": null}
+, {"addr": "0x497f90", "name": "float(1.5707964)", "type": "float", "comment": null}
+, {"addr": "0x497f94", "name": "float(0.5235988)", "type": "float", "comment": null}
+, {"addr": "0x497f98", "name": "float(4294967300)", "type": "float", "comment": null}
+, {"addr": "0x497f9c", "name": "float(30)", "type": "float", "comment": null}
+, {"addr": "0x497fa0", "name": "float(1800)", "type": "float", "comment": null}
+, {"addr": "0x497fa4", "name": "float(0.31415927)", "type": "float", "comment": null}
+, {"addr": "0x497fa8", "name": "float(10000)", "type": "float", "comment": null}
+, {"addr": "0x497fac", "name": "float(0.15707964)", "type": "float", "comment": null}
+, {"addr": "0x497fb0", "name": "double(0.10000000149011612)", "type": "double", "comment": null}
+, {"addr": "0x497fb8", "name": "double(0.04908738657832146)", "type": "double", "comment": null}
+, {"addr": "0x497fc0", "name": "float(5)", "type": "float", "comment": null}
+, {"addr": "0x497fc8", "name": "double(10.0)", "type": "double", "comment": null}
+, {"addr": "0x497fd0", "name": "double(57.0)", "type": "double", "comment": null}
+, {"addr": "0x497fd8", "name": "float(65)", "type": "float", "comment": null}
+, {"addr": "0x497fdc", "name": "float(8)", "type": "float", "comment": null}
+, {"addr": "0x497fe0", "name": "double(0.00835)", "type": "double", "comment": null}
+, {"addr": "0x497fe8", "name": "double(0.0167)", "type": "double", "comment": null}
+, {"addr": "0x497ff0", "name": "float(16)", "type": "float", "comment": null}
+, {"addr": "0x4980a8", "name": "float(112)", "type": "float", "comment": null}
 , {"addr": "0x498150", "name": "double(0.7853981852531433)", "type": "double", "comment": null}
 , {"addr": "0x498160", "name": "double(5.0)", "type": "double", "comment": null}
 , {"addr": "0x498168", "name": "double(3.0)", "type": "double", "comment": null}
@@ -23,12 +48,14 @@
 , {"addr": "0x49822c", "name": "float(10)", "type": "float", "comment": null}
 , {"addr": "0x49e078", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a2088", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4a3828", "name": "STAGE_DATA", "type": "struct zTableStageData[0x8]", "comment": null}
 , {"addr": "0x4a3d64", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[0xd]", "comment": null}
 , {"addr": "0x4a3ec0", "name": "BULLET_TYPE_DATA_START", "type": "struct zTableBulletTypeData", "comment": null}
 , {"addr": "0x4a56e0", "name": "GLOBALS", "type": "int32_t", "comment": null}
 , {"addr": "0x4a56e8", "name": "CURRENT_POWER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5710", "name": "CHARACTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5714", "name": "SUBSHOT", "type": "int32_t", "comment": null}
+, {"addr": "0x4a5728", "name": "__STAGE__POSSIBLY", "type": "int32_t", "comment": null}
 , {"addr": "0x4a7948", "name": "GAME_SPEED", "type": "float", "comment": null}
 , {"addr": "0x4a8d58", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
 , {"addr": "0x4a8d5c", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
@@ -56,17 +83,19 @@
 , {"addr": "0x4a8ebc", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4a8ec0", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4a8ec4", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
+, {"addr": "0x4a8ec8", "name": "CUR_STAGE_DATA", "type": "struct zTableStageData*", "comment": null}
 , {"addr": "0x4a8ecc", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4c2ef8", "name": "ANIMATION_RNG", "type": "void", "comment": null}
-, {"addr": "0x4c2f00", "name": "REPLAY_RNG", "type": "void", "comment": null}
+, {"addr": "0x4c2ef8", "name": "ANIMATION_RNG", "type": "int16_t", "comment": null}
+, {"addr": "0x4c2f00", "name": "REPLAY_RNG", "type": "int16_t", "comment": null}
 , {"addr": "0x4c3234", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
 , {"addr": "0x4c3244", "name": "SHT_FUNC_3_FUNCS", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x4c3248", "name": "SHT_ON_HIT_FUNCS", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x4c3268", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x4c3280", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4c3d88", "name": "WINDOW", "type": "int32_t", "comment": null}
-, {"addr": "0x4c3e80", "name": "SOUND_MANAGER", "type": "void", "comment": null}
+, {"addr": "0x4c3e80", "name": "SOUND_MANAGER", "type": "int32_t", "comment": null}
 , {"addr": "0x4c91d8", "name": "SPRITE_TEMP_BUFFER", "type": "int32_t", "comment": null}
 , {"addr": "0x4c92a8", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4c93c0", "name": "INPUT", "type": "int32_t", "comment": null}
+, {"addr": "0x4c9a30", "name": "MSG_STRING_DECRYPT_BUF", "type": "char[0x80]", "comment": null}
 ]

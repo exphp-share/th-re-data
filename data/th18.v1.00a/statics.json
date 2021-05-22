@@ -1,0 +1,134 @@
+[ {"addr": "0x41b128", "name": "__jump_table_41b128", "type": "void*[0xb]", "comment": null}
+, {"addr": "0x41b160", "name": "lookup_table_41b160", "type": "uint8_t[0xa]", "comment": null}
+, {"addr": "0x41b178", "name": "lookup_table_41b178", "type": "uint8_t[0xa]", "comment": null}
+, {"addr": "0x427738", "name": "lookup_table_427738", "type": "uint8_t[0x80]", "comment": null}
+, {"addr": "0x42da20", "name": "lookup_table_42da20", "type": "uint8_t[0x68]", "comment": null}
+, {"addr": "0x4366f4", "name": "lookup_table_4366f4", "type": "uint8_t[0x2be]", "comment": null}
+, {"addr": "0x437c50", "name": "lookup_table_437c50", "type": "uint8_t[0x3f]", "comment": null}
+, {"addr": "0x438998", "name": "lookup_table_438998", "type": "uint8_t[0x51]", "comment": null}
+, {"addr": "0x44685c", "name": "lookup_table_44685c", "type": "uint8_t[0x13]", "comment": null}
+, {"addr": "0x449de4", "name": "lookup_table_449de4", "type": "uint8_t[0x10]", "comment": null}
+, {"addr": "0x451274", "name": "lookup_table_451274", "type": "uint8_t[0x10]", "comment": null}
+, {"addr": "0x4553a0", "name": "lookup_table_4553a0", "type": "uint8_t[0xf]", "comment": null}
+, {"addr": "0x4573dc", "name": "lookup_table_4573dc", "type": "uint8_t[0xa]", "comment": null}
+, {"addr": "0x465a5c", "name": "lookup_table_465a5c", "type": "uint8_t[0x17]", "comment": null}
+, {"addr": "0x472630", "name": "lookup_table_472630", "type": "uint8_t[0x18]", "comment": null}
+, {"addr": "0x478318", "name": "lookup_table_478318", "type": "uint8_t[0x24]", "comment": null}
+, {"addr": "0x47845c", "name": "lookup_table_47845c", "type": "uint8_t[0x20]", "comment": null}
+, {"addr": "0x478514", "name": "lookup_table_478514", "type": "uint8_t[0x1e]", "comment": null}
+, {"addr": "0x47b974", "name": "lookup_table_47b974", "type": "uint8_t[0xd7]", "comment": null}
+, {"addr": "0x47bb98", "name": "lookup_table_47bb98", "type": "uint8_t[0x13a]", "comment": null}
+, {"addr": "0x47c734", "name": "lookup_table_47c734", "type": "uint8_t[0x11]", "comment": null}
+, {"addr": "0x481cc4", "name": "lookup_table_481cc4", "type": "uint8_t[0x1d]", "comment": null}
+, {"addr": "0x486098", "name": "lookup_table_486098", "type": "uint8_t[0x1e]", "comment": null}
+, {"addr": "0x48d3b8", "name": "lookup_table_48d3b8", "type": "uint8_t[0x5f]", "comment": null}
+, {"addr": "0x4926af", "name": "lookup_table_4926af", "type": "uint8_t[0xc]", "comment": null}
+, {"addr": "0x49afaf", "name": "lookup_table_49afaf", "type": "uint8_t[0xb]", "comment": null}
+, {"addr": "0x4ad2f0", "name": "__xc_a", "type": "void*", "comment": null}
+, {"addr": "0x4ad2f4", "name": "LIFE_BEFORE_MAIN__C_INITIALIZERS", "type": "void*[0xd]", "comment": null}
+, {"addr": "0x4ad328", "name": "__xc_z", "type": "void*", "comment": null}
+, {"addr": "0x4ad32c", "name": "__xi_a", "type": "void*", "comment": null}
+, {"addr": "0x4ad330", "name": "LIFE_BEFORE_MAIN__CPP_INITIALIZERS", "type": "void*[0x7]", "comment": null}
+, {"addr": "0x4ad34c", "name": "__xi_z", "type": "void*", "comment": null}
+, {"addr": "0x4ad358", "name": "__xp_a", "type": "void*", "comment": null}
+, {"addr": "0x4ad35c", "name": "LIFE_BEFORE_MAIN__C_PRE_TERMINATORS", "type": "void*[0x3]", "comment": null}
+, {"addr": "0x4ad368", "name": "__xp_z", "type": "void*", "comment": null}
+, {"addr": "0x4ad36c", "name": "__xt_a", "type": "void*", "comment": null}
+, {"addr": "0x4ad370", "name": "__xt_z", "type": "void*", "comment": null}
+, {"addr": "0x4b3fe0", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[0x5]", "comment": null}
+, {"addr": "0x4b49c4", "name": "VTABLE_THREAD", "type": "void*[0x1]", "comment": null}
+, {"addr": "0x4b4c78", "name": "VTABLE_CARD_NULL", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4cd0", "name": "VTABLE_CARD_MAGATAMA", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4d28", "name": "VTABLE_CARD_MOMOYO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4d80", "name": "VTABLE_CARD_TSUKASA", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4dd8", "name": "VTABLE_CARD_MEGUMU", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4e30", "name": "VTABLE_CARD_SANNYO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4e88", "name": "VTABLE_CARD_TAKANE", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4ee0", "name": "VTABLE_CARD_MIKE", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4f38", "name": "VTABLE_CARD_SUMIREKO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4f90", "name": "VTABLE_CARD_RAIKO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b4fe8", "name": "VTABLE_CARD_LILY_WHITE", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5040", "name": "VTABLE_CARD_UTUSHO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5098", "name": "VTABLE_CARD_REMILIA", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b50f0", "name": "VTABLE_CARD_SHINMYOUMARU", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5148", "name": "VTABLE_CARD_TENSHI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b51a0", "name": "VTABLE_CARD_MIKO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b51f8", "name": "VTABLE_CARD_CLOWNPIECE", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5250", "name": "VTABLE_CARD_SHIKI_EIKI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b52a8", "name": "VTABLE_CARD_YACHIE", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5300", "name": "VTABLE_CARD_YUYUKO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5358", "name": "VTABLE_CARD_KOISHI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b53b0", "name": "VTABLE_CARD_MAMIZOU", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5408", "name": "VTABLE_CARD_KAGUYA", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5460", "name": "VTABLE_CARD_KEIKI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b54b8", "name": "VTABLE_CARD_BYAKUREN", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5510", "name": "VTABLE_CARD_AYA", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5568", "name": "VTABLE_CARD_SUWAKO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b55c0", "name": "VTABLE_CARD_SAKI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5618", "name": "VTABLE_CARD_KANAKO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5670", "name": "VTABLE_CARD_NITORI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b56c8", "name": "VTABLE_CARD_MISUMARU", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5720", "name": "VTABLE_CARD_NUE", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5778", "name": "VTABLE_CARD_CIRNO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b57d0", "name": "VTABLE_CARD_OKINA", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5828", "name": "VTABLE_CARD_ALICE", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5880", "name": "VTABLE_CARD_YOUMU", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b58d8", "name": "VTABLE_CARD_SANAE2", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5930", "name": "VTABLE_CARD_SANAE1", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5988", "name": "VTABLE_CARD_SAKUYA2", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b59e0", "name": "VTABLE_CARD_SAKUYA1", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5a38", "name": "VTABLE_CARD_MARISA2", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5a90", "name": "VTABLE_CARD_MARISA1", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5ae8", "name": "VTABLE_CARD_REIMU2", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5b40", "name": "VTABLE_CARD_REIMU1", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5b98", "name": "VTABLE_CARD_TEWI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5bf0", "name": "VTABLE_CARD_EIRIN", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5c48", "name": "VTABLE_CARD_YUKARI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5ca0", "name": "VTABLE_CARD_RINGO", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5cf8", "name": "VTABLE_CARD_NAZRIN", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5d50", "name": "VTABLE_CARD_PATCHOULI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5da8", "name": "VTABLE_CARD_NARUMI", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5e00", "name": "VTABLE_CARD_MOKOU", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5e58", "name": "VTABLE_CARD_BOMB_FRAGMENT", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5eb0", "name": "VTABLE_CARD_LIFE_FRAGMENT", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5f08", "name": "VTABLE_CARD_BOMB", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5f60", "name": "VTABLE_CARD_LIFE", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b5fb8", "name": "VTABLE_CARD_CHIMATA", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b6010", "name": "VTABLE_CARD_BASE_CLASS", "type": "struct zVTableCard", "comment": null}
+, {"addr": "0x4b62d0", "name": "VTABLE_BOMB_SANAE", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4b62f0", "name": "VTABLE_BOMB_SAKUYA", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4b6310", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4b6330", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
+, {"addr": "0x4b672c", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4b679c", "name": "VTABLE_LASER_BEAM", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4b680c", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4b687c", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4b68ec", "name": "VTABLE_LASER_DEFAULT", "type": "struct zVTableLaser", "comment": null}
+, {"addr": "0x4b9244", "name": "float(3.6)", "type": "float", "comment": null}
+, {"addr": "0x4becf0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table[0x1]", "comment": null}
+, {"addr": "0x4bed10", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4bee00", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
+, {"addr": "0x4c0748", "name": "__seh_table", "type": "uint32_t[0x41]", "comment": null}
+, {"addr": "0x4c4a4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4cabe8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
+, {"addr": "0x4ccdf0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
+, {"addr": "0x4cf294", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf298", "name": "ABILITY_MANAGER_PTR", "type": "struct zAbilityManager*", "comment": null}
+, {"addr": "0x4cf29c", "name": "ABILITY_TXT_PTR", "type": "struct zAbilityText*", "comment": null}
+, {"addr": "0x4cf2ac", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
+, {"addr": "0x4cf2b8", "name": "BOMB_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf2bc", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
+, {"addr": "0x4cf2c0", "name": "SPELLCARD_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf2d0", "name": "ENEMY_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf2e0", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
+, {"addr": "0x4cf2e4", "name": "GAME_THREAD_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf2ec", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
+, {"addr": "0x4cf3f4", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
+, {"addr": "0x4cf410", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
+, {"addr": "0x4cf418", "name": "REPLAY_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf420", "name": "POPUP_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf43c", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
+, {"addr": "0x51f65c", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
+, {"addr": "0x568c30", "name": "WINDOW", "type": "int32_t", "comment": null}
+, {"addr": "0x57049c", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
+]

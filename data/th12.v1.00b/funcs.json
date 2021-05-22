@@ -5,8 +5,10 @@
 , {"addr": "0x4014b0", "name": "AsciiManager::on_tick", "comment": null}
 , {"addr": "0x4014d0", "name": "AsciiManager::on_draw_45", "comment": null}
 , {"addr": "0x4014e0", "name": "AsciiManager::on_draw_2d__stub", "comment": null}
+, {"addr": "0x4014f0", "name": "AsciiManager::create_string", "comment": null}
 , {"addr": "0x401720", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x401790", "name": "AsciiManager::render_group", "comment": null}
+, {"addr": "0x4018f0", "name": "AsciiManager::draw_string", "comment": null}
 , {"addr": "0x402030", "name": "AsciiManager::on_draw_2d", "comment": null}
 , {"addr": "0x4022a0", "name": "AsciiManager::on_tick__body", "comment": null}
 , {"addr": "0x402520", "name": "AnmVm::wipe", "comment": null}
@@ -268,6 +270,7 @@
 , {"addr": "0x42f560", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x42f8c0", "name": "Supervisor::initialize", "comment": null}
 , {"addr": "0x42feb0", "name": "Supervisor::load_game_config", "comment": null}
+, {"addr": "0x430270", "name": "sub_430270_sound", "comment": null}
 , {"addr": "0x4302c0", "name": "Supervisor::enable_d3d_fog", "comment": null}
 , {"addr": "0x430300", "name": "Supervisor::disable_d3d_fog", "comment": null}
 , {"addr": "0x430500", "name": "create_game_thread", "comment": null}
@@ -449,7 +452,7 @@
 , {"addr": "0x461720", "name": "AnmLoaded::create_managed_child", "comment": null}
 , {"addr": "0x461840", "name": "AnmLoaded::create_managed_root", "comment": null}
 , {"addr": "0x461920", "name": "AnmManager::get_vm_by_id__prolly", "comment": null}
-, {"addr": "0x461970", "name": "sub_461970__maybe_anm_switch", "comment": null}
+, {"addr": "0x461970", "name": "anm_interrupt_by_id", "comment": null}
 , {"addr": "0x461a70", "name": "anm_461a70", "comment": null}
 , {"addr": "0x461be0", "name": "AnmManager::stop_all_vms_from_anm_file__prolly", "comment": null}
 , {"addr": "0x461c50", "name": "AnmManager::find_existing_or_clear_id", "comment": null}

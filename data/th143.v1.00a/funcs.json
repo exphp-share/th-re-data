@@ -12,6 +12,7 @@
 , {"addr": "0x40b5b0", "name": "AsciiManager::on_draw_4e__stub", "comment": null}
 , {"addr": "0x40b5c0", "name": "AsciiManager::on_draw_33__stub", "comment": null}
 , {"addr": "0x40b5d0", "name": "AsciiManager::on_draw_3f", "comment": null}
+, {"addr": "0x40b660", "name": "AsciiManager::create_string", "comment": null}
 , {"addr": "0x40ba50", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x40bac0", "name": "AsciiManager::on_draw_4e", "comment": null}
 , {"addr": "0x40c460", "name": "AsciiManager::on_draw_33", "comment": null}
@@ -80,6 +81,7 @@
 , {"addr": "0x42bc40", "name": "FpsCounter::initialize", "comment": null}
 , {"addr": "0x42bec0", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x42bf70", "name": "FpsCounter::on_draw__stub", "comment": null}
+, {"addr": "0x42c010", "name": "GuiMsgVm::destructor", "comment": null}
 , {"addr": "0x42c3c0", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x42ce90", "name": "Gui::destructor", "comment": null}
 , {"addr": "0x42d1b0", "name": "Gui::operator new", "comment": null}
@@ -90,6 +92,8 @@
 , {"addr": "0x42ece0", "name": "Gui::on_tick_0c__stub", "comment": null}
 , {"addr": "0x42ecf0", "name": "Gui::on_draw_31", "comment": null}
 , {"addr": "0x42ed00", "name": "Gui::on_draw_2e__stub", "comment": null}
+, {"addr": "0x42ed10", "name": "GuiMsgVm::initialize", "comment": null}
+, {"addr": "0x42f3d0", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x432440", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x432a20", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x432f00", "name": "GameThread::operator new", "comment": null}

@@ -147,6 +147,8 @@
 , {"addr": "0x4201b0", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x420470", "name": "Supervisor::initialize", "comment": null}
 , {"addr": "0x420a90", "name": "start_music", "comment": null}
+, {"addr": "0x420b10", "name": "sub_420b10_changes_bgm", "comment": null}
+, {"addr": "0x420c30", "name": "sub_420c30_music_fade", "comment": null}
 , {"addr": "0x420ea0", "name": "create_game_thread", "comment": null}
 , {"addr": "0x4220e0", "name": "PauseMenu::constructor", "comment": null}
 , {"addr": "0x422150", "name": "PauseMenu::initialize", "comment": null}
@@ -233,7 +235,7 @@
 , {"addr": "0x448980", "name": "AnmManager::render_layer", "comment": null}
 , {"addr": "0x448d00", "name": "sub_448d00_creates_anm_vm", "comment": null}
 , {"addr": "0x4491c0", "name": "AnmManager::get_vm_by_id", "comment": null}
-, {"addr": "0x4492f0", "name": "anm_set_pos3_by_id", "comment": null}
+, {"addr": "0x4492f0", "name": "anm_set_entity_pos_by_id", "comment": null}
 , {"addr": "0x449470", "name": "anm_set_interrupt_by_id", "comment": null}
 , {"addr": "0x449950", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x449aa0", "name": "UpdateFuncRegistry::constructor", "comment": null}

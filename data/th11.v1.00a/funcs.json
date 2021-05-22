@@ -38,6 +38,7 @@
 , {"addr": "0x406860", "name": "Player::set_iframes", "comment": null}
 , {"addr": "0x406920", "name": "Bomb::start__marisa_a", "comment": null}
 , {"addr": "0x406d10", "name": "Bomb::on_tick__marisa_a", "comment": null}
+, {"addr": "0x4070e0", "name": "anm_trigger_leave_by_id", "comment": null}
 , {"addr": "0x407130", "name": "Bomb::start__marisa_b", "comment": null}
 , {"addr": "0x4071a0", "name": "Bomb::on_tick__marisa_b", "comment": null}
 , {"addr": "0x407680", "name": "Bomb::start__marisa_c", "comment": null}
@@ -110,6 +111,8 @@
 , {"addr": "0x40f120", "name": "Ending::on_tick", "comment": null}
 , {"addr": "0x40f1b0", "name": "Ending::on_tick__stub", "comment": null}
 , {"addr": "0x40f1c0", "name": "Ending::on_draw_34__noop", "comment": null}
+, {"addr": "0x40fbe0", "name": "anm_set_interrupt_2_by_id", "comment": null}
+, {"addr": "0x40fc30", "name": "anm_set_interrupt_3_by_id", "comment": null}
 , {"addr": "0x410190", "name": "EnemyDrop::drop_items", "comment": null}
 , {"addr": "0x4101d0", "name": "EnemyDrop::spawn_ex_drops", "comment": null}
 , {"addr": "0x410420", "name": "EnemyFull::operator delete", "comment": null}
@@ -126,6 +129,7 @@
 , {"addr": "0x412e30", "name": "Enemy::run_ecl_over_256", "comment": null}
 , {"addr": "0x416ee0", "name": "EnemyFull::get_int_global", "comment": null}
 , {"addr": "0x4173a0", "name": "EnemyFull::get_int_global_ptr", "comment": null}
+, {"addr": "0x417450", "name": "jump_table_417450", "comment": null}
 , {"addr": "0x4174b0", "name": "EnemyFull::get_float_global", "comment": null}
 , {"addr": "0x4179b0", "name": "EnemyFull::get_float_global_ptr", "comment": null}
 , {"addr": "0x417a60", "name": "jump_table_417a60", "comment": null}
@@ -152,6 +156,8 @@
 , {"addr": "0x41cfb0", "name": "Gui::on_tick__stub", "comment": null}
 , {"addr": "0x41cfc0", "name": "Gui::on_draw_39__stub", "comment": null}
 , {"addr": "0x41cfd0", "name": "Gui::on_draw_2a__stub", "comment": null}
+, {"addr": "0x41d380", "name": "GuiMsgVm::run", "comment": null}
+, {"addr": "0x41eed0", "name": "zun_decrypt_msg_string", "comment": null}
 , {"addr": "0x41f8f0", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x41fe00", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x4202d0", "name": "GameThread::operator new", "comment": null}
@@ -210,6 +216,8 @@
 , {"addr": "0x429470", "name": "Supervisor::on_draw_2f_vm_2", "comment": null}
 , {"addr": "0x429560", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x4298c0", "name": "Supervisor::initialize", "comment": null}
+, {"addr": "0x42a150", "name": "sub_42a150_changes_bgm", "comment": null}
+, {"addr": "0x42a270", "name": "sub_42a270_music_fade", "comment": null}
 , {"addr": "0x42a300", "name": "Supervisor::disable_d3d_fog", "comment": null}
 , {"addr": "0x42a500", "name": "create_game_thread", "comment": null}
 , {"addr": "0x42a810", "name": "Supervisor::swap_transform_matrices", "comment": null}
@@ -370,7 +378,8 @@
 , {"addr": "0x455a00", "name": "AnmLoaded::sub_455a00_makes_a_vm_and_stuff", "comment": null}
 , {"addr": "0x455b10", "name": "AnmLoaded::sub_455b10", "comment": null}
 , {"addr": "0x4561e0", "name": "AnmManager::get_vm_with_id", "comment": null}
-, {"addr": "0x456230", "name": "sub_456230_switch_anm", "comment": null}
+, {"addr": "0x456230", "name": "anm_set_interrupt_by_id", "comment": null}
+, {"addr": "0x456330", "name": "anm_set_entity_pos_by_id", "comment": null}
 , {"addr": "0x4563a0", "name": "AnmManager::set_entity_pos_plus_ecl_origin", "comment": null}
 , {"addr": "0x456430", "name": "AnmVm::set_entity_pos_plus_ecl_origin", "comment": null}
 , {"addr": "0x456520", "name": "AnmManager::get_vm_or_clear_id", "comment": null}

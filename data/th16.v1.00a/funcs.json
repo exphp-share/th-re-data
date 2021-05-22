@@ -95,7 +95,7 @@
 , {"addr": "0x408090", "name": "AsciiManager::on_draw_1__draws_group_0", "comment": null}
 , {"addr": "0x4080a0", "name": "AsciiManager::on_draw_2__stub", "comment": null}
 , {"addr": "0x4080b0", "name": "AsciiManager::on_draw_3__draws_group_2", "comment": null}
-, {"addr": "0x408140", "name": "AsciiManager::leaf_408140", "comment": null}
+, {"addr": "0x408140", "name": "AsciiManager::create_string", "comment": null}
 , {"addr": "0x408260", "name": "ascii_sprintf_408260", "comment": null}
 , {"addr": "0x4084f0", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x408560", "name": "AsciiManager::draw_group", "comment": null}
@@ -362,12 +362,12 @@
 , {"addr": "0x4262f0", "name": "FpsCounter::sub_4262f0", "comment": null}
 , {"addr": "0x4263e0", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x426490", "name": "FpsCounter::on_draw__stub", "comment": null}
-, {"addr": "0x4264a0", "name": "Dialogue::destructor", "comment": null}
+, {"addr": "0x4264a0", "name": "GuiMsgVm::destructor", "comment": null}
 , {"addr": "0x4268c0", "name": "Gui::constructor", "comment": null}
 , {"addr": "0x426b00", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x426c10", "name": "Gui::sub_426c10", "comment": null}
 , {"addr": "0x426d70", "name": "gui_426d70_initializes_many_anms", "comment": null}
-, {"addr": "0x427950", "name": "Dialogue::operator free", "comment": null}
+, {"addr": "0x427950", "name": "GuiMsgVm::operator free", "comment": null}
 , {"addr": "0x427a20", "name": "Gui::destructor", "comment": null}
 , {"addr": "0x427ca0", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x427cf0", "name": "Gui::on_tick_20", "comment": null}
@@ -375,12 +375,12 @@
 , {"addr": "0x429af0", "name": "Gui::on_tick_20__stub", "comment": null}
 , {"addr": "0x429b00", "name": "Gui::on_draw_1__trivial", "comment": null}
 , {"addr": "0x429b10", "name": "Gui::on_draw_2__stub", "comment": null}
-, {"addr": "0x429b20", "name": "Dialogue::initialize", "comment": null}
+, {"addr": "0x429b20", "name": "GuiMsgVm::initialize", "comment": null}
 , {"addr": "0x429ff0", "name": "Gui::start_dialogue", "comment": null}
-, {"addr": "0x42a1d0", "name": "Dialogue::on_tick", "comment": null}
+, {"addr": "0x42a1d0", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x42b480", "name": "AnmVm::sub_42b480", "comment": null}
 , {"addr": "0x42b5f0", "name": "AnmVm::on_draw__5", "comment": null}
-, {"addr": "0x42b610", "name": "Dialogue::sub_42b610", "comment": null}
+, {"addr": "0x42b610", "name": "GuiMsgVm::sub_42b610", "comment": null}
 , {"addr": "0x42bcf0", "name": "Gui::sub_42bcf0", "comment": null}
 , {"addr": "0x42c240", "name": "ecl_554_stage_logo", "comment": null}
 , {"addr": "0x42c280", "name": "Gui::update_lives", "comment": null}

@@ -602,8 +602,40 @@
 
 , "zGui": 
   [ ["0x0", "__unknown", null]
+  , ["0x43ec", "__field_43ec", "void*"]
+  , ["0x43f0", "__unknown", null]
+  , ["0x4438", "msg", "struct zGuiMsgVm*"]
+  , ["0x443c", "__filler_01", "char[0x1c]"]
   , ["0x4458", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4458", "__end", null]
+  ]
+
+, "zGuiMsgVm": 
+  [ ["0x0", "__unknown", null]
+  , ["0x4", "__timer_4", "struct zTimer"]
+  , ["0x18", "time_in_script", "struct zTimer"]
+  , ["0x2c", "pause_timer", "struct zTimer"]
+  , ["0x40", "anm_id_player_face", "struct zAnmId"]
+  , ["0x44", "anm_id_enemy_face", "struct zAnmId"]
+  , ["0x48", "anm_id_textbox", "struct zAnmId"]
+  , ["0x4c", "anm_id_text_line_1", "struct zAnmId"]
+  , ["0x50", "anm_id_text_line_2", "struct zAnmId"]
+  , ["0x54", "anm_id_furigana_1", "struct zAnmId"]
+  , ["0x58", "anm_id_furigana_2", "struct zAnmId"]
+  , ["0x5c", "anm_id_intro", "struct zAnmId"]
+  , ["0x60", "__unknown", null]
+  , ["0x64", "current_instr", "struct zMsgRawInstr*"]
+  , ["0x68", "text_origin_player", "struct zFloat3"]
+  , ["0x74", "text_origin_enemy", "struct zFloat3"]
+  , ["0x80", "text_origin_radio", "struct zFloat3"]
+  , ["0x8c", "__dword_incremented_by_enemyAppear", "int32_t"]
+  , ["0x90", "flags", "uint32_t"]
+  , ["0x94", "next_text_line", "int32_t"]
+  , ["0x98", "__unknown", null]
+  , ["0x9c", "active_side", "int32_t"]
+  , ["0xa0", "__unknown", null]
+  , ["0xa4", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0xa4", "__end", null]
   ]
 
 , "zHintManager": 
@@ -714,6 +746,23 @@
   [ ["0x0", "__unknown", null]
   , ["0x5b94", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x5b94", "__end", null]
+  ]
+
+, "zMsgRawInstr": 
+  [ ["0x0", "time", "int16_t"]
+  , ["0x2", "opcode", "uint8_t"]
+  , ["0x3", "args_size", "uint8_t"]
+  , ["0x4", "args", "struct zMsgRawInstrArgs"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zMsgRawInstrArgs": 
+  [ ["0x0", "offset_00", "uint16_t"]
+  , ["0x2", "offset_02", "uint16_t"]
+  , ["0x4", "offset_04", "uint16_t"]
+  , ["0x6", "offset_06", "uint16_t"]
+  , ["0x8", "__the_actual_argument_layout_depend_on_the_instruction_but_i_put_words_to_let_binja_be_helpful", "struct zCOMMENT[0x0]"]
+  , ["0x8", "__end", null]
   ]
 
 , "zPauseMenu": 
@@ -900,6 +949,20 @@
   , ["0xc8", "__bullet_field_4cc", "int32_t"]
   , ["0xcc", "__unknown", null]
   , ["0xd0", "__end", null]
+  ]
+
+, "zTableStageData": 
+  [ ["0x0", "stage_num", "int32_t"]
+  , ["0x4", "std_path", "char*"]
+  , ["0x8", "enm_anm_path", "char*"]
+  , ["0xc", "ecl_path", "char*"]
+  , ["0x10", "bgm_path", "char*[0x2]"]
+  , ["0x18", "msg_path", "char*[0x6]"]
+  , ["0x30", "logo_anm_path", "char*"]
+  , ["0x34", "__field_34", "void*"]
+  , ["0x38", "__field_38", "void*"]
+  , ["0x3c", "__field_3c", "void*"]
+  , ["0x40", "__end", null]
   ]
 
 , "zTimer": 

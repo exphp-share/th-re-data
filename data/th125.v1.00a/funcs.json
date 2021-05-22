@@ -5,8 +5,11 @@
 , {"addr": "0x4014d0", "name": "AsciiManager::on_tick", "comment": null}
 , {"addr": "0x4014f0", "name": "AsciiManager::on_draw_48", "comment": null}
 , {"addr": "0x401500", "name": "AsciiManager::on_draw_2e__stub", "comment": null}
+, {"addr": "0x401510", "name": "AsciiManager::create_string", "comment": null}
+, {"addr": "0x4016b0", "name": "AsciiManager::sub_4016b0", "comment": null}
 , {"addr": "0x401830", "name": "AsciiManager::drawf_debug", "comment": null}
-, {"addr": "0x4018b0", "name": "AsciiManager::render_group", "comment": null}
+, {"addr": "0x4018b0", "name": "AsciiManager::draw_group", "comment": null}
+, {"addr": "0x401a10", "name": "AsciiManager::draw_string", "comment": null}
 , {"addr": "0x402650", "name": "AsciiManager::on_draw_2e", "comment": null}
 , {"addr": "0x402f50", "name": "AnmLoaded::copy_vm", "comment": null}
 , {"addr": "0x403140", "name": "AnmVm::destructor", "comment": null}

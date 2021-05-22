@@ -6,7 +6,12 @@
 , {"addr": "0x402ac0", "name": "sub_402ac0_join_thread", "comment": null}
 , {"addr": "0x4063c0", "name": "Timer::set", "comment": null}
 , {"addr": "0x4078a0", "name": "AsciiManager::operator new", "comment": null}
+, {"addr": "0x407cd0", "name": "AsciiManager::on_tick", "comment": null}
+, {"addr": "0x407ee0", "name": "AsciiManager::on_tick__stub", "comment": null}
+, {"addr": "0x407f80", "name": "AsciiManager::create_string", "comment": null}
 , {"addr": "0x408310", "name": "AsciiManager::drawf_debug", "comment": null}
+, {"addr": "0x408390", "name": "AsciiManager::draw_group", "comment": null}
+, {"addr": "0x408400", "name": "AsciiManager::draw_string", "comment": null}
 , {"addr": "0x409040", "name": "AnmVm::destructor", "comment": null}
 , {"addr": "0x409080", "name": "AnmVm::constructor", "comment": null}
 , {"addr": "0x409390", "name": "Stage::initialize", "comment": null}
@@ -75,6 +80,7 @@
 , {"addr": "0x425fb0", "name": "Gui::on_tick_0c__stub", "comment": null}
 , {"addr": "0x425fc0", "name": "Gui::on_draw_35", "comment": null}
 , {"addr": "0x425fd0", "name": "Gui::on_draw_32", "comment": null}
+, {"addr": "0x4266a0", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x428570", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x4291c0", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x4296b0", "name": "GameThread::operator new", "comment": null}
@@ -122,6 +128,7 @@
 , {"addr": "0x43e760", "name": "PhotoManager::operator new", "comment": null}
 , {"addr": "0x440a30", "name": "PhotoManager::on_tick", "comment": null}
 , {"addr": "0x440a50", "name": "PhotoManager::on_draw_36", "comment": null}
+, {"addr": "0x441540", "name": "PhotoManager::sub_441540", "comment": null}
 , {"addr": "0x4436c0", "name": "Player::constructor", "comment": null}
 , {"addr": "0x443890", "name": "Player::initialize", "comment": null}
 , {"addr": "0x445550", "name": "Player::on_tick", "comment": null}
@@ -178,6 +185,10 @@
 , {"addr": "0x474690", "name": "AnmManager::on_tick_ui", "comment": null}
 , {"addr": "0x474920", "name": "AnmManager::on_tick_world", "comment": null}
 , {"addr": "0x474950", "name": "AnmManager::on_tick_ui__stub", "comment": null}
+, {"addr": "0x4749e0", "name": "AnmManager::insert_in_world_list_back", "comment": null}
+, {"addr": "0x474a90", "name": "AnmManager::insert_in_world_list_front", "comment": null}
+, {"addr": "0x474b20", "name": "AnmManager::insert_in_ui_list_back", "comment": null}
+, {"addr": "0x474bd0", "name": "AnmManager::insert_in_ui_list_front", "comment": null}
 , {"addr": "0x474c60", "name": "AnmManager::destroy_possibly_managed_vm", "comment": null}
 , {"addr": "0x4752f0", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x475930", "name": "AnmManager::allocate_vm", "comment": null}

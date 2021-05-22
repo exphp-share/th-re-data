@@ -26,7 +26,9 @@
 , {"addr": "0x404690", "name": "Stage::load_anm_and_std", "comment": null}
 , {"addr": "0x404970", "name": "Stage::draw_vms", "comment": null}
 , {"addr": "0x4051b0", "name": "AnmManager::sub_4051b0", "comment": null}
+, {"addr": "0x407340", "name": "EclManager::sub_407340__initialize", "comment": null}
 , {"addr": "0x407400", "name": "EclManager::sub_407400", "comment": null}
+, {"addr": "0x407440", "name": "EclManager::sub_407440", "comment": null}
 , {"addr": "0x4074a0", "name": "EclManager::run_ecl", "comment": null}
 , {"addr": "0x40b8e0", "name": "Enemy::hardcoded_func_00", "comment": null}
 , {"addr": "0x40ba80", "name": "Enemy::hardcoded_func_01", "comment": null}

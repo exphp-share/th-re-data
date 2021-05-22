@@ -38,11 +38,11 @@
 , {"addr": "0x4b8a90", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
 , {"addr": "0x4b8a94", "name": "DEBUG_SPT_TEST", "type": "struct zDebugSptTest*", "comment": null}
 , {"addr": "0x4b8a9c", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4d2ad8", "name": "ANIMATION_RNG", "type": "void", "comment": null}
-, {"addr": "0x4d2ae0", "name": "REPLAY_RNG", "type": "void", "comment": null}
+, {"addr": "0x4d2ad8", "name": "ANIMATION_RNG", "type": "int16_t", "comment": null}
+, {"addr": "0x4d2ae0", "name": "REPLAY_RNG", "type": "int16_t", "comment": null}
 , {"addr": "0x4d2e14", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
 , {"addr": "0x4d2e50", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x4d2e68", "name": "SUPERVISOR", "type": "void", "comment": null}
+, {"addr": "0x4d2e68", "name": "SUPERVISOR", "type": "int32_t", "comment": null}
 , {"addr": "0x4d3970", "name": "WINDOW", "type": "int32_t", "comment": null}
 , {"addr": "0x4daff8", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4daffc", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}

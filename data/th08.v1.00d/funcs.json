@@ -58,7 +58,7 @@
 , {"addr": "0x406da0", "name": "GameManager::gauge_is_moderately_youkai", "comment": null}
 , {"addr": "0x406dd0", "name": "GameManager::get_clock_time", "comment": null}
 , {"addr": "0x406df0", "name": "GameManager::add_to_clock_time", "comment": null}
-, {"addr": "0x406e50", "name": "GameManager::sub_406e50", "comment": null}
+, {"addr": "0x406e50", "name": "GameManager::__rekey_rng_antitamper", "comment": null}
 , {"addr": "0x406ef0", "name": "Rng::rand_int_modulo_n", "comment": null}
 , {"addr": "0x406f30", "name": "GameManager::sub_406f30", "comment": null}
 , {"addr": "0x406fa0", "name": "GameManager::set_power", "comment": null}
@@ -109,7 +109,7 @@
 , {"addr": "0x40baf0", "name": "AnmManager::sub_40baf0", "comment": null}
 , {"addr": "0x40bb20", "name": "AnmManager::sub_40bb20", "comment": null}
 , {"addr": "0x40bb60", "name": "AnmManager::get_preloaded", "comment": null}
-, {"addr": "0x40bb80", "name": "GameManager::sub_40bb80", "comment": null}
+, {"addr": "0x40bb80", "name": "GameManager::__verify_rng_state", "comment": null}
 , {"addr": "0x40bc40", "name": "Player::is_youkai", "comment": null}
 , {"addr": "0x40c010", "name": "Player::bomb_on_tick__reimu_single", "comment": null}
 , {"addr": "0x40c7b0", "name": "math_atan2", "comment": null}
@@ -434,7 +434,8 @@
 , {"addr": "0x4398ce", "name": "GameManager::bombs_remaining", "comment": null}
 , {"addr": "0x4398e8", "name": "AsciiManager::set_color", "comment": null}
 , {"addr": "0x4399ac", "name": "GameManager::is_rect_partially_onscreen", "comment": null}
-, {"addr": "0x439a2e", "name": "GameManager::sub_439a2e", "comment": null}
+, {"addr": "0x439a2e", "name": "GameManager::randomize_rng", "comment": null}
+, {"addr": "0x439ac5", "name": "ShuffleRng", "comment": null}
 , {"addr": "0x439b29", "name": "GameManager::sub_439b29", "comment": null}
 , {"addr": "0x439bc7", "name": "GameManager::on_tick", "comment": null}
 , {"addr": "0x43aa03", "name": "GameManager::on_draw", "comment": null}
@@ -442,6 +443,7 @@
 , {"addr": "0x43aaf4", "name": "GameManager::on_registration", "comment": null}
 , {"addr": "0x43abd7", "name": "Supervisor::thread_start", "comment": null}
 , {"addr": "0x43b936", "name": "GameManager::initialize_rank_by_difficulty", "comment": null}
+, {"addr": "0x43b984", "name": "Supervisor::initialize_rng", "comment": null}
 , {"addr": "0x43be2c", "name": "GameManager::on_cleanup", "comment": null}
 , {"addr": "0x43bf6e", "name": "GameManager::stop", "comment": null}
 , {"addr": "0x43bfc3", "name": "GameManager::sub_43bfc3__increases_rank", "comment": null}
@@ -478,6 +480,7 @@
 , {"addr": "0x43e8f0", "name": "sub_43e8f0_writes_file", "comment": null}
 , {"addr": "0x43ea00", "name": "DebugLog::sub_43ea00_logs_debug", "comment": null}
 , {"addr": "0x43eb60", "name": "DebugLog::sub_43eb60", "comment": null}
+, {"addr": "0x43ecc0", "name": "Rng::next", "comment": null}
 , {"addr": "0x43ed20", "name": "Rng::rand_dword", "comment": null}
 , {"addr": "0x43ed50", "name": "Rng::randf_0_to_1", "comment": null}
 , {"addr": "0x43ed80", "name": "Rng::randf_neg1_to_1", "comment": null}

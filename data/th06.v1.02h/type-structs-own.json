@@ -270,6 +270,14 @@
   , ["0x804", "__end", null]
   ]
 
+, "zEclManager": 
+  [ ["0x0", "ecl_file", "void*"]
+  , ["0x4", "sub_table", "struct zEclRawInstr**"]
+  , ["0x8", "timeline", "struct zEclRawInstr*"]
+  , ["0xc", "__size_NOT_known", "struct zCOMMENT[0x0]"]
+  , ["0xc", "__end", null]
+  ]
+
 , "zEclRawInstr": 
   [ ["0x0", "time", "int32_t"]
   , ["0x4", "opcode", "int16_t"]

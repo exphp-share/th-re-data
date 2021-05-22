@@ -22,20 +22,6 @@
   , ["0x28", "__end", null]
   ]
 
-, "BY_HANDLE_FILE_INFORMATION": 
-  [ ["0x0", "dwFileAttributes", "DWORD"]
-  , ["0x4", "ftCreationTime", "FILETIME"]
-  , ["0xc", "ftLastAccessTime", "FILETIME"]
-  , ["0x14", "ftLastWriteTime", "FILETIME"]
-  , ["0x1c", "dwVolumeSerialNumber", "DWORD"]
-  , ["0x20", "nFileSizeHigh", "DWORD"]
-  , ["0x24", "nFileSizeLow", "DWORD"]
-  , ["0x28", "nNumberOfLinks", "DWORD"]
-  , ["0x2c", "nFileIndexHigh", "DWORD"]
-  , ["0x30", "nFileIndexLow", "DWORD"]
-  , ["0x34", "__end", null]
-  ]
-
 , "COFF_Header": 
   [ ["0x0", "magic", "char[0x4]"]
   , ["0x4", "machine", "enum coff_machine"]
@@ -45,21 +31,6 @@
   , ["0x10", "numberOfSymbols", "uint32_t"]
   , ["0x14", "sizeOfOptionalHeader", "uint16_t"]
   , ["0x16", "characteristics", "enum coff_characteristics"]
-  , ["0x18", "__end", null]
-  ]
-
-, "CONDITION_VARIABLE": 
-  [ ["0x0", "Ptr", "PVOID"]
-  , ["0x4", "__end", null]
-  ]
-
-, "CREATEFILE2_EXTENDED_PARAMETERS": 
-  [ ["0x0", "dwSize", "DWORD"]
-  , ["0x4", "dwFileAttributes", "DWORD"]
-  , ["0x8", "dwFileFlags", "DWORD"]
-  , ["0xc", "dwSecurityQosFlags", "DWORD"]
-  , ["0x10", "lpSecurityAttributes", "LPSECURITY_ATTRIBUTES"]
-  , ["0x14", "hTemplateFile", "HANDLE"]
   , ["0x18", "__end", null]
   ]
 
@@ -513,15 +484,6 @@
 
 , "HDC__": 
   [ ["0x0", "__end", null]
-  ]
-
-, "HEAP_SUMMARY": 
-  [ ["0x0", "cb", "DWORD"]
-  , ["0x4", "cbAllocated", "SIZE_T"]
-  , ["0x8", "cbCommitted", "SIZE_T"]
-  , ["0xc", "cbReserved", "SIZE_T"]
-  , ["0x10", "cbMaxReserve", "SIZE_T"]
-  , ["0x14", "__end", null]
   ]
 
 , "HINSTANCERGNDATA": 
@@ -1074,37 +1036,20 @@
   , ["0x36", "reserved", "uint16_t"]
   , ["0x38", "editList", "uint32_t"]
   , ["0x3c", "securityCookie", "uint32_t"]
-  , ["0x40", "__end", null]
+  , ["0x40", "seHandlerTable", "uint32_t"]
+  , ["0x44", "seHandlerCount", "uint32_t"]
+  , ["0x48", "__end", null]
   ]
 
-, "MEMORYSTATUSEX": 
-  [ ["0x0", "dwLength", "DWORD"]
-  , ["0x4", "dwMemoryLoad", "DWORD"]
-  , ["0x8", "ullTotalPhys", "DWORDLONG"]
-  , ["0x10", "ullAvailPhys", "DWORDLONG"]
-  , ["0x18", "ullTotalPageFile", "DWORDLONG"]
-  , ["0x20", "ullAvailPageFile", "DWORDLONG"]
-  , ["0x28", "ullTotalVirtual", "DWORDLONG"]
-  , ["0x30", "ullAvailVirtual", "DWORDLONG"]
-  , ["0x38", "ullAvailExtendedVirtual", "DWORDLONG"]
-  , ["0x40", "__end", null]
-  ]
-
-, "MEMORY_BASIC_INFORMATION": 
-  [ ["0x0", "BaseAddress", "PVOID"]
-  , ["0x4", "AllocationBase", "PVOID"]
-  , ["0x8", "AllocationProtect", "DWORD"]
-  , ["0xc", "RegionSize", "SIZE_T"]
-  , ["0x10", "State", "DWORD"]
-  , ["0x14", "Protect", "DWORD"]
-  , ["0x18", "Type", "DWORD"]
-  , ["0x1c", "__end", null]
-  ]
-
-, "MEM_EXTENDED_PARAMETER": 
-  [ ["0x0", "s", "struct"]
-  , ["0x8", "u", "union"]
-  , ["0x10", "__end", null]
+, "MSG": 
+  [ ["0x0", "hwnd", "HWND"]
+  , ["0x4", "message", "UINT"]
+  , ["0x8", "wParam", "WPARAM"]
+  , ["0xc", "lParam", "LPARAM"]
+  , ["0x10", "time", "DWORD"]
+  , ["0x14", "pt", "POINT"]
+  , ["0x1c", "lPrivate", "DWORD"]
+  , ["0x20", "__end", null]
   ]
 
 , "OVERLAPPED": 
@@ -1179,30 +1124,6 @@
   , ["0x8", "__end", null]
   ]
 
-, "PROCESSOR_NUMBER": 
-  [ ["0x0", "Group", "WORD"]
-  , ["0x2", "Number", "BYTE"]
-  , ["0x3", "Reserved", "BYTE"]
-  , ["0x4", "__end", null]
-  ]
-
-, "PROCESS_HEAP_ENTRY": 
-  [ ["0x0", "lpData", "PVOID"]
-  , ["0x4", "cbData", "DWORD"]
-  , ["0x8", "cbOverhead", "BYTE"]
-  , ["0x9", "iRegionIndex", "BYTE"]
-  , ["0xa", "wFlags", "WORD"]
-  , ["0xc", "DUMMYUNIONNAME", "union"]
-  , ["0x1c", "__end", null]
-  ]
-
-, "REASON_CONTEXT": 
-  [ ["0x0", "Version", "ULONG"]
-  , ["0x4", "Flags", "DWORD"]
-  , ["0x8", "Reason", "union"]
-  , ["0x18", "__end", null]
-  ]
-
 , "RGBQUAD": 
   [ ["0x0", "rgbBlue", "BYTE"]
   , ["0x1", "rgbGreen", "BYTE"]
@@ -1211,101 +1132,8 @@
   , ["0x4", "__end", null]
   ]
 
-, "RTL_BARRIER": 
-  [ ["0x0", "Reserved1", "DWORD"]
-  , ["0x4", "Reserved2", "DWORD"]
-  , ["0x8", "Reserved3", "ULONG_PTR[0x2]"]
-  , ["0x10", "Reserved4", "DWORD"]
-  , ["0x14", "Reserved5", "DWORD"]
-  , ["0x18", "__end", null]
-  ]
-
 , "RTL_CRITICAL_SECTION_DEBUG": 
   [ ["0x0", "__end", null]
-  ]
-
-, "RTL_RUN_ONCE": 
-  [ ["0x0", "Ptr", "PVOID"]
-  , ["0x4", "__end", null]
-  ]
-
-, "Rich_Header": 
-  [ ["0x0", "e_magic__DanS", "uint32_t"]
-  , ["0x4", "e_align", "uint32_t[0x3]"]
-  , ["0x10", "e_entry_id0__01036665", "uint32_t"]
-  , ["0x14", "e_entry_count0__33", "uint32_t"]
-  , ["0x18", "e_entry_id1__01056665", "uint32_t"]
-  , ["0x1c", "e_entry_count1__162", "uint32_t"]
-  , ["0x20", "e_entry_id2__00c7a09e", "uint32_t"]
-  , ["0x24", "e_entry_count2__1", "uint32_t"]
-  , ["0x28", "e_entry_id3__01046b81", "uint32_t"]
-  , ["0x2c", "e_entry_count3__18", "uint32_t"]
-  , ["0x30", "e_entry_id4__01036b81", "uint32_t"]
-  , ["0x34", "e_entry_count4__21", "uint32_t"]
-  , ["0x38", "e_entry_id5__01056b81", "uint32_t"]
-  , ["0x3c", "e_entry_count5__47", "uint32_t"]
-  , ["0x40", "e_entry_id6__01046665", "uint32_t"]
-  , ["0x44", "e_entry_count6__27", "uint32_t"]
-  , ["0x48", "e_entry_id7__01066665", "uint32_t"]
-  , ["0x4c", "e_entry_count7__1", "uint32_t"]
-  , ["0x50", "e_entry_id8__009c766f", "uint32_t"]
-  , ["0x54", "e_entry_count8__2", "uint32_t"]
-  , ["0x58", "e_entry_id9__00ab766f", "uint32_t"]
-  , ["0x5c", "e_entry_count9__1", "uint32_t"]
-  , ["0x60", "e_entry_id10__01016665", "uint32_t"]
-  , ["0x64", "e_entry_count10__12", "uint32_t"]
-  , ["0x68", "e_entry_id11__009c52d2", "uint32_t"]
-  , ["0x6c", "e_entry_count11__2", "uint32_t"]
-  , ["0x70", "e_entry_id12__007bc627", "uint32_t"]
-  , ["0x74", "e_entry_count12__2", "uint32_t"]
-  , ["0x78", "e_entry_id13__00010000", "uint32_t"]
-  , ["0x7c", "e_entry_count13__199", "uint32_t"]
-  , ["0x80", "e_entry_id14__00937809", "uint32_t"]
-  , ["0x84", "e_entry_count14__5", "uint32_t"]
-  , ["0x88", "e_entry_id15__00837809", "uint32_t"]
-  , ["0x8c", "e_entry_count15__2", "uint32_t"]
-  , ["0x90", "e_entry_id16__01096c36", "uint32_t"]
-  , ["0x94", "e_entry_count16__68", "uint32_t"]
-  , ["0x98", "e_entry_id17__00ff6c36", "uint32_t"]
-  , ["0x9c", "e_entry_count17__1", "uint32_t"]
-  , ["0xa0", "e_entry_id18__00970000", "uint32_t"]
-  , ["0xa4", "e_entry_count18__1", "uint32_t"]
-  , ["0xa8", "e_entry_id19__01026c36", "uint32_t"]
-  , ["0xac", "e_entry_count19__1", "uint32_t"]
-  , ["0xb0", "e_magic", "char[0x4]"]
-  , ["0xb4", "e_checksum", "uint32_t"]
-  , ["0xb8", "__end", null]
-  ]
-
-, "SRWLOCK": 
-  [ ["0x0", "Ptr", "PVOID"]
-  , ["0x4", "__end", null]
-  ]
-
-, "SYSTEMTIME": 
-  [ ["0x0", "wYear", "WORD"]
-  , ["0x2", "wMonth", "WORD"]
-  , ["0x4", "wDayOfWeek", "WORD"]
-  , ["0x6", "wDay", "WORD"]
-  , ["0x8", "wHour", "WORD"]
-  , ["0xa", "wMinute", "WORD"]
-  , ["0xc", "wSecond", "WORD"]
-  , ["0xe", "wMilliseconds", "WORD"]
-  , ["0x10", "__end", null]
-  ]
-
-, "SYSTEM_INFO": 
-  [ ["0x0", "u", "union"]
-  , ["0x4", "dwPageSize", "DWORD"]
-  , ["0x8", "lpMinimumApplicationAddress", "LPVOID"]
-  , ["0xc", "lpMaximumApplicationAddress", "LPVOID"]
-  , ["0x10", "dwActiveProcessorMask", "DWORD_PTR"]
-  , ["0x14", "dwNumberOfProcessors", "DWORD"]
-  , ["0x18", "dwProcessorType", "DWORD"]
-  , ["0x1c", "dwAllocationGranularity", "DWORD"]
-  , ["0x20", "wProcessorLevel", "WORD"]
-  , ["0x22", "wProcessorRevision", "WORD"]
-  , ["0x24", "__end", null]
   ]
 
 , "Section_Header": 
@@ -1323,8 +1151,14 @@
   ]
 
 , "ShiftJis": 
-  [ ["0x0", "a", "char"]
+  [ ["0x0", "__unknown", null]
   , ["0x1", "__end", null]
+  ]
+
+, "TIMECAPS": 
+  [ ["0x0", "wPeriodMin", "UINT"]
+  , ["0x4", "wPeriodMax", "UINT"]
+  , ["0x8", "__end", null]
   ]
 
 , "TLS_Directory": 
@@ -1388,39 +1222,6 @@
   , ["0x4", "Data2", "WORD"]
   , ["0x6", "Data3", "WORD"]
   , ["0x8", "Data4", "BYTE[0x8]"]
-  , ["0x10", "__end", null]
-  ]
-
-, "_MODULEINFO": 
-  [ ["0x0", "lpBaseOfDll", "LPVOID"]
-  , ["0x4", "SizeOfImage", "DWORD"]
-  , ["0x8", "EntryPoint", "LPVOID"]
-  , ["0xc", "__end", null]
-  ]
-
-, "_PERFORMANCE_INFORMATION": 
-  [ ["0x0", "cb", "DWORD"]
-  , ["0x4", "CommitTotal", "SIZE_T"]
-  , ["0x8", "CommitLimit", "SIZE_T"]
-  , ["0xc", "CommitPeak", "SIZE_T"]
-  , ["0x10", "PhysicalTotal", "SIZE_T"]
-  , ["0x14", "PhysicalAvailable", "SIZE_T"]
-  , ["0x18", "SystemCache", "SIZE_T"]
-  , ["0x1c", "KernelTotal", "SIZE_T"]
-  , ["0x20", "KernelPaged", "SIZE_T"]
-  , ["0x24", "KernelNonpaged", "SIZE_T"]
-  , ["0x28", "PageSize", "SIZE_T"]
-  , ["0x2c", "HandleCount", "DWORD"]
-  , ["0x30", "ProcessCount", "DWORD"]
-  , ["0x34", "ThreadCount", "DWORD"]
-  , ["0x38", "__end", null]
-  ]
-
-, "_PROCESS_INFORMATION": 
-  [ ["0x0", "hProcess", "HANDLE"]
-  , ["0x4", "hThread", "HANDLE"]
-  , ["0x8", "dwProcessId", "DWORD"]
-  , ["0xc", "dwThreadId", "DWORD"]
   , ["0x10", "__end", null]
   ]
 

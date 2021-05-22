@@ -71,9 +71,11 @@
 , {"addr": "0x40b900", "name": "AsciiManager::on_draw_48", "comment": null}
 , {"addr": "0x40b910", "name": "AsciiManager::on_draw_32__stub", "comment": null}
 , {"addr": "0x40b920", "name": "AsciiManager::on_draw_3a", "comment": null}
+, {"addr": "0x40b9b0", "name": "AsciiManager::create_string", "comment": null}
 , {"addr": "0x40bb10", "name": "AsciiManager::drawf", "comment": null}
 , {"addr": "0x40bdc0", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x40be30", "name": "AsciiManager::draw_layer", "comment": null}
+, {"addr": "0x40bf20", "name": "AsciiManager::draw_string", "comment": null}
 , {"addr": "0x40c770", "name": "AsciiManager::on_draw_32", "comment": null}
 , {"addr": "0x40cc90", "name": "AnmVm::wipe", "comment": null}
 , {"addr": "0x40cf90", "name": "AnmVm::destructor", "comment": null}
@@ -259,6 +261,7 @@
 , {"addr": "0x42e4d0", "name": "FpsCounter::sub_42e4d0", "comment": null}
 , {"addr": "0x42e5c0", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x42e670", "name": "FpsCounter::on_draw__stub", "comment": null}
+, {"addr": "0x42e6f0", "name": "GuiMsgVm::destructor", "comment": null}
 , {"addr": "0x42ea30", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x42eb30", "name": "Gui::sub_42eb30", "comment": null}
 , {"addr": "0x42fa40", "name": "Gui::destructor", "comment": null}
@@ -268,6 +271,8 @@
 , {"addr": "0x431a40", "name": "Gui::on_tick__stub", "comment": null}
 , {"addr": "0x431a50", "name": "Gui::on_draw_30", "comment": null}
 , {"addr": "0x431a60", "name": "Gui::on_draw_2d__stub", "comment": null}
+, {"addr": "0x431a70", "name": "GuiMsgVm::initialize", "comment": null}
+, {"addr": "0x432400", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x4352b0", "name": "AnmVm::transform_coordinate", "comment": null}
 , {"addr": "0x435490", "name": "AnmVm::get_own_transformed_pos", "comment": null}
 , {"addr": "0x435990", "name": "LaserManager::destroy_all", "comment": null}
@@ -564,6 +569,7 @@
 , {"addr": "0x47ee90", "name": "AnmLoaded::create_managed_child", "comment": null}
 , {"addr": "0x47efc0", "name": "AnmLoaded::create_managed_root", "comment": null}
 , {"addr": "0x47f0a0", "name": "AnmManager::get_vm_with_id", "comment": null}
+, {"addr": "0x47f140", "name": "anm_set_interrupt_by_id", "comment": null}
 , {"addr": "0x47f420", "name": "AnmManager::get_anm_by_id__or_set_zero", "comment": null}
 , {"addr": "0x47fcb0", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x47fd70", "name": "AnmLoaded::sub_47fd70_loads_a_script", "comment": null}

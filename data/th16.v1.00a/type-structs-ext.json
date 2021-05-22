@@ -1340,6 +1340,12 @@
   , ["0x1", "__end", null]
   ]
 
+, "TIMECAPS": 
+  [ ["0x0", "wPeriodMin", "UINT"]
+  , ["0x4", "wPeriodMax", "UINT"]
+  , ["0x8", "__end", null]
+  ]
+
 , "TLS_Directory": 
   [ ["0x0", "rawDataStartVirtualAddress", "uint32_t"]
   , ["0x4", "rawDataEndVirtualAddress", "uint32_t"]

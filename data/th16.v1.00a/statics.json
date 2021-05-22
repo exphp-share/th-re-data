@@ -352,7 +352,7 @@
 , {"addr": "0x4a6d80", "name": "REPLAY_UNSAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4a6d88", "name": "REPLAY_SAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4a6d94", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
-, {"addr": "0x4a6d98", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiInf*", "comment": null}
+, {"addr": "0x4a6d98", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
 , {"addr": "0x4a6d9c", "name": "ANOTHER_STAGE_PTR???", "type": "struct zStage*", "comment": "All I know so far is that the same destructor is called on this pointer as the other stage pointer.\n\nMaybe this one exists for stage transitions."}
 , {"addr": "0x4a6da0", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
 , {"addr": "0x4a6da4", "name": "SUBSEASON_BOMB_PTR", "type": "struct zBomb*", "comment": null}

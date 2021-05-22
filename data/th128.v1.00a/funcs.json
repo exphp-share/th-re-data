@@ -6,10 +6,14 @@
 , {"addr": "0x4015c0", "name": "AsciiManager::on_draw_4a", "comment": null}
 , {"addr": "0x4015d0", "name": "AsciiManager::on_draw_2f", "comment": null}
 , {"addr": "0x4015e0", "name": "AsciiManager::on_draw_37", "comment": null}
+, {"addr": "0x4015f0", "name": "AsciiManager::create_string", "comment": null}
 , {"addr": "0x401900", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x401970", "name": "AsciiManager::on_draw", "comment": null}
+, {"addr": "0x402890", "name": "AsciiManager::on_tick__body", "comment": null}
+, {"addr": "0x402d70", "name": "AsciiManager::reset_font_settings", "comment": null}
 , {"addr": "0x403090", "name": "AnmVm::destructor", "comment": null}
 , {"addr": "0x4031a0", "name": "AnmVm::constructor", "comment": null}
+, {"addr": "0x403280", "name": "Timer::set", "comment": null}
 , {"addr": "0x4033d0", "name": "Stage::constructor", "comment": null}
 , {"addr": "0x4034a0", "name": "Stage::initialize", "comment": null}
 , {"addr": "0x403710", "name": "Stage::destructor", "comment": null}
@@ -84,6 +88,7 @@
 , {"addr": "0x41fb70", "name": "FpsCounter::on_draw__stub", "comment": null}
 , {"addr": "0x4200e0", "name": "Gui::constructor", "comment": null}
 , {"addr": "0x4201a0", "name": "Gui::initialize", "comment": null}
+, {"addr": "0x420bf0", "name": "GuiMsgVm::destructor", "comment": null}
 , {"addr": "0x420ce0", "name": "Gui::destructor", "comment": null}
 , {"addr": "0x420fd0", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x4210b0", "name": "Gui::on_tick", "comment": null}
@@ -92,6 +97,8 @@
 , {"addr": "0x422d60", "name": "Gui::on_tick__stub", "comment": null}
 , {"addr": "0x422d70", "name": "Gui::on_draw_32__stub", "comment": null}
 , {"addr": "0x422d80", "name": "Gui::on_draw_2e__stub", "comment": null}
+, {"addr": "0x422d90", "name": "GuiMsgVm::constructor", "comment": null}
+, {"addr": "0x4231f0", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x425e60", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x426420", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x426910", "name": "GameThread::operator new", "comment": null}
@@ -137,6 +144,7 @@
 , {"addr": "0x433650", "name": "Supervisor::on_tick", "comment": null}
 , {"addr": "0x433bd0", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x433f80", "name": "Supervisor::initialize", "comment": null}
+, {"addr": "0x434a20", "name": "sub_434a20_music_fade", "comment": null}
 , {"addr": "0x436400", "name": "PauseMenu::constructor", "comment": null}
 , {"addr": "0x436470", "name": "PauseMenu::initialize", "comment": null}
 , {"addr": "0x4365d0", "name": "PauseMenu::destructor", "comment": null}
@@ -195,6 +203,7 @@
 , {"addr": "0x457110", "name": "ScreenEffect::on_tick_457110", "comment": null}
 , {"addr": "0x457270", "name": "ScreenEffect::on_cleanup", "comment": null}
 , {"addr": "0x457360", "name": "ScreenEffect::initialize", "comment": null}
+, {"addr": "0x459220", "name": "AnmVm::setup_texture_quad_and_matrices", "comment": null}
 , {"addr": "0x459900", "name": "AnmVm::get_float_var", "comment": null}
 , {"addr": "0x459b50", "name": "AnmVm::get_int_var", "comment": null}
 , {"addr": "0x459d90", "name": "AnmVm::run", "comment": null}
@@ -212,6 +221,10 @@
 , {"addr": "0x4666c0", "name": "AnmManager::on_tick_08__stub", "comment": null}
 , {"addr": "0x466af0", "name": "AnmManager::on_tick_1e__body", "comment": null}
 , {"addr": "0x466be0", "name": "AnmManager::on_tick_08", "comment": null}
+, {"addr": "0x4670b0", "name": "sub_4670b0_creates_vm", "comment": null}
+, {"addr": "0x467420", "name": "AnmManager::get_vm_with_id", "comment": null}
+, {"addr": "0x467480", "name": "anm_interrupt_by_id", "comment": null}
+, {"addr": "0x467a00", "name": "anm_set_entity_pos_by_id", "comment": null}
 , {"addr": "0x468010", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x4681d0", "name": "register__on_tick", "comment": null}
 , {"addr": "0x468270", "name": "register__on_draw", "comment": null}

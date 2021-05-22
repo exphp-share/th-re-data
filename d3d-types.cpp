@@ -773,7 +773,7 @@ struct IDirect3DVolumeTexture9
     char __make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read;
 };
 
-struct BITMAPFILEHEADER {
+struct BITMAPFILEHEADER __packed {
     char  bfType[2];
     DWORD bfSize;
     WORD  bfReserved1;

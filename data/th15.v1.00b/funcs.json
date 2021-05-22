@@ -29,6 +29,7 @@
 , {"addr": "0x40c360", "name": "AsciiManager::on_draw_4e", "comment": null}
 , {"addr": "0x40c370", "name": "AsciiManager::on_draw_33", "comment": null}
 , {"addr": "0x40c380", "name": "AsciiManager::on_draw_3f", "comment": null}
+, {"addr": "0x40c410", "name": "AsciiManager::create_string", "comment": null}
 , {"addr": "0x40c800", "name": "AsciiManager::drawf_debug", "comment": null}
 , {"addr": "0x40d680", "name": "AnmVm::wipe", "comment": null}
 , {"addr": "0x40d9f0", "name": "AnmVm::destructor", "comment": null}
@@ -202,6 +203,7 @@
 , {"addr": "0x433500", "name": "FpsCounter::operator new", "comment": null}
 , {"addr": "0x4336e0", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x433790", "name": "FpsCounter::on_draw__stub", "comment": null}
+, {"addr": "0x433810", "name": "GuiMsgVm::destructor", "comment": null}
 , {"addr": "0x433ba0", "name": "Gui::constructor", "comment": null}
 , {"addr": "0x433e10", "name": "Gui::initialize", "comment": null}
 , {"addr": "0x433f10", "name": "Gui::sub_433f10", "comment": null}
@@ -212,6 +214,8 @@
 , {"addr": "0x4374f0", "name": "Gui::on_tick__stub", "comment": null}
 , {"addr": "0x437500", "name": "Gui::on_draw_31", "comment": null}
 , {"addr": "0x437510", "name": "Gui::on_draw_2e__stub", "comment": null}
+, {"addr": "0x437520", "name": "GuiMsgVm::initialize", "comment": null}
+, {"addr": "0x437ef0", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x439c90", "name": "sub_439c90__check_for_high_score", "comment": null}
 , {"addr": "0x439d60", "name": "Gui::sub_439d60", "comment": null}
 , {"addr": "0x43a850", "name": "Gui::update_lives", "comment": null}
@@ -433,8 +437,13 @@
 , {"addr": "0x487b10", "name": "AnmManager::on_tick_22", "comment": null}
 , {"addr": "0x487b40", "name": "AnmManager::on_tick_09__stub", "comment": null}
 , {"addr": "0x487b60", "name": "AnmManager::render_layer", "comment": null}
+, {"addr": "0x487bd0", "name": "AnmManager::insert_in_world_list_back", "comment": null}
+, {"addr": "0x487c90", "name": "AnmManager::insert_in_world_list_front", "comment": null}
+, {"addr": "0x487d40", "name": "AnmManager::insert_in_ui_list_back", "comment": null}
+, {"addr": "0x487e00", "name": "AnmManager::insert_in_ui_list_front", "comment": null}
 , {"addr": "0x487eb0", "name": "AnmManager::destroy_possibly_managed_vm", "comment": null}
 , {"addr": "0x488090", "name": "AnmManager::destroy_possibly_managed_snapshot_vm", "comment": null}
+, {"addr": "0x4882e0", "name": "AnmLoaded::create_managed_child", "comment": null}
 , {"addr": "0x488510", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x4885b0", "name": "AnmManager::find_snapshot_vm_by_id", "comment": null}
 , {"addr": "0x488620", "name": "AnmManager::interrupt_tree", "comment": null}
