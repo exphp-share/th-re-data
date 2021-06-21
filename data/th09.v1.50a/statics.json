@@ -6,6 +6,7 @@
 , {"addr": "0x4a7d8c", "name": "MATCH_MSG_FILE_2", "type": "struct zMsgRawHeader*", "comment": null}
 , {"addr": "0x4a7d90", "name": "GAME_MANAGER", "type": "struct zGameManager", "comment": null}
 , {"addr": "0x4a7e0c", "name": "EFFECT_SYS_PTR", "type": "struct zEffectSys*", "comment": null}
+, {"addr": "0x4a7e38", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4a7e64", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x4a8120", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
 , {"addr": "0x4a8140", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}

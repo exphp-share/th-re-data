@@ -405,7 +405,9 @@
 , {"addr": "0x433850", "name": "BulletManager::unregister_update_funcs", "comment": null}
 , {"addr": "0x4338ca", "name": "Gui::on_tick", "comment": null}
 , {"addr": "0x433927", "name": "Gui::on_draw", "comment": null}
+, {"addr": "0x43396d", "name": "GuiImpl::sub_43396d", "comment": null}
 , {"addr": "0x433db3", "name": "GuiImpl::run_msg", "comment": null}
+, {"addr": "0x43542b", "name": "GuiImpl::sub_43542b", "comment": null}
 , {"addr": "0x43587e", "name": "Gui::timeline_ins_wait_msg_impl", "comment": null}
 , {"addr": "0x4358bb", "name": "Gui::sub_4358bb", "comment": null}
 , {"addr": "0x435900", "name": "Gui::sub_435900", "comment": null}
@@ -418,6 +420,7 @@
 , {"addr": "0x437d45", "name": "GuiImplChild2::constructor", "comment": null}
 , {"addr": "0x437d64", "name": "Gui::unregister_update_funcs", "comment": null}
 , {"addr": "0x437edc", "name": "Gui::sub_437edc__does_stuff_to_child_2", "comment": null}
+, {"addr": "0x43826b", "name": "Gui::on_draw_stage_clear", "comment": null}
 , {"addr": "0x438a29", "name": "Supervisor::get_config__secret__dont_draw_stuff_outside_game", "comment": null}
 , {"addr": "0x438a41", "name": "Supervisor::get_config__disable_z_test", "comment": null}
 , {"addr": "0x438a59", "name": "Supervisor::get_config__disable_color_compositing", "comment": null}

@@ -493,7 +493,8 @@
 
 , "zGuiSideInner": 
   [ ["0x0", "anm_file", "struct zAnmLoaded*"]
-  , ["0x4", "__unknown", null]
+  , ["0x4", "_some_anm_file", "struct zAnmLoaded*"]
+  , ["0x8", "__unknown", null]
   , ["0xc", "vms", "struct zAnmVm[0x2]"]
   , ["0x554", "__end", null]
   ]

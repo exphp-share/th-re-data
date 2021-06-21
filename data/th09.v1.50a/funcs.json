@@ -12,6 +12,7 @@
 , {"addr": "0x401500", "name": "Timer::set_current_without_previous__stub", "comment": null}
 , {"addr": "0x401510", "name": "Timer::sub_401510", "comment": null}
 , {"addr": "0x401520", "name": "Timer::is_ge", "comment": null}
+, {"addr": "0x401560", "name": "GuiImpl::sub_401560", "comment": null}
 , {"addr": "0x4015f0", "name": "AnmManager::sub_4015f0", "comment": null}
 , {"addr": "0x402350", "name": "Stage::on_tick", "comment": null}
 , {"addr": "0x4024d0", "name": "Stage::on_cleanup", "comment": null}
@@ -117,7 +118,7 @@
 , {"addr": "0x415d00", "name": "AnmManager::sub_415d00", "comment": null}
 , {"addr": "0x415d10", "name": "AnmManager::sub_415d10", "comment": null}
 , {"addr": "0x415d30", "name": "GameManager::sub_415d30", "comment": null}
-, {"addr": "0x415e50", "name": "sub_415e50_show_stage_results", "comment": null}
+, {"addr": "0x415e50", "name": "Gui::sub_415e50_show_stage_results", "comment": null}
 , {"addr": "0x416160", "name": "GuiMsgVm::sub_416160", "comment": null}
 , {"addr": "0x416590", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x417520", "name": "GuiMsgVm::sub_417520", "comment": null}

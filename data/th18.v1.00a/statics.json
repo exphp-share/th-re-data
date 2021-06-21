@@ -105,6 +105,7 @@
 , {"addr": "0x4b687c", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4b68ec", "name": "VTABLE_LASER_DEFAULT", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4b9244", "name": "float(3.6)", "type": "float", "comment": null}
+, {"addr": "0x4b93d4", "name": "float(1000)", "type": "float", "comment": null}
 , {"addr": "0x4becf0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table[0x1]", "comment": null}
 , {"addr": "0x4bed10", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4bee00", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}

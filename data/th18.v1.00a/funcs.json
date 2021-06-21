@@ -18,6 +18,9 @@
 , {"addr": "0x402530", "name": "BulletManager::destructor", "comment": null}
 , {"addr": "0x402af0", "name": "Thread::operator delete", "comment": null}
 , {"addr": "0x402b30", "name": "sub_402b30__join_thread", "comment": null}
+, {"addr": "0x402bf0", "name": "PosVel::update_secondary_fields", "comment": null}
+, {"addr": "0x404d70", "name": "reduce_angle_404d70", "comment": null}
+, {"addr": "0x404dd0", "name": "cartesian_from_polar_404dd0", "comment": null}
 , {"addr": "0x405bf0", "name": "sub_405bf0_creates_vm", "comment": null}
 , {"addr": "0x405d10", "name": "Timer::set_value", "comment": null}
 , {"addr": "0x407420", "name": "AnmManager::sub_407420", "comment": null}
@@ -166,6 +169,7 @@
 , {"addr": "0x40c430", "name": "CardSuwako::method_4C", "comment": null}
 , {"addr": "0x40c440", "name": "CardSuwako::__on_shoot_2", "comment": null}
 , {"addr": "0x40c4a0", "name": "CardSuwako::operator delete", "comment": null}
+, {"addr": "0x40c4f0", "name": "CardSuwako::create_explosion", "comment": null}
 , {"addr": "0x40c790", "name": "CardAya::__on_load__2", "comment": null}
 , {"addr": "0x40c7a0", "name": "CardAya::method_4C", "comment": null}
 , {"addr": "0x40c7b0", "name": "CardAya::on_load", "comment": null}
@@ -276,7 +280,7 @@
 , {"addr": "0x410fe0", "name": "CardMomoyo::__on_load__2", "comment": null}
 , {"addr": "0x410ff0", "name": "CardMomoyo::method_4C", "comment": null}
 , {"addr": "0x411000", "name": "CardMomoyo::__on_tick_2", "comment": null}
-, {"addr": "0x411010", "name": "CardMomoyo::__on_shoot_2", "comment": null}
+, {"addr": "0x411010", "name": "CardMomoyo::on_bullet_init", "comment": null}
 , {"addr": "0x411090", "name": "CardMomoyo::on_anm_id_assigned_to_hud", "comment": null}
 , {"addr": "0x4110a0", "name": "CardMomoyo::on_draw", "comment": null}
 , {"addr": "0x411350", "name": "CardMomoyo::method_38", "comment": null}
@@ -308,6 +312,7 @@
 , {"addr": "0x413160", "name": "CardBaseClass::on_draw", "comment": null}
 , {"addr": "0x413170", "name": "CardBaseClass::method_4C", "comment": null}
 , {"addr": "0x4171b0", "name": "AbilityShop::initialize", "comment": null}
+, {"addr": "0x417880", "name": "AbilityShop::sub_417880", "comment": null}
 , {"addr": "0x417cc0", "name": "AbilityShop::on_tick", "comment": null}
 , {"addr": "0x418990", "name": "AbilityShop::on_draw", "comment": null}
 , {"addr": "0x418c20", "name": "AbilityShop::on_tick__stub", "comment": null}
@@ -536,6 +541,7 @@
 , {"addr": "0x454f50", "name": "Supervisor::sub_454f50", "comment": null}
 , {"addr": "0x4564b0", "name": "Notice::on_tick", "comment": null}
 , {"addr": "0x456810", "name": "Notice::on_tick__stub", "comment": null}
+, {"addr": "0x45a550", "name": "Player::set_shoot_key_short_timer", "comment": null}
 , {"addr": "0x45a690", "name": "PlayerInner::constructor", "comment": null}
 , {"addr": "0x45a7a0", "name": "Player::initialize", "comment": null}
 , {"addr": "0x45abb0", "name": "Player::reset", "comment": null}
@@ -549,8 +555,9 @@
 , {"addr": "0x45d590", "name": "Player::cancel_impending_death", "comment": null}
 , {"addr": "0x45de40", "name": "Player::create_damage_source_45de40", "comment": null}
 , {"addr": "0x45e160", "name": "Player::do_graze", "comment": null}
-, {"addr": "0x45e930", "name": "Player::sub_45e930", "comment": null}
-, {"addr": "0x45ea00", "name": "Player::sub_45ea00", "comment": null}
+, {"addr": "0x45e320", "name": "PlayerBullet::create", "comment": null}
+, {"addr": "0x45e930", "name": "Player::shoot_one_bullet", "comment": null}
+, {"addr": "0x45ea00", "name": "Player::tick_shooting_state", "comment": null}
 , {"addr": "0x45f0f0", "name": "enm_compute_damage_sources", "comment": null}
 , {"addr": "0x4615e0", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x463dd0", "name": "PopupManager::operator new", "comment": null}
