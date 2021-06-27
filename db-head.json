@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "versions": [
+    {"version": "th06.v1.02h", "level": "primary"},
+    {"version": "th07.v1.00b", "level": "primary"},
+    {"version": "th08.v1.00d", "level": "primary"},
+    {"version": "th09.v1.50a", "level": "primary"},
+    {"version": "th095.v1.02a", "level": "primary"},
+    {"version": "th10.v1.00a", "level": "primary"},
+    {"version": "th11.v1.00a", "level": "primary"},
+    {"version": "th12.v1.00b", "level": "primary"},
+    {"version": "th125.v1.00a", "level": "primary"},
+    {"version": "th128.v1.00a", "level": "primary"},
+    {"version": "th13.v1.00c", "level": "primary"},
+    {"version": "th14.v1.00b", "level": "primary"},
+    {"version": "th143.v1.00a", "level": "primary"},
+    {"version": "th15.v1.00b", "level": "primary"},
+    {"version": "th16.v1.00a", "level": "primary"},
+    {"version": "th165.v1.00a", "level": "primary"},
+    {"version": "th17.v1.00b", "level": "primary"},
+    {"version": "th18.v1.00a", "level": "primary"}
+  ]
+}
