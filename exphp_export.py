@@ -11,7 +11,7 @@ import re
 import json
 from collections import defaultdict
 import contextlib
-from binaryninja import Symbol, SymbolType, Type, log, BinaryViewType, TypeClass, FunctionParameter
+from binaryninja import BinaryView, Symbol, SymbolType, Type, log, BinaryViewType, TypeClass, FunctionParameter
 
 BNDB_DIR = r"E:\Downloaded Software\Touhou Project"
 JSON_DIR = r"F:\asd\clone\th16re-data\data"
@@ -169,31 +169,52 @@ def nice_hex(x):
     return s[:-1] if s.endswith('L') else s
 
 def export_types(bv, path):
-    type_ids = _gather_type_ids_and_classify(bv)
+    typedef_types = _gather_typedefs(bv)
 
     # Create TypeTree abbreviations for all typedefs as long as they are valid names for abbreviations
     abbreviations = {
         str(k): {'ttree': {'type': 'named', 'name': str(k)}}
-        for k in type_ids['typedefs']
+        for k in typedef_types
     }
-    abbreviation_type_ids = {str(k): v for (k, v) in type_ids['typedefs'].items() if k in abbreviations}
+    abbreviation_types = {str(k): v for (k, v) in typedef_types.items() if k in abbreviations}
 
-    ttree_converter = TypeToTTreeConverter(bv, abbreviation_type_ids)
+    ttree_converter = TypeToTTreeConverter(bv, set(abbreviation_types))
 
-    structures = {}
-    for (type_name, type_id) in type_ids['structs'].items():
-        structure = bv.get_type_by_id(type_id).structure
-        structures[str(type_name)] = structure_to_cereal(structure, ttree_converter)
+    types = {}
+    bv_types = bv.types
+    for (type_name, ty) in bv_types.items():
+        classification = _classify_named_type(bv, type_name)
+        cereal = {
+            'type': classification,
+            'size': nice_hex(ty.width),
+            'align': ty.alignment,
+        }
+        if classification == 'struct':
+            cereal.update(structure_to_cereal(ty.structure, ttree_converter))
+        elif classification == 'enum':
+            cereal.update({'values': [(m.name, m.value) for m in ty.enumeration.members]})
+        elif classification == 'union':
+            pass
+        elif classification == 'typedef':
+            expanded_ty = typedef_types[type_name]
+            cereal['ttree'] = ttree_converter.to_ttree(expanded_ty)
 
-    enumerations = {}
-    for (type_name, type_id) in type_ids['enums'].items():
-        enumeration = bv.get_type_by_id(type_id).enumeration
-        enumerations[str(type_name)] = [(m.name, m.value) for m in enumeration.members]
+        types[str(type_name)] = cereal
 
-    typedefs = {}
-    for (type_name, type_id) in type_ids['typedefs'].items():
-        expanded_ty = bv.get_type_by_id(type_id)
-        typedefs[str(type_name)] = {'size': expanded_ty.width, 'def': str(expanded_ty), 'ttree': ttree_converter.to_ttree(expanded_ty)}
+    # types = {}
+    # for (type_name, type_id) in type_ids['unions'].items():
+    #     structure = bv.get_type_by_id(type_id).structure
+    #     structures[str(type_name)] = structure_to_cereal(structure, ttree_converter)
+
+    # enumerations = {}
+    # for (type_name, type_id) in type_ids['enums'].items():
+    #     enumeration = bv.get_type_by_id(type_id).enumeration
+    #     enumerations[str(type_name)] = [(m.name, m.value) for m in enumeration.members]
+
+    # typedefs = {}
+    # for (type_name, type_id) in type_ids['typedefs'].items():
+    #     expanded_ty = bv.get_type_by_id(type_id)
+    #     typedefs[str(type_name)] = {'size': expanded_ty.width, 'def': str(expanded_ty), 'ttree': ttree_converter.to_ttree(expanded_ty)}
 
     def find_bad(x, path=[], root=None, root1=None):
         if root is None:
@@ -215,68 +236,111 @@ def export_types(bv, path):
             return
         else:
             assert False, (type(x), path, root1)
-    find_bad(structures)
-    find_bad(enumerations)
-    find_bad(typedefs)
+    # find_bad(structures)
+    # find_bad(enumerations)
+    # find_bad(typedefs)
     find_bad(abbreviations)
-    find_bad(abbreviation_type_ids)
+    find_bad(types)
+    # find_bad(abbreviation_type_ids)
 
+    with open_output_json_with_validation(os.path.join(path, 'types.json')) as f:
+        nice_json(f, types, {
+            '@type': 'block-mapping',
+            '@line-sep': 1,
+            'element': {
+                '@type': 'object-variant',
+                '@tag': 'type',
+                'struct': {
+                    '@type': 'block-object',
+                    'members': {'@type': 'block-array'},
+                },
+                'enum': {
+                    '@type': 'block-object',
+                    'values': {'@type': 'block-array'}
+                },
+                'union': {
+                    '@type': 'block-object',
+                    'members': {'@type': 'block-array'}
+                },
+                'typedef': {
+                    '@type': 'inline',
+                },
+            },
+        })
 
-    with open_output_json_with_validation(os.path.join(path, 'type-aliases.json')) as f:
-        nice_json_object(f, 0, typedefs, lambda f, d: json.dump(with_key_order(d, ['def', 'size', 'ttree']), f))
+# =================================================
 
-    # I name all of my structures starting with "z" so that they all appear together in binja,
-    # which always sorts structures by name (and starts out preloaded with hundreds of
-    # autogenerated structures from windows headers).
-    #
-    # Luckily that also makes them easy to identify in this script!
-    structures_own = {k: v for (k, v) in structures.items() if k.startswith('z')}
-    structures_ext = {k: v for (k, v) in structures.items() if not k.startswith('z')}
-    with open_output_json_with_validation(os.path.join(path, 'ttree-abbreviations.json')) as f:
-        nice_json_object(f, 0, typedefs, lambda f, d: json.dump(d, f))
-    with open_output_json_with_validation(os.path.join(path, 'type-structs-own.json')) as f:
-        nice_json_object_of_array(f, 0, structures_own, lambda f, d: json.dump(d, f))
-    with open_output_json_with_validation(os.path.join(path, 'type-structs-ext.json')) as f:
-        nice_json_object_of_array(f, 0, structures_ext, lambda f, d: json.dump(d, f))
-    with open_output_json_with_validation(os.path.join(path, 'type-enums.json')) as f:
-        nice_json_object_of_array(f, 0, enumerations, lambda f, d: json.dump(d, f))
-
-def _gather_type_ids_and_classify(bv):
-    out = {
-        'structs': {},
-        'unions': {},
-        'enums': {},
-        'typedefs': {},
-    }
+def _gather_typedefs(bv):
+    out = {}
     types = bv.types
-    for name in types:
-        # structs, enums, and unions all produce objects representing the declaration
-        if types[name].type_class == TypeClass.EnumerationTypeClass:
-            out['enums'][name] = bv.get_type_id(name)
-            continue
-        if types[name].type_class == TypeClass.StructureTypeClass:
-            if types[name].structure.union:
-                out['unions'][name] = bv.get_type_id(name)
-            else:
-                out['structs'][name] = bv.get_type_id(name)
+    for (name, ty) in types.items():
+        if _classify_named_type(bv, name) != 'typedef':
             continue
 
-        # Here's where things start to get silly.
+        # Here's where it gets very tricky.
+        # When you lookup a named type (either by name or by type_id) for a typedef,
+        # the following occurs:
         #
-        # For some bizarre reason, different kinds of typedefs either return a
-        # NamedTypeReference representing the typedef itself, or a type representing the
-        # expansion.
+        # - If the expansion of the typedef is itself a named type (struct, enum, typedef),
+        #   binja returns a NamedTypeReference representing the typedef itself.
+        # - Otherwise, binja returns a type representing the expansion (and you lose
+        #   all context related to the typedef)
         if (
-            types[name].type_class == TypeClass.NamedTypeReferenceClass
-            and types[name].registered_name
-            and types[name].registered_name.name == name
+            ty.type_class == TypeClass.NamedTypeReferenceClass
+            and ty.registered_name
+            and ty.registered_name.name == name
         ):
             # This is the typedef itself.  We want the expansion!
-            out['typedefs'][name] = types[name].named_type_reference.type_id
+            #
+            # We do not use .type_id, because looking up the type_id would be wrong in
+            # the corner case of a typedef to a typedef to a primitive. (it would expand the
+            # inner typedef on lookup; in fact there is no type_id at all from which a
+            # NamedTypeReference representing the inner typedef can be recovered!)
+            #
+            # Thankfully, we know that the resulting type is named, so we can call this Type
+            # constructor which will avoid expanding the inner typedef.
+            expn_type_name = ty.named_type_reference.name
+            out[name] = Type.named_type_from_registered_type(bv, expn_type_name)
         else:
-            # This is probably the expansion.
-            out['typedefs'][name] = bv.get_type_id(name)
+            # This is the expansion.
+            out[name] = ty
     return out
+
+def __test_gather_typedefs():
+    bv = BinaryView()
+    types_to_add = bv.parse_types_from_string('''
+        typedef int32_t Typedef1;
+        typedef Typedef1 Typedef2;
+        typedef Typedef2 Typedef3;
+
+        struct S { int x; }
+        typedef struct S Typedef1s;
+        typedef Typedef1s Typedef2s;
+        typedef Typedef2s Typedef3s;
+    ''')
+    for name, ty in types_to_add.types.items():
+        bv.define_user_type(name, ty)
+
+    typedefs = _gather_typedefs(bv)
+    assert str(typedefs['Typedef1']) == 'int32_t'
+    assert str(typedefs['Typedef2']) == 'Typedef1'
+    assert str(typedefs['Typedef3']) == 'Typedef2'
+
+    assert str(typedefs['Typedef1s']) == 'struct S'
+    assert str(typedefs['Typedef2s']) == 'Typedef1s'
+    assert str(typedefs['Typedef3s']) == 'Typedef2s'
+__test_gather_typedefs()
+
+def _classify_named_type(bv, name):
+    ty = bv.get_type_by_name(name)
+    if ty.type_class == TypeClass.EnumerationTypeClass:
+        return 'enum'
+    if ty.type_class == TypeClass.StructureTypeClass:
+        if ty.structure.union:
+            return 'union'
+        else:
+            return 'struct'
+    return 'typedef'
 
 def import_all_functions(games=GAMES, bndb_dir=BNDB_DIR, json_dir=JSON_DIR, emit_status=print):
     return _import_all_symbols(
@@ -289,6 +353,8 @@ def import_all_statics(games=GAMES, bndb_dir=BNDB_DIR, json_dir=JSON_DIR, emit_s
         games=games, bndb_dir=bndb_dir, json_dir=json_dir, emit_status=print,
         json_filename='statics.json', symbol_type=SymbolType.DataSymbol,
     )
+
+# =================================================
 
 def _import_all_symbols(games, bndb_dir, json_dir, json_filename, symbol_type, emit_status):
     old_md5sums = read_md5s_file(json_dir)
@@ -361,7 +427,7 @@ def _merge_symbol_files(games, json_dir, filename, emit_status):
     composite_items.sort(key=lambda d: d['name'])
 
     with open(composite_path, 'w') as f:
-        nice_json_array(f, 0, composite_items, lambda f, d: json.dump(d, f))
+        nice_json(f, composite_items, {'@type': 'block-array'})
 
 def split_function_files(games=GAMES, json_dir=JSON_DIR, emit_status=print):
     return _split_symbol_files(games, json_dir, 'funcs.json', emit_status)
@@ -379,7 +445,7 @@ def _split_symbol_files(games, json_dir, filename, emit_status):
             del d['game']
         game_items.sort(key=lambda d: d['addr'])
         with open(os.path.join(json_dir, f'{game}/{filename}'), 'w') as f:
-            nice_json_array(f, 0, game_items, lambda f, d: json.dump(d, f))
+            nice_json(f, game_items, {'@type': 'block-array'})
 
 def structure_to_cereal(structure, ttree_converter):
     # Include a fake field at the max offset to help simplify things
@@ -391,10 +457,10 @@ def structure_to_cereal(structure, ttree_converter):
     effective_members = [(off, name, ty) for (off, name, ty) in effective_members if not is_filler(name, ty)]
 
     # Unknown area at beginning
-    output = []
+    output_members = []
     def add_row(offset, name, ty):
         ty_json = None if ty is None else ttree_converter.to_ttree(ty)
-        output.append({'offset': nice_hex(offset), 'name': name, 'type': ty_json})
+        output_members.append({'offset': nice_hex(offset), 'name': name, 'type': ty_json})
 
     if effective_members[0][0] != 0:
         add_row(0, '__unknown', None)
@@ -412,66 +478,66 @@ def structure_to_cereal(structure, ttree_converter):
         if unused_bytes:
             add_row(offset + ty.width, '__unknown', None)
     add_row(structure.width, '__end', None)
-    return output
 
-def nice_json_array(file, indent, arr, func):
-    arr = list(arr)
-    if not arr:
-        print('[]', file=file)
-        return
+    out = {}
+    if structure.packed:
+        out['packed'] = True
+    out['members'] = output_members
+    return out
 
-    first = True
-    for x in arr:
-        print(' ' * indent + ('[ ' if first else ', '), end='', file=file)
-        first = False
-        func(file, x)
-        print(file=file)
+def nice_json(file, value, schema, indent=0):
+    if schema is None:
+        schema = {'@type': 'inline'}
 
-    print(' ' * indent + ']', file=file)
+    if schema['@type'] == 'inline':
+        json.dump(value, file)
 
-def nice_json_object(file, indent, obj, func):
-    if not obj:
-        print('{}', file=file)
-        return
+    elif schema['@type'] == 'block-array':
+        # Homogenous list
+        assert isinstance(value, (list, tuple))
+        first = True
+        for x in value:
+            print(file=file)
+            print(' ' * indent + ('[ ' if first else ', '), end='', file=file)
+            first = False
+            nice_json(file, x, schema.get('element', None), indent + 2)
+            print('\n' * schema.get('@line-sep', 0), end='', file=file)
+        print('\n' + ' ' * indent + ']', end='', file=file)
 
-    first = True
-    for key in obj:
-        print(' ' * indent + ('{ ' if first else ', '), end='', file=file)
-        print(json.dumps(key) + ': ', end='', file=file)
-        first = False
-        func(file, obj[key])
-        print(file=file)
-    print(' ' * indent + '}', file=file)
+    elif schema['@type'] == 'block-object':
+        # Heterogenous dict
+        assert isinstance(value, dict)
+        first = True
+        for key in value:
+            print(file=file)
+            print(' ' * indent + ('{ ' if first else ', '), end='', file=file)
+            first = False
+            print(json.dumps(key) + ': ', end='', file=file)
+            nice_json(file, value[key], schema.get(key, None), indent + 2)
+            print('\n' * schema.get('@line-sep', 0), end='', file=file)
+        print('\n' + ' ' * indent + '}', end='', file=file)
 
-def nice_json_object_of_array(file, indent, obj, func):
-    if not obj:
-        print('{}', file=file)
-        return
+    elif schema['@type'] == 'block-mapping':
+        # Homogenous dict
+        assert isinstance(value, dict)
+        first = True
+        for key in value:
+            print(file=file)
+            print(' ' * indent + ('{ ' if first else ', '), end='', file=file)
+            first = False
+            print(json.dumps(key) + ': ', end='', file=file)
+            nice_json(file, value[key], schema.get('element', None), indent + 2)
+            print('\n' * schema.get('@line-sep', 0), end='', file=file)
+        print('\n' + ' ' * indent + '}', end='', file=file)
 
-    first = True
-    for key in obj:
-        print('{ ' if first else ', ', end='', file=file)
-        print(json.dumps(key) + ': ', end='', file=file)
-        print(file=file)
-        first = False
-        nice_json_array(file, indent+2, obj[key], func)
-        print(file=file)
-    print(' ' * indent + '}', file=file)
+    elif schema['@type'] == 'object-variant':
+        assert isinstance(value, dict)
+        tag = schema['@tag']
+        variant_name = value[tag]
+        nice_json(file, value, schema[variant_name], indent)
 
-def nice_json_object_of_object(file, indent, obj, func):
-    if not obj:
-        print('{}', file=file)
-        return
-
-    first = True
-    for key in obj:
-        print('{ ' if first else ', ', end='', file=file)
-        print(json.dumps(key) + ': ', end='', file=file)
-        print(file=file)
-        first = False
-        nice_json_object(file, indent+2, obj[key], func)
-        print(file=file)
-    print(' ' * indent + '}', file=file)
+    else:
+        assert False, schema
 
 #============================================================================
 
@@ -522,9 +588,9 @@ def open_output_json_with_validation(path):
 TTREE_VALID_ABBREV_REGEX = re.compile(r'^[_\$#:a-zA-Z][_\$#:a-zA-Z0-9]*$')
 
 class TypeToTTreeConverter:
-    def __init__(self, bv, abbrev_type_ids):
+    def __init__(self, bv, abbrev_type_names):
         self.bv = bv
-        self.abbrev_type_ids = abbrev_type_ids
+        self.abbrev_type_names = set(abbrev_type_names)
 
     def to_ttree(self, ty):
         return self._to_ttree_flat(ty)
@@ -564,13 +630,11 @@ class TypeToTTreeConverter:
                 return {'type': 'named', 'name': str(ty.registered_name.name)}
 
             name = ty.named_type_reference.name
-            target_type_id = ty.named_type_reference.type_id
-            if self.abbrev_type_ids.get(name) == target_type_id:
+            if name in self.abbrev_type_names:
                 return str(name)
             else:
-                log.log_error(f'Entered poorly-tested codepath! (a0db56ad-2b46-45dd-9f99-17cd20b1871f) {name}')
-                # I have no idea how you enter this block, but there is a reasonable backup behavior
-                # at our disposal.  (just follow the type reference)
+                # Most likely a field whose type is `struct Ident`.  Follow the typedef.
+                target_type_id = ty.named_type_reference.type_id
                 target_type = self.bv.get_type_by_id(target_type_id)
                 return self._to_ttree_nested(target_type)
 
