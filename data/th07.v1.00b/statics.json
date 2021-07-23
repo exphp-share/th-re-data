@@ -1,116 +1,117 @@
-[ {"addr": "0x48d68c", "name": "float(-1e-05)", "type": "float", "comment": null}
-, {"addr": "0x48d690", "name": "float(9.9999994e-11)", "type": "float", "comment": null}
-, {"addr": "0x498a4c", "name": "float(0)", "type": "int32_t", "comment": null}
-, {"addr": "0x498a50", "name": "float(0.5)", "type": "float", "comment": null}
-, {"addr": "0x498a54", "name": "float(1)", "type": "float", "comment": null}
-, {"addr": "0x498a58", "name": "float(0.99)", "type": "float", "comment": null}
-, {"addr": "0x498a5c", "name": "float(-3.1415927)", "type": "float", "comment": null}
-, {"addr": "0x498a60", "name": "float(6.2831855)", "type": "float", "comment": null}
-, {"addr": "0x498a64", "name": "float(3.1415927)", "type": "float", "comment": null}
-, {"addr": "0x498a68", "name": "float(448)", "type": "float", "comment": null}
-, {"addr": "0x498a6c", "name": "float(384)", "type": "float", "comment": null}
-, {"addr": "0x498a70", "name": "float(2)", "type": "float", "comment": null}
-, {"addr": "0x498a74", "name": "float(416)", "type": "float", "comment": null}
-, {"addr": "0x498a78", "name": "float(368)", "type": "float", "comment": null}
-, {"addr": "0x498a7c", "name": "float(8)", "type": "float", "comment": null}
-, {"addr": "0x498a80", "name": "float(16)", "type": "float", "comment": null}
-, {"addr": "0x498a84", "name": "float(32)", "type": "float", "comment": null}
-, {"addr": "0x498a88", "name": "float(0.3)", "type": "float", "comment": null}
-, {"addr": "0x498a8c", "name": "float(3)", "type": "float", "comment": null}
-, {"addr": "0x498a98", "name": "float(256)", "type": "float", "comment": null}
-, {"addr": "0x498a9c", "name": "float(1.5707964)", "type": "float", "comment": null}
-, {"addr": "0x498aa0", "name": "float(0.6)", "type": "float", "comment": null}
-, {"addr": "0x498aa4", "name": "float(18)", "type": "float", "comment": null}
-, {"addr": "0x498aa8", "name": "float(4)", "type": "float", "comment": null}
-, {"addr": "0x498aac", "name": "float(-100)", "type": "float", "comment": null}
-, {"addr": "0x498ab0", "name": "float(0.33333334)", "type": "float", "comment": null}
-, {"addr": "0x498ab4", "name": "float(10)", "type": "float", "comment": null}
-, {"addr": "0x498ab8", "name": "float(1000)", "type": "float", "comment": null}
-, {"addr": "0x498abc", "name": "float(65)", "type": "float", "comment": null}
-, {"addr": "0x498ac0", "name": "float(160)", "type": "float", "comment": null}
-, {"addr": "0x498ac4", "name": "float(57)", "type": "float", "comment": null}
-, {"addr": "0x498b28", "name": "float(2**32)", "type": "float", "comment": null}
-, {"addr": "0x498b2c", "name": "float(224)", "type": "float", "comment": null}
-, {"addr": "0x498b30", "name": "float(168)", "type": "float", "comment": null}
-, {"addr": "0x498b34", "name": "float(48)", "type": "float", "comment": null}
-, {"addr": "0x498b38", "name": "float(1e-04)", "type": "float", "comment": null}
-, {"addr": "0x498b3c", "name": "float(5)", "type": "float", "comment": null}
-, {"addr": "0x498b40", "name": "float(-999)", "type": "float", "comment": null}
-, {"addr": "0x498b44", "name": "float(-990)", "type": "float", "comment": null}
-, {"addr": "0x498b48", "name": "float(90)", "type": "float", "comment": null}
-, {"addr": "0x498b4c", "name": "float(0.94)", "type": "float", "comment": null}
-, {"addr": "0x498b50", "name": "float(240)", "type": "float", "comment": null}
-, {"addr": "0x498b54", "name": "float(6)", "type": "float", "comment": null}
-, {"addr": "0x498b58", "name": "float(1e-05)", "type": "float", "comment": null}
-, {"addr": "0x498b5c", "name": "float(-1)", "type": "float", "comment": null}
-, {"addr": "0x498b60", "name": "float(12.5)", "type": "float", "comment": null}
-, {"addr": "0x498b64", "name": "float(0.0025)", "type": "float", "comment": null}
-, {"addr": "0x498b68", "name": "float(0.01)", "type": "float", "comment": null}
-, {"addr": "0x498b6c", "name": "float(50)", "type": "float", "comment": null}
-, {"addr": "0x498b70", "name": "float(70)", "type": "float", "comment": null}
-, {"addr": "0x498b74", "name": "float(100)", "type": "float", "comment": null}
-, {"addr": "0x498b78", "name": "float(22)", "type": "float", "comment": null}
-, {"addr": "0x498b7c", "name": "float(40)", "type": "float", "comment": null}
-, {"addr": "0x498b80", "name": "float(198000000)", "type": "float", "comment": null}
-, {"addr": "0x498b84", "name": "float(20)", "type": "float", "comment": null}
-, {"addr": "0x498b88", "name": "float(126)", "type": "float", "comment": null}
-, {"addr": "0x498b8c", "name": "float(210)", "type": "float", "comment": null}
-, {"addr": "0x498b90", "name": "float(85000)", "type": "float", "comment": null}
-, {"addr": "0x498b94", "name": "float(80000)", "type": "float", "comment": null}
-, {"addr": "0x498b98", "name": "float(180621)", "type": "float", "comment": null}
-, {"addr": "0x498b9c", "name": "float(2.34)", "type": "float", "comment": null}
-, {"addr": "0x498ba0", "name": "float(1.12)", "type": "float", "comment": null}
-, {"addr": "0x498ba4", "name": "float(0.27)", "type": "float", "comment": null}
-, {"addr": "0x498ba8", "name": "float(0.1)", "type": "float", "comment": null}
-, {"addr": "0x498bac", "name": "float(6543)", "type": "float", "comment": null}
-, {"addr": "0x498bb0", "name": "float(100000)", "type": "float", "comment": null}
-, {"addr": "0x498bb4", "name": "float(15)", "type": "float", "comment": null}
-, {"addr": "0x498bb8", "name": "float(104)", "type": "float", "comment": null}
-, {"addr": "0x498bbc", "name": "float(93)", "type": "float", "comment": null}
-, {"addr": "0x498bc0", "name": "double(16.666666666666668)", "type": "double", "comment": null}
-, {"addr": "0x498bc8", "name": "double(0.016666666666666666)", "type": "double", "comment": null}
-, {"addr": "0x49c000", "name": "LIFE_BEFORE_MAIN", "type": "void*[0x2c]", "comment": null}
-, {"addr": "0x49f158", "name": "ECL_HARDCODED_FUNCS", "type": "void*[0x18]", "comment": null}
-, {"addr": "0x49fbf0", "name": "GUI", "type": "struct zGui", "comment": null}
-, {"addr": "0x49fc88", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
-, {"addr": "0x49fe20", "name": "REPLAY_RNG", "type": "int16_t", "comment": null}
-, {"addr": "0x4b9e44", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x4b9e48", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
-, {"addr": "0x4b9fa8", "name": "SPRITE_TEMP_VERTEX_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
-, {"addr": "0x4ba0d8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
-, {"addr": "0x4bdad8", "name": "PLAYER", "type": "struct zPlayer", "comment": null}
-, {"addr": "0x575950", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
-, {"addr": "0x575c20", "name": "WINDOW", "type": "struct zWindow", "comment": null}
-, {"addr": "0x575c4c", "name": "UNUSED_UPDATE_FUNC_575c4c", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x575c70", "name": "ITEM_MANAGER", "type": "struct zItemManager", "comment": null}
-, {"addr": "0x624210", "name": "DEBUG_LOG", "type": "void", "comment": null}
-, {"addr": "0x626218", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
-, {"addr": "0x626270", "name": "GAME_MANAGER", "type": "struct zGameManager", "comment": null}
-, {"addr": "0x62f8b4", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x62f8d4", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x62f8f4", "name": "GUI_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x62f914", "name": "GUI_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x62f934", "name": "BULLET_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x62f958", "name": "BULLET_MANAGER", "type": "struct zBulletManager", "comment": null}
-, {"addr": "0x9a9abc", "name": "BULLET_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x9a9adc", "name": "ENEMY_MANAGER_ON_DRAW_05", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x9a9b00", "name": "ENEMY_MANAGER", "type": "struct zEnemyManager", "comment": null}
-, {"addr": "0x12fe210", "name": "ENEMY_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x12fe230", "name": "ENEMY_MANAGER_ON_DRAW_07", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x12fe250", "name": "EFFECT_MANAGER", "type": "struct zEffectManager", "comment": null}
-, {"addr": "0x13478f8", "name": "EFFECT_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x1347918", "name": "EFFECT_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x1347938", "name": "ECL_MANAGER", "type": "int32_t", "comment": null}
-, {"addr": "0x1347ac0", "name": "UNUSED_UPDATE_FUNC_1347AC0", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x1347ae0", "name": "STAGE_ON_DRAW_03", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x1347b00", "name": "STAGE", "type": "struct zStage", "comment": null}
-, {"addr": "0x134cdb4", "name": "STAGE_ON_DRAW_04", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x134cdd4", "name": "STAGE_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x134cdf4", "name": "ASCII_MANAGER_ON_DRAW_10", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x134ce18", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
-, {"addr": "0x135dfac", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x135dfcc", "name": "ASCII_MANAGER_ON_DRAW_0b", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x135dff0", "name": "REPLAY_FPS_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
-, {"addr": "0x135e0f0", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
-, {"addr": "0x135e2a8", "name": "MUSIC_ROOM", "type": "void", "comment": null}
+
+[ {"addr": "0x48d68c", "name": "float(-1e-05)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x48d690", "name": "float(9.9999994e-11)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a4c", "name": "float(0)", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x498a50", "name": "float(0.5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a54", "name": "float(1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a58", "name": "float(0.99)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a5c", "name": "float(-3.1415927)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a60", "name": "float(6.2831855)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a64", "name": "float(3.1415927)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a68", "name": "float(448)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a6c", "name": "float(384)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a70", "name": "float(2)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a74", "name": "float(416)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a78", "name": "float(368)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a7c", "name": "float(8)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a80", "name": "float(16)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a84", "name": "float(32)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a88", "name": "float(0.3)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a8c", "name": "float(3)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a98", "name": "float(256)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498a9c", "name": "float(1.5707964)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498aa0", "name": "float(0.6)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498aa4", "name": "float(18)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498aa8", "name": "float(4)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498aac", "name": "float(-100)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498ab0", "name": "float(0.33333334)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498ab4", "name": "float(10)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498ab8", "name": "float(1000)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498abc", "name": "float(65)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498ac0", "name": "float(160)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498ac4", "name": "float(57)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b28", "name": "float(2**32)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b2c", "name": "float(224)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b30", "name": "float(168)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b34", "name": "float(48)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b38", "name": "float(1e-04)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b3c", "name": "float(5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b40", "name": "float(-999)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b44", "name": "float(-990)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b48", "name": "float(90)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b4c", "name": "float(0.94)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b50", "name": "float(240)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b54", "name": "float(6)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b58", "name": "float(1e-05)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b5c", "name": "float(-1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b60", "name": "float(12.5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b64", "name": "float(0.0025)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b68", "name": "float(0.01)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b6c", "name": "float(50)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b70", "name": "float(70)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b74", "name": "float(100)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b78", "name": "float(22)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b7c", "name": "float(40)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b80", "name": "float(198000000)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b84", "name": "float(20)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b88", "name": "float(126)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b8c", "name": "float(210)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b90", "name": "float(85000)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b94", "name": "float(80000)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b98", "name": "float(180621)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498b9c", "name": "float(2.34)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498ba0", "name": "float(1.12)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498ba4", "name": "float(0.27)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498ba8", "name": "float(0.1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498bac", "name": "float(6543)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498bb0", "name": "float(100000)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498bb4", "name": "float(15)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498bb8", "name": "float(104)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498bbc", "name": "float(93)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x498bc0", "name": "double(16.666666666666668)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x498bc8", "name": "double(0.016666666666666666)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x49c000", "name": "LIFE_BEFORE_MAIN", "type": {"is": "array", "len": 44, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x49f158", "name": "ECL_HARDCODED_FUNCS", "type": {"is": "array", "len": 24, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x49fbf0", "name": "GUI", "type": {"is": "named", "name": "zGui"}}
+, {"addr": "0x49fc88", "name": "JOYPAD_CAPS", "type": {"is": "named", "name": "JOYCAPSA"}}
+, {"addr": "0x49fe20", "name": "REPLAY_RNG", "type": {"is": "int", "signed": true, "size": 2}}
+, {"addr": "0x4b9e44", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}
+, {"addr": "0x4b9e48", "name": "REPLAY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayManager"}}}
+, {"addr": "0x4b9fa8", "name": "SPRITE_TEMP_VERTEX_BUFFER", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zRenderVertex144"}}}
+, {"addr": "0x4ba0d8", "name": "SOUND_MANAGER", "type": {"is": "void"}}
+, {"addr": "0x4bdad8", "name": "PLAYER", "type": {"is": "named", "name": "zPlayer"}}
+, {"addr": "0x575950", "name": "SUPERVISOR", "type": {"is": "named", "name": "zSupervisor"}}
+, {"addr": "0x575c20", "name": "WINDOW", "type": {"is": "named", "name": "zWindow"}}
+, {"addr": "0x575c4c", "name": "UNUSED_UPDATE_FUNC_575c4c", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x575c70", "name": "ITEM_MANAGER", "type": {"is": "named", "name": "zItemManager"}}
+, {"addr": "0x624210", "name": "DEBUG_LOG", "type": {"is": "void"}}
+, {"addr": "0x626218", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "void"}}
+, {"addr": "0x626270", "name": "GAME_MANAGER", "type": {"is": "named", "name": "zGameManager"}}
+, {"addr": "0x62f8b4", "name": "GAME_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x62f8d4", "name": "GAME_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x62f8f4", "name": "GUI_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x62f914", "name": "GUI_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x62f934", "name": "BULLET_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x62f958", "name": "BULLET_MANAGER", "type": {"is": "named", "name": "zBulletManager"}}
+, {"addr": "0x9a9abc", "name": "BULLET_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x9a9adc", "name": "ENEMY_MANAGER_ON_DRAW_05", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x9a9b00", "name": "ENEMY_MANAGER", "type": {"is": "named", "name": "zEnemyManager"}}
+, {"addr": "0x12fe210", "name": "ENEMY_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x12fe230", "name": "ENEMY_MANAGER_ON_DRAW_07", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x12fe250", "name": "EFFECT_MANAGER", "type": {"is": "named", "name": "zEffectManager"}}
+, {"addr": "0x13478f8", "name": "EFFECT_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x1347918", "name": "EFFECT_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x1347938", "name": "ECL_MANAGER", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x1347ac0", "name": "UNUSED_UPDATE_FUNC_1347AC0", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x1347ae0", "name": "STAGE_ON_DRAW_03", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x1347b00", "name": "STAGE", "type": {"is": "named", "name": "zStage"}}
+, {"addr": "0x134cdb4", "name": "STAGE_ON_DRAW_04", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x134cdd4", "name": "STAGE_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x134cdf4", "name": "ASCII_MANAGER_ON_DRAW_10", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x134ce18", "name": "ASCII_MANAGER", "type": {"is": "named", "name": "zAsciiManager"}}
+, {"addr": "0x135dfac", "name": "ASCII_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x135dfcc", "name": "ASCII_MANAGER_ON_DRAW_0b", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x135dff0", "name": "REPLAY_FPS_SPRINTF_BUFFER", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+, {"addr": "0x135e0f0", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+, {"addr": "0x135e2a8", "name": "MUSIC_ROOM", "type": {"is": "void"}}
 ]

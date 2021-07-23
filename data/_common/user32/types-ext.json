@@ -1,0 +1,83 @@
+
+{ "BSMINFO": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cbSize", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "hdesk", "type": {"is": "named", "name": "HDESK"}}
+    , {"offset": "0x8", "name": "hwnd", "type": {"is": "named", "name": "HWND"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "luid", "type": {"is": "named", "name": "LUID"}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "HDESK": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "HDWP": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "HHOOK": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "HKL": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "HMENU": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "HOOKPROC": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "named", "name": "LRESULT"}, "params": [{"type": {"is": "int", "signed": true, "size": 4}}, {"type": {"is": "named", "name": "WPARAM"}}, {"type": {"is": "named", "name": "LPARAM"}}]}}
+
+, "LPMSG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "MSG"}}}
+
+, "LPRECT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}
+
+, "LUID": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "LowPart", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "HighPart", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "MSG": 
+  { "is": "struct"
+  , "size": "0x20"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "hwnd", "type": {"is": "named", "name": "HWND"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "message", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "wParam", "type": {"is": "named", "name": "WPARAM"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "lParam", "type": {"is": "named", "name": "LPARAM"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "time", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "pt", "type": {"is": "named", "name": "POINT"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "lPrivate", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "__end", "type": null}
+    ]
+  }
+
+, "NPMSG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "MSG"}}}
+
+, "PBSMINFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "BSMINFO"}}}
+
+, "PDWORD_PTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "DWORD_PTR"}}}
+
+, "PLUID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "LUID"}}}
+
+, "PMSG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "MSG"}}}
+
+, "WNDPROC": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "named", "name": "LRESULT"}, "params": [{"type": {"is": "named", "name": "HWND"}}, {"type": {"is": "named", "name": "UINT"}}, {"type": {"is": "named", "name": "WPARAM"}}, {"type": {"is": "named", "name": "LPARAM"}}]}}
+
+, "WPARAM": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+}

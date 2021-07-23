@@ -1,23 +1,24 @@
-[ {"addr": "0x4952bc", "name": "float(1)", "type": "float", "comment": null}
-, {"addr": "0x4958b0", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[0x8]", "comment": null}
-, {"addr": "0x4a9f80", "name": "ASCII_MANAGER", "type": "void", "comment": null}
-, {"addr": "0x4bdd2c", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4bdd4c", "name": "ASCII_MANAGER_ON_DRAW_1c", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4bdd6c", "name": "ASCII_MANAGER_ON_DRAW_15", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4bdd90", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
-, {"addr": "0x4bdd98", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
-, {"addr": "0x4bdd9c", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
-, {"addr": "0x4bddc0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
-, {"addr": "0x4bddc4", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
-, {"addr": "0x4be3c8", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
-, {"addr": "0x4c45dc", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
-, {"addr": "0x4c45e0", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
-, {"addr": "0x4c45e8", "name": "WINDOW", "type": "int32_t", "comment": null}
-, {"addr": "0x4c4670", "name": "SUPERVISOR", "type": "void", "comment": null}
-, {"addr": "0x4c4e38", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
-, {"addr": "0x4c4e6c", "name": "PHOTO_MANAGER_PTR", "type": "struct zPhotoManager*", "comment": null}
-, {"addr": "0x4c4e70", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
-, {"addr": "0x4c4ee8", "name": "SOUND_MANAGER", "type": "void", "comment": null}
-, {"addr": "0x4ca1b8", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x4ca1c0", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
+
+[ {"addr": "0x4952bc", "name": "float(1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4958b0", "name": "VTABLE_LASER_BASE_CLASS", "type": {"is": "array", "len": 8, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4a9f80", "name": "ASCII_MANAGER", "type": {"is": "void"}}
+, {"addr": "0x4bdd2c", "name": "ASCII_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4bdd4c", "name": "ASCII_MANAGER_ON_DRAW_1c", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4bdd6c", "name": "ASCII_MANAGER_ON_DRAW_15", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4bdd90", "name": "STAGE_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zStage"}}}
+, {"addr": "0x4bdd98", "name": "BULLET_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletManager"}}}
+, {"addr": "0x4bdd9c", "name": "SPELLCARD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zSpellcard"}}}
+, {"addr": "0x4bddc0", "name": "ENEMY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyManager"}}}
+, {"addr": "0x4bddc4", "name": "GUI_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGui"}}}
+, {"addr": "0x4be3c8", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "void"}}
+, {"addr": "0x4c45dc", "name": "ITEM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zItemManager"}}}
+, {"addr": "0x4c45e0", "name": "LASER_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zLaserManager"}}}
+, {"addr": "0x4c45e8", "name": "WINDOW", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4c4670", "name": "SUPERVISOR", "type": {"is": "void"}}
+, {"addr": "0x4c4e38", "name": "PAUSE_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPauseMenu"}}}
+, {"addr": "0x4c4e6c", "name": "PHOTO_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPhotoManager"}}}
+, {"addr": "0x4c4e70", "name": "PLAYER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPlayer"}}}
+, {"addr": "0x4c4ee8", "name": "SOUND_MANAGER", "type": {"is": "void"}}
+, {"addr": "0x4ca1b8", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}
+, {"addr": "0x4ca1c0", "name": "SPRITE_TEMP_BUFFER", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zRenderVertex144"}}}
 ]

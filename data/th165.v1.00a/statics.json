@@ -1,39 +1,40 @@
-[ {"addr": "0x49c0c4", "name": "ECL_EXT_DAMAGE_FUNCS", "type": "void*[0x3]", "comment": null}
-, {"addr": "0x49c888", "name": "VTABLE_LASER_CURVE", "type": "void*[0x1a]", "comment": null}
-, {"addr": "0x49c8f4", "name": "VTABLE_LASER_BEAM", "type": "void*[0x1a]", "comment": null}
-, {"addr": "0x49c960", "name": "VTABLE_LASER_INFINITE", "type": "void*[0x1a]", "comment": null}
-, {"addr": "0x49c9cc", "name": "VTABLE_LASER_LINE", "type": "void*[0x1a]", "comment": null}
-, {"addr": "0x4a46f0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table[0x1]", "comment": null}
-, {"addr": "0x4a4710", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
-, {"addr": "0x4a47b0", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
-, {"addr": "0x4a8a48", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x4b19c8", "name": "DEBUG_THING", "type": "char", "comment": null}
-, {"addr": "0x4b3b10", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
-, {"addr": "0x4b54f4", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
-, {"addr": "0x4b54f8", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
-, {"addr": "0x4b5500", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
-, {"addr": "0x4b5504", "name": "GLOBAL_VEE_DEE_PTR", "type": "struct zGlobal15cVeeDee*", "comment": null}
-, {"addr": "0x4b550c", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
-, {"addr": "0x4b5510", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
-, {"addr": "0x4b5518", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
-, {"addr": "0x4b551c", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
-, {"addr": "0x4b5520", "name": "ECL_HITBOX_FUNCS", "type": "void*[0x1]", "comment": null}
-, {"addr": "0x4b5524", "name": "FPS_COUNTER_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4b5528", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
-, {"addr": "0x4b552c", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
-, {"addr": "0x4b5530", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
-, {"addr": "0x4b5630", "name": "HELP_MANUAL_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4b5634", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
-, {"addr": "0x4b5638", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
-, {"addr": "0x4b563c", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
-, {"addr": "0x4b5648", "name": "NOTICE_MANAGER_PTR", "type": "struct zNoticeManager*", "comment": null}
-, {"addr": "0x4b564c", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
-, {"addr": "0x4b5650", "name": "PHOTO_MANAGER_PTR", "type": "struct zPhotoManager*", "comment": null}
-, {"addr": "0x4b5654", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
-, {"addr": "0x4b565c", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
-, {"addr": "0x4b5674", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4ed880", "name": "TUTORIAL_PTR", "type": "struct zTutorial*", "comment": null}
-, {"addr": "0x4ed88c", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x507b70", "name": "WINDOW", "type": "int32_t", "comment": null}
-, {"addr": "0x50f810", "name": "SPRITE_TEMP_BUFFER", "type": "int32_t", "comment": null}
+
+[ {"addr": "0x49c0c4", "name": "ECL_EXT_DAMAGE_FUNCS", "type": {"is": "array", "len": 3, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x49c888", "name": "VTABLE_LASER_CURVE", "type": {"is": "array", "len": 26, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x49c8f4", "name": "VTABLE_LASER_BEAM", "type": {"is": "array", "len": 26, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x49c960", "name": "VTABLE_LASER_INFINITE", "type": {"is": "array", "len": 26, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x49c9cc", "name": "VTABLE_LASER_LINE", "type": {"is": "array", "len": 26, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4a46f0", "name": "__debug_directory_entries", "type": {"is": "array", "len": 1, "inner": {"is": "named", "name": "Debug_Directory_Table"}}}
+, {"addr": "0x4a4710", "name": "__load_configuration_directory_table", "type": {"is": "named", "name": "Load_Configuration_Directory_Table"}}
+, {"addr": "0x4a47b0", "name": "__tls_directory", "type": {"is": "named", "name": "TLS_Directory"}}
+, {"addr": "0x4a8a48", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4b19c8", "name": "DEBUG_THING", "type": {"is": "int", "signed": true, "size": 1}}
+, {"addr": "0x4b3b10", "name": "SUPERVISOR", "type": {"is": "named", "name": "zSupervisor"}}
+, {"addr": "0x4b54f4", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4b54f8", "name": "ASCII_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAsciiManager"}}}
+, {"addr": "0x4b5500", "name": "STAGE_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zStage"}}}
+, {"addr": "0x4b5504", "name": "GLOBAL_VEE_DEE_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGlobal15cVeeDee"}}}
+, {"addr": "0x4b550c", "name": "BULLET_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletManager"}}}
+, {"addr": "0x4b5510", "name": "SPELLCARD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zSpellcard"}}}
+, {"addr": "0x4b5518", "name": "EFFECT_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEffectManager"}}}
+, {"addr": "0x4b551c", "name": "ENEMY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyManager"}}}
+, {"addr": "0x4b5520", "name": "ECL_HITBOX_FUNCS", "type": {"is": "array", "len": 1, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4b5524", "name": "FPS_COUNTER_PTR", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4b5528", "name": "GUI_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGui"}}}
+, {"addr": "0x4b552c", "name": "GAME_THREAD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGameThread"}}}
+, {"addr": "0x4b5530", "name": "CURRENT_REPLAY_FILENAME", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+, {"addr": "0x4b5630", "name": "HELP_MANUAL_PTR", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4b5634", "name": "ITEM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zItemManager"}}}
+, {"addr": "0x4b5638", "name": "LASER_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zLaserManager"}}}
+, {"addr": "0x4b563c", "name": "LOADING_THREAD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zLoadingThread"}}}
+, {"addr": "0x4b5648", "name": "NOTICE_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zNoticeManager"}}}
+, {"addr": "0x4b564c", "name": "PAUSE_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPauseMenu"}}}
+, {"addr": "0x4b5650", "name": "PHOTO_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPhotoManager"}}}
+, {"addr": "0x4b5654", "name": "PLAYER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPlayer"}}}
+, {"addr": "0x4b565c", "name": "REPLAY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayManager"}}}
+, {"addr": "0x4b5674", "name": "MAIN_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMainMenu"}}}
+, {"addr": "0x4ed880", "name": "TUTORIAL_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zTutorial"}}}
+, {"addr": "0x4ed88c", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}
+, {"addr": "0x507b70", "name": "WINDOW", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x50f810", "name": "SPRITE_TEMP_BUFFER", "type": {"is": "int", "signed": true, "size": 4}}
 ]

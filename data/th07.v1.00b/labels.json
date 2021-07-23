@@ -1,257 +1,255 @@
+
 { "ecl": 
-  [ ["0x410741", "1__delete"]
-  , ["0x410749", "45__wait"]
-  , ["0x4107b4", "3__loop"]
-  , ["0x410823", "2__jump"]
-  , ["0x410843", "4__iset"]
-  , ["0x410898", "5__fset"]
-  , ["0x4108ee", "40__normRad"]
-  , ["0x410958", "6__iSetRand"]
-  , ["0x4109da", "7__iSetRand2"]
-  , ["0x410a92", "8__fSetRand"]
-  , ["0x410afe", "9__fSetRand2"]
-  , ["0x410ba1", "10__iset_rand_sign"]
-  , ["0x410c11", "11__fset_rand_sign"]
-  , ["0x410ca3", "17__inc"]
-  , ["0x410cd9", "18__dec"]
-  , ["0x410d0f", "43__iset_from_enm"]
-  , ["0x410d9e", "44__fset_from_enm"]
-  , ["0x410e2e", "12__iadd"]
-  , ["0x410eb9", "19__fadd"]
-  , ["0x410f52", "13__isub"]
-  , ["0x410fdd", "20__fsub"]
-  , ["0x411076", "14__imul"]
-  , ["0x411102", "21__fmul"]
-  , ["0x41119b", "15__idiv"]
-  , ["0x411229", "22__fdiv"]
-  , ["0x4112c2", "16__imod"]
-  , ["0x411350", "23__fmod"]
-  , ["0x4113f4", "24__fset_sin"]
-  , ["0x411461", "25__fset_cos"]
-  , ["0x4114ce", "26__mathAngle"]
-  , ["0x4115e0", "159__TODO_15"]
-  , ["0x4116ed", "27__floatTime"]
-  , ["0x411939", "28__jmp_equ"]
-  , ["0x4119b1", "29__jmp_equ_f"]
-  , ["0x411a30", "30__jmp_neq"]
-  , ["0x411aa8", "31__jmp_neq_f"]
-  , ["0x411b27", "32__jmp_lss"]
-  , ["0x411b9f", "33__jmp_lss_f"]
-  , ["0x411c1e", "34__jmp_leq"]
-  , ["0x411c96", "35__jmp_leq_f"]
-  , ["0x411d15", "36__jmp_gre"]
-  , ["0x411d8d", "37__jmp_gre_f"]
-  , ["0x411e0c", "38__jmp_geq"]
-  , ["0x411e84", "39__jmp_geq_f"]
-  , ["0x411f20", "41__call"]
-  , ["0x411fe6", "42__ret"]
-  , ["0x41207e", "95__anmSet"]
-  , ["0x412105", "97__anmSetSlot"]
-  , ["0x4122ab", "46__movePos"]
-  , ["0x412378", "47__TODO_5"]
-  , ["0x412490", "48__rot"]
-  , ["0x4124ed", "53__moveAtPlayer"]
-  , ["0x41259d", "49__spd"]
-  , ["0x4125fa", "50__acc"]
-  , ["0x412655", "59"]
-  , ["0x4126e5", "60"]
-  , ["0x412773", "61"]
-  , ["0x412803", "64__multiple"]
-  , ["0x412ccb", "79__etEx"]
-  , ["0x412e7f", "98__atDeath"]
-  , ["0x412eb1", "73__etOnAuto"]
-  , ["0x412f93", "74__etOnAutoDelay"]
-  , ["0x4130b4", "75__etDelay"]
-  , ["0x4130ce", "76__etOn"]
-  , ["0x4130e8", "77__etNow"]
-  , ["0x4131ab", "78__etOffset"]
-  , ["0x413270", "82__multiple"]
-  , ["0x413567", "84__laserId"]
-  , ["0x4135ab", "85__laserRotate"]
-  , ["0x41365d", "152__laserAngle"]
-  , ["0x4136f5", "86__laserAim"]
-  , ["0x4137ab", "87__laserOffset"]
-  , ["0x4138f6", "156__TODO_8"]
-  , ["0x41398d", "88__laserTest"]
-  , ["0x413a0d", "89__laserBreak"]
-  , ["0x413b0b", "134__laserClear"]
-  , ["0x413b3b", "157__TODO_13"]
-  , ["0x413bd3", "158__TODO_14"]
-  , ["0x413cb9", "147__TODO_12"]
-  , ["0x413cfa", "99__setBoss"]
-  , ["0x413e74", "100__cardEff"]
-  , ["0x413f0e", "54__moveDirTime"]
-  , ["0x414073", "55__move_point"]
-  , ["0x414083", "56__moveCircleAbs"]
-  , ["0x4142d5", "57__set_orbit_distance"]
-  , ["0x41435a", "58"]
-  , ["0x4143df", "62__moveLimit"]
-  , ["0x4144f9", "63__moveLimitClear"]
-  , ["0x414513", "51__moveAngleRand"]
-  , ["0x4145f9", "52__moveAngleRand2"]
-  , ["0x4147b6", "96__anmSetExManual"]
-  , ["0x41481a", "101__hitboxSet"]
-  , ["0x4148df", "153"]
-  , ["0x4149a4", "102__setCollideable"]
-  , ["0x4149ca", "103__setDamageable"]
-  , ["0x4149f1", "104__setTargetable"]
-  , ["0x414a19", "105__playSound"]
-  , ["0x414a61", "106__setDeathFlags"]
-  , ["0x414a85", "107__deathCallback"]
-  , ["0x414a9a", "108__valSet"]
-  , ["0x414b15", "109__TODO4"]
-  , ["0x414c02", "110__lifeSet"]
-  , ["0x414cae", "139__setLifeBar"]
-  , ["0x414dd6", "90__spell"]
-  , ["0x414de6", "91__spellEnd"]
-  , ["0x414df6", "111__timerSet"]
-  , ["0x414e61", "112__lifeThreshold"]
-  , ["0x414ea5", "113__lifeCallback"]
-  , ["0x414ee9", "148__interrupt"]
-  , ["0x414fda", "114__timerThreshold"]
-  , ["0x415053", "115__timerCallback"]
-  , ["0x415097", "144__callRepeat"]
-  , ["0x415190", "116__setInvincible"]
-  , ["0x4151b4", "117__spawnParticle"]
-  , ["0x415256", "118__effCreate"]
-  , ["0x4153a9", "119__dropItems"]
-  , ["0x4154c9", "154__dropPointItems"]
-  , ["0x4155b4", "120__anmRotSet"]
-  , ["0x4155dc", "121__funcCall"]
-  , ["0x415624", "122__funcSet"]
-  , ["0x4156c3", "123__callSTD"]
-  , ["0x41570d", "124__dropItemId"]
-  , ["0x41575f", "125__setLivesIN"]
-  , ["0x4157a0", "126__setLivesEoSD"]
-  , ["0x4157f0", "92__enmCreateA"]
-  , ["0x415999", "93__enmCreate"]
-  , ["0x415b91", "94__enmKillAll"]
-  , ["0x415ba7", "128__anmBreak"]
-  , ["0x415bed", "129__anmBreakSlot"]
-  , ["0x415c10", "80__etCancel"]
-  , ["0x415c21", "81__etSound"]
-  , ["0x415d0f", "130__TODO_6"]
-  , ["0x415d37", "131__etRankSet"]
-  , ["0x415ec0", "132__setInvisible"]
-  , ["0x415ee7", "133__TODO_7"]
-  , ["0x415f33", "135__spellTimeout"]
-  , ["0x415f5a", "136__setGrazeable"]
-  , ["0x415f8c", "137__setOOBImmune"]
-  , ["0x415fb4", "138__trailSet"]
-  , ["0x4160cf", "140"]
-  , ["0x4161c7", "142__setArmored"]
-  , ["0x416233", "143__etStarClearRadius"]
-  , ["0x416284", "145__callMem"]
-  , ["0x416342", "146__etClear"]
-  , ["0x416353", "149__TODO_11"]
-  , ["0x416495", "150__anmRotate"]
-  , ["0x4164d7", "151__mathCirclePos"]
-  , ["0x41661a", "155__TODO_9"]
-  , ["0x4166e6", "160__addCherry"]
-  , ["0x416729", "161__setInvicPause"]
-  , ["0x41677b", "0__nop"]
+  [ {"addr": "0x410741", "label": "1__delete"}
+  , {"addr": "0x410749", "label": "45__wait"}
+  , {"addr": "0x4107b4", "label": "3__loop"}
+  , {"addr": "0x410823", "label": "2__jump"}
+  , {"addr": "0x410843", "label": "4__iset"}
+  , {"addr": "0x410898", "label": "5__fset"}
+  , {"addr": "0x4108ee", "label": "40__normRad"}
+  , {"addr": "0x410958", "label": "6__iSetRand"}
+  , {"addr": "0x4109da", "label": "7__iSetRand2"}
+  , {"addr": "0x410a92", "label": "8__fSetRand"}
+  , {"addr": "0x410afe", "label": "9__fSetRand2"}
+  , {"addr": "0x410ba1", "label": "10__iset_rand_sign"}
+  , {"addr": "0x410c11", "label": "11__fset_rand_sign"}
+  , {"addr": "0x410ca3", "label": "17__inc"}
+  , {"addr": "0x410cd9", "label": "18__dec"}
+  , {"addr": "0x410d0f", "label": "43__iset_from_enm"}
+  , {"addr": "0x410d9e", "label": "44__fset_from_enm"}
+  , {"addr": "0x410e2e", "label": "12__iadd"}
+  , {"addr": "0x410eb9", "label": "19__fadd"}
+  , {"addr": "0x410f52", "label": "13__isub"}
+  , {"addr": "0x410fdd", "label": "20__fsub"}
+  , {"addr": "0x411076", "label": "14__imul"}
+  , {"addr": "0x411102", "label": "21__fmul"}
+  , {"addr": "0x41119b", "label": "15__idiv"}
+  , {"addr": "0x411229", "label": "22__fdiv"}
+  , {"addr": "0x4112c2", "label": "16__imod"}
+  , {"addr": "0x411350", "label": "23__fmod"}
+  , {"addr": "0x4113f4", "label": "24__fset_sin"}
+  , {"addr": "0x411461", "label": "25__fset_cos"}
+  , {"addr": "0x4114ce", "label": "26__mathAngle"}
+  , {"addr": "0x4115e0", "label": "159__TODO_15"}
+  , {"addr": "0x4116ed", "label": "27__floatTime"}
+  , {"addr": "0x411939", "label": "28__jmp_equ"}
+  , {"addr": "0x4119b1", "label": "29__jmp_equ_f"}
+  , {"addr": "0x411a30", "label": "30__jmp_neq"}
+  , {"addr": "0x411aa8", "label": "31__jmp_neq_f"}
+  , {"addr": "0x411b27", "label": "32__jmp_lss"}
+  , {"addr": "0x411b9f", "label": "33__jmp_lss_f"}
+  , {"addr": "0x411c1e", "label": "34__jmp_leq"}
+  , {"addr": "0x411c96", "label": "35__jmp_leq_f"}
+  , {"addr": "0x411d15", "label": "36__jmp_gre"}
+  , {"addr": "0x411d8d", "label": "37__jmp_gre_f"}
+  , {"addr": "0x411e0c", "label": "38__jmp_geq"}
+  , {"addr": "0x411e84", "label": "39__jmp_geq_f"}
+  , {"addr": "0x411f20", "label": "41__call"}
+  , {"addr": "0x411fe6", "label": "42__ret"}
+  , {"addr": "0x41207e", "label": "95__anmSet"}
+  , {"addr": "0x412105", "label": "97__anmSetSlot"}
+  , {"addr": "0x4122ab", "label": "46__movePos"}
+  , {"addr": "0x412378", "label": "47__TODO_5"}
+  , {"addr": "0x412490", "label": "48__rot"}
+  , {"addr": "0x4124ed", "label": "53__moveAtPlayer"}
+  , {"addr": "0x41259d", "label": "49__spd"}
+  , {"addr": "0x4125fa", "label": "50__acc"}
+  , {"addr": "0x412655", "label": "59"}
+  , {"addr": "0x4126e5", "label": "60"}
+  , {"addr": "0x412773", "label": "61"}
+  , {"addr": "0x412803", "label": "64__multiple"}
+  , {"addr": "0x412ccb", "label": "79__etEx"}
+  , {"addr": "0x412e7f", "label": "98__atDeath"}
+  , {"addr": "0x412eb1", "label": "73__etOnAuto"}
+  , {"addr": "0x412f93", "label": "74__etOnAutoDelay"}
+  , {"addr": "0x4130b4", "label": "75__etDelay"}
+  , {"addr": "0x4130ce", "label": "76__etOn"}
+  , {"addr": "0x4130e8", "label": "77__etNow"}
+  , {"addr": "0x4131ab", "label": "78__etOffset"}
+  , {"addr": "0x413270", "label": "82__multiple"}
+  , {"addr": "0x413567", "label": "84__laserId"}
+  , {"addr": "0x4135ab", "label": "85__laserRotate"}
+  , {"addr": "0x41365d", "label": "152__laserAngle"}
+  , {"addr": "0x4136f5", "label": "86__laserAim"}
+  , {"addr": "0x4137ab", "label": "87__laserOffset"}
+  , {"addr": "0x4138f6", "label": "156__TODO_8"}
+  , {"addr": "0x41398d", "label": "88__laserTest"}
+  , {"addr": "0x413a0d", "label": "89__laserBreak"}
+  , {"addr": "0x413b0b", "label": "134__laserClear"}
+  , {"addr": "0x413b3b", "label": "157__TODO_13"}
+  , {"addr": "0x413bd3", "label": "158__TODO_14"}
+  , {"addr": "0x413cb9", "label": "147__TODO_12"}
+  , {"addr": "0x413cfa", "label": "99__setBoss"}
+  , {"addr": "0x413e74", "label": "100__cardEff"}
+  , {"addr": "0x413f0e", "label": "54__moveDirTime"}
+  , {"addr": "0x414073", "label": "55__move_point"}
+  , {"addr": "0x414083", "label": "56__moveCircleAbs"}
+  , {"addr": "0x4142d5", "label": "57__set_orbit_distance"}
+  , {"addr": "0x41435a", "label": "58"}
+  , {"addr": "0x4143df", "label": "62__moveLimit"}
+  , {"addr": "0x4144f9", "label": "63__moveLimitClear"}
+  , {"addr": "0x414513", "label": "51__moveAngleRand"}
+  , {"addr": "0x4145f9", "label": "52__moveAngleRand2"}
+  , {"addr": "0x4147b6", "label": "96__anmSetExManual"}
+  , {"addr": "0x41481a", "label": "101__hitboxSet"}
+  , {"addr": "0x4148df", "label": "153"}
+  , {"addr": "0x4149a4", "label": "102__setCollideable"}
+  , {"addr": "0x4149ca", "label": "103__setDamageable"}
+  , {"addr": "0x4149f1", "label": "104__setTargetable"}
+  , {"addr": "0x414a19", "label": "105__playSound"}
+  , {"addr": "0x414a61", "label": "106__setDeathFlags"}
+  , {"addr": "0x414a85", "label": "107__deathCallback"}
+  , {"addr": "0x414a9a", "label": "108__valSet"}
+  , {"addr": "0x414b15", "label": "109__TODO4"}
+  , {"addr": "0x414c02", "label": "110__lifeSet"}
+  , {"addr": "0x414cae", "label": "139__setLifeBar"}
+  , {"addr": "0x414dd6", "label": "90__spell"}
+  , {"addr": "0x414de6", "label": "91__spellEnd"}
+  , {"addr": "0x414df6", "label": "111__timerSet"}
+  , {"addr": "0x414e61", "label": "112__lifeThreshold"}
+  , {"addr": "0x414ea5", "label": "113__lifeCallback"}
+  , {"addr": "0x414ee9", "label": "148__interrupt"}
+  , {"addr": "0x414fda", "label": "114__timerThreshold"}
+  , {"addr": "0x415053", "label": "115__timerCallback"}
+  , {"addr": "0x415097", "label": "144__callRepeat"}
+  , {"addr": "0x415190", "label": "116__setInvincible"}
+  , {"addr": "0x4151b4", "label": "117__spawnParticle"}
+  , {"addr": "0x415256", "label": "118__effCreate"}
+  , {"addr": "0x4153a9", "label": "119__dropItems"}
+  , {"addr": "0x4154c9", "label": "154__dropPointItems"}
+  , {"addr": "0x4155b4", "label": "120__anmRotSet"}
+  , {"addr": "0x4155dc", "label": "121__funcCall"}
+  , {"addr": "0x415624", "label": "122__funcSet"}
+  , {"addr": "0x4156c3", "label": "123__callSTD"}
+  , {"addr": "0x41570d", "label": "124__dropItemId"}
+  , {"addr": "0x41575f", "label": "125__setLivesIN"}
+  , {"addr": "0x4157a0", "label": "126__setLivesEoSD"}
+  , {"addr": "0x4157f0", "label": "92__enmCreateA"}
+  , {"addr": "0x415999", "label": "93__enmCreate"}
+  , {"addr": "0x415b91", "label": "94__enmKillAll"}
+  , {"addr": "0x415ba7", "label": "128__anmBreak"}
+  , {"addr": "0x415bed", "label": "129__anmBreakSlot"}
+  , {"addr": "0x415c10", "label": "80__etCancel"}
+  , {"addr": "0x415c21", "label": "81__etSound"}
+  , {"addr": "0x415d0f", "label": "130__TODO_6"}
+  , {"addr": "0x415d37", "label": "131__etRankSet"}
+  , {"addr": "0x415ec0", "label": "132__setInvisible"}
+  , {"addr": "0x415ee7", "label": "133__TODO_7"}
+  , {"addr": "0x415f33", "label": "135__spellTimeout"}
+  , {"addr": "0x415f5a", "label": "136__setGrazeable"}
+  , {"addr": "0x415f8c", "label": "137__setOOBImmune"}
+  , {"addr": "0x415fb4", "label": "138__trailSet"}
+  , {"addr": "0x4160cf", "label": "140"}
+  , {"addr": "0x4161c7", "label": "142__setArmored"}
+  , {"addr": "0x416233", "label": "143__etStarClearRadius"}
+  , {"addr": "0x416284", "label": "145__callMem"}
+  , {"addr": "0x416342", "label": "146__etClear"}
+  , {"addr": "0x416353", "label": "149__TODO_11"}
+  , {"addr": "0x416495", "label": "150__anmRotate"}
+  , {"addr": "0x4164d7", "label": "151__mathCirclePos"}
+  , {"addr": "0x41661a", "label": "155__TODO_9"}
+  , {"addr": "0x4166e6", "label": "160__addCherry"}
+  , {"addr": "0x416729", "label": "161__setInvicPause"}
+  , {"addr": "0x41677b", "label": "0__nop"}
   ]
-
 , "msg": 
-  [ ["0x429d42", "0__end"]
-  , ["0x429d54", "1__enter"]
-  , ["0x429e29", "2__face"]
-  , ["0x429f38", "3__textSet"]
-  , ["0x42a09d", "4__textPause"]
-  , ["0x42a126", "5__anmInterrupt"]
-  , ["0x42a187", "6__enemyAppear"]
-  , ["0x42a19f", "7__music"]
-  , ["0x42a28e", "8__intro"]
-  , ["0x42a350", "9__stageResults"]
-  , ["0x42a51d", "10__stop"]
-  , ["0x42a522", "12__musicFadeout"]
-  , ["0x42a53b", "14__screenFade"]
-  , ["0x42a560", "11__stageNext"]
-  , ["0x42a71b", "13__skippable"]
+  [ {"addr": "0x429d42", "label": "0__end"}
+  , {"addr": "0x429d54", "label": "1__enter"}
+  , {"addr": "0x429e29", "label": "2__face"}
+  , {"addr": "0x429f38", "label": "3__textSet"}
+  , {"addr": "0x42a09d", "label": "4__textPause"}
+  , {"addr": "0x42a126", "label": "5__anmInterrupt"}
+  , {"addr": "0x42a187", "label": "6__enemyAppear"}
+  , {"addr": "0x42a19f", "label": "7__music"}
+  , {"addr": "0x42a28e", "label": "8__intro"}
+  , {"addr": "0x42a350", "label": "9__stageResults"}
+  , {"addr": "0x42a51d", "label": "10__stop"}
+  , {"addr": "0x42a522", "label": "12__musicFadeout"}
+  , {"addr": "0x42a53b", "label": "14__screenFade"}
+  , {"addr": "0x42a560", "label": "11__stageNext"}
+  , {"addr": "0x42a71b", "label": "13__skippable"}
   ]
-
 , "anm": 
-  [ ["0x450df3", "1__end"]
-  , ["0x450e08", "2__static"]
-  , ["0x450e1f", "3__sprite"]
-  , ["0x450eac", "7__scale"]
-  , ["0x450f40", "8__alpha"]
-  , ["0x450f5a", "9__color"]
-  , ["0x450f84", "4__jmp"]
-  , ["0x450fcf", "5__jmpDec"]
-  , ["0x45108b", "10__flipX"]
-  , ["0x4510e9", "24"]
-  , ["0x451114", "11__flipY"]
-  , ["0x451172", "12__rotate"]
-  , ["0x451242", "13__angleVel"]
-  , ["0x451313", "14__scaleGrowth"]
-  , ["0x451392", "29__scaleTimeLinear"]
-  , ["0x4514b2", "15__alphaTimeLinear"]
-  , ["0x45155b", "16"]
-  , ["0x451583", "6__pos"]
-  , ["0x4516fe", "19__posTimeEaseout4"]
-  , ["0x45170a", "18__posTimeEaseout"]
-  , ["0x451716", "17__posTimeLinear"]
-  , ["0x4518d4", "79__wait"]
-  , ["0x4519b1", "23__stop2"]
-  , ["0x4519c6", "20__stop"]
-  , ["0x451b2c", "28"]
-  , ["0x451b51", "22"]
-  , ["0x451b6d", "25"]
-  , ["0x451b83", "26__scrollNowX"]
-  , ["0x451c17", "27__scrollNowY"]
-  , ["0x451cab", "80__scrollX"]
-  , ["0x451cf0", "81__scrollY"]
-  , ["0x451d35", "30"]
-  , ["0x451d60", "31"]
-  , ["0x451d8a", "32__posTime"]
-  , ["0x451f4f", "33__colorTime"]
-  , ["0x452060", "34__alphaTime"]
-  , ["0x45212f", "35__rotateTime"]
-  , ["0x4522ce", "36__scaleTime"]
-  , ["0x452429", "37__iset"]
-  , ["0x452480", "38__fset"]
-  , ["0x4524d7", "49__isetAdd"]
-  , ["0x452565", "50__fsetAdd"]
-  , ["0x4525ff", "51__isetSub"]
-  , ["0x45268d", "52__fsetSub"]
-  , ["0x452727", "53__isetMul"]
-  , ["0x4527b6", "54__fsetMul"]
-  , ["0x452850", "55__isetDiv"]
-  , ["0x4528e1", "56__fsetDiv"]
-  , ["0x45297b", "57__isetMod"]
-  , ["0x452a0c", "58__fsetMod"]
-  , ["0x452ab1", "39__iadd"]
-  , ["0x452b1c", "40__fadd"]
-  , ["0x452b87", "41__isub"]
-  , ["0x452bf2", "42__fsub"]
-  , ["0x452c5d", "43__imul"]
-  , ["0x452cc9", "44__fmul"]
-  , ["0x452d34", "45__idiv"]
-  , ["0x452da0", "46__fdiv"]
-  , ["0x452e0b", "47__imod"]
-  , ["0x452e77", "48__fmod"]
-  , ["0x452f1c", "59__isetRand"]
-  , ["0x452fa0", "60__fsetRand"]
-  , ["0x45300d", "61__fsin"]
-  , ["0x45307b", "62__fcos"]
-  , ["0x4530e9", "63__ftan"]
-  , ["0x453157", "64"]
-  , ["0x4531c5", "65__fatan"]
-  , ["0x453233", "66__validRad"]
-  , ["0x45329e", "67__ije"]
-  , ["0x453318", "68__fje"]
-  , ["0x453397", "69__ijne"]
-  , ["0x453411", "70__fjne"]
-  , ["0x453490", "71__ijl"]
-  , ["0x45350a", "72__fjl"]
-  , ["0x453589", "73__ijle"]
-  , ["0x453603", "74__fjle"]
-  , ["0x453682", "75__ijg"]
-  , ["0x4536fc", "76__fjg"]
-  , ["0x45377b", "77__ijge"]
-  , ["0x4537f2", "78__fjge"]
-  , ["0x4538c8", "0__noop"]
+  [ {"addr": "0x450df3", "label": "1__end"}
+  , {"addr": "0x450e08", "label": "2__static"}
+  , {"addr": "0x450e1f", "label": "3__sprite"}
+  , {"addr": "0x450eac", "label": "7__scale"}
+  , {"addr": "0x450f40", "label": "8__alpha"}
+  , {"addr": "0x450f5a", "label": "9__color"}
+  , {"addr": "0x450f84", "label": "4__jmp"}
+  , {"addr": "0x450fcf", "label": "5__jmpDec"}
+  , {"addr": "0x45108b", "label": "10__flipX"}
+  , {"addr": "0x4510e9", "label": "24"}
+  , {"addr": "0x451114", "label": "11__flipY"}
+  , {"addr": "0x451172", "label": "12__rotate"}
+  , {"addr": "0x451242", "label": "13__angleVel"}
+  , {"addr": "0x451313", "label": "14__scaleGrowth"}
+  , {"addr": "0x451392", "label": "29__scaleTimeLinear"}
+  , {"addr": "0x4514b2", "label": "15__alphaTimeLinear"}
+  , {"addr": "0x45155b", "label": "16"}
+  , {"addr": "0x451583", "label": "6__pos"}
+  , {"addr": "0x4516fe", "label": "19__posTimeEaseout4"}
+  , {"addr": "0x45170a", "label": "18__posTimeEaseout"}
+  , {"addr": "0x451716", "label": "17__posTimeLinear"}
+  , {"addr": "0x4518d4", "label": "79__wait"}
+  , {"addr": "0x4519b1", "label": "23__stop2"}
+  , {"addr": "0x4519c6", "label": "20__stop"}
+  , {"addr": "0x451b2c", "label": "28"}
+  , {"addr": "0x451b51", "label": "22"}
+  , {"addr": "0x451b6d", "label": "25"}
+  , {"addr": "0x451b83", "label": "26__scrollNowX"}
+  , {"addr": "0x451c17", "label": "27__scrollNowY"}
+  , {"addr": "0x451cab", "label": "80__scrollX"}
+  , {"addr": "0x451cf0", "label": "81__scrollY"}
+  , {"addr": "0x451d35", "label": "30"}
+  , {"addr": "0x451d60", "label": "31"}
+  , {"addr": "0x451d8a", "label": "32__posTime"}
+  , {"addr": "0x451f4f", "label": "33__colorTime"}
+  , {"addr": "0x452060", "label": "34__alphaTime"}
+  , {"addr": "0x45212f", "label": "35__rotateTime"}
+  , {"addr": "0x4522ce", "label": "36__scaleTime"}
+  , {"addr": "0x452429", "label": "37__iset"}
+  , {"addr": "0x452480", "label": "38__fset"}
+  , {"addr": "0x4524d7", "label": "49__isetAdd"}
+  , {"addr": "0x452565", "label": "50__fsetAdd"}
+  , {"addr": "0x4525ff", "label": "51__isetSub"}
+  , {"addr": "0x45268d", "label": "52__fsetSub"}
+  , {"addr": "0x452727", "label": "53__isetMul"}
+  , {"addr": "0x4527b6", "label": "54__fsetMul"}
+  , {"addr": "0x452850", "label": "55__isetDiv"}
+  , {"addr": "0x4528e1", "label": "56__fsetDiv"}
+  , {"addr": "0x45297b", "label": "57__isetMod"}
+  , {"addr": "0x452a0c", "label": "58__fsetMod"}
+  , {"addr": "0x452ab1", "label": "39__iadd"}
+  , {"addr": "0x452b1c", "label": "40__fadd"}
+  , {"addr": "0x452b87", "label": "41__isub"}
+  , {"addr": "0x452bf2", "label": "42__fsub"}
+  , {"addr": "0x452c5d", "label": "43__imul"}
+  , {"addr": "0x452cc9", "label": "44__fmul"}
+  , {"addr": "0x452d34", "label": "45__idiv"}
+  , {"addr": "0x452da0", "label": "46__fdiv"}
+  , {"addr": "0x452e0b", "label": "47__imod"}
+  , {"addr": "0x452e77", "label": "48__fmod"}
+  , {"addr": "0x452f1c", "label": "59__isetRand"}
+  , {"addr": "0x452fa0", "label": "60__fsetRand"}
+  , {"addr": "0x45300d", "label": "61__fsin"}
+  , {"addr": "0x45307b", "label": "62__fcos"}
+  , {"addr": "0x4530e9", "label": "63__ftan"}
+  , {"addr": "0x453157", "label": "64"}
+  , {"addr": "0x4531c5", "label": "65__fatan"}
+  , {"addr": "0x453233", "label": "66__validRad"}
+  , {"addr": "0x45329e", "label": "67__ije"}
+  , {"addr": "0x453318", "label": "68__fje"}
+  , {"addr": "0x453397", "label": "69__ijne"}
+  , {"addr": "0x453411", "label": "70__fjne"}
+  , {"addr": "0x453490", "label": "71__ijl"}
+  , {"addr": "0x45350a", "label": "72__fjl"}
+  , {"addr": "0x453589", "label": "73__ijle"}
+  , {"addr": "0x453603", "label": "74__fjle"}
+  , {"addr": "0x453682", "label": "75__ijg"}
+  , {"addr": "0x4536fc", "label": "76__fjg"}
+  , {"addr": "0x45377b", "label": "77__ijge"}
+  , {"addr": "0x4537f2", "label": "78__fjge"}
+  , {"addr": "0x4538c8", "label": "0__noop"}
   ]
-
 }

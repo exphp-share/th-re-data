@@ -1,0 +1,406 @@
+
+{ "COFF_Header": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "magic", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x4", "name": "machine", "type": {"is": "named", "name": "coff_machine"}}
+    , {"offset": "0x6", "name": "numberOfSections", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x8", "name": "timeDateStamp", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "pointerToSymbolTable", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "numberOfSymbols", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "sizeOfOptionalHeader", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x16", "name": "characteristics", "type": {"is": "named", "name": "coff_characteristics"}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "DOS_Header": 
+  { "is": "struct"
+  , "size": "0x40"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "e_magic", "type": {"is": "array", "len": 2, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x2", "name": "e_cblp", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x4", "name": "e_cp", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x6", "name": "e_crlc", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x8", "name": "e_cparhdr", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xa", "name": "e_minalloc", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xc", "name": "e_maxalloc", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xe", "name": "e_ss", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x10", "name": "e_sp", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x12", "name": "e_csum", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x14", "name": "e_ip", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x16", "name": "e_cs", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x18", "name": "e_lfarlc", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x1a", "name": "e_ovno", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x1c", "name": "e_res1", "type": {"is": "array", "len": 8, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x24", "name": "e_oemid", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x26", "name": "e_oeminfo", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x28", "name": "e_res2", "type": {"is": "array", "len": 20, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x3c", "name": "e_lfanew", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "__end", "type": null}
+    ]
+  }
+
+, "Debug_Directory_Table": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "characteristics", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "timeDateStamp", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "majorVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xa", "name": "minorVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xc", "name": "type", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "sizeOfData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "addressOfRawData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "pointerToRawData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "Import_Directory_Table": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "importLookupTableRva", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "timeDateStamp", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "forwarderChain", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "nameRva", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "importAddressTableRva", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "Load_Configuration_Directory_Table": 
+  { "is": "struct"
+  , "size": "0x68"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "characteristics", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "timeDateStamp", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "majorVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xa", "name": "minorVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xc", "name": "globalFlagsClear", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "globalFlagsSet", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "criticalSectionDefaultTimeout", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "deCommitFreeBlockThreshold", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "deCommitTotalFreeThreshold", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "lockPrefixTable", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "maximumAllocationSize", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "virtualMemoryThreshold", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "processAffinityMask", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "processHeapFlags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "csdVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x36", "name": "reserved", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x38", "name": "editList", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "securityCookie", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "seHandlerTable", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "seHandlerCount", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x48", "name": "guardCFCheckFunctionPointer", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4c", "name": "guardCFDispatchFunctionPointer", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x50", "name": "guardCFFunctionTable", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x54", "name": "guardCFFunctionCount", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x58", "name": "guardFlags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "codeIntegrity", "type": {"is": "array", "len": 12, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x68", "name": "__end", "type": null}
+    ]
+  }
+
+, "PE32_Optional_Header": 
+  { "is": "struct"
+  , "size": "0xe0"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "magic", "type": {"is": "named", "name": "pe_magic"}}
+    , {"offset": "0x2", "name": "majorLinkerVersion", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x3", "name": "minorLinkerVersion", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x4", "name": "sizeOfCode", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "sizeOfInitializedData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "sizeOfUninitializedData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "addressOfEntryPoint", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "baseOfCode", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "baseOfData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "imageBase", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "sectionAlignment", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "fileAlignment", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "majorOperatingSystemVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2a", "name": "minorOperatingSystemVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2c", "name": "majorImageVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2e", "name": "minorImageVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x30", "name": "majorSubsystemVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x32", "name": "minorSubsystemVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x34", "name": "win32VersionValue", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "sizeOfImage", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "sizeOfHeaders", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "checkSum", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "subsystem", "type": {"is": "named", "name": "pe_subsystem"}}
+    , {"offset": "0x46", "name": "dllCharacteristics", "type": {"is": "named", "name": "pe_dll_characteristics"}}
+    , {"offset": "0x48", "name": "sizeOfStackReserve", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4c", "name": "sizeOfStackCommit", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x50", "name": "sizeOfHeapReserve", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x54", "name": "sizeOfHeapCommit", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x58", "name": "loaderFlags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "numberOfRvaAndSizes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x60", "name": "exportTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x68", "name": "importTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x70", "name": "resourceTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x78", "name": "exceptionTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x80", "name": "certificateTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x88", "name": "baseRelocationTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x90", "name": "debugEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x98", "name": "architectureEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xa0", "name": "globalPtrEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xa8", "name": "tlsTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xb0", "name": "loadConfigTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xb8", "name": "boundImportEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xc0", "name": "iatEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xc8", "name": "delayImportDescriptorEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xd0", "name": "clrRuntimeHeaderEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xd8", "name": "reservedEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xe0", "name": "__end", "type": null}
+    ]
+  }
+
+, "PE_Data_Directory_Entry": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "virtualAddress", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "size", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "Rich_Header": 
+  { "is": "struct"
+  , "size": "0xa0"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "e_magic__DanS", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "e_align", "type": {"is": "array", "len": 3, "inner": {"is": "int", "signed": false, "size": 4}}}
+    , {"offset": "0x10", "name": "e_entry_id0__00f19cb4", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "e_entry_count0__32", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "e_entry_id1__00f39cb4", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "e_entry_count1__144", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "e_entry_id2__00f29cb4", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "e_entry_count2__31", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "e_entry_id3__00c7a09e", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "e_entry_count3__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "e_entry_id4__01036093", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "e_entry_count4__23", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "e_entry_id5__01046093", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "e_entry_count5__18", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "e_entry_id6__01056093", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "e_entry_count6__44", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x48", "name": "e_entry_id7__00ab766f", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4c", "name": "e_entry_count7__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x50", "name": "e_entry_id8__009c52d2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x54", "name": "e_entry_count8__2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x58", "name": "e_entry_id9__007bc627", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "e_entry_count9__2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x60", "name": "e_entry_id10__00010000", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x64", "name": "e_entry_count10__197", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x68", "name": "e_entry_id11__00937809", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x6c", "name": "e_entry_count11__15", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x70", "name": "e_entry_id12__00837809", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x74", "name": "e_entry_count12__6", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x78", "name": "e_entry_id13__010961b9", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x7c", "name": "e_entry_count13__71", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x80", "name": "e_entry_id14__00ff61b9", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x84", "name": "e_entry_count14__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x88", "name": "e_entry_id15__00970000", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8c", "name": "e_entry_count15__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x90", "name": "e_entry_id16__010261b9", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x94", "name": "e_entry_count16__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x98", "name": "e_magic", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x9c", "name": "e_checksum", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xa0", "name": "__end", "type": null}
+    ]
+  }
+
+, "Section_Header": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "name", "type": {"is": "array", "len": 8, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x8", "name": "virtualSize", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "virtualAddress", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "sizeOfRawData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "pointerToRawData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "pointerToRelocations", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "pointerToLineNumbers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "numberOfRelocations", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x22", "name": "numberOfLineNumbers", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x24", "name": "characteristics", "type": {"is": "named", "name": "pe_section_flags"}}
+    , {"offset": "0x28", "name": "__end", "type": null}
+    ]
+  }
+
+, "TLS_Directory": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "rawDataStartVirtualAddress", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "rawDataEndVirtualAddress", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "addressOfIndex", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "addressOfCallbacks", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "sizeOfZeroFill", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "characteristics", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "coff_characteristics": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "values": 
+    [ {"name": "IMAGE_FILE_RELOCS_STRIPPED", "value": 1}
+    , {"name": "IMAGE_FILE_EXECUTABLE_IMAGE", "value": 2}
+    , {"name": "IMAGE_FILE_LINE_NUMS_STRIPPED", "value": 4}
+    , {"name": "IMAGE_FILE_LOCAL_SYMS_STRIPPED", "value": 8}
+    , {"name": "IMAGE_FILE_AGGRESIVE_WS_TRIM", "value": 16}
+    , {"name": "IMAGE_FILE_LARGE_ADDRESS_AWARE", "value": 32}
+    , {"name": "IMAGE_FILE_BYTES_REVERSED_LO", "value": 128}
+    , {"name": "IMAGE_FILE_32BIT_MACHINE", "value": 256}
+    , {"name": "IMAGE_FILE_DEBUG_STRIPPED", "value": 512}
+    , {"name": "IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP", "value": 1024}
+    , {"name": "IMAGE_FILE_NET_RUN_FROM_SWAP", "value": 2048}
+    , {"name": "IMAGE_FILE_SYSTEM", "value": 4096}
+    , {"name": "IMAGE_FILE_DLL", "value": 8192}
+    , {"name": "IMAGE_FILE_UP_SYSTEM_ONLY", "value": 16384}
+    , {"name": "IMAGE_FILE_BYTES_REVERSED_HI", "value": 32768}
+    ]
+  }
+
+, "coff_machine": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "values": 
+    [ {"name": "IMAGE_FILE_MACHINE_UNKNOWN", "value": 0}
+    , {"name": "IMAGE_FILE_MACHINE_AM33", "value": 467}
+    , {"name": "IMAGE_FILE_MACHINE_AMD64", "value": 34404}
+    , {"name": "IMAGE_FILE_MACHINE_ARM", "value": 448}
+    , {"name": "IMAGE_FILE_MACHINE_ARM64", "value": 43620}
+    , {"name": "IMAGE_FILE_MACHINE_ARMNT", "value": 452}
+    , {"name": "IMAGE_FILE_MACHINE_EBC", "value": 3772}
+    , {"name": "IMAGE_FILE_MACHINE_I386", "value": 332}
+    , {"name": "IMAGE_FILE_MACHINE_IA64", "value": 512}
+    , {"name": "IMAGE_FILE_MACHINE_M32R", "value": 36929}
+    , {"name": "IMAGE_FILE_MACHINE_MIPS16", "value": 614}
+    , {"name": "IMAGE_FILE_MACHINE_MIPSFPU", "value": 870}
+    , {"name": "IMAGE_FILE_MACHINE_MIPSFPU16", "value": 1126}
+    , {"name": "IMAGE_FILE_MACHINE_POWERPC", "value": 496}
+    , {"name": "IMAGE_FILE_MACHINE_POWERPCFP", "value": 497}
+    , {"name": "IMAGE_FILE_MACHINE_R4000", "value": 358}
+    , {"name": "IMAGE_FILE_MACHINE_RISCV32", "value": 20530}
+    , {"name": "IMAGE_FILE_MACHINE_RISCV64", "value": 20580}
+    , {"name": "IMAGE_FILE_MACHINE_RISCV128", "value": 20776}
+    , {"name": "IMAGE_FILE_MACHINE_SH3", "value": 418}
+    , {"name": "IMAGE_FILE_MACHINE_SH3DSP", "value": 419}
+    , {"name": "IMAGE_FILE_MACHINE_SH4", "value": 422}
+    , {"name": "IMAGE_FILE_MACHINE_SH5", "value": 424}
+    , {"name": "IMAGE_FILE_MACHINE_THUMB", "value": 450}
+    , {"name": "IMAGE_FILE_MACHINE_WCEMIPSV2", "value": 361}
+    ]
+  }
+
+, "pe_dll_characteristics": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "values": 
+    [ {"name": "IMAGE_DLLCHARACTERISTICS_0001", "value": 1}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_0002", "value": 2}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_0004", "value": 4}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_0008", "value": 8}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_HIGH_ENTROPY_VA", "value": 32}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE", "value": 64}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY", "value": 128}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_NX_COMPAT", "value": 256}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_NO_ISOLATION", "value": 512}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_NO_SEH", "value": 1024}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_NO_BIND", "value": 2048}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_APPCONTAINER", "value": 4096}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_WDM_DRIVER", "value": 8192}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_GUARD_CF", "value": 16384}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE", "value": 32768}
+    ]
+  }
+
+, "pe_magic": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "values": 
+    [ {"name": "PE_ROM_IMAGE", "value": 263}
+    , {"name": "PE_32BIT", "value": 267}
+    , {"name": "PE_64BIT", "value": 523}
+    ]
+  }
+
+, "pe_section_flags": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "IMAGE_SCN_RESERVED_0001", "value": 1}
+    , {"name": "IMAGE_SCN_RESERVED_0002", "value": 2}
+    , {"name": "IMAGE_SCN_RESERVED_0004", "value": 4}
+    , {"name": "IMAGE_SCN_TYPE_NO_PAD", "value": 8}
+    , {"name": "IMAGE_SCN_RESERVED_0010", "value": 16}
+    , {"name": "IMAGE_SCN_CNT_CODE", "value": 32}
+    , {"name": "IMAGE_SCN_CNT_INITIALIZED_DATA", "value": 64}
+    , {"name": "IMAGE_SCN_CNT_UNINITIALIZED_DATA", "value": 128}
+    , {"name": "IMAGE_SCN_LNK_OTHER", "value": 256}
+    , {"name": "IMAGE_SCN_LNK_INFO", "value": 512}
+    , {"name": "IMAGE_SCN_RESERVED_0400", "value": 1024}
+    , {"name": "IMAGE_SCN_LNK_REMOVE", "value": 2048}
+    , {"name": "IMAGE_SCN_LNK_COMDAT", "value": 4096}
+    , {"name": "IMAGE_SCN_GPREL", "value": 32768}
+    , {"name": "IMAGE_SCN_MEM_PURGEABLE", "value": 65536}
+    , {"name": "IMAGE_SCN_MEM_16BIT", "value": 131072}
+    , {"name": "IMAGE_SCN_MEM_LOCKED", "value": 262144}
+    , {"name": "IMAGE_SCN_MEM_PRELOAD", "value": 524288}
+    , {"name": "IMAGE_SCN_LNK_NRELOC_OVFL", "value": 16777216}
+    , {"name": "IMAGE_SCN_MEM_DISCARDABLE", "value": 33554432}
+    , {"name": "IMAGE_SCN_MEM_NOT_CACHED", "value": 67108864}
+    , {"name": "IMAGE_SCN_MEM_NOT_PAGED", "value": 134217728}
+    , {"name": "IMAGE_SCN_MEM_SHARED", "value": 268435456}
+    , {"name": "IMAGE_SCN_MEM_EXECUTE", "value": 536870912}
+    , {"name": "IMAGE_SCN_MEM_READ", "value": 1073741824}
+    , {"name": "IMAGE_SCN_MEM_WRITE", "value": 2147483648}
+    ]
+  }
+
+, "pe_subsystem": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "values": 
+    [ {"name": "IMAGE_SUBSYSTEM_UNKNOWN", "value": 0}
+    , {"name": "IMAGE_SUBSYSTEM_NATIVE", "value": 1}
+    , {"name": "IMAGE_SUBSYSTEM_WINDOWS_GUI", "value": 2}
+    , {"name": "IMAGE_SUBSYSTEM_WINDOWS_CUI", "value": 3}
+    , {"name": "IMAGE_SUBSYSTEM_OS2_CUI", "value": 5}
+    , {"name": "IMAGE_SUBSYSTEM_POSIX_CUI", "value": 7}
+    , {"name": "IMAGE_SUBSYSTEM_NATIVE_WINDOWS", "value": 8}
+    , {"name": "IMAGE_SUBSYSTEM_WINDOWS_CE_GUI", "value": 9}
+    , {"name": "IMAGE_SUBSYSTEM_EFI_APPLICATION", "value": 10}
+    , {"name": "IMAGE_SUBSYSTEM_EFI_BOOT_SERVICE_DRIVER", "value": 11}
+    , {"name": "IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER", "value": 12}
+    , {"name": "IMAGE_SUBSYSTEM_EFI_ROM", "value": 13}
+    , {"name": "IMAGE_SUBSYSTEM_XBOX", "value": 14}
+    , {"name": "IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION", "value": 16}
+    ]
+  }
+
+}

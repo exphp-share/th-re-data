@@ -1,703 +1,704 @@
-[ {"addr": "0x401000", "name": "D3DMATRIX::set_identity", "comment": null}
-, {"addr": "0x401170", "name": "AnmVm::initialize", "comment": null}
-, {"addr": "0x4011b0", "name": "AnmVm::constructor", "comment": null}
-, {"addr": "0x4014a0", "name": "AsciiManager::constructor", "comment": null}
-, {"addr": "0x401690", "name": "AsciiManagerBigChild1::constructor", "comment": null}
-, {"addr": "0x401720", "name": "AsciiManagerBigChild2::constructor", "comment": null}
-, {"addr": "0x4017e0", "name": "AsciiManager::on_tick_01", "comment": null}
-, {"addr": "0x401970", "name": "AsciiManager::on_draw_10", "comment": null}
-, {"addr": "0x4019e0", "name": "AsciiManager::on_draw_0b", "comment": null}
-, {"addr": "0x401a00", "name": "AsciiManager::reset", "comment": null}
-, {"addr": "0x401d70", "name": "AsciiManager::on_registration", "comment": null}
-, {"addr": "0x401de0", "name": "AsciiManager::on_cleanup", "comment": null}
-, {"addr": "0x401e30", "name": "AsciiManager::initialize", "comment": null}
-, {"addr": "0x401f40", "name": "AsciiManager::sub_401f40_draw", "comment": null}
-, {"addr": "0x402060", "name": "AsciiManager::drawf", "comment": null}
-, {"addr": "0x4024f0", "name": "AsciiManager::sub_4024f0_makes_array_1_popup", "comment": null}
-, {"addr": "0x402630", "name": "AsciiManager::sub_402630_makes_array_2_popup", "comment": null}
-, {"addr": "0x404690", "name": "AsciiManager::sub_404690", "comment": null}
-, {"addr": "0x404eb0", "name": "D3DVec3Cross", "comment": null}
-, {"addr": "0x404fe0", "name": "GameManager::sub_404fe0", "comment": null}
-, {"addr": "0x405080", "name": "Stage::constructor", "comment": null}
-, {"addr": "0x4052d0", "name": "compute_bezier", "comment": null}
-, {"addr": "0x405370", "name": "Stage::interpolate_camera_field", "comment": null}
-, {"addr": "0x405690", "name": "Stage::on_tick_07", "comment": null}
-, {"addr": "0x406930", "name": "Stage::sub_406930", "comment": null}
-, {"addr": "0x4069d0", "name": "Stage::on_draw_03", "comment": null}
-, {"addr": "0x406de0", "name": "Stage::on_draw_04", "comment": null}
-, {"addr": "0x407000", "name": "Stage::on_registration", "comment": null}
-, {"addr": "0x407410", "name": "Stage::on_cleanup", "comment": null}
-, {"addr": "0x4074c0", "name": "Stage::initialize", "comment": null}
-, {"addr": "0x4075d0", "name": "Stage::unregister_update_funcs", "comment": null}
-, {"addr": "0x4077f0", "name": "Stage::sub_4077f0", "comment": null}
-, {"addr": "0x407900", "name": "Stage::draw_vms", "comment": null}
-, {"addr": "0x4082b0", "name": "Stage::set_transform_matrices_from_camera", "comment": null}
-, {"addr": "0x408710", "name": "Player::bomb_on_tick__unfocused_reimu_a", "comment": null}
-, {"addr": "0x408e10", "name": "Player::bomb_on_draw__unfocused_reimu_a", "comment": null}
-, {"addr": "0x4091b0", "name": "Player::bomb_on_tick__focused_reimu_a", "comment": null}
-, {"addr": "0x409990", "name": "Player::bomb_on_draw__focused_reimu_a", "comment": null}
-, {"addr": "0x409dd0", "name": "Player::bomb_on_tick__unfocused_reimu_b", "comment": null}
-, {"addr": "0x40a280", "name": "Player::bomb_on_draw__unfocused_reimu_b", "comment": null}
-, {"addr": "0x40a3a0", "name": "Player::bomb_on_tick__focused_reimu_b", "comment": null}
-, {"addr": "0x40a6b0", "name": "Player::bomb_on_draw__focused_reimu_b", "comment": null}
-, {"addr": "0x40a7c0", "name": "Player::bomb_on_tick__unfocused_reimu_c", "comment": null}
-, {"addr": "0x40aba0", "name": "Player::bomb_on_draw__unfocused_reimu_c", "comment": null}
-, {"addr": "0x40af10", "name": "Player::bomb_on_tick__focused_reimu_c", "comment": null}
-, {"addr": "0x40b5d0", "name": "Player::bomb_on_draw__focused_reimu_c", "comment": null}
-, {"addr": "0x40b7d0", "name": "Player::bomb_on_tick__unfocused_marisa_a", "comment": null}
-, {"addr": "0x40bca0", "name": "Player::bomb_on_draw__unfocused_marisa_a", "comment": null}
-, {"addr": "0x40be20", "name": "Player::bomb_on_tick__focused_marisa_a", "comment": null}
-, {"addr": "0x40c160", "name": "Player::bomb_on_draw__focused_marisa_a", "comment": null}
-, {"addr": "0x40c2e0", "name": "Player::bomb_on_tick__unfocused_marisa_b", "comment": null}
-, {"addr": "0x40c970", "name": "Player::bomb_on_draw__unfocused_marisa_b", "comment": null}
-, {"addr": "0x40ca50", "name": "Player::bomb_on_tick__focused_marisa_b", "comment": null}
-, {"addr": "0x40d3b0", "name": "Player::bomb_on_draw__focused_marisa_b", "comment": null}
-, {"addr": "0x40d4c0", "name": "Player::bomb_on_tick__unfocused_marisa_c", "comment": null}
-, {"addr": "0x40d9a0", "name": "Player::bomb_on_draw__unfocused_marisa_c", "comment": null}
-, {"addr": "0x40da80", "name": "Player::bomb_on_tick__focused_marisa_c", "comment": null}
-, {"addr": "0x40e280", "name": "Player::bomb_on_draw__focused_marisa_c", "comment": null}
-, {"addr": "0x40e420", "name": "sub_40e420_read_ecl", "comment": null}
-, {"addr": "0x40e4f0", "name": "EclManager::sub_40e4f0_cleanup", "comment": null}
-, {"addr": "0x40e5b0", "name": "Enemy::ecl_get_int_var", "comment": null}
-, {"addr": "0x40edf0", "name": "Enemy::ecl_get_float_var", "comment": null}
-, {"addr": "0x40fc90", "name": "Enemy::ecl_spell", "comment": null}
-, {"addr": "0x4101a0", "name": "Enemy::ecl_spell_end", "comment": null}
-, {"addr": "0x410520", "name": "EclManager::ecl_parser", "comment": null}
-, {"addr": "0x417b20", "name": "Bullet::destroy", "comment": null}
-, {"addr": "0x417b90", "name": "Enemy::hardcoded_func_00_s278_set", "comment": null}
-, {"addr": "0x417c30", "name": "Enemy::hardcoded_func_01_s2_call", "comment": null}
-, {"addr": "0x417e50", "name": "Enemy::hardcoded_func_02_s2_call", "comment": null}
-, {"addr": "0x418110", "name": "Enemy::hardcoded_func_03_s2_set", "comment": null}
-, {"addr": "0x418120", "name": "Enemy::hardcoded_func_04_s378_set", "comment": null}
-, {"addr": "0x418260", "name": "Enemy::hardcoded_func_05_s3_set", "comment": null}
-, {"addr": "0x4182d0", "name": "Enemy::hardcoded_func_06_s3_call", "comment": null}
-, {"addr": "0x418880", "name": "Enemy::hardcoded_func_07_s4_set", "comment": null}
-, {"addr": "0x418b40", "name": "Enemy::hardcoded_func_08_s4_set", "comment": null}
-, {"addr": "0x418e80", "name": "Enemy::hardcoded_func_09_s5_call", "comment": null}
-, {"addr": "0x418eb0", "name": "Enemy::hardcoded_func_10_s5678_call", "comment": null}
-, {"addr": "0x418fc0", "name": "Enemy::hardcoded_func_11_s5678_call", "comment": null}
-, {"addr": "0x4190f0", "name": "Enemy::hardcoded_func_12_s5_call", "comment": null}
-, {"addr": "0x4194e0", "name": "Enemy::hardcoded_func_13_s5_set", "comment": null}
-, {"addr": "0x419610", "name": "Enemy::hardcoded_func_14_s5_call", "comment": null}
-, {"addr": "0x4196e0", "name": "Enemy::hardcoded_func_15_s6_call", "comment": null}
-, {"addr": "0x419710", "name": "Enemy::hardcoded_func_16_s6_call", "comment": null}
-, {"addr": "0x419880", "name": "Enemy::hardcoded_func_17_s6_call", "comment": null}
-, {"addr": "0x4199c0", "name": "Enemy::hardcoded_func_18_s6_call", "comment": null}
-, {"addr": "0x419a50", "name": "Enemy::hardcoded_func_21_s5_call_hl", "comment": null}
-, {"addr": "0x419d70", "name": "Enemy::hardcoded_func_19_s6_call", "comment": null}
-, {"addr": "0x419d90", "name": "Enemy::hardcoded_func_20_s6_call", "comment": null}
-, {"addr": "0x419dc0", "name": "Enemy::hardcoded_func_22_s7_set", "comment": null}
-, {"addr": "0x419ff0", "name": "Enemy::hardcoded_func_23_s8_set", "comment": null}
-, {"addr": "0x41a210", "name": "EffectManager::constructor", "comment": null}
-, {"addr": "0x41a350", "name": "EffectManager::set_zero", "comment": null}
-, {"addr": "0x41adf0", "name": "sub_41adf0__loops_over_effect_manager__whyyyyyyy", "comment": null}
-, {"addr": "0x41c1b0", "name": "std::_System_error_category::name", "comment": null}
-, {"addr": "0x41c1c0", "name": "EffectManager::create_effect", "comment": null}
-, {"addr": "0x41c610", "name": "EffectManager::sub_41c610", "comment": null}
-, {"addr": "0x41c790", "name": "EffectManager::on_tick_0b", "comment": null}
-, {"addr": "0x41ca10", "name": "EffectManager::on_draw_09", "comment": null}
-, {"addr": "0x41cde0", "name": "EffectManager::on_registration", "comment": null}
-, {"addr": "0x41d050", "name": "EffectManager::on_cleanup", "comment": null}
-, {"addr": "0x41d0a0", "name": "EffectManager::initialize", "comment": null}
-, {"addr": "0x41d150", "name": "EffectManager::unregister_update_funcs", "comment": null}
-, {"addr": "0x41d180", "name": "Ending::constructor", "comment": null}
-, {"addr": "0x41d2f0", "name": "Ending::on_tick", "comment": null}
-, {"addr": "0x41d380", "name": "Ending::on_draw", "comment": null}
-, {"addr": "0x41e590", "name": "Ending::on_registration", "comment": null}
-, {"addr": "0x41e790", "name": "Ending::on_cleanup", "comment": null}
-, {"addr": "0x41e820", "name": "Ending::operator new", "comment": null}
-, {"addr": "0x41e920", "name": "Enemy::sub_41e920", "comment": null}
-, {"addr": "0x41ea60", "name": "EnemyManager::sub_41ea60", "comment": null}
-, {"addr": "0x41ee70", "name": "EnemyManager::constructor", "comment": null}
-, {"addr": "0x41ef70", "name": "Enemy::constructor", "comment": null}
-, {"addr": "0x41f220", "name": "EnemyEclContext::constructor", "comment": null}
-, {"addr": "0x41f6f0", "name": "run_timeline", "comment": null}
-, {"addr": "0x4203b0", "name": "Enemy::restrict_to_move_limits", "comment": null}
-, {"addr": "0x420620", "name": "EnemyManager::on_tick_0a", "comment": null}
-, {"addr": "0x422ca0", "name": "EnemyManager::on_draw_05", "comment": null}
-, {"addr": "0x422cc0", "name": "EnemyManager::on_draw_07", "comment": null}
-, {"addr": "0x422ce0", "name": "EnemyManager::on_registration", "comment": null}
-, {"addr": "0x422e70", "name": "EnemyManager::on_cleanup", "comment": null}
-, {"addr": "0x422f40", "name": "EnemyManager::initialize", "comment": null}
-, {"addr": "0x423050", "name": "EnemyManager::unregister_update_funcs", "comment": null}
-, {"addr": "0x4232a0", "name": "EnemyManager::sub_4232a0", "comment": null}
-, {"addr": "0x4232e0", "name": "BulletManager::reset", "comment": null}
-, {"addr": "0x423330", "name": "BulletManager::constructor", "comment": null}
-, {"addr": "0x423420", "name": "BulletTypeVms::constructor", "comment": null}
-, {"addr": "0x423510", "name": "Bullet::constructor", "comment": null}
-, {"addr": "0x4235d0", "name": "Laser::constructor", "comment": null}
-, {"addr": "0x423730", "name": "BulletManager::shoot_one", "comment": null}
-, {"addr": "0x424290", "name": "Bullet::run_ex", "comment": null}
-, {"addr": "0x424740", "name": "BulletManager::sub_424740_cancels_bullets", "comment": null}
-, {"addr": "0x4249a0", "name": "BulletManager::sub_4249a0_cancels_bullets", "comment": null}
-, {"addr": "0x424c00", "name": "BulletManager::sub_424c00_cancels_bullets", "comment": null}
-, {"addr": "0x424d20", "name": "BulletManager::shoot_bullets", "comment": null}
-, {"addr": "0x424e00", "name": "BulletManager::shoot_laser", "comment": null}
-, {"addr": "0x4250d0", "name": "Bullet::step_ex_00", "comment": null}
-, {"addr": "0x4251a0", "name": "Bullet::step_ex_04", "comment": null}
-, {"addr": "0x425310", "name": "Bullet::step_ex_05", "comment": null}
-, {"addr": "0x425400", "name": "Bullet::step_ex_06", "comment": null}
-, {"addr": "0x425580", "name": "Bullet::step_ex_08", "comment": null}
-, {"addr": "0x425700", "name": "Bullet::step_ex_07", "comment": null}
-, {"addr": "0x4258a0", "name": "Bullet::step_ex_10_11", "comment": null}
-, {"addr": "0x425a50", "name": "BulletManager::on_tick_0c", "comment": null}
-, {"addr": "0x426c40", "name": "BulletManager::on_draw_0a", "comment": null}
-, {"addr": "0x426f60", "name": "BulletManager::on_registration", "comment": null}
-, {"addr": "0x427620", "name": "BulletManager::on_cleanup", "comment": null}
-, {"addr": "0x4276a0", "name": "BulletManager::initialize", "comment": null}
-, {"addr": "0x427760", "name": "BulletManager::unregister_update_funcs__and_more", "comment": null}
-, {"addr": "0x4277a0", "name": "BulletManager::sub_4277a0", "comment": null}
-, {"addr": "0x427be2", "name": "Gui::sub_427be2", "comment": null}
-, {"addr": "0x427c81", "name": "Gui::sub_427c81", "comment": null}
-, {"addr": "0x427e7c", "name": "Gui::on_tick_0d", "comment": null}
-, {"addr": "0x427f22", "name": "Gui::on_draw_0c", "comment": null}
-, {"addr": "0x428b19", "name": "Gui::on_registration", "comment": null}
-, {"addr": "0x429935", "name": "Gui::load_msg", "comment": null}
-, {"addr": "0x429c42", "name": "GuiImpl::run_msg", "comment": null}
-, {"addr": "0x42ad66", "name": "Gui::sub_42ad66", "comment": null}
-, {"addr": "0x42adab", "name": "Gui::sub_42adab", "comment": null}
-, {"addr": "0x42d03a", "name": "Gui::on_registration__stub", "comment": null}
-, {"addr": "0x42d04b", "name": "Gui::on_cleanup", "comment": null}
-, {"addr": "0x42d136", "name": "Gui::initialize", "comment": null}
-, {"addr": "0x42d24d", "name": "GuiImpl::constructor", "comment": null}
-, {"addr": "0x42d465", "name": "GuiDialogueStuff::constructor", "comment": null}
-, {"addr": "0x42d53d", "name": "Gui::unregister_update_funcs", "comment": null}
-, {"addr": "0x42d560", "name": "GameManager::constructor", "comment": null}
-, {"addr": "0x42d6d8", "name": "GameManager::is_rect_partially_onscreen", "comment": null}
-, {"addr": "0x42d8d5", "name": "GameManager::on_tick_02", "comment": null}
-, {"addr": "0x42e1d4", "name": "GameManager::on_draw_02", "comment": null}
-, {"addr": "0x42e83e", "name": "GameManager::on_registration", "comment": null}
-, {"addr": "0x42f2e4", "name": "GameManager::on_cleanup", "comment": null}
-, {"addr": "0x42f3c5", "name": "GameManager::initialize", "comment": null}
-, {"addr": "0x42f736", "name": "GameManager::sub_42f736", "comment": null}
-, {"addr": "0x42f789", "name": "GameManager::sub_42f789", "comment": null}
-, {"addr": "0x42fb20", "name": "UpdateFunc::constructor", "comment": null}
-, {"addr": "0x42fbd0", "name": "register__on_tick", "comment": null}
-, {"addr": "0x42fca0", "name": "register__on_draw", "comment": null}
-, {"addr": "0x42fd60", "name": "UpdateFuncRegistry::run_all_on_tick", "comment": null}
-, {"addr": "0x42fe20", "name": "UpdateFuncRegistry::run_all_on_draw", "comment": null}
-, {"addr": "0x430090", "name": "UpdateFunc::operator new", "comment": null}
-, {"addr": "0x430140", "name": "UpdateFuncRegistry::unregister", "comment": null}
-, {"addr": "0x430290", "name": "sub_430290__calls_joypad_funcs", "comment": null}
-, {"addr": "0x4312c0", "name": "sub_4312c0__calls_keyboard_funcs", "comment": null}
-, {"addr": "0x431330", "name": "sub_431330_load_file", "comment": null}
-, {"addr": "0x4315f0", "name": "DebugLog::sub_4315f0", "comment": null}
-, {"addr": "0x431730", "name": "DebugLog::sub_43eb60", "comment": null}
-, {"addr": "0x432630", "name": "ItemManager::constructor", "comment": null}
-, {"addr": "0x432690", "name": "Item::constructor", "comment": null}
-, {"addr": "0x4326f0", "name": "ItemManager::spawn_item", "comment": null}
-, {"addr": "0x432990", "name": "ItemManager::on_tick__(called_by_BulletManager)", "comment": null}
-, {"addr": "0x433a90", "name": "ItemManager::sub_433a90", "comment": null}
-, {"addr": "0x433b20", "name": "ItemManager::sub_433b20", "comment": null}
-, {"addr": "0x433c40", "name": "ItemManager::sub_433c40", "comment": null}
-, {"addr": "0x433cd0", "name": "ItemManager::on_draw__(called_by_BulletManager)", "comment": null}
-, {"addr": "0x434020", "name": "WinMain", "comment": null}
-, {"addr": "0x434490", "name": "main__WindowProc", "comment": null}
-, {"addr": "0x4346e0", "name": "Window::do_tick", "comment": null}
-, {"addr": "0x434a40", "name": "Supervisor::create_d3d", "comment": null}
-, {"addr": "0x434a80", "name": "Supervisor::create_game_window", "comment": null}
-, {"addr": "0x434bd0", "name": "Supervisor::init_d3d_device", "comment": null}
-, {"addr": "0x436110", "name": "DNameNode::DNameNode", "comment": null}
-, {"addr": "0x437c39", "name": "AnmManager::cleanup_stream_source", "comment": null}
-, {"addr": "0x437c70", "name": "Supervisor::on_tick", "comment": null}
-, {"addr": "0x438986", "name": "Supervisor::on_registration", "comment": null}
-, {"addr": "0x438de2", "name": "Supervisor::on_cleanup", "comment": null}
-, {"addr": "0x439000", "name": "Supervisor::initialize", "comment": null}
-, {"addr": "0x43958d", "name": "Supervisor::sub_43958d", "comment": null}
-, {"addr": "0x4398b6", "name": "Supervisor::load_config", "comment": null}
-, {"addr": "0x439ec1", "name": "Supervisor::sub_439ec1", "comment": null}
-, {"addr": "0x439f4d", "name": "Supervisor::sub_439f4d", "comment": null}
-, {"addr": "0x43a0d6", "name": "Supervisor::fade_out_music", "comment": null}
-, {"addr": "0x43a1bd", "name": "Supervisor::enable_d3d_fog", "comment": null}
-, {"addr": "0x43a207", "name": "Supervisor::disable_d3d_fog", "comment": null}
-, {"addr": "0x43a24e", "name": "Supervisor::set_render_state", "comment": null}
-, {"addr": "0x43a69b", "name": "MusicRoom::constructor", "comment": null}
-, {"addr": "0x43ae20", "name": "MusicRoom::on_registration", "comment": null}
-, {"addr": "0x43b478", "name": "MusicRoom::on_cleanup", "comment": null}
-, {"addr": "0x43b4db", "name": "MusicRoom::initialize", "comment": null}
-, {"addr": "0x43b7f0", "name": "Player::constructor", "comment": null}
-, {"addr": "0x43ba10", "name": "PlayerBullet::constructor", "comment": null}
-, {"addr": "0x43baa0", "name": "PlayerBomb::constructor", "comment": null}
-, {"addr": "0x43bb10", "name": "PlayerBombArrayItem::constructor", "comment": null}
-, {"addr": "0x43d160", "name": "Player::shoot_bullet(s?)", "comment": null}
-, {"addr": "0x43d2f0", "name": "Player::tick_bullets", "comment": null}
-, {"addr": "0x43d690", "name": "Player::draw_bullets", "comment": null}
-, {"addr": "0x43d880", "name": "Player::tick_shooting_state", "comment": null}
-, {"addr": "0x43d9e0", "name": "Player::compute_damage_to_enemy", "comment": null}
-, {"addr": "0x43ee50", "name": "Player::move", "comment": null}
-, {"addr": "0x440940", "name": "Player::tick_bomb_areas", "comment": null}
-, {"addr": "0x4409f0", "name": "Player::tick_bombing_state", "comment": null}
-, {"addr": "0x440cf0", "name": "Player::sub_440cf0", "comment": null}
-, {"addr": "0x4411c0", "name": "Player::sub_4411c0", "comment": null}
-, {"addr": "0x441330", "name": "Player::sub_441330", "comment": null}
-, {"addr": "0x441670", "name": "Player::sub_441670", "comment": null}
-, {"addr": "0x441fb0", "name": "Player::on_tick_08", "comment": null}
-, {"addr": "0x4420b0", "name": "Player::on_draw_06", "comment": null}
-, {"addr": "0x442350", "name": "Player::on_draw_08", "comment": null}
-, {"addr": "0x4423e0", "name": "Player::on_registration", "comment": null}
-, {"addr": "0x4428e0", "name": "Player::on_cleanup", "comment": null}
-, {"addr": "0x4429d0", "name": "Player::initialize", "comment": null}
-, {"addr": "0x442b10", "name": "Player::unregister_update_funcs", "comment": null}
-, {"addr": "0x442b70", "name": "sub_442b70_reads_sht_file", "comment": null}
-, {"addr": "0x443aa0", "name": "ReplayManager::initialize", "comment": null}
-, {"addr": "0x445db3", "name": "ResultScreen::on_tick_0e", "comment": null}
-, {"addr": "0x448d40", "name": "ResultScreen::on_draw_0d", "comment": null}
-, {"addr": "0x449b05", "name": "ResultScreen::on_registration", "comment": null}
-, {"addr": "0x44a1f9", "name": "ResultScreen::on_cleanup", "comment": null}
-, {"addr": "0x44a302", "name": "ResultScreen::operator new", "comment": null}
-, {"addr": "0x44b280", "name": "ScreenEffect::on_registration", "comment": null}
-, {"addr": "0x44b2c0", "name": "ScreenEffect::on_cleanup", "comment": null}
-, {"addr": "0x44b310", "name": "ScreenEffect::operator new", "comment": null}
-, {"addr": "0x44b510", "name": "SoundManager::constructor", "comment": null}
-, {"addr": "0x44b560", "name": "SoundManager::initialize_dsound", "comment": null}
-, {"addr": "0x44bff0", "name": "SoundManager::sub_44bff0", "comment": null}
-, {"addr": "0x44c020", "name": "SoundManager::sub_44c020", "comment": null}
-, {"addr": "0x44c7d0", "name": "SoundManager::sub_44c7d0", "comment": null}
-, {"addr": "0x44c930", "name": "SoundManager::play_sound_centered", "comment": null}
-, {"addr": "0x44c9c0", "name": "SoundManager::update_sound_thread", "comment": null}
-, {"addr": "0x44d3e0", "name": "AnmManager::constructor", "comment": null}
-, {"addr": "0x44d630", "name": "AnmManager::create_stream_source", "comment": null}
-, {"addr": "0x44e8e0", "name": "AnmManager::set_vm_sprite", "comment": null}
-, {"addr": "0x44ea20", "name": "AnmLoaded::load_script_into_vm", "comment": null}
-, {"addr": "0x44eec0", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
-, {"addr": "0x44f580", "name": "AnmManager::reset_vertex_buffers", "comment": null}
-, {"addr": "0x44f5c0", "name": "AnmManager::flush_sprites", "comment": null}
-, {"addr": "0x44f690", "name": "AnmManager::write_sprite", "comment": null}
-, {"addr": "0x44f9a0", "name": "AnmManager::draw_vm", "comment": null}
-, {"addr": "0x44fc10", "name": "AnmManager::draw_vm_b", "comment": null}
-, {"addr": "0x450520", "name": "AnmManager::draw_vm_c", "comment": null}
-, {"addr": "0x450a50", "name": "AnmVm::get_float_var", "comment": null}
-, {"addr": "0x450b20", "name": "AnmVm::get_int_var", "comment": null}
-, {"addr": "0x450c10", "name": "AnmVm::get_float_var_ptr", "comment": null}
-, {"addr": "0x450ca0", "name": "AnmVm::get_int_var_ptr", "comment": null}
-, {"addr": "0x450d60", "name": "AnmManager::run_vm", "comment": null}
-, {"addr": "0x4550c0", "name": "AnmManager::run_vms_in_array", "comment": null}
-, {"addr": "0x45547d", "name": "MainMenu::constructor", "comment": null}
-, {"addr": "0x4554d6", "name": "MainMenu::on_tick_03", "comment": null}
-, {"addr": "0x45bd6c", "name": "MainMenu::on_draw_00", "comment": null}
-, {"addr": "0x45c4c8", "name": "MainMenu::on_registration", "comment": null}
-, {"addr": "0x45c546", "name": "MainMenu::on_cleanup", "comment": null}
-, {"addr": "0x45c5d0", "name": "MainMenu::operator new", "comment": null}
-, {"addr": "0x45c6f0", "name": "Concurrency::IScheduler::IScheduler", "comment": null}
-, {"addr": "0x461aa2", "name": "D3DXMatrixMultiply", "comment": null}
-, {"addr": "0x461c7a", "name": "D3DXMatrixRotationZ", "comment": null}
-, {"addr": "0x461cf6", "name": "D3DXMatrixRotationQuaternion", "comment": null}
-, {"addr": "0x461dd8", "name": "D3DXMatrixPerspectiveFovLH", "comment": null}
-, {"addr": "0x461e6c", "name": "D3DXVec3Cross", "comment": null}
-, {"addr": "0x461eb8", "name": "D3DXMatrixIdentity", "comment": null}
-, {"addr": "0x461f0c", "name": "D3DXVec3Normalize", "comment": null}
-, {"addr": "0x461fb3", "name": "D3DXVec3TransformCoord", "comment": null}
-, {"addr": "0x462083", "name": "D3DXVec3Project", "comment": null}
-, {"addr": "0x4621a0", "name": "D3DXMatrixLookAtLH", "comment": null}
-, {"addr": "0x46272c", "name": "D3DXLoadSurfaceFromMemory", "comment": null}
-, {"addr": "0x462962", "name": "D3DXCheckTextureRequirements", "comment": null}
-, {"addr": "0x46298a", "name": "D3DXCreateTexture", "comment": null}
-, {"addr": "0x4629f0", "name": "D3DXLoadSurfaceFromFileInMemory", "comment": null}
-, {"addr": "0x462aa6", "name": "D3DXLoadSurfaceFromSurface", "comment": null}
-, {"addr": "0x462bc3", "name": "D3DXFilterTexture", "comment": null}
-, {"addr": "0x462cf4", "name": "D3DXCreateTextureFromFileInMemoryEx", "comment": null}
-, {"addr": "0x463105", "name": "CD3DXBlt::CD3DXBlt", "comment": null}
-, {"addr": "0x46310f", "name": "CD3DXBlt::~CD3DXBlt", "comment": null}
-, {"addr": "0x46312d", "name": "TF_Row::~TF_Row", "comment": null}
-, {"addr": "0x4633f0", "name": "CD3DXBlt::BltTriangle2D", "comment": null}
-, {"addr": "0x4637a6", "name": "CD3DXBlt::BltTriangle3D", "comment": null}
-, {"addr": "0x463c7d", "name": "CD3DXBlt::BltSame_DXTn", "comment": null}
-, {"addr": "0x463dfe", "name": "CD3DXBlt::BltBox2D_A8R8G8B8", "comment": null}
-, {"addr": "0x463f5c", "name": "CD3DXBlt::BltBox2D_X8R8G8B8", "comment": null}
-, {"addr": "0x464078", "name": "CD3DXBlt::BltBox2D_R5G6B5", "comment": null}
-, {"addr": "0x4641c8", "name": "CD3DXBlt::BltBox2D_X1R5G5B5", "comment": null}
-, {"addr": "0x4642ec", "name": "CD3DXBlt::BltBox2D_A1R5G5B5", "comment": null}
-, {"addr": "0x46443b", "name": "CD3DXBlt::BltBox2D_A4R4G4B4", "comment": null}
-, {"addr": "0x46458e", "name": "CD3DXBlt::BltBox2D_R3G3B2", "comment": null}
-, {"addr": "0x4646cd", "name": "CD3DXBlt::BltBox2D_A8", "comment": null}
-, {"addr": "0x464768", "name": "CD3DXBlt::BltBox2D_A8R3G3B2", "comment": null}
-, {"addr": "0x4648b4", "name": "CD3DXBlt::BltBox2D_X4R4G4B4", "comment": null}
-, {"addr": "0x4649d5", "name": "CD3DXBlt::BltBox2D_R8G8B8", "comment": null}
-, {"addr": "0x4649db", "name": "CD3DXBlt::BltBox2D_A8L8", "comment": null}
-, {"addr": "0x464b27", "name": "CD3DXBlt::BltBox2D_A4L4", "comment": null}
-, {"addr": "0x464c99", "name": "CD3DXBlt::BltSame", "comment": null}
-, {"addr": "0x464dcb", "name": "CD3DXBlt::BltCopy", "comment": null}
-, {"addr": "0x464e6d", "name": "CD3DXBlt::BltNone", "comment": null}
-, {"addr": "0x464fe2", "name": "CD3DXBlt::BltPoint", "comment": null}
-, {"addr": "0x465178", "name": "CD3DXBlt::BltBox2D", "comment": null}
-, {"addr": "0x46550d", "name": "CD3DXBlt::BltBox3D", "comment": null}
-, {"addr": "0x465987", "name": "CD3DXBlt::BltLinear2D", "comment": null}
-, {"addr": "0x465cc8", "name": "CD3DXBlt::BltLinear3D", "comment": null}
-, {"addr": "0x466315", "name": "CD3DXBlt::Blt", "comment": null}
-, {"addr": "0x466427", "name": "CD3DXImage::CD3DXImage", "comment": null}
-, {"addr": "0x466440", "name": "CD3DXImage::~CD3DXImage", "comment": null}
-, {"addr": "0x466499", "name": "CD3DXImage::LoadDIB", "comment": null}
-, {"addr": "0x466b16", "name": "CD3DXImage::LoadJPG", "comment": null}
-, {"addr": "0x466d6b", "name": "CD3DXImage::LoadTGA", "comment": null}
-, {"addr": "0x4671e3", "name": "CD3DXImage::LoadPPM", "comment": null}
-, {"addr": "0x4674b3", "name": "D3DX::jpeg_mem_term", "comment": null}
-, {"addr": "0x4674b4", "name": "CD3DXImage::LoadPNG", "comment": null}
-, {"addr": "0x4679ca", "name": "CD3DXImage::LoadDDS", "comment": null}
-, {"addr": "0x467cdd", "name": "CD3DXImage::LoadBMP", "comment": null}
-, {"addr": "0x467d0d", "name": "CD3DXImage::Load", "comment": null}
-, {"addr": "0x467e71", "name": "D3DXCOLOR::D3DXCOLOR", "comment": null}
-, {"addr": "0x467ec7", "name": "CD3DXCodec_V8U8::Decode", "comment": null}
-, {"addr": "0x467f30", "name": "CD3DXCodec_L6V5U5::Decode", "comment": null}
-, {"addr": "0x467fc6", "name": "CD3DXCodec_X8L8V8U8::Decode", "comment": null}
-, {"addr": "0x46803e", "name": "CD3DXCodec_Q8W8V8U8::Decode", "comment": null}
-, {"addr": "0x4680bc", "name": "CD3DXCodec_V16U16::Decode", "comment": null}
-, {"addr": "0x468126", "name": "CD3DXCodec_W11V11U10::Decode", "comment": null}
-, {"addr": "0x4681c5", "name": "D3DXCOLOR::operator-", "comment": null}
-, {"addr": "0x468224", "name": "CD3DXCodec::CD3DXCodec", "comment": null}
-, {"addr": "0x468429", "name": "CD3DXCodec::ColorKey", "comment": null}
-, {"addr": "0x468499", "name": "CD3DXCodec_R8G8B8::Encode", "comment": null}
-, {"addr": "0x46855a", "name": "CD3DXCodec_A8R8G8B8::Encode", "comment": null}
-, {"addr": "0x468653", "name": "CD3DXCodec_X8R8G8B8::Encode", "comment": null}
-, {"addr": "0x46872a", "name": "CD3DXCodec_R5G6B5::Encode", "comment": null}
-, {"addr": "0x468801", "name": "CD3DXCodec_X1R5G5B5::Encode", "comment": null}
-, {"addr": "0x4688d8", "name": "CD3DXCodec_A1R5G5B5::Encode", "comment": null}
-, {"addr": "0x4689cb", "name": "CD3DXCodec_A4R4G4B4::Encode", "comment": null}
-, {"addr": "0x468ac4", "name": "CD3DXCodec_R3G3B2::Encode", "comment": null}
-, {"addr": "0x468b95", "name": "CD3DXCodec_A8::Encode", "comment": null}
-, {"addr": "0x468c17", "name": "CD3DXCodec_A8R3G3B2::Encode", "comment": null}
-, {"addr": "0x468d10", "name": "CD3DXCodec_X4R4G4B4::Encode", "comment": null}
-, {"addr": "0x468de7", "name": "CD3DXCodec_A8P8::Encode", "comment": null}
-, {"addr": "0x468ee4", "name": "CD3DXCodec_P8::Encode", "comment": null}
-, {"addr": "0x468f9e", "name": "CD3DXCodec_L8::Encode", "comment": null}
-, {"addr": "0x46903c", "name": "CD3DXCodec_A8L8::Encode", "comment": null}
-, {"addr": "0x46910c", "name": "CD3DXCodec_A4L4::Encode", "comment": null}
-, {"addr": "0x4691d4", "name": "CD3DXCodec_V8U8::Encode", "comment": null}
-, {"addr": "0x469284", "name": "CD3DXCodec_L6V5U5::Encode", "comment": null}
-, {"addr": "0x469363", "name": "CD3DXCodec_X8L8V8U8::Encode", "comment": null}
-, {"addr": "0x46944a", "name": "CD3DXCodec_Q8W8V8U8::Encode", "comment": null}
-, {"addr": "0x46955b", "name": "CD3DXCodec_V16U16::Encode", "comment": null}
-, {"addr": "0x46960c", "name": "CD3DXCodec_W11V11U10::Encode", "comment": null}
-, {"addr": "0x4696f8", "name": "CD3DXCodec_R8G8B8::Decode", "comment": null}
-, {"addr": "0x469784", "name": "CD3DXCodec_A8R8G8B8::Decode", "comment": null}
-, {"addr": "0x469826", "name": "CD3DXCodec_X8R8G8B8::Decode", "comment": null}
-, {"addr": "0x4698be", "name": "CD3DXCodec_R5G6B5::Decode", "comment": null}
-, {"addr": "0x469963", "name": "CD3DXCodec_X1R5G5B5::Decode", "comment": null}
-, {"addr": "0x469a05", "name": "CD3DXCodec_A1R5G5B5::Decode", "comment": null}
-, {"addr": "0x469ab5", "name": "CD3DXCodec_A4R4G4B4::Decode", "comment": null}
-, {"addr": "0x469b64", "name": "CD3DXCodec_R3G3B2::Decode", "comment": null}
-, {"addr": "0x469c06", "name": "CD3DXCodec_A8::Decode", "comment": null}
-, {"addr": "0x469c78", "name": "CD3DXCodec_A8R3G3B2::Decode", "comment": null}
-, {"addr": "0x469d2a", "name": "CD3DXCodec_X4R4G4B4::Decode", "comment": null}
-, {"addr": "0x469dc9", "name": "CD3DXCodec_A8P8::Decode", "comment": null}
-, {"addr": "0x469e50", "name": "CD3DXCodec_P8::Decode", "comment": null}
-, {"addr": "0x469eb4", "name": "CD3DXCodec_L8::Decode", "comment": null}
-, {"addr": "0x469f22", "name": "CD3DXCodec_A8L8::Decode", "comment": null}
-, {"addr": "0x469fab", "name": "CD3DXCodec_A4L4::Decode", "comment": null}
-, {"addr": "0x46a034", "name": "CD3DXCodecYUV::CD3DXCodecYUV", "comment": null}
-, {"addr": "0x46a105", "name": "CD3DXCodecYUV::Commit", "comment": null}
-, {"addr": "0x46a2f8", "name": "CD3DXCodecYUV::Fetch", "comment": null}
-, {"addr": "0x46a5c9", "name": "CD3DXCodecYUV::Encode", "comment": null}
-, {"addr": "0x46a641", "name": "CD3DXCodecYUV::Decode", "comment": null}
-, {"addr": "0x46a6b0", "name": "CD3DXCodecDXT::CD3DXCodecDXT", "comment": null}
-, {"addr": "0x46a7c7", "name": "CD3DXCodecDXT::Commit", "comment": null}
-, {"addr": "0x46aaf4", "name": "CD3DXCodecDXT::Fetch", "comment": null}
-, {"addr": "0x46ad9b", "name": "CD3DXCodecDXT::Encode", "comment": null}
-, {"addr": "0x46ae21", "name": "CD3DXCodecDXT::Decode", "comment": null}
-, {"addr": "0x46af4f", "name": "CD3DXCodec::Create", "comment": null}
-, {"addr": "0x46b5d9", "name": "_jpeg_CreateDecompress", "comment": null}
-, {"addr": "0x46b81d", "name": "_jpeg_consume_input", "comment": null}
-, {"addr": "0x46b8b7", "name": "_jpeg_finish_decompress", "comment": null}
-, {"addr": "0x46b958", "name": "_jpeg_read_header", "comment": null}
-, {"addr": "0x46ba5f", "name": "_jpeg_read_scanlines", "comment": null}
-, {"addr": "0x46bae3", "name": "_jpeg_start_decompress", "comment": null}
-, {"addr": "0x46d15d", "name": "_jpeg_resync_to_restart", "comment": null}
-, {"addr": "0x46d276", "name": "D3DX::jinit_marker_reader", "comment": null}
-, {"addr": "0x46d404", "name": "_jpeg_std_error", "comment": null}
-, {"addr": "0x46d4d7", "name": "_png_set_error_fn", "comment": null}
-, {"addr": "0x46d4f1", "name": "_png_error", "comment": null}
-, {"addr": "0x46d514", "name": "_png_warning", "comment": null}
-, {"addr": "0x46d529", "name": "D3DX::png_chunk_error", "comment": null}
-, {"addr": "0x46d54e", "name": "D3DX::png_chunk_warning", "comment": null}
-, {"addr": "0x46d573", "name": "D3DX::png_create_read_struct", "comment": null}
-, {"addr": "0x46d7ea", "name": "D3DX::png_read_update_info", "comment": null}
-, {"addr": "0x46d80a", "name": "_png_read_row", "comment": null}
-, {"addr": "0x46dbb2", "name": "_png_read_image", "comment": null}
-, {"addr": "0x46dbff", "name": "D3DX::png_read_destroy", "comment": null}
-, {"addr": "0x46dd22", "name": "D3DX::png_destroy_read_struct", "comment": null}
-, {"addr": "0x46dda3", "name": "_png_get_valid", "comment": null}
-, {"addr": "0x46ddbd", "name": "_png_get_rowbytes", "comment": null}
-, {"addr": "0x46ddd3", "name": "_png_get_channels", "comment": null}
-, {"addr": "0x46dde9", "name": "_png_get_gAMA", "comment": null}
-, {"addr": "0x46de12", "name": "_png_get_sRGB", "comment": null}
-, {"addr": "0x46de3d", "name": "_png_get_IHDR", "comment": null}
-, {"addr": "0x46df0e", "name": "_png_get_PLTE", "comment": null}
-, {"addr": "0x46df41", "name": "_png_get_tRNS", "comment": null}
-, {"addr": "0x46dfa8", "name": "_png_set_bgr", "comment": null}
-, {"addr": "0x46dfb1", "name": "_png_set_packing", "comment": null}
-, {"addr": "0x46dfca", "name": "_png_set_interlace_handling", "comment": null}
-, {"addr": "0x46dfe3", "name": "_png_set_filler", "comment": null}
-, {"addr": "0x46e030", "name": "_png_do_bgr", "comment": null}
-, {"addr": "0x46e0ef", "name": "_png_set_strip_16", "comment": null}
-, {"addr": "0x46e0f8", "name": "_png_set_gamma", "comment": null}
-, {"addr": "0x46e137", "name": "_png_read_transform_info", "comment": null}
-, {"addr": "0x46e222", "name": "_png_do_unpack", "comment": null}
-, {"addr": "0x46e331", "name": "_png_do_unshift", "comment": null}
-, {"addr": "0x46e4ac", "name": "_png_do_chop", "comment": null}
-, {"addr": "0x46e4f0", "name": "_png_do_read_filler", "comment": null}
-, {"addr": "0x46e727", "name": "_png_do_gamma", "comment": null}
-, {"addr": "0x46ea99", "name": "_png_do_expand_palette", "comment": null}
-, {"addr": "0x46eca0", "name": "_png_do_expand", "comment": null}
-, {"addr": "0x46eff3", "name": "_png_do_dither", "comment": null}
-, {"addr": "0x46f100", "name": "_png_build_gamma_table", "comment": null}
-, {"addr": "0x46f3ff", "name": "_png_init_read_transformations", "comment": null}
-, {"addr": "0x46f514", "name": "_png_do_read_transformations", "comment": null}
-, {"addr": "0x46f6b0", "name": "_png_set_gAMA", "comment": null}
-, {"addr": "0x46f6cb", "name": "_png_set_IHDR", "comment": null}
-, {"addr": "0x46f76d", "name": "_png_set_PLTE", "comment": null}
-, {"addr": "0x46f791", "name": "_png_set_sRGB", "comment": null}
-, {"addr": "0x46f7ac", "name": "_png_set_sRGB_gAMA_and_cHRM", "comment": null}
-, {"addr": "0x46f7e5", "name": "_png_set_tRNS", "comment": null}
-, {"addr": "0x46f82c", "name": "_png_read_data", "comment": null}
-, {"addr": "0x46f854", "name": "_png_set_read_fn", "comment": null}
-, {"addr": "0x46f893", "name": "_png_sig_cmp", "comment": null}
-, {"addr": "0x46f8db", "name": "D3DX::png_zalloc", "comment": null}
-, {"addr": "0x46f92e", "name": "D3DX::png_zfree", "comment": null}
-, {"addr": "0x46f933", "name": "_png_reset_crc", "comment": null}
-, {"addr": "0x46f94b", "name": "_png_calculate_crc", "comment": null}
-, {"addr": "0x46f98a", "name": "_png_info_init", "comment": null}
-, {"addr": "0x46f998", "name": "D3DX::png_info_destroy", "comment": null}
-, {"addr": "0x46f9a3", "name": "_png_create_info_struct", "comment": null}
-, {"addr": "0x46f9c5", "name": "XXEncodeBlockRGB", "comment": null}
-, {"addr": "0x46fa2e", "name": "XXDecodeBlockRGB", "comment": null}
-, {"addr": "0x46fdf5", "name": "EncodeBlockRGBColorKey", "comment": null}
-, {"addr": "0x47028c", "name": "DecodeBlockRGB", "comment": null}
-, {"addr": "0x470375", "name": "DecodeBlockAlpha4", "comment": null}
-, {"addr": "0x4703c3", "name": "DecodeBlockAlpha3", "comment": null}
-, {"addr": "0x4704c3", "name": "EncodeBlockRGB", "comment": null}
-, {"addr": "0x4704f5", "name": "EncodeBlockAlpha4", "comment": null}
-, {"addr": "0x47054e", "name": "EncodeBlockAlpha3", "comment": null}
-, {"addr": "0x4706a4", "name": "D3DX::jdiv_round_up", "comment": null}
-, {"addr": "0x4706b4", "name": "D3DX::jround_up", "comment": null}
-, {"addr": "0x4706cc", "name": "D3DX::jcopy_sample_rows", "comment": null}
-, {"addr": "0x470713", "name": "D3DX::jcopy_block_row", "comment": null}
-, {"addr": "0x470735", "name": "D3DX::jzero_far", "comment": null}
-, {"addr": "0x470750", "name": "D3DX::IsMMX", "comment": null}
-, {"addr": "0x470c59", "name": "D3DX::jinit_input_controller", "comment": null}
-, {"addr": "0x47160f", "name": "D3DX::jinit_memory_mgr", "comment": null}
-, {"addr": "0x4716c3", "name": "_jpeg_abort", "comment": null}
-, {"addr": "0x4716e5", "name": "_jpeg_destroy", "comment": null}
-, {"addr": "0x471700", "name": "_jpeg_alloc_quant_table", "comment": null}
-, {"addr": "0x47171c", "name": "_jpeg_alloc_huff_table", "comment": null}
-, {"addr": "0x4717a9", "name": "_jpeg_calc_output_dimensions", "comment": null}
-, {"addr": "0x471d02", "name": "D3DX::jinit_master_decompress", "comment": null}
-, {"addr": "0x471d32", "name": "_inflateReset", "comment": null}
-, {"addr": "0x471d71", "name": "_inflateEnd", "comment": null}
-, {"addr": "0x471daf", "name": "_inflateInit2_", "comment": null}
-, {"addr": "0x471e94", "name": "D3DX::inflateInit_", "comment": null}
-, {"addr": "0x471eab", "name": "_inflate", "comment": null}
-, {"addr": "0x47220c", "name": "_png_create_struct", "comment": null}
-, {"addr": "0x47224e", "name": "D3DX::png_destroy_struct", "comment": null}
-, {"addr": "0x47225b", "name": "_png_malloc", "comment": null}
-, {"addr": "0x472291", "name": "D3DX::png_free", "comment": null}
-, {"addr": "0x4722aa", "name": "_png_memcpy_check", "comment": null}
-, {"addr": "0x4722cd", "name": "_png_memset_check", "comment": null}
-, {"addr": "0x472300", "name": "_png_get_uint_32", "comment": null}
-, {"addr": "0x472323", "name": "_png_get_uint_16", "comment": null}
-, {"addr": "0x472336", "name": "D3DX::png_crc_read", "comment": null}
-, {"addr": "0x47235a", "name": "D3DX::png_crc_error", "comment": null}
-, {"addr": "0x4723b8", "name": "D3DX::png_check_chunk_name", "comment": null}
-, {"addr": "0x47241a", "name": "_png_combine_row", "comment": null}
-, {"addr": "0x47262e", "name": "_png_do_read_interlace", "comment": null}
-, {"addr": "0x4728f7", "name": "_png_read_filter_row", "comment": null}
-, {"addr": "0x472a70", "name": "D3DX::png_read_start_row", "comment": null}
-, {"addr": "0x472c0c", "name": "D3DX::png_crc_finish", "comment": null}
-, {"addr": "0x472fb8", "name": "D3DX::png_handle_IEND", "comment": null}
-, {"addr": "0x47338a", "name": "D3DX::png_handle_unknown", "comment": null}
-, {"addr": "0x4735f9", "name": "_crc32", "comment": null}
-, {"addr": "0x473702", "name": "D3DX::jpeg_get_small", "comment": null}
-, {"addr": "0x473712", "name": "D3DX::jpeg_open_backing_store", "comment": null}
-, {"addr": "0x473c64", "name": "D3DX::jinit_d_main_controller", "comment": null}
-, {"addr": "0x47489b", "name": "D3DX::jinit_d_coef_controller", "comment": null}
-, {"addr": "0x474993", "name": "D3DX::jpeg_make_d_derived_tbl", "comment": null}
-, {"addr": "0x474b36", "name": "D3DX::jpeg_fill_bit_buffer", "comment": null}
-, {"addr": "0x474c20", "name": "D3DX::jpeg_huff_decode", "comment": null}
-, {"addr": "0x475260", "name": "D3DX::jinit_huff_decoder", "comment": null}
-, {"addr": "0x475e12", "name": "D3DX::jinit_phuff_decoder", "comment": null}
-, {"addr": "0x47602a", "name": "D3DX::jinit_inverse_dct", "comment": null}
-, {"addr": "0x4762c5", "name": "D3DX::jinit_d_post_controller", "comment": null}
-, {"addr": "0x476785", "name": "D3DX::jinit_upsampler", "comment": null}
-, {"addr": "0x476bb5", "name": "D3DX::MYCbCr2RGB", "comment": null}
-, {"addr": "0x476f10", "name": "D3DX::jinit_color_deconverter", "comment": null}
-, {"addr": "0x477509", "name": "D3DX::jinit_merged_upsampler", "comment": null}
-, {"addr": "0x478491", "name": "D3DX::jinit_2pass_quantizer", "comment": null}
-, {"addr": "0x478f29", "name": "D3DX::jinit_1pass_quantizer", "comment": null}
-, {"addr": "0x478fb2", "name": "D3DX::inflate_blocks_reset", "comment": null}
-, {"addr": "0x47901d", "name": "D3DX::inflate_blocks_new", "comment": null}
-, {"addr": "0x4790a8", "name": "D3DX::inflate_blocks", "comment": null}
-, {"addr": "0x4799c1", "name": "D3DX::inflate_blocks_free", "comment": null}
-, {"addr": "0x4799f5", "name": "_adler32", "comment": null}
-, {"addr": "0x479b0e", "name": "D3DX::zcalloc", "comment": null}
-, {"addr": "0x479b1e", "name": "D3DX::zcfree", "comment": null}
-, {"addr": "0x479b29", "name": "D3DX::jpeg_idct_4x4", "comment": null}
-, {"addr": "0x479e3e", "name": "D3DX::jpeg_idct_2x2", "comment": null}
-, {"addr": "0x479ffc", "name": "D3DX::jpeg_idct_1x1", "comment": null}
-, {"addr": "0x47a039", "name": "D3DX::jpeg_idct_islow", "comment": null}
-, {"addr": "0x47a085", "name": "D3DX::jpeg_idct_ifast", "comment": null}
-, {"addr": "0x47a0d1", "name": "D3DX::jpeg_idct_float", "comment": null}
-, {"addr": "0x47a4b2", "name": "D3DX::inflate_codes_new", "comment": null}
-, {"addr": "0x47a4e6", "name": "D3DX::inflate_codes", "comment": null}
-, {"addr": "0x47aa3c", "name": "D3DX::inflate_codes_free", "comment": null}
-, {"addr": "0x47add2", "name": "D3DX::inflate_trees_bits", "comment": null}
-, {"addr": "0x47ae51", "name": "D3DX::inflate_trees_dynamic", "comment": null}
-, {"addr": "0x47af54", "name": "D3DX::inflate_trees_fixed", "comment": null}
-, {"addr": "0x47af83", "name": "D3DX::inflate_flush", "comment": null}
-, {"addr": "0x47b098", "name": "D3DX::pidct8x8llm", "comment": null}
-, {"addr": "0x47b585", "name": "D3DX::midct8x8llm", "comment": null}
-, {"addr": "0x47bd10", "name": "D3DX::pidct8x8aan", "comment": null}
-, {"addr": "0x47c0b9", "name": "D3DX::midct8x8aan", "comment": null}
-, {"addr": "0x47ce8c", "name": "D3DX::inflate_fast", "comment": null}
-, {"addr": "0x47d285", "name": "free", "comment": null}
-, {"addr": "0x47d39d", "name": "_malloc", "comment": null}
-, {"addr": "0x47d3af", "name": "_atol", "comment": null}
-, {"addr": "0x47d43c", "name": "operator delete", "comment": null}
-, {"addr": "0x47d441", "name": "operator new", "comment": null}
-, {"addr": "0x47d44f", "name": "_sprintf", "comment": null}
-, {"addr": "0x47d4b0", "name": "_strrchr", "comment": null}
-, {"addr": "0x47db60", "name": "_strlen", "comment": null}
-, {"addr": "0x47dbf0", "name": "_memset", "comment": null}
-, {"addr": "0x47dd00", "name": "_strchr", "comment": null}
-, {"addr": "0x47ddc0", "name": "_strcpy", "comment": null}
-, {"addr": "0x47ddd0", "name": "_strcat", "comment": null}
-, {"addr": "0x47e914", "name": "__ArrayUnwind", "comment": null}
-, {"addr": "0x47ea7d", "name": "_start", "comment": null}
-, {"addr": "0x47eca0", "name": "__CIacos", "comment": null}
-, {"addr": "0x47ee10", "name": "_floor", "comment": null}
-, {"addr": "0x47ef34", "name": "__ftol", "comment": null}
-, {"addr": "0x47efd8", "name": "__setjmp3", "comment": null}
-, {"addr": "0x47f053", "name": "_isdigit", "comment": null}
-, {"addr": "0x47f08d", "name": "_isxdigit", "comment": null}
-, {"addr": "0x47f0cc", "name": "_isspace", "comment": null}
-, {"addr": "0x47f3a0", "name": "__alloca_probe", "comment": null}
-, {"addr": "0x47f3dd", "name": "_JumpToContinuation", "comment": null}
-, {"addr": "0x47f740", "name": "__global_unwind2", "comment": null}
-, {"addr": "0x47f760", "name": "__unwind_handler", "comment": null}
-, {"addr": "0x47f7ea", "name": "__abnormal_termination", "comment": null}
-, {"addr": "0x47f80d", "name": "__NLG_Notify1", "comment": null}
-, {"addr": "0x47f816", "name": "__NLG_Notify", "comment": null}
-, {"addr": "0x47f830", "name": "__EH_prolog", "comment": null}
-, {"addr": "0x480624", "name": "__SEH_prolog", "comment": null}
-, {"addr": "0x48065f", "name": "__SEH_epilog", "comment": null}
-, {"addr": "0x48137c", "name": "___isctype_mt", "comment": null}
-, {"addr": "0x48157f", "name": "___updatetlocinfo", "comment": null}
-, {"addr": "0x4815d8", "name": "__getptd", "comment": null}
-, {"addr": "0x4816c0", "name": "__allmul", "comment": null}
-, {"addr": "0x4816f4", "name": "__errno", "comment": null}
-, {"addr": "0x482940", "name": "___ascii_stricmp", "comment": null}
-, {"addr": "0x482a60", "name": "__aulldiv", "comment": null}
-, {"addr": "0x483624", "name": "__cropzeros", "comment": null}
-, {"addr": "0x48366f", "name": "__positive", "comment": null}
-, {"addr": "0x483a0d", "name": "__ms_p5_test_fdiv", "comment": null}
-, {"addr": "0x483a4d", "name": "__ms_p5_mp_test_fdiv", "comment": null}
-, {"addr": "0x483a80", "name": "__trandisp1", "comment": null}
-, {"addr": "0x483ae7", "name": "__trandisp2", "comment": null}
-, {"addr": "0x483b78", "name": "__rttospop", "comment": null}
-, {"addr": "0x483b86", "name": "__rtzeronpop", "comment": null}
-, {"addr": "0x483b8b", "name": "__rtonepop", "comment": null}
-, {"addr": "0x483b92", "name": "__tosnan1", "comment": null}
-, {"addr": "0x483bbd", "name": "__nosnan2", "comment": null}
-, {"addr": "0x483be7", "name": "__nan2", "comment": null}
-, {"addr": "0x483c26", "name": "__rtindfpop", "comment": null}
-, {"addr": "0x483c39", "name": "__rttosnpopde", "comment": null}
-, {"addr": "0x483c43", "name": "__rtchsifneg", "comment": null}
-, {"addr": "0x483c50", "name": "__startTwoArgErrorHandling", "comment": null}
-, {"addr": "0x483c67", "name": "__startOneArgErrorHandling", "comment": null}
-, {"addr": "0x483cb0", "name": "__twoToTOS", "comment": null}
-, {"addr": "0x483cc5", "name": "__load_CW", "comment": null}
-, {"addr": "0x483cdc", "name": "__convertTOStoQNaN", "comment": null}
-, {"addr": "0x483cf5", "name": "__fload_withFB", "comment": null}
-, {"addr": "0x483d38", "name": "__checkTOS_withFB", "comment": null}
-, {"addr": "0x483e3c", "name": "__set_exp", "comment": null}
-, {"addr": "0x483e66", "name": "__sptype", "comment": null}
-, {"addr": "0x4846de", "name": "___libm_error_support", "comment": null}
-, {"addr": "0x484acf", "name": "_rt_probe_read4", "comment": null}
-, {"addr": "0x484b20", "name": "__CIpow_pentium4", "comment": null}
-, {"addr": "0x484b39", "name": "__pow_pentium4", "comment": null}
-, {"addr": "0x485681", "name": "__fFEXP", "comment": null}
-, {"addr": "0x4856e8", "name": "__rtinfpopse", "comment": null}
-, {"addr": "0x4857af", "name": "__rtinfpop", "comment": null}
-, {"addr": "0x4857ce", "name": "__ffexpm1", "comment": null}
-, {"addr": "0x485877", "name": "__d_inttype", "comment": null}
-, {"addr": "0x4858e1", "name": "__powhlp", "comment": null}
-, {"addr": "0x4862b0", "name": "_CallSettingFrame", "comment": null}
-, {"addr": "0x48683a", "name": "___wctomb_mt", "comment": null}
-, {"addr": "0x48689a", "name": "_wctomb", "comment": null}
-, {"addr": "0x4868d0", "name": "__aulldvrm", "comment": null}
-, {"addr": "0x486f70", "name": "_strcspn", "comment": null}
-, {"addr": "0x487180", "name": "_memcmp", "comment": null}
-, {"addr": "0x487240", "name": "_strpbrk", "comment": null}
-, {"addr": "0x48792a", "name": "___mbtowc_mt", "comment": null}
-, {"addr": "0x4879ea", "name": "_mbtowc", "comment": null}
-, {"addr": "0x487ea8", "name": "___security_error_handler", "comment": null}
-, {"addr": "0x48822f", "name": "__ZeroTail", "comment": null}
-, {"addr": "0x488261", "name": "__IncMan", "comment": null}
-, {"addr": "0x4882ae", "name": "__RoundMan", "comment": null}
-, {"addr": "0x488650", "name": "___dtold", "comment": null}
-, {"addr": "0x4888ed", "name": "__87except", "comment": null}
-, {"addr": "0x4889eb", "name": "D3DX::jpeg_mem_init", "comment": null}
-, {"addr": "0x488a10", "name": "_fdiv_main_routine", "comment": null}
-, {"addr": "0x488b27", "name": "__adj_fdiv_r", "comment": null}
-, {"addr": "0x488fc6", "name": "__fdivp_sti_st", "comment": null}
-, {"addr": "0x488fd9", "name": "__fdivrp_sti_st", "comment": null}
-, {"addr": "0x488fec", "name": "__adj_fdiv_m32", "comment": null}
-, {"addr": "0x489038", "name": "__adj_fdiv_m64", "comment": null}
-, {"addr": "0x489084", "name": "__adj_fdiv_m16i", "comment": null}
-, {"addr": "0x4890b8", "name": "__adj_fdiv_m32i", "comment": null}
-, {"addr": "0x4890ec", "name": "__adj_fdivr_m32", "comment": null}
-, {"addr": "0x489138", "name": "__adj_fdivr_m64", "comment": null}
-, {"addr": "0x489184", "name": "__adj_fdivr_m16i", "comment": null}
-, {"addr": "0x4891b8", "name": "__adj_fdivr_m32i", "comment": null}
-, {"addr": "0x4891ec", "name": "__safe_fdiv", "comment": null}
-, {"addr": "0x489201", "name": "__safe_fdivr", "comment": null}
-, {"addr": "0x489216", "name": "__fprem_common", "comment": null}
-, {"addr": "0x48941c", "name": "__adj_fprem", "comment": null}
-, {"addr": "0x4894ce", "name": "__fprem1_common", "comment": null}
-, {"addr": "0x4896d4", "name": "__adj_fprem1", "comment": null}
-, {"addr": "0x489789", "name": "__safe_fprem", "comment": null}
-, {"addr": "0x48978f", "name": "__safe_fprem1", "comment": null}
-, {"addr": "0x489795", "name": "__adj_fpatan", "comment": null}
-, {"addr": "0x489798", "name": "__adj_fptan", "comment": null}
-, {"addr": "0x48a386", "name": "___addl", "comment": null}
-, {"addr": "0x48a433", "name": "___shr_12", "comment": null}
-, {"addr": "0x48ad70", "name": "___ascii_strnicmp", "comment": null}
-, {"addr": "0x48b890", "name": "RtlUnwind", "comment": null}
-, {"addr": "0x48b8a0", "name": "float_to_int_48b8a0", "comment": null}
-, {"addr": "0x48b920", "name": "__CItan", "comment": null}
-, {"addr": "0x48b9e0", "name": "_atan", "comment": null}
-, {"addr": "0x48ba20", "name": "__CIatan", "comment": null}
-, {"addr": "0x48bbf0", "name": "__CIcos", "comment": null}
-, {"addr": "0x48bcc0", "name": "__CIsqrt", "comment": null}
-, {"addr": "0x48bd80", "name": "__CIatan_pentium4", "comment": null}
-, {"addr": "0x48bd98", "name": "__atan_pentium4", "comment": null}
-, {"addr": "0x48c30c", "name": "__fFATN2", "comment": null}
-, {"addr": "0x48c35c", "name": "__rtpiby2", "comment": null}
-, {"addr": "0x48c600", "name": "life_before_main_48c600_ASCII_MANAGER", "comment": null}
-, {"addr": "0x48c620", "name": "life_before_main_48c620_upd", "comment": null}
-, {"addr": "0x48c640", "name": "life_before_main_48c640_upd", "comment": null}
-, {"addr": "0x48c660", "name": "life_before_main_48c660_upd", "comment": null}
-, {"addr": "0x48c680", "name": "life_before_main_48c680_STAGE", "comment": null}
-, {"addr": "0x48c6a0", "name": "life_before_main_48c6a0_upd", "comment": null}
-, {"addr": "0x48c6c0", "name": "life_before_main_48c6c0_upd", "comment": null}
-, {"addr": "0x48c6e0", "name": "life_before_main_48c6e0_upd", "comment": null}
-, {"addr": "0x48c700", "name": "life_before_main_48c700_upd", "comment": null}
-, {"addr": "0x48c770", "name": "life_before_main_48c770_EFFECT_MANAGER", "comment": null}
-, {"addr": "0x48c790", "name": "life_before_main_48c790_upd", "comment": null}
-, {"addr": "0x48c7b0", "name": "life_before_main_48c7b0_upd", "comment": null}
-, {"addr": "0x48c7d0", "name": "life_before_main_48c7d0_upd", "comment": null}
-, {"addr": "0x48c7f0", "name": "life_before_main_48c7f0_upd", "comment": null}
-, {"addr": "0x48c810", "name": "life_before_main_48c810_upd", "comment": null}
-, {"addr": "0x48c830", "name": "life_before_main_48c830_ENEMY_MANAGER", "comment": null}
-, {"addr": "0x48c840", "name": "life_before_main_48c840_upd", "comment": null}
-, {"addr": "0x48c860", "name": "life_before_main_48c860_upd", "comment": null}
-, {"addr": "0x48c880", "name": "life_before_main_48c880_BULLET_MANAGER", "comment": null}
-, {"addr": "0x48c88f", "name": "life_before_main_48c88f_upd", "comment": null}
-, {"addr": "0x48c8a9", "name": "life_before_main_48c8a9_upd", "comment": null}
-, {"addr": "0x48c8c3", "name": "life_before_main_48c8c3_GAME_MANAGER", "comment": null}
-, {"addr": "0x48c8d2", "name": "life_before_main_48c8d2_upd", "comment": null}
-, {"addr": "0x48c8ec", "name": "life_before_main_48c8ec_upd", "comment": null}
-, {"addr": "0x48c910", "name": "life_before_main_48c910_UPDATE_FUNC_REGISTRY", "comment": null}
-, {"addr": "0x48c9f0", "name": "life_before_main_48c9f0_upd", "comment": null}
-, {"addr": "0x48ca10", "name": "life_before_main_48ca10_WINDOW", "comment": null}
-, {"addr": "0x48ca25", "name": "life_before_main_SUPERVISOR", "comment": null}
-, {"addr": "0x48ca40", "name": "life_before_main_PLAYER", "comment": null}
-, {"addr": "0x48ca90", "name": "life_before_main_48ca90_SOUND_MANAGER", "comment": null}
+
+[ {"addr": "0x401000", "name": "D3DMATRIX::set_identity"}
+, {"addr": "0x401170", "name": "AnmVm::initialize"}
+, {"addr": "0x4011b0", "name": "AnmVm::constructor"}
+, {"addr": "0x4014a0", "name": "AsciiManager::constructor"}
+, {"addr": "0x401690", "name": "AsciiManagerBigChild1::constructor"}
+, {"addr": "0x401720", "name": "AsciiManagerBigChild2::constructor"}
+, {"addr": "0x4017e0", "name": "AsciiManager::on_tick_01"}
+, {"addr": "0x401970", "name": "AsciiManager::on_draw_10"}
+, {"addr": "0x4019e0", "name": "AsciiManager::on_draw_0b"}
+, {"addr": "0x401a00", "name": "AsciiManager::reset"}
+, {"addr": "0x401d70", "name": "AsciiManager::on_registration"}
+, {"addr": "0x401de0", "name": "AsciiManager::on_cleanup"}
+, {"addr": "0x401e30", "name": "AsciiManager::initialize"}
+, {"addr": "0x401f40", "name": "AsciiManager::sub_401f40_draw"}
+, {"addr": "0x402060", "name": "AsciiManager::drawf"}
+, {"addr": "0x4024f0", "name": "AsciiManager::sub_4024f0_makes_array_1_popup"}
+, {"addr": "0x402630", "name": "AsciiManager::sub_402630_makes_array_2_popup"}
+, {"addr": "0x404690", "name": "AsciiManager::sub_404690"}
+, {"addr": "0x404eb0", "name": "D3DVec3Cross"}
+, {"addr": "0x404fe0", "name": "GameManager::sub_404fe0"}
+, {"addr": "0x405080", "name": "Stage::constructor"}
+, {"addr": "0x4052d0", "name": "compute_bezier"}
+, {"addr": "0x405370", "name": "Stage::interpolate_camera_field"}
+, {"addr": "0x405690", "name": "Stage::on_tick_07"}
+, {"addr": "0x406930", "name": "Stage::sub_406930"}
+, {"addr": "0x4069d0", "name": "Stage::on_draw_03"}
+, {"addr": "0x406de0", "name": "Stage::on_draw_04"}
+, {"addr": "0x407000", "name": "Stage::on_registration"}
+, {"addr": "0x407410", "name": "Stage::on_cleanup"}
+, {"addr": "0x4074c0", "name": "Stage::initialize"}
+, {"addr": "0x4075d0", "name": "Stage::unregister_update_funcs"}
+, {"addr": "0x4077f0", "name": "Stage::sub_4077f0"}
+, {"addr": "0x407900", "name": "Stage::draw_vms"}
+, {"addr": "0x4082b0", "name": "Stage::set_transform_matrices_from_camera"}
+, {"addr": "0x408710", "name": "Player::bomb_on_tick__unfocused_reimu_a"}
+, {"addr": "0x408e10", "name": "Player::bomb_on_draw__unfocused_reimu_a"}
+, {"addr": "0x4091b0", "name": "Player::bomb_on_tick__focused_reimu_a"}
+, {"addr": "0x409990", "name": "Player::bomb_on_draw__focused_reimu_a"}
+, {"addr": "0x409dd0", "name": "Player::bomb_on_tick__unfocused_reimu_b"}
+, {"addr": "0x40a280", "name": "Player::bomb_on_draw__unfocused_reimu_b"}
+, {"addr": "0x40a3a0", "name": "Player::bomb_on_tick__focused_reimu_b"}
+, {"addr": "0x40a6b0", "name": "Player::bomb_on_draw__focused_reimu_b"}
+, {"addr": "0x40a7c0", "name": "Player::bomb_on_tick__unfocused_reimu_c"}
+, {"addr": "0x40aba0", "name": "Player::bomb_on_draw__unfocused_reimu_c"}
+, {"addr": "0x40af10", "name": "Player::bomb_on_tick__focused_reimu_c"}
+, {"addr": "0x40b5d0", "name": "Player::bomb_on_draw__focused_reimu_c"}
+, {"addr": "0x40b7d0", "name": "Player::bomb_on_tick__unfocused_marisa_a"}
+, {"addr": "0x40bca0", "name": "Player::bomb_on_draw__unfocused_marisa_a"}
+, {"addr": "0x40be20", "name": "Player::bomb_on_tick__focused_marisa_a"}
+, {"addr": "0x40c160", "name": "Player::bomb_on_draw__focused_marisa_a"}
+, {"addr": "0x40c2e0", "name": "Player::bomb_on_tick__unfocused_marisa_b"}
+, {"addr": "0x40c970", "name": "Player::bomb_on_draw__unfocused_marisa_b"}
+, {"addr": "0x40ca50", "name": "Player::bomb_on_tick__focused_marisa_b"}
+, {"addr": "0x40d3b0", "name": "Player::bomb_on_draw__focused_marisa_b"}
+, {"addr": "0x40d4c0", "name": "Player::bomb_on_tick__unfocused_marisa_c"}
+, {"addr": "0x40d9a0", "name": "Player::bomb_on_draw__unfocused_marisa_c"}
+, {"addr": "0x40da80", "name": "Player::bomb_on_tick__focused_marisa_c"}
+, {"addr": "0x40e280", "name": "Player::bomb_on_draw__focused_marisa_c"}
+, {"addr": "0x40e420", "name": "sub_40e420_read_ecl"}
+, {"addr": "0x40e4f0", "name": "EclManager::sub_40e4f0_cleanup"}
+, {"addr": "0x40e5b0", "name": "Enemy::ecl_get_int_var"}
+, {"addr": "0x40edf0", "name": "Enemy::ecl_get_float_var"}
+, {"addr": "0x40fc90", "name": "Enemy::ecl_spell"}
+, {"addr": "0x4101a0", "name": "Enemy::ecl_spell_end"}
+, {"addr": "0x410520", "name": "EclManager::ecl_parser"}
+, {"addr": "0x417b20", "name": "Bullet::destroy"}
+, {"addr": "0x417b90", "name": "Enemy::hardcoded_func_00_s278_set"}
+, {"addr": "0x417c30", "name": "Enemy::hardcoded_func_01_s2_call"}
+, {"addr": "0x417e50", "name": "Enemy::hardcoded_func_02_s2_call"}
+, {"addr": "0x418110", "name": "Enemy::hardcoded_func_03_s2_set"}
+, {"addr": "0x418120", "name": "Enemy::hardcoded_func_04_s378_set"}
+, {"addr": "0x418260", "name": "Enemy::hardcoded_func_05_s3_set"}
+, {"addr": "0x4182d0", "name": "Enemy::hardcoded_func_06_s3_call"}
+, {"addr": "0x418880", "name": "Enemy::hardcoded_func_07_s4_set"}
+, {"addr": "0x418b40", "name": "Enemy::hardcoded_func_08_s4_set"}
+, {"addr": "0x418e80", "name": "Enemy::hardcoded_func_09_s5_call"}
+, {"addr": "0x418eb0", "name": "Enemy::hardcoded_func_10_s5678_call"}
+, {"addr": "0x418fc0", "name": "Enemy::hardcoded_func_11_s5678_call"}
+, {"addr": "0x4190f0", "name": "Enemy::hardcoded_func_12_s5_call"}
+, {"addr": "0x4194e0", "name": "Enemy::hardcoded_func_13_s5_set"}
+, {"addr": "0x419610", "name": "Enemy::hardcoded_func_14_s5_call"}
+, {"addr": "0x4196e0", "name": "Enemy::hardcoded_func_15_s6_call"}
+, {"addr": "0x419710", "name": "Enemy::hardcoded_func_16_s6_call"}
+, {"addr": "0x419880", "name": "Enemy::hardcoded_func_17_s6_call"}
+, {"addr": "0x4199c0", "name": "Enemy::hardcoded_func_18_s6_call"}
+, {"addr": "0x419a50", "name": "Enemy::hardcoded_func_21_s5_call_hl"}
+, {"addr": "0x419d70", "name": "Enemy::hardcoded_func_19_s6_call"}
+, {"addr": "0x419d90", "name": "Enemy::hardcoded_func_20_s6_call"}
+, {"addr": "0x419dc0", "name": "Enemy::hardcoded_func_22_s7_set"}
+, {"addr": "0x419ff0", "name": "Enemy::hardcoded_func_23_s8_set"}
+, {"addr": "0x41a210", "name": "EffectManager::constructor"}
+, {"addr": "0x41a350", "name": "EffectManager::set_zero"}
+, {"addr": "0x41adf0", "name": "sub_41adf0__loops_over_effect_manager__whyyyyyyy"}
+, {"addr": "0x41c1b0", "name": "std::_System_error_category::name"}
+, {"addr": "0x41c1c0", "name": "EffectManager::create_effect"}
+, {"addr": "0x41c610", "name": "EffectManager::sub_41c610"}
+, {"addr": "0x41c790", "name": "EffectManager::on_tick_0b"}
+, {"addr": "0x41ca10", "name": "EffectManager::on_draw_09"}
+, {"addr": "0x41cde0", "name": "EffectManager::on_registration"}
+, {"addr": "0x41d050", "name": "EffectManager::on_cleanup"}
+, {"addr": "0x41d0a0", "name": "EffectManager::initialize"}
+, {"addr": "0x41d150", "name": "EffectManager::unregister_update_funcs"}
+, {"addr": "0x41d180", "name": "Ending::constructor"}
+, {"addr": "0x41d2f0", "name": "Ending::on_tick"}
+, {"addr": "0x41d380", "name": "Ending::on_draw"}
+, {"addr": "0x41e590", "name": "Ending::on_registration"}
+, {"addr": "0x41e790", "name": "Ending::on_cleanup"}
+, {"addr": "0x41e820", "name": "Ending::operator new"}
+, {"addr": "0x41e920", "name": "Enemy::sub_41e920"}
+, {"addr": "0x41ea60", "name": "EnemyManager::sub_41ea60"}
+, {"addr": "0x41ee70", "name": "EnemyManager::constructor"}
+, {"addr": "0x41ef70", "name": "Enemy::constructor"}
+, {"addr": "0x41f220", "name": "EnemyEclContext::constructor"}
+, {"addr": "0x41f6f0", "name": "run_timeline"}
+, {"addr": "0x4203b0", "name": "Enemy::restrict_to_move_limits"}
+, {"addr": "0x420620", "name": "EnemyManager::on_tick_0a"}
+, {"addr": "0x422ca0", "name": "EnemyManager::on_draw_05"}
+, {"addr": "0x422cc0", "name": "EnemyManager::on_draw_07"}
+, {"addr": "0x422ce0", "name": "EnemyManager::on_registration"}
+, {"addr": "0x422e70", "name": "EnemyManager::on_cleanup"}
+, {"addr": "0x422f40", "name": "EnemyManager::initialize"}
+, {"addr": "0x423050", "name": "EnemyManager::unregister_update_funcs"}
+, {"addr": "0x4232a0", "name": "EnemyManager::sub_4232a0"}
+, {"addr": "0x4232e0", "name": "BulletManager::reset"}
+, {"addr": "0x423330", "name": "BulletManager::constructor"}
+, {"addr": "0x423420", "name": "BulletTypeVms::constructor"}
+, {"addr": "0x423510", "name": "Bullet::constructor"}
+, {"addr": "0x4235d0", "name": "Laser::constructor"}
+, {"addr": "0x423730", "name": "BulletManager::shoot_one"}
+, {"addr": "0x424290", "name": "Bullet::run_ex"}
+, {"addr": "0x424740", "name": "BulletManager::sub_424740_cancels_bullets"}
+, {"addr": "0x4249a0", "name": "BulletManager::sub_4249a0_cancels_bullets"}
+, {"addr": "0x424c00", "name": "BulletManager::sub_424c00_cancels_bullets"}
+, {"addr": "0x424d20", "name": "BulletManager::shoot_bullets"}
+, {"addr": "0x424e00", "name": "BulletManager::shoot_laser"}
+, {"addr": "0x4250d0", "name": "Bullet::step_ex_00"}
+, {"addr": "0x4251a0", "name": "Bullet::step_ex_04"}
+, {"addr": "0x425310", "name": "Bullet::step_ex_05"}
+, {"addr": "0x425400", "name": "Bullet::step_ex_06"}
+, {"addr": "0x425580", "name": "Bullet::step_ex_08"}
+, {"addr": "0x425700", "name": "Bullet::step_ex_07"}
+, {"addr": "0x4258a0", "name": "Bullet::step_ex_10_11"}
+, {"addr": "0x425a50", "name": "BulletManager::on_tick_0c"}
+, {"addr": "0x426c40", "name": "BulletManager::on_draw_0a"}
+, {"addr": "0x426f60", "name": "BulletManager::on_registration"}
+, {"addr": "0x427620", "name": "BulletManager::on_cleanup"}
+, {"addr": "0x4276a0", "name": "BulletManager::initialize"}
+, {"addr": "0x427760", "name": "BulletManager::unregister_update_funcs__and_more"}
+, {"addr": "0x4277a0", "name": "BulletManager::sub_4277a0"}
+, {"addr": "0x427be2", "name": "Gui::sub_427be2"}
+, {"addr": "0x427c81", "name": "Gui::sub_427c81"}
+, {"addr": "0x427e7c", "name": "Gui::on_tick_0d"}
+, {"addr": "0x427f22", "name": "Gui::on_draw_0c"}
+, {"addr": "0x428b19", "name": "Gui::on_registration"}
+, {"addr": "0x429935", "name": "Gui::load_msg"}
+, {"addr": "0x429c42", "name": "GuiImpl::run_msg"}
+, {"addr": "0x42ad66", "name": "Gui::sub_42ad66"}
+, {"addr": "0x42adab", "name": "Gui::sub_42adab"}
+, {"addr": "0x42d03a", "name": "Gui::on_registration__stub"}
+, {"addr": "0x42d04b", "name": "Gui::on_cleanup"}
+, {"addr": "0x42d136", "name": "Gui::initialize"}
+, {"addr": "0x42d24d", "name": "GuiImpl::constructor"}
+, {"addr": "0x42d465", "name": "GuiDialogueStuff::constructor"}
+, {"addr": "0x42d53d", "name": "Gui::unregister_update_funcs"}
+, {"addr": "0x42d560", "name": "GameManager::constructor"}
+, {"addr": "0x42d6d8", "name": "GameManager::is_rect_partially_onscreen"}
+, {"addr": "0x42d8d5", "name": "GameManager::on_tick_02"}
+, {"addr": "0x42e1d4", "name": "GameManager::on_draw_02"}
+, {"addr": "0x42e83e", "name": "GameManager::on_registration"}
+, {"addr": "0x42f2e4", "name": "GameManager::on_cleanup"}
+, {"addr": "0x42f3c5", "name": "GameManager::initialize"}
+, {"addr": "0x42f736", "name": "GameManager::sub_42f736"}
+, {"addr": "0x42f789", "name": "GameManager::sub_42f789"}
+, {"addr": "0x42fb20", "name": "UpdateFunc::constructor"}
+, {"addr": "0x42fbd0", "name": "register__on_tick"}
+, {"addr": "0x42fca0", "name": "register__on_draw"}
+, {"addr": "0x42fd60", "name": "UpdateFuncRegistry::run_all_on_tick"}
+, {"addr": "0x42fe20", "name": "UpdateFuncRegistry::run_all_on_draw"}
+, {"addr": "0x430090", "name": "UpdateFunc::operator new"}
+, {"addr": "0x430140", "name": "UpdateFuncRegistry::unregister"}
+, {"addr": "0x430290", "name": "sub_430290__calls_joypad_funcs"}
+, {"addr": "0x4312c0", "name": "sub_4312c0__calls_keyboard_funcs"}
+, {"addr": "0x431330", "name": "sub_431330_load_file"}
+, {"addr": "0x4315f0", "name": "DebugLog::sub_4315f0"}
+, {"addr": "0x431730", "name": "DebugLog::sub_43eb60"}
+, {"addr": "0x432630", "name": "ItemManager::constructor"}
+, {"addr": "0x432690", "name": "Item::constructor"}
+, {"addr": "0x4326f0", "name": "ItemManager::spawn_item"}
+, {"addr": "0x432990", "name": "ItemManager::on_tick__(called_by_BulletManager)"}
+, {"addr": "0x433a90", "name": "ItemManager::sub_433a90"}
+, {"addr": "0x433b20", "name": "ItemManager::sub_433b20"}
+, {"addr": "0x433c40", "name": "ItemManager::sub_433c40"}
+, {"addr": "0x433cd0", "name": "ItemManager::on_draw__(called_by_BulletManager)"}
+, {"addr": "0x434020", "name": "WinMain"}
+, {"addr": "0x434490", "name": "main__WindowProc"}
+, {"addr": "0x4346e0", "name": "Window::do_tick"}
+, {"addr": "0x434a40", "name": "Supervisor::create_d3d"}
+, {"addr": "0x434a80", "name": "Supervisor::create_game_window"}
+, {"addr": "0x434bd0", "name": "Supervisor::init_d3d_device"}
+, {"addr": "0x436110", "name": "DNameNode::DNameNode"}
+, {"addr": "0x437c39", "name": "AnmManager::cleanup_stream_source"}
+, {"addr": "0x437c70", "name": "Supervisor::on_tick"}
+, {"addr": "0x438986", "name": "Supervisor::on_registration"}
+, {"addr": "0x438de2", "name": "Supervisor::on_cleanup"}
+, {"addr": "0x439000", "name": "Supervisor::initialize"}
+, {"addr": "0x43958d", "name": "Supervisor::sub_43958d"}
+, {"addr": "0x4398b6", "name": "Supervisor::load_config"}
+, {"addr": "0x439ec1", "name": "Supervisor::sub_439ec1"}
+, {"addr": "0x439f4d", "name": "Supervisor::sub_439f4d"}
+, {"addr": "0x43a0d6", "name": "Supervisor::fade_out_music"}
+, {"addr": "0x43a1bd", "name": "Supervisor::enable_d3d_fog"}
+, {"addr": "0x43a207", "name": "Supervisor::disable_d3d_fog"}
+, {"addr": "0x43a24e", "name": "Supervisor::set_render_state"}
+, {"addr": "0x43a69b", "name": "MusicRoom::constructor"}
+, {"addr": "0x43ae20", "name": "MusicRoom::on_registration"}
+, {"addr": "0x43b478", "name": "MusicRoom::on_cleanup"}
+, {"addr": "0x43b4db", "name": "MusicRoom::initialize"}
+, {"addr": "0x43b7f0", "name": "Player::constructor"}
+, {"addr": "0x43ba10", "name": "PlayerBullet::constructor"}
+, {"addr": "0x43baa0", "name": "PlayerBomb::constructor"}
+, {"addr": "0x43bb10", "name": "PlayerBombArrayItem::constructor"}
+, {"addr": "0x43d160", "name": "Player::shoot_bullet(s?)"}
+, {"addr": "0x43d2f0", "name": "Player::tick_bullets"}
+, {"addr": "0x43d690", "name": "Player::draw_bullets"}
+, {"addr": "0x43d880", "name": "Player::tick_shooting_state"}
+, {"addr": "0x43d9e0", "name": "Player::compute_damage_to_enemy"}
+, {"addr": "0x43ee50", "name": "Player::move"}
+, {"addr": "0x440940", "name": "Player::tick_bomb_areas"}
+, {"addr": "0x4409f0", "name": "Player::tick_bombing_state"}
+, {"addr": "0x440cf0", "name": "Player::sub_440cf0"}
+, {"addr": "0x4411c0", "name": "Player::sub_4411c0"}
+, {"addr": "0x441330", "name": "Player::sub_441330"}
+, {"addr": "0x441670", "name": "Player::sub_441670"}
+, {"addr": "0x441fb0", "name": "Player::on_tick_08"}
+, {"addr": "0x4420b0", "name": "Player::on_draw_06"}
+, {"addr": "0x442350", "name": "Player::on_draw_08"}
+, {"addr": "0x4423e0", "name": "Player::on_registration"}
+, {"addr": "0x4428e0", "name": "Player::on_cleanup"}
+, {"addr": "0x4429d0", "name": "Player::initialize"}
+, {"addr": "0x442b10", "name": "Player::unregister_update_funcs"}
+, {"addr": "0x442b70", "name": "sub_442b70_reads_sht_file"}
+, {"addr": "0x443aa0", "name": "ReplayManager::initialize"}
+, {"addr": "0x445db3", "name": "ResultScreen::on_tick_0e"}
+, {"addr": "0x448d40", "name": "ResultScreen::on_draw_0d"}
+, {"addr": "0x449b05", "name": "ResultScreen::on_registration"}
+, {"addr": "0x44a1f9", "name": "ResultScreen::on_cleanup"}
+, {"addr": "0x44a302", "name": "ResultScreen::operator new"}
+, {"addr": "0x44b280", "name": "ScreenEffect::on_registration"}
+, {"addr": "0x44b2c0", "name": "ScreenEffect::on_cleanup"}
+, {"addr": "0x44b310", "name": "ScreenEffect::operator new"}
+, {"addr": "0x44b510", "name": "SoundManager::constructor"}
+, {"addr": "0x44b560", "name": "SoundManager::initialize_dsound"}
+, {"addr": "0x44bff0", "name": "SoundManager::sub_44bff0"}
+, {"addr": "0x44c020", "name": "SoundManager::sub_44c020"}
+, {"addr": "0x44c7d0", "name": "SoundManager::sub_44c7d0"}
+, {"addr": "0x44c930", "name": "SoundManager::play_sound_centered"}
+, {"addr": "0x44c9c0", "name": "SoundManager::update_sound_thread"}
+, {"addr": "0x44d3e0", "name": "AnmManager::constructor"}
+, {"addr": "0x44d630", "name": "AnmManager::create_stream_source"}
+, {"addr": "0x44e8e0", "name": "AnmManager::set_vm_sprite"}
+, {"addr": "0x44ea20", "name": "AnmLoaded::load_script_into_vm"}
+, {"addr": "0x44eec0", "name": "AnmManager::setup_render_state_for_vm"}
+, {"addr": "0x44f580", "name": "AnmManager::reset_vertex_buffers"}
+, {"addr": "0x44f5c0", "name": "AnmManager::flush_sprites"}
+, {"addr": "0x44f690", "name": "AnmManager::write_sprite"}
+, {"addr": "0x44f9a0", "name": "AnmManager::draw_vm"}
+, {"addr": "0x44fc10", "name": "AnmManager::draw_vm_b"}
+, {"addr": "0x450520", "name": "AnmManager::draw_vm_c"}
+, {"addr": "0x450a50", "name": "AnmVm::get_float_var"}
+, {"addr": "0x450b20", "name": "AnmVm::get_int_var"}
+, {"addr": "0x450c10", "name": "AnmVm::get_float_var_ptr"}
+, {"addr": "0x450ca0", "name": "AnmVm::get_int_var_ptr"}
+, {"addr": "0x450d60", "name": "AnmManager::run_vm"}
+, {"addr": "0x4550c0", "name": "AnmManager::run_vms_in_array"}
+, {"addr": "0x45547d", "name": "MainMenu::constructor"}
+, {"addr": "0x4554d6", "name": "MainMenu::on_tick_03"}
+, {"addr": "0x45bd6c", "name": "MainMenu::on_draw_00"}
+, {"addr": "0x45c4c8", "name": "MainMenu::on_registration"}
+, {"addr": "0x45c546", "name": "MainMenu::on_cleanup"}
+, {"addr": "0x45c5d0", "name": "MainMenu::operator new"}
+, {"addr": "0x45c6f0", "name": "Concurrency::IScheduler::IScheduler"}
+, {"addr": "0x461aa2", "name": "D3DXMatrixMultiply"}
+, {"addr": "0x461c7a", "name": "D3DXMatrixRotationZ"}
+, {"addr": "0x461cf6", "name": "D3DXMatrixRotationQuaternion"}
+, {"addr": "0x461dd8", "name": "D3DXMatrixPerspectiveFovLH"}
+, {"addr": "0x461e6c", "name": "D3DXVec3Cross"}
+, {"addr": "0x461eb8", "name": "D3DXMatrixIdentity"}
+, {"addr": "0x461f0c", "name": "D3DXVec3Normalize"}
+, {"addr": "0x461fb3", "name": "D3DXVec3TransformCoord"}
+, {"addr": "0x462083", "name": "D3DXVec3Project"}
+, {"addr": "0x4621a0", "name": "D3DXMatrixLookAtLH"}
+, {"addr": "0x46272c", "name": "D3DXLoadSurfaceFromMemory"}
+, {"addr": "0x462962", "name": "D3DXCheckTextureRequirements"}
+, {"addr": "0x46298a", "name": "D3DXCreateTexture"}
+, {"addr": "0x4629f0", "name": "D3DXLoadSurfaceFromFileInMemory"}
+, {"addr": "0x462aa6", "name": "D3DXLoadSurfaceFromSurface"}
+, {"addr": "0x462bc3", "name": "D3DXFilterTexture"}
+, {"addr": "0x462cf4", "name": "D3DXCreateTextureFromFileInMemoryEx"}
+, {"addr": "0x463105", "name": "CD3DXBlt::CD3DXBlt"}
+, {"addr": "0x46310f", "name": "CD3DXBlt::~CD3DXBlt"}
+, {"addr": "0x46312d", "name": "TF_Row::~TF_Row"}
+, {"addr": "0x4633f0", "name": "CD3DXBlt::BltTriangle2D"}
+, {"addr": "0x4637a6", "name": "CD3DXBlt::BltTriangle3D"}
+, {"addr": "0x463c7d", "name": "CD3DXBlt::BltSame_DXTn"}
+, {"addr": "0x463dfe", "name": "CD3DXBlt::BltBox2D_A8R8G8B8"}
+, {"addr": "0x463f5c", "name": "CD3DXBlt::BltBox2D_X8R8G8B8"}
+, {"addr": "0x464078", "name": "CD3DXBlt::BltBox2D_R5G6B5"}
+, {"addr": "0x4641c8", "name": "CD3DXBlt::BltBox2D_X1R5G5B5"}
+, {"addr": "0x4642ec", "name": "CD3DXBlt::BltBox2D_A1R5G5B5"}
+, {"addr": "0x46443b", "name": "CD3DXBlt::BltBox2D_A4R4G4B4"}
+, {"addr": "0x46458e", "name": "CD3DXBlt::BltBox2D_R3G3B2"}
+, {"addr": "0x4646cd", "name": "CD3DXBlt::BltBox2D_A8"}
+, {"addr": "0x464768", "name": "CD3DXBlt::BltBox2D_A8R3G3B2"}
+, {"addr": "0x4648b4", "name": "CD3DXBlt::BltBox2D_X4R4G4B4"}
+, {"addr": "0x4649d5", "name": "CD3DXBlt::BltBox2D_R8G8B8"}
+, {"addr": "0x4649db", "name": "CD3DXBlt::BltBox2D_A8L8"}
+, {"addr": "0x464b27", "name": "CD3DXBlt::BltBox2D_A4L4"}
+, {"addr": "0x464c99", "name": "CD3DXBlt::BltSame"}
+, {"addr": "0x464dcb", "name": "CD3DXBlt::BltCopy"}
+, {"addr": "0x464e6d", "name": "CD3DXBlt::BltNone"}
+, {"addr": "0x464fe2", "name": "CD3DXBlt::BltPoint"}
+, {"addr": "0x465178", "name": "CD3DXBlt::BltBox2D"}
+, {"addr": "0x46550d", "name": "CD3DXBlt::BltBox3D"}
+, {"addr": "0x465987", "name": "CD3DXBlt::BltLinear2D"}
+, {"addr": "0x465cc8", "name": "CD3DXBlt::BltLinear3D"}
+, {"addr": "0x466315", "name": "CD3DXBlt::Blt"}
+, {"addr": "0x466427", "name": "CD3DXImage::CD3DXImage"}
+, {"addr": "0x466440", "name": "CD3DXImage::~CD3DXImage"}
+, {"addr": "0x466499", "name": "CD3DXImage::LoadDIB"}
+, {"addr": "0x466b16", "name": "CD3DXImage::LoadJPG"}
+, {"addr": "0x466d6b", "name": "CD3DXImage::LoadTGA"}
+, {"addr": "0x4671e3", "name": "CD3DXImage::LoadPPM"}
+, {"addr": "0x4674b3", "name": "D3DX::jpeg_mem_term"}
+, {"addr": "0x4674b4", "name": "CD3DXImage::LoadPNG"}
+, {"addr": "0x4679ca", "name": "CD3DXImage::LoadDDS"}
+, {"addr": "0x467cdd", "name": "CD3DXImage::LoadBMP"}
+, {"addr": "0x467d0d", "name": "CD3DXImage::Load"}
+, {"addr": "0x467e71", "name": "D3DXCOLOR::D3DXCOLOR"}
+, {"addr": "0x467ec7", "name": "CD3DXCodec_V8U8::Decode"}
+, {"addr": "0x467f30", "name": "CD3DXCodec_L6V5U5::Decode"}
+, {"addr": "0x467fc6", "name": "CD3DXCodec_X8L8V8U8::Decode"}
+, {"addr": "0x46803e", "name": "CD3DXCodec_Q8W8V8U8::Decode"}
+, {"addr": "0x4680bc", "name": "CD3DXCodec_V16U16::Decode"}
+, {"addr": "0x468126", "name": "CD3DXCodec_W11V11U10::Decode"}
+, {"addr": "0x4681c5", "name": "D3DXCOLOR::operator-"}
+, {"addr": "0x468224", "name": "CD3DXCodec::CD3DXCodec"}
+, {"addr": "0x468429", "name": "CD3DXCodec::ColorKey"}
+, {"addr": "0x468499", "name": "CD3DXCodec_R8G8B8::Encode"}
+, {"addr": "0x46855a", "name": "CD3DXCodec_A8R8G8B8::Encode"}
+, {"addr": "0x468653", "name": "CD3DXCodec_X8R8G8B8::Encode"}
+, {"addr": "0x46872a", "name": "CD3DXCodec_R5G6B5::Encode"}
+, {"addr": "0x468801", "name": "CD3DXCodec_X1R5G5B5::Encode"}
+, {"addr": "0x4688d8", "name": "CD3DXCodec_A1R5G5B5::Encode"}
+, {"addr": "0x4689cb", "name": "CD3DXCodec_A4R4G4B4::Encode"}
+, {"addr": "0x468ac4", "name": "CD3DXCodec_R3G3B2::Encode"}
+, {"addr": "0x468b95", "name": "CD3DXCodec_A8::Encode"}
+, {"addr": "0x468c17", "name": "CD3DXCodec_A8R3G3B2::Encode"}
+, {"addr": "0x468d10", "name": "CD3DXCodec_X4R4G4B4::Encode"}
+, {"addr": "0x468de7", "name": "CD3DXCodec_A8P8::Encode"}
+, {"addr": "0x468ee4", "name": "CD3DXCodec_P8::Encode"}
+, {"addr": "0x468f9e", "name": "CD3DXCodec_L8::Encode"}
+, {"addr": "0x46903c", "name": "CD3DXCodec_A8L8::Encode"}
+, {"addr": "0x46910c", "name": "CD3DXCodec_A4L4::Encode"}
+, {"addr": "0x4691d4", "name": "CD3DXCodec_V8U8::Encode"}
+, {"addr": "0x469284", "name": "CD3DXCodec_L6V5U5::Encode"}
+, {"addr": "0x469363", "name": "CD3DXCodec_X8L8V8U8::Encode"}
+, {"addr": "0x46944a", "name": "CD3DXCodec_Q8W8V8U8::Encode"}
+, {"addr": "0x46955b", "name": "CD3DXCodec_V16U16::Encode"}
+, {"addr": "0x46960c", "name": "CD3DXCodec_W11V11U10::Encode"}
+, {"addr": "0x4696f8", "name": "CD3DXCodec_R8G8B8::Decode"}
+, {"addr": "0x469784", "name": "CD3DXCodec_A8R8G8B8::Decode"}
+, {"addr": "0x469826", "name": "CD3DXCodec_X8R8G8B8::Decode"}
+, {"addr": "0x4698be", "name": "CD3DXCodec_R5G6B5::Decode"}
+, {"addr": "0x469963", "name": "CD3DXCodec_X1R5G5B5::Decode"}
+, {"addr": "0x469a05", "name": "CD3DXCodec_A1R5G5B5::Decode"}
+, {"addr": "0x469ab5", "name": "CD3DXCodec_A4R4G4B4::Decode"}
+, {"addr": "0x469b64", "name": "CD3DXCodec_R3G3B2::Decode"}
+, {"addr": "0x469c06", "name": "CD3DXCodec_A8::Decode"}
+, {"addr": "0x469c78", "name": "CD3DXCodec_A8R3G3B2::Decode"}
+, {"addr": "0x469d2a", "name": "CD3DXCodec_X4R4G4B4::Decode"}
+, {"addr": "0x469dc9", "name": "CD3DXCodec_A8P8::Decode"}
+, {"addr": "0x469e50", "name": "CD3DXCodec_P8::Decode"}
+, {"addr": "0x469eb4", "name": "CD3DXCodec_L8::Decode"}
+, {"addr": "0x469f22", "name": "CD3DXCodec_A8L8::Decode"}
+, {"addr": "0x469fab", "name": "CD3DXCodec_A4L4::Decode"}
+, {"addr": "0x46a034", "name": "CD3DXCodecYUV::CD3DXCodecYUV"}
+, {"addr": "0x46a105", "name": "CD3DXCodecYUV::Commit"}
+, {"addr": "0x46a2f8", "name": "CD3DXCodecYUV::Fetch"}
+, {"addr": "0x46a5c9", "name": "CD3DXCodecYUV::Encode"}
+, {"addr": "0x46a641", "name": "CD3DXCodecYUV::Decode"}
+, {"addr": "0x46a6b0", "name": "CD3DXCodecDXT::CD3DXCodecDXT"}
+, {"addr": "0x46a7c7", "name": "CD3DXCodecDXT::Commit"}
+, {"addr": "0x46aaf4", "name": "CD3DXCodecDXT::Fetch"}
+, {"addr": "0x46ad9b", "name": "CD3DXCodecDXT::Encode"}
+, {"addr": "0x46ae21", "name": "CD3DXCodecDXT::Decode"}
+, {"addr": "0x46af4f", "name": "CD3DXCodec::Create"}
+, {"addr": "0x46b5d9", "name": "_jpeg_CreateDecompress"}
+, {"addr": "0x46b81d", "name": "_jpeg_consume_input"}
+, {"addr": "0x46b8b7", "name": "_jpeg_finish_decompress"}
+, {"addr": "0x46b958", "name": "_jpeg_read_header"}
+, {"addr": "0x46ba5f", "name": "_jpeg_read_scanlines"}
+, {"addr": "0x46bae3", "name": "_jpeg_start_decompress"}
+, {"addr": "0x46d15d", "name": "_jpeg_resync_to_restart"}
+, {"addr": "0x46d276", "name": "D3DX::jinit_marker_reader"}
+, {"addr": "0x46d404", "name": "_jpeg_std_error"}
+, {"addr": "0x46d4d7", "name": "_png_set_error_fn"}
+, {"addr": "0x46d4f1", "name": "_png_error"}
+, {"addr": "0x46d514", "name": "_png_warning"}
+, {"addr": "0x46d529", "name": "D3DX::png_chunk_error"}
+, {"addr": "0x46d54e", "name": "D3DX::png_chunk_warning"}
+, {"addr": "0x46d573", "name": "D3DX::png_create_read_struct"}
+, {"addr": "0x46d7ea", "name": "D3DX::png_read_update_info"}
+, {"addr": "0x46d80a", "name": "_png_read_row"}
+, {"addr": "0x46dbb2", "name": "_png_read_image"}
+, {"addr": "0x46dbff", "name": "D3DX::png_read_destroy"}
+, {"addr": "0x46dd22", "name": "D3DX::png_destroy_read_struct"}
+, {"addr": "0x46dda3", "name": "_png_get_valid"}
+, {"addr": "0x46ddbd", "name": "_png_get_rowbytes"}
+, {"addr": "0x46ddd3", "name": "_png_get_channels"}
+, {"addr": "0x46dde9", "name": "_png_get_gAMA"}
+, {"addr": "0x46de12", "name": "_png_get_sRGB"}
+, {"addr": "0x46de3d", "name": "_png_get_IHDR"}
+, {"addr": "0x46df0e", "name": "_png_get_PLTE"}
+, {"addr": "0x46df41", "name": "_png_get_tRNS"}
+, {"addr": "0x46dfa8", "name": "_png_set_bgr"}
+, {"addr": "0x46dfb1", "name": "_png_set_packing"}
+, {"addr": "0x46dfca", "name": "_png_set_interlace_handling"}
+, {"addr": "0x46dfe3", "name": "_png_set_filler"}
+, {"addr": "0x46e030", "name": "_png_do_bgr"}
+, {"addr": "0x46e0ef", "name": "_png_set_strip_16"}
+, {"addr": "0x46e0f8", "name": "_png_set_gamma"}
+, {"addr": "0x46e137", "name": "_png_read_transform_info"}
+, {"addr": "0x46e222", "name": "_png_do_unpack"}
+, {"addr": "0x46e331", "name": "_png_do_unshift"}
+, {"addr": "0x46e4ac", "name": "_png_do_chop"}
+, {"addr": "0x46e4f0", "name": "_png_do_read_filler"}
+, {"addr": "0x46e727", "name": "_png_do_gamma"}
+, {"addr": "0x46ea99", "name": "_png_do_expand_palette"}
+, {"addr": "0x46eca0", "name": "_png_do_expand"}
+, {"addr": "0x46eff3", "name": "_png_do_dither"}
+, {"addr": "0x46f100", "name": "_png_build_gamma_table"}
+, {"addr": "0x46f3ff", "name": "_png_init_read_transformations"}
+, {"addr": "0x46f514", "name": "_png_do_read_transformations"}
+, {"addr": "0x46f6b0", "name": "_png_set_gAMA"}
+, {"addr": "0x46f6cb", "name": "_png_set_IHDR"}
+, {"addr": "0x46f76d", "name": "_png_set_PLTE"}
+, {"addr": "0x46f791", "name": "_png_set_sRGB"}
+, {"addr": "0x46f7ac", "name": "_png_set_sRGB_gAMA_and_cHRM"}
+, {"addr": "0x46f7e5", "name": "_png_set_tRNS"}
+, {"addr": "0x46f82c", "name": "_png_read_data"}
+, {"addr": "0x46f854", "name": "_png_set_read_fn"}
+, {"addr": "0x46f893", "name": "_png_sig_cmp"}
+, {"addr": "0x46f8db", "name": "D3DX::png_zalloc"}
+, {"addr": "0x46f92e", "name": "D3DX::png_zfree"}
+, {"addr": "0x46f933", "name": "_png_reset_crc"}
+, {"addr": "0x46f94b", "name": "_png_calculate_crc"}
+, {"addr": "0x46f98a", "name": "_png_info_init"}
+, {"addr": "0x46f998", "name": "D3DX::png_info_destroy"}
+, {"addr": "0x46f9a3", "name": "_png_create_info_struct"}
+, {"addr": "0x46f9c5", "name": "XXEncodeBlockRGB"}
+, {"addr": "0x46fa2e", "name": "XXDecodeBlockRGB"}
+, {"addr": "0x46fdf5", "name": "EncodeBlockRGBColorKey"}
+, {"addr": "0x47028c", "name": "DecodeBlockRGB"}
+, {"addr": "0x470375", "name": "DecodeBlockAlpha4"}
+, {"addr": "0x4703c3", "name": "DecodeBlockAlpha3"}
+, {"addr": "0x4704c3", "name": "EncodeBlockRGB"}
+, {"addr": "0x4704f5", "name": "EncodeBlockAlpha4"}
+, {"addr": "0x47054e", "name": "EncodeBlockAlpha3"}
+, {"addr": "0x4706a4", "name": "D3DX::jdiv_round_up"}
+, {"addr": "0x4706b4", "name": "D3DX::jround_up"}
+, {"addr": "0x4706cc", "name": "D3DX::jcopy_sample_rows"}
+, {"addr": "0x470713", "name": "D3DX::jcopy_block_row"}
+, {"addr": "0x470735", "name": "D3DX::jzero_far"}
+, {"addr": "0x470750", "name": "D3DX::IsMMX"}
+, {"addr": "0x470c59", "name": "D3DX::jinit_input_controller"}
+, {"addr": "0x47160f", "name": "D3DX::jinit_memory_mgr"}
+, {"addr": "0x4716c3", "name": "_jpeg_abort"}
+, {"addr": "0x4716e5", "name": "_jpeg_destroy"}
+, {"addr": "0x471700", "name": "_jpeg_alloc_quant_table"}
+, {"addr": "0x47171c", "name": "_jpeg_alloc_huff_table"}
+, {"addr": "0x4717a9", "name": "_jpeg_calc_output_dimensions"}
+, {"addr": "0x471d02", "name": "D3DX::jinit_master_decompress"}
+, {"addr": "0x471d32", "name": "_inflateReset"}
+, {"addr": "0x471d71", "name": "_inflateEnd"}
+, {"addr": "0x471daf", "name": "_inflateInit2_"}
+, {"addr": "0x471e94", "name": "D3DX::inflateInit_"}
+, {"addr": "0x471eab", "name": "_inflate"}
+, {"addr": "0x47220c", "name": "_png_create_struct"}
+, {"addr": "0x47224e", "name": "D3DX::png_destroy_struct"}
+, {"addr": "0x47225b", "name": "_png_malloc"}
+, {"addr": "0x472291", "name": "D3DX::png_free"}
+, {"addr": "0x4722aa", "name": "_png_memcpy_check"}
+, {"addr": "0x4722cd", "name": "_png_memset_check"}
+, {"addr": "0x472300", "name": "_png_get_uint_32"}
+, {"addr": "0x472323", "name": "_png_get_uint_16"}
+, {"addr": "0x472336", "name": "D3DX::png_crc_read"}
+, {"addr": "0x47235a", "name": "D3DX::png_crc_error"}
+, {"addr": "0x4723b8", "name": "D3DX::png_check_chunk_name"}
+, {"addr": "0x47241a", "name": "_png_combine_row"}
+, {"addr": "0x47262e", "name": "_png_do_read_interlace"}
+, {"addr": "0x4728f7", "name": "_png_read_filter_row"}
+, {"addr": "0x472a70", "name": "D3DX::png_read_start_row"}
+, {"addr": "0x472c0c", "name": "D3DX::png_crc_finish"}
+, {"addr": "0x472fb8", "name": "D3DX::png_handle_IEND"}
+, {"addr": "0x47338a", "name": "D3DX::png_handle_unknown"}
+, {"addr": "0x4735f9", "name": "_crc32"}
+, {"addr": "0x473702", "name": "D3DX::jpeg_get_small"}
+, {"addr": "0x473712", "name": "D3DX::jpeg_open_backing_store"}
+, {"addr": "0x473c64", "name": "D3DX::jinit_d_main_controller"}
+, {"addr": "0x47489b", "name": "D3DX::jinit_d_coef_controller"}
+, {"addr": "0x474993", "name": "D3DX::jpeg_make_d_derived_tbl"}
+, {"addr": "0x474b36", "name": "D3DX::jpeg_fill_bit_buffer"}
+, {"addr": "0x474c20", "name": "D3DX::jpeg_huff_decode"}
+, {"addr": "0x475260", "name": "D3DX::jinit_huff_decoder"}
+, {"addr": "0x475e12", "name": "D3DX::jinit_phuff_decoder"}
+, {"addr": "0x47602a", "name": "D3DX::jinit_inverse_dct"}
+, {"addr": "0x4762c5", "name": "D3DX::jinit_d_post_controller"}
+, {"addr": "0x476785", "name": "D3DX::jinit_upsampler"}
+, {"addr": "0x476bb5", "name": "D3DX::MYCbCr2RGB"}
+, {"addr": "0x476f10", "name": "D3DX::jinit_color_deconverter"}
+, {"addr": "0x477509", "name": "D3DX::jinit_merged_upsampler"}
+, {"addr": "0x478491", "name": "D3DX::jinit_2pass_quantizer"}
+, {"addr": "0x478f29", "name": "D3DX::jinit_1pass_quantizer"}
+, {"addr": "0x478fb2", "name": "D3DX::inflate_blocks_reset"}
+, {"addr": "0x47901d", "name": "D3DX::inflate_blocks_new"}
+, {"addr": "0x4790a8", "name": "D3DX::inflate_blocks"}
+, {"addr": "0x4799c1", "name": "D3DX::inflate_blocks_free"}
+, {"addr": "0x4799f5", "name": "_adler32"}
+, {"addr": "0x479b0e", "name": "D3DX::zcalloc"}
+, {"addr": "0x479b1e", "name": "D3DX::zcfree"}
+, {"addr": "0x479b29", "name": "D3DX::jpeg_idct_4x4"}
+, {"addr": "0x479e3e", "name": "D3DX::jpeg_idct_2x2"}
+, {"addr": "0x479ffc", "name": "D3DX::jpeg_idct_1x1"}
+, {"addr": "0x47a039", "name": "D3DX::jpeg_idct_islow"}
+, {"addr": "0x47a085", "name": "D3DX::jpeg_idct_ifast"}
+, {"addr": "0x47a0d1", "name": "D3DX::jpeg_idct_float"}
+, {"addr": "0x47a4b2", "name": "D3DX::inflate_codes_new"}
+, {"addr": "0x47a4e6", "name": "D3DX::inflate_codes"}
+, {"addr": "0x47aa3c", "name": "D3DX::inflate_codes_free"}
+, {"addr": "0x47add2", "name": "D3DX::inflate_trees_bits"}
+, {"addr": "0x47ae51", "name": "D3DX::inflate_trees_dynamic"}
+, {"addr": "0x47af54", "name": "D3DX::inflate_trees_fixed"}
+, {"addr": "0x47af83", "name": "D3DX::inflate_flush"}
+, {"addr": "0x47b098", "name": "D3DX::pidct8x8llm"}
+, {"addr": "0x47b585", "name": "D3DX::midct8x8llm"}
+, {"addr": "0x47bd10", "name": "D3DX::pidct8x8aan"}
+, {"addr": "0x47c0b9", "name": "D3DX::midct8x8aan"}
+, {"addr": "0x47ce8c", "name": "D3DX::inflate_fast"}
+, {"addr": "0x47d285", "name": "free"}
+, {"addr": "0x47d39d", "name": "_malloc"}
+, {"addr": "0x47d3af", "name": "_atol"}
+, {"addr": "0x47d43c", "name": "operator delete"}
+, {"addr": "0x47d441", "name": "operator new"}
+, {"addr": "0x47d44f", "name": "_sprintf"}
+, {"addr": "0x47d4b0", "name": "_strrchr"}
+, {"addr": "0x47db60", "name": "_strlen"}
+, {"addr": "0x47dbf0", "name": "_memset"}
+, {"addr": "0x47dd00", "name": "_strchr"}
+, {"addr": "0x47ddc0", "name": "_strcpy"}
+, {"addr": "0x47ddd0", "name": "_strcat"}
+, {"addr": "0x47e914", "name": "__ArrayUnwind"}
+, {"addr": "0x47ea7d", "name": "_start"}
+, {"addr": "0x47eca0", "name": "__CIacos"}
+, {"addr": "0x47ee10", "name": "_floor"}
+, {"addr": "0x47ef34", "name": "__ftol"}
+, {"addr": "0x47efd8", "name": "__setjmp3"}
+, {"addr": "0x47f053", "name": "_isdigit"}
+, {"addr": "0x47f08d", "name": "_isxdigit"}
+, {"addr": "0x47f0cc", "name": "_isspace"}
+, {"addr": "0x47f3a0", "name": "__alloca_probe"}
+, {"addr": "0x47f3dd", "name": "_JumpToContinuation"}
+, {"addr": "0x47f740", "name": "__global_unwind2"}
+, {"addr": "0x47f760", "name": "__unwind_handler"}
+, {"addr": "0x47f7ea", "name": "__abnormal_termination"}
+, {"addr": "0x47f80d", "name": "__NLG_Notify1"}
+, {"addr": "0x47f816", "name": "__NLG_Notify"}
+, {"addr": "0x47f830", "name": "__EH_prolog"}
+, {"addr": "0x480624", "name": "__SEH_prolog"}
+, {"addr": "0x48065f", "name": "__SEH_epilog"}
+, {"addr": "0x48137c", "name": "___isctype_mt"}
+, {"addr": "0x48157f", "name": "___updatetlocinfo"}
+, {"addr": "0x4815d8", "name": "__getptd"}
+, {"addr": "0x4816c0", "name": "__allmul"}
+, {"addr": "0x4816f4", "name": "__errno"}
+, {"addr": "0x482940", "name": "___ascii_stricmp"}
+, {"addr": "0x482a60", "name": "__aulldiv"}
+, {"addr": "0x483624", "name": "__cropzeros"}
+, {"addr": "0x48366f", "name": "__positive"}
+, {"addr": "0x483a0d", "name": "__ms_p5_test_fdiv"}
+, {"addr": "0x483a4d", "name": "__ms_p5_mp_test_fdiv"}
+, {"addr": "0x483a80", "name": "__trandisp1"}
+, {"addr": "0x483ae7", "name": "__trandisp2"}
+, {"addr": "0x483b78", "name": "__rttospop"}
+, {"addr": "0x483b86", "name": "__rtzeronpop"}
+, {"addr": "0x483b8b", "name": "__rtonepop"}
+, {"addr": "0x483b92", "name": "__tosnan1"}
+, {"addr": "0x483bbd", "name": "__nosnan2"}
+, {"addr": "0x483be7", "name": "__nan2"}
+, {"addr": "0x483c26", "name": "__rtindfpop"}
+, {"addr": "0x483c39", "name": "__rttosnpopde"}
+, {"addr": "0x483c43", "name": "__rtchsifneg"}
+, {"addr": "0x483c50", "name": "__startTwoArgErrorHandling"}
+, {"addr": "0x483c67", "name": "__startOneArgErrorHandling"}
+, {"addr": "0x483cb0", "name": "__twoToTOS"}
+, {"addr": "0x483cc5", "name": "__load_CW"}
+, {"addr": "0x483cdc", "name": "__convertTOStoQNaN"}
+, {"addr": "0x483cf5", "name": "__fload_withFB"}
+, {"addr": "0x483d38", "name": "__checkTOS_withFB"}
+, {"addr": "0x483e3c", "name": "__set_exp"}
+, {"addr": "0x483e66", "name": "__sptype"}
+, {"addr": "0x4846de", "name": "___libm_error_support"}
+, {"addr": "0x484acf", "name": "_rt_probe_read4"}
+, {"addr": "0x484b20", "name": "__CIpow_pentium4"}
+, {"addr": "0x484b39", "name": "__pow_pentium4"}
+, {"addr": "0x485681", "name": "__fFEXP"}
+, {"addr": "0x4856e8", "name": "__rtinfpopse"}
+, {"addr": "0x4857af", "name": "__rtinfpop"}
+, {"addr": "0x4857ce", "name": "__ffexpm1"}
+, {"addr": "0x485877", "name": "__d_inttype"}
+, {"addr": "0x4858e1", "name": "__powhlp"}
+, {"addr": "0x4862b0", "name": "_CallSettingFrame"}
+, {"addr": "0x48683a", "name": "___wctomb_mt"}
+, {"addr": "0x48689a", "name": "_wctomb"}
+, {"addr": "0x4868d0", "name": "__aulldvrm"}
+, {"addr": "0x486f70", "name": "_strcspn"}
+, {"addr": "0x487180", "name": "_memcmp"}
+, {"addr": "0x487240", "name": "_strpbrk"}
+, {"addr": "0x48792a", "name": "___mbtowc_mt"}
+, {"addr": "0x4879ea", "name": "_mbtowc"}
+, {"addr": "0x487ea8", "name": "___security_error_handler"}
+, {"addr": "0x48822f", "name": "__ZeroTail"}
+, {"addr": "0x488261", "name": "__IncMan"}
+, {"addr": "0x4882ae", "name": "__RoundMan"}
+, {"addr": "0x488650", "name": "___dtold"}
+, {"addr": "0x4888ed", "name": "__87except"}
+, {"addr": "0x4889eb", "name": "D3DX::jpeg_mem_init"}
+, {"addr": "0x488a10", "name": "_fdiv_main_routine"}
+, {"addr": "0x488b27", "name": "__adj_fdiv_r"}
+, {"addr": "0x488fc6", "name": "__fdivp_sti_st"}
+, {"addr": "0x488fd9", "name": "__fdivrp_sti_st"}
+, {"addr": "0x488fec", "name": "__adj_fdiv_m32"}
+, {"addr": "0x489038", "name": "__adj_fdiv_m64"}
+, {"addr": "0x489084", "name": "__adj_fdiv_m16i"}
+, {"addr": "0x4890b8", "name": "__adj_fdiv_m32i"}
+, {"addr": "0x4890ec", "name": "__adj_fdivr_m32"}
+, {"addr": "0x489138", "name": "__adj_fdivr_m64"}
+, {"addr": "0x489184", "name": "__adj_fdivr_m16i"}
+, {"addr": "0x4891b8", "name": "__adj_fdivr_m32i"}
+, {"addr": "0x4891ec", "name": "__safe_fdiv"}
+, {"addr": "0x489201", "name": "__safe_fdivr"}
+, {"addr": "0x489216", "name": "__fprem_common"}
+, {"addr": "0x48941c", "name": "__adj_fprem"}
+, {"addr": "0x4894ce", "name": "__fprem1_common"}
+, {"addr": "0x4896d4", "name": "__adj_fprem1"}
+, {"addr": "0x489789", "name": "__safe_fprem"}
+, {"addr": "0x48978f", "name": "__safe_fprem1"}
+, {"addr": "0x489795", "name": "__adj_fpatan"}
+, {"addr": "0x489798", "name": "__adj_fptan"}
+, {"addr": "0x48a386", "name": "___addl"}
+, {"addr": "0x48a433", "name": "___shr_12"}
+, {"addr": "0x48ad70", "name": "___ascii_strnicmp"}
+, {"addr": "0x48b890", "name": "RtlUnwind"}
+, {"addr": "0x48b8a0", "name": "float_to_int_48b8a0"}
+, {"addr": "0x48b920", "name": "__CItan"}
+, {"addr": "0x48b9e0", "name": "_atan"}
+, {"addr": "0x48ba20", "name": "__CIatan"}
+, {"addr": "0x48bbf0", "name": "__CIcos"}
+, {"addr": "0x48bcc0", "name": "__CIsqrt"}
+, {"addr": "0x48bd80", "name": "__CIatan_pentium4"}
+, {"addr": "0x48bd98", "name": "__atan_pentium4"}
+, {"addr": "0x48c30c", "name": "__fFATN2"}
+, {"addr": "0x48c35c", "name": "__rtpiby2"}
+, {"addr": "0x48c600", "name": "life_before_main_48c600_ASCII_MANAGER"}
+, {"addr": "0x48c620", "name": "life_before_main_48c620_upd"}
+, {"addr": "0x48c640", "name": "life_before_main_48c640_upd"}
+, {"addr": "0x48c660", "name": "life_before_main_48c660_upd"}
+, {"addr": "0x48c680", "name": "life_before_main_48c680_STAGE"}
+, {"addr": "0x48c6a0", "name": "life_before_main_48c6a0_upd"}
+, {"addr": "0x48c6c0", "name": "life_before_main_48c6c0_upd"}
+, {"addr": "0x48c6e0", "name": "life_before_main_48c6e0_upd"}
+, {"addr": "0x48c700", "name": "life_before_main_48c700_upd"}
+, {"addr": "0x48c770", "name": "life_before_main_48c770_EFFECT_MANAGER"}
+, {"addr": "0x48c790", "name": "life_before_main_48c790_upd"}
+, {"addr": "0x48c7b0", "name": "life_before_main_48c7b0_upd"}
+, {"addr": "0x48c7d0", "name": "life_before_main_48c7d0_upd"}
+, {"addr": "0x48c7f0", "name": "life_before_main_48c7f0_upd"}
+, {"addr": "0x48c810", "name": "life_before_main_48c810_upd"}
+, {"addr": "0x48c830", "name": "life_before_main_48c830_ENEMY_MANAGER"}
+, {"addr": "0x48c840", "name": "life_before_main_48c840_upd"}
+, {"addr": "0x48c860", "name": "life_before_main_48c860_upd"}
+, {"addr": "0x48c880", "name": "life_before_main_48c880_BULLET_MANAGER"}
+, {"addr": "0x48c88f", "name": "life_before_main_48c88f_upd"}
+, {"addr": "0x48c8a9", "name": "life_before_main_48c8a9_upd"}
+, {"addr": "0x48c8c3", "name": "life_before_main_48c8c3_GAME_MANAGER"}
+, {"addr": "0x48c8d2", "name": "life_before_main_48c8d2_upd"}
+, {"addr": "0x48c8ec", "name": "life_before_main_48c8ec_upd"}
+, {"addr": "0x48c910", "name": "life_before_main_48c910_UPDATE_FUNC_REGISTRY"}
+, {"addr": "0x48c9f0", "name": "life_before_main_48c9f0_upd"}
+, {"addr": "0x48ca10", "name": "life_before_main_48ca10_WINDOW"}
+, {"addr": "0x48ca25", "name": "life_before_main_SUPERVISOR"}
+, {"addr": "0x48ca40", "name": "life_before_main_PLAYER"}
+, {"addr": "0x48ca90", "name": "life_before_main_48ca90_SOUND_MANAGER"}
 ]

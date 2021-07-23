@@ -1,120 +1,119 @@
+
 { "msg": 
-  [ ["0x416627", "23"]
-  , ["0x41665b", "15"]
-  , ["0x416803", "17"]
-  , ["0x416927", "26"]
-  , ["0x41693c", "1__enter"]
-  , ["0x416a08", "2__face"]
-  , ["0x416ae2", "3__textSet"]
-  , ["0x416bc3", "16__textAdd"]
-  , ["0x416cde", "4__textPause"]
-  , ["0x416d5a", "5__anmInterrupt"]
-  , ["0x416d8d", "6__enemyAppear"]
-  , ["0x416d98", "7__music"]
-  , ["0x416de8", "8__intro"]
-  , ["0x416e1d", "9__stageResults"]
-  , ["0x416e28", "12__musicFadeout"]
-  , ["0x416e3c", "14__screenFade"]
-  , ["0x416e69", "13__skippable"]
-  , ["0x416e74", "18"]
-  , ["0x416e7f", "24"]
-  , ["0x416e8e", "25"]
-  , ["0x416ea6", "28"]
-  , ["0x416ef3", "10__stop"]
-  , ["0x417043", "0__end"]
-  , ["0x41705b", "11__stageNext"]
+  [ {"addr": "0x416627", "label": "23"}
+  , {"addr": "0x41665b", "label": "15"}
+  , {"addr": "0x416803", "label": "17"}
+  , {"addr": "0x416927", "label": "26"}
+  , {"addr": "0x41693c", "label": "1__enter"}
+  , {"addr": "0x416a08", "label": "2__face"}
+  , {"addr": "0x416ae2", "label": "3__textSet"}
+  , {"addr": "0x416bc3", "label": "16__textAdd"}
+  , {"addr": "0x416cde", "label": "4__textPause"}
+  , {"addr": "0x416d5a", "label": "5__anmInterrupt"}
+  , {"addr": "0x416d8d", "label": "6__enemyAppear"}
+  , {"addr": "0x416d98", "label": "7__music"}
+  , {"addr": "0x416de8", "label": "8__intro"}
+  , {"addr": "0x416e1d", "label": "9__stageResults"}
+  , {"addr": "0x416e28", "label": "12__musicFadeout"}
+  , {"addr": "0x416e3c", "label": "14__screenFade"}
+  , {"addr": "0x416e69", "label": "13__skippable"}
+  , {"addr": "0x416e74", "label": "18"}
+  , {"addr": "0x416e7f", "label": "24"}
+  , {"addr": "0x416e8e", "label": "25"}
+  , {"addr": "0x416ea6", "label": "28"}
+  , {"addr": "0x416ef3", "label": "10__stop"}
+  , {"addr": "0x417043", "label": "0__end"}
+  , {"addr": "0x41705b", "label": "11__stageNext"}
   ]
-
 , "anm": 
-  [ ["0x436fb0", "3__sprite"]
-  , ["0x436ff5", "7__scale"]
-  , ["0x437048", "8__alpha"]
-  , ["0x43708a", "9__color"]
-  , ["0x4370ff", "85__alpha2"]
-  , ["0x437127", "84__color2"]
-  , ["0x437187", "4__jmp"]
-  , ["0x4371a8", "5__jmpDec"]
-  , ["0x4371fc", "10__flipX"]
-  , ["0x43722d", "24"]
-  , ["0x43725c", "11__flipY"]
-  , ["0x43728d", "12__rotate"]
-  , ["0x4372f9", "13__angleVel"]
-  , ["0x437366", "14__scaleGrowth"]
-  , ["0x4373bc", "29__scaleTimeLinear"]
-  , ["0x437463", "15__alphaTimeLinear"]
-  , ["0x4374bc", "16"]
-  , ["0x4374ef", "82"]
-  , ["0x43751b", "6__pos"]
-  , ["0x437668", "19__posTimeEaseout4"]
-  , ["0x437671", "18__posTimeEaseout"]
-  , ["0x43767a", "17__posTimeLinear"]
-  , ["0x43778d", "79__wait"]
-  , ["0x4377f9", "23__stop2"]
-  , ["0x437800", "20__stop"]
-  , ["0x4378c1", "89__caseReturn"]
-  , ["0x4378e8", "28"]
-  , ["0x437911", "22"]
-  , ["0x43792c", "25"]
-  , ["0x437948", "26__scrollNowX"]
-  , ["0x4379b6", "27__scrollNowY"]
-  , ["0x437a24", "80__scrollX"]
-  , ["0x437a66", "81__scrollY"]
-  , ["0x437aa8", "30"]
-  , ["0x437ad6", "31"]
-  , ["0x437b05", "32__posTime"]
-  , ["0x437bfb", "33__colorTime"]
-  , ["0x437cc4", "34__alphaTime"]
-  , ["0x437d47", "86__color2Time"]
-  , ["0x437e13", "87__alpha2Time"]
-  , ["0x437e99", "35__rotateTime"]
-  , ["0x437f57", "36__scaleTime"]
-  , ["0x437ffa", "83"]
-  , ["0x438014", "37__iset"]
-  , ["0x438053", "38__fset"]
-  , ["0x438099", "49__isetAdd"]
-  , ["0x4380fb", "50__fsetAdd"]
-  , ["0x438160", "51__isetSub"]
-  , ["0x4381be", "52__fsetSub"]
-  , ["0x43822c", "53__isetMul"]
-  , ["0x43828d", "54__fsetMul"]
-  , ["0x4382f2", "55__isetDiv"]
-  , ["0x438357", "56__fsetDiv"]
-  , ["0x4383c5", "57__isetMod"]
-  , ["0x438427", "58__fsetMod"]
-  , ["0x438495", "39__iadd"]
-  , ["0x4384d4", "40__fadd"]
-  , ["0x43851c", "41__isub"]
-  , ["0x43855b", "42__fsub"]
-  , ["0x4385a3", "43__imul"]
-  , ["0x4385e7", "44__fmul"]
-  , ["0x43862f", "45__idiv"]
-  , ["0x438675", "46__fdiv"]
-  , ["0x4386bd", "47__imod"]
-  , ["0x438703", "48__fmod"]
-  , ["0x43876f", "59__isetRand"]
-  , ["0x4387c2", "60__fsetRand"]
-  , ["0x438815", "61__fsin"]
-  , ["0x438863", "62__fcos"]
-  , ["0x4388b1", "63__ftan"]
-  , ["0x4388ff", "64"]
-  , ["0x43894d", "65__fatan"]
-  , ["0x43899b", "66__validRad"]
-  , ["0x4389e9", "67__ije"]
-  , ["0x438a37", "68__fje"]
-  , ["0x438a8a", "69__ijne"]
-  , ["0x438ad8", "70__fjne"]
-  , ["0x438b2b", "71__ijl"]
-  , ["0x438b79", "72__fjl"]
-  , ["0x438bce", "73__ijle"]
-  , ["0x438c1c", "74__fjle"]
-  , ["0x438c71", "75__ijg"]
-  , ["0x438cbf", "76__fjg"]
-  , ["0x438d1d", "77__ijge"]
-  , ["0x438d67", "78__fjge"]
-  , ["0x438dc9", "88"]
-  , ["0x438dfb", "0__noop"]
-  , ["0x438e0c", "1__end"]
-  , ["0x438e13", "2__static"]
+  [ {"addr": "0x436fb0", "label": "3__sprite"}
+  , {"addr": "0x436ff5", "label": "7__scale"}
+  , {"addr": "0x437048", "label": "8__alpha"}
+  , {"addr": "0x43708a", "label": "9__color"}
+  , {"addr": "0x4370ff", "label": "85__alpha2"}
+  , {"addr": "0x437127", "label": "84__color2"}
+  , {"addr": "0x437187", "label": "4__jmp"}
+  , {"addr": "0x4371a8", "label": "5__jmpDec"}
+  , {"addr": "0x4371fc", "label": "10__flipX"}
+  , {"addr": "0x43722d", "label": "24"}
+  , {"addr": "0x43725c", "label": "11__flipY"}
+  , {"addr": "0x43728d", "label": "12__rotate"}
+  , {"addr": "0x4372f9", "label": "13__angleVel"}
+  , {"addr": "0x437366", "label": "14__scaleGrowth"}
+  , {"addr": "0x4373bc", "label": "29__scaleTimeLinear"}
+  , {"addr": "0x437463", "label": "15__alphaTimeLinear"}
+  , {"addr": "0x4374bc", "label": "16"}
+  , {"addr": "0x4374ef", "label": "82"}
+  , {"addr": "0x43751b", "label": "6__pos"}
+  , {"addr": "0x437668", "label": "19__posTimeEaseout4"}
+  , {"addr": "0x437671", "label": "18__posTimeEaseout"}
+  , {"addr": "0x43767a", "label": "17__posTimeLinear"}
+  , {"addr": "0x43778d", "label": "79__wait"}
+  , {"addr": "0x4377f9", "label": "23__stop2"}
+  , {"addr": "0x437800", "label": "20__stop"}
+  , {"addr": "0x4378c1", "label": "89__caseReturn"}
+  , {"addr": "0x4378e8", "label": "28"}
+  , {"addr": "0x437911", "label": "22"}
+  , {"addr": "0x43792c", "label": "25"}
+  , {"addr": "0x437948", "label": "26__scrollNowX"}
+  , {"addr": "0x4379b6", "label": "27__scrollNowY"}
+  , {"addr": "0x437a24", "label": "80__scrollX"}
+  , {"addr": "0x437a66", "label": "81__scrollY"}
+  , {"addr": "0x437aa8", "label": "30"}
+  , {"addr": "0x437ad6", "label": "31"}
+  , {"addr": "0x437b05", "label": "32__posTime"}
+  , {"addr": "0x437bfb", "label": "33__colorTime"}
+  , {"addr": "0x437cc4", "label": "34__alphaTime"}
+  , {"addr": "0x437d47", "label": "86__color2Time"}
+  , {"addr": "0x437e13", "label": "87__alpha2Time"}
+  , {"addr": "0x437e99", "label": "35__rotateTime"}
+  , {"addr": "0x437f57", "label": "36__scaleTime"}
+  , {"addr": "0x437ffa", "label": "83"}
+  , {"addr": "0x438014", "label": "37__iset"}
+  , {"addr": "0x438053", "label": "38__fset"}
+  , {"addr": "0x438099", "label": "49__isetAdd"}
+  , {"addr": "0x4380fb", "label": "50__fsetAdd"}
+  , {"addr": "0x438160", "label": "51__isetSub"}
+  , {"addr": "0x4381be", "label": "52__fsetSub"}
+  , {"addr": "0x43822c", "label": "53__isetMul"}
+  , {"addr": "0x43828d", "label": "54__fsetMul"}
+  , {"addr": "0x4382f2", "label": "55__isetDiv"}
+  , {"addr": "0x438357", "label": "56__fsetDiv"}
+  , {"addr": "0x4383c5", "label": "57__isetMod"}
+  , {"addr": "0x438427", "label": "58__fsetMod"}
+  , {"addr": "0x438495", "label": "39__iadd"}
+  , {"addr": "0x4384d4", "label": "40__fadd"}
+  , {"addr": "0x43851c", "label": "41__isub"}
+  , {"addr": "0x43855b", "label": "42__fsub"}
+  , {"addr": "0x4385a3", "label": "43__imul"}
+  , {"addr": "0x4385e7", "label": "44__fmul"}
+  , {"addr": "0x43862f", "label": "45__idiv"}
+  , {"addr": "0x438675", "label": "46__fdiv"}
+  , {"addr": "0x4386bd", "label": "47__imod"}
+  , {"addr": "0x438703", "label": "48__fmod"}
+  , {"addr": "0x43876f", "label": "59__isetRand"}
+  , {"addr": "0x4387c2", "label": "60__fsetRand"}
+  , {"addr": "0x438815", "label": "61__fsin"}
+  , {"addr": "0x438863", "label": "62__fcos"}
+  , {"addr": "0x4388b1", "label": "63__ftan"}
+  , {"addr": "0x4388ff", "label": "64"}
+  , {"addr": "0x43894d", "label": "65__fatan"}
+  , {"addr": "0x43899b", "label": "66__validRad"}
+  , {"addr": "0x4389e9", "label": "67__ije"}
+  , {"addr": "0x438a37", "label": "68__fje"}
+  , {"addr": "0x438a8a", "label": "69__ijne"}
+  , {"addr": "0x438ad8", "label": "70__fjne"}
+  , {"addr": "0x438b2b", "label": "71__ijl"}
+  , {"addr": "0x438b79", "label": "72__fjl"}
+  , {"addr": "0x438bce", "label": "73__ijle"}
+  , {"addr": "0x438c1c", "label": "74__fjle"}
+  , {"addr": "0x438c71", "label": "75__ijg"}
+  , {"addr": "0x438cbf", "label": "76__fjg"}
+  , {"addr": "0x438d1d", "label": "77__ijge"}
+  , {"addr": "0x438d67", "label": "78__fjge"}
+  , {"addr": "0x438dc9", "label": "88"}
+  , {"addr": "0x438dfb", "label": "0__noop"}
+  , {"addr": "0x438e0c", "label": "1__end"}
+  , {"addr": "0x438e13", "label": "2__static"}
   ]
-
 }

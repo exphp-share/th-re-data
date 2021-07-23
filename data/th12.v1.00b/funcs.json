@@ -1,494 +1,495 @@
-[ {"addr": "0x401000", "name": "AsciiManager::constructor", "comment": null}
-, {"addr": "0x401090", "name": "AsciiManager::initialize", "comment": null}
-, {"addr": "0x401220", "name": "AsciiManager::destructor", "comment": null}
-, {"addr": "0x401400", "name": "AsciiManager::operator new", "comment": null}
-, {"addr": "0x4014b0", "name": "AsciiManager::on_tick", "comment": null}
-, {"addr": "0x4014d0", "name": "AsciiManager::on_draw_45", "comment": null}
-, {"addr": "0x4014e0", "name": "AsciiManager::on_draw_2d__stub", "comment": null}
-, {"addr": "0x4014f0", "name": "AsciiManager::create_string", "comment": null}
-, {"addr": "0x401720", "name": "AsciiManager::drawf_debug", "comment": null}
-, {"addr": "0x401790", "name": "AsciiManager::render_group", "comment": null}
-, {"addr": "0x4018f0", "name": "AsciiManager::draw_string", "comment": null}
-, {"addr": "0x402030", "name": "AsciiManager::on_draw_2d", "comment": null}
-, {"addr": "0x4022a0", "name": "AsciiManager::on_tick__body", "comment": null}
-, {"addr": "0x402520", "name": "AnmVm::wipe", "comment": null}
-, {"addr": "0x4026e0", "name": "AnmVm::destructor", "comment": null}
-, {"addr": "0x402790", "name": "initialize_vector_without_destructor", "comment": null}
-, {"addr": "0x4027e0", "name": "AnmVm::constructor", "comment": null}
-, {"addr": "0x402970", "name": "Stage::constructor", "comment": null}
-, {"addr": "0x402a40", "name": "Stage::initialize", "comment": null}
-, {"addr": "0x402cc0", "name": "Stage::destructor", "comment": null}
-, {"addr": "0x402f40", "name": "Stage::operator new", "comment": null}
-, {"addr": "0x403020", "name": "Stage::on_tick", "comment": null}
-, {"addr": "0x4036f0", "name": "Stage::on_draw_02", "comment": null}
-, {"addr": "0x403b60", "name": "Stage::on_draw_05", "comment": null}
-, {"addr": "0x403ec0", "name": "Stage::on_tick__stub", "comment": null}
-, {"addr": "0x403ed0", "name": "Stage::on_draw_02__stub", "comment": null}
-, {"addr": "0x403ee0", "name": "Stage::on_draw_05__stub", "comment": null}
-, {"addr": "0x4049a0", "name": "Stage::run_std", "comment": null}
-, {"addr": "0x4057e0", "name": "ScreenEffect::operator new", "comment": null}
-, {"addr": "0x405900", "name": "InterpFloat3::step", "comment": null}
-, {"addr": "0x406170", "name": "sub_406170_either_sin_or_cos", "comment": null}
-, {"addr": "0x406680", "name": "sub_406680_either_sin_or_cos", "comment": null}
-, {"addr": "0x4067e0", "name": "Timer::set_current", "comment": null}
-, {"addr": "0x406880", "name": "Bomb::initialize", "comment": null}
-, {"addr": "0x406930", "name": "Bomb::destructor", "comment": null}
-, {"addr": "0x406b20", "name": "Bomb::operator new", "comment": null}
-, {"addr": "0x406bb0", "name": "Bomb::on_tick__stub", "comment": null}
-, {"addr": "0x406bc0", "name": "Bomb::on_draw__noop", "comment": null}
-, {"addr": "0x406ce0", "name": "Bomb::on_tick", "comment": null}
-, {"addr": "0x4072d0", "name": "Bomb::on_tick_marisa_a", "comment": null}
-, {"addr": "0x407950", "name": "Bomb::on_tick_marisa_b", "comment": null}
-, {"addr": "0x4082e0", "name": "Bomb::on_tick_reimu_b", "comment": null}
-, {"addr": "0x408b90", "name": "Bomb::on_tick_sanae_a", "comment": null}
-, {"addr": "0x408f00", "name": "Bomb::on_tick_sanae_b", "comment": null}
-, {"addr": "0x4094b0", "name": "Bullet::constructor", "comment": null}
-, {"addr": "0x4094f0", "name": "Bullet::destructor", "comment": null}
-, {"addr": "0x409530", "name": "BulletManager::initialize", "comment": null}
-, {"addr": "0x4096d0", "name": "BulletManager::destructor", "comment": null}
-, {"addr": "0x4097f0", "name": "BulletManager::operator new", "comment": null}
-, {"addr": "0x4099e0", "name": "Bullet::on_tick", "comment": null}
-, {"addr": "0x40a020", "name": "BulletManager::on_tick__body", "comment": null}
-, {"addr": "0x40a1f0", "name": "BulletManager::on_tick", "comment": null}
-, {"addr": "0x40a220", "name": "BulletManager::on_draw", "comment": null}
-, {"addr": "0x40a250", "name": "BulletManager::shoot_one", "comment": null}
-, {"addr": "0x40aa60", "name": "Bullet::run_ex", "comment": null}
-, {"addr": "0x40b5e0", "name": "BulletManager::shoot_bullets", "comment": null}
-, {"addr": "0x40b670", "name": "Bullet::step_ex_00_dist", "comment": null}
-, {"addr": "0x40b6f0", "name": "Bullet::step_ex_02_accel", "comment": null}
-, {"addr": "0x40b800", "name": "Bullet::step_ex_29_veltime", "comment": null}
-, {"addr": "0x40b920", "name": "Bullet::step_ex_03_angleaccel", "comment": null}
-, {"addr": "0x40b9c0", "name": "Bullet::step_ex_04_turn_add", "comment": null}
-, {"addr": "0x40baf0", "name": "Bullet::step_ex_06_turn_fixed", "comment": null}
-, {"addr": "0x40bc20", "name": "Bullet::step_ex_05_turn_aim", "comment": null}
-, {"addr": "0x40bef0", "name": "Bullet::step_ex_08_bounce", "comment": null}
-, {"addr": "0x40c000", "name": "Bullet::run_ex_17", "comment": null}
-, {"addr": "0x40c0b0", "name": "Bullet::run_ex_18", "comment": null}
-, {"addr": "0x40c170", "name": "Bullet::step_ex_23", "comment": null}
-, {"addr": "0x40c230", "name": "Bullet::step_ex_25_steer", "comment": null}
-, {"addr": "0x40c3b0", "name": "Bullet::step_ex_27_veladd", "comment": null}
-, {"addr": "0x40c480", "name": "Bullet::step_ex_10_offscreen", "comment": null}
-, {"addr": "0x40c8b0", "name": "Bullet::cancel", "comment": null}
-, {"addr": "0x40caa0", "name": "BulletManager::cancel_in_radius", "comment": null}
-, {"addr": "0x40cbe0", "name": "sub_40cbe0__unused", "comment": null}
-, {"addr": "0x40cd00", "name": "sub_40cd00_cancels_bullets", "comment": null}
-, {"addr": "0x40ce20", "name": "sub_40ce20__unused", "comment": null}
-, {"addr": "0x40d430", "name": "Bullet::sprite_mapping_func", "comment": null}
-, {"addr": "0x40d560", "name": "check_within_screen_boundaries", "comment": null}
-, {"addr": "0x40d880", "name": "Spellcard::initialize", "comment": null}
-, {"addr": "0x40d9c0", "name": "Spellcard::destructor", "comment": null}
-, {"addr": "0x40daa0", "name": "Spellcard::operator new", "comment": null}
-, {"addr": "0x40db40", "name": "Spellcard::on_tick", "comment": null}
-, {"addr": "0x40def0", "name": "Spellcard::on_draw", "comment": null}
-, {"addr": "0x40e040", "name": "Spellcard::on_tick__stub", "comment": null}
-, {"addr": "0x40e050", "name": "Spellcard::on_draw__stub", "comment": null}
-, {"addr": "0x40e730", "name": "Globals::cap_score", "comment": null}
-, {"addr": "0x40ea30", "name": "DebugSprtView::constructor", "comment": null}
-, {"addr": "0x40ead0", "name": "DebugSprtView::initialize", "comment": null}
-, {"addr": "0x40eba0", "name": "DebugSprtView::destructor", "comment": null}
-, {"addr": "0x40edf0", "name": "DebugSprtView::operator new", "comment": null}
-, {"addr": "0x40ee80", "name": "DebugSprtView::on_tick", "comment": null}
-, {"addr": "0x40f350", "name": "DebugSprtView::on_draw", "comment": null}
-, {"addr": "0x40f650", "name": "DebugSprtView::on_tick__stub", "comment": null}
-, {"addr": "0x40f660", "name": "DebugSprtView::on_draw__stub", "comment": null}
-, {"addr": "0x40f720", "name": "Supervisor::sub_40f720", "comment": null}
-, {"addr": "0x40f940", "name": "EffectManager::initialize", "comment": null}
-, {"addr": "0x40fa30", "name": "EffectManager::destructor", "comment": null}
-, {"addr": "0x40fb00", "name": "EffectManager::operator new", "comment": null}
-, {"addr": "0x40fbc0", "name": "EffectManager::on_tick", "comment": null}
-, {"addr": "0x40fbd0", "name": "EffectManager::on_draw", "comment": null}
-, {"addr": "0x410c60", "name": "Ending::initialize", "comment": null}
-, {"addr": "0x410ea0", "name": "Ending::destructor", "comment": null}
-, {"addr": "0x411060", "name": "Ending::operator new", "comment": null}
-, {"addr": "0x411100", "name": "Ending::on_tick", "comment": null}
-, {"addr": "0x411190", "name": "Ending::on_tick__stub", "comment": null}
-, {"addr": "0x4111a0", "name": "Ending::on_draw", "comment": null}
-, {"addr": "0x412050", "name": "EnemyLife::receive_damage", "comment": null}
-, {"addr": "0x412100", "name": "EnemyDrop::drop_items", "comment": null}
-, {"addr": "0x412140", "name": "EnemyDrop::spawn_ex_drops", "comment": null}
-, {"addr": "0x4123a0", "name": "EnemyFull::operator delete", "comment": null}
-, {"addr": "0x4123c0", "name": "Enemy::constructor", "comment": null}
-, {"addr": "0x412990", "name": "EnemyManager::allocate_new_enemy", "comment": null}
-, {"addr": "0x412c60", "name": "EnemyManager::initialize", "comment": null}
-, {"addr": "0x412f10", "name": "EnemyManager::destructor", "comment": null}
-, {"addr": "0x4130e0", "name": "EnemyManager::operator new", "comment": null}
-, {"addr": "0x413190", "name": "EnemyManager::on_tick", "comment": null}
-, {"addr": "0x413210", "name": "EnemyManager::on_tick__stub", "comment": null}
-, {"addr": "0x413220", "name": "EnemyManager::on_draw__noop", "comment": null}
-, {"addr": "0x413230", "name": "EnemyFull::constructor", "comment": null}
-, {"addr": "0x413570", "name": "EnemyFull::destructor", "comment": null}
-, {"addr": "0x413840", "name": "Enemy::on_tick", "comment": null}
-, {"addr": "0x4154c0", "name": "EnemyFull::run_ecl_256_plus__stub", "comment": null}
-, {"addr": "0x4154d0", "name": "Enemy::run_ecl_256_plus", "comment": null}
-, {"addr": "0x419a20", "name": "EnemyFull::get_int_global__prolly", "comment": null}
-, {"addr": "0x419ef0", "name": "EnemyFull::get_int_global_ptr__prolly", "comment": null}
-, {"addr": "0x41a000", "name": "EnemyFull::get_float_global__prolly", "comment": null}
-, {"addr": "0x41a560", "name": "EnemyFull::get_float_global_ptr__prolly", "comment": null}
-, {"addr": "0x41a900", "name": "Enemy::ecl_get_int_arg__trampoline", "comment": null}
-, {"addr": "0x41a950", "name": "Enemy::ecl_get_float_arg__trampoline", "comment": null}
-, {"addr": "0x41a960", "name": "Enemy::ecl_get_float_arg_ptr__trampoline", "comment": null}
-, {"addr": "0x41c020", "name": "InterpFloat2::step", "comment": null}
-, {"addr": "0x41c550", "name": "Globals::set_chapter", "comment": null}
-, {"addr": "0x41ca10", "name": "FpsCounter::initialize", "comment": null}
-, {"addr": "0x41ca70", "name": "FpsCounter::destructor", "comment": null}
-, {"addr": "0x41cad0", "name": "FpsCounter::operator new", "comment": null}
-, {"addr": "0x41cc80", "name": "FpsCounter::on_draw", "comment": null}
-, {"addr": "0x41cd60", "name": "FpsCounter::on_draw__stub", "comment": null}
-, {"addr": "0x41cd90", "name": "GuiMsgVm::destructor", "comment": null}
-, {"addr": "0x41ce60", "name": "Gui::update_lives", "comment": null}
-, {"addr": "0x41cf40", "name": "Gui::update_bombs", "comment": null}
-, {"addr": "0x41d150", "name": "Gui::constructor", "comment": null}
-, {"addr": "0x41d250", "name": "Gui::initialize", "comment": null}
-, {"addr": "0x41dc50", "name": "Gui::destructor", "comment": null}
-, {"addr": "0x41df40", "name": "Gui::operator new", "comment": null}
-, {"addr": "0x41e020", "name": "Gui::on_tick", "comment": null}
-, {"addr": "0x41efb0", "name": "Gui::on_draw_3b", "comment": null}
-, {"addr": "0x41f040", "name": "Gui::on_draw_2c", "comment": null}
-, {"addr": "0x41f8d0", "name": "Gui::on_tick__stub", "comment": null}
-, {"addr": "0x41f8e0", "name": "Gui::on_draw_3b__stub", "comment": null}
-, {"addr": "0x41f8f0", "name": "Gui::on_draw_2c__stub", "comment": null}
-, {"addr": "0x41f900", "name": "GuiMsgVm::constructor", "comment": null}
-, {"addr": "0x41fcc0", "name": "GuiMsgVm::run", "comment": null}
-, {"addr": "0x420f90", "name": "Gui::sub_420f90", "comment": null}
-, {"addr": "0x421880", "name": "Globals::sub_421880", "comment": null}
-, {"addr": "0x421cd0", "name": "GameThread::thread_start", "comment": null}
-, {"addr": "0x422280", "name": "GameThread::thread_start__stub", "comment": null}
-, {"addr": "0x422290", "name": "GameThread::destructor", "comment": null}
-, {"addr": "0x422700", "name": "GameThread::operator new", "comment": null}
-, {"addr": "0x4227c0", "name": "GameThread::on_tick", "comment": null}
-, {"addr": "0x422bd0", "name": "GameThread::on_tick__stub", "comment": null}
-, {"addr": "0x422be0", "name": "GameThread::on_draw", "comment": null}
-, {"addr": "0x422ce0", "name": "Globals::collect_extend", "comment": null}
-, {"addr": "0x422d30", "name": "Globals::collect_life_fragments", "comment": null}
-, {"addr": "0x422d70", "name": "Globals::collect_big_power", "comment": null}
-, {"addr": "0x422dd0", "name": "Globals::collect_bomb", "comment": null}
-, {"addr": "0x422e10", "name": "Globals::collect_bomb_fragment", "comment": null}
-, {"addr": "0x422f60", "name": "Globals::set_2_bombs", "comment": null}
-, {"addr": "0x4230a0", "name": "Globals::increment_continues_used", "comment": null}
-, {"addr": "0x423380", "name": "HintManager::constructor", "comment": null}
-, {"addr": "0x423480", "name": "HintManager::initialize", "comment": null}
-, {"addr": "0x423580", "name": "HintManager::destructor", "comment": null}
-, {"addr": "0x423750", "name": "HintManager::operator new", "comment": null}
-, {"addr": "0x423ed0", "name": "HintManager::on_tick", "comment": null}
-, {"addr": "0x424190", "name": "HintManager::on_tick__stub", "comment": null}
-, {"addr": "0x4241a0", "name": "HintManager::on_draw", "comment": null}
-, {"addr": "0x4258d0", "name": "Item::constructor", "comment": null}
-, {"addr": "0x425900", "name": "Item::destructor", "comment": null}
-, {"addr": "0x425940", "name": "ItemManager::initialize", "comment": null}
-, {"addr": "0x425a00", "name": "ItemManager::destructor", "comment": null}
-, {"addr": "0x425b10", "name": "ItemManager::operator new", "comment": null}
-, {"addr": "0x425c20", "name": "ItemManager::on_tick__body", "comment": null}
-, {"addr": "0x427230", "name": "ItemManager::on_draw__body", "comment": null}
-, {"addr": "0x427380", "name": "ItemManager::on_tick", "comment": null}
-, {"addr": "0x4273c0", "name": "ItemManager::on_draw", "comment": null}
-, {"addr": "0x4273f0", "name": "ItemManager::spawn_item", "comment": null}
-, {"addr": "0x427ca0", "name": "Globals::sub_427ca0", "comment": null}
-, {"addr": "0x427d60", "name": "LaserBaseClass::method_0_noop", "comment": null}
-, {"addr": "0x427d70", "name": "LaserBaseClass::method_4_noop", "comment": null}
-, {"addr": "0x427d80", "name": "LaserBaseClass::method_8_noop", "comment": null}
-, {"addr": "0x427d90", "name": "LaserBaseClass::method_c_noop", "comment": null}
-, {"addr": "0x427da0", "name": "LaserBaseClass::method_10_noop", "comment": null}
-, {"addr": "0x427dc0", "name": "LaserBaseClass::method_1c_noop", "comment": null}
-, {"addr": "0x427dd0", "name": "LaserBaseClass::method_18_noop", "comment": null}
-, {"addr": "0x427de0", "name": "LaserBaseClass::method_20_noop", "comment": null}
-, {"addr": "0x427df0", "name": "LaserBaseClass::method_14_noop", "comment": null}
-, {"addr": "0x427e00", "name": "LaserBaseClass::method_24_noop", "comment": null}
-, {"addr": "0x427e10", "name": "LaserBaseClass::method_28_noop", "comment": null}
-, {"addr": "0x427e20", "name": "LaserBaseClass::method_2c_noop", "comment": null}
-, {"addr": "0x427e30", "name": "LaserBaseClass::method_30_noop", "comment": null}
-, {"addr": "0x427e40", "name": "LaserBaseClass::method_34_noop", "comment": null}
-, {"addr": "0x427e50", "name": "LaserBaseClass::method_38_noop", "comment": null}
-, {"addr": "0x427e60", "name": "LaserBaseClass::method_3c_noop", "comment": null}
-, {"addr": "0x427e70", "name": "LaserBaseClass::method_40_noop", "comment": null}
-, {"addr": "0x427e80", "name": "LaserBaseClass::method_44_noop", "comment": null}
-, {"addr": "0x427e90", "name": "LaserBaseClass::method_48_noop", "comment": null}
-, {"addr": "0x427ea0", "name": "LaserBaseClass::method_4c_noop", "comment": null}
-, {"addr": "0x427eb0", "name": "LaserBaseClass::method_50_noop", "comment": null}
-, {"addr": "0x427ec0", "name": "LaserBaseClass::constructor", "comment": null}
-, {"addr": "0x427fd0", "name": "LaserManager::initialize", "comment": null}
-, {"addr": "0x4280d0", "name": "LaserManager::destructor", "comment": null}
-, {"addr": "0x4281c0", "name": "LaserManager::operator new", "comment": null}
-, {"addr": "0x4283d0", "name": "LaserManager::on_tick", "comment": null}
-, {"addr": "0x428430", "name": "LaserManager::on_draw", "comment": null}
-, {"addr": "0x428450", "name": "LaserManager::allocate_new_laser", "comment": null}
-, {"addr": "0x428520", "name": "LaserLine::constructor", "comment": null}
-, {"addr": "0x428560", "name": "LaserInfinite::constructor", "comment": null}
-, {"addr": "0x4285b0", "name": "LaserCurve::constructor", "comment": null}
-, {"addr": "0x4285f0", "name": "sub_4285f0_cancels_lasers", "comment": null}
-, {"addr": "0x4286f0", "name": "LaserManager::cancel_in_radius", "comment": null}
-, {"addr": "0x4287c0", "name": "LaserLine::method_4", "comment": null}
-, {"addr": "0x428b00", "name": "LaserLine::method_0", "comment": null}
-, {"addr": "0x429150", "name": "LaserLine::method_40", "comment": null}
-, {"addr": "0x429400", "name": "LaserLine::method_34", "comment": null}
-, {"addr": "0x429520", "name": "LaserLine::method_2c", "comment": null}
-, {"addr": "0x429610", "name": "LaserLine::method_8", "comment": null}
-, {"addr": "0x429af0", "name": "LaserLine::method_c", "comment": null}
-, {"addr": "0x429bb0", "name": "LaserLine::method_10", "comment": null}
-, {"addr": "0x429bc0", "name": "LaserLine::method_18", "comment": null}
-, {"addr": "0x42a1f0", "name": "LaserLine::method_1c", "comment": null}
-, {"addr": "0x42a800", "name": "LaserLine::method_14", "comment": null}
-, {"addr": "0x42aa60", "name": "LaserLine::method_24", "comment": null}
-, {"addr": "0x42ab80", "name": "LaserInfinite::method_4", "comment": null}
-, {"addr": "0x42ada0", "name": "LaserInfinite::method_8", "comment": null}
-, {"addr": "0x42b100", "name": "LaserInfinite::method_c", "comment": null}
-, {"addr": "0x42b1c0", "name": "LaserInfinite::method_10", "comment": null}
-, {"addr": "0x42b1d0", "name": "LaserInfinite::method_18", "comment": null}
-, {"addr": "0x42b750", "name": "LaserInfinite::method_1c", "comment": null}
-, {"addr": "0x42bd90", "name": "LaserInfinite::method_14", "comment": null}
-, {"addr": "0x42c080", "name": "LaserInfinite::method_24", "comment": null}
-, {"addr": "0x42c1a0", "name": "LaserInfinite::method_0", "comment": null}
-, {"addr": "0x42c3f0", "name": "LaserCurve::method_4", "comment": null}
-, {"addr": "0x42c720", "name": "LaserCurve::method_10", "comment": null}
-, {"addr": "0x42c770", "name": "LaserCurve::method_8", "comment": null}
-, {"addr": "0x42cca0", "name": "LaserCurve::method_c", "comment": null}
-, {"addr": "0x42d030", "name": "LaserCurve::method_0", "comment": null}
-, {"addr": "0x42d6e0", "name": "LaserCurve::method_34", "comment": null}
-, {"addr": "0x42d800", "name": "LaserCurve::method_30", "comment": null}
-, {"addr": "0x42d890", "name": "LaserCurve::method_2c", "comment": null}
-, {"addr": "0x42d980", "name": "LaserCurve::method_50", "comment": null}
-, {"addr": "0x42d9c0", "name": "LaserCurve::method_18", "comment": null}
-, {"addr": "0x42df00", "name": "LaserCurve::method_1c", "comment": null}
-, {"addr": "0x42e3e0", "name": "LaserCurve::method_14", "comment": null}
-, {"addr": "0x42e5b0", "name": "LaserCurve::method_24", "comment": null}
-, {"addr": "0x42e9b0", "name": "LoadingThread::thread_start", "comment": null}
-, {"addr": "0x42eb10", "name": "LoadingThread::initialize", "comment": null}
-, {"addr": "0x42ec00", "name": "LoadingThread::destructor", "comment": null}
-, {"addr": "0x42ede0", "name": "LoadingThread::operator new", "comment": null}
-, {"addr": "0x42eea0", "name": "LoadingThread::on_tick", "comment": null}
-, {"addr": "0x42ef00", "name": "LoadingThread::on_draw", "comment": null}
-, {"addr": "0x42ef70", "name": "LoadingThread::on_tick__stub", "comment": null}
-, {"addr": "0x42ef80", "name": "LoadingThread::on_draw__stub", "comment": null}
-, {"addr": "0x42f000", "name": "Supervisor::on_tick", "comment": null}
-, {"addr": "0x42f0b0", "name": "Supervisor::on_draw_01", "comment": null}
-, {"addr": "0x42f200", "name": "Supervisor::on_draw_0c", "comment": null}
-, {"addr": "0x42f290", "name": "Supervisor::on_draw_25", "comment": null}
-, {"addr": "0x42f320", "name": "Supervisor::on_draw_30", "comment": null}
-, {"addr": "0x42f380", "name": "Supervisor::on_draw_47", "comment": null}
-, {"addr": "0x42f3b0", "name": "Supervisor::on_draw_0e", "comment": null}
-, {"addr": "0x42f410", "name": "Supervisor::on_draw_27", "comment": null}
-, {"addr": "0x42f470", "name": "Supervisor::on_draw_31", "comment": null}
-, {"addr": "0x42f560", "name": "Supervisor::on_registration", "comment": null}
-, {"addr": "0x42f8c0", "name": "Supervisor::initialize", "comment": null}
-, {"addr": "0x42feb0", "name": "Supervisor::load_game_config", "comment": null}
-, {"addr": "0x430270", "name": "sub_430270_sound", "comment": null}
-, {"addr": "0x4302c0", "name": "Supervisor::enable_d3d_fog", "comment": null}
-, {"addr": "0x430300", "name": "Supervisor::disable_d3d_fog", "comment": null}
-, {"addr": "0x430500", "name": "create_game_thread", "comment": null}
-, {"addr": "0x430910", "name": "Supervisor::swap_transform_matrices", "comment": null}
-, {"addr": "0x4311e0", "name": "Supervisor::switch_gamemodes", "comment": null}
-, {"addr": "0x431630", "name": "Supervisor::setup_special_anms", "comment": null}
-, {"addr": "0x431700", "name": "Supervisor::release_surfaces", "comment": null}
-, {"addr": "0x4317d0", "name": "sub_4317d0_unknown_trig__maybe_tan", "comment": null}
-, {"addr": "0x431d00", "name": "PauseMenu::constructor", "comment": null}
-, {"addr": "0x431d70", "name": "PauseMenu::initialize", "comment": null}
-, {"addr": "0x431ed0", "name": "PauseMenu::destructor", "comment": null}
-, {"addr": "0x431fb0", "name": "PauseMenu::operator new", "comment": null}
-, {"addr": "0x432040", "name": "PauseMenu::on_tick", "comment": null}
-, {"addr": "0x432260", "name": "PauseMenu::on_draw", "comment": null}
-, {"addr": "0x432700", "name": "PauseMenu::on_tick__stub", "comment": null}
-, {"addr": "0x432710", "name": "PauseMenu::on_draw__stub", "comment": null}
-, {"addr": "0x432850", "name": "sub_432850__show_replay_end_menu", "comment": null}
-, {"addr": "0x432960", "name": "PauseMenu::do_unpause", "comment": null}
-, {"addr": "0x4329a0", "name": "PauseMenu::do_pause__prolly", "comment": null}
-, {"addr": "0x433710", "name": "sub_433710__begins_game_over", "comment": null}
-, {"addr": "0x4339c0", "name": "PauseMenu::sub_4339c0", "comment": null}
-, {"addr": "0x433a30", "name": "PauseMenu::sub_433a30", "comment": null}
-, {"addr": "0x433bb0", "name": "PauseMenu::do_game_over_menu", "comment": null}
-, {"addr": "0x434900", "name": "PauseMenu::do_practice_end__prolly", "comment": null}
-, {"addr": "0x435670", "name": "sub_435670_mystery", "comment": null}
-, {"addr": "0x4359a0", "name": "Player::constructor", "comment": null}
-, {"addr": "0x435ae0", "name": "Player::initialize", "comment": null}
-, {"addr": "0x436270", "name": "Player::destructor", "comment": null}
-, {"addr": "0x436410", "name": "Player::operator new", "comment": null}
-, {"addr": "0x436ba0", "name": "Player::on_tick", "comment": null}
-, {"addr": "0x437600", "name": "Player::on_draw", "comment": null}
-, {"addr": "0x437660", "name": "Player::on_tick__stub", "comment": null}
-, {"addr": "0x437670", "name": "Player::on_draw__stub", "comment": null}
-, {"addr": "0x437680", "name": "sub_437680_load_sht_file", "comment": null}
-, {"addr": "0x4381e0", "name": "Player::sub_4381e0", "comment": null}
-, {"addr": "0x4385b0", "name": "Player::repopulate_options", "comment": null}
-, {"addr": "0x4390f0", "name": "Player::sub_4390f0_creates_damage_source", "comment": null}
-, {"addr": "0x439630", "name": "Player::shoot_one_bullet", "comment": null}
-, {"addr": "0x4399d0", "name": "Player::do_shooting", "comment": null}
-, {"addr": "0x439a40", "name": "Player::tick_shooting_state", "comment": null}
-, {"addr": "0x439b10", "name": "Player::sub_439b10__prolly__tick_bullets", "comment": null}
-, {"addr": "0x439ed0", "name": "Enemy::take_damage_from_player", "comment": null}
-, {"addr": "0x43a470", "name": "sub_43a470__reimu_b", "comment": null}
-, {"addr": "0x43a480", "name": "sub_43a480__reimu_a", "comment": null}
-, {"addr": "0x43a680", "name": "sub_43a680__marisa_a", "comment": null}
-, {"addr": "0x43a6b0", "name": "sub_43a6b0__marisa_a", "comment": null}
-, {"addr": "0x43a800", "name": "sub_43a800__sanae_a", "comment": null}
-, {"addr": "0x43a810", "name": "sub_43a810__sanae_a", "comment": null}
-, {"addr": "0x43a950", "name": "sub_43a950__sanae_b_splash_damage", "comment": null}
-, {"addr": "0x43aa50", "name": "sub_43aa50__sanae_b_secondary_bullets", "comment": null}
-, {"addr": "0x43ae80", "name": "ReplayManager::initialize", "comment": null}
-, {"addr": "0x43b450", "name": "ReplayManager::destructor", "comment": null}
-, {"addr": "0x43b600", "name": "ReplayManager::operator new", "comment": null}
-, {"addr": "0x43b7e0", "name": "ReplayManager::on_tick_0b__record_replay", "comment": null}
-, {"addr": "0x43b950", "name": "ReplayManager::on_tick_0b__playback_replay", "comment": null}
-, {"addr": "0x43c510", "name": "ReplayManager::on_tick_0b__record_replay__stub", "comment": null}
-, {"addr": "0x43c520", "name": "ReplayManager::on_tick_0b__playback_replay__stub", "comment": null}
-, {"addr": "0x43c530", "name": "ReplayManager::on_tick_1c__speedup_replay", "comment": null}
-, {"addr": "0x43c570", "name": "ReplayManager::on_draw", "comment": null}
-, {"addr": "0x43cd40", "name": "ReplayStageData::constructor", "comment": null}
-, {"addr": "0x43cd80", "name": "ReplayStageData::destructor", "comment": null}
-, {"addr": "0x43cf90", "name": "Scorefile::constructor", "comment": null}
-, {"addr": "0x43d050", "name": "Scorefile::operator new", "comment": null}
-, {"addr": "0x43d570", "name": "DebugSoundTest::constructor", "comment": null}
-, {"addr": "0x43d600", "name": "DebugSoundTest::initialize", "comment": null}
-, {"addr": "0x43d6d0", "name": "DebugSoundTest::destructor", "comment": null}
-, {"addr": "0x43d7e0", "name": "DebugSoundTest::operator new", "comment": null}
-, {"addr": "0x43d870", "name": "DebugSoundTest::on_tick", "comment": null}
-, {"addr": "0x43d9f0", "name": "DebugSoundTest::on_draw", "comment": null}
-, {"addr": "0x43dac0", "name": "DebugSoundTest::on_tick__stub", "comment": null}
-, {"addr": "0x43dad0", "name": "DebugSoundTest::on_draw__stub", "comment": null}
-, {"addr": "0x43db40", "name": "PopupManager::initialize", "comment": null}
-, {"addr": "0x43dc30", "name": "PopupManager::destructor", "comment": null}
-, {"addr": "0x43dd50", "name": "PopupManager::operator new", "comment": null}
-, {"addr": "0x43de10", "name": "PopupManager::on_tick", "comment": null}
-, {"addr": "0x43dec0", "name": "PopupManager::on_draw", "comment": null}
-, {"addr": "0x43e230", "name": "PopupManager::on_tick__stub", "comment": null}
-, {"addr": "0x43e240", "name": "PopupManager::on_draw__stub", "comment": null}
-, {"addr": "0x43e3e0", "name": "DebugSptTest::constructor", "comment": null}
-, {"addr": "0x43e470", "name": "DebugSptTest::initialize", "comment": null}
-, {"addr": "0x43e520", "name": "DebugSptTest::destructor", "comment": null}
-, {"addr": "0x43e840", "name": "DebugSptTest::operator new", "comment": null}
-, {"addr": "0x43e8d0", "name": "DebugSptTest::on_tick", "comment": null}
-, {"addr": "0x43ec80", "name": "DebugSptTest::on_draw", "comment": null}
-, {"addr": "0x43eea0", "name": "DebugSptTest::on_tick__stub", "comment": null}
-, {"addr": "0x43eeb0", "name": "DebugSptTest::on_draw__stub", "comment": null}
-, {"addr": "0x43f250", "name": "MainMenu::constructor", "comment": null}
-, {"addr": "0x43f320", "name": "MainMenu::thread_start", "comment": null}
-, {"addr": "0x43f3d0", "name": "MainMenu::initialize", "comment": null}
-, {"addr": "0x43f4f0", "name": "MainMenu::destructor", "comment": null}
-, {"addr": "0x43f6b0", "name": "MainMenu::operator new", "comment": null}
-, {"addr": "0x43f760", "name": "MainMenu::on_tick", "comment": null}
-, {"addr": "0x43fc00", "name": "MainMenu::on_draw", "comment": null}
-, {"addr": "0x43fc90", "name": "MainMenu::on_tick__stub", "comment": null}
-, {"addr": "0x43fca0", "name": "MainMenu::on_draw__stub", "comment": null}
-, {"addr": "0x4480c0", "name": "MainMenu::sub_4480c0", "comment": null}
-, {"addr": "0x449fa0", "name": "Ufo::initialize", "comment": null}
-, {"addr": "0x44a120", "name": "Ufo::destructor", "comment": null}
-, {"addr": "0x44a230", "name": "Ufo::operator new", "comment": null}
-, {"addr": "0x44a2d0", "name": "Ufo::on_tick", "comment": null}
-, {"addr": "0x44a4f0", "name": "Ufo::on_draw_3c", "comment": null}
-, {"addr": "0x44a5d0", "name": "Ufo::on_draw_16", "comment": null}
-, {"addr": "0x44a860", "name": "Ufo::on_tick__stub", "comment": null}
-, {"addr": "0x44a870", "name": "Ufo::on_draw_3c__stub", "comment": null}
-, {"addr": "0x44a880", "name": "Ufo::on_draw_16__stub", "comment": null}
-, {"addr": "0x44f200", "name": "UpdateFuncRegistry::destructor", "comment": null}
-, {"addr": "0x44f370", "name": "AnmManager::release_textures", "comment": null}
-, {"addr": "0x44f400", "name": "AnmManager::create_d3d_textures_for_loaded_anms", "comment": null}
-, {"addr": "0x44f560", "name": "WinMain", "comment": null}
-, {"addr": "0x450080", "name": "Window::do_frame__normal_version", "comment": null}
-, {"addr": "0x4501e0", "name": "Window::update_window__normal_version", "comment": null}
-, {"addr": "0x4503f0", "name": "Window::do_frame__frameskip_version", "comment": null}
-, {"addr": "0x450600", "name": "Window::do_frame__idfk_version", "comment": null}
-, {"addr": "0x450cc0", "name": "sub_450cc0_lots_of_d3d_init", "comment": null}
-, {"addr": "0x451200", "name": "Supervisor::reset_render_state", "comment": null}
-, {"addr": "0x452a60", "name": "ScreenEffect::initialize", "comment": null}
-, {"addr": "0x452f00", "name": "ScreenEffect::destructor", "comment": null}
-, {"addr": "0x453d90", "name": "SoundManager::play_sound_centered", "comment": null}
-, {"addr": "0x453e20", "name": "SoundManager::play_sound_at_position", "comment": null}
-, {"addr": "0x453fa0", "name": "SoundManager::update_sound_thread", "comment": null}
-, {"addr": "0x454960", "name": "SoundManager::modify_bgm", "comment": null}
-, {"addr": "0x454b80", "name": "AnmVm::setup_texture_quad_and_matrices", "comment": null}
-, {"addr": "0x454d10", "name": "AnmLoaded::load_script_into_vm", "comment": null}
-, {"addr": "0x454fa0", "name": "AnmLoaded::sub_454fa0_loads_a_script", "comment": null}
-, {"addr": "0x4551b0", "name": "AnmVm::get_float_var", "comment": null}
-, {"addr": "0x4553f0", "name": "AnmVm::get_int_var", "comment": null}
-, {"addr": "0x4554d0", "name": "AnmVm::get_float_var_ptr", "comment": null}
-, {"addr": "0x455580", "name": "AnmVm::get_int_var_ptr", "comment": null}
-, {"addr": "0x455630", "name": "AnmVm::run", "comment": null}
-, {"addr": "0x4589e0", "name": "InterpInt3::step", "comment": null}
-, {"addr": "0x458cf0", "name": "InterpInt::step", "comment": null}
-, {"addr": "0x458e40", "name": "InterpFloat2::step__copy", "comment": null}
-, {"addr": "0x459100", "name": "InterpFloat::step", "comment": null}
-, {"addr": "0x4594b0", "name": "cartesian_from_polar_4594b0", "comment": null}
-, {"addr": "0x459530", "name": "AnmVm::set_uv_scale_time", "comment": null}
-, {"addr": "0x4595c0", "name": "AnmVm::set_alpha_2_time", "comment": null}
-, {"addr": "0x459640", "name": "AnmVm::set_rgb_2_time", "comment": null}
-, {"addr": "0x459830", "name": "AnmVm::set_color_1_time", "comment": null}
-, {"addr": "0x4599b0", "name": "AnmVm::set_alpha_time", "comment": null}
-, {"addr": "0x459a40", "name": "color_component_multiply", "comment": null}
-, {"addr": "0x459cf0", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
-, {"addr": "0x459e50", "name": "AnmManager::draw_vm__sprite_2d", "comment": null}
-, {"addr": "0x45a380", "name": "AnmManager::reset_vertex_buffers", "comment": null}
-, {"addr": "0x45a3c0", "name": "AnmManager::flush_sprites", "comment": null}
-, {"addr": "0x45a4a0", "name": "AnmManager::write_sprite", "comment": null}
-, {"addr": "0x45a570", "name": "AnmVm::write_sprite_corners__without_rot", "comment": null}
-, {"addr": "0x45a9f0", "name": "AnmManager::draw_vm__mode_0", "comment": null}
-, {"addr": "0x45ae50", "name": "AnmManager::draw_vm__mode_2", "comment": null}
-, {"addr": "0x45af10", "name": "AnmVm::write_sprite_corners__with_z_rot", "comment": null}
-, {"addr": "0x45b1b0", "name": "AnmManager::draw_vm__mode_1", "comment": null}
-, {"addr": "0x45b1e0", "name": "AnmManager::draw_vm__mode_3", "comment": null}
-, {"addr": "0x45b5e0", "name": "AnmManager::draw_vm__mode_4", "comment": null}
-, {"addr": "0x45b610", "name": "AnmManager::draw_vm__mode_6", "comment": null}
-, {"addr": "0x45ba90", "name": "AnmManager::draw_vm__mode_5", "comment": null}
-, {"addr": "0x45bac0", "name": "AnmManager::draw_vm__mode_7", "comment": null}
-, {"addr": "0x45bce0", "name": "AnmManager::draw_vm__mode_8", "comment": null}
-, {"addr": "0x45c3a0", "name": "AnmManager::draw_vm__mode_9__texCircle", "comment": null}
-, {"addr": "0x45c800", "name": "AnmManager::draw_vm__mode_11", "comment": null}
-, {"addr": "0x45c900", "name": "AnmManager::draw_vm", "comment": null}
-, {"addr": "0x45dfa0", "name": "AnmManager::initialize", "comment": null}
-, {"addr": "0x45ee00", "name": "sub_45ee00__modifies_textures_after_loading_them__but_why", "comment": null}
-, {"addr": "0x45f880", "name": "AnmLoadedD3D::create_texture_from_image", "comment": null}
-, {"addr": "0x45fba0", "name": "AnmLoadedD3D::create_texture_for_@", "comment": null}
-, {"addr": "0x45fbf0", "name": "AnmLoadedD3D::create_texture_for_@R", "comment": null}
-, {"addr": "0x45fe60", "name": "AnmManager::preload_anm", "comment": null}
-, {"addr": "0x45ffc0", "name": "AnmLoaded::setup_textures", "comment": null}
-, {"addr": "0x4600a0", "name": "AnmLoaded::create_texture_for_entry", "comment": null}
-, {"addr": "0x4603d0", "name": "AnmManager::setup_textures_and_vm_templates", "comment": null}
-, {"addr": "0x4604e0", "name": "AnmLoaded::destructor", "comment": null}
-, {"addr": "0x460c30", "name": "AnmManager::on_tick_1b__stub", "comment": null}
-, {"addr": "0x460c40", "name": "AnmManager::on_tick_08__stub", "comment": null}
-, {"addr": "0x460fe0", "name": "AnmManager::on_tick_1b", "comment": null}
-, {"addr": "0x4610d0", "name": "AnmManager::on_tick_08", "comment": null}
-, {"addr": "0x461250", "name": "AnmManager::insert_in_world_list_back", "comment": null}
-, {"addr": "0x4612d0", "name": "AnmManager::insert_in_world_list_front", "comment": null}
-, {"addr": "0x461350", "name": "AnmManager::insert_in_ui_list_back", "comment": null}
-, {"addr": "0x4613d0", "name": "AnmManager::insert_in_ui_list_front", "comment": null}
-, {"addr": "0x461450", "name": "AnmManager::sub_461450__remove_presumably", "comment": null}
-, {"addr": "0x461720", "name": "AnmLoaded::create_managed_child", "comment": null}
-, {"addr": "0x461840", "name": "AnmLoaded::create_managed_root", "comment": null}
-, {"addr": "0x461920", "name": "AnmManager::get_vm_by_id__prolly", "comment": null}
-, {"addr": "0x461970", "name": "anm_interrupt_by_id", "comment": null}
-, {"addr": "0x461a70", "name": "anm_461a70", "comment": null}
-, {"addr": "0x461be0", "name": "AnmManager::stop_all_vms_from_anm_file__prolly", "comment": null}
-, {"addr": "0x461c50", "name": "AnmManager::find_existing_or_clear_id", "comment": null}
-, {"addr": "0x461dd0", "name": "set_anm_vm_pos_3_by_id", "comment": null}
-, {"addr": "0x461f40", "name": "Enemy::change_anm_main", "comment": null}
-, {"addr": "0x4621c0", "name": "AnmManager::allocate_vm", "comment": null}
-, {"addr": "0x462380", "name": "UpdateFuncRegistry::register__on_tick", "comment": null}
-, {"addr": "0x462420", "name": "UpdateFuncRegistry::register__on_draw", "comment": null}
-, {"addr": "0x4624c0", "name": "UpdateFuncRegistry::run_all_on_tick", "comment": null}
-, {"addr": "0x462620", "name": "UpdateFuncRegistry::run_all_on_draw", "comment": null}
-, {"addr": "0x4627e0", "name": "UpdateFunc::operator new", "comment": null}
-, {"addr": "0x462890", "name": "UpdateFuncRegistry::unregister", "comment": null}
-, {"addr": "0x462930", "name": "UpdateFuncRegistry::register_new__on_tick__with_flags_0b11", "comment": null}
-, {"addr": "0x462970", "name": "UpdateFuncRegistry::register_new__on_tick__with_flags_0b01", "comment": null}
-, {"addr": "0x464220", "name": "sub_464220_logs_debug_messages", "comment": null}
-, {"addr": "0x464300", "name": "sub_464300_logs_debug_messages", "comment": null}
-, {"addr": "0x464440", "name": "Rng::rand_int", "comment": null}
-, {"addr": "0x464640", "name": "math_reduce_angle_464640", "comment": null}
-, {"addr": "0x4646e0", "name": "math_reduce_angle_4646e0", "comment": null}
-, {"addr": "0x464a20", "name": "Timer::decrement", "comment": null}
-, {"addr": "0x464a80", "name": "Timer::increment", "comment": null}
-, {"addr": "0x464c40", "name": "sub_464c40__calls_WaitForSingleObject", "comment": null}
-, {"addr": "0x468e20", "name": "ecl_get_int_arg", "comment": null}
-, {"addr": "0x468ec0", "name": "EclRunContext::get_float_arg", "comment": null}
-, {"addr": "0x46a970", "name": "Bomb::on_tick_reimu_a", "comment": null}
-, {"addr": "0x46c932", "name": "__security_check_cookie", "comment": null}
-, {"addr": "0x46c941", "name": "free_", "comment": null}
-, {"addr": "0x46c9ea", "name": "malloc", "comment": null}
-, {"addr": "0x46ca4f", "name": "free", "comment": null}
-, {"addr": "0x46ce49", "name": "initialize_vector", "comment": null}
-, {"addr": "0x46cf1e", "name": "run_on_vector", "comment": null}
-, {"addr": "0x46d04a", "name": "malloc_", "comment": null}
-, {"addr": "0x46e54b", "name": "sub_46e54b__creates_thread", "comment": null}
-, {"addr": "0x46e81d", "name": "_start", "comment": null}
-, {"addr": "0x477420", "name": "memset", "comment": null}
-, {"addr": "0x4931e0", "name": "float_to_int_4931e0", "comment": null}
-, {"addr": "0x493440", "name": "sub_493440_unknown_trig__maybe_acos", "comment": null}
-, {"addr": "0x493590", "name": "sub_493590_unknown_trig__maybe_atan", "comment": null}
+
+[ {"addr": "0x401000", "name": "AsciiManager::constructor"}
+, {"addr": "0x401090", "name": "AsciiManager::initialize"}
+, {"addr": "0x401220", "name": "AsciiManager::destructor"}
+, {"addr": "0x401400", "name": "AsciiManager::operator new"}
+, {"addr": "0x4014b0", "name": "AsciiManager::on_tick"}
+, {"addr": "0x4014d0", "name": "AsciiManager::on_draw_45"}
+, {"addr": "0x4014e0", "name": "AsciiManager::on_draw_2d__stub"}
+, {"addr": "0x4014f0", "name": "AsciiManager::create_string"}
+, {"addr": "0x401720", "name": "AsciiManager::drawf_debug"}
+, {"addr": "0x401790", "name": "AsciiManager::render_group"}
+, {"addr": "0x4018f0", "name": "AsciiManager::draw_string"}
+, {"addr": "0x402030", "name": "AsciiManager::on_draw_2d"}
+, {"addr": "0x4022a0", "name": "AsciiManager::on_tick__body"}
+, {"addr": "0x402520", "name": "AnmVm::wipe"}
+, {"addr": "0x4026e0", "name": "AnmVm::destructor"}
+, {"addr": "0x402790", "name": "initialize_vector_without_destructor"}
+, {"addr": "0x4027e0", "name": "AnmVm::constructor"}
+, {"addr": "0x402970", "name": "Stage::constructor"}
+, {"addr": "0x402a40", "name": "Stage::initialize"}
+, {"addr": "0x402cc0", "name": "Stage::destructor"}
+, {"addr": "0x402f40", "name": "Stage::operator new"}
+, {"addr": "0x403020", "name": "Stage::on_tick"}
+, {"addr": "0x4036f0", "name": "Stage::on_draw_02"}
+, {"addr": "0x403b60", "name": "Stage::on_draw_05"}
+, {"addr": "0x403ec0", "name": "Stage::on_tick__stub"}
+, {"addr": "0x403ed0", "name": "Stage::on_draw_02__stub"}
+, {"addr": "0x403ee0", "name": "Stage::on_draw_05__stub"}
+, {"addr": "0x4049a0", "name": "Stage::run_std"}
+, {"addr": "0x4057e0", "name": "ScreenEffect::operator new"}
+, {"addr": "0x405900", "name": "InterpFloat3::step"}
+, {"addr": "0x406170", "name": "sub_406170_either_sin_or_cos"}
+, {"addr": "0x406680", "name": "sub_406680_either_sin_or_cos"}
+, {"addr": "0x4067e0", "name": "Timer::set_current"}
+, {"addr": "0x406880", "name": "Bomb::initialize"}
+, {"addr": "0x406930", "name": "Bomb::destructor"}
+, {"addr": "0x406b20", "name": "Bomb::operator new"}
+, {"addr": "0x406bb0", "name": "Bomb::on_tick__stub"}
+, {"addr": "0x406bc0", "name": "Bomb::on_draw__noop"}
+, {"addr": "0x406ce0", "name": "Bomb::on_tick"}
+, {"addr": "0x4072d0", "name": "Bomb::on_tick_marisa_a"}
+, {"addr": "0x407950", "name": "Bomb::on_tick_marisa_b"}
+, {"addr": "0x4082e0", "name": "Bomb::on_tick_reimu_b"}
+, {"addr": "0x408b90", "name": "Bomb::on_tick_sanae_a"}
+, {"addr": "0x408f00", "name": "Bomb::on_tick_sanae_b"}
+, {"addr": "0x4094b0", "name": "Bullet::constructor"}
+, {"addr": "0x4094f0", "name": "Bullet::destructor"}
+, {"addr": "0x409530", "name": "BulletManager::initialize"}
+, {"addr": "0x4096d0", "name": "BulletManager::destructor"}
+, {"addr": "0x4097f0", "name": "BulletManager::operator new"}
+, {"addr": "0x4099e0", "name": "Bullet::on_tick"}
+, {"addr": "0x40a020", "name": "BulletManager::on_tick__body"}
+, {"addr": "0x40a1f0", "name": "BulletManager::on_tick"}
+, {"addr": "0x40a220", "name": "BulletManager::on_draw"}
+, {"addr": "0x40a250", "name": "BulletManager::shoot_one"}
+, {"addr": "0x40aa60", "name": "Bullet::run_ex"}
+, {"addr": "0x40b5e0", "name": "BulletManager::shoot_bullets"}
+, {"addr": "0x40b670", "name": "Bullet::step_ex_00_dist"}
+, {"addr": "0x40b6f0", "name": "Bullet::step_ex_02_accel"}
+, {"addr": "0x40b800", "name": "Bullet::step_ex_29_veltime"}
+, {"addr": "0x40b920", "name": "Bullet::step_ex_03_angleaccel"}
+, {"addr": "0x40b9c0", "name": "Bullet::step_ex_04_turn_add"}
+, {"addr": "0x40baf0", "name": "Bullet::step_ex_06_turn_fixed"}
+, {"addr": "0x40bc20", "name": "Bullet::step_ex_05_turn_aim"}
+, {"addr": "0x40bef0", "name": "Bullet::step_ex_08_bounce"}
+, {"addr": "0x40c000", "name": "Bullet::run_ex_17"}
+, {"addr": "0x40c0b0", "name": "Bullet::run_ex_18"}
+, {"addr": "0x40c170", "name": "Bullet::step_ex_23"}
+, {"addr": "0x40c230", "name": "Bullet::step_ex_25_steer"}
+, {"addr": "0x40c3b0", "name": "Bullet::step_ex_27_veladd"}
+, {"addr": "0x40c480", "name": "Bullet::step_ex_10_offscreen"}
+, {"addr": "0x40c8b0", "name": "Bullet::cancel"}
+, {"addr": "0x40caa0", "name": "BulletManager::cancel_in_radius"}
+, {"addr": "0x40cbe0", "name": "sub_40cbe0__unused"}
+, {"addr": "0x40cd00", "name": "sub_40cd00_cancels_bullets"}
+, {"addr": "0x40ce20", "name": "sub_40ce20__unused"}
+, {"addr": "0x40d430", "name": "Bullet::sprite_mapping_func"}
+, {"addr": "0x40d560", "name": "check_within_screen_boundaries"}
+, {"addr": "0x40d880", "name": "Spellcard::initialize"}
+, {"addr": "0x40d9c0", "name": "Spellcard::destructor"}
+, {"addr": "0x40daa0", "name": "Spellcard::operator new"}
+, {"addr": "0x40db40", "name": "Spellcard::on_tick"}
+, {"addr": "0x40def0", "name": "Spellcard::on_draw"}
+, {"addr": "0x40e040", "name": "Spellcard::on_tick__stub"}
+, {"addr": "0x40e050", "name": "Spellcard::on_draw__stub"}
+, {"addr": "0x40e730", "name": "Globals::cap_score"}
+, {"addr": "0x40ea30", "name": "DebugSprtView::constructor"}
+, {"addr": "0x40ead0", "name": "DebugSprtView::initialize"}
+, {"addr": "0x40eba0", "name": "DebugSprtView::destructor"}
+, {"addr": "0x40edf0", "name": "DebugSprtView::operator new"}
+, {"addr": "0x40ee80", "name": "DebugSprtView::on_tick"}
+, {"addr": "0x40f350", "name": "DebugSprtView::on_draw"}
+, {"addr": "0x40f650", "name": "DebugSprtView::on_tick__stub"}
+, {"addr": "0x40f660", "name": "DebugSprtView::on_draw__stub"}
+, {"addr": "0x40f720", "name": "Supervisor::sub_40f720"}
+, {"addr": "0x40f940", "name": "EffectManager::initialize"}
+, {"addr": "0x40fa30", "name": "EffectManager::destructor"}
+, {"addr": "0x40fb00", "name": "EffectManager::operator new"}
+, {"addr": "0x40fbc0", "name": "EffectManager::on_tick"}
+, {"addr": "0x40fbd0", "name": "EffectManager::on_draw"}
+, {"addr": "0x410c60", "name": "Ending::initialize"}
+, {"addr": "0x410ea0", "name": "Ending::destructor"}
+, {"addr": "0x411060", "name": "Ending::operator new"}
+, {"addr": "0x411100", "name": "Ending::on_tick"}
+, {"addr": "0x411190", "name": "Ending::on_tick__stub"}
+, {"addr": "0x4111a0", "name": "Ending::on_draw"}
+, {"addr": "0x412050", "name": "EnemyLife::receive_damage"}
+, {"addr": "0x412100", "name": "EnemyDrop::drop_items"}
+, {"addr": "0x412140", "name": "EnemyDrop::spawn_ex_drops"}
+, {"addr": "0x4123a0", "name": "EnemyFull::operator delete"}
+, {"addr": "0x4123c0", "name": "Enemy::constructor"}
+, {"addr": "0x412990", "name": "EnemyManager::allocate_new_enemy"}
+, {"addr": "0x412c60", "name": "EnemyManager::initialize"}
+, {"addr": "0x412f10", "name": "EnemyManager::destructor"}
+, {"addr": "0x4130e0", "name": "EnemyManager::operator new"}
+, {"addr": "0x413190", "name": "EnemyManager::on_tick"}
+, {"addr": "0x413210", "name": "EnemyManager::on_tick__stub"}
+, {"addr": "0x413220", "name": "EnemyManager::on_draw__noop"}
+, {"addr": "0x413230", "name": "EnemyFull::constructor"}
+, {"addr": "0x413570", "name": "EnemyFull::destructor"}
+, {"addr": "0x413840", "name": "Enemy::on_tick"}
+, {"addr": "0x4154c0", "name": "EnemyFull::run_ecl_256_plus__stub"}
+, {"addr": "0x4154d0", "name": "Enemy::run_ecl_256_plus"}
+, {"addr": "0x419a20", "name": "EnemyFull::get_int_global__prolly"}
+, {"addr": "0x419ef0", "name": "EnemyFull::get_int_global_ptr__prolly"}
+, {"addr": "0x41a000", "name": "EnemyFull::get_float_global__prolly"}
+, {"addr": "0x41a560", "name": "EnemyFull::get_float_global_ptr__prolly"}
+, {"addr": "0x41a900", "name": "Enemy::ecl_get_int_arg__trampoline"}
+, {"addr": "0x41a950", "name": "Enemy::ecl_get_float_arg__trampoline"}
+, {"addr": "0x41a960", "name": "Enemy::ecl_get_float_arg_ptr__trampoline"}
+, {"addr": "0x41c020", "name": "InterpFloat2::step"}
+, {"addr": "0x41c550", "name": "Globals::set_chapter"}
+, {"addr": "0x41ca10", "name": "FpsCounter::initialize"}
+, {"addr": "0x41ca70", "name": "FpsCounter::destructor"}
+, {"addr": "0x41cad0", "name": "FpsCounter::operator new"}
+, {"addr": "0x41cc80", "name": "FpsCounter::on_draw"}
+, {"addr": "0x41cd60", "name": "FpsCounter::on_draw__stub"}
+, {"addr": "0x41cd90", "name": "GuiMsgVm::destructor"}
+, {"addr": "0x41ce60", "name": "Gui::update_lives"}
+, {"addr": "0x41cf40", "name": "Gui::update_bombs"}
+, {"addr": "0x41d150", "name": "Gui::constructor"}
+, {"addr": "0x41d250", "name": "Gui::initialize"}
+, {"addr": "0x41dc50", "name": "Gui::destructor"}
+, {"addr": "0x41df40", "name": "Gui::operator new"}
+, {"addr": "0x41e020", "name": "Gui::on_tick"}
+, {"addr": "0x41efb0", "name": "Gui::on_draw_3b"}
+, {"addr": "0x41f040", "name": "Gui::on_draw_2c"}
+, {"addr": "0x41f8d0", "name": "Gui::on_tick__stub"}
+, {"addr": "0x41f8e0", "name": "Gui::on_draw_3b__stub"}
+, {"addr": "0x41f8f0", "name": "Gui::on_draw_2c__stub"}
+, {"addr": "0x41f900", "name": "GuiMsgVm::constructor"}
+, {"addr": "0x41fcc0", "name": "GuiMsgVm::run"}
+, {"addr": "0x420f90", "name": "Gui::sub_420f90"}
+, {"addr": "0x421880", "name": "Globals::sub_421880"}
+, {"addr": "0x421cd0", "name": "GameThread::thread_start"}
+, {"addr": "0x422280", "name": "GameThread::thread_start__stub"}
+, {"addr": "0x422290", "name": "GameThread::destructor"}
+, {"addr": "0x422700", "name": "GameThread::operator new"}
+, {"addr": "0x4227c0", "name": "GameThread::on_tick"}
+, {"addr": "0x422bd0", "name": "GameThread::on_tick__stub"}
+, {"addr": "0x422be0", "name": "GameThread::on_draw"}
+, {"addr": "0x422ce0", "name": "Globals::collect_extend"}
+, {"addr": "0x422d30", "name": "Globals::collect_life_fragments"}
+, {"addr": "0x422d70", "name": "Globals::collect_big_power"}
+, {"addr": "0x422dd0", "name": "Globals::collect_bomb"}
+, {"addr": "0x422e10", "name": "Globals::collect_bomb_fragment"}
+, {"addr": "0x422f60", "name": "Globals::set_2_bombs"}
+, {"addr": "0x4230a0", "name": "Globals::increment_continues_used"}
+, {"addr": "0x423380", "name": "HintManager::constructor"}
+, {"addr": "0x423480", "name": "HintManager::initialize"}
+, {"addr": "0x423580", "name": "HintManager::destructor"}
+, {"addr": "0x423750", "name": "HintManager::operator new"}
+, {"addr": "0x423ed0", "name": "HintManager::on_tick"}
+, {"addr": "0x424190", "name": "HintManager::on_tick__stub"}
+, {"addr": "0x4241a0", "name": "HintManager::on_draw"}
+, {"addr": "0x4258d0", "name": "Item::constructor"}
+, {"addr": "0x425900", "name": "Item::destructor"}
+, {"addr": "0x425940", "name": "ItemManager::initialize"}
+, {"addr": "0x425a00", "name": "ItemManager::destructor"}
+, {"addr": "0x425b10", "name": "ItemManager::operator new"}
+, {"addr": "0x425c20", "name": "ItemManager::on_tick__body"}
+, {"addr": "0x427230", "name": "ItemManager::on_draw__body"}
+, {"addr": "0x427380", "name": "ItemManager::on_tick"}
+, {"addr": "0x4273c0", "name": "ItemManager::on_draw"}
+, {"addr": "0x4273f0", "name": "ItemManager::spawn_item"}
+, {"addr": "0x427ca0", "name": "Globals::sub_427ca0"}
+, {"addr": "0x427d60", "name": "LaserBaseClass::method_0_noop"}
+, {"addr": "0x427d70", "name": "LaserBaseClass::method_4_noop"}
+, {"addr": "0x427d80", "name": "LaserBaseClass::method_8_noop"}
+, {"addr": "0x427d90", "name": "LaserBaseClass::method_c_noop"}
+, {"addr": "0x427da0", "name": "LaserBaseClass::method_10_noop"}
+, {"addr": "0x427dc0", "name": "LaserBaseClass::method_1c_noop"}
+, {"addr": "0x427dd0", "name": "LaserBaseClass::method_18_noop"}
+, {"addr": "0x427de0", "name": "LaserBaseClass::method_20_noop"}
+, {"addr": "0x427df0", "name": "LaserBaseClass::method_14_noop"}
+, {"addr": "0x427e00", "name": "LaserBaseClass::method_24_noop"}
+, {"addr": "0x427e10", "name": "LaserBaseClass::method_28_noop"}
+, {"addr": "0x427e20", "name": "LaserBaseClass::method_2c_noop"}
+, {"addr": "0x427e30", "name": "LaserBaseClass::method_30_noop"}
+, {"addr": "0x427e40", "name": "LaserBaseClass::method_34_noop"}
+, {"addr": "0x427e50", "name": "LaserBaseClass::method_38_noop"}
+, {"addr": "0x427e60", "name": "LaserBaseClass::method_3c_noop"}
+, {"addr": "0x427e70", "name": "LaserBaseClass::method_40_noop"}
+, {"addr": "0x427e80", "name": "LaserBaseClass::method_44_noop"}
+, {"addr": "0x427e90", "name": "LaserBaseClass::method_48_noop"}
+, {"addr": "0x427ea0", "name": "LaserBaseClass::method_4c_noop"}
+, {"addr": "0x427eb0", "name": "LaserBaseClass::method_50_noop"}
+, {"addr": "0x427ec0", "name": "LaserBaseClass::constructor"}
+, {"addr": "0x427fd0", "name": "LaserManager::initialize"}
+, {"addr": "0x4280d0", "name": "LaserManager::destructor"}
+, {"addr": "0x4281c0", "name": "LaserManager::operator new"}
+, {"addr": "0x4283d0", "name": "LaserManager::on_tick"}
+, {"addr": "0x428430", "name": "LaserManager::on_draw"}
+, {"addr": "0x428450", "name": "LaserManager::allocate_new_laser"}
+, {"addr": "0x428520", "name": "LaserLine::constructor"}
+, {"addr": "0x428560", "name": "LaserInfinite::constructor"}
+, {"addr": "0x4285b0", "name": "LaserCurve::constructor"}
+, {"addr": "0x4285f0", "name": "sub_4285f0_cancels_lasers"}
+, {"addr": "0x4286f0", "name": "LaserManager::cancel_in_radius"}
+, {"addr": "0x4287c0", "name": "LaserLine::method_4"}
+, {"addr": "0x428b00", "name": "LaserLine::method_0"}
+, {"addr": "0x429150", "name": "LaserLine::method_40"}
+, {"addr": "0x429400", "name": "LaserLine::method_34"}
+, {"addr": "0x429520", "name": "LaserLine::method_2c"}
+, {"addr": "0x429610", "name": "LaserLine::method_8"}
+, {"addr": "0x429af0", "name": "LaserLine::method_c"}
+, {"addr": "0x429bb0", "name": "LaserLine::method_10"}
+, {"addr": "0x429bc0", "name": "LaserLine::method_18"}
+, {"addr": "0x42a1f0", "name": "LaserLine::method_1c"}
+, {"addr": "0x42a800", "name": "LaserLine::method_14"}
+, {"addr": "0x42aa60", "name": "LaserLine::method_24"}
+, {"addr": "0x42ab80", "name": "LaserInfinite::method_4"}
+, {"addr": "0x42ada0", "name": "LaserInfinite::method_8"}
+, {"addr": "0x42b100", "name": "LaserInfinite::method_c"}
+, {"addr": "0x42b1c0", "name": "LaserInfinite::method_10"}
+, {"addr": "0x42b1d0", "name": "LaserInfinite::method_18"}
+, {"addr": "0x42b750", "name": "LaserInfinite::method_1c"}
+, {"addr": "0x42bd90", "name": "LaserInfinite::method_14"}
+, {"addr": "0x42c080", "name": "LaserInfinite::method_24"}
+, {"addr": "0x42c1a0", "name": "LaserInfinite::method_0"}
+, {"addr": "0x42c3f0", "name": "LaserCurve::method_4"}
+, {"addr": "0x42c720", "name": "LaserCurve::method_10"}
+, {"addr": "0x42c770", "name": "LaserCurve::method_8"}
+, {"addr": "0x42cca0", "name": "LaserCurve::method_c"}
+, {"addr": "0x42d030", "name": "LaserCurve::method_0"}
+, {"addr": "0x42d6e0", "name": "LaserCurve::method_34"}
+, {"addr": "0x42d800", "name": "LaserCurve::method_30"}
+, {"addr": "0x42d890", "name": "LaserCurve::method_2c"}
+, {"addr": "0x42d980", "name": "LaserCurve::method_50"}
+, {"addr": "0x42d9c0", "name": "LaserCurve::method_18"}
+, {"addr": "0x42df00", "name": "LaserCurve::method_1c"}
+, {"addr": "0x42e3e0", "name": "LaserCurve::method_14"}
+, {"addr": "0x42e5b0", "name": "LaserCurve::method_24"}
+, {"addr": "0x42e9b0", "name": "LoadingThread::thread_start"}
+, {"addr": "0x42eb10", "name": "LoadingThread::initialize"}
+, {"addr": "0x42ec00", "name": "LoadingThread::destructor"}
+, {"addr": "0x42ede0", "name": "LoadingThread::operator new"}
+, {"addr": "0x42eea0", "name": "LoadingThread::on_tick"}
+, {"addr": "0x42ef00", "name": "LoadingThread::on_draw"}
+, {"addr": "0x42ef70", "name": "LoadingThread::on_tick__stub"}
+, {"addr": "0x42ef80", "name": "LoadingThread::on_draw__stub"}
+, {"addr": "0x42f000", "name": "Supervisor::on_tick"}
+, {"addr": "0x42f0b0", "name": "Supervisor::on_draw_01"}
+, {"addr": "0x42f200", "name": "Supervisor::on_draw_0c"}
+, {"addr": "0x42f290", "name": "Supervisor::on_draw_25"}
+, {"addr": "0x42f320", "name": "Supervisor::on_draw_30"}
+, {"addr": "0x42f380", "name": "Supervisor::on_draw_47"}
+, {"addr": "0x42f3b0", "name": "Supervisor::on_draw_0e"}
+, {"addr": "0x42f410", "name": "Supervisor::on_draw_27"}
+, {"addr": "0x42f470", "name": "Supervisor::on_draw_31"}
+, {"addr": "0x42f560", "name": "Supervisor::on_registration"}
+, {"addr": "0x42f8c0", "name": "Supervisor::initialize"}
+, {"addr": "0x42feb0", "name": "Supervisor::load_game_config"}
+, {"addr": "0x430270", "name": "sub_430270_sound"}
+, {"addr": "0x4302c0", "name": "Supervisor::enable_d3d_fog"}
+, {"addr": "0x430300", "name": "Supervisor::disable_d3d_fog"}
+, {"addr": "0x430500", "name": "create_game_thread"}
+, {"addr": "0x430910", "name": "Supervisor::swap_transform_matrices"}
+, {"addr": "0x4311e0", "name": "Supervisor::switch_gamemodes"}
+, {"addr": "0x431630", "name": "Supervisor::setup_special_anms"}
+, {"addr": "0x431700", "name": "Supervisor::release_surfaces"}
+, {"addr": "0x4317d0", "name": "sub_4317d0_unknown_trig__maybe_tan"}
+, {"addr": "0x431d00", "name": "PauseMenu::constructor"}
+, {"addr": "0x431d70", "name": "PauseMenu::initialize"}
+, {"addr": "0x431ed0", "name": "PauseMenu::destructor"}
+, {"addr": "0x431fb0", "name": "PauseMenu::operator new"}
+, {"addr": "0x432040", "name": "PauseMenu::on_tick"}
+, {"addr": "0x432260", "name": "PauseMenu::on_draw"}
+, {"addr": "0x432700", "name": "PauseMenu::on_tick__stub"}
+, {"addr": "0x432710", "name": "PauseMenu::on_draw__stub"}
+, {"addr": "0x432850", "name": "sub_432850__show_replay_end_menu"}
+, {"addr": "0x432960", "name": "PauseMenu::do_unpause"}
+, {"addr": "0x4329a0", "name": "PauseMenu::do_pause__prolly"}
+, {"addr": "0x433710", "name": "sub_433710__begins_game_over"}
+, {"addr": "0x4339c0", "name": "PauseMenu::sub_4339c0"}
+, {"addr": "0x433a30", "name": "PauseMenu::sub_433a30"}
+, {"addr": "0x433bb0", "name": "PauseMenu::do_game_over_menu"}
+, {"addr": "0x434900", "name": "PauseMenu::do_practice_end__prolly"}
+, {"addr": "0x435670", "name": "sub_435670_mystery"}
+, {"addr": "0x4359a0", "name": "Player::constructor"}
+, {"addr": "0x435ae0", "name": "Player::initialize"}
+, {"addr": "0x436270", "name": "Player::destructor"}
+, {"addr": "0x436410", "name": "Player::operator new"}
+, {"addr": "0x436ba0", "name": "Player::on_tick"}
+, {"addr": "0x437600", "name": "Player::on_draw"}
+, {"addr": "0x437660", "name": "Player::on_tick__stub"}
+, {"addr": "0x437670", "name": "Player::on_draw__stub"}
+, {"addr": "0x437680", "name": "sub_437680_load_sht_file"}
+, {"addr": "0x4381e0", "name": "Player::sub_4381e0"}
+, {"addr": "0x4385b0", "name": "Player::repopulate_options"}
+, {"addr": "0x4390f0", "name": "Player::sub_4390f0_creates_damage_source"}
+, {"addr": "0x439630", "name": "Player::shoot_one_bullet"}
+, {"addr": "0x4399d0", "name": "Player::do_shooting"}
+, {"addr": "0x439a40", "name": "Player::tick_shooting_state"}
+, {"addr": "0x439b10", "name": "Player::sub_439b10__prolly__tick_bullets"}
+, {"addr": "0x439ed0", "name": "Enemy::take_damage_from_player"}
+, {"addr": "0x43a470", "name": "sub_43a470__reimu_b"}
+, {"addr": "0x43a480", "name": "sub_43a480__reimu_a"}
+, {"addr": "0x43a680", "name": "sub_43a680__marisa_a"}
+, {"addr": "0x43a6b0", "name": "sub_43a6b0__marisa_a"}
+, {"addr": "0x43a800", "name": "sub_43a800__sanae_a"}
+, {"addr": "0x43a810", "name": "sub_43a810__sanae_a"}
+, {"addr": "0x43a950", "name": "sub_43a950__sanae_b_splash_damage"}
+, {"addr": "0x43aa50", "name": "sub_43aa50__sanae_b_secondary_bullets"}
+, {"addr": "0x43ae80", "name": "ReplayManager::initialize"}
+, {"addr": "0x43b450", "name": "ReplayManager::destructor"}
+, {"addr": "0x43b600", "name": "ReplayManager::operator new"}
+, {"addr": "0x43b7e0", "name": "ReplayManager::on_tick_0b__record_replay"}
+, {"addr": "0x43b950", "name": "ReplayManager::on_tick_0b__playback_replay"}
+, {"addr": "0x43c510", "name": "ReplayManager::on_tick_0b__record_replay__stub"}
+, {"addr": "0x43c520", "name": "ReplayManager::on_tick_0b__playback_replay__stub"}
+, {"addr": "0x43c530", "name": "ReplayManager::on_tick_1c__speedup_replay"}
+, {"addr": "0x43c570", "name": "ReplayManager::on_draw"}
+, {"addr": "0x43cd40", "name": "ReplayStageData::constructor"}
+, {"addr": "0x43cd80", "name": "ReplayStageData::destructor"}
+, {"addr": "0x43cf90", "name": "Scorefile::constructor"}
+, {"addr": "0x43d050", "name": "Scorefile::operator new"}
+, {"addr": "0x43d570", "name": "DebugSoundTest::constructor"}
+, {"addr": "0x43d600", "name": "DebugSoundTest::initialize"}
+, {"addr": "0x43d6d0", "name": "DebugSoundTest::destructor"}
+, {"addr": "0x43d7e0", "name": "DebugSoundTest::operator new"}
+, {"addr": "0x43d870", "name": "DebugSoundTest::on_tick"}
+, {"addr": "0x43d9f0", "name": "DebugSoundTest::on_draw"}
+, {"addr": "0x43dac0", "name": "DebugSoundTest::on_tick__stub"}
+, {"addr": "0x43dad0", "name": "DebugSoundTest::on_draw__stub"}
+, {"addr": "0x43db40", "name": "PopupManager::initialize"}
+, {"addr": "0x43dc30", "name": "PopupManager::destructor"}
+, {"addr": "0x43dd50", "name": "PopupManager::operator new"}
+, {"addr": "0x43de10", "name": "PopupManager::on_tick"}
+, {"addr": "0x43dec0", "name": "PopupManager::on_draw"}
+, {"addr": "0x43e230", "name": "PopupManager::on_tick__stub"}
+, {"addr": "0x43e240", "name": "PopupManager::on_draw__stub"}
+, {"addr": "0x43e3e0", "name": "DebugSptTest::constructor"}
+, {"addr": "0x43e470", "name": "DebugSptTest::initialize"}
+, {"addr": "0x43e520", "name": "DebugSptTest::destructor"}
+, {"addr": "0x43e840", "name": "DebugSptTest::operator new"}
+, {"addr": "0x43e8d0", "name": "DebugSptTest::on_tick"}
+, {"addr": "0x43ec80", "name": "DebugSptTest::on_draw"}
+, {"addr": "0x43eea0", "name": "DebugSptTest::on_tick__stub"}
+, {"addr": "0x43eeb0", "name": "DebugSptTest::on_draw__stub"}
+, {"addr": "0x43f250", "name": "MainMenu::constructor"}
+, {"addr": "0x43f320", "name": "MainMenu::thread_start"}
+, {"addr": "0x43f3d0", "name": "MainMenu::initialize"}
+, {"addr": "0x43f4f0", "name": "MainMenu::destructor"}
+, {"addr": "0x43f6b0", "name": "MainMenu::operator new"}
+, {"addr": "0x43f760", "name": "MainMenu::on_tick"}
+, {"addr": "0x43fc00", "name": "MainMenu::on_draw"}
+, {"addr": "0x43fc90", "name": "MainMenu::on_tick__stub"}
+, {"addr": "0x43fca0", "name": "MainMenu::on_draw__stub"}
+, {"addr": "0x4480c0", "name": "MainMenu::sub_4480c0"}
+, {"addr": "0x449fa0", "name": "Ufo::initialize"}
+, {"addr": "0x44a120", "name": "Ufo::destructor"}
+, {"addr": "0x44a230", "name": "Ufo::operator new"}
+, {"addr": "0x44a2d0", "name": "Ufo::on_tick"}
+, {"addr": "0x44a4f0", "name": "Ufo::on_draw_3c"}
+, {"addr": "0x44a5d0", "name": "Ufo::on_draw_16"}
+, {"addr": "0x44a860", "name": "Ufo::on_tick__stub"}
+, {"addr": "0x44a870", "name": "Ufo::on_draw_3c__stub"}
+, {"addr": "0x44a880", "name": "Ufo::on_draw_16__stub"}
+, {"addr": "0x44f200", "name": "UpdateFuncRegistry::destructor"}
+, {"addr": "0x44f370", "name": "AnmManager::release_textures"}
+, {"addr": "0x44f400", "name": "AnmManager::create_d3d_textures_for_loaded_anms"}
+, {"addr": "0x44f560", "name": "WinMain"}
+, {"addr": "0x450080", "name": "Window::do_frame__normal_version"}
+, {"addr": "0x4501e0", "name": "Window::update_window__normal_version"}
+, {"addr": "0x4503f0", "name": "Window::do_frame__frameskip_version"}
+, {"addr": "0x450600", "name": "Window::do_frame__idfk_version"}
+, {"addr": "0x450cc0", "name": "sub_450cc0_lots_of_d3d_init"}
+, {"addr": "0x451200", "name": "Supervisor::reset_render_state"}
+, {"addr": "0x452a60", "name": "ScreenEffect::initialize"}
+, {"addr": "0x452f00", "name": "ScreenEffect::destructor"}
+, {"addr": "0x453d90", "name": "SoundManager::play_sound_centered"}
+, {"addr": "0x453e20", "name": "SoundManager::play_sound_at_position"}
+, {"addr": "0x453fa0", "name": "SoundManager::update_sound_thread"}
+, {"addr": "0x454960", "name": "SoundManager::modify_bgm"}
+, {"addr": "0x454b80", "name": "AnmVm::setup_texture_quad_and_matrices"}
+, {"addr": "0x454d10", "name": "AnmLoaded::load_script_into_vm"}
+, {"addr": "0x454fa0", "name": "AnmLoaded::sub_454fa0_loads_a_script"}
+, {"addr": "0x4551b0", "name": "AnmVm::get_float_var"}
+, {"addr": "0x4553f0", "name": "AnmVm::get_int_var"}
+, {"addr": "0x4554d0", "name": "AnmVm::get_float_var_ptr"}
+, {"addr": "0x455580", "name": "AnmVm::get_int_var_ptr"}
+, {"addr": "0x455630", "name": "AnmVm::run"}
+, {"addr": "0x4589e0", "name": "InterpInt3::step"}
+, {"addr": "0x458cf0", "name": "InterpInt::step"}
+, {"addr": "0x458e40", "name": "InterpFloat2::step__copy"}
+, {"addr": "0x459100", "name": "InterpFloat::step"}
+, {"addr": "0x4594b0", "name": "cartesian_from_polar_4594b0"}
+, {"addr": "0x459530", "name": "AnmVm::set_uv_scale_time"}
+, {"addr": "0x4595c0", "name": "AnmVm::set_alpha_2_time"}
+, {"addr": "0x459640", "name": "AnmVm::set_rgb_2_time"}
+, {"addr": "0x459830", "name": "AnmVm::set_color_1_time"}
+, {"addr": "0x4599b0", "name": "AnmVm::set_alpha_time"}
+, {"addr": "0x459a40", "name": "color_component_multiply"}
+, {"addr": "0x459cf0", "name": "AnmManager::setup_render_state_for_vm"}
+, {"addr": "0x459e50", "name": "AnmManager::draw_vm__sprite_2d"}
+, {"addr": "0x45a380", "name": "AnmManager::reset_vertex_buffers"}
+, {"addr": "0x45a3c0", "name": "AnmManager::flush_sprites"}
+, {"addr": "0x45a4a0", "name": "AnmManager::write_sprite"}
+, {"addr": "0x45a570", "name": "AnmVm::write_sprite_corners__without_rot"}
+, {"addr": "0x45a9f0", "name": "AnmManager::draw_vm__mode_0"}
+, {"addr": "0x45ae50", "name": "AnmManager::draw_vm__mode_2"}
+, {"addr": "0x45af10", "name": "AnmVm::write_sprite_corners__with_z_rot"}
+, {"addr": "0x45b1b0", "name": "AnmManager::draw_vm__mode_1"}
+, {"addr": "0x45b1e0", "name": "AnmManager::draw_vm__mode_3"}
+, {"addr": "0x45b5e0", "name": "AnmManager::draw_vm__mode_4"}
+, {"addr": "0x45b610", "name": "AnmManager::draw_vm__mode_6"}
+, {"addr": "0x45ba90", "name": "AnmManager::draw_vm__mode_5"}
+, {"addr": "0x45bac0", "name": "AnmManager::draw_vm__mode_7"}
+, {"addr": "0x45bce0", "name": "AnmManager::draw_vm__mode_8"}
+, {"addr": "0x45c3a0", "name": "AnmManager::draw_vm__mode_9__texCircle"}
+, {"addr": "0x45c800", "name": "AnmManager::draw_vm__mode_11"}
+, {"addr": "0x45c900", "name": "AnmManager::draw_vm"}
+, {"addr": "0x45dfa0", "name": "AnmManager::initialize"}
+, {"addr": "0x45ee00", "name": "sub_45ee00__modifies_textures_after_loading_them__but_why"}
+, {"addr": "0x45f880", "name": "AnmLoadedD3D::create_texture_from_image"}
+, {"addr": "0x45fba0", "name": "AnmLoadedD3D::create_texture_for_@"}
+, {"addr": "0x45fbf0", "name": "AnmLoadedD3D::create_texture_for_@R"}
+, {"addr": "0x45fe60", "name": "AnmManager::preload_anm"}
+, {"addr": "0x45ffc0", "name": "AnmLoaded::setup_textures"}
+, {"addr": "0x4600a0", "name": "AnmLoaded::create_texture_for_entry"}
+, {"addr": "0x4603d0", "name": "AnmManager::setup_textures_and_vm_templates"}
+, {"addr": "0x4604e0", "name": "AnmLoaded::destructor"}
+, {"addr": "0x460c30", "name": "AnmManager::on_tick_1b__stub"}
+, {"addr": "0x460c40", "name": "AnmManager::on_tick_08__stub"}
+, {"addr": "0x460fe0", "name": "AnmManager::on_tick_1b"}
+, {"addr": "0x4610d0", "name": "AnmManager::on_tick_08"}
+, {"addr": "0x461250", "name": "AnmManager::insert_in_world_list_back"}
+, {"addr": "0x4612d0", "name": "AnmManager::insert_in_world_list_front"}
+, {"addr": "0x461350", "name": "AnmManager::insert_in_ui_list_back"}
+, {"addr": "0x4613d0", "name": "AnmManager::insert_in_ui_list_front"}
+, {"addr": "0x461450", "name": "AnmManager::sub_461450__remove_presumably"}
+, {"addr": "0x461720", "name": "AnmLoaded::create_managed_child"}
+, {"addr": "0x461840", "name": "AnmLoaded::create_managed_root"}
+, {"addr": "0x461920", "name": "AnmManager::get_vm_by_id__prolly"}
+, {"addr": "0x461970", "name": "anm_interrupt_by_id"}
+, {"addr": "0x461a70", "name": "anm_461a70"}
+, {"addr": "0x461be0", "name": "AnmManager::stop_all_vms_from_anm_file__prolly"}
+, {"addr": "0x461c50", "name": "AnmManager::find_existing_or_clear_id"}
+, {"addr": "0x461dd0", "name": "set_anm_vm_pos_3_by_id"}
+, {"addr": "0x461f40", "name": "Enemy::change_anm_main"}
+, {"addr": "0x4621c0", "name": "AnmManager::allocate_vm"}
+, {"addr": "0x462380", "name": "UpdateFuncRegistry::register__on_tick"}
+, {"addr": "0x462420", "name": "UpdateFuncRegistry::register__on_draw"}
+, {"addr": "0x4624c0", "name": "UpdateFuncRegistry::run_all_on_tick"}
+, {"addr": "0x462620", "name": "UpdateFuncRegistry::run_all_on_draw"}
+, {"addr": "0x4627e0", "name": "UpdateFunc::operator new"}
+, {"addr": "0x462890", "name": "UpdateFuncRegistry::unregister"}
+, {"addr": "0x462930", "name": "UpdateFuncRegistry::register_new__on_tick__with_flags_0b11"}
+, {"addr": "0x462970", "name": "UpdateFuncRegistry::register_new__on_tick__with_flags_0b01"}
+, {"addr": "0x464220", "name": "sub_464220_logs_debug_messages"}
+, {"addr": "0x464300", "name": "sub_464300_logs_debug_messages"}
+, {"addr": "0x464440", "name": "Rng::rand_int"}
+, {"addr": "0x464640", "name": "math_reduce_angle_464640"}
+, {"addr": "0x4646e0", "name": "math_reduce_angle_4646e0"}
+, {"addr": "0x464a20", "name": "Timer::decrement"}
+, {"addr": "0x464a80", "name": "Timer::increment"}
+, {"addr": "0x464c40", "name": "sub_464c40__calls_WaitForSingleObject"}
+, {"addr": "0x468e20", "name": "ecl_get_int_arg"}
+, {"addr": "0x468ec0", "name": "EclRunContext::get_float_arg"}
+, {"addr": "0x46a970", "name": "Bomb::on_tick_reimu_a"}
+, {"addr": "0x46c932", "name": "__security_check_cookie"}
+, {"addr": "0x46c941", "name": "free_"}
+, {"addr": "0x46c9ea", "name": "malloc"}
+, {"addr": "0x46ca4f", "name": "free"}
+, {"addr": "0x46ce49", "name": "initialize_vector"}
+, {"addr": "0x46cf1e", "name": "run_on_vector"}
+, {"addr": "0x46d04a", "name": "malloc_"}
+, {"addr": "0x46e54b", "name": "sub_46e54b__creates_thread"}
+, {"addr": "0x46e81d", "name": "_start"}
+, {"addr": "0x477420", "name": "memset"}
+, {"addr": "0x4931e0", "name": "float_to_int_4931e0"}
+, {"addr": "0x493440", "name": "sub_493440_unknown_trig__maybe_acos"}
+, {"addr": "0x493590", "name": "sub_493590_unknown_trig__maybe_atan"}
 ]

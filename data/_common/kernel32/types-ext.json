@@ -1,0 +1,1090 @@
+
+{ "ALG_ID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "ATOM": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "BLOBHEADER": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "PUBLICKEYSTRUC"}}
+
+, "BY_HANDLE_FILE_INFORMATION": 
+  { "is": "struct"
+  , "size": "0x34"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwFileAttributes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "ftCreationTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "ftLastAccessTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "ftLastWriteTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "dwVolumeSerialNumber", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "nFileSizeHigh", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "nFileSizeLow", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "nNumberOfLinks", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x2c", "name": "nFileIndexHigh", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "__unknown", "type": null}
+    , {"offset": "0x30", "name": "nFileIndexLow", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x30", "name": "__unknown", "type": null}
+    , {"offset": "0x34", "name": "__end", "type": null}
+    ]
+  }
+
+, "CERT_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CERT_NAME_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CERT_RDN_VALUE_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CHAR_INFO": 
+  { "is": "struct"
+  , "size": "0x6"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Char", "type": {"is": "union", "size": "0x4", "align": 4, "members": [{"name": "UnicodeChar", "type": {"is": "named", "name": "WCHAR"}}, {"name": "AsciiChar", "type": {"is": "named", "name": "CHAR"}}]}}
+    , {"offset": "0x4", "name": "Attributes", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x6", "name": "__end", "type": null}
+    ]
+  }
+
+, "COMPUTER_NAME_FORMAT": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "ComputerNameNetBIOS", "value": 0}
+    , {"name": "ComputerNameDnsHostname", "value": 1}
+    , {"name": "ComputerNameDnsDomain", "value": 2}
+    , {"name": "ComputerNameDnsFullyQualified", "value": 3}
+    , {"name": "ComputerNamePhysicalNetBIOS", "value": 4}
+    , {"name": "ComputerNamePhysicalDnsHostname", "value": 5}
+    , {"name": "ComputerNamePhysicalDnsDomain", "value": 6}
+    , {"name": "ComputerNamePhysicalDnsFullyQualified", "value": 7}
+    , {"name": "ComputerNameMax", "value": 8}
+    ]
+  }
+
+, "CONDITION_VARIABLE": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Ptr", "type": {"is": "named", "name": "PVOID"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "CONSOLE_CURSOR_INFO": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "bVisible", "type": {"is": "named", "name": "BOOL"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "CONSOLE_HISTORY_INFO": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cbSize", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "HistoryBufferSize", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "NumberOfHistoryBuffers", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "CONSOLE_SCREEN_BUFFER_INFO": 
+  { "is": "struct"
+  , "size": "0x16"
+  , "align": 2
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "named", "name": "COORD"}}
+    , {"offset": "0x4", "name": "dwCursorPosition", "type": {"is": "named", "name": "COORD"}}
+    , {"offset": "0x8", "name": "wAttributes", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xa", "name": "srWindow", "type": {"is": "named", "name": "SMALL_RECT"}}
+    , {"offset": "0x12", "name": "dwMaximumWindowSize", "type": {"is": "named", "name": "COORD"}}
+    , {"offset": "0x16", "name": "__end", "type": null}
+    ]
+  }
+
+, "CONSOLE_SELECTION_INFO": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "dwSelectionAnchor", "type": {"is": "named", "name": "COORD"}}
+    , {"offset": "0x8", "name": "srSelection", "type": {"is": "named", "name": "SMALL_RECT"}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "COORD": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 2
+  , "members": 
+    [ {"offset": "0x0", "name": "X", "type": {"is": "named", "name": "SHORT"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x2", "name": "Y", "type": {"is": "named", "name": "SHORT"}}
+    , {"offset": "0x2", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "CREATEFILE2_EXTENDED_PARAMETERS": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "dwFileAttributes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "dwFileFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "dwSecurityQosFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "lpSecurityAttributes", "type": {"is": "named", "name": "LPSECURITY_ATTRIBUTES"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "hTemplateFile", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "CRITICAL_SECTION": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "DebugInfo", "type": {"is": "named", "name": "PRTL_CRITICAL_SECTION_DEBUG"}}
+    , {"offset": "0x4", "name": "LockCount", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "RecursionCount", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "OwningThread", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "LockSemaphore", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "SpinCount", "type": {"is": "named", "name": "ULONG_PTR"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "CRL_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CRYPTOAPI_BLOB": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cbData", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "pbData", "type": {"is": "ptr", "inner": {"is": "named", "name": "BYTE"}}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "CRYPT_ATTR_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CRYPT_DATA_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CRYPT_DECODE_PARA": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cbSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "pfnAlloc", "type": {"is": "named", "name": "PFN_CRYPT_ALLOC"}}
+    , {"offset": "0x8", "name": "pfnFree", "type": {"is": "named", "name": "PFN_CRYPT_FREE"}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "CRYPT_DECRYPT_MESSAGE_PARA": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cbSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "dwMsgAndCertEncodingType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "cCertStore", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "rghCertStore", "type": {"is": "ptr", "inner": {"is": "named", "name": "HCERTSTORE"}}}
+    , {"offset": "0x10", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "CRYPT_DER_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CRYPT_DIGEST_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CRYPT_ENCODE_PARA": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cbSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "pfnAlloc", "type": {"is": "named", "name": "PFN_CRYPT_ALLOC"}}
+    , {"offset": "0x8", "name": "pfnFree", "type": {"is": "named", "name": "PFN_CRYPT_FREE"}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "CRYPT_HASH_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CRYPT_INTEGER_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CRYPT_OBJID_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "CRYPT_UINT_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "DATA_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "DLL_DIRECTORY_COOKIE": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "FILE_INFO_BY_HANDLE_CLASS": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "FileBasicInfo", "value": 0}
+    , {"name": "FileStandardInfo", "value": 1}
+    , {"name": "FileNameInfo", "value": 2}
+    , {"name": "FileRenameInfo", "value": 3}
+    , {"name": "FileDispositionInfo", "value": 4}
+    , {"name": "FileAllocationInfo", "value": 5}
+    , {"name": "FileEndOfFileInfo", "value": 6}
+    , {"name": "FileStreamInfo", "value": 7}
+    , {"name": "FileCompressionInfo", "value": 8}
+    , {"name": "FileAttributeTagInfo", "value": 9}
+    , {"name": "FileIdBothDirectoryInfo", "value": 10}
+    , {"name": "FileIdBothDirectoryRestartInfo", "value": 11}
+    , {"name": "FileIoPriorityHintInfo", "value": 12}
+    , {"name": "FileRemoteProtocolInfo", "value": 13}
+    , {"name": "FileFullDirectoryInfo", "value": 14}
+    , {"name": "FileFullDirectoryRestartInfo", "value": 15}
+    , {"name": "FileStorageInfo", "value": 16}
+    , {"name": "FileAlignmentInfo", "value": 17}
+    , {"name": "FileIdInfo", "value": 18}
+    , {"name": "FileIdExtdDirectoryInfo", "value": 19}
+    , {"name": "FileIdExtdDirectoryRestartInfo", "value": 20}
+    , {"name": "FileDispositionInfoEx", "value": 21}
+    , {"name": "FileRenameInfoEx", "value": 22}
+    , {"name": "MaximumFileInfoByHandleClass", "value": 23}
+    , {"name": "FileCaseSensitiveInfo", "value": 24}
+    , {"name": "FileNormalizedNameInfo", "value": 25}
+    ]
+  }
+
+, "FINDEX_INFO_LEVELS": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "FindExInfoStandard", "value": 0}
+    , {"name": "FindExInfoBasic", "value": 1}
+    , {"name": "FindExInfoMaxInfoLevel", "value": 2}
+    ]
+  }
+
+, "FINDEX_SEARCH_OPS": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "FindExSearchNameMatch", "value": 0}
+    , {"name": "FindExSearchLimitToDirectories", "value": 1}
+    , {"name": "FindExSearchLimitToDevices", "value": 2}
+    , {"name": "FindExSearchMaxSearchOp", "value": 3}
+    ]
+  }
+
+, "GET_FILEEX_INFO_LEVELS": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "GetFileExInfoStandard", "value": 0}
+    , {"name": "GetFileExMaxInfoLevel", "value": 1}
+    ]
+  }
+
+, "HCERTSTORE": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "HCRYPTASYNC": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "HCRYPTHASH": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "HCRYPTKEY": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "HCRYPTPROV": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "HEAP_INFORMATION_CLASS": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "HeapCompatibilityInformation", "value": 0}
+    , {"name": "HeapEnableTerminationOnCorruption", "value": 1}
+    , {"name": "HeapOptimizeResources", "value": 2}
+    ]
+  }
+
+, "HEAP_SUMMARY": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cb", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "cbAllocated", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "cbCommitted", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "cbReserved", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "cbMaxReserve", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "HLOCAL": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "HPCON": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "HRSRC": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "LPBY_HANDLE_FILE_INFORMATION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "BY_HANDLE_FILE_INFORMATION"}}}
+
+, "LPCREATEFILE2_EXTENDED_PARAMETERS": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CREATEFILE2_EXTENDED_PARAMETERS"}}}
+
+, "LPCRITICAL_SECTION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRITICAL_SECTION"}}}
+
+, "LPFIBER_START_ROUTINE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "void"}, "params": [{"type": {"is": "named", "name": "LPVOID"}, "name": "lpParameter"}]}}
+
+, "LPHEAP_SUMMARY": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HEAP_SUMMARY"}}}
+
+, "LPINIT_ONCE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "RTL_RUN_ONCE"}}}
+
+, "LPMEMORYSTATUSEX": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "MEMORYSTATUSEX"}}}
+
+, "LPMODULEINFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_MODULEINFO"}}}
+
+, "LPOVERLAPPED_ENTRY": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "OVERLAPPED_ENTRY"}}}
+
+, "LPPROCESS_HEAP_ENTRY": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "PROCESS_HEAP_ENTRY"}}}
+
+, "LPPROCESS_INFORMATION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_PROCESS_INFORMATION"}}}
+
+, "LPPROGRESS_ROUTINE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "named", "name": "DWORD"}, "params": [{"type": {"is": "named", "name": "LARGE_INTEGER"}, "name": "TotalFileSize"}, {"type": {"is": "named", "name": "LARGE_INTEGER"}, "name": "TotalBytesTransferred"}, {"type": {"is": "named", "name": "LARGE_INTEGER"}, "name": "StreamSize"}, {"type": {"is": "named", "name": "LARGE_INTEGER"}, "name": "StreamBytesTransferred"}, {"type": {"is": "named", "name": "DWORD"}, "name": "dwStreamNumber"}, {"type": {"is": "named", "name": "DWORD"}, "name": "dwCallbackReason"}, {"type": {"is": "named", "name": "HANDLE"}, "name": "hSourceFile"}, {"type": {"is": "named", "name": "HANDLE"}, "name": "hDestinationFile"}, {"type": {"is": "named", "name": "LPVOID"}, "name": "lpData"}]}}
+
+, "LPSTARTUPINFOA": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_STARTUPINFOA"}}}
+
+, "LPSTARTUPINFOW": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_STARTUPINFOW"}}}
+
+, "LPSYNCHRONIZATION_BARRIER": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "RTL_BARRIER"}}}
+
+, "LPSYSTEMTIME": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "SYSTEMTIME"}}}
+
+, "LPSYSTEM_INFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "SYSTEM_INFO"}}}
+
+, "LPTHREAD_START_ROUTINE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "named", "name": "DWORD"}, "params": [{"type": {"is": "named", "name": "LPVOID"}, "name": "lpThreadParameter"}]}}
+
+, "LPWIN32_FIND_DATAA": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WIN32_FIND_DATAA"}}}
+
+, "LPWIN32_FIND_DATAW": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WIN32_FIND_DATAW"}}}
+
+, "LSTATUS": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "MEMORYSTATUSEX": 
+  { "is": "struct"
+  , "size": "0x40"
+  , "align": 8
+  , "members": 
+    [ {"offset": "0x0", "name": "dwLength", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "dwMemoryLoad", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__padding", "type": null}
+    , {"offset": "0x8", "name": "ullTotalPhys", "type": {"is": "named", "name": "DWORDLONG"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "ullAvailPhys", "type": {"is": "named", "name": "DWORDLONG"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "ullTotalPageFile", "type": {"is": "named", "name": "DWORDLONG"}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "ullAvailPageFile", "type": {"is": "named", "name": "DWORDLONG"}}
+    , {"offset": "0x20", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "ullTotalVirtual", "type": {"is": "named", "name": "DWORDLONG"}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x30", "name": "ullAvailVirtual", "type": {"is": "named", "name": "DWORDLONG"}}
+    , {"offset": "0x30", "name": "__unknown", "type": null}
+    , {"offset": "0x38", "name": "ullAvailExtendedVirtual", "type": {"is": "named", "name": "DWORDLONG"}}
+    , {"offset": "0x38", "name": "__unknown", "type": null}
+    , {"offset": "0x40", "name": "__end", "type": null}
+    ]
+  }
+
+, "MEMORY_BASIC_INFORMATION": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "BaseAddress", "type": {"is": "named", "name": "PVOID"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "AllocationBase", "type": {"is": "named", "name": "PVOID"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "AllocationProtect", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "RegionSize", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "State", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "Protect", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "Type", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "MEM_EXTENDED_PARAMETER": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 8
+  , "members": 
+    [ {"offset": "0x0", "name": "s", "type": {"is": "struct", "size": "0x8", "align": 8, "members": [{"offset": "0x0", "name": "Type", "type": {"is": "named", "name": "DWORD64"}}, {"offset": "0x0", "name": "__unknown", "type": null}, {"offset": "0x8", "name": "__end", "type": null}]}}
+    , {"offset": "0x8", "name": "u", "type": {"is": "union", "size": "0x8", "align": 8, "members": [{"name": "ULong64", "type": {"is": "named", "name": "DWORD64"}}, {"name": "Pointer", "type": {"is": "named", "name": "PVOID"}}, {"name": "Size", "type": {"is": "named", "name": "SIZE_T"}}, {"name": "Handle", "type": {"is": "named", "name": "HANDLE"}}, {"name": "ULong", "type": {"is": "named", "name": "DWORD"}}]}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "MODULEINFO": {"is": "typedef", "size": "0xc", "align": 4, "type": {"is": "named", "name": "_MODULEINFO"}}
+
+, "OVERLAPPED_ENTRY": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "lpCompletionKey", "type": {"is": "named", "name": "ULONG_PTR"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "lpOverlapped", "type": {"is": "named", "name": "LPOVERLAPPED"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "Internal", "type": {"is": "named", "name": "ULONG_PTR"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "dwNumberOfBytesTransferred", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "PBY_HANDLE_FILE_INFORMATION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "BY_HANDLE_FILE_INFORMATION"}}}
+
+, "PCERT_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCERT_NAME_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCERT_RDN_VALUE_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCHAR_INFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CHAR_INFO"}}}
+
+, "PCONDITION_VARIABLE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CONDITION_VARIABLE"}}}
+
+, "PCONSOLE_CURSOR_INFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CONSOLE_CURSOR_INFO"}}}
+
+, "PCONSOLE_HISTORY_INFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CONSOLE_HISTORY_INFO"}}}
+
+, "PCONSOLE_SCREEN_BUFFER_INFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CONSOLE_SCREEN_BUFFER_INFO"}}}
+
+, "PCONSOLE_SELECTION_INFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CONSOLE_SELECTION_INFO"}}}
+
+, "PCOORD": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "COORD"}}}
+
+, "PCRITICAL_SECTION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRITICAL_SECTION"}}}
+
+, "PCRL_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCRYPT_ATTR_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCRYPT_DATA_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCRYPT_DECODE_PARA": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPT_DECODE_PARA"}}}
+
+, "PCRYPT_DECRYPT_MESSAGE_PARA": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPT_DECRYPT_MESSAGE_PARA"}}}
+
+, "PCRYPT_DER_BLOB": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "CRYPTOAPI_BLOB"}}
+
+, "PCRYPT_DIGEST_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCRYPT_ENCODE_PARA": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPT_ENCODE_PARA"}}}
+
+, "PCRYPT_HASH_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCRYPT_INTEGER_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCRYPT_OBJID_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PCRYPT_UINT_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PDATA_BLOB": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPTOAPI_BLOB"}}}
+
+, "PERFORMANCE_INFORMATION": {"is": "typedef", "size": "0x38", "align": 4, "type": {"is": "named", "name": "_PERFORMANCE_INFORMATION"}}
+
+, "PFILE_INFO_BY_HANDLE_CLASS": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "FILE_INFO_BY_HANDLE_CLASS"}}}
+
+, "PFN_CRYPT_ALLOC": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "named", "name": "LPVOID"}, "params": [{"type": {"is": "int", "signed": false, "size": 4}, "name": "cbSize"}]}}
+
+, "PFN_CRYPT_ENUM_KEYID_PROP": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "named", "name": "BOOL"}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "CRYPT_HASH_BLOB"}}, "name": "pKeyIdentifier"}, {"type": {"is": "named", "name": "DWORD"}, "name": "dwFlags"}, {"type": {"is": "ptr", "inner": {"is": "void"}}, "name": "pvReserved"}, {"type": {"is": "ptr", "inner": {"is": "void"}}, "name": "pvArg"}, {"type": {"is": "named", "name": "DWORD"}, "name": "cProp"}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "DWORD"}}, "name": "rgdwPropId"}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}, "name": "rgpvData"}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "DWORD"}}, "name": "rgcbData"}]}}
+
+, "PFN_CRYPT_FREE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "void"}, "params": [{"type": {"is": "named", "name": "LPVOID"}, "name": "pv"}]}}
+
+, "PHCRYPTASYNC": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HANDLE"}}}
+
+, "PHEAP_SUMMARY": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HEAP_SUMMARY"}}}
+
+, "PINIT_ONCE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "RTL_RUN_ONCE"}}}
+
+, "PINIT_ONCE_FN": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "ret": {"is": "named", "name": "BOOL"}, "params": [{"type": {"is": "named", "name": "LPINIT_ONCE"}, "name": "InitOnce"}, {"type": {"is": "named", "name": "PVOID"}, "name": "Parameter"}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "PVOID"}}, "name": "Context"}]}}
+
+, "PINPUT_RECORD": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "PMEMORY_BASIC_INFORMATION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "MEMORY_BASIC_INFORMATION"}}}
+
+, "PMEM_EXTENDED_PARAMETER": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "MEM_EXTENDED_PARAMETER"}}}
+
+, "PPERFORMANCE_INFORMATION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_PERFORMANCE_INFORMATION"}}}
+
+, "PPROCESSOR_NUMBER": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "PROCESSOR_NUMBER"}}}
+
+, "PPROCESS_HEAP_ENTRY": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "PROCESS_HEAP_ENTRY"}}}
+
+, "PPROCESS_INFORMATION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_PROCESS_INFORMATION"}}}
+
+, "PREASON_CONTEXT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "REASON_CONTEXT"}}}
+
+, "PROCESSOR_NUMBER": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 2
+  , "members": 
+    [ {"offset": "0x0", "name": "Group", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x2", "name": "Number", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x2", "name": "__unknown", "type": null}
+    , {"offset": "0x3", "name": "Reserved", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x3", "name": "__padding", "type": null}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "PROCESS_HEAP_ENTRY": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "lpData", "type": {"is": "named", "name": "PVOID"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "cbData", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "cbOverhead", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0x9", "name": "iRegionIndex", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x9", "name": "__unknown", "type": null}
+    , {"offset": "0xa", "name": "wFlags", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xa", "name": "__padding", "type": null}
+    , {"offset": "0xc", "name": "DUMMYUNIONNAME", "type": {"is": "union", "size": "0x10", "align": 4, "members": [{"name": "Block", "type": {"is": "struct", "size": "0x10", "align": 4, "members": [{"offset": "0x0", "name": "hMem", "type": {"is": "named", "name": "HANDLE"}}, {"offset": "0x0", "name": "__unknown", "type": null}, {"offset": "0x4", "name": "dwReserved", "type": {"is": "array", "len": 3, "inner": {"is": "named", "name": "DWORD"}}}, {"offset": "0x4", "name": "__unknown", "type": null}, {"offset": "0x10", "name": "__end", "type": null}]}}, {"name": "Region", "type": {"is": "struct", "size": "0x10", "align": 4, "members": [{"offset": "0x0", "name": "dwCommittedSize", "type": {"is": "named", "name": "DWORD"}}, {"offset": "0x0", "name": "__unknown", "type": null}, {"offset": "0x4", "name": "dwUnCommittedSize", "type": {"is": "named", "name": "DWORD"}}, {"offset": "0x4", "name": "__unknown", "type": null}, {"offset": "0x8", "name": "lpFirstBlock", "type": {"is": "named", "name": "LPVOID"}}, {"offset": "0x8", "name": "__unknown", "type": null}, {"offset": "0xc", "name": "lpLastBlock", "type": {"is": "named", "name": "LPVOID"}}, {"offset": "0xc", "name": "__unknown", "type": null}, {"offset": "0x10", "name": "__end", "type": null}]}}]}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "PROCESS_INFORMATION": {"is": "typedef", "size": "0x10", "align": 4, "type": {"is": "named", "name": "_PROCESS_INFORMATION"}}
+
+, "PROCESS_INFORMATION_CLASS": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "ProcessMemoryPriority", "value": 0}
+    , {"name": "ProcessMemoryExhaustionInfo", "value": 1}
+    , {"name": "ProcessAppMemoryInfo", "value": 2}
+    , {"name": "ProcessInPrivateInfo", "value": 3}
+    , {"name": "ProcessPowerThrottling", "value": 4}
+    , {"name": "ProcessReservedValue1", "value": 5}
+    , {"name": "ProcessTelemetryCoverageInfo", "value": 6}
+    , {"name": "ProcessProtectionLevelInfo", "value": 7}
+    , {"name": "ProcessLeapSecondInfo", "value": 8}
+    , {"name": "ProcessInformationClassMax", "value": 9}
+    ]
+  }
+
+, "PRTL_CRITICAL_SECTION_DEBUG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "RTL_CRITICAL_SECTION_DEBUG"}}}
+
+, "PSMALL_RECT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "SMALL_RECT"}}}
+
+, "PSRWLOCK": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "SRWLOCK"}}}
+
+, "PSYSTEMTIME": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "SYSTEMTIME"}}}
+
+, "PTIMERAPCROUTINE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "void"}, "params": [{"type": {"is": "named", "name": "LPVOID"}, "name": "lpArgToCompletionRoutine"}, {"type": {"is": "named", "name": "DWORD"}, "name": "dwTimerLowValue"}, {"type": {"is": "named", "name": "DWORD"}, "name": "dwTimerHighValue"}]}}
+
+, "PUBLICKEYSTRUC": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "bType", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x1", "name": "bVersion", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x1", "name": "__unknown", "type": null}
+    , {"offset": "0x2", "name": "reserved", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x2", "name": "__padding", "type": null}
+    , {"offset": "0x4", "name": "aiKeyAlg", "type": {"is": "named", "name": "ALG_ID"}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "PVALENTA": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "VALENTA"}}}
+
+, "PVALENTW": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "VALENTW"}}}
+
+, "REASON_CONTEXT": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Version", "type": {"is": "named", "name": "ULONG"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "Flags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "Reason", "type": {"is": "union", "size": "0x10", "align": 4, "members": [{"name": "Detailed", "type": {"is": "struct", "size": "0x10", "align": 4, "members": [{"offset": "0x0", "name": "LocalizedReasonModule", "type": {"is": "named", "name": "HMODULE"}}, {"offset": "0x0", "name": "__unknown", "type": null}, {"offset": "0x4", "name": "LocalizedReasonId", "type": {"is": "named", "name": "ULONG"}}, {"offset": "0x4", "name": "__unknown", "type": null}, {"offset": "0x8", "name": "ReasonStringCount", "type": {"is": "named", "name": "ULONG"}}, {"offset": "0x8", "name": "__unknown", "type": null}, {"offset": "0xc", "name": "ReasonStrings", "type": {"is": "ptr", "inner": {"is": "named", "name": "LPWSTR"}}}, {"offset": "0x10", "name": "__end", "type": null}]}}, {"name": "SimpleReasonString", "type": {"is": "named", "name": "LPWSTR"}}]}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "REGSAM": {"is": "typedef", "size": "0x0", "align": 1, "type": {"is": "void"}}
+
+, "RTL_BARRIER": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Reserved1", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "Reserved2", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "Reserved3", "type": {"is": "array", "len": 2, "inner": {"is": "named", "name": "ULONG_PTR"}}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "Reserved4", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "Reserved5", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "RTL_CRITICAL_SECTION_DEBUG": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "RTL_RUN_ONCE": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Ptr", "type": {"is": "named", "name": "PVOID"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "SMALL_RECT": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 2
+  , "members": 
+    [ {"offset": "0x0", "name": "Left", "type": {"is": "named", "name": "SHORT"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x2", "name": "Top", "type": {"is": "named", "name": "SHORT"}}
+    , {"offset": "0x2", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "Right", "type": {"is": "named", "name": "SHORT"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x6", "name": "Bottom", "type": {"is": "named", "name": "SHORT"}}
+    , {"offset": "0x6", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "SRWLOCK": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Ptr", "type": {"is": "named", "name": "PVOID"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "STARTUPINFOA": {"is": "typedef", "size": "0x44", "align": 4, "type": {"is": "named", "name": "_STARTUPINFOA"}}
+
+, "STARTUPINFOW": {"is": "typedef", "size": "0x44", "align": 4, "type": {"is": "named", "name": "_STARTUPINFOW"}}
+
+, "STREAM_INFO_LEVELS": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "values": 
+    [ {"name": "FindStreamInfoStandard", "value": 0}
+    , {"name": "FindStreamInfoMaxInfoLevel", "value": 1}
+    ]
+  }
+
+, "SYSTEMTIME": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 2
+  , "members": 
+    [ {"offset": "0x0", "name": "wYear", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x2", "name": "wMonth", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x2", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "wDayOfWeek", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x6", "name": "wDay", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x6", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "wHour", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xa", "name": "wMinute", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xa", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "wSecond", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0xe", "name": "wMilliseconds", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xe", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "SYSTEM_INFO": 
+  { "is": "struct"
+  , "size": "0x24"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "u", "type": {"is": "union", "size": "0x4", "align": 4, "members": [{"name": "dwOemId", "type": {"is": "named", "name": "DWORD"}}, {"name": "s", "type": {"is": "struct", "size": "0x4", "align": 2, "members": [{"offset": "0x0", "name": "wProcessorArchitecture", "type": {"is": "named", "name": "WORD"}}, {"offset": "0x0", "name": "__unknown", "type": null}, {"offset": "0x2", "name": "wReserved", "type": {"is": "named", "name": "WORD"}}, {"offset": "0x2", "name": "__unknown", "type": null}, {"offset": "0x4", "name": "__end", "type": null}]}}]}}
+    , {"offset": "0x4", "name": "dwPageSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "lpMinimumApplicationAddress", "type": {"is": "named", "name": "LPVOID"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "lpMaximumApplicationAddress", "type": {"is": "named", "name": "LPVOID"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "dwActiveProcessorMask", "type": {"is": "named", "name": "DWORD_PTR"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "dwNumberOfProcessors", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "dwProcessorType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "dwAllocationGranularity", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "wProcessorLevel", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x20", "name": "__unknown", "type": null}
+    , {"offset": "0x22", "name": "wProcessorRevision", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x22", "name": "__padding", "type": null}
+    , {"offset": "0x24", "name": "__end", "type": null}
+    ]
+  }
+
+, "VALENTA": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "ve_valuename", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "ve_valuelen", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "ve_valueptr", "type": {"is": "named", "name": "DWORD_PTR"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "ve_type", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "VALENTW": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "ve_valuename", "type": {"is": "named", "name": "LPWSTR"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "ve_valuelen", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "ve_valueptr", "type": {"is": "named", "name": "DWORD_PTR"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "ve_type", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "WIN32_FIND_DATAA": 
+  { "is": "struct"
+  , "size": "0x14a"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwFileAttributes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "ftCreationTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "ftLastAccessTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "ftLastWriteTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "nFileSizeHigh", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "nFileSizeLow", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "dwReserved0", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "dwReserved1", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x2c", "name": "cFileName", "type": {"is": "array", "len": 260, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x2c", "name": "__unknown", "type": null}
+    , {"offset": "0x130", "name": "cAlternateFileName", "type": {"is": "array", "len": 14, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x130", "name": "__unknown", "type": null}
+    , {"offset": "0x140", "name": "dwFileType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x140", "name": "__unknown", "type": null}
+    , {"offset": "0x144", "name": "dwCreatorType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x144", "name": "__unknown", "type": null}
+    , {"offset": "0x148", "name": "wFinderFlags", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x148", "name": "__unknown", "type": null}
+    , {"offset": "0x14a", "name": "__end", "type": null}
+    ]
+  }
+
+, "WIN32_FIND_DATAW": 
+  { "is": "struct"
+  , "size": "0x47e"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwFileAttributes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "ftCreationTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "ftLastAccessTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "ftLastWriteTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "nFileSizeHigh", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "nFileSizeLow", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "dwReserved0", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "dwReserved1", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x2c", "name": "cFileName", "type": {"is": "array", "len": 260, "inner": {"is": "named", "name": "WCHAR"}}}
+    , {"offset": "0x2c", "name": "__unknown", "type": null}
+    , {"offset": "0x43c", "name": "cAlternateFileName", "type": {"is": "array", "len": 14, "inner": {"is": "named", "name": "WCHAR"}}}
+    , {"offset": "0x43c", "name": "__unknown", "type": null}
+    , {"offset": "0x474", "name": "dwFileType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x474", "name": "__unknown", "type": null}
+    , {"offset": "0x478", "name": "dwCreatorType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x478", "name": "__unknown", "type": null}
+    , {"offset": "0x47c", "name": "wFinderFlags", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x47c", "name": "__unknown", "type": null}
+    , {"offset": "0x47e", "name": "__end", "type": null}
+    ]
+  }
+
+, "_MODULEINFO": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "lpBaseOfDll", "type": {"is": "named", "name": "LPVOID"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "SizeOfImage", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "EntryPoint", "type": {"is": "named", "name": "LPVOID"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "_PERFORMANCE_INFORMATION": 
+  { "is": "struct"
+  , "size": "0x38"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cb", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "CommitTotal", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "CommitLimit", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "CommitPeak", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "PhysicalTotal", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "PhysicalAvailable", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "SystemCache", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "KernelTotal", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "KernelPaged", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x20", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "KernelNonpaged", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "PageSize", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x2c", "name": "HandleCount", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "__unknown", "type": null}
+    , {"offset": "0x30", "name": "ProcessCount", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x30", "name": "__unknown", "type": null}
+    , {"offset": "0x34", "name": "ThreadCount", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x34", "name": "__unknown", "type": null}
+    , {"offset": "0x38", "name": "__end", "type": null}
+    ]
+  }
+
+, "_PROCESS_INFORMATION": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "hProcess", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "hThread", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "dwProcessId", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "dwThreadId", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "_STARTUPINFOA": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cb", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "lpReserved", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "lpDesktop", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "lpTitle", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "dwX", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "dwY", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "dwXSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "dwYSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "dwXCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "dwYCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "dwFillAttribute", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x2c", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "__unknown", "type": null}
+    , {"offset": "0x30", "name": "wShowWindow", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x30", "name": "__unknown", "type": null}
+    , {"offset": "0x32", "name": "cbReserved2", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x32", "name": "__padding", "type": null}
+    , {"offset": "0x34", "name": "lpReserved2", "type": {"is": "named", "name": "LPBYTE"}}
+    , {"offset": "0x34", "name": "__unknown", "type": null}
+    , {"offset": "0x38", "name": "hStdInput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x38", "name": "__unknown", "type": null}
+    , {"offset": "0x3c", "name": "hStdOutput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x3c", "name": "__unknown", "type": null}
+    , {"offset": "0x40", "name": "hStdError", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x40", "name": "__unknown", "type": null}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "_STARTUPINFOW": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cb", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "lpReserved", "type": {"is": "named", "name": "LPWSTR"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "lpDesktop", "type": {"is": "named", "name": "LPWSTR"}}
+    , {"offset": "0x8", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "lpTitle", "type": {"is": "named", "name": "LPWSTR"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "dwX", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "dwY", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "dwXSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "dwYSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "dwXCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "dwYCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "dwFillAttribute", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x2c", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "__unknown", "type": null}
+    , {"offset": "0x30", "name": "wShowWindow", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x30", "name": "__unknown", "type": null}
+    , {"offset": "0x32", "name": "cbReserved2", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x32", "name": "__padding", "type": null}
+    , {"offset": "0x34", "name": "lpReserved2", "type": {"is": "named", "name": "LPBYTE"}}
+    , {"offset": "0x34", "name": "__unknown", "type": null}
+    , {"offset": "0x38", "name": "hStdInput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x38", "name": "__unknown", "type": null}
+    , {"offset": "0x3c", "name": "hStdOutput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x3c", "name": "__unknown", "type": null}
+    , {"offset": "0x40", "name": "hStdError", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x40", "name": "__unknown", "type": null}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+}

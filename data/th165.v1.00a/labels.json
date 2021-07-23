@@ -1,455 +1,452 @@
+
 { "ecl": 
-  [ ["0x41a919", "3xx__enmCreateF"]
-  , ["0x41a92f", "3xx__enmCreate"]
-  , ["0x41a93b", "302__anmSelect"]
-  , ["0x41a956", "424__moveSetMirror"]
-  , ["0x41a97f", "631__lifeHide"]
-  , ["0x41a9ab", "552__zIndex"]
-  , ["0x41a9c6", "553__hitSound"]
-  , ["0x41a9e1", "638__scoreAdd"]
-  , ["0x41aa34", "303__anmSetSprite"]
-  , ["0x41aa40", "320__anmMove"]
-  , ["0x41aaac", "3xx__anmModify"]
-  , ["0x41aab8", "566__unknown566"]
-  , ["0x41aad5", "323__deathAnm"]
-  , ["0x41ab06", "561__die"]
-  , ["0x41abc6", "322__enm322"]
-  , ["0x41abf4", "338__anmPlayPos"]
-  , ["0x41aceb", "307__anmPlay"]
-  , ["0x41ad41", "314__anmPlayHigh"]
-  , ["0x41ad69", "308__anmPlayAbs"]
-  , ["0x41adc0", "339__anm339"]
-  , ["0x41aea5", "315__anmPlayRotate"]
-  , ["0x41af45", "334__anm334"]
-  , ["0x41af65", "306__anmSetMain"]
-  , ["0x41b070", "318__anmReset"]
-  , ["0x41b0f4", "313__anmSelectedPlay"]
-  , ["0x41b1b5", "316__anm316"]
-  , ["0x41b2a3", "317__anmSwitch"]
-  , ["0x41b2d2", "427__moveReset"]
-  , ["0x41b3f6", "4xx__movePos"]
-  , ["0x41b4d2", "4xx__movePos3d"]
-  , ["0x41b553", "4xx__movePosTime"]
-  , ["0x41b70d", "4xx__moveCurve"]
-  , ["0x41b856", "4xx__moveBezier"]
-  , ["0x41b9e0", "4xx__moveVel"]
-  , ["0x41bafd", "4xx__moveVelTime"]
-  , ["0x41be4c", "4xx__moveAngle"]
-  , ["0x41bebd", "4xx__moveAngleTime"]
-  , ["0x41c09f", "4xx__moveSpeed"]
-  , ["0x41c0f2", "4xx__moveSpeedTime"]
-  , ["0x41c22a", "4xx__moveCircle"]
-  , ["0x41c332", "4xx__moveCircleTime"]
-  , ["0x41c550", "4xx__moveAdd"]
-  , ["0x41c5fc", "4xx__moveEllipse"]
-  , ["0x41c758", "4xx__moveEllipseTime"]
-  , ["0x41ca96", "414__moveBoss"]
-  , ["0x41cac5", "415__moveBossRel"]
-  , ["0x41caf4", "432__moveEnm"]
-  , ["0x41cb06", "433__moveEnmRel"]
-  , ["0x41cb18", "504__moveLimit"]
-  , ["0x41cb6b", "505__moveLimitReset"]
-  , ["0x41cb7a", "526__etProtectRange"]
-  , ["0x41cb94", "4xx__moveRand"]
-  , ["0x41cea4", "527__lifeMarker"]
-  , ["0x41cef8", "632__funcSet"]
-  , ["0x41cf1d", "639__funcSet2"]
-  , ["0x41cf42", "633__flagExtDmg"]
-  , ["0x41cf5d", "634__setHitboxFunc"]
-  , ["0x41cf78", "637__funcCall"]
-  , ["0x41cf91", "500__setHurtbox"]
-  , ["0x41cfb8", "501__setHitbox"]
-  , ["0x41cfdf", "569__unknown569"]
-  , ["0x41d006", "563__unknown563"]
-  , ["0x41d028", "564__hitboxRotate"]
-  , ["0x41d03e", "565__bombInvuln"]
-  , ["0x41d054", "502__flagSet"]
-  , ["0x41d094", "503__flagClear"]
-  , ["0x41d0d4", "507__dropExtra"]
-  , ["0x41d0f4", "508__dropArea"]
-  , ["0x41d12b", "509__dropItems"]
-  , ["0x41d13f", "510__dropMain"]
-  , ["0x41d153", "511__lifeSet"]
-  , ["0x41d193", "572__lifeNow"]
-  , ["0x41d1ad", "512__setBoss"]
-  , ["0x41d22a", "515__setInvuln"]
-  , ["0x41d23e", "541__noHitboxDur"]
-  , ["0x41d252", "551__unknown551"]
-  , ["0x41d26c", "571__unknown571"]
-  , ["0x41d27c", "535__diffI"]
-  , ["0x41d318", "536__diffF"]
-  , ["0x41d3d5", "600__etNew"]
-  , ["0x41d49c", "614__etCopy"]
-  , ["0x41d52e", "601__etOn"]
-  , ["0x41d604", "602__etSprite"]
-  , ["0x41d638", "603__etOffset"]
-  , ["0x41d672", "626__etOffsetRad"]
-  , ["0x41d6e5", "627__etDist"]
-  , ["0x41d70d", "628__etOffsetAbs"]
-  , ["0x41d77e", "604__etAngle"]
-  , ["0x41d7b6", "605__etSpeed"]
-  , ["0x41d7ee", "606__etCount"]
-  , ["0x41d824", "624__etSpeedD"]
-  , ["0x41d89e", "625__etCountD"]
-  , ["0x41d91b", "617__etSpeedR3"]
-  , ["0x41d9b2", "618__etSpeedR5"]
-  , ["0x41da8f", "619__etSpeedR2"]
-  , ["0x41db5c", "620__etCountR3"]
-  , ["0x41dbbf", "621__etCountR5"]
-  , ["0x41dc26", "622__etCountR2"]
-  , ["0x41dcf6", "607__etAim"]
-  , ["0x41dd1d", "608__etSound"]
-  , ["0x41dd51", "6xx__etEx"]
-  , ["0x41df9e", "641__etExSubtract"]
-  , ["0x41dfc5", "640__etExSub"]
-  , ["0x41e001", "700__laserNew"]
-  , ["0x41e05d", "701__laserTiming"]
-  , ["0x41e0c1", "514__setInterrupt"]
-  , ["0x41e0f3", "521__setTimeout"]
-  , ["0x41e111", "556__setDeath"]
-  , ["0x41e135", "613__etClearAll"]
-  , ["0x41e156", "516__playSound"]
-  , ["0x41e174", "573__unknown573"]
-  , ["0x41e18d", "517__setScreenShake"]
-  , ["0x41e1bf", "518__dialogRead"]
-  , ["0x41e1f0", "525__enmKillAll"]
-  , ["0x41e200", "519__dialogWait"]
-  , ["0x41e228", "520__unknown520"]
-  , ["0x41e26a", "558__flagMirror"]
-  , ["0x41e28c", "5xx__spell"]
-  , ["0x41e366", "513__timerReset"]
-  , ["0x41e373", "568__spellMode"]
-  , ["0x41e392", "523__spellEnd"]
-  , ["0x41e3a9", "542__spellTimeout"]
-  , ["0x41e3b7", "543__unknown543"]
-  , ["0x41e3c7", "567__unknown567"]
-  , ["0x41e3e9", "544__unknown544"]
-  , ["0x41e40b", "702__laserOn"]
-  , ["0x41e5b3", "703__laserStOn"]
-  , ["0x41e78d", "713__unknown713"]
-  , ["0x41e8de", "711__laserCuOn"]
-  , ["0x41ea57", "710__laserStEnd"]
-  , ["0x41eaaf", "704__laserOffset"]
-  , ["0x41eb17", "705__laserTrajectory"]
-  , ["0x41eb85", "706__laserStLength"]
-  , ["0x41ebb9", "707__laserStWidth"]
-  , ["0x41ebed", "708__laserStAngle"]
-  , ["0x41ec21", "709__laserStRotation"]
-  , ["0x41ec58", "714__unknown714"]
-  , ["0x41ec95", "615__etCancel"]
-  , ["0x41ecd7", "712__etCancelRect"]
-  , ["0x41ed2b", "635__etCancel2"]
-  , ["0x41ed55", "529__rankF3"]
-  , ["0x41ed9b", "530__rankF5"]
-  , ["0x41ee17", "531__rankF2"]
-  , ["0x41ee92", "532__rankI3"]
-  , ["0x41eed4", "533__rankI5"]
-  , ["0x41ef4a", "534__rankI2"]
-  , ["0x41efa3", "540__stars"]
-  , ["0x41efba", "545__laserCancel"]
-  , ["0x41efca", "546__bombShield"]
-  , ["0x41f011", "559__enmLimit"]
-  , ["0x41f02b", "547__gameSpeed"]
-  , ["0x41f041", "623__angleToPlayer"]
-  , ["0x41f0bc", "548__diffWait"]
-  , ["0x41f132", "629__fog"]
-  , ["0x41f1da", "630__callSTD"]
-  , ["0x41f1f4", "557__fogTime"]
-  , ["0x41f2b9", "549__unknown549"]
-  , ["0x41f2de", "550__unknown550"]
-  , ["0x41f2f2", "555__enmAlive"]
-  , ["0x41f319", "801__enmPos"]
-  , ["0x41f357", "802__broadcastInterrupt"]
-  , ["0x41f410", "803"]
-  , ["0x41f45e", "800__enmCall"]
-  , ["0x41f4a0", "324__enm324"]
-  , ["0x41f4fa", "560__unknown560"]
-  , ["0x41f52f", "1000__dropSeason"]
-  , ["0x41f53f", "1001__seasonItemDamage"]
-  , ["0x41f54f", "1004"]
-  , ["0x41f55f", "340__enmDelete"]
-  , ["0x41f58b", "1002"]
-  , ["0x41f5a6", "1003"]
-  , ["0x41f5c6", "1005"]
-  , ["0x41f5e8", "1007"]
-  , ["0x41f60a", "1006"]
-  , ["0x41f625", "1008"]
-  , ["0x41f64b", "1009"]
-  , ["0x41f665", "1010"]
-  , ["0x41f680", "1011"]
-  , ["0x41f694", "1012"]
-  , ["0x41f6a5", "1013"]
-  , ["0x41f703", "1014"]
-  , ["0x41f720", "default"]
+  [ {"addr": "0x41a919", "label": "3xx__enmCreateF"}
+  , {"addr": "0x41a92f", "label": "3xx__enmCreate"}
+  , {"addr": "0x41a93b", "label": "302__anmSelect"}
+  , {"addr": "0x41a956", "label": "424__moveSetMirror"}
+  , {"addr": "0x41a97f", "label": "631__lifeHide"}
+  , {"addr": "0x41a9ab", "label": "552__zIndex"}
+  , {"addr": "0x41a9c6", "label": "553__hitSound"}
+  , {"addr": "0x41a9e1", "label": "638__scoreAdd"}
+  , {"addr": "0x41aa34", "label": "303__anmSetSprite"}
+  , {"addr": "0x41aa40", "label": "320__anmMove"}
+  , {"addr": "0x41aaac", "label": "3xx__anmModify"}
+  , {"addr": "0x41aab8", "label": "566__unknown566"}
+  , {"addr": "0x41aad5", "label": "323__deathAnm"}
+  , {"addr": "0x41ab06", "label": "561__die"}
+  , {"addr": "0x41abc6", "label": "322__enm322"}
+  , {"addr": "0x41abf4", "label": "338__anmPlayPos"}
+  , {"addr": "0x41aceb", "label": "307__anmPlay"}
+  , {"addr": "0x41ad41", "label": "314__anmPlayHigh"}
+  , {"addr": "0x41ad69", "label": "308__anmPlayAbs"}
+  , {"addr": "0x41adc0", "label": "339__anm339"}
+  , {"addr": "0x41aea5", "label": "315__anmPlayRotate"}
+  , {"addr": "0x41af45", "label": "334__anm334"}
+  , {"addr": "0x41af65", "label": "306__anmSetMain"}
+  , {"addr": "0x41b070", "label": "318__anmReset"}
+  , {"addr": "0x41b0f4", "label": "313__anmSelectedPlay"}
+  , {"addr": "0x41b1b5", "label": "316__anm316"}
+  , {"addr": "0x41b2a3", "label": "317__anmSwitch"}
+  , {"addr": "0x41b2d2", "label": "427__moveReset"}
+  , {"addr": "0x41b3f6", "label": "4xx__movePos"}
+  , {"addr": "0x41b4d2", "label": "4xx__movePos3d"}
+  , {"addr": "0x41b553", "label": "4xx__movePosTime"}
+  , {"addr": "0x41b70d", "label": "4xx__moveCurve"}
+  , {"addr": "0x41b856", "label": "4xx__moveBezier"}
+  , {"addr": "0x41b9e0", "label": "4xx__moveVel"}
+  , {"addr": "0x41bafd", "label": "4xx__moveVelTime"}
+  , {"addr": "0x41be4c", "label": "4xx__moveAngle"}
+  , {"addr": "0x41bebd", "label": "4xx__moveAngleTime"}
+  , {"addr": "0x41c09f", "label": "4xx__moveSpeed"}
+  , {"addr": "0x41c0f2", "label": "4xx__moveSpeedTime"}
+  , {"addr": "0x41c22a", "label": "4xx__moveCircle"}
+  , {"addr": "0x41c332", "label": "4xx__moveCircleTime"}
+  , {"addr": "0x41c550", "label": "4xx__moveAdd"}
+  , {"addr": "0x41c5fc", "label": "4xx__moveEllipse"}
+  , {"addr": "0x41c758", "label": "4xx__moveEllipseTime"}
+  , {"addr": "0x41ca96", "label": "414__moveBoss"}
+  , {"addr": "0x41cac5", "label": "415__moveBossRel"}
+  , {"addr": "0x41caf4", "label": "432__moveEnm"}
+  , {"addr": "0x41cb06", "label": "433__moveEnmRel"}
+  , {"addr": "0x41cb18", "label": "504__moveLimit"}
+  , {"addr": "0x41cb6b", "label": "505__moveLimitReset"}
+  , {"addr": "0x41cb7a", "label": "526__etProtectRange"}
+  , {"addr": "0x41cb94", "label": "4xx__moveRand"}
+  , {"addr": "0x41cea4", "label": "527__lifeMarker"}
+  , {"addr": "0x41cef8", "label": "632__funcSet"}
+  , {"addr": "0x41cf1d", "label": "639__funcSet2"}
+  , {"addr": "0x41cf42", "label": "633__flagExtDmg"}
+  , {"addr": "0x41cf5d", "label": "634__setHitboxFunc"}
+  , {"addr": "0x41cf78", "label": "637__funcCall"}
+  , {"addr": "0x41cf91", "label": "500__setHurtbox"}
+  , {"addr": "0x41cfb8", "label": "501__setHitbox"}
+  , {"addr": "0x41cfdf", "label": "569__unknown569"}
+  , {"addr": "0x41d006", "label": "563__unknown563"}
+  , {"addr": "0x41d028", "label": "564__hitboxRotate"}
+  , {"addr": "0x41d03e", "label": "565__bombInvuln"}
+  , {"addr": "0x41d054", "label": "502__flagSet"}
+  , {"addr": "0x41d094", "label": "503__flagClear"}
+  , {"addr": "0x41d0d4", "label": "507__dropExtra"}
+  , {"addr": "0x41d0f4", "label": "508__dropArea"}
+  , {"addr": "0x41d12b", "label": "509__dropItems"}
+  , {"addr": "0x41d13f", "label": "510__dropMain"}
+  , {"addr": "0x41d153", "label": "511__lifeSet"}
+  , {"addr": "0x41d193", "label": "572__lifeNow"}
+  , {"addr": "0x41d1ad", "label": "512__setBoss"}
+  , {"addr": "0x41d22a", "label": "515__setInvuln"}
+  , {"addr": "0x41d23e", "label": "541__noHitboxDur"}
+  , {"addr": "0x41d252", "label": "551__unknown551"}
+  , {"addr": "0x41d26c", "label": "571__unknown571"}
+  , {"addr": "0x41d27c", "label": "535__diffI"}
+  , {"addr": "0x41d318", "label": "536__diffF"}
+  , {"addr": "0x41d3d5", "label": "600__etNew"}
+  , {"addr": "0x41d49c", "label": "614__etCopy"}
+  , {"addr": "0x41d52e", "label": "601__etOn"}
+  , {"addr": "0x41d604", "label": "602__etSprite"}
+  , {"addr": "0x41d638", "label": "603__etOffset"}
+  , {"addr": "0x41d672", "label": "626__etOffsetRad"}
+  , {"addr": "0x41d6e5", "label": "627__etDist"}
+  , {"addr": "0x41d70d", "label": "628__etOffsetAbs"}
+  , {"addr": "0x41d77e", "label": "604__etAngle"}
+  , {"addr": "0x41d7b6", "label": "605__etSpeed"}
+  , {"addr": "0x41d7ee", "label": "606__etCount"}
+  , {"addr": "0x41d824", "label": "624__etSpeedD"}
+  , {"addr": "0x41d89e", "label": "625__etCountD"}
+  , {"addr": "0x41d91b", "label": "617__etSpeedR3"}
+  , {"addr": "0x41d9b2", "label": "618__etSpeedR5"}
+  , {"addr": "0x41da8f", "label": "619__etSpeedR2"}
+  , {"addr": "0x41db5c", "label": "620__etCountR3"}
+  , {"addr": "0x41dbbf", "label": "621__etCountR5"}
+  , {"addr": "0x41dc26", "label": "622__etCountR2"}
+  , {"addr": "0x41dcf6", "label": "607__etAim"}
+  , {"addr": "0x41dd1d", "label": "608__etSound"}
+  , {"addr": "0x41dd51", "label": "6xx__etEx"}
+  , {"addr": "0x41df9e", "label": "641__etExSubtract"}
+  , {"addr": "0x41dfc5", "label": "640__etExSub"}
+  , {"addr": "0x41e001", "label": "700__laserNew"}
+  , {"addr": "0x41e05d", "label": "701__laserTiming"}
+  , {"addr": "0x41e0c1", "label": "514__setInterrupt"}
+  , {"addr": "0x41e0f3", "label": "521__setTimeout"}
+  , {"addr": "0x41e111", "label": "556__setDeath"}
+  , {"addr": "0x41e135", "label": "613__etClearAll"}
+  , {"addr": "0x41e156", "label": "516__playSound"}
+  , {"addr": "0x41e174", "label": "573__unknown573"}
+  , {"addr": "0x41e18d", "label": "517__setScreenShake"}
+  , {"addr": "0x41e1bf", "label": "518__dialogRead"}
+  , {"addr": "0x41e1f0", "label": "525__enmKillAll"}
+  , {"addr": "0x41e200", "label": "519__dialogWait"}
+  , {"addr": "0x41e228", "label": "520__unknown520"}
+  , {"addr": "0x41e26a", "label": "558__flagMirror"}
+  , {"addr": "0x41e28c", "label": "5xx__spell"}
+  , {"addr": "0x41e366", "label": "513__timerReset"}
+  , {"addr": "0x41e373", "label": "568__spellMode"}
+  , {"addr": "0x41e392", "label": "523__spellEnd"}
+  , {"addr": "0x41e3a9", "label": "542__spellTimeout"}
+  , {"addr": "0x41e3b7", "label": "543__unknown543"}
+  , {"addr": "0x41e3c7", "label": "567__unknown567"}
+  , {"addr": "0x41e3e9", "label": "544__unknown544"}
+  , {"addr": "0x41e40b", "label": "702__laserOn"}
+  , {"addr": "0x41e5b3", "label": "703__laserStOn"}
+  , {"addr": "0x41e78d", "label": "713__unknown713"}
+  , {"addr": "0x41e8de", "label": "711__laserCuOn"}
+  , {"addr": "0x41ea57", "label": "710__laserStEnd"}
+  , {"addr": "0x41eaaf", "label": "704__laserOffset"}
+  , {"addr": "0x41eb17", "label": "705__laserTrajectory"}
+  , {"addr": "0x41eb85", "label": "706__laserStLength"}
+  , {"addr": "0x41ebb9", "label": "707__laserStWidth"}
+  , {"addr": "0x41ebed", "label": "708__laserStAngle"}
+  , {"addr": "0x41ec21", "label": "709__laserStRotation"}
+  , {"addr": "0x41ec58", "label": "714__unknown714"}
+  , {"addr": "0x41ec95", "label": "615__etCancel"}
+  , {"addr": "0x41ecd7", "label": "712__etCancelRect"}
+  , {"addr": "0x41ed2b", "label": "635__etCancel2"}
+  , {"addr": "0x41ed55", "label": "529__rankF3"}
+  , {"addr": "0x41ed9b", "label": "530__rankF5"}
+  , {"addr": "0x41ee17", "label": "531__rankF2"}
+  , {"addr": "0x41ee92", "label": "532__rankI3"}
+  , {"addr": "0x41eed4", "label": "533__rankI5"}
+  , {"addr": "0x41ef4a", "label": "534__rankI2"}
+  , {"addr": "0x41efa3", "label": "540__stars"}
+  , {"addr": "0x41efba", "label": "545__laserCancel"}
+  , {"addr": "0x41efca", "label": "546__bombShield"}
+  , {"addr": "0x41f011", "label": "559__enmLimit"}
+  , {"addr": "0x41f02b", "label": "547__gameSpeed"}
+  , {"addr": "0x41f041", "label": "623__angleToPlayer"}
+  , {"addr": "0x41f0bc", "label": "548__diffWait"}
+  , {"addr": "0x41f132", "label": "629__fog"}
+  , {"addr": "0x41f1da", "label": "630__callSTD"}
+  , {"addr": "0x41f1f4", "label": "557__fogTime"}
+  , {"addr": "0x41f2b9", "label": "549__unknown549"}
+  , {"addr": "0x41f2de", "label": "550__unknown550"}
+  , {"addr": "0x41f2f2", "label": "555__enmAlive"}
+  , {"addr": "0x41f319", "label": "801__enmPos"}
+  , {"addr": "0x41f357", "label": "802__broadcastInterrupt"}
+  , {"addr": "0x41f410", "label": "803"}
+  , {"addr": "0x41f45e", "label": "800__enmCall"}
+  , {"addr": "0x41f4a0", "label": "324__enm324"}
+  , {"addr": "0x41f4fa", "label": "560__unknown560"}
+  , {"addr": "0x41f52f", "label": "1000__dropSeason"}
+  , {"addr": "0x41f53f", "label": "1001__seasonItemDamage"}
+  , {"addr": "0x41f54f", "label": "1004"}
+  , {"addr": "0x41f55f", "label": "340__enmDelete"}
+  , {"addr": "0x41f58b", "label": "1002"}
+  , {"addr": "0x41f5a6", "label": "1003"}
+  , {"addr": "0x41f5c6", "label": "1005"}
+  , {"addr": "0x41f5e8", "label": "1007"}
+  , {"addr": "0x41f60a", "label": "1006"}
+  , {"addr": "0x41f625", "label": "1008"}
+  , {"addr": "0x41f64b", "label": "1009"}
+  , {"addr": "0x41f665", "label": "1010"}
+  , {"addr": "0x41f680", "label": "1011"}
+  , {"addr": "0x41f694", "label": "1012"}
+  , {"addr": "0x41f6a5", "label": "1013"}
+  , {"addr": "0x41f703", "label": "1014"}
+  , {"addr": "0x41f720", "label": "default"}
   ]
-
 , "eclival": 
-  [ ["0x420793", "10000__RAND"]
-  , ["0x4207aa", "9999__RANDF"]
-  , ["0x4207c6", "9987__RANDF2"]
-  , ["0x4207e2", "9995__FINAL_Z"]
-  , ["0x4207f2", "9994__ABS_X"]
-  , ["0x420802", "9993__ABS_Y"]
-  , ["0x420812", "9992__ABS_Z"]
-  , ["0x420822", "9991__REL_X"]
-  , ["0x420837", "9990__REL_Y"]
-  , ["0x42084c", "9988__TIME"]
-  , ["0x42085a", "9986__TIMEOUT"]
-  , ["0x42086c", "9971__ABS_ANGLE"]
-  , ["0x42087c", "9970__REL_ANGLE"]
-  , ["0x42088c", "9968__REL_SPEED"]
-  , ["0x42089c", "9967__ABS_ORIGIN_DIST"]
-  , ["0x4208ac", "9966__REL_ORIGIN_DIST"]
-  , ["0x4208bc", "9963__BOSS_X"]
-  , ["0x4208f7", "9997__FINAL_X"]
-  , ["0x420907", "9962__BOSS_Y"]
-  , ["0x420942", "9996__FINAL_Y"]
-  , ["0x420952", "9893"]
-  , ["0x420995", "9892"]
-  , ["0x4209d2", "9961__ANM_ID"]
-  , ["0x4209ec", "9960__RANK"]
-  , ["0x4209f9", "9959__DIFF"]
-  , ["0x420a06", "9954__LIFE"]
-  , ["0x420a14", "9953__EASY"]
-  , ["0x420a27", "9952__NORMAL"]
-  , ["0x420a3b", "9951__HARD"]
-  , ["0x420a4f", "9950__LUNATIC"]
-  , ["0x420a63", "9949__MISS_COUNT"]
-  , ["0x420a73", "9948__BOMB_COUNT"]
-  , ["0x420a83", "9947__CAPTURE"]
-  , ["0x420a93", "9946__ENM_CNT_REAL"]
-  , ["0x420aa6", "9908__ENM_CNT"]
-  , ["0x420ab3", "9945__SHOTTYPE"]
-  , ["0x420ac6", "9944__DIST_PLAYER"]
-  , ["0x420b0f", "9931__LAST_ENM_ID"]
-  , ["0x420b22", "9930__POWER"]
-  , ["0x420b2f", "9929__DS1"]
-  , ["0x420b42", "9928__DS2"]
-  , ["0x420b55", "9927__DS3"]
-  , ["0x420b74", "9957__TRUE"]
-  , ["0x420b81", "9943__BI0"]
-  , ["0x420be2", "9985__I0"]
-  , ["0x420bf0", "9942__BI1"]
-  , ["0x420c52", "9984__I1"]
-  , ["0x420c60", "9941__BI2"]
-  , ["0x420cc2", "9983__I2"]
-  , ["0x420cd0", "9940__BI3"]
-  , ["0x420d32", "9982__I3"]
-  , ["0x420d40", "9939__BF0"]
-  , ["0x420da4", "9981__F0"]
-  , ["0x420db4", "9938__BF1"]
-  , ["0x420e16", "9980__F1"]
-  , ["0x420e26", "9937__BF2"]
-  , ["0x420e91", "9979__F2"]
-  , ["0x420ea1", "9936__BF3"]
-  , ["0x420f04", "9978__F3"]
-  , ["0x420f14", "9911__ANGLE_BOSS"]
-  , ["0x420f66", "9958__FINAL_ANGLE"]
-  , ["0x420f87", "9910__SPEED_BOSS"]
-  , ["0x420ff1", "9969__ABS_SPEED"]
-  , ["0x421001", "9909__UNKNOWN9"]
-  , ["0x42100f", "9897"]
-  , ["0x42101d", "9896"]
-  , ["0x42102b", "9895"]
-  , ["0x421039", "9894"]
-  , ["0x421047", "9935__F4"]
-  , ["0x421057", "9934__F5"]
-  , ["0x421067", "9933__F6"]
-  , ["0x421077", "9932__F7"]
-  , ["0x421087", "9926__GI0"]
-  , ["0x421097", "9925__GI1"]
-  , ["0x4210a7", "9924__GI2"]
-  , ["0x4210b7", "9923__GI3"]
-  , ["0x4210c7", "9922__GF0"]
-  , ["0x4210d9", "9921__GF1"]
-  , ["0x4210eb", "9920__GF2"]
-  , ["0x4210fd", "9919__GF3"]
-  , ["0x42110f", "9918__GF4"]
-  , ["0x421121", "9917__GF5"]
-  , ["0x421133", "9916__GF6"]
-  , ["0x421145", "9915__GF7"]
-  , ["0x421157", "9914__ID"]
-  , ["0x421165", "9906__MIRROR"]
-  , ["0x421179", "9903__SUBSEASON"]
-  , ["0x42118c", "9902"]
-  , ["0x42119e", "9901"]
-  , ["0x4211c6", "9900"]
-  , ["0x42120e", "9899"]
-  , ["0x42121c", "9898"]
-  , ["0x42122a", "-9998__multiple"]
+  [ {"addr": "0x420793", "label": "10000__RAND"}
+  , {"addr": "0x4207aa", "label": "9999__RANDF"}
+  , {"addr": "0x4207c6", "label": "9987__RANDF2"}
+  , {"addr": "0x4207e2", "label": "9995__FINAL_Z"}
+  , {"addr": "0x4207f2", "label": "9994__ABS_X"}
+  , {"addr": "0x420802", "label": "9993__ABS_Y"}
+  , {"addr": "0x420812", "label": "9992__ABS_Z"}
+  , {"addr": "0x420822", "label": "9991__REL_X"}
+  , {"addr": "0x420837", "label": "9990__REL_Y"}
+  , {"addr": "0x42084c", "label": "9988__TIME"}
+  , {"addr": "0x42085a", "label": "9986__TIMEOUT"}
+  , {"addr": "0x42086c", "label": "9971__ABS_ANGLE"}
+  , {"addr": "0x42087c", "label": "9970__REL_ANGLE"}
+  , {"addr": "0x42088c", "label": "9968__REL_SPEED"}
+  , {"addr": "0x42089c", "label": "9967__ABS_ORIGIN_DIST"}
+  , {"addr": "0x4208ac", "label": "9966__REL_ORIGIN_DIST"}
+  , {"addr": "0x4208bc", "label": "9963__BOSS_X"}
+  , {"addr": "0x4208f7", "label": "9997__FINAL_X"}
+  , {"addr": "0x420907", "label": "9962__BOSS_Y"}
+  , {"addr": "0x420942", "label": "9996__FINAL_Y"}
+  , {"addr": "0x420952", "label": "9893"}
+  , {"addr": "0x420995", "label": "9892"}
+  , {"addr": "0x4209d2", "label": "9961__ANM_ID"}
+  , {"addr": "0x4209ec", "label": "9960__RANK"}
+  , {"addr": "0x4209f9", "label": "9959__DIFF"}
+  , {"addr": "0x420a06", "label": "9954__LIFE"}
+  , {"addr": "0x420a14", "label": "9953__EASY"}
+  , {"addr": "0x420a27", "label": "9952__NORMAL"}
+  , {"addr": "0x420a3b", "label": "9951__HARD"}
+  , {"addr": "0x420a4f", "label": "9950__LUNATIC"}
+  , {"addr": "0x420a63", "label": "9949__MISS_COUNT"}
+  , {"addr": "0x420a73", "label": "9948__BOMB_COUNT"}
+  , {"addr": "0x420a83", "label": "9947__CAPTURE"}
+  , {"addr": "0x420a93", "label": "9946__ENM_CNT_REAL"}
+  , {"addr": "0x420aa6", "label": "9908__ENM_CNT"}
+  , {"addr": "0x420ab3", "label": "9945__SHOTTYPE"}
+  , {"addr": "0x420ac6", "label": "9944__DIST_PLAYER"}
+  , {"addr": "0x420b0f", "label": "9931__LAST_ENM_ID"}
+  , {"addr": "0x420b22", "label": "9930__POWER"}
+  , {"addr": "0x420b2f", "label": "9929__DS1"}
+  , {"addr": "0x420b42", "label": "9928__DS2"}
+  , {"addr": "0x420b55", "label": "9927__DS3"}
+  , {"addr": "0x420b74", "label": "9957__TRUE"}
+  , {"addr": "0x420b81", "label": "9943__BI0"}
+  , {"addr": "0x420be2", "label": "9985__I0"}
+  , {"addr": "0x420bf0", "label": "9942__BI1"}
+  , {"addr": "0x420c52", "label": "9984__I1"}
+  , {"addr": "0x420c60", "label": "9941__BI2"}
+  , {"addr": "0x420cc2", "label": "9983__I2"}
+  , {"addr": "0x420cd0", "label": "9940__BI3"}
+  , {"addr": "0x420d32", "label": "9982__I3"}
+  , {"addr": "0x420d40", "label": "9939__BF0"}
+  , {"addr": "0x420da4", "label": "9981__F0"}
+  , {"addr": "0x420db4", "label": "9938__BF1"}
+  , {"addr": "0x420e16", "label": "9980__F1"}
+  , {"addr": "0x420e26", "label": "9937__BF2"}
+  , {"addr": "0x420e91", "label": "9979__F2"}
+  , {"addr": "0x420ea1", "label": "9936__BF3"}
+  , {"addr": "0x420f04", "label": "9978__F3"}
+  , {"addr": "0x420f14", "label": "9911__ANGLE_BOSS"}
+  , {"addr": "0x420f66", "label": "9958__FINAL_ANGLE"}
+  , {"addr": "0x420f87", "label": "9910__SPEED_BOSS"}
+  , {"addr": "0x420ff1", "label": "9969__ABS_SPEED"}
+  , {"addr": "0x421001", "label": "9909__UNKNOWN9"}
+  , {"addr": "0x42100f", "label": "9897"}
+  , {"addr": "0x42101d", "label": "9896"}
+  , {"addr": "0x42102b", "label": "9895"}
+  , {"addr": "0x421039", "label": "9894"}
+  , {"addr": "0x421047", "label": "9935__F4"}
+  , {"addr": "0x421057", "label": "9934__F5"}
+  , {"addr": "0x421067", "label": "9933__F6"}
+  , {"addr": "0x421077", "label": "9932__F7"}
+  , {"addr": "0x421087", "label": "9926__GI0"}
+  , {"addr": "0x421097", "label": "9925__GI1"}
+  , {"addr": "0x4210a7", "label": "9924__GI2"}
+  , {"addr": "0x4210b7", "label": "9923__GI3"}
+  , {"addr": "0x4210c7", "label": "9922__GF0"}
+  , {"addr": "0x4210d9", "label": "9921__GF1"}
+  , {"addr": "0x4210eb", "label": "9920__GF2"}
+  , {"addr": "0x4210fd", "label": "9919__GF3"}
+  , {"addr": "0x42110f", "label": "9918__GF4"}
+  , {"addr": "0x421121", "label": "9917__GF5"}
+  , {"addr": "0x421133", "label": "9916__GF6"}
+  , {"addr": "0x421145", "label": "9915__GF7"}
+  , {"addr": "0x421157", "label": "9914__ID"}
+  , {"addr": "0x421165", "label": "9906__MIRROR"}
+  , {"addr": "0x421179", "label": "9903__SUBSEASON"}
+  , {"addr": "0x42118c", "label": "9902"}
+  , {"addr": "0x42119e", "label": "9901"}
+  , {"addr": "0x4211c6", "label": "9900"}
+  , {"addr": "0x42120e", "label": "9899"}
+  , {"addr": "0x42121c", "label": "9898"}
+  , {"addr": "0x42122a", "label": "-9998__multiple"}
   ]
-
 , "msg": 
-  [ ["0x426794", "26"]
-  , ["0x4267a0", "15__textLine1"]
-  , ["0x426802", "16__textLine2"]
-  , ["0x426864", "28__bubblePos"]
-  , ["0x42688b", "17__textAdd"]
-  , ["0x426ee5", "18__textClear"]
-  , ["0x426f5b", "1__playerShow"]
-  , ["0x426f87", "2__bossShow"]
-  , ["0x426fca", "31"]
-  , ["0x427004", "25__textOffsetY"]
-  , ["0x4270a5", "23__playerShake"]
-  , ["0x4270b4", "24__bossShake"]
-  , ["0x4270cd", "4__playerHide"]
-  , ["0x4270e3", "5__bossHide"]
-  , ["0x427111", "6__textboxHide"]
-  , ["0x42718d", "7__speakerPlayer"]
-  , ["0x427252", "8__speakerBoss"]
-  , ["0x427326", "32"]
-  , ["0x4273c9", "9__speakerNone"]
-  , ["0x427550", "10__skippable"]
-  , ["0x427568", "13__playerFace"]
-  , ["0x42757c", "14__bossFace"]
-  , ["0x427594", "11__textPause"]
-  , ["0x4276d5", "12__eclResume"]
-  , ["0x4276e4", "19__musicBoss"]
-  , ["0x4276f8", "20__intro"]
-  , ["0x42772d", "21__stageEnd"]
-  , ["0x427734", "22__musicEnd"]
-  , ["0x427753", "27__musicFade"]
-  , ["0x42775f", "29__bubbleType"]
-  , ["0x427776", "33__tutorial"]
-  , ["0x4277b0", "3__multiple"]
-  , ["0x4277da", "0__end"]
+  [ {"addr": "0x426794", "label": "26"}
+  , {"addr": "0x4267a0", "label": "15__textLine1"}
+  , {"addr": "0x426802", "label": "16__textLine2"}
+  , {"addr": "0x426864", "label": "28__bubblePos"}
+  , {"addr": "0x42688b", "label": "17__textAdd"}
+  , {"addr": "0x426ee5", "label": "18__textClear"}
+  , {"addr": "0x426f5b", "label": "1__playerShow"}
+  , {"addr": "0x426f87", "label": "2__bossShow"}
+  , {"addr": "0x426fca", "label": "31"}
+  , {"addr": "0x427004", "label": "25__textOffsetY"}
+  , {"addr": "0x4270a5", "label": "23__playerShake"}
+  , {"addr": "0x4270b4", "label": "24__bossShake"}
+  , {"addr": "0x4270cd", "label": "4__playerHide"}
+  , {"addr": "0x4270e3", "label": "5__bossHide"}
+  , {"addr": "0x427111", "label": "6__textboxHide"}
+  , {"addr": "0x42718d", "label": "7__speakerPlayer"}
+  , {"addr": "0x427252", "label": "8__speakerBoss"}
+  , {"addr": "0x427326", "label": "32"}
+  , {"addr": "0x4273c9", "label": "9__speakerNone"}
+  , {"addr": "0x427550", "label": "10__skippable"}
+  , {"addr": "0x427568", "label": "13__playerFace"}
+  , {"addr": "0x42757c", "label": "14__bossFace"}
+  , {"addr": "0x427594", "label": "11__textPause"}
+  , {"addr": "0x4276d5", "label": "12__eclResume"}
+  , {"addr": "0x4276e4", "label": "19__musicBoss"}
+  , {"addr": "0x4276f8", "label": "20__intro"}
+  , {"addr": "0x42772d", "label": "21__stageEnd"}
+  , {"addr": "0x427734", "label": "22__musicEnd"}
+  , {"addr": "0x427753", "label": "27__musicFade"}
+  , {"addr": "0x42775f", "label": "29__bubbleType"}
+  , {"addr": "0x427776", "label": "33__tutorial"}
+  , {"addr": "0x4277b0", "label": "3__multiple"}
+  , {"addr": "0x4277da", "label": "0__end"}
   ]
-
 , "anm": 
-  [ ["0x465b6b", "200__jmp"]
-  , ["0x465b8a", "201__jmpDec"]
-  , ["0x465c29", "6__wait"]
-  , ["0x465c66", "7"]
-  , ["0x465c89", "100__iset"]
-  , ["0x465cdf", "101__fset"]
-  , ["0x465d3b", "112__isetAdd"]
-  , ["0x465dbc", "113__fsetAdd"]
-  , ["0x465e4a", "114__isetSub"]
-  , ["0x465ecc", "115__fsetSub"]
-  , ["0x465f5a", "116__isetMul"]
-  , ["0x465fdd", "117__fsetMul"]
-  , ["0x46606b", "118__isetDiv"]
-  , ["0x4660ee", "119__fsetDiv"]
-  , ["0x46617c", "120__isetMod"]
-  , ["0x4661ff", "121__fsetMod"]
-  , ["0x4662af", "102__iadd"]
-  , ["0x466305", "103__fadd"]
-  , ["0x466365", "104__isub"]
-  , ["0x4663bb", "105__fsub"]
-  , ["0x46641b", "106__imul"]
-  , ["0x466474", "107__fmul"]
-  , ["0x4664d4", "108__idiv"]
-  , ["0x46652f", "109__fdiv"]
-  , ["0x46658f", "110__imod"]
-  , ["0x4665ea", "111__fmod"]
-  , ["0x46669f", "122__isetRand"]
-  , ["0x46670e", "123__fsetRand"]
-  , ["0x466777", "124__fsin"]
-  , ["0x4667e8", "125__fcos"]
-  , ["0x466859", "126__ftan"]
-  , ["0x4668ca", "127__facos"]
-  , ["0x46693b", "128__fatan"]
-  , ["0x4669ac", "129__validRad"]
-  , ["0x466a1d", "130__circlePos"]
-  , ["0x466ae7", "131__circlePosRand"]
-  , ["0x466bf1", "202__ije"]
-  , ["0x466c4e", "203__fje"]
-  , ["0x466cb7", "204__ijne"]
-  , ["0x466d14", "205__fjne"]
-  , ["0x466d7d", "206__ijl"]
-  , ["0x466dda", "207__fjl"]
-  , ["0x466e3b", "208__ijle"]
-  , ["0x466e98", "209__fjle"]
-  , ["0x466ef9", "210__ijg"]
-  , ["0x466f56", "211__fjg"]
-  , ["0x466fbb", "212__ijge"]
-  , ["0x467014", "213__fjge"]
-  , ["0x467087", "300__sprite"]
-  , ["0x46714a", "432"]
-  , ["0x467186", "500__scriptNew"]
-  , ["0x4671cd", "505__scriptNewPos"]
-  , ["0x467284", "502__scriptNewUI"]
-  , ["0x4672b7", "501__scriptNewFront"]
-  , ["0x4672ea", "503__scriptNewUIFront"]
-  , ["0x46731d", "509__copyVars"]
-  , ["0x467374", "506__scriptNewRootPos"]
-  , ["0x4673cd", "504__scriptNewRoot"]
-  , ["0x467414", "508__effectNew"]
-  , ["0x467450", "301__spriteRand"]
-  , ["0x46752e", "402__scale"]
-  , ["0x467587", "434__scale2"]
-  , ["0x4675e0", "429__zoomOut"]
-  , ["0x467639", "403__alpha"]
-  , ["0x46767d", "404__color"]
-  , ["0x4676e6", "405__alpha2"]
-  , ["0x46772a", "406__color2"]
-  , ["0x467793", "308__flipX"]
-  , ["0x4677c6", "309__flipY"]
-  , ["0x4677f9", "315__colorizeChildren"]
-  , ["0x467811", "316"]
-  , ["0x467829", "317"]
-  , ["0x467841", "401__rotate"]
-  , ["0x4678ba", "415__angleVel"]
-  , ["0x46794d", "416__scaleGrowth"]
-  , ["0x4679af", "417__alphaTime2"]
-  , ["0x4679f6", "303__blendMode"]
-  , ["0x467a1f", "400__pos"]
-  , ["0x467b78", "436__anchorOffset"]
-  , ["0x467bd0", "437__rotationMode"]
-  , ["0x467c08", "310"]
-  , ["0x467c2c", "421__anchor"]
-  , ["0x467c74", "425__scrollX"]
-  , ["0x467cb3", "426__scrollY"]
-  , ["0x467cf2", "305"]
-  , ["0x467d1b", "306"]
-  , ["0x467d44", "311__resampleMode"]
-  , ["0x467d5b", "407__posTime"]
-  , ["0x467ea7", "433"]
-  , ["0x467fba", "420__moveBezier"]
-  , ["0x4681e2", "408__colorTime"]
-  , ["0x4682c3", "409__alphaTime"]
-  , ["0x46832f", "413__color2Time"]
-  , ["0x468410", "414__alpha2Time"]
-  , ["0x46847c", "410__rotateTimeEx"]
-  , ["0x4685d1", "411__rotateTime"]
-  , ["0x46869a", "412__scaleTime"]
-  , ["0x468740", "435__scale2Time"]
-  , ["0x4687e6", "430__zoomOutTime"]
-  , ["0x46888c", "427__scrollXTime"]
-  , ["0x468919", "428__scrollYTime"]
-  , ["0x4689a6", "302__type"]
-  , ["0x4689ec", "422"]
-  , ["0x468a31", "600__texCircle"]
-  , ["0x468a86", "601__texArcEven"]
-  , ["0x468a98", "602__texArc"]
-  , ["0x468aaa", "609__texCylinder3D"]
-  , ["0x468b14", "610__texRing3D"]
-  , ["0x468b26", "418"]
-  , ["0x468ba6", "419"]
-  , ["0x468be2", "603__drawRect"]
-  , ["0x468c4a", "606__drawRectGrad"]
-  , ["0x468c5c", "607__drawRectShadow"]
-  , ["0x468c6e", "608__drawRectShadowGrad"]
-  , ["0x468c83", "613__drawLine"]
-  , ["0x468c98", "612__drawRectBorder"]
-  , ["0x468cad", "604__drawPoly"]
-  , ["0x468d12", "605__drawPolyBorder"]
-  , ["0x468d24", "611__drawRing"]
-  , ["0x468dad", "507"]
-  , ["0x468de9", "312__scrollMode"]
-  , ["0x468e54", "313__resolutionMode"]
-  , ["0x468e90", "314"]
-  , ["0x468ecc", "438__originMode"]
-  , ["0x468ee4", "431"]
-  , ["0x468ef9", "304__layer"]
-  , ["0x468f17", "423__colorMode"]
-  , ["0x468f41", "424__rotateAuto"]
-  , ["0x468f56", "307"]
-  , ["0x468f6f", "default"]
-  , ["0x468f80", "4"]
-  , ["0x468f87", "3__stop"]
-  , ["0x4690cc", "1__end"]
-  , ["0x4690e1", "2__static"]
+  [ {"addr": "0x465b6b", "label": "200__jmp"}
+  , {"addr": "0x465b8a", "label": "201__jmpDec"}
+  , {"addr": "0x465c29", "label": "6__wait"}
+  , {"addr": "0x465c66", "label": "7"}
+  , {"addr": "0x465c89", "label": "100__iset"}
+  , {"addr": "0x465cdf", "label": "101__fset"}
+  , {"addr": "0x465d3b", "label": "112__isetAdd"}
+  , {"addr": "0x465dbc", "label": "113__fsetAdd"}
+  , {"addr": "0x465e4a", "label": "114__isetSub"}
+  , {"addr": "0x465ecc", "label": "115__fsetSub"}
+  , {"addr": "0x465f5a", "label": "116__isetMul"}
+  , {"addr": "0x465fdd", "label": "117__fsetMul"}
+  , {"addr": "0x46606b", "label": "118__isetDiv"}
+  , {"addr": "0x4660ee", "label": "119__fsetDiv"}
+  , {"addr": "0x46617c", "label": "120__isetMod"}
+  , {"addr": "0x4661ff", "label": "121__fsetMod"}
+  , {"addr": "0x4662af", "label": "102__iadd"}
+  , {"addr": "0x466305", "label": "103__fadd"}
+  , {"addr": "0x466365", "label": "104__isub"}
+  , {"addr": "0x4663bb", "label": "105__fsub"}
+  , {"addr": "0x46641b", "label": "106__imul"}
+  , {"addr": "0x466474", "label": "107__fmul"}
+  , {"addr": "0x4664d4", "label": "108__idiv"}
+  , {"addr": "0x46652f", "label": "109__fdiv"}
+  , {"addr": "0x46658f", "label": "110__imod"}
+  , {"addr": "0x4665ea", "label": "111__fmod"}
+  , {"addr": "0x46669f", "label": "122__isetRand"}
+  , {"addr": "0x46670e", "label": "123__fsetRand"}
+  , {"addr": "0x466777", "label": "124__fsin"}
+  , {"addr": "0x4667e8", "label": "125__fcos"}
+  , {"addr": "0x466859", "label": "126__ftan"}
+  , {"addr": "0x4668ca", "label": "127__facos"}
+  , {"addr": "0x46693b", "label": "128__fatan"}
+  , {"addr": "0x4669ac", "label": "129__validRad"}
+  , {"addr": "0x466a1d", "label": "130__circlePos"}
+  , {"addr": "0x466ae7", "label": "131__circlePosRand"}
+  , {"addr": "0x466bf1", "label": "202__ije"}
+  , {"addr": "0x466c4e", "label": "203__fje"}
+  , {"addr": "0x466cb7", "label": "204__ijne"}
+  , {"addr": "0x466d14", "label": "205__fjne"}
+  , {"addr": "0x466d7d", "label": "206__ijl"}
+  , {"addr": "0x466dda", "label": "207__fjl"}
+  , {"addr": "0x466e3b", "label": "208__ijle"}
+  , {"addr": "0x466e98", "label": "209__fjle"}
+  , {"addr": "0x466ef9", "label": "210__ijg"}
+  , {"addr": "0x466f56", "label": "211__fjg"}
+  , {"addr": "0x466fbb", "label": "212__ijge"}
+  , {"addr": "0x467014", "label": "213__fjge"}
+  , {"addr": "0x467087", "label": "300__sprite"}
+  , {"addr": "0x46714a", "label": "432"}
+  , {"addr": "0x467186", "label": "500__scriptNew"}
+  , {"addr": "0x4671cd", "label": "505__scriptNewPos"}
+  , {"addr": "0x467284", "label": "502__scriptNewUI"}
+  , {"addr": "0x4672b7", "label": "501__scriptNewFront"}
+  , {"addr": "0x4672ea", "label": "503__scriptNewUIFront"}
+  , {"addr": "0x46731d", "label": "509__copyVars"}
+  , {"addr": "0x467374", "label": "506__scriptNewRootPos"}
+  , {"addr": "0x4673cd", "label": "504__scriptNewRoot"}
+  , {"addr": "0x467414", "label": "508__effectNew"}
+  , {"addr": "0x467450", "label": "301__spriteRand"}
+  , {"addr": "0x46752e", "label": "402__scale"}
+  , {"addr": "0x467587", "label": "434__scale2"}
+  , {"addr": "0x4675e0", "label": "429__zoomOut"}
+  , {"addr": "0x467639", "label": "403__alpha"}
+  , {"addr": "0x46767d", "label": "404__color"}
+  , {"addr": "0x4676e6", "label": "405__alpha2"}
+  , {"addr": "0x46772a", "label": "406__color2"}
+  , {"addr": "0x467793", "label": "308__flipX"}
+  , {"addr": "0x4677c6", "label": "309__flipY"}
+  , {"addr": "0x4677f9", "label": "315__colorizeChildren"}
+  , {"addr": "0x467811", "label": "316"}
+  , {"addr": "0x467829", "label": "317"}
+  , {"addr": "0x467841", "label": "401__rotate"}
+  , {"addr": "0x4678ba", "label": "415__angleVel"}
+  , {"addr": "0x46794d", "label": "416__scaleGrowth"}
+  , {"addr": "0x4679af", "label": "417__alphaTime2"}
+  , {"addr": "0x4679f6", "label": "303__blendMode"}
+  , {"addr": "0x467a1f", "label": "400__pos"}
+  , {"addr": "0x467b78", "label": "436__anchorOffset"}
+  , {"addr": "0x467bd0", "label": "437__rotationMode"}
+  , {"addr": "0x467c08", "label": "310"}
+  , {"addr": "0x467c2c", "label": "421__anchor"}
+  , {"addr": "0x467c74", "label": "425__scrollX"}
+  , {"addr": "0x467cb3", "label": "426__scrollY"}
+  , {"addr": "0x467cf2", "label": "305"}
+  , {"addr": "0x467d1b", "label": "306"}
+  , {"addr": "0x467d44", "label": "311__resampleMode"}
+  , {"addr": "0x467d5b", "label": "407__posTime"}
+  , {"addr": "0x467ea7", "label": "433"}
+  , {"addr": "0x467fba", "label": "420__moveBezier"}
+  , {"addr": "0x4681e2", "label": "408__colorTime"}
+  , {"addr": "0x4682c3", "label": "409__alphaTime"}
+  , {"addr": "0x46832f", "label": "413__color2Time"}
+  , {"addr": "0x468410", "label": "414__alpha2Time"}
+  , {"addr": "0x46847c", "label": "410__rotateTimeEx"}
+  , {"addr": "0x4685d1", "label": "411__rotateTime"}
+  , {"addr": "0x46869a", "label": "412__scaleTime"}
+  , {"addr": "0x468740", "label": "435__scale2Time"}
+  , {"addr": "0x4687e6", "label": "430__zoomOutTime"}
+  , {"addr": "0x46888c", "label": "427__scrollXTime"}
+  , {"addr": "0x468919", "label": "428__scrollYTime"}
+  , {"addr": "0x4689a6", "label": "302__type"}
+  , {"addr": "0x4689ec", "label": "422"}
+  , {"addr": "0x468a31", "label": "600__texCircle"}
+  , {"addr": "0x468a86", "label": "601__texArcEven"}
+  , {"addr": "0x468a98", "label": "602__texArc"}
+  , {"addr": "0x468aaa", "label": "609__texCylinder3D"}
+  , {"addr": "0x468b14", "label": "610__texRing3D"}
+  , {"addr": "0x468b26", "label": "418"}
+  , {"addr": "0x468ba6", "label": "419"}
+  , {"addr": "0x468be2", "label": "603__drawRect"}
+  , {"addr": "0x468c4a", "label": "606__drawRectGrad"}
+  , {"addr": "0x468c5c", "label": "607__drawRectShadow"}
+  , {"addr": "0x468c6e", "label": "608__drawRectShadowGrad"}
+  , {"addr": "0x468c83", "label": "613__drawLine"}
+  , {"addr": "0x468c98", "label": "612__drawRectBorder"}
+  , {"addr": "0x468cad", "label": "604__drawPoly"}
+  , {"addr": "0x468d12", "label": "605__drawPolyBorder"}
+  , {"addr": "0x468d24", "label": "611__drawRing"}
+  , {"addr": "0x468dad", "label": "507"}
+  , {"addr": "0x468de9", "label": "312__scrollMode"}
+  , {"addr": "0x468e54", "label": "313__resolutionMode"}
+  , {"addr": "0x468e90", "label": "314"}
+  , {"addr": "0x468ecc", "label": "438__originMode"}
+  , {"addr": "0x468ee4", "label": "431"}
+  , {"addr": "0x468ef9", "label": "304__layer"}
+  , {"addr": "0x468f17", "label": "423__colorMode"}
+  , {"addr": "0x468f41", "label": "424__rotateAuto"}
+  , {"addr": "0x468f56", "label": "307"}
+  , {"addr": "0x468f6f", "label": "default"}
+  , {"addr": "0x468f80", "label": "4"}
+  , {"addr": "0x468f87", "label": "3__stop"}
+  , {"addr": "0x4690cc", "label": "1__end"}
+  , {"addr": "0x4690e1", "label": "2__static"}
   ]
-
 }

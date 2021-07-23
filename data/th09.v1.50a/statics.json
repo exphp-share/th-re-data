@@ -1,32 +1,33 @@
-[ {"addr": "0x48e2a4", "name": "float(1)", "type": "float", "comment": null}
-, {"addr": "0x48e2a8", "name": "float(4294967300)", "type": "float", "comment": null}
-, {"addr": "0x48e314", "name": "float(0)", "type": "float", "comment": null}
-, {"addr": "0x48fb7c", "name": "float(2.3283064e-10)", "type": "float", "comment": null}
-, {"addr": "0x4a7d88", "name": "MATCH_MSG_FILE_1", "type": "struct zMsgRawHeader*", "comment": null}
-, {"addr": "0x4a7d8c", "name": "MATCH_MSG_FILE_2", "type": "struct zMsgRawHeader*", "comment": null}
-, {"addr": "0x4a7d90", "name": "GAME_MANAGER", "type": "struct zGameManager", "comment": null}
-, {"addr": "0x4a7e0c", "name": "EFFECT_SYS_PTR", "type": "struct zEffectSys*", "comment": null}
-, {"addr": "0x4a7e38", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
-, {"addr": "0x4a7e64", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
-, {"addr": "0x4a8120", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4a8140", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4ac8c0", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4ace0c", "name": "RNG", "type": "int16_t", "comment": null}
-, {"addr": "0x4acf34", "name": "INPUT_MANAGER", "type": "int16_t", "comment": null}
-, {"addr": "0x4acfc8", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
-, {"addr": "0x4ad018", "name": "UNUSED_DEBUG_THING", "type": "void", "comment": null}
-, {"addr": "0x4b30b0", "name": "WINDOW", "type": "int32_t", "comment": null}
-, {"addr": "0x4b3100", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
-, {"addr": "0x4b38b0", "name": "STATIC_VM_4b38b0", "type": "struct zAnmVm", "comment": null}
-, {"addr": "0x4b3b54", "name": "STATIC_VM_4b3b54", "type": "struct zAnmVm", "comment": null}
-, {"addr": "0x4b3df8", "name": "STATIC_VM_4b3df8", "type": "struct zAnmVm", "comment": null}
-, {"addr": "0x4b41b8", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
-, {"addr": "0x4b42d0", "name": "NETWORK_MANAGER_PTR", "type": "struct zNetworkManager*", "comment": null}
-, {"addr": "0x4ce438", "name": "ASCII_MANAGER_ON_DRAW_22", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4ce458", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
-, {"addr": "0x4dc504", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4dc524", "name": "ASCII_MANAGER_ON_DRAW_17", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4dc550", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x4dc558", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
-, {"addr": "0x4dc698", "name": "SOUND_MANAGER", "type": "void", "comment": null}
+
+[ {"addr": "0x48e2a4", "name": "float(1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x48e2a8", "name": "float(4294967300)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x48e314", "name": "float(0)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x48fb7c", "name": "float(2.3283064e-10)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4a7d88", "name": "MATCH_MSG_FILE_1", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMsgRawHeader"}}}
+, {"addr": "0x4a7d8c", "name": "MATCH_MSG_FILE_2", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMsgRawHeader"}}}
+, {"addr": "0x4a7d90", "name": "GAME_MANAGER", "type": {"is": "named", "name": "zGameManager"}}
+, {"addr": "0x4a7e0c", "name": "EFFECT_SYS_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEffectSys"}}}
+, {"addr": "0x4a7e38", "name": "GUI_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGui"}}}
+, {"addr": "0x4a7e64", "name": "REPLAY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayManager"}}}
+, {"addr": "0x4a8120", "name": "GAME_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4a8140", "name": "GAME_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4ac8c0", "name": "MAIN_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMainMenu"}}}
+, {"addr": "0x4ace0c", "name": "RNG", "type": {"is": "int", "signed": true, "size": 2}}
+, {"addr": "0x4acf34", "name": "INPUT_MANAGER", "type": {"is": "int", "signed": true, "size": 2}}
+, {"addr": "0x4acfc8", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "void"}}
+, {"addr": "0x4ad018", "name": "UNUSED_DEBUG_THING", "type": {"is": "void"}}
+, {"addr": "0x4b30b0", "name": "WINDOW", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4b3100", "name": "SUPERVISOR", "type": {"is": "named", "name": "zSupervisor"}}
+, {"addr": "0x4b38b0", "name": "STATIC_VM_4b38b0", "type": {"is": "named", "name": "zAnmVm"}}
+, {"addr": "0x4b3b54", "name": "STATIC_VM_4b3b54", "type": {"is": "named", "name": "zAnmVm"}}
+, {"addr": "0x4b3df8", "name": "STATIC_VM_4b3df8", "type": {"is": "named", "name": "zAnmVm"}}
+, {"addr": "0x4b41b8", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+, {"addr": "0x4b42d0", "name": "NETWORK_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zNetworkManager"}}}
+, {"addr": "0x4ce438", "name": "ASCII_MANAGER_ON_DRAW_22", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4ce458", "name": "ASCII_MANAGER", "type": {"is": "named", "name": "zAsciiManager"}}
+, {"addr": "0x4dc504", "name": "ASCII_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4dc524", "name": "ASCII_MANAGER_ON_DRAW_17", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4dc550", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}
+, {"addr": "0x4dc558", "name": "SPRITE_TEMP_BUFFER", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zRenderVertex144"}}}
+, {"addr": "0x4dc698", "name": "SOUND_MANAGER", "type": {"is": "void"}}
 ]

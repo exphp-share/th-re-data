@@ -1,421 +1,422 @@
-[ {"addr": "0x41baf2", "name": "float(4.0620843e-28)", "type": "float", "comment": null}
-, {"addr": "0x41d423", "name": "float(-3.2208192e-34)_1", "type": "float", "comment": null}
-, {"addr": "0x41d498", "name": "float(-7.863328e-38)", "type": "float", "comment": null}
-, {"addr": "0x41d880", "name": "float(-0.00019931947)", "type": "float", "comment": null}
-, {"addr": "0x422a9b", "name": "ecl_run_over_300__default", "type": "void", "comment": "default case"}
-, {"addr": "0x422ab8", "name": "ecl_run_over_300__jump_table", "type": "uint32_t[0xae]", "comment": null}
-, {"addr": "0x422d70", "name": "ecl_run_over_300__indirect_table", "type": "uint8_t[0x2be]", "comment": null}
-, {"addr": "0x423df4", "name": "ecl_get_int_global__jump_table", "type": "uint32_t[0x62]", "comment": null}
-, {"addr": "0x428edd", "name": "float(2.94846e-38)", "type": "float", "comment": null}
-, {"addr": "0x462cb8", "name": "anm_run_jumptable_1", "type": "uint32_t[0x35]", "comment": null}
-, {"addr": "0x462d8c", "name": "anm_run_jumptable_1_indirect", "type": "uint8_t[0xd7]", "comment": null}
-, {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": "uint32_t[0x51]", "comment": null}
-, {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": "uint8_t[0x139]", "comment": null}
-, {"addr": "0x463460", "name": "float(36879.95)", "type": "float", "comment": null}
-, {"addr": "0x46ee12", "name": "float(7.361264e-36)", "type": "float", "comment": null}
-, {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": "uint32_t[0x43]", "comment": null}
-, {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": "uint8_t[0x5e]", "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
-, {"addr": "0x48b2c0", "name": "LIFE_BEFORE_MAIN", "type": "void*[0x11]", "comment": null}
-, {"addr": "0x490eb0", "name": "__ptr_GAME_SPEED_MULT_FROM_ECL", "type": "float*", "comment": null}
-, {"addr": "0x490eb4", "name": "FUNCS_FOR_ECL_FLAG_EXT_DMG", "type": "void*[0x3]", "comment": null}
-, {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": "void*[0x3]", "comment": null}
-, {"addr": "0x4917c4", "name": "SCORE_EXTEND_QUOTAS_EXTRA", "type": "int32_t[0x6]", "comment": null}
-, {"addr": "0x4917e0", "name": "ITEM_PIV_AMOUNTS__ITEMS_8_TO_D", "type": "float[0x6]", "comment": null}
-, {"addr": "0x4917f8", "name": "ITEM_ANM_SCRIPT_IDS", "type": "struct zInt2[0x11]", "comment": null}
-, {"addr": "0x491880", "name": "SCORE_EXTEND_QUOTAS_STANDARD", "type": "int32_t[0xb]", "comment": null}
-, {"addr": "0x491980", "name": "SHT_FUNC_34_TABLE", "type": "void*[0x8]", "comment": null}
-, {"addr": "0x4919a0", "name": "SHT_FUNC_2c_TABLE", "type": "void*[0x8]", "comment": null}
-, {"addr": "0x4919c0", "name": "SHT_FUNC_28_TABLE", "type": "void*[0x8]", "comment": null}
-, {"addr": "0x4919e8", "name": "ANM_ON_TICK_CALLABLES", "type": "void*[0x5]", "comment": null}
-, {"addr": "0x491b0c", "name": "ANM_ON_SWITCH_FUNCS", "type": "void*[0x4]", "comment": null}
-, {"addr": "0x491b1c", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": "void*[0x4]", "comment": null}
-, {"addr": "0x491b2c", "name": "ANM_ON_DRAW_FUNCS", "type": "void*[0x7]", "comment": null}
-, {"addr": "0x491b48", "name": "ANM_ON_COPY_FUNC_1", "type": "void*[0x2]", "comment": null}
-, {"addr": "0x491b50", "name": "ANM_ON_COPY_FUNC_2", "type": "void*[0x2]", "comment": null}
-, {"addr": "0x491b58", "name": "ANM_ON_DELETE_FUNCS", "type": "void*[0x4]", "comment": null}
-, {"addr": "0x491c34", "name": "VTABLE_DELETE_THREAD", "type": "struct zVTableDelete", "comment": null}
-, {"addr": "0x491ce0", "name": "__ptr_leaf_409030", "type": "void*", "comment": null}
-, {"addr": "0x491d5c", "name": "VTABLE_BOMB_DOYOU", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491d78", "name": "VTABLE_BOMB_FALL", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491d94", "name": "VTABLE_BOMB_SUMMER", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491db0", "name": "VTABLE_BOMB_WINTER", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491dcc", "name": "VTABLE_BOMB_SPRING", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491de8", "name": "VTABLE_BOMB_AYA", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491e04", "name": "VTABLE_BOMB_CIRNO", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491e20", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491e3c", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491e58", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x491e70", "name": "RELEASE_LEVEL_DURATION_DOYOU", "type": "int32_t[0x7]", "comment": null}
-, {"addr": "0x491e8c", "name": "RELEASE_LEVEL_RADIUS_2_DOYOU", "type": "float[0x7]", "comment": null}
-, {"addr": "0x491eb0", "name": "RELEASE_LEVEL_RADIUS_DOYOU", "type": "float[0x7]", "comment": null}
-, {"addr": "0x491ed4", "name": "RELEASE_LEVEL_DURATION_FALL", "type": "int32_t[0x7]", "comment": null}
-, {"addr": "0x491ef0", "name": "RELEASE_LEVEL_RADIUS_2_FALL", "type": "float[0x7]", "comment": null}
-, {"addr": "0x491f14", "name": "RELEASE_LEVEL_RADIUS_FALL", "type": "float[0x7]", "comment": null}
-, {"addr": "0x491f38", "name": "RELEASE_LEVEL_DURATION_SUMMER", "type": "int32_t[0x7]", "comment": null}
-, {"addr": "0x491f54", "name": "RELEASE_LEVEL_RADIUS_SUMMER", "type": "float[0x7]", "comment": null}
-, {"addr": "0x491f78", "name": "RELEASE_LEVEL_DURATION_WINTER", "type": "int32_t[0x7]", "comment": null}
-, {"addr": "0x491f94", "name": "RELEASE_LEVEL_RADIUS_WINTER", "type": "float[0x7]", "comment": null}
-, {"addr": "0x491fb8", "name": "RELEASE_LEVEL_DURATION_SPRING", "type": "int32_t[0x7]", "comment": null}
-, {"addr": "0x491fd4", "name": "RELEASE_LEVEL_RADIUS_SPRING", "type": "float[0x7]", "comment": null}
-, {"addr": "0x492198", "name": "VTABLE_ENEMY_MANAGER", "type": "struct zVTableEnemyManager", "comment": null}
-, {"addr": "0x4921a8", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
-, {"addr": "0x4921c4", "name": "VTABLE_ECL_BASECLASS", "type": "struct zVTableEcl", "comment": null}
-, {"addr": "0x4921e0", "name": "vtable_4921e0", "type": "struct zVTableUnknown2", "comment": null}
-, {"addr": "0x4922e0", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": "This one is used by:\n- Curl up and die\n- Curvy satono"}
-, {"addr": "0x49234c", "name": "VTABLE_LASER_BEAM", "type": "struct zVTableLaser", "comment": "Not sure if this is used.\nA type of laser that can't be canceled."}
-, {"addr": "0x4923b8", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": "- Ex seven swords spell before they have a hitbox\n- Dark sarugaku"}
-, {"addr": "0x492424", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": "Straight lasers with shiny, tapered points at the ends.\n- Straight satono lasers\n- Ex seven swords spell lasers once they gain hitboxes\n- Stage 6 first spell lasers"}
-, {"addr": "0x492490", "name": "VTABLE_LASER_DEFAULT", "type": "struct zVTableLaser", "comment": null}
-, {"addr": "0x492c10", "name": "PLAYER_OPTION_ANM_SCRIPT_IDS_2", "type": "void", "comment": null}
-, {"addr": "0x492c20", "name": "PLAYER_DIRECTION_DEFS", "type": "struct zInt2[0x9]", "comment": null}
-, {"addr": "0x492c68", "name": "CHARACTER_ATTRACTBOX_FOCUSED_TABLE", "type": "float[0x4]", "comment": null}
-, {"addr": "0x492c78", "name": "CHARACTER_GRAZEBOX_SIZE_TABLE", "type": "float[0x4]", "comment": null}
-, {"addr": "0x492c88", "name": "CHARACTER_ATTRACTBOX_UNFOCUSED_TABLE", "type": "float[0x4]", "comment": null}
-, {"addr": "0x492c98", "name": "CHARACTER_HITBOX_SIZE_TABLE", "type": "float[0x4]", "comment": null}
-, {"addr": "0x492ca8", "name": "PLAYER_SHT_FILENAMES", "type": "char*[0x4]", "comment": null}
-, {"addr": "0x492cb8", "name": "SUB_SHT_FILENAMES", "type": "char*[0x5]", "comment": null}
-, {"addr": "0x492ccc", "name": "PLAYER_ANM_FILENAMES", "type": "char*[0x4]", "comment": null}
-, {"addr": "0x492cdc", "name": "SUB_ANM_FILENAMES", "type": "char*[0x5]", "comment": null}
-, {"addr": "0x493358", "name": "STRING_FULL_WIDTH_SPACE", "type": "char[0x3]", "comment": null}
-, {"addr": "0x493730", "name": "VTABLE_MAIN_MENU", "type": "struct zVTableMainMenu", "comment": null}
-, {"addr": "0x493768", "name": "vtable_493768", "type": "void*[0x9]", "comment": null}
-, {"addr": "0x493790", "name": "vtable_493790_baseclass", "type": "void*[0x8]", "comment": null}
-, {"addr": "0x4938f8", "name": "WINDOW TITLE", "type": "struct ShiftJis[0x36]", "comment": null}
-, {"addr": "0x4943c0", "name": "float(0)", "type": "float", "comment": null}
-, {"addr": "0x4943d0", "name": "float(2**-32)", "type": "float", "comment": null}
-, {"addr": "0x4943d4", "name": "float(2**-31)", "type": "float", "comment": null}
-, {"addr": "0x4943d8", "name": "float(1e-4)", "type": "float", "comment": null}
-, {"addr": "0x4943dc", "name": "float(1/2048)", "type": "float", "comment": null}
-, {"addr": "0x4943e0", "name": "float(0.0009765625)", "type": "float", "comment": null}
-, {"addr": "0x4943e4", "name": "float(1e-3)", "type": "float", "comment": null}
-, {"addr": "0x4943e8", "name": "float(0.001953125)", "type": "float", "comment": null}
-, {"addr": "0x4943ec", "name": "float(0.0026179939)", "type": "float", "comment": null}
-, {"addr": "0x4943f0", "name": "float(1/256)", "type": "float", "comment": null}
-, {"addr": "0x4943f4", "name": "float(1/128)", "type": "float", "comment": null}
-, {"addr": "0x4943f8", "name": "float(0.008333334)", "type": "float", "comment": null}
-, {"addr": "0x4943fc", "name": "float(0.01)", "type": "float", "comment": null}
-, {"addr": "0x494400", "name": "float(0.015625)", "type": "float", "comment": null}
-, {"addr": "0x494404", "name": "float(0.017453292)", "type": "float", "comment": null}
-, {"addr": "0x494408", "name": "float(0.025)", "type": "float", "comment": null}
-, {"addr": "0x49440c", "name": "float(0.03)", "type": "float", "comment": null}
-, {"addr": "0x494410", "name": "float(0.03125)", "type": "float", "comment": null}
-, {"addr": "0x494414", "name": "float(0.033333335)", "type": "float", "comment": null}
-, {"addr": "0x494418", "name": "float(0.03926991)", "type": "float", "comment": null}
-, {"addr": "0x49441c", "name": "float(0.040000003)", "type": "float", "comment": null}
-, {"addr": "0x494420", "name": "float(0.049087387)", "type": "float", "comment": null}
-, {"addr": "0x494424", "name": "float(0.05+eps)", "type": "float", "comment": null}
-, {"addr": "0x494428", "name": "float(0.0625)", "type": "float", "comment": null}
-, {"addr": "0x49442c", "name": "float(0.06666667)", "type": "float", "comment": null}
-, {"addr": "0x494430", "name": "float(0.08)", "type": "float", "comment": null}
-, {"addr": "0x494434", "name": "float(0.09817477)", "type": "float", "comment": null}
-, {"addr": "0x494438", "name": "float(0.1)", "type": "float", "comment": null}
-, {"addr": "0x49443c", "name": "float(0.10471976)", "type": "float", "comment": null}
-, {"addr": "0x494440", "name": "float(0.11034483)", "type": "float", "comment": null}
-, {"addr": "0x494444", "name": "float(0.11111111)", "type": "float", "comment": null}
-, {"addr": "0x494448", "name": "float(1/8)", "type": "float", "comment": null}
-, {"addr": "0x49444c", "name": "float(PI/18)", "type": "float", "comment": null}
-, {"addr": "0x494450", "name": "float(0.18367349)", "type": "float", "comment": null}
-, {"addr": "0x494454", "name": "float(0.19634955)", "type": "float", "comment": null}
-, {"addr": "0x494458", "name": "float(0.2)", "type": "float", "comment": null}
-, {"addr": "0x49445c", "name": "float(0.2026834)", "type": "float", "comment": null}
-, {"addr": "0x494460", "name": "float(0.25)", "type": "float", "comment": null}
-, {"addr": "0x494464", "name": "float(0.2617994)", "type": "float", "comment": null}
-, {"addr": "0x494468", "name": "float(0.28994083)", "type": "float", "comment": null}
-, {"addr": "0x49446c", "name": "float(0.3)", "type": "float", "comment": null}
-, {"addr": "0x494470", "name": "float(0.34906584)", "type": "float", "comment": null}
-, {"addr": "0x494474", "name": "float(0.35)", "type": "float", "comment": null}
-, {"addr": "0x494478", "name": "float(0.36)", "type": "float", "comment": null}
-, {"addr": "0x49447c", "name": "float(0.37565035)", "type": "float", "comment": null}
-, {"addr": "0x494480", "name": "float(0.38)", "type": "float", "comment": null}
-, {"addr": "0x494484", "name": "float(0.3844)", "type": "float", "comment": null}
-, {"addr": "0x494488", "name": "float(0.3926991)", "type": "float", "comment": null}
-, {"addr": "0x49448c", "name": "float(0.4)", "type": "float", "comment": null}
-, {"addr": "0x494490", "name": "float(0.42249995)", "type": "float", "comment": null}
-, {"addr": "0x494494", "name": "float(0.44444445)", "type": "float", "comment": null}
-, {"addr": "0x494498", "name": "float(0.48999998)", "type": "float", "comment": null}
-, {"addr": "0x49449c", "name": "float(0.5)", "type": "float", "comment": null}
-, {"addr": "0x4944a0", "name": "float(0.5555556)", "type": "float", "comment": null}
-, {"addr": "0x4944a4", "name": "float(0.5625)", "type": "float", "comment": null}
-, {"addr": "0x4944a8", "name": "float(0.62434965)", "type": "float", "comment": null}
-, {"addr": "0x4944ac", "name": "float(0.668424)", "type": "float", "comment": null}
-, {"addr": "0x4944b0", "name": "float(0.69813174)", "type": "float", "comment": null}
-, {"addr": "0x4944b4", "name": "float(0.7)", "type": "float", "comment": null}
-, {"addr": "0x4944b8", "name": "float(0.71005917)", "type": "float", "comment": null}
-, {"addr": "0x4944bc", "name": "float(0.75)", "type": "float", "comment": null}
-, {"addr": "0x4944c0", "name": "float(0.7853982)", "type": "float", "comment": null}
-, {"addr": "0x4944c4", "name": "float(0.8163265)", "type": "float", "comment": null}
-, {"addr": "0x4944c8", "name": "float(0.8888889)", "type": "float", "comment": null}
-, {"addr": "0x4944cc", "name": "float(0.9)", "type": "float", "comment": null}
-, {"addr": "0x4944d0", "name": "float(0.95)", "type": "float", "comment": null}
-, {"addr": "0x4944d4", "name": "float(0.99)", "type": "float", "comment": null}
-, {"addr": "0x4944d8", "name": "float(1)", "type": "float", "comment": null}
-, {"addr": "0x4944e8", "name": "float(1.01)", "type": "int32_t", "comment": null}
-, {"addr": "0x4944f0", "name": "double(0.013)", "type": "double", "comment": null}
-, {"addr": "0x4944f8", "name": "double(1/60)", "type": "double", "comment": null}
-, {"addr": "0x494500", "name": "double(0.0167)", "type": "double", "comment": null}
-, {"addr": "0x494508", "name": "double(0.019)", "type": "double", "comment": null}
-, {"addr": "0x494510", "name": "float(1.2)", "type": "float", "comment": null}
-, {"addr": "0x494518", "name": "float(0.05)", "type": "double", "comment": null}
-, {"addr": "0x494520", "name": "float(1.496)", "type": "float", "comment": null}
-, {"addr": "0x494524", "name": "float(1.5)", "type": "float", "comment": null}
-, {"addr": "0x494528", "name": "double(0.125)", "type": "double", "comment": null}
-, {"addr": "0x494530", "name": "float(0.5*(PI - 0.1))", "type": "float", "comment": null}
-, {"addr": "0x494534", "name": "float(0.5*PI)", "type": "float", "comment": null}
-, {"addr": "0x494538", "name": "float(0.5*(PI + 0.1))", "type": "float", "comment": null}
-, {"addr": "0x494558", "name": "float(2)", "type": "float", "comment": null}
-, {"addr": "0x494580", "name": "float(2.66666)", "type": "float", "comment": null}
-, {"addr": "0x494584", "name": "float(3)", "type": "float", "comment": null}
-, {"addr": "0x494588", "name": "float(PI)", "type": "float", "comment": null}
-, {"addr": "0x494590", "name": "double(60)", "type": "double", "comment": null}
-, {"addr": "0x494598", "name": "double(100)", "type": "double", "comment": null}
-, {"addr": "0x4945a0", "name": "float(3.6)", "type": "float", "comment": null}
-, {"addr": "0x4945a4", "name": "float(4)", "type": "float", "comment": null}
-, {"addr": "0x4945a8", "name": "double(1000)", "type": "double", "comment": null}
-, {"addr": "0x4945b0", "name": "float(5)", "type": "float", "comment": null}
-, {"addr": "0x4945b4", "name": "float(6)", "type": "float", "comment": null}
-, {"addr": "0x4945b8", "name": "float(2*PI)", "type": "float", "comment": null}
-, {"addr": "0x4945bc", "name": "float(7)", "type": "float", "comment": null}
-, {"addr": "0x4945c0", "name": "float(8)", "type": "float", "comment": null}
-, {"addr": "0x4945c4", "name": "float(9)", "type": "float", "comment": null}
-, {"addr": "0x4945c8", "name": "float(3*PI)", "type": "float", "comment": null}
-, {"addr": "0x4945cc", "name": "float(10)", "type": "float", "comment": null}
-, {"addr": "0x4945d0", "name": "float(11)", "type": "float", "comment": null}
-, {"addr": "0x4945d4", "name": "float(12)", "type": "float", "comment": null}
-, {"addr": "0x4945d8", "name": "float(14)", "type": "float", "comment": null}
-, {"addr": "0x4945dc", "name": "float(15)", "type": "float", "comment": null}
-, {"addr": "0x4945e0", "name": "float(16)", "type": "float", "comment": null}
-, {"addr": "0x4945e4", "name": "float(18)", "type": "float", "comment": null}
-, {"addr": "0x4945e8", "name": "float(20)", "type": "float", "comment": null}
-, {"addr": "0x4945ec", "name": "float(24)", "type": "float", "comment": null}
-, {"addr": "0x4945f0", "name": "float(26)", "type": "float", "comment": null}
-, {"addr": "0x4945f4", "name": "float(28)", "type": "float", "comment": null}
-, {"addr": "0x4945f8", "name": "float(30)", "type": "float", "comment": null}
-, {"addr": "0x4945fc", "name": "float(32)", "type": "float", "comment": null}
-, {"addr": "0x494600", "name": "float(36)", "type": "float", "comment": null}
-, {"addr": "0x494604", "name": "float(40)", "type": "float", "comment": null}
-, {"addr": "0x494608", "name": "float(44)", "type": "float", "comment": null}
-, {"addr": "0x49460c", "name": "float(48)", "type": "float", "comment": null}
-, {"addr": "0x494610", "name": "float(50)", "type": "float", "comment": null}
-, {"addr": "0x494614", "name": "float(56)", "type": "float", "comment": null}
-, {"addr": "0x494618", "name": "float(57)", "type": "float", "comment": null}
-, {"addr": "0x49461c", "name": "float(58)", "type": "float", "comment": null}
-, {"addr": "0x494620", "name": "float(60)", "type": "float", "comment": null}
-, {"addr": "0x494624", "name": "float(64)", "type": "float", "comment": null}
-, {"addr": "0x494628", "name": "float(65)", "type": "float", "comment": null}
-, {"addr": "0x49462c", "name": "float(70)", "type": "float", "comment": null}
-, {"addr": "0x494630", "name": "float(80)", "type": "float", "comment": null}
-, {"addr": "0x494634", "name": "float(96)", "type": "float", "comment": null}
-, {"addr": "0x494638", "name": "float(100)", "type": "float", "comment": null}
-, {"addr": "0x49463c", "name": "float(112)", "type": "float", "comment": null}
-, {"addr": "0x494640", "name": "float(118)", "type": "float", "comment": null}
-, {"addr": "0x494644", "name": "float(128)", "type": "float", "comment": null}
-, {"addr": "0x494648", "name": "float(150)", "type": "float", "comment": null}
-, {"addr": "0x49464c", "name": "float(158)", "type": "float", "comment": null}
-, {"addr": "0x494650", "name": "float(160)", "type": "float", "comment": null}
-, {"addr": "0x494654", "name": "float(176)", "type": "float", "comment": null}
-, {"addr": "0x494658", "name": "float(182)", "type": "float", "comment": null}
-, {"addr": "0x49465c", "name": "float(191)", "type": "float", "comment": null}
-, {"addr": "0x494660", "name": "float(192)", "type": "float", "comment": null}
-, {"addr": "0x494664", "name": "float(200)", "type": "float", "comment": null}
-, {"addr": "0x494668", "name": "float(204)", "type": "float", "comment": null}
-, {"addr": "0x49466c", "name": "float(212)", "type": "float", "comment": null}
-, {"addr": "0x494670", "name": "float(224)", "type": "float", "comment": null}
-, {"addr": "0x494674", "name": "float(226)", "type": "float", "comment": null}
-, {"addr": "0x494678", "name": "float(240)", "type": "float", "comment": null}
-, {"addr": "0x49467c", "name": "float(255)", "type": "float", "comment": null}
-, {"addr": "0x494680", "name": "float(256)", "type": "float", "comment": null}
-, {"addr": "0x494684", "name": "float(288)", "type": "float", "comment": null}
-, {"addr": "0x494688", "name": "float(290)", "type": "float", "comment": null}
-, {"addr": "0x49468c", "name": "float(300)", "type": "float", "comment": null}
-, {"addr": "0x494690", "name": "float(320)", "type": "float", "comment": null}
-, {"addr": "0x494694", "name": "float(352)", "type": "float", "comment": null}
-, {"addr": "0x494698", "name": "float(360)", "type": "float", "comment": null}
-, {"addr": "0x49469c", "name": "float(384)", "type": "float", "comment": null}
-, {"addr": "0x4946a0", "name": "float(392)", "type": "float", "comment": null}
-, {"addr": "0x4946a4", "name": "float(400)", "type": "float", "comment": null}
-, {"addr": "0x4946a8", "name": "float(408)", "type": "float", "comment": null}
-, {"addr": "0x4946ac", "name": "float(416)", "type": "float", "comment": null}
-, {"addr": "0x4946b0", "name": "float(448)", "type": "float", "comment": null}
-, {"addr": "0x4946b4", "name": "float(464)", "type": "float", "comment": null}
-, {"addr": "0x4946b8", "name": "float(472)", "type": "float", "comment": null}
-, {"addr": "0x4946bc", "name": "float(480)", "type": "float", "comment": null}
-, {"addr": "0x4946c0", "name": "float(512)", "type": "float", "comment": null}
-, {"addr": "0x4946c4", "name": "float(540)", "type": "float", "comment": null}
-, {"addr": "0x4946c8", "name": "float(576)", "type": "float", "comment": null}
-, {"addr": "0x4946cc", "name": "float(618)", "type": "float", "comment": null}
-, {"addr": "0x4946d0", "name": "float(620)", "type": "float", "comment": null}
-, {"addr": "0x4946d4", "name": "float(640)", "type": "float", "comment": null}
-, {"addr": "0x4946d8", "name": "float(990)", "type": "float", "comment": null}
-, {"addr": "0x4946dc", "name": "float(995)", "type": "float", "comment": null}
-, {"addr": "0x4946e0", "name": "float(999)", "type": "float", "comment": null}
-, {"addr": "0x4946e4", "name": "float(1000)", "type": "float", "comment": null}
-, {"addr": "0x4946e8", "name": "float(1024)", "type": "float", "comment": null}
-, {"addr": "0x4946ec", "name": "float(3072)", "type": "float", "comment": null}
-, {"addr": "0x4946f0", "name": "float(6400)", "type": "float", "comment": null}
-, {"addr": "0x4946f4", "name": "float(9216)", "type": "float", "comment": null}
-, {"addr": "0x4946f8", "name": "float(999990)", "type": "float", "comment": null}
-, {"addr": "0x4946fc", "name": "float(9999990)", "type": "float", "comment": null}
-, {"addr": "0x494700", "name": "float(2**32 / 2PI)", "type": "float", "comment": null}
-, {"addr": "0x494704", "name": "float(-0)", "type": "float", "comment": null}
-, {"addr": "0x494708", "name": "float(-0.01)", "type": "float", "comment": null}
-, {"addr": "0x49470c", "name": "float(-0.03)", "type": "float", "comment": null}
-, {"addr": "0x494710", "name": "float(-0.05)", "type": "float", "comment": null}
-, {"addr": "0x494714", "name": "float(-0.066666)", "type": "float", "comment": null}
-, {"addr": "0x494718", "name": "float(-0.1)", "type": "float", "comment": null}
-, {"addr": "0x49471c", "name": "float(-0.5)", "type": "float", "comment": null}
-, {"addr": "0x494720", "name": "float(-1)", "type": "float", "comment": null}
-, {"addr": "0x494724", "name": "float(-0.5*(PI-0.1))", "type": "float", "comment": null}
-, {"addr": "0x494728", "name": "float(-0.5*PI)", "type": "float", "comment": null}
-, {"addr": "0x49472c", "name": "float(-0.5*(PI+0.1))", "type": "float", "comment": null}
-, {"addr": "0x494730", "name": "float(-2)", "type": "float", "comment": null}
-, {"addr": "0x494734", "name": "float(-PI)", "type": "float", "comment": null}
-, {"addr": "0x494738", "name": "float(-4)", "type": "float", "comment": null}
-, {"addr": "0x49473c", "name": "float(-2*PI)", "type": "float", "comment": null}
-, {"addr": "0x494740", "name": "float(-8)", "type": "float", "comment": null}
-, {"addr": "0x494744", "name": "float(-10)", "type": "float", "comment": null}
-, {"addr": "0x494748", "name": "double(-999999)", "type": "double", "comment": null}
-, {"addr": "0x494750", "name": "float(-15)", "type": "float", "comment": null}
-, {"addr": "0x494754", "name": "float(-20)", "type": "float", "comment": null}
-, {"addr": "0x494758", "name": "float(-50)", "type": "float", "comment": null}
-, {"addr": "0x49475c", "name": "float(-64)", "type": "float", "comment": null}
-, {"addr": "0x494760", "name": "float(-100)", "type": "float", "comment": null}
-, {"addr": "0x494764", "name": "float(-128)", "type": "float", "comment": null}
-, {"addr": "0x494768", "name": "float(-160)", "type": "float", "comment": null}
-, {"addr": "0x49476c", "name": "float(-192)", "type": "float", "comment": null}
-, {"addr": "0x494770", "name": "float(-256)", "type": "float", "comment": null}
-, {"addr": "0x494774", "name": "float(-384)", "type": "float", "comment": null}
-, {"addr": "0x494778", "name": "float(-990)", "type": "float", "comment": null}
-, {"addr": "0x49477c", "name": "float(-998)", "type": "float", "comment": null}
-, {"addr": "0x494780", "name": "float(-999)", "type": "float", "comment": null}
-, {"addr": "0x494784", "name": "float(-5000)", "type": "float", "comment": null}
-, {"addr": "0x494788", "name": "float(-999990)", "type": "float", "comment": null}
-, {"addr": "0x494880", "name": "CONST_USED_FOR_FABS", "type": "int64_t", "comment": "ANDing this with a 32bit or 64bit floating point number\nwill produce its absolute value."}
-, {"addr": "0x4948a0", "name": "_128_BIT_CONSTANT_ALL_FFFF", "type": "int128_t", "comment": null}
-, {"addr": "0x49a0a0", "name": "__debug_directory_entries", "type": "struct Debug_Directory_Table[0x1]", "comment": null}
-, {"addr": "0x49a0c0", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
-, {"addr": "0x49a128", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
-, {"addr": "0x49ea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a2250", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x4]", "comment": null}
-, {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": "struct zFloat4[0x3]", "comment": null}
-, {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": "struct zFloat4[0x3]", "comment": null}
-, {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
-, {"addr": "0x4a50b0", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": "Internal representation of the keys currently held on the keyboard.\n\nUnlike INPUT, this updates even while the game is paused or on the main menu.  It includes keys like ESC, P, R, and Enter that are not tracked in replays."}
-, {"addr": "0x4a50b4", "name": "HARDWARE_INPUT_PREV", "type": "int32_t", "comment": null}
-, {"addr": "0x4a52c8", "name": "INPUT", "type": "int32_t", "comment": "Keys currently held in this frame of the game world.\n\nIn contrast to HARDWARE_INPUT, this does not include keys like Esc. During replays, this variable is read from the replay."}
-, {"addr": "0x4a52cc", "name": "INPUT_PREV", "type": "int32_t", "comment": null}
-, {"addr": "0x4a52d4", "name": "INPUT_RISING_EDGE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a52d8", "name": "INPUT_FALLING_EDGE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a52e4", "name": "CONST_4a52e4_ALL_FFFF", "type": "int16_t", "comment": null}
-, {"addr": "0x4a5788", "name": "GAME_SPEED", "type": "float", "comment": "Set by ECL to make final boss deaths more dramatic.\n\nAlso regularly modified by the game many, many, many times\nper frame in order to make different ANM/ECL objects\nperceive time differently.  Kinda scary how much code\nrelies on this single piece of mutable global state."}
-, {"addr": "0x4a5790", "name": "CUR_STAGE_NUM", "type": "int32_t", "comment": "=========================================\n=========================================\n=========================================\n=========================================\n\nThis field is the beginning of the replay saved globals.\nI don't want to annotate the type of the struct here because\nthen I won't be able to write comments anywhere."}
-, {"addr": "0x4a5794", "name": "WEIRD_CUR_STAGE_NUM_GLOBAL", "type": "int32_t", "comment": "This is set to a stage number while a stage is being loaded. For replays, this number gets set back to 1 shortly thereafter (but in other scenarios, the stage number is kept in both globals)"}
-, {"addr": "0x4a5798", "name": "CURRENT_CHAPTER", "type": "int32_t", "comment": "Set to different various numbers by ECL at various points\nin the stage (most notably the values 28 and 2b are often\ntested by the code)"}
-, {"addr": "0x4a579c", "name": "TIME_IN_STAGE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57a0", "name": "TIME_IN_CHAPTER__POSSIBLY_BROKEN", "type": "int32_t", "comment": "This is probably TIME_IN_CHAPTER, but I'm not sure if it actually gets\nzeroed out when a new chapter begins in TH16. (TODO: test)"}
-, {"addr": "0x4a57a4", "name": "CHARACTER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57a8", "name": "SUBSHOT__ZERO_IN_TH16", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57ac", "name": "SUBSEASON", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57b0", "name": "CURRENT_SCORE", "type": "int32_t", "comment": "Current score divided by 10"}
-, {"addr": "0x4a57b4", "name": "DIFFICULTY", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57b8", "name": "CONTINUES_USED", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57bc", "name": "RANK", "type": "int32_t", "comment": "Never written!"}
-, {"addr": "0x4a57c0", "name": "GRAZE", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57c4", "name": "GRAZE_IN_CHAPTER__POSSIBLY_BROKEN", "type": "int32_t", "comment": "I'm not sure if this gets zeroed out when a new chapter begins\nin TH16. (TODO: TEST)"}
-, {"addr": "0x4a57c8", "name": "SPELL_ID", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57cc", "name": "GLOBAL_MISS_COUNT", "type": "int32_t", "comment": "Probably added as a global ECL variable in LoLK for\nthe final boss' dialogue."}
-, {"addr": "0x4a57d4", "name": "NUM_POINT_ITEMS_COLLECTED", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57d8", "name": "CURRENT_PIV", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57dc", "name": "INITIAL_PIV", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57e0", "name": "MAXIMUM_PIV", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57e4", "name": "CURRENT_POWER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57e8", "name": "__CURRENT_POWER_COPY", "type": "int32_t", "comment": "This one is updated less frequently.\nIt may be the power at the beginning of the frame?"}
-, {"addr": "0x4a57ec", "name": "POWER_PER_LEVEL", "type": "int32_t", "comment": "Always 100.\nThis is the amount of power \"per level\". It exists because\nin SA, one of Marisa's shottypes could go up to level 8."}
-, {"addr": "0x4a57f4", "name": "CURRENT_LIVES", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57f8", "name": "CURRENT_LIFE_FRAGMENTS", "type": "int32_t", "comment": null}
-, {"addr": "0x4a57fc", "name": "NEXT_SCORE_EXTEND_INDEX", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5800", "name": "CURRENT_BOMBS", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5804", "name": "CURRENT_BOMB_FRAGMENTS", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5808", "name": "CURRENT_SEASON_POWER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a580c", "name": "MAX_SEASON_POWER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5810", "name": "SEASON_POWER_LEVEL_DELTAS", "type": "int32_t[0x7]", "comment": "=============\n============= offset 0x80\n============="}
-, {"addr": "0x4a583c", "name": "SEASON_POWER_LEVEL_REQUIREMENTS", "type": "int32_t[0x6]", "comment": null}
-, {"addr": "0x4a5854", "name": "MAX_SEASON_POWER_COPY", "type": "int32_t", "comment": null}
-, {"addr": "0x4a586c", "name": "DATA_4a586c_RELATED_TO_PIV_ITEMS__SEEMS_UNUSED", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5870", "name": "__LAST_POINT_OR_POWER_COLLECTED_POS", "type": "struct zFloat3", "comment": "Probably used by DDC to position the PoC bonus?\n"}
-, {"addr": "0x4a587c", "name": "__DDC_ITEM_SPAWN_COUNT", "type": "int32_t", "comment": "Presumably used to schedule guaranteed life pieces in DDC"}
-, {"addr": "0x4a5880", "name": "__LOLK_ENEMIES_SPAWNED_IN_CHAPTER", "type": "int32_t", "comment": "I'm not sure if these get reset to zero every chapter in HSiFS.\n(TODO: test)"}
-, {"addr": "0x4a5884", "name": "__LOLK_ENEMIES_DESTROYED_IN_CHAPTER", "type": "int32_t", "comment": null}
-, {"addr": "0x4a5888", "name": "music_filename", "type": "char[0x100]", "comment": null}
-, {"addr": "0x4a5bfc", "name": "CONTINUES_REMAINING", "type": "int32_t", "comment": null}
-, {"addr": "0x4a6be0", "name": "CRITICAL_SECTION_ARRAY", "type": "struct CRITICAL_SECTION[0xb]", "comment": null}
-, {"addr": "0x4a6d54", "name": "HEAP_4A6D54", "type": "HANDLE", "comment": null}
-, {"addr": "0x4a6d80", "name": "REPLAY_UNSAFE_RNG", "type": "struct zRng", "comment": null}
-, {"addr": "0x4a6d88", "name": "REPLAY_SAFE_RNG", "type": "struct zRng", "comment": null}
-, {"addr": "0x4a6d94", "name": "UPDATE_FUNC_REGISTRY", "type": "struct zUpdateFuncRegistry*", "comment": null}
-, {"addr": "0x4a6d98", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
-, {"addr": "0x4a6d9c", "name": "ANOTHER_STAGE_PTR???", "type": "struct zStage*", "comment": "All I know so far is that the same destructor is called on this pointer as the other stage pointer.\n\nMaybe this one exists for stage transitions."}
-, {"addr": "0x4a6da0", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
-, {"addr": "0x4a6da4", "name": "SUBSEASON_BOMB_PTR", "type": "struct zBomb*", "comment": null}
-, {"addr": "0x4a6da8", "name": "MAIN_BOMB_PTR", "type": "struct zBomb*", "comment": null}
-, {"addr": "0x4a6dac", "name": "BULLET_MANGER_PTR", "type": "struct zBulletManager*", "comment": null}
-, {"addr": "0x4a6db0", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
-, {"addr": "0x4a6db8", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": "This type has almost no responsibilities.  99% of code accessing it is only using it to get the AnmLoaded for effect.anm.\n\nIn TH15-17, it is 0x2020 bytes large and holds an array of Anm IDs.  I think this array holds IDs for player bullet splash animations, as well as enemy death, and possibly anything that uses anmPlay.  Why? I don't have a clue. At first I suspected that maybe it is to give these anms a chance to run special cleanup callbacks when the game is closed, but the TH16 destructor does not iterate over these ids...  (it just loops over all ANMs period, setting flags on everything from bullet.anm and effect.anm)\n\nPrior to TH15, things get even weirder.  This type did exist in TH13 and TH14, but it was only 0x2c bytes. In TH14, I found only a SINGLE function that uses this pointer for some purpose other than getting effect.anm.  I set a breakpoint on that function, and found that it was triggered every time a boss made one of those dark blobby spiral-in effects they do when teleporting or charging spells.\n\nThat function has paths that write to an array at this+0x1c, but TH14 never enters those paths.  So I have basically no clue at all why this type exists in TH14. a\n"}
-, {"addr": "0x4a6dbc", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
-, {"addr": "0x4a6dc0", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
-, {"addr": "0x4a6dc4", "name": "FUNCS_FOR_ECL_UNKNOWN_634", "type": "void*[0x1]", "comment": null}
-, {"addr": "0x4a6dc8", "name": "FPS_COUNTER_PTR", "type": "struct zFpsCounter*", "comment": null}
-, {"addr": "0x4a6dcc", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
-, {"addr": "0x4a6dd4", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
-, {"addr": "0x4a6dd8", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
-, {"addr": "0x4a6ddc", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
-, {"addr": "0x4a6de0", "name": "CURRENT_REPLAY_FILENAME", "type": "char[0x100]", "comment": null}
-, {"addr": "0x4a6ee0", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
-, {"addr": "0x4a6ee4", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
-, {"addr": "0x4a6ef4", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
-, {"addr": "0x4a6ef8", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
-, {"addr": "0x4a6efc", "name": "CACHED_PLAYER_SUBSEASON_SHT_FILE", "type": "struct zShtRawFile*", "comment": null}
-, {"addr": "0x4a6f00", "name": "CACHED_PLAYER_SHT_FILE", "type": "struct zShtRawFile*", "comment": null}
-, {"addr": "0x4a6f04", "name": "SHT_SHOOTER_30_TABLE", "type": "void", "comment": null}
-, {"addr": "0x4a6f08", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
-, {"addr": "0x4a6f0c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4a6f10", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
-, {"addr": "0x4a6f20", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4c0f44", "name": "ANM_ON_WAIT_FUNCS", "type": "void*[0x1]", "comment": null}
-, {"addr": "0x4c0f48", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x4c0f58", "name": "CRIT_SECTION__UPDATE_FUNC_REGISTRY", "type": "struct CRITICAL_SECTION", "comment": "This critical section serializes all access to the UpdateFuncRegistry.\n\n"}
-, {"addr": "0x4c0f88", "name": "CRIT_SECTION_V", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c0fa0", "name": "CRIT_SECTION_R", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c0fd0", "name": "CRIT_SECTION_Z", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c0fe8", "name": "CRIT_SECTION_U", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c1030", "name": "CRIT_SECTION_X", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c1048", "name": "CRIT_SECTION_W", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c1060", "name": "CRIT_SECTION_SOUND", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c1078", "name": "CRIT_SECTION_T", "type": "struct CRITICAL_SECTION", "comment": null}
-, {"addr": "0x4c10b8", "name": "ARCFILE_4c10b8", "type": "struct zArcFile", "comment": null}
-, {"addr": "0x4c10d0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
-, {"addr": "0x4c1b0c", "name": "BACKGROUND_COLOR", "type": "struct D3DCOLOR", "comment": null}
-, {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": "struct zPlayerInner", "comment": null}
-, {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": "struct zArcFile[0x14]", "comment": null}
-, {"addr": "0x4d7ce0", "name": "WINDOW", "type": "HWND", "comment": null}
-, {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": "int32_t", "comment": null}
-, {"addr": "0x4d7d04", "name": "INITIAL_PERFORMANCE_COUNTER", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d10", "name": "SYSPARAM_SCREEN_SAVE_ACTIVE", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d14", "name": "SYSPARAM_LOW_POWER_ACTIVE", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d18", "name": "SYSPARAM_POWER_OFF_ACTIVE", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d2c", "name": "RESOLUTION_X", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d30", "name": "RESOLUTION_Y", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d34", "name": "SCREEN_COORD_SCALE", "type": "float", "comment": "This is set to 1.0, 1.5, or 2.0 depending on the selected resolution.\nIt causes all drawn things to be scaled by that factor;\narcade region, ui, and all."}
-, {"addr": "0x4d9d38", "name": "EARLY_RENDERING_ARCADE_OFFSET_X", "type": "int32_t", "comment": "These two integers are the position of the top left coordinate\nof the arcade region inside the temporary \"@R\" surfaces used\nfor the first three stages of rendering (prior to resolution\nupscaling of the arcade region).\n\nThis region is always rendered at the default resolution\n(so it is always 384x448 during these stages), but it is\nplaced centered in a surface that is as large as the full\nwindow.  Therefore, the expression for them is:\n\n0.5 * (SCALED window size\n       - UNSCALED arcade region size)\n"}
-, {"addr": "0x4d9d3c", "name": "EARLY_RENDERING_ARCADE_OFFSET_Y", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d40", "name": "ARCADE_HEIGHT", "type": "int32_t", "comment": "These hold the dimensions of the \"arcade\" region of the\nscreen (the portion that contains displays the game world).\n\nFor a 640x480 game window, the arcade region is 384x448.\nAt any given point in time, these variables either hold\nthose exact values (448, 384), or they hold numbers that\nare scaled according to the current resolution.\n\n(the game rapidly switches between scaled and unscaled\n values multiple times in each frame)"}
-, {"addr": "0x4d9d44", "name": "ARCADE_WIDTH", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d48", "name": "ARCADE_HUD_ORIGIN_X", "type": "int32_t", "comment": "This is 1/2 of the current window width, scaled to the\ncurrent resolution.  (so depending on res, it is 320,\n480, or 640).\n\nIt is used to position things that are drawn at full\nresolution inside the arcade region (usually HUD elements,\nespecially text). This includes:\n + Boss name and stars (but not spell info or boss timer,\n   which actually live outside the arcade surface)\n + Music title, season gauge\n + Boss HP circle gauge\n + \"Item Get Border Line\""}
-, {"addr": "0x4d9d4c", "name": "ARCADE_HUD_ORIGIN_Y", "type": "int32_t", "comment": "Number of pixels from top of the window drawing surface to\nthe top of the arcade screen, scaled for resolution.\n(so depending on res, it is either 16, 24, or 32)"}
-, {"addr": "0x4d9d50", "name": "GAME_2D_ORIGIN_X", "type": "int32_t", "comment": "This vector is EARLY_RENDERING_ARCADE_OFFSET with 192 added\nto x to provide the location of (0,0) in game space.\n\nBasically it is used to position elements in the arcade region\nthat are always drawn at 640x480.  These are:\n\n  - The player and enemies (but not the boss HP bar)\n  - Danmaku and items\n  - Decorative spell backgrounds (but not the 3d stage BG)\n"}
-, {"addr": "0x4d9d54", "name": "GAME_2D_ORIGIN_Y", "type": "int32_t", "comment": null}
-, {"addr": "0x4d9d58", "name": "TOTAL_APPLICATION_RUNTIME", "type": "double[0x3]", "comment": "All three of these appear to be the total time in seconds\nsince the EXE was started (including time spent on the\n\"choose resolution\" dialog; though these variables only\nstart getting written once you get past that dialog).\n\nThe first two appear to be rounded to 7 places after the\ndecimal point and are usually nearly equal, while the\nthird one tends to be slightly larger and is not as\nharshly rounded."}
-, {"addr": "0x4d9dc4", "name": "SEEMINGLY_CONST_ZERO_VEC_4d9dc4", "type": "struct zFloat3", "comment": null}
-, {"addr": "0x4d9e10", "name": "SOUND_MANAGER", "type": "int32_t", "comment": null}
-, {"addr": "0x4df830", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
-, {"addr": "0x4dfb4c", "name": "MUTEX_Touhou12App", "type": "HANDLE", "comment": null}
+
+[ {"addr": "0x41baf2", "name": "float(4.0620843e-28)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x41d423", "name": "float(-3.2208192e-34)_1", "type": {"is": "float", "size": 4}}
+, {"addr": "0x41d498", "name": "float(-7.863328e-38)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x41d880", "name": "float(-0.00019931947)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x422a9b", "name": "ecl_run_over_300__default", "type": {"is": "void"}, "comment": "default case"}
+, {"addr": "0x422ab8", "name": "ecl_run_over_300__jump_table", "type": {"is": "array", "len": 174, "inner": {"is": "int", "signed": false, "size": 4}}}
+, {"addr": "0x422d70", "name": "ecl_run_over_300__indirect_table", "type": {"is": "array", "len": 702, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x423df4", "name": "ecl_get_int_global__jump_table", "type": {"is": "array", "len": 98, "inner": {"is": "int", "signed": false, "size": 4}}}
+, {"addr": "0x428edd", "name": "float(2.94846e-38)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x462cb8", "name": "anm_run_jumptable_1", "type": {"is": "array", "len": 53, "inner": {"is": "int", "signed": false, "size": 4}}}
+, {"addr": "0x462d8c", "name": "anm_run_jumptable_1_indirect", "type": {"is": "array", "len": 215, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x462e64", "name": "anm_run_jumptable_2", "type": {"is": "array", "len": 81, "inner": {"is": "int", "signed": false, "size": 4}}}
+, {"addr": "0x462fa8", "name": "anm_run_jumptable_2_indirect", "type": {"is": "array", "len": 313, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x463460", "name": "float(36879.95)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46ee12", "name": "float(7.361264e-36)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x473a4c", "name": "ecl_run_under_300__jump_table", "type": {"is": "array", "len": 67, "inner": {"is": "int", "signed": false, "size": 4}}}
+, {"addr": "0x473b58", "name": "ecl_run_under_300__indirect_table", "type": {"is": "array", "len": 94, "inner": {"is": "int", "signed": false, "size": 1}}, "comment": "This maps ECL instruction number to the switch case,\nfor numbers under 300.\n"}
+, {"addr": "0x48b2c0", "name": "LIFE_BEFORE_MAIN", "type": {"is": "array", "len": 17, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x490eb0", "name": "__ptr_GAME_SPEED_MULT_FROM_ECL", "type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x490eb4", "name": "FUNCS_FOR_ECL_FLAG_EXT_DMG", "type": {"is": "array", "len": 3, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4917b8", "name": "FUNCS_FOR_ECL_FUNC_SET", "type": {"is": "array", "len": 3, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4917c4", "name": "SCORE_EXTEND_QUOTAS_EXTRA", "type": {"is": "array", "len": 6, "inner": {"is": "int", "signed": true, "size": 4}}}
+, {"addr": "0x4917e0", "name": "ITEM_PIV_AMOUNTS__ITEMS_8_TO_D", "type": {"is": "array", "len": 6, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x4917f8", "name": "ITEM_ANM_SCRIPT_IDS", "type": {"is": "array", "len": 17, "inner": {"is": "named", "name": "zInt2"}}}
+, {"addr": "0x491880", "name": "SCORE_EXTEND_QUOTAS_STANDARD", "type": {"is": "array", "len": 11, "inner": {"is": "int", "signed": true, "size": 4}}}
+, {"addr": "0x491980", "name": "SHT_FUNC_34_TABLE", "type": {"is": "array", "len": 8, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4919a0", "name": "SHT_FUNC_2c_TABLE", "type": {"is": "array", "len": 8, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4919c0", "name": "SHT_FUNC_28_TABLE", "type": {"is": "array", "len": 8, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4919e8", "name": "ANM_ON_TICK_CALLABLES", "type": {"is": "array", "len": 5, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x491b0c", "name": "ANM_ON_SWITCH_FUNCS", "type": {"is": "array", "len": 4, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x491b1c", "name": "ANM_ON_SPRITE_SET_FUNCS", "type": {"is": "array", "len": 4, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x491b2c", "name": "ANM_ON_DRAW_FUNCS", "type": {"is": "array", "len": 7, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x491b48", "name": "ANM_ON_COPY_FUNC_1", "type": {"is": "array", "len": 2, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x491b50", "name": "ANM_ON_COPY_FUNC_2", "type": {"is": "array", "len": 2, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x491b58", "name": "ANM_ON_DELETE_FUNCS", "type": {"is": "array", "len": 4, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x491c34", "name": "VTABLE_DELETE_THREAD", "type": {"is": "named", "name": "zVTableDelete"}}
+, {"addr": "0x491ce0", "name": "__ptr_leaf_409030", "type": {"is": "ptr", "inner": {"is": "void"}}}
+, {"addr": "0x491d5c", "name": "VTABLE_BOMB_DOYOU", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491d78", "name": "VTABLE_BOMB_FALL", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491d94", "name": "VTABLE_BOMB_SUMMER", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491db0", "name": "VTABLE_BOMB_WINTER", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491dcc", "name": "VTABLE_BOMB_SPRING", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491de8", "name": "VTABLE_BOMB_AYA", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491e04", "name": "VTABLE_BOMB_CIRNO", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491e20", "name": "VTABLE_BOMB_MARISA", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491e3c", "name": "VTABLE_BOMB_REIMU", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491e58", "name": "VTABLE_BOMB_DEFAULT", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x491e70", "name": "RELEASE_LEVEL_DURATION_DOYOU", "type": {"is": "array", "len": 7, "inner": {"is": "int", "signed": true, "size": 4}}}
+, {"addr": "0x491e8c", "name": "RELEASE_LEVEL_RADIUS_2_DOYOU", "type": {"is": "array", "len": 7, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x491eb0", "name": "RELEASE_LEVEL_RADIUS_DOYOU", "type": {"is": "array", "len": 7, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x491ed4", "name": "RELEASE_LEVEL_DURATION_FALL", "type": {"is": "array", "len": 7, "inner": {"is": "int", "signed": true, "size": 4}}}
+, {"addr": "0x491ef0", "name": "RELEASE_LEVEL_RADIUS_2_FALL", "type": {"is": "array", "len": 7, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x491f14", "name": "RELEASE_LEVEL_RADIUS_FALL", "type": {"is": "array", "len": 7, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x491f38", "name": "RELEASE_LEVEL_DURATION_SUMMER", "type": {"is": "array", "len": 7, "inner": {"is": "int", "signed": true, "size": 4}}}
+, {"addr": "0x491f54", "name": "RELEASE_LEVEL_RADIUS_SUMMER", "type": {"is": "array", "len": 7, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x491f78", "name": "RELEASE_LEVEL_DURATION_WINTER", "type": {"is": "array", "len": 7, "inner": {"is": "int", "signed": true, "size": 4}}}
+, {"addr": "0x491f94", "name": "RELEASE_LEVEL_RADIUS_WINTER", "type": {"is": "array", "len": 7, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x491fb8", "name": "RELEASE_LEVEL_DURATION_SPRING", "type": {"is": "array", "len": 7, "inner": {"is": "int", "signed": true, "size": 4}}}
+, {"addr": "0x491fd4", "name": "RELEASE_LEVEL_RADIUS_SPRING", "type": {"is": "array", "len": 7, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x492198", "name": "VTABLE_ENEMY_MANAGER", "type": {"is": "named", "name": "zVTableEnemyManager"}}
+, {"addr": "0x4921a8", "name": "VTABLE_ECL_ENEMY_FULL", "type": {"is": "named", "name": "zVTableEcl"}}
+, {"addr": "0x4921c4", "name": "VTABLE_ECL_BASECLASS", "type": {"is": "named", "name": "zVTableEcl"}}
+, {"addr": "0x4921e0", "name": "vtable_4921e0", "type": {"is": "named", "name": "zVTableUnknown2"}}
+, {"addr": "0x4922e0", "name": "VTABLE_LASER_CURVE", "type": {"is": "named", "name": "zVTableLaser"}, "comment": "This one is used by:\n- Curl up and die\n- Curvy satono"}
+, {"addr": "0x49234c", "name": "VTABLE_LASER_BEAM", "type": {"is": "named", "name": "zVTableLaser"}, "comment": "Not sure if this is used.\nA type of laser that can't be canceled."}
+, {"addr": "0x4923b8", "name": "VTABLE_LASER_INFINITE", "type": {"is": "named", "name": "zVTableLaser"}, "comment": "- Ex seven swords spell before they have a hitbox\n- Dark sarugaku"}
+, {"addr": "0x492424", "name": "VTABLE_LASER_LINE", "type": {"is": "named", "name": "zVTableLaser"}, "comment": "Straight lasers with shiny, tapered points at the ends.\n- Straight satono lasers\n- Ex seven swords spell lasers once they gain hitboxes\n- Stage 6 first spell lasers"}
+, {"addr": "0x492490", "name": "VTABLE_LASER_DEFAULT", "type": {"is": "named", "name": "zVTableLaser"}}
+, {"addr": "0x492c10", "name": "PLAYER_OPTION_ANM_SCRIPT_IDS_2", "type": {"is": "void"}}
+, {"addr": "0x492c20", "name": "PLAYER_DIRECTION_DEFS", "type": {"is": "array", "len": 9, "inner": {"is": "named", "name": "zInt2"}}}
+, {"addr": "0x492c68", "name": "CHARACTER_ATTRACTBOX_FOCUSED_TABLE", "type": {"is": "array", "len": 4, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x492c78", "name": "CHARACTER_GRAZEBOX_SIZE_TABLE", "type": {"is": "array", "len": 4, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x492c88", "name": "CHARACTER_ATTRACTBOX_UNFOCUSED_TABLE", "type": {"is": "array", "len": 4, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x492c98", "name": "CHARACTER_HITBOX_SIZE_TABLE", "type": {"is": "array", "len": 4, "inner": {"is": "float", "size": 4}}}
+, {"addr": "0x492ca8", "name": "PLAYER_SHT_FILENAMES", "type": {"is": "array", "len": 4, "inner": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}}
+, {"addr": "0x492cb8", "name": "SUB_SHT_FILENAMES", "type": {"is": "array", "len": 5, "inner": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}}
+, {"addr": "0x492ccc", "name": "PLAYER_ANM_FILENAMES", "type": {"is": "array", "len": 4, "inner": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}}
+, {"addr": "0x492cdc", "name": "SUB_ANM_FILENAMES", "type": {"is": "array", "len": 5, "inner": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}}
+, {"addr": "0x493358", "name": "STRING_FULL_WIDTH_SPACE", "type": {"is": "array", "len": 3, "inner": {"is": "int", "signed": true, "size": 1}}}
+, {"addr": "0x493730", "name": "VTABLE_MAIN_MENU", "type": {"is": "named", "name": "zVTableMainMenu"}}
+, {"addr": "0x493768", "name": "vtable_493768", "type": {"is": "array", "len": 9, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x493790", "name": "vtable_493790_baseclass", "type": {"is": "array", "len": 8, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4938f8", "name": "WINDOW TITLE", "type": {"is": "array", "len": 54, "inner": {"is": "named", "name": "ShiftJis"}}}
+, {"addr": "0x4943c0", "name": "float(0)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943d0", "name": "float(2**-32)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943d4", "name": "float(2**-31)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943d8", "name": "float(1e-4)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943dc", "name": "float(1/2048)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943e0", "name": "float(0.0009765625)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943e4", "name": "float(1e-3)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943e8", "name": "float(0.001953125)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943ec", "name": "float(0.0026179939)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943f0", "name": "float(1/256)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943f4", "name": "float(1/128)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943f8", "name": "float(0.008333334)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4943fc", "name": "float(0.01)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494400", "name": "float(0.015625)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494404", "name": "float(0.017453292)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494408", "name": "float(0.025)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49440c", "name": "float(0.03)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494410", "name": "float(0.03125)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494414", "name": "float(0.033333335)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494418", "name": "float(0.03926991)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49441c", "name": "float(0.040000003)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494420", "name": "float(0.049087387)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494424", "name": "float(0.05+eps)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494428", "name": "float(0.0625)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49442c", "name": "float(0.06666667)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494430", "name": "float(0.08)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494434", "name": "float(0.09817477)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494438", "name": "float(0.1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49443c", "name": "float(0.10471976)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494440", "name": "float(0.11034483)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494444", "name": "float(0.11111111)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494448", "name": "float(1/8)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49444c", "name": "float(PI/18)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494450", "name": "float(0.18367349)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494454", "name": "float(0.19634955)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494458", "name": "float(0.2)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49445c", "name": "float(0.2026834)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494460", "name": "float(0.25)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494464", "name": "float(0.2617994)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494468", "name": "float(0.28994083)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49446c", "name": "float(0.3)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494470", "name": "float(0.34906584)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494474", "name": "float(0.35)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494478", "name": "float(0.36)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49447c", "name": "float(0.37565035)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494480", "name": "float(0.38)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494484", "name": "float(0.3844)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494488", "name": "float(0.3926991)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49448c", "name": "float(0.4)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494490", "name": "float(0.42249995)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494494", "name": "float(0.44444445)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494498", "name": "float(0.48999998)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49449c", "name": "float(0.5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944a0", "name": "float(0.5555556)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944a4", "name": "float(0.5625)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944a8", "name": "float(0.62434965)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944ac", "name": "float(0.668424)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944b0", "name": "float(0.69813174)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944b4", "name": "float(0.7)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944b8", "name": "float(0.71005917)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944bc", "name": "float(0.75)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944c0", "name": "float(0.7853982)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944c4", "name": "float(0.8163265)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944c8", "name": "float(0.8888889)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944cc", "name": "float(0.9)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944d0", "name": "float(0.95)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944d4", "name": "float(0.99)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944d8", "name": "float(1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4944e8", "name": "float(1.01)", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4944f0", "name": "double(0.013)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x4944f8", "name": "double(1/60)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x494500", "name": "double(0.0167)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x494508", "name": "double(0.019)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x494510", "name": "float(1.2)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494518", "name": "float(0.05)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x494520", "name": "float(1.496)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494524", "name": "float(1.5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494528", "name": "double(0.125)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x494530", "name": "float(0.5*(PI - 0.1))", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494534", "name": "float(0.5*PI)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494538", "name": "float(0.5*(PI + 0.1))", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494558", "name": "float(2)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494580", "name": "float(2.66666)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494584", "name": "float(3)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494588", "name": "float(PI)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494590", "name": "double(60)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x494598", "name": "double(100)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x4945a0", "name": "float(3.6)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945a4", "name": "float(4)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945a8", "name": "double(1000)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x4945b0", "name": "float(5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945b4", "name": "float(6)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945b8", "name": "float(2*PI)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945bc", "name": "float(7)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945c0", "name": "float(8)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945c4", "name": "float(9)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945c8", "name": "float(3*PI)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945cc", "name": "float(10)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945d0", "name": "float(11)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945d4", "name": "float(12)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945d8", "name": "float(14)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945dc", "name": "float(15)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945e0", "name": "float(16)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945e4", "name": "float(18)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945e8", "name": "float(20)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945ec", "name": "float(24)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945f0", "name": "float(26)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945f4", "name": "float(28)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945f8", "name": "float(30)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4945fc", "name": "float(32)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494600", "name": "float(36)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494604", "name": "float(40)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494608", "name": "float(44)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49460c", "name": "float(48)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494610", "name": "float(50)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494614", "name": "float(56)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494618", "name": "float(57)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49461c", "name": "float(58)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494620", "name": "float(60)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494624", "name": "float(64)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494628", "name": "float(65)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49462c", "name": "float(70)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494630", "name": "float(80)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494634", "name": "float(96)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494638", "name": "float(100)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49463c", "name": "float(112)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494640", "name": "float(118)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494644", "name": "float(128)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494648", "name": "float(150)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49464c", "name": "float(158)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494650", "name": "float(160)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494654", "name": "float(176)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494658", "name": "float(182)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49465c", "name": "float(191)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494660", "name": "float(192)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494664", "name": "float(200)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494668", "name": "float(204)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49466c", "name": "float(212)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494670", "name": "float(224)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494674", "name": "float(226)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494678", "name": "float(240)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49467c", "name": "float(255)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494680", "name": "float(256)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494684", "name": "float(288)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494688", "name": "float(290)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49468c", "name": "float(300)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494690", "name": "float(320)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494694", "name": "float(352)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494698", "name": "float(360)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49469c", "name": "float(384)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946a0", "name": "float(392)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946a4", "name": "float(400)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946a8", "name": "float(408)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946ac", "name": "float(416)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946b0", "name": "float(448)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946b4", "name": "float(464)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946b8", "name": "float(472)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946bc", "name": "float(480)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946c0", "name": "float(512)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946c4", "name": "float(540)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946c8", "name": "float(576)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946cc", "name": "float(618)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946d0", "name": "float(620)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946d4", "name": "float(640)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946d8", "name": "float(990)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946dc", "name": "float(995)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946e0", "name": "float(999)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946e4", "name": "float(1000)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946e8", "name": "float(1024)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946ec", "name": "float(3072)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946f0", "name": "float(6400)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946f4", "name": "float(9216)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946f8", "name": "float(999990)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x4946fc", "name": "float(9999990)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494700", "name": "float(2**32 / 2PI)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494704", "name": "float(-0)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494708", "name": "float(-0.01)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49470c", "name": "float(-0.03)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494710", "name": "float(-0.05)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494714", "name": "float(-0.066666)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494718", "name": "float(-0.1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49471c", "name": "float(-0.5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494720", "name": "float(-1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494724", "name": "float(-0.5*(PI-0.1))", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494728", "name": "float(-0.5*PI)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49472c", "name": "float(-0.5*(PI+0.1))", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494730", "name": "float(-2)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494734", "name": "float(-PI)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494738", "name": "float(-4)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49473c", "name": "float(-2*PI)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494740", "name": "float(-8)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494744", "name": "float(-10)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494748", "name": "double(-999999)", "type": {"is": "float", "size": 8}}
+, {"addr": "0x494750", "name": "float(-15)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494754", "name": "float(-20)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494758", "name": "float(-50)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49475c", "name": "float(-64)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494760", "name": "float(-100)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494764", "name": "float(-128)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494768", "name": "float(-160)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49476c", "name": "float(-192)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494770", "name": "float(-256)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494774", "name": "float(-384)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494778", "name": "float(-990)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x49477c", "name": "float(-998)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494780", "name": "float(-999)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494784", "name": "float(-5000)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494788", "name": "float(-999990)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x494880", "name": "CONST_USED_FOR_FABS", "type": {"is": "int", "signed": true, "size": 8}, "comment": "ANDing this with a 32bit or 64bit floating point number\nwill produce its absolute value."}
+, {"addr": "0x4948a0", "name": "_128_BIT_CONSTANT_ALL_FFFF", "type": {"is": "int", "signed": true, "size": 16}}
+, {"addr": "0x49a0a0", "name": "__debug_directory_entries", "type": {"is": "array", "len": 1, "inner": {"is": "named", "name": "Debug_Directory_Table"}}}
+, {"addr": "0x49a0c0", "name": "__load_configuration_directory_table", "type": {"is": "named", "name": "Load_Configuration_Directory_Table"}}
+, {"addr": "0x49a128", "name": "__tls_directory", "type": {"is": "named", "name": "TLS_Directory"}}
+, {"addr": "0x49ea4c", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a2250", "name": "ANM_508_TABLE", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zTableAnm508Data"}}}
+, {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": {"is": "array", "len": 3, "inner": {"is": "named", "name": "zFloat4"}}}
+, {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": {"is": "array", "len": 3, "inner": {"is": "named", "name": "zFloat4"}}}
+, {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": {"is": "int", "signed": true, "size": 1}}
+, {"addr": "0x4a50b0", "name": "HARDWARE_INPUT", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Internal representation of the keys currently held on the keyboard.\n\nUnlike INPUT, this updates even while the game is paused or on the main menu.  It includes keys like ESC, P, R, and Enter that are not tracked in replays."}
+, {"addr": "0x4a50b4", "name": "HARDWARE_INPUT_PREV", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a52c8", "name": "INPUT", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Keys currently held in this frame of the game world.\n\nIn contrast to HARDWARE_INPUT, this does not include keys like Esc. During replays, this variable is read from the replay."}
+, {"addr": "0x4a52cc", "name": "INPUT_PREV", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a52d4", "name": "INPUT_RISING_EDGE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a52d8", "name": "INPUT_FALLING_EDGE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a52e4", "name": "CONST_4a52e4_ALL_FFFF", "type": {"is": "int", "signed": true, "size": 2}}
+, {"addr": "0x4a5788", "name": "GAME_SPEED", "type": {"is": "float", "size": 4}, "comment": "Set by ECL to make final boss deaths more dramatic.\n\nAlso regularly modified by the game many, many, many times\nper frame in order to make different ANM/ECL objects\nperceive time differently.  Kinda scary how much code\nrelies on this single piece of mutable global state."}
+, {"addr": "0x4a5790", "name": "CUR_STAGE_NUM", "type": {"is": "int", "signed": true, "size": 4}, "comment": "=========================================\n=========================================\n=========================================\n=========================================\n\nThis field is the beginning of the replay saved globals.\nI don't want to annotate the type of the struct here because\nthen I won't be able to write comments anywhere."}
+, {"addr": "0x4a5794", "name": "WEIRD_CUR_STAGE_NUM_GLOBAL", "type": {"is": "int", "signed": true, "size": 4}, "comment": "This is set to a stage number while a stage is being loaded. For replays, this number gets set back to 1 shortly thereafter (but in other scenarios, the stage number is kept in both globals)"}
+, {"addr": "0x4a5798", "name": "CURRENT_CHAPTER", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Set to different various numbers by ECL at various points\nin the stage (most notably the values 28 and 2b are often\ntested by the code)"}
+, {"addr": "0x4a579c", "name": "TIME_IN_STAGE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57a0", "name": "TIME_IN_CHAPTER__POSSIBLY_BROKEN", "type": {"is": "int", "signed": true, "size": 4}, "comment": "This is probably TIME_IN_CHAPTER, but I'm not sure if it actually gets\nzeroed out when a new chapter begins in TH16. (TODO: test)"}
+, {"addr": "0x4a57a4", "name": "CHARACTER", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57a8", "name": "SUBSHOT__ZERO_IN_TH16", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57ac", "name": "SUBSEASON", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57b0", "name": "CURRENT_SCORE", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Current score divided by 10"}
+, {"addr": "0x4a57b4", "name": "DIFFICULTY", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57b8", "name": "CONTINUES_USED", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57bc", "name": "RANK", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Never written!"}
+, {"addr": "0x4a57c0", "name": "GRAZE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57c4", "name": "GRAZE_IN_CHAPTER__POSSIBLY_BROKEN", "type": {"is": "int", "signed": true, "size": 4}, "comment": "I'm not sure if this gets zeroed out when a new chapter begins\nin TH16. (TODO: TEST)"}
+, {"addr": "0x4a57c8", "name": "SPELL_ID", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57cc", "name": "GLOBAL_MISS_COUNT", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Probably added as a global ECL variable in LoLK for\nthe final boss' dialogue."}
+, {"addr": "0x4a57d4", "name": "NUM_POINT_ITEMS_COLLECTED", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57d8", "name": "CURRENT_PIV", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57dc", "name": "INITIAL_PIV", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57e0", "name": "MAXIMUM_PIV", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57e4", "name": "CURRENT_POWER", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57e8", "name": "__CURRENT_POWER_COPY", "type": {"is": "int", "signed": true, "size": 4}, "comment": "This one is updated less frequently.\nIt may be the power at the beginning of the frame?"}
+, {"addr": "0x4a57ec", "name": "POWER_PER_LEVEL", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Always 100.\nThis is the amount of power \"per level\". It exists because\nin SA, one of Marisa's shottypes could go up to level 8."}
+, {"addr": "0x4a57f4", "name": "CURRENT_LIVES", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57f8", "name": "CURRENT_LIFE_FRAGMENTS", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a57fc", "name": "NEXT_SCORE_EXTEND_INDEX", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a5800", "name": "CURRENT_BOMBS", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a5804", "name": "CURRENT_BOMB_FRAGMENTS", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a5808", "name": "CURRENT_SEASON_POWER", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a580c", "name": "MAX_SEASON_POWER", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a5810", "name": "SEASON_POWER_LEVEL_DELTAS", "type": {"is": "array", "len": 7, "inner": {"is": "int", "signed": true, "size": 4}}, "comment": "=============\n============= offset 0x80\n============="}
+, {"addr": "0x4a583c", "name": "SEASON_POWER_LEVEL_REQUIREMENTS", "type": {"is": "array", "len": 6, "inner": {"is": "int", "signed": true, "size": 4}}}
+, {"addr": "0x4a5854", "name": "MAX_SEASON_POWER_COPY", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a586c", "name": "DATA_4a586c_RELATED_TO_PIV_ITEMS__SEEMS_UNUSED", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a5870", "name": "__LAST_POINT_OR_POWER_COLLECTED_POS", "type": {"is": "named", "name": "zFloat3"}, "comment": "Probably used by DDC to position the PoC bonus?\n"}
+, {"addr": "0x4a587c", "name": "__DDC_ITEM_SPAWN_COUNT", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Presumably used to schedule guaranteed life pieces in DDC"}
+, {"addr": "0x4a5880", "name": "__LOLK_ENEMIES_SPAWNED_IN_CHAPTER", "type": {"is": "int", "signed": true, "size": 4}, "comment": "I'm not sure if these get reset to zero every chapter in HSiFS.\n(TODO: test)"}
+, {"addr": "0x4a5884", "name": "__LOLK_ENEMIES_DESTROYED_IN_CHAPTER", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a5888", "name": "music_filename", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+, {"addr": "0x4a5bfc", "name": "CONTINUES_REMAINING", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a6be0", "name": "CRITICAL_SECTION_ARRAY", "type": {"is": "array", "len": 11, "inner": {"is": "named", "name": "CRITICAL_SECTION"}}}
+, {"addr": "0x4a6d54", "name": "HEAP_4A6D54", "type": {"is": "named", "name": "HANDLE"}}
+, {"addr": "0x4a6d80", "name": "REPLAY_UNSAFE_RNG", "type": {"is": "named", "name": "zRng"}}
+, {"addr": "0x4a6d88", "name": "REPLAY_SAFE_RNG", "type": {"is": "named", "name": "zRng"}}
+, {"addr": "0x4a6d94", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFuncRegistry"}}}
+, {"addr": "0x4a6d98", "name": "ASCII_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAsciiManager"}}}
+, {"addr": "0x4a6d9c", "name": "ANOTHER_STAGE_PTR???", "type": {"is": "ptr", "inner": {"is": "named", "name": "zStage"}}, "comment": "All I know so far is that the same destructor is called on this pointer as the other stage pointer.\n\nMaybe this one exists for stage transitions."}
+, {"addr": "0x4a6da0", "name": "STAGE_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zStage"}}}
+, {"addr": "0x4a6da4", "name": "SUBSEASON_BOMB_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBomb"}}}
+, {"addr": "0x4a6da8", "name": "MAIN_BOMB_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBomb"}}}
+, {"addr": "0x4a6dac", "name": "BULLET_MANGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletManager"}}}
+, {"addr": "0x4a6db0", "name": "SPELLCARD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zSpellcard"}}}
+, {"addr": "0x4a6db8", "name": "EFFECT_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEffectManager"}}, "comment": "This type has almost no responsibilities.  99% of code accessing it is only using it to get the AnmLoaded for effect.anm.\n\nIn TH15-17, it is 0x2020 bytes large and holds an array of Anm IDs.  I think this array holds IDs for player bullet splash animations, as well as enemy death, and possibly anything that uses anmPlay.  Why? I don't have a clue. At first I suspected that maybe it is to give these anms a chance to run special cleanup callbacks when the game is closed, but the TH16 destructor does not iterate over these ids...  (it just loops over all ANMs period, setting flags on everything from bullet.anm and effect.anm)\n\nPrior to TH15, things get even weirder.  This type did exist in TH13 and TH14, but it was only 0x2c bytes. In TH14, I found only a SINGLE function that uses this pointer for some purpose other than getting effect.anm.  I set a breakpoint on that function, and found that it was triggered every time a boss made one of those dark blobby spiral-in effects they do when teleporting or charging spells.\n\nThat function has paths that write to an array at this+0x1c, but TH14 never enters those paths.  So I have basically no clue at all why this type exists in TH14. a\n"}
+, {"addr": "0x4a6dbc", "name": "ENDING_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnding"}}}
+, {"addr": "0x4a6dc0", "name": "ENEMY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyManager"}}}
+, {"addr": "0x4a6dc4", "name": "FUNCS_FOR_ECL_UNKNOWN_634", "type": {"is": "array", "len": 1, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4a6dc8", "name": "FPS_COUNTER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zFpsCounter"}}}
+, {"addr": "0x4a6dcc", "name": "GUI_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGui"}}}
+, {"addr": "0x4a6dd4", "name": "GAME_THREAD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGameThread"}}}
+, {"addr": "0x4a6dd8", "name": "HELP_MANUAL_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zHelpManual"}}}
+, {"addr": "0x4a6ddc", "name": "ITEM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zItemManager"}}}
+, {"addr": "0x4a6de0", "name": "CURRENT_REPLAY_FILENAME", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+, {"addr": "0x4a6ee0", "name": "LASER_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zLaserManager"}}}
+, {"addr": "0x4a6ee4", "name": "LOADING_THREAD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zLoadingThread"}}}
+, {"addr": "0x4a6ef4", "name": "PAUSE_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPauseMenu"}}}
+, {"addr": "0x4a6ef8", "name": "PLAYER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPlayer"}}}
+, {"addr": "0x4a6efc", "name": "CACHED_PLAYER_SUBSEASON_SHT_FILE", "type": {"is": "ptr", "inner": {"is": "named", "name": "zShtRawFile"}}}
+, {"addr": "0x4a6f00", "name": "CACHED_PLAYER_SHT_FILE", "type": {"is": "ptr", "inner": {"is": "named", "name": "zShtRawFile"}}}
+, {"addr": "0x4a6f04", "name": "SHT_SHOOTER_30_TABLE", "type": {"is": "void"}}
+, {"addr": "0x4a6f08", "name": "REPLAY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayManager"}}}
+, {"addr": "0x4a6f0c", "name": "SCOREFILE_PTR", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4a6f10", "name": "POPUP_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAsciiPopupManager"}}}
+, {"addr": "0x4a6f20", "name": "MAIN_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMainMenu"}}}
+, {"addr": "0x4c0f44", "name": "ANM_ON_WAIT_FUNCS", "type": {"is": "array", "len": 1, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c0f48", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}
+, {"addr": "0x4c0f58", "name": "CRIT_SECTION__UPDATE_FUNC_REGISTRY", "type": {"is": "named", "name": "CRITICAL_SECTION"}, "comment": "This critical section serializes all access to the UpdateFuncRegistry.\n\n"}
+, {"addr": "0x4c0f88", "name": "CRIT_SECTION_V", "type": {"is": "named", "name": "CRITICAL_SECTION"}}
+, {"addr": "0x4c0fa0", "name": "CRIT_SECTION_R", "type": {"is": "named", "name": "CRITICAL_SECTION"}}
+, {"addr": "0x4c0fd0", "name": "CRIT_SECTION_Z", "type": {"is": "named", "name": "CRITICAL_SECTION"}}
+, {"addr": "0x4c0fe8", "name": "CRIT_SECTION_U", "type": {"is": "named", "name": "CRITICAL_SECTION"}}
+, {"addr": "0x4c1030", "name": "CRIT_SECTION_X", "type": {"is": "named", "name": "CRITICAL_SECTION"}}
+, {"addr": "0x4c1048", "name": "CRIT_SECTION_W", "type": {"is": "named", "name": "CRITICAL_SECTION"}}
+, {"addr": "0x4c1060", "name": "CRIT_SECTION_SOUND", "type": {"is": "named", "name": "CRITICAL_SECTION"}}
+, {"addr": "0x4c1078", "name": "CRIT_SECTION_T", "type": {"is": "named", "name": "CRITICAL_SECTION"}}
+, {"addr": "0x4c10b8", "name": "ARCFILE_4c10b8", "type": {"is": "named", "name": "zArcFile"}}
+, {"addr": "0x4c10d0", "name": "SUPERVISOR", "type": {"is": "named", "name": "zSupervisor"}}
+, {"addr": "0x4c1b0c", "name": "BACKGROUND_COLOR", "type": {"is": "named", "name": "D3DCOLOR"}}
+, {"addr": "0x4c1b10", "name": "STATIC_PLAYER_INNER__CAUSE_THAT_MAKES_SENSE", "type": {"is": "named", "name": "zPlayerInner"}}
+, {"addr": "0x4d7ba0", "name": "ARCFILES_4D7BA0", "type": {"is": "array", "len": 20, "inner": {"is": "named", "name": "zArcFile"}}}
+, {"addr": "0x4d7ce0", "name": "WINDOW", "type": {"is": "named", "name": "HWND"}}
+, {"addr": "0x4d7cfc", "name": "SYSTEM_PERFORMANCE_FREQUENCY", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d7d04", "name": "INITIAL_PERFORMANCE_COUNTER", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d10", "name": "SYSPARAM_SCREEN_SAVE_ACTIVE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d14", "name": "SYSPARAM_LOW_POWER_ACTIVE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d18", "name": "SYSPARAM_POWER_OFF_ACTIVE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d2c", "name": "RESOLUTION_X", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d30", "name": "RESOLUTION_Y", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d34", "name": "SCREEN_COORD_SCALE", "type": {"is": "float", "size": 4}, "comment": "This is set to 1.0, 1.5, or 2.0 depending on the selected resolution.\nIt causes all drawn things to be scaled by that factor;\narcade region, ui, and all."}
+, {"addr": "0x4d9d38", "name": "EARLY_RENDERING_ARCADE_OFFSET_X", "type": {"is": "int", "signed": true, "size": 4}, "comment": "These two integers are the position of the top left coordinate\nof the arcade region inside the temporary \"@R\" surfaces used\nfor the first three stages of rendering (prior to resolution\nupscaling of the arcade region).\n\nThis region is always rendered at the default resolution\n(so it is always 384x448 during these stages), but it is\nplaced centered in a surface that is as large as the full\nwindow.  Therefore, the expression for them is:\n\n0.5 * (SCALED window size\n       - UNSCALED arcade region size)\n"}
+, {"addr": "0x4d9d3c", "name": "EARLY_RENDERING_ARCADE_OFFSET_Y", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d40", "name": "ARCADE_HEIGHT", "type": {"is": "int", "signed": true, "size": 4}, "comment": "These hold the dimensions of the \"arcade\" region of the\nscreen (the portion that contains displays the game world).\n\nFor a 640x480 game window, the arcade region is 384x448.\nAt any given point in time, these variables either hold\nthose exact values (448, 384), or they hold numbers that\nare scaled according to the current resolution.\n\n(the game rapidly switches between scaled and unscaled\n values multiple times in each frame)"}
+, {"addr": "0x4d9d44", "name": "ARCADE_WIDTH", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d48", "name": "ARCADE_HUD_ORIGIN_X", "type": {"is": "int", "signed": true, "size": 4}, "comment": "This is 1/2 of the current window width, scaled to the\ncurrent resolution.  (so depending on res, it is 320,\n480, or 640).\n\nIt is used to position things that are drawn at full\nresolution inside the arcade region (usually HUD elements,\nespecially text). This includes:\n + Boss name and stars (but not spell info or boss timer,\n   which actually live outside the arcade surface)\n + Music title, season gauge\n + Boss HP circle gauge\n + \"Item Get Border Line\""}
+, {"addr": "0x4d9d4c", "name": "ARCADE_HUD_ORIGIN_Y", "type": {"is": "int", "signed": true, "size": 4}, "comment": "Number of pixels from top of the window drawing surface to\nthe top of the arcade screen, scaled for resolution.\n(so depending on res, it is either 16, 24, or 32)"}
+, {"addr": "0x4d9d50", "name": "GAME_2D_ORIGIN_X", "type": {"is": "int", "signed": true, "size": 4}, "comment": "This vector is EARLY_RENDERING_ARCADE_OFFSET with 192 added\nto x to provide the location of (0,0) in game space.\n\nBasically it is used to position elements in the arcade region\nthat are always drawn at 640x480.  These are:\n\n  - The player and enemies (but not the boss HP bar)\n  - Danmaku and items\n  - Decorative spell backgrounds (but not the 3d stage BG)\n"}
+, {"addr": "0x4d9d54", "name": "GAME_2D_ORIGIN_Y", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d9d58", "name": "TOTAL_APPLICATION_RUNTIME", "type": {"is": "array", "len": 3, "inner": {"is": "float", "size": 8}}, "comment": "All three of these appear to be the total time in seconds\nsince the EXE was started (including time spent on the\n\"choose resolution\" dialog; though these variables only\nstart getting written once you get past that dialog).\n\nThe first two appear to be rounded to 7 places after the\ndecimal point and are usually nearly equal, while the\nthird one tends to be slightly larger and is not as\nharshly rounded."}
+, {"addr": "0x4d9dc4", "name": "SEEMINGLY_CONST_ZERO_VEC_4d9dc4", "type": {"is": "named", "name": "zFloat3"}}
+, {"addr": "0x4d9e10", "name": "SOUND_MANAGER", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4df830", "name": "SPRITE_TEMP_BUFFER", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zRenderVertex144"}}}
+, {"addr": "0x4dfb4c", "name": "MUTEX_Touhou12App", "type": {"is": "named", "name": "HANDLE"}}
 ]

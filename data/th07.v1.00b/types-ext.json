@@ -1,0 +1,1076 @@
+
+{ "BRUSH__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "CRITICAL_SECTION": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "DebugInfo", "type": {"is": "named", "name": "PRTL_CRITICAL_SECTION_DEBUG"}}
+    , {"offset": "0x4", "name": "LockCount", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x8", "name": "RecursionCount", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0xc", "name": "OwningThread", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x10", "name": "LockSemaphore", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x14", "name": "SpinCount", "type": {"is": "named", "name": "ULONG_PTR"}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "CSound": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "m_apDSBuffer", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}
+    , {"offset": "0x4", "name": "m_dwDSBufferSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "m_pWaveFile", "type": {"is": "ptr", "inner": {"is": "named", "name": "CWaveFile"}}}
+    , {"offset": "0xc", "name": "m_dwNumBuffers", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "m_dwCreationFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "CSoundManager": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "m_pDS", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "CURSOR__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "CWaveFile": 
+  { "is": "struct"
+  , "size": "0x98"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "m_pwfx", "type": {"is": "ptr", "inner": {"is": "named", "name": "WAVEFORMATEX"}}}
+    , {"offset": "0x4", "name": "m_hmmio", "type": {"is": "named", "name": "HMMIO"}}
+    , {"offset": "0x8", "name": "m_ck", "type": {"is": "named", "name": "MMCKINFO"}}
+    , {"offset": "0x1c", "name": "m_ckRiff", "type": {"is": "named", "name": "MMCKINFO"}}
+    , {"offset": "0x30", "name": "m_dwSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x34", "name": "m_mmioinfoOut", "type": {"is": "named", "name": "MMIOINFO"}}
+    , {"offset": "0x80", "name": "m_dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x84", "name": "m_bIsReadingFromMemory", "type": {"is": "named", "name": "BOOL"}}
+    , {"offset": "0x88", "name": "m_pbData", "type": {"is": "ptr", "inner": {"is": "named", "name": "BYTE"}}}
+    , {"offset": "0x8c", "name": "m_pbDataCur", "type": {"is": "ptr", "inner": {"is": "named", "name": "BYTE"}}}
+    , {"offset": "0x90", "name": "m_ulDataSize", "type": {"is": "named", "name": "ULONG"}}
+    , {"offset": "0x94", "name": "m_pResourceBuffer", "type": {"is": "ptr", "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x98", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DCAPS8": 
+  { "is": "struct"
+  , "size": "0xd4"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "DeviceType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "AdapterOrdinal", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x8", "name": "Caps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "Caps2", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "Caps3", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "PresentationIntervals", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "CursorCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "DevCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "PrimitiveMiscCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "RasterCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "ZCmpCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "SrcBlendCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x30", "name": "DestBlendCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x34", "name": "AlphaCmpCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x38", "name": "ShadeCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x3c", "name": "TextureCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x40", "name": "TextureFilterCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x44", "name": "CubeTextureFilterCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x48", "name": "VolumeTextureFilterCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4c", "name": "TextureAddressCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x50", "name": "VolumeTextureAddressCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x54", "name": "LineCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x58", "name": "MaxTextureWidth", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x5c", "name": "MaxTextureHeight", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x60", "name": "MaxVolumeExtent", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x64", "name": "MaxTextureRepeat", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x68", "name": "MaxTextureAspectRatio", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x6c", "name": "MaxAnisotropy", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x70", "name": "MaxVertexW", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x74", "name": "GuardBandLeft", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x78", "name": "GuardBandTop", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x7c", "name": "GuardBandRight", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x80", "name": "GuardBandBottom", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x84", "name": "ExtentsAdjust", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x88", "name": "StencilCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8c", "name": "FVFCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x90", "name": "TextureOpCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x94", "name": "MaxTextureBlendStages", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x98", "name": "MaxSimultaneousTextures", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x9c", "name": "VertexProcessingCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xa0", "name": "MaxActiveLights", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xa4", "name": "MaxUserClipPlanes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xa8", "name": "MaxVertexBlendMatrices", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xac", "name": "MaxVertexBlendMatrixIndex", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xb0", "name": "MaxPointSize", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xb4", "name": "MaxPrimitiveCount", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xb8", "name": "MaxVertexIndex", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xbc", "name": "MaxStreams", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc0", "name": "MaxStreamStride", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc4", "name": "VertexShaderVersion", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc8", "name": "MaxVertexShaderConst", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xcc", "name": "PixelShaderVersion", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xd0", "name": "MaxPixelShaderValue", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xd4", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DCOLOR": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "b", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x1", "name": "g", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x2", "name": "r", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x3", "name": "a", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DMATRIX": 
+  { "is": "struct"
+  , "size": "0x40"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "m00", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "m01", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x8", "name": "m02", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "m03", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x10", "name": "m10", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x14", "name": "m11", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "m12", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "m13", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x20", "name": "m20", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x24", "name": "m21", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x28", "name": "m22", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x2c", "name": "m23", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x30", "name": "m30", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x34", "name": "m31", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x38", "name": "m32", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x3c", "name": "m33", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x40", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DPRESENT_PARAMETERS": 
+  { "is": "struct"
+  , "size": "0x38"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "BackBufferWidth", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "BackBufferHeight", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "BackBufferFormat", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "BackBufferCount", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "MultiSampleType", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "MultiSampleQuality", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "SwapEffect", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "hDeviceWindow", "type": {"is": "named", "name": "HWND"}}
+    , {"offset": "0x20", "name": "Windowed", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x24", "name": "EnableAutoDepthStencil", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x28", "name": "AutoDepthStencilFormat", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "Flags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "FullScreen_RefreshRateInHz", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "PresentationInterval", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DVIEWPORT8": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "X", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "Y", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "Width", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "Height", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "MinZ", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x14", "name": "MaxZ", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "DSBCAPS": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "dwFlags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "dwBufferBytes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "dwUnlockTransferRate", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "dwPlayCpuOverhead", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "DSBPOSITIONNOTIFY": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwOffset", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "hEventNotify", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "DSBUFFERDESC": 
+  { "is": "struct"
+  , "size": "0x24"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "dwBufferBytes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "dwReserved", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "lpwfxFormat", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "guid3DAlgorithm", "type": {"is": "named", "name": "GUID"}}
+    , {"offset": "0x24", "name": "__end", "type": null}
+    ]
+  }
+
+, "DSCAPS": 
+  { "is": "struct"
+  , "size": "0x60"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "dwFlags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "dwMinSecondarySampleRate", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "dwMaxSecondarySampleRate", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "dwPrimaryBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "dwMaxHwMixingAllBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "dwMaxHwMixingStaticBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "dwMaxHwMixingStreamingBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "dwFreeHwMixingAllBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "dwFreeHwMixingStaticBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "dwFreeHwMixingStreamingBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "dwMaxHw3DAllBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "dwMaxHw3DStaticBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "dwMaxHw3DStreamingBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "dwFreeHw3DAllBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "dwFreeHw3DStaticBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "dwFreeHw3DStreamingBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "dwTotalHwMemBytes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x48", "name": "dwFreeHwMemBytes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4c", "name": "dwMaxContigFreeHwMemBytes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x50", "name": "dwUnlockTransferRateHwBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x54", "name": "dwPlayCpuOverheadSwBuffers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x58", "name": "dwReserved1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "dwReserved2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x60", "name": "__end", "type": null}
+    ]
+  }
+
+, "HBRUSH": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "BRUSH__"}}}
+
+, "HCURSOR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CURSOR__"}}}
+
+, "HICON": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "ICON__"}}}
+
+, "HMMIO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HMMIO__"}}}
+
+, "HMMIO__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "HTASK": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HTASK__"}}}
+
+, "HTASK__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "ICON__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3D8": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D8Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3D8Vtbl": 
+  { "is": "struct"
+  , "size": "0x40"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "RegisterSoftwareDevice", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "GetAdapterCount", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "GetAdapterIdentifier", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "GetAdapterModeCount", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x1c", "name": "EnumAdapterModes", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x20", "name": "GetAdapterDisplayMode", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x24", "name": "CheckDeviceType", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x28", "name": "CheckDeviceFormat", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x2c", "name": "CheckDeviceMultiSampleType", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x30", "name": "CheckDepthStencilMatch", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x34", "name": "GetDeviceCaps", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x38", "name": "GetAdapterMonitor", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x3c", "name": "CreateDevice", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x40", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DBaseTexture8": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture8Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DBaseTexture8Vtbl": 
+  { "is": "struct"
+  , "size": "0x38"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DResource8Vtbl"}}
+    , {"offset": "0x2c", "name": "SetLOD", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x30", "name": "GetLOD", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x34", "name": "GetLevelCount", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x38", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DDevice8": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice8Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DDevice8Vtbl": 
+  { "is": "struct"
+  , "size": "0x184"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "TestCooperativeLevel", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "GetAvailableTextureMem", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "ResourceManagerDiscardBytes", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "GetDirect3D", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x1c", "name": "GetDeviceCaps", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x20", "name": "GetDisplayMode", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x24", "name": "GetCreationParameters", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x28", "name": "SetCursorProperties", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x2c", "name": "SetCursorPosition", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x30", "name": "ShowCursor", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x34", "name": "CreateAdditionalSwapChain", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x38", "name": "Reset", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x3c", "name": "Present", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x40", "name": "GetBackBuffer", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x44", "name": "GetRasterStatus", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x48", "name": "SetGammaRamp", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4c", "name": "GetGammaRamp", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x50", "name": "CreateTexture", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x54", "name": "CreateVolumeTexture", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x58", "name": "CreateCubeTexture", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x5c", "name": "CreateVertexBuffer", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x60", "name": "CreateIndexBuffer", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x64", "name": "CreateRenderTarget", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x68", "name": "CreateDepthStencilSurface", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x6c", "name": "CreateImageSurface", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x70", "name": "CopyRects", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x74", "name": "UpdateTexture", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x78", "name": "GetFrontBuffer", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x7c", "name": "SetRenderTarget", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x80", "name": "GetRenderTarget", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x84", "name": "GetDepthStencilSurface", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x88", "name": "BeginScene", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8c", "name": "EndScene", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x90", "name": "Clear", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x94", "name": "SetTransform", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x98", "name": "GetTransform", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x9c", "name": "MultiplyTransform", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xa0", "name": "SetViewport", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xa4", "name": "GetViewport", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xa8", "name": "SetMaterial", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xac", "name": "GetMaterial", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xb0", "name": "SetLight", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xb4", "name": "GetLight", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xb8", "name": "LightEnable", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xbc", "name": "GetLightEnable", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc0", "name": "SetClipPlane", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc4", "name": "GetClipPlane", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc8", "name": "SetRenderState", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xcc", "name": "GetRenderState", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xd0", "name": "BeginStateBlock", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xd4", "name": "EndStateBlock", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xd8", "name": "ApplyStateBlock", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xdc", "name": "CaptureStateBlock", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xe0", "name": "DeleteStateBlock", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xe4", "name": "CreateStateBlock", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xe8", "name": "SetClipStatus", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xec", "name": "GetClipStatus", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xf0", "name": "GetTexture", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xf4", "name": "SetTexture", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xf8", "name": "GetTextureStageState", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xfc", "name": "SetTextureStageState", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x100", "name": "ValidateDevice", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x104", "name": "GetInfo", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x108", "name": "SetPaletteEntries", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10c", "name": "GetPaletteEntries", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x110", "name": "SetCurrentTexturePalette", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x114", "name": "GetCurrentTexturePalette", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x118", "name": "DrawPrimitive", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x11c", "name": "DrawIndexedPrimitive", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x120", "name": "DrawPrimitiveUP", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x124", "name": "DrawIndexedPrimitiveUP", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x128", "name": "ProcessVertices", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x12c", "name": "CreateVertexShader", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x130", "name": "SetVertexShader", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x134", "name": "GetVertexShader", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x138", "name": "DeleteVertexShader", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x13c", "name": "SetVertexShaderConstant", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x140", "name": "GetVertexShaderConstant", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x144", "name": "GetVertexShaderDeclaration", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x148", "name": "GetVertexShaderFunction", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14c", "name": "SetStreamSource", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x150", "name": "GetStreamSource", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x154", "name": "SetIndices", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x158", "name": "GetIndices", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x15c", "name": "CreatePixelShader", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x160", "name": "SetPixelShader", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x164", "name": "GetPixelShader", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x168", "name": "DeletePixelShader", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x16c", "name": "SetPixelShaderConstant", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x170", "name": "GetPixelShaderConstant", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x174", "name": "GetPixelShaderFunction", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x178", "name": "DrawRectPatch", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x17c", "name": "DrawTriPatch", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x180", "name": "DeletePatch", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x184", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DResource8": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource8Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DResource8Vtbl": 
+  { "is": "struct"
+  , "size": "0x2c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetDevice", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "SetPrivateData", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "GetPrivateData", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "FreePrivateData", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x1c", "name": "SetPriority", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x20", "name": "GetPriority", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x24", "name": "PreLoad", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x28", "name": "GetType", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x2c", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DSurface8": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface8Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DSurface8Vtbl": 
+  { "is": "struct"
+  , "size": "0x3c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DResource8Vtbl"}}
+    , {"offset": "0x2c", "name": "GetContainer", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x30", "name": "GetDesc", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x34", "name": "LockRect", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x38", "name": "UnlockRect", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x3c", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DTexture8": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture8Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DTexture8Vtbl": 
+  { "is": "struct"
+  , "size": "0x4c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DBaseTexture8Vtbl"}}
+    , {"offset": "0x38", "name": "GetLevelDesc", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x3c", "name": "GetSurfaceLevel", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x40", "name": "LockRect", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x44", "name": "UnlockRect", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x48", "name": "AddDirtyRect", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4c", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVertexBuffer8": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer8Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVertexBuffer8Vtbl": 
+  { "is": "struct"
+  , "size": "0x38"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DResource8Vtbl"}}
+    , {"offset": "0x2c", "name": "Lock", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x30", "name": "Unlock", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x34", "name": "GetDesc", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x38", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectSound": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundVtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectSoundBuffer": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBufferVtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectSoundBufferVtbl": 
+  { "is": "struct"
+  , "size": "0x54"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetCaps", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "DSBCAPS"}}}]}}
+    , {"offset": "0x10", "name": "GetCurrentPosition", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x14", "name": "GetFormat", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "WAVEFORMATEX"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x18", "name": "GetVolume", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}]}}
+    , {"offset": "0x1c", "name": "GetPan", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}]}}
+    , {"offset": "0x20", "name": "GetFrequency", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x24", "name": "GetStatus", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x28", "name": "Initialize", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "DSBUFFERDESC"}}}]}}
+    , {"offset": "0x2c", "name": "Lock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x30", "name": "Play", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x34", "name": "SetCurrentPosition", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x38", "name": "SetFormat", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "WAVEFORMATEX"}}}]}}
+    , {"offset": "0x3c", "name": "SetVolume", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "int", "signed": true, "size": 4}}]}}
+    , {"offset": "0x40", "name": "SetPan", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "int", "signed": true, "size": 4}}]}}
+    , {"offset": "0x44", "name": "SetFrequency", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x48", "name": "Stop", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}]}}
+    , {"offset": "0x4c", "name": "Unlock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x50", "name": "Restore", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}]}}
+    , {"offset": "0x54", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectSoundNotify": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundNotifyVtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectSoundNotifyVtbl": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "SetNotificationPositions", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundNotify"}}}, {"type": {"is": "named", "name": "DWORD"}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "DSBPOSITIONNOTIFY"}}}]}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectSoundVtbl": 
+  { "is": "struct"
+  , "size": "0x2c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "CreateSoundBuffer", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "DSBUFFERDESC"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknown"}}}]}}
+    , {"offset": "0x10", "name": "GetCaps", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "DSCAPS"}}}]}}
+    , {"offset": "0x14", "name": "DuplicateSoundBuffer", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBuffer"}}}}]}}
+    , {"offset": "0x18", "name": "SetCooperativeLevel", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}, {"type": {"is": "named", "name": "HWND"}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1c", "name": "Compact", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}]}}
+    , {"offset": "0x20", "name": "GetSpeakerConfig", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x24", "name": "SetSpeakerConfig", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x28", "name": "Initialize", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSound"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}]}}
+    , {"offset": "0x2c", "name": "__end", "type": null}
+    ]
+  }
+
+, "IUnknown": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknownVtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IUnknownVtbl": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "QueryInterface", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4", "name": "AddRef", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "Release", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "JOYCAPSA": 
+  { "is": "struct"
+  , "size": "0x194"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "wMid", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x2", "name": "wPid", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x4", "name": "szPname", "type": {"is": "array", "len": 32, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x24", "name": "wXmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x28", "name": "wXmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x2c", "name": "wYmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x30", "name": "wYmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x34", "name": "wZmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x38", "name": "wZmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x3c", "name": "wNumButtons", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x40", "name": "wPeriodMin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x44", "name": "wPeriodMax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x48", "name": "wRmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x4c", "name": "wRmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x50", "name": "wUmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x54", "name": "wUmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x58", "name": "wVmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x5c", "name": "wVmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x60", "name": "wCaps", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x64", "name": "wMaxAxes", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x68", "name": "wNumAxes", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x6c", "name": "wMaxButtons", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x70", "name": "szRegKey", "type": {"is": "array", "len": 32, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x90", "name": "szOEMVxD", "type": {"is": "array", "len": 260, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x194", "name": "__end", "type": null}
+    ]
+  }
+
+, "MEMORY_BASIC_INFORMATION": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "BaseAddress", "type": {"is": "named", "name": "PVOID"}}
+    , {"offset": "0x4", "name": "AllocationBase", "type": {"is": "named", "name": "PVOID"}}
+    , {"offset": "0x8", "name": "AllocationProtect", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "RegionSize", "type": {"is": "named", "name": "SIZE_T"}}
+    , {"offset": "0x10", "name": "State", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "Protect", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "Type", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "MMCKINFO": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "ckid", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x4", "name": "cksize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "fccType", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0xc", "name": "dwDataOffset", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "MMIOINFO": 
+  { "is": "struct"
+  , "size": "0x4c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "fccIOProc", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x8", "name": "pIOProc", "type": {"is": "fn-ptr", "ret": {"is": "named", "name": "LRESULT"}, "params": [{"type": {"is": "named", "name": "LPSTR"}, "name": "lpmmioinfo"}, {"type": {"is": "named", "name": "UINT"}, "name": "uMsg"}, {"type": {"is": "named", "name": "LPARAM"}, "name": "lParam1"}, {"type": {"is": "named", "name": "LPARAM"}, "name": "lParam2"}]}}
+    , {"offset": "0xc", "name": "wErrorRet", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x10", "name": "hTask", "type": {"is": "named", "name": "HTASK"}}
+    , {"offset": "0x14", "name": "cchBuffer", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x18", "name": "pchBuffer", "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x1c", "name": "pchNext", "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x20", "name": "pchEndRead", "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x24", "name": "pchEndWrite", "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x28", "name": "lBufOffset", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x2c", "name": "lDiskOffset", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x30", "name": "adwInfo", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "DWORD"}}}
+    , {"offset": "0x40", "name": "dwReserved1", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x44", "name": "dwReserved2", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x48", "name": "hmmio", "type": {"is": "named", "name": "HMMIO"}}
+    , {"offset": "0x4c", "name": "__end", "type": null}
+    ]
+  }
+
+, "Rich_Header": 
+  { "is": "struct"
+  , "size": "0x80"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "e_magic__DanS", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "e_align", "type": {"is": "array", "len": 3, "inner": {"is": "int", "signed": false, "size": 4}}}
+    , {"offset": "0x10", "name": "e_entry_id0__001d24fa", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "e_entry_count0__15", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "e_entry_id1__002723ca", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "e_entry_count1__3", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "e_entry_id2__004024fa", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "e_entry_count2__47", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "e_entry_id3__001c24fa", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "e_entry_count3__129", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "e_entry_id4__001c23da", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "e_entry_count4__3", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "e_entry_id5__001923fa", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "e_entry_count5__10", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "e_entry_id6__00010000", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "e_entry_count6__171", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x48", "name": "e_entry_id7__001d227e", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4c", "name": "e_entry_count7__58", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x50", "name": "e_entry_id8__00252233", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x54", "name": "e_entry_count8__10", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x58", "name": "e_entry_id9__001c227e", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "e_entry_count9__2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x60", "name": "e_entry_id10__002c24fa", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x64", "name": "e_entry_count10__37", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x68", "name": "e_entry_id11__004524fa", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x6c", "name": "e_entry_count11__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x70", "name": "e_entry_id12__003d24fa", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x74", "name": "e_entry_count12__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x78", "name": "e_magic", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x7c", "name": "e_checksum", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x80", "name": "__end", "type": null}
+    ]
+  }
+
+, "SYSTEMTIME": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 2
+  , "members": 
+    [ {"offset": "0x0", "name": "wYear", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x2", "name": "wMonth", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x4", "name": "wDayOfWeek", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x6", "name": "wDay", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x8", "name": "wHour", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xa", "name": "wMinute", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xc", "name": "wSecond", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xe", "name": "wMilliseconds", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "SYSTEM_INFO": 
+  { "is": "struct"
+  , "size": "0x24"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "u", "type": {"is": "union", "size": "0x4", "align": 4, "members": [{"name": "dwOemId", "type": {"is": "named", "name": "DWORD"}}, {"name": "s", "type": {"is": "struct", "size": "0x4", "align": 2, "members": [{"offset": "0x0", "name": "wProcessorArchitecture", "type": {"is": "named", "name": "WORD"}}, {"offset": "0x2", "name": "wReserved", "type": {"is": "named", "name": "WORD"}}, {"offset": "0x4", "name": "__end", "type": null}]}}]}}
+    , {"offset": "0x4", "name": "dwPageSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "lpMinimumApplicationAddress", "type": {"is": "named", "name": "LPVOID"}}
+    , {"offset": "0xc", "name": "lpMaximumApplicationAddress", "type": {"is": "named", "name": "LPVOID"}}
+    , {"offset": "0x10", "name": "dwActiveProcessorMask", "type": {"is": "named", "name": "DWORD_PTR"}}
+    , {"offset": "0x14", "name": "dwNumberOfProcessors", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "dwProcessorType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "dwAllocationGranularity", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "wProcessorLevel", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x22", "name": "wProcessorRevision", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x24", "name": "__end", "type": null}
+    ]
+  }
+
+, "ShiftJis": 
+  { "is": "struct"
+  , "size": "0x1"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x1", "name": "__end", "type": null}
+    ]
+  }
+
+, "WAVEFORMATEX": 
+  { "is": "struct"
+  , "size": "0x12"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "wFormatTag", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2", "name": "nChannels", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x4", "name": "nSamplesPerSec", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "nAvgBytesPerSec", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "nBlockAlign", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xe", "name": "wBitsPerSample", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x10", "name": "cbSize", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x12", "name": "__end", "type": null}
+    ]
+  }
+
+, "WIN32_FIND_DATAA": 
+  { "is": "struct"
+  , "size": "0x14a"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwFileAttributes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "ftCreationTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0xc", "name": "ftLastAccessTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x14", "name": "ftLastWriteTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x1c", "name": "nFileSizeHigh", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "nFileSizeLow", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "dwReserved0", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "dwReserved1", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "cFileName", "type": {"is": "array", "len": 260, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x130", "name": "cAlternateFileName", "type": {"is": "array", "len": 14, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x13e", "name": "__padding", "type": null}
+    , {"offset": "0x140", "name": "dwFileType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x144", "name": "dwCreatorType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x148", "name": "wFinderFlags", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x14a", "name": "__end", "type": null}
+    ]
+  }
+
+, "WNDCLASSA": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "style", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x4", "name": "lpfnWndProc", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "cbClsExtra", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "cbWndExtra", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "hInstance", "type": {"is": "named", "name": "HINSTANCE"}}
+    , {"offset": "0x14", "name": "hIcon", "type": {"is": "named", "name": "HICON"}}
+    , {"offset": "0x18", "name": "hCursor", "type": {"is": "named", "name": "HCURSOR"}}
+    , {"offset": "0x1c", "name": "hbrBackground", "type": {"is": "named", "name": "HBRUSH"}}
+    , {"offset": "0x20", "name": "lpszMenuName", "type": {"is": "named", "name": "LPCSTR"}}
+    , {"offset": "0x24", "name": "lpszClassName", "type": {"is": "named", "name": "LPCSTR"}}
+    , {"offset": "0x28", "name": "__end", "type": null}
+    ]
+  }
+
+, "_D3DCAPS8": 
+  { "is": "struct"
+  , "size": "0xd4"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "DeviceType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "AdapterOrdinal", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x8", "name": "Caps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "Caps2", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "Caps3", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "PresentationIntervals", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "CursorCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "DevCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "PrimitiveMiscCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "RasterCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "ZCmpCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "SrcBlendCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x30", "name": "DestBlendCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x34", "name": "AlphaCmpCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x38", "name": "ShadeCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x3c", "name": "TextureCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x40", "name": "TextureFilterCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x44", "name": "CubeTextureFilterCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x48", "name": "VolumeTextureFilterCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4c", "name": "TextureAddressCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x50", "name": "VolumeTextureAddressCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x54", "name": "LineCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x58", "name": "MaxTextureWidth", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x5c", "name": "MaxTextureHeight", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x60", "name": "MaxVolumeExtent", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x64", "name": "MaxTextureRepeat", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x68", "name": "MaxTextureAspectRatio", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x6c", "name": "MaxAnisotropy", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x70", "name": "MaxVertexW", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x74", "name": "GuardBandLeft", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x78", "name": "GuardBandTop", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x7c", "name": "GuardBandRight", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x80", "name": "GuardBandBottom", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x84", "name": "ExtentsAdjust", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x88", "name": "StencilCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8c", "name": "FVFCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x90", "name": "TextureOpCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x94", "name": "MaxTextureBlendStages", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x98", "name": "MaxSimultaneousTextures", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x9c", "name": "VertexProcessingCaps", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xa0", "name": "MaxActiveLights", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xa4", "name": "MaxUserClipPlanes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xa8", "name": "MaxVertexBlendMatrices", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xac", "name": "MaxVertexBlendMatrixIndex", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xb0", "name": "MaxPointSize", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xb4", "name": "MaxPrimitiveCount", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xb8", "name": "MaxVertexIndex", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xbc", "name": "MaxStreams", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc0", "name": "MaxStreamStride", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc4", "name": "VertexShaderVersion", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc8", "name": "MaxVertexShaderConst", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xcc", "name": "PixelShaderVersion", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xd0", "name": "MaxPixelShaderValue", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xd4", "name": "__end", "type": null}
+    ]
+  }
+
+, "_D3DVIEWPORT8": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "X", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "Y", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "Width", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "Height", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "MinZ", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x14", "name": "MaxZ", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "_STARTUPINFOA": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cb", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "lpReserved", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0x8", "name": "lpDesktop", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0xc", "name": "lpTitle", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0x10", "name": "dwX", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "dwY", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "dwXSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "dwYSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "dwXCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "dwYCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "dwFillAttribute", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x30", "name": "wShowWindow", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x32", "name": "cbReserved2", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x34", "name": "lpReserved2", "type": {"is": "named", "name": "LPBYTE"}}
+    , {"offset": "0x38", "name": "hStdInput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x3c", "name": "hStdOutput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x40", "name": "hStdError", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "tagWNDCLASSA": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "style", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x4", "name": "lpfnWndProc", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "cbClsExtra", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "cbWndExtra", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "hInstance", "type": {"is": "named", "name": "HINSTANCE"}}
+    , {"offset": "0x14", "name": "hIcon", "type": {"is": "named", "name": "HICON"}}
+    , {"offset": "0x18", "name": "hCursor", "type": {"is": "named", "name": "HCURSOR"}}
+    , {"offset": "0x1c", "name": "hbrBackground", "type": {"is": "named", "name": "HBRUSH"}}
+    , {"offset": "0x20", "name": "lpszMenuName", "type": {"is": "named", "name": "LPCSTR"}}
+    , {"offset": "0x24", "name": "lpszClassName", "type": {"is": "named", "name": "LPCSTR"}}
+    , {"offset": "0x28", "name": "__end", "type": null}
+    ]
+  }
+
+}

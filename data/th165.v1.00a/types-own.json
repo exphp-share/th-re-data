@@ -1,0 +1,1646 @@
+
+{ "zAnmId": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmLoaded": 
+  { "is": "struct"
+  , "size": "0x128"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "name", "type": {"is": "array", "len": 260, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x108", "name": "anm_file", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10c", "name": "vms", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x110", "name": "entry_count", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x114", "name": "script_count", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x118", "name": "sprite_count", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x11c", "name": "sprites", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoadedSprite"}}}
+    , {"offset": "0x120", "name": "scripts", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x124", "name": "d3d", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoadedD3D"}}}
+    , {"offset": "0x128", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmLoadedD3D": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "texture", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture9"}}}
+    , {"offset": "0x4", "name": "src_data", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "src_data_size", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "bytes_per_pixel", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "entry", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmRawEntry"}}}
+    , {"offset": "0x14", "name": "flags", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x18", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmLoadedSprite": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "anim_slot", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "sprite_number", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "d3d", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoadedD3D"}}}
+    , {"offset": "0xc", "name": "start_pixel_inclusive", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x14", "name": "end_pixel_exclusive", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x1c", "name": "bitmap_height", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x20", "name": "bitmap_width", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x24", "name": "uv_start", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x2c", "name": "uv_end", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x34", "name": "sprite_height", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x38", "name": "sprite_width", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x3c", "name": "__unknown__usually_1_1", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x44", "name": "__field_44", "type": {"is": "named", "name": "zUnknown"}}
+    , {"offset": "0x48", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmManager": 
+  { "is": "struct"
+  , "size": "0x1c80390"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x1c80390", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmRawEntry": 
+  { "is": "struct"
+  , "size": "0xb8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "version", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "num_sprites", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x6", "name": "num_scripts", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x8", "name": "__field_8", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xa", "name": "width", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xc", "name": "height", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xe", "name": "format", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x10", "name": "image_path", "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x14", "name": "offset_x", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x16", "name": "offset_y", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x18", "name": "memory_priority", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "texture", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmRawTexture"}}}
+    , {"offset": "0x20", "name": "has_data", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x22", "name": "low_res_scale", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x24", "name": "offset_to_next", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "__unused", "type": {"is": "array", "len": 6, "inner": {"is": "int", "signed": false, "size": 4}}}
+    , {"offset": "0x40", "name": "sprites", "type": {"is": "array", "len": 10, "inner": {"is": "ptr", "inner": {"is": "named", "name": "zAnmRawSprite"}}}}
+    , {"offset": "0x68", "name": "scripts", "type": {"is": "array", "len": 10, "inner": {"is": "named", "name": "zAnmRawScript"}}}
+    , {"offset": "0xb8", "name": "__the_arrays_are_variable_length___pointers_are_stored_as_offsets", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0xb8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmRawInstr": 
+  { "is": "struct"
+  , "size": "0x30"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "opcode", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2", "name": "offset_to_next", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x4", "name": "time", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x6", "name": "var_mask", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x8", "name": "args", "type": {"is": "array", "len": 10, "inner": {"is": "int", "signed": false, "size": 4}}}
+    , {"offset": "0x30", "name": "__args_is_variable_length", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x30", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmRawScript": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "id", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "first_instr", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmRawInstr"}}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmRawSprite": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "id", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "offset", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0xc", "name": "size", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmRawTexture": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "magic__THTX", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x4", "name": "__zero", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x6", "name": "format", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x8", "name": "width", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xa", "name": "height", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xc", "name": "num_bytes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "data", "type": {"is": "array", "len": 0, "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmVm": 
+  { "is": "struct"
+  , "size": "0x5fc"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "p", "type": {"is": "named", "name": "zAnmVmPrefix"}}
+    , {"offset": "0x538", "name": "s", "type": {"is": "named", "name": "zAnmVmSuffix"}}
+    , {"offset": "0x5fc", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x5fc", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmVmList": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "entry", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x4", "name": "next", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVmList"}}}
+    , {"offset": "0x8", "name": "prev", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVmList"}}}
+    , {"offset": "0xc", "name": "__seldom_used", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVmList"}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmVmPrefix": 
+  { "is": "struct"
+  , "size": "0x538"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "time_of_encountering_ins_3", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "return_offset_for_ins_3", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x18", "name": "layer", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "anim_slot", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x20", "name": "sprite_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x24", "name": "script_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x28", "name": "instr_offset", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x2c", "name": "pos", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x38", "name": "rotation", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x44", "name": "angular_velocity", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x50", "name": "scale", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x58", "name": "scale_2", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x60", "name": "scale_growth", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x68", "name": "uv_scale", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x70", "name": "sprite_size", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x78", "name": "uv_scroll_pos", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x80", "name": "anchor_offset", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x88", "name": "__unknown", "type": null}
+    , {"offset": "0x8c", "name": "pos_i", "type": {"is": "named", "name": "zInterpFloat3"}}
+    , {"offset": "0xe4", "name": "rgb1_i", "type": {"is": "named", "name": "zInterpInt3"}}
+    , {"offset": "0x13c", "name": "alpha1_i", "type": {"is": "named", "name": "zInterpInt"}}
+    , {"offset": "0x16c", "name": "rotate_i", "type": {"is": "named", "name": "zInterpFloat3"}}
+    , {"offset": "0x1c4", "name": "rotate_2d_i", "type": {"is": "named", "name": "zInterpFloat"}}
+    , {"offset": "0x1f4", "name": "scale_i", "type": {"is": "named", "name": "zInterpFloat2"}}
+    , {"offset": "0x238", "name": "op_434_i", "type": {"is": "named", "name": "zInterpFloat2"}}
+    , {"offset": "0x27c", "name": "uv_scale_i", "type": {"is": "named", "name": "zInterpFloat2"}}
+    , {"offset": "0x2c0", "name": "rgb2_i", "type": {"is": "named", "name": "zInterpInt3"}}
+    , {"offset": "0x318", "name": "alpha2_i", "type": {"is": "named", "name": "zInterpInt"}}
+    , {"offset": "0x348", "name": "u_vel_i", "type": {"is": "named", "name": "zInterpFloat"}}
+    , {"offset": "0x378", "name": "v_vel_i", "type": {"is": "named", "name": "zInterpFloat"}}
+    , {"offset": "0x3a8", "name": "struct zFloat2 uv_quad_of_sprite[4]", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zFloat2"}}}
+    , {"offset": "0x3c8", "name": "uv_scroll_vel", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x3d0", "name": "__matrix_3d0", "type": {"is": "named", "name": "D3DMATRIX"}}
+    , {"offset": "0x410", "name": "__matrix_410", "type": {"is": "named", "name": "D3DMATRIX"}}
+    , {"offset": "0x450", "name": "__matrix_450", "type": {"is": "named", "name": "D3DMATRIX"}}
+    , {"offset": "0x490", "name": "pending_switch_label", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x494", "name": "__time_of_last_sprite_set__unused?", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x498", "name": "__looks_unused_498", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x49c", "name": "__related_to_script_index", "type": {"is": "int", "signed": true, "size": 2}}
+    , {"offset": "0x49e", "name": "__unknown", "type": null}
+    , {"offset": "0x4a0", "name": "int_script_vars", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x4b0", "name": "float_script_vars", "type": {"is": "array", "len": 4, "inner": {"is": "float", "size": 4}}}
+    , {"offset": "0x4c0", "name": "__script_vars_33_34_35__rotation_related", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x4cc", "name": "__script_var_8", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4d0", "name": "__script_var_9", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4d4", "name": "rand_scale_1f", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4d8", "name": "rand_scale_pi", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4dc", "name": "rand_param_int", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4e0", "name": "__pos_2", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x4ec", "name": "__field_4ec__quad_vertices", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zFloat3"}}}
+    , {"offset": "0x51c", "name": "mode_of_create_child", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x520", "name": "color_1", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0x524", "name": "color_2", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0x528", "name": "__unknown", "type": null}
+    , {"offset": "0x530", "name": "bitflags_lo", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x534", "name": "bitflags_hi", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x538", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x538", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAnmVmSuffix": 
+  { "is": "struct"
+  , "size": "0xc4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "id", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x4", "name": "fast_id", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "script_time", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x1c", "name": "__timer_1c", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x30", "name": "node_in_global_list", "type": {"is": "named", "name": "zAnmVmList"}}
+    , {"offset": "0x40", "name": "node_as_child", "type": {"is": "named", "name": "zAnmVmList"}}
+    , {"offset": "0x50", "name": "list_of_children", "type": {"is": "named", "name": "zAnmVmList"}}
+    , {"offset": "0x60", "name": "__wierd_list_see_usage_at_0x46eb58", "type": {"is": "named", "name": "zAnmVmList"}}
+    , {"offset": "0x70", "name": "next_in_layer", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x74", "name": "__root_vm__or_maybe_not", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x78", "name": "parent_vm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x7c", "name": "slowdown", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x80", "name": "ins_508_extra_data", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x84", "name": "ins_508_extra_data_size", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x88", "name": "index_of_on_wait", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8c", "name": "index_of_on_tick", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x90", "name": "index_of_on_draw", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x94", "name": "index_of_on_destroy", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x98", "name": "index_of_on_switch", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x9c", "name": "index_of_on_copy_1__prolly_pointdevice_leftover", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xa0", "name": "index_of_on_copy_2__prolly_pointdevice_leftover", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xa4", "name": "index_of_on_sprite_select", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xa8", "name": "__pos_3", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0xb4", "name": "associated_game_entity", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xb8", "name": "__rotation_related", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0xc4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0xc4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAsciiManager": 
+  { "is": "struct"
+  , "size": "0x1c968"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "on_draw_1", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x10", "name": "__vm_1", "type": {"is": "named", "name": "zAnmVm"}}
+    , {"offset": "0x60c", "name": "__vm_2", "type": {"is": "named", "name": "zAnmVm"}}
+    , {"offset": "0xc08", "name": "strings", "type": {"is": "array", "len": 320, "inner": {"is": "named", "name": "zAsciiStr"}}}
+    , {"offset": "0x1c908", "name": "num_strings", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c90c", "name": "color_1", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0x1c910", "name": "color_2", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0x1c914", "name": "scale", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x1c91c", "name": "__str_field_128", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c920", "name": "__unused", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c924", "name": "draw_shadows", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c928", "name": "font_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c92c", "name": "group", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c930", "name": "duration", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c934", "name": "alignment_mode_h", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c938", "name": "alignment_mode_v", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c93c", "name": "__str_field_144", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c940", "name": "__str_field_148__delay_flag", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c944", "name": "__str_field_14c", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c948", "name": "last_string_id", "type": {"is": "named", "name": "zAsciiStrId"}}
+    , {"offset": "0x1c94c", "name": "character_spacing_for_font_0", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c950", "name": "num_ticks_alive", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c954", "name": "ascii_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x1c958", "name": "__unknown_anm_id", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x1c95c", "name": "id_for__now_loading", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x1c960", "name": "on_draw_2", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x1c964", "name": "on_draw_3", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x1c968", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1c968", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAsciiScorePopups": 
+  { "is": "struct"
+  , "size": "0x1034"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x1034", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1034", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAsciiStr": 
+  { "is": "struct"
+  , "size": "0x164"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "text", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x100", "name": "id", "type": {"is": "named", "name": "zAsciiStrId"}}
+    , {"offset": "0x104", "name": "pos", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x110", "name": "color_1", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0x114", "name": "__color_1_again", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0x118", "name": "color_2", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0x11c", "name": "scale", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x124", "name": "__field_124", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x128", "name": "__field_128", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x12c", "name": "font_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x130", "name": "draw_shadows", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x134", "name": "render_group", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x138", "name": "remaining_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x13c", "name": "align_h", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x140", "name": "align_v", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x144", "name": "__field_144", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x148", "name": "__delay_flag__related_to_timer", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x14c", "name": "__field_14c", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x150", "name": "__timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x164", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x164", "name": "__end", "type": null}
+    ]
+  }
+
+, "zAsciiStrId": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBomb": 
+  { "is": "struct"
+  , "size": "0x108"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x108", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x108", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBullet": 
+  { "is": "struct"
+  , "size": "0xe8c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x28", "name": "vm", "type": {"is": "named", "name": "zAnmVm"}}
+    , {"offset": "0x624", "name": "__unknown", "type": null}
+    , {"offset": "0x690", "name": "ex", "type": {"is": "array", "len": 18, "inner": {"is": "named", "name": "zBulletEx"}}}
+    , {"offset": "0x9a8", "name": "ex_state", "type": {"is": "array", "len": 14, "inner": {"is": "named", "name": "zBulletExState"}}}
+    , {"offset": "0xd98", "name": "__unknown", "type": null}
+    , {"offset": "0xe8c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0xe8c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletEx": 
+  { "is": "struct"
+  , "size": "0x2c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x2c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletList": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "entry", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBullet"}}}
+    , {"offset": "0x4", "name": "next", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletList"}}}
+    , {"offset": "0x8", "name": "prev", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletList"}}}
+    , {"offset": "0xc", "name": "__seldom_used", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletList"}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletManager": 
+  { "is": "struct"
+  , "size": "0xe3a7d0"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x9c", "name": "bullets", "type": {"is": "array", "len": 2001, "inner": {"is": "named", "name": "zBullet"}}}
+    , {"offset": "0x71b4e8", "name": "__lolk_snapshot_bullets", "type": {"is": "array", "len": 2001, "inner": {"is": "named", "name": "zBullet"}}}
+    , {"offset": "0xe36934", "name": "anm_ids", "type": {"is": "array", "len": 2001, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0xe38878", "name": "__lolk_snapshot_anm_ids", "type": {"is": "array", "len": 2001, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0xe3a7bc", "name": "__always_zero", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xe3a7c0", "name": "__unused", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xe3a7c4", "name": "iter_current", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletList"}}}
+    , {"offset": "0xe3a7c8", "name": "iter_next", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletList"}}}
+    , {"offset": "0xe3a7cc", "name": "bullet_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0xe3a7d0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0xe3a7d0", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletMgrProps": 
+  { "is": "struct"
+  , "size": "0x380"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "type", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "__color", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "__laser_new_arg_1", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "__laser_new_arg_2", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x10", "name": "__laser_new_arg_3", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x14", "name": "ang_aim", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "ang_bullet_dist", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "spd1", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x20", "name": "spd2", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x24", "name": "distance", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x28", "name": "ex", "type": {"is": "array", "len": 18, "inner": {"is": "named", "name": "zEclEx"}}}
+    , {"offset": "0x340", "name": "__laser_new_arg_4", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x344", "name": "__unknown", "type": null}
+    , {"offset": "0x34c", "name": "__laser_timing_start", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x350", "name": "__laser_timing_trans1", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x354", "name": "__laser_timing_duration", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x358", "name": "__laser_timing_trans2", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x35c", "name": "__laser_timing_end", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x360", "name": "flags", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x364", "name": "cnt_count", "type": {"is": "int", "signed": true, "size": 2}}
+    , {"offset": "0x366", "name": "cnt_layers", "type": {"is": "int", "signed": true, "size": 2}}
+    , {"offset": "0x368", "name": "aim_type", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x36c", "name": "sfx_flag", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x370", "name": "shot_sfx", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x374", "name": "__shot_transform_sfx", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x378", "name": "__start_transform", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x37c", "name": "__field_37c", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x380", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x380", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletOffset": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "xy", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x8", "name": "__unknown", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "zCOMMENT": 
+  { "is": "struct"
+  , "size": "0x1"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__unused", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x1", "name": "__end", "type": null}
+    ]
+  }
+
+, "zCamera": 
+  { "is": "struct"
+  , "size": "0x12c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "position", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0xc", "name": "facing", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x18", "name": "up", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x24", "name": "facing_normalized", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x30", "name": "__some_unit_vector", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x3c", "name": "__rocking_vector_1", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x48", "name": "__rocking_vector_2", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x54", "name": "fov_y", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x58", "name": "window_resolution", "type": {"is": "named", "name": "zInt2"}}
+    , {"offset": "0x60", "name": "view_matrix", "type": {"is": "named", "name": "D3DMATRIX"}}
+    , {"offset": "0xa0", "name": "projection_matrix", "type": {"is": "named", "name": "D3DMATRIX"}}
+    , {"offset": "0xe0", "name": "viewport", "type": {"is": "named", "name": "D3DVIEWPORT9"}}
+    , {"offset": "0xf8", "name": "camera_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xfc", "name": "__vec2_fc", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x104", "name": "__vec3_104", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x110", "name": "sky", "type": {"is": "named", "name": "zCameraSky"}}
+    , {"offset": "0x12c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x12c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zCameraSky": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "begin_distance", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "end_distance", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x8", "name": "color_components", "type": {"is": "array", "len": 4, "inner": {"is": "float", "size": 4}}}
+    , {"offset": "0x18", "name": "color", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zConfig": 
+  { "is": "struct"
+  , "size": "0x64"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x64", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x64", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclEx": 
+  { "is": "struct"
+  , "size": "0x2c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x2c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclFileManager": 
+  { "is": "struct"
+  , "size": "0x90"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable_0", "type": {"is": "ptr", "inner": {"is": "named", "name": "zVTableBomb"}}}
+    , {"offset": "0x4", "name": "file_count", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "subroutine_count", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "file_data_pointers", "type": {"is": "array", "len": 32, "inner": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}}
+    , {"offset": "0x8c", "name": "subroutines", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEclSubroutinePtrs"}}}
+    , {"offset": "0x90", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclLocation": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "subroutine_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "offset_from_first_instruction", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclRunContext": 
+  { "is": "struct"
+  , "size": "0x11e8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "time", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "cur_subroutine_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "cur_offset_from_first_instruction", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "inner", "type": {"is": "named", "name": "zEclRunContextInner"}}
+    , {"offset": "0x1018", "name": "full", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyFull"}}}
+    , {"offset": "0x101c", "name": "__unknown", "type": null}
+    , {"offset": "0x1024", "name": "float_i", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zInterpFloat"}}}
+    , {"offset": "0x11a4", "name": "__float_i_locs__but_why", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zEclLocation"}}}
+    , {"offset": "0x11e4", "name": "__unknown", "type": null}
+    , {"offset": "0x11e8", "name": "__exact_size_known__see_473c17", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x11e8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclRunContextHolder": 
+  { "is": "struct"
+  , "size": "0x11ec"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "current_context", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEclRunContext"}}}
+    , {"offset": "0x4", "name": "primary_context", "type": {"is": "named", "name": "zEclRunContext"}}
+    , {"offset": "0x11ec", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclRunContextInner": 
+  { "is": "struct"
+  , "size": "0x100c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__stack", "type": {"is": "array", "len": 1024, "inner": {"is": "named", "name": "zEclStackItem"}}}
+    , {"offset": "0x1000", "name": "stack_top_offset", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1004", "name": "locals_offset_from_stack", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1008", "name": "__field_1014_can_be_negative", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x100c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclRunContextList": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "entry", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEclRunContext"}}}
+    , {"offset": "0x4", "name": "next", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEclRunContextList"}}}
+    , {"offset": "0x8", "name": "prev", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEclRunContextList"}}}
+    , {"offset": "0xc", "name": "__seldom_used", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEclRunContextList"}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclStackItem": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "as_int", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEclSubroutinePtrs": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "name", "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x4", "name": "bytecode", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEffectManager": 
+  { "is": "struct"
+  , "size": "0x2020"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "effect_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x10", "name": "bullet_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "last_used_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c", "name": "anm_ids", "type": {"is": "array", "len": 1024, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0x101c", "name": "__lolk_snapshot_last_used_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1020", "name": "__lolk_snapshot_anm_ids", "type": {"is": "array", "len": 1024, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0x2020", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x2020", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemy": 
+  { "is": "struct"
+  , "size": "0x4510"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "prev_final_pos", "type": {"is": "named", "name": "zPosVel"}}
+    , {"offset": "0x44", "name": "final_pos", "type": {"is": "named", "name": "zPosVel"}}
+    , {"offset": "0x88", "name": "abs_pos", "type": {"is": "named", "name": "zPosVel"}}
+    , {"offset": "0xcc", "name": "rel_pos", "type": {"is": "named", "name": "zPosVel"}}
+    , {"offset": "0x110", "name": "hurtbox_size", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x118", "name": "hitbox_size", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x120", "name": "rotation", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x124", "name": "anm_ids", "type": {"is": "array", "len": 14, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0x15c", "name": "__looks_like_room_for_two_more", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x160", "name": "__but_there_are_loops_that_only_do_14", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x164", "name": "anm_pos_array", "type": {"is": "array", "len": 14, "inner": {"is": "named", "name": "zFloat3"}}}
+    , {"offset": "0x20c", "name": "__same_deal_here", "type": {"is": "array", "len": 2, "inner": {"is": "named", "name": "zFloat3"}}}
+    , {"offset": "0x224", "name": "__anm_related", "type": {"is": "array", "len": 14, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x25c", "name": "__and_here_too", "type": {"is": "array", "len": 2, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x264", "name": "selected_anm_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x268", "name": "anm_slot_0_anm_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x26c", "name": "anm_slot_0_script", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x270", "name": "anm_set_main", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x274", "name": "__probably_cur_subscript_for_anm_main", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x278", "name": "__ecl_unknown_550__maybe_unused", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x27c", "name": "anm_layers", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x280", "name": "__pos_of_last_damage_source_to_hit_me__butwhytho", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x28c", "name": "ecl_int_vars", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x29c", "name": "more_general_int_vars_in_vd_only", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x2ac", "name": "ecl_float_vars", "type": {"is": "array", "len": 8, "inner": {"is": "float", "size": 4}}}
+    , {"offset": "0x2cc", "name": "time_in_ecl", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x2e0", "name": "time_alive", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x2f4", "name": "slowdown", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x2f8", "name": "node_in_global_storage", "type": {"is": "named", "name": "zEnemyList"}}
+    , {"offset": "0x308", "name": "abs_pos_i", "type": {"is": "named", "name": "zInterpStrange1"}}
+    , {"offset": "0x370", "name": "rel_pos_i", "type": {"is": "named", "name": "zInterpStrange1"}}
+    , {"offset": "0x3d8", "name": "abs_angle_i", "type": {"is": "named", "name": "zInterpFloat"}}
+    , {"offset": "0x408", "name": "abs_speed_i", "type": {"is": "named", "name": "zInterpFloat"}}
+    , {"offset": "0x438", "name": "rel_angle_i", "type": {"is": "named", "name": "zInterpFloat"}}
+    , {"offset": "0x468", "name": "rel_speed_i", "type": {"is": "named", "name": "zInterpFloat"}}
+    , {"offset": "0x498", "name": "abs_radial_dist_i", "type": {"is": "named", "name": "zInterpFloat2"}}
+    , {"offset": "0x4dc", "name": "rel_radial_dist_i", "type": {"is": "named", "name": "zInterpFloat2"}}
+    , {"offset": "0x520", "name": "abs_ellipse_i", "type": {"is": "named", "name": "zInterpFloat2"}}
+    , {"offset": "0x564", "name": "rel_ellipse_i", "type": {"is": "named", "name": "zInterpFloat2"}}
+    , {"offset": "0x5a8", "name": "bullet_mgrs", "type": {"is": "array", "len": 16, "inner": {"is": "named", "name": "zBulletMgrProps"}}}
+    , {"offset": "0x3da8", "name": "et_ex_index", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x3de8", "name": "bullet_mgr_offsets", "type": {"is": "array", "len": 16, "inner": {"is": "named", "name": "zBulletOffset"}}}
+    , {"offset": "0x3ea8", "name": "bullet_mgr_origins", "type": {"is": "array", "len": 16, "inner": {"is": "named", "name": "zBulletOffset"}}}
+    , {"offset": "0x3f68", "name": "final_sprite_size", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x3f70", "name": "move_limit_center", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x3f78", "name": "move_limit_size", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x3f80", "name": "score_reward", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3f84", "name": "life", "type": {"is": "named", "name": "zEnemyLife"}}
+    , {"offset": "0x3fa0", "name": "drops", "type": {"is": "named", "name": "zEnemyDrop"}}
+    , {"offset": "0x3fb4", "name": "__field_3fe0__some_kind_of_extra_damage", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fb8", "name": "death_sound", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3fbc", "name": "death_anm_script", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fc0", "name": "death_anm_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fc4", "name": "__frames_before_next_hurt_fx__i_think", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fc8", "name": "__i_think_this_field_is_legit_unused", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fcc", "name": "hit_sound", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fd0", "name": "__vd_ins_1011", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fd4", "name": "__vd_ins_1012", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fd8", "name": "__vd_var_9899", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3fdc", "name": "set_invuln", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x3ff0", "name": "no_hitbox_dur", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x4004", "name": "__timer_4024__counts_down", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x4018", "name": "bomb_damage_multiplier", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x401c", "name": "__unknown", "type": null}
+    , {"offset": "0x4040", "name": "flags_low", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4044", "name": "flags_high", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4048", "name": "bombshield_on_anm_main", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x404c", "name": "bombshield_off_anm_main", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4050", "name": "own_boss_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4054", "name": "et_protect_range", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4058", "name": "interrupts", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zEnemyInterrupt"}}}
+    , {"offset": "0x4498", "name": "full", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyFull"}}}
+    , {"offset": "0x449c", "name": "fog", "type": {"is": "named", "name": "zEnemyFog"}}
+    , {"offset": "0x44b8", "name": "set_death", "type": {"is": "array", "len": 64, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x44f8", "name": "func_from_ecl_func_set", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x44fc", "name": "is_func_set_2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4500", "name": "func_from_ecl_flag_ext_dmg", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4504", "name": "func_from_set_hitbox_func", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4508", "name": "__own_chapter", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x450c", "name": "__bool_cleared_by_ecl_570", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4510", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x4510", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemyDrop": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "main_type", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "area", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemyFog": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "fog_ptr", "type": {"is": "ptr", "inner": {"is": "named", "name": "zFog"}}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "fog_radius", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "__fog_field_c__init_16f", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x10", "name": "fog_color", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x14", "name": "__fog_angle_44d0", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__fog_angle_44d4", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemyFull": 
+  { "is": "struct"
+  , "size": "0x5730"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "zVTableEcl"}}}
+    , {"offset": "0x4", "name": "__next_in_some_list", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "__prev_in_some_list", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc", "name": "context", "type": {"is": "named", "name": "zEclRunContextHolder"}}
+    , {"offset": "0x11f8", "name": "file_manager", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEclFileManager"}}}
+    , {"offset": "0x11fc", "name": "field_11c_ptr_to_self", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyFull"}}}
+    , {"offset": "0x1200", "name": "async_list_head", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEclRunContextList"}}}
+    , {"offset": "0x1204", "name": "__unused__prev_ptr_of_list_head", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x1208", "name": "__unused__field_c_ptr_of_list_head", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x120c", "name": "__unknown", "type": null}
+    , {"offset": "0x1210", "name": "enemy", "type": {"is": "named", "name": "zEnemy"}}
+    , {"offset": "0x5720", "name": "on_death_callback", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x5724", "name": "enemy_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x5728", "name": "unknown_ecl_global_var_9909", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x572c", "name": "__field_5748", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5730", "name": "__IMPORTED_FROM_TH16_STILL_NEEDS_FIXING", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x5730", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemyInterrupt": 
+  { "is": "struct"
+  , "size": "0x88"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "life__for_set_next", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "time__for_set_next", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "sub__for_set_next", "type": {"is": "array", "len": 64, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x48", "name": "sub__for_set_timeout", "type": {"is": "array", "len": 64, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x88", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x88", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemyLife": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "current", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "maximum", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "remaining_for_cur_attack", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "current_scaled_by_seven", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "starting_value_for_next_attack", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x14", "name": "total_damage_including_ignored", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x18", "name": "is_spell", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemyList": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "entry", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyFull"}}}
+    , {"offset": "0x4", "name": "next", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyList"}}}
+    , {"offset": "0x8", "name": "prev", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyList"}}}
+    , {"offset": "0xc", "name": "__seldom_used", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyList"}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemyManager": 
+  { "is": "struct"
+  , "size": "0x1b8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x9c", "name": "enemy_limit", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xa0", "name": "__unknown", "type": null}
+    , {"offset": "0x1b4", "name": "enemy_count_real", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1b8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1b8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zFloat2": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "x", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "y", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zFloat3": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "x", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "y", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x8", "name": "z", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "zFog": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__some_count", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "anim_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "__owned_ptr_c", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "__owned_ptr_10", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "__owned_ptr_14", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "__owned_ptr_18", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x1c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zGameThread": 
+  { "is": "struct"
+  , "size": "0xa0"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x20", "name": "config", "type": {"is": "named", "name": "zConfig"}}
+    , {"offset": "0x84", "name": "__unknown", "type": null}
+    , {"offset": "0xa0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0xa0", "name": "__end", "type": null}
+    ]
+  }
+
+, "zGlobal15cVeeDee": 
+  { "is": "struct"
+  , "size": "0x15c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x15c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x15c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zGui": 
+  { "is": "struct"
+  , "size": "0x1d0"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x1d0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1d0", "name": "__end", "type": null}
+    ]
+  }
+
+, "zGuiMsgVm": 
+  { "is": "struct"
+  , "size": "0x1b8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x4", "name": "__timer_4", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x18", "name": "time_in_script", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x2c", "name": "pause_timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x40", "name": "anm_id_player_face", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x44", "name": "anm_id_enemy_face", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0x54", "name": "__anm_id_idfk", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x58", "name": "anm_id_text_line_1", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x5c", "name": "anm_id_text_line_2", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x60", "name": "anm_id_furigana_1", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x64", "name": "anm_id_furigana_2", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x68", "name": "anm_id_intro", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x6c", "name": "__anm_id__textbox_related", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x70", "name": "__unknown", "type": null}
+    , {"offset": "0x74", "name": "__unused__menu_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x78", "name": "__unused__menu_state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x7c", "name": "__unused__menu_control", "type": {"is": "named", "name": "zMenuHelper"}}
+    , {"offset": "0x154", "name": "__unknown", "type": null}
+    , {"offset": "0x158", "name": "current_instr", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMsgRawInstr"}}}
+    , {"offset": "0x15c", "name": "__vec3_0", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x168", "name": "__vec3_1", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x174", "name": "__vec3_2", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x180", "name": "__dword_incremented_by_enemyAppear", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x184", "name": "flags", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x188", "name": "next_text_line", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x18c", "name": "__unknown", "type": null}
+    , {"offset": "0x190", "name": "active_side", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x194", "name": "__unknown", "type": null}
+    , {"offset": "0x1a0", "name": "callout_pos", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x1ac", "name": "__unknown", "type": null}
+    , {"offset": "0x1b8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1b8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zHelpManual": 
+  { "is": "struct"
+  , "size": "0x1bc"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x1bc", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1bc", "name": "__end", "type": null}
+    ]
+  }
+
+, "zInt2": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "x", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "y", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zInt3": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "x", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "y", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "z", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "zInterpFloat": 
+  { "is": "struct"
+  , "size": "0x30"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "initial", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "goal", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x8", "name": "bezier_1", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "bezier_2", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x10", "name": "current", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x14", "name": "time", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x28", "name": "end_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x2c", "name": "method", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x30", "name": "__end", "type": null}
+    ]
+  }
+
+, "zInterpFloat2": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "initial", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x8", "name": "goal", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x10", "name": "bezier_1", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x18", "name": "bezier_2", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x20", "name": "current", "type": {"is": "named", "name": "zFloat2"}}
+    , {"offset": "0x28", "name": "time", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x3c", "name": "end_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x40", "name": "method", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "zInterpFloat3": 
+  { "is": "struct"
+  , "size": "0x58"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "initial", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0xc", "name": "goal", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x18", "name": "bezier_1", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x24", "name": "bezier_2", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x30", "name": "current", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x3c", "name": "time", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x50", "name": "end_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x54", "name": "method", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x58", "name": "__end", "type": null}
+    ]
+  }
+
+, "zInterpInt": 
+  { "is": "struct"
+  , "size": "0x30"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "initial", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "goal", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "bezier_1", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "bezier_2", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "current", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x14", "name": "time", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x28", "name": "end_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x2c", "name": "method", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x30", "name": "__end", "type": null}
+    ]
+  }
+
+, "zInterpInt3": 
+  { "is": "struct"
+  , "size": "0x58"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "initial", "type": {"is": "named", "name": "zInt3"}}
+    , {"offset": "0xc", "name": "goal", "type": {"is": "named", "name": "zInt3"}}
+    , {"offset": "0x18", "name": "bezier_1", "type": {"is": "named", "name": "zInt3"}}
+    , {"offset": "0x24", "name": "bezier_2", "type": {"is": "named", "name": "zInt3"}}
+    , {"offset": "0x30", "name": "current", "type": {"is": "named", "name": "zInt3"}}
+    , {"offset": "0x3c", "name": "time", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x50", "name": "end_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x54", "name": "method", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x58", "name": "__end", "type": null}
+    ]
+  }
+
+, "zInterpStrange1": 
+  { "is": "struct"
+  , "size": "0x68"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "current", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0xc", "name": "initial", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x18", "name": "goal", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x24", "name": "bezier_1", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x30", "name": "bezier_2", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x3c", "name": "time", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x50", "name": "end_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x54", "name": "method_for_1d", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x58", "name": "move_curve_mode", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "__field_5c", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x60", "name": "method_for_3d", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x64", "name": "flag_1d", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x68", "name": "__end", "type": null}
+    ]
+  }
+
+, "zItem": 
+  { "is": "struct"
+  , "size": "0x634"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "vm", "type": {"is": "named", "name": "zAnmVm"}}
+    , {"offset": "0x5fc", "name": "__unknown", "type": null}
+    , {"offset": "0x634", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x634", "name": "__end", "type": null}
+    ]
+  }
+
+, "zItemManager": 
+  { "is": "struct"
+  , "size": "0x4d8c4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x10", "name": "items", "type": {"is": "array", "len": 200, "inner": {"is": "named", "name": "zItem"}}}
+    , {"offset": "0x4d8b0", "name": "next_item_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4d8b4", "name": "__maybe_num_items_onscreen", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4d8b8", "name": "camera_charge_multiplier", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4d8bc", "name": "on_tick_1d", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x4d8c0", "name": "on_draw_22", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x4d8c4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x4d8c4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zLaserBaseClass": 
+  { "is": "struct"
+  , "size": "0x5d4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x5d4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x5d4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zLaserManager": 
+  { "is": "struct"
+  , "size": "0x610"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0xc", "name": "laser_list_dummy_head", "type": {"is": "named", "name": "zLaserBaseClass"}}
+    , {"offset": "0x5e0", "name": "__unknown", "type": null}
+    , {"offset": "0x610", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x610", "name": "__end", "type": null}
+    ]
+  }
+
+, "zLoadingThread": 
+  { "is": "struct"
+  , "size": "0x63c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x63c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x63c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zMainMenu": 
+  { "is": "struct"
+  , "size": "0x2dba8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x2dba8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x2dba8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zMenuHelper": 
+  { "is": "struct"
+  , "size": "0xd8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "next_selection", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "current_selection", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "num_choices", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "stack_selection", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x4c", "name": "stack_num_choices", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x8c", "name": "stack_depth", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x90", "name": "__unknown", "type": null}
+    , {"offset": "0xd0", "name": "__usually_1", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xd4", "name": "__unknown", "type": null}
+    , {"offset": "0xd8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zMsgRawInstr": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "time", "type": {"is": "int", "signed": true, "size": 2}}
+    , {"offset": "0x2", "name": "opcode", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x3", "name": "args_size", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x4", "name": "args", "type": {"is": "named", "name": "zMsgRawInstrArgs"}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "zMsgRawInstrArgs": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "offset_00", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2", "name": "offset_02", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x4", "name": "offset_04", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x6", "name": "offset_06", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x8", "name": "__the_actual_argument_layout_depend_on_the_instruction_but_i_put_words_to_let_binja_be_helpful", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zNoticeManager": 
+  { "is": "struct"
+  , "size": "0x1b4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x1b4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1b4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zPauseMenu": 
+  { "is": "struct"
+  , "size": "0x4d0"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x4d0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x4d0", "name": "__end", "type": null}
+    ]
+  }
+
+, "zPhotoManager": 
+  { "is": "struct"
+  , "size": "0xd664"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0xd664", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0xd664", "name": "__end", "type": null}
+    ]
+  }
+
+, "zPlayer": 
+  { "is": "struct"
+  , "size": "0x16930"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x16930", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x16930", "name": "__end", "type": null}
+    ]
+  }
+
+, "zPosVel": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "pos", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "speed", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "angle", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x20", "name": "radial_dist", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x24", "name": "radial_speed", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x28", "name": "__field_28__some_angle", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x2c", "name": "__field_2c", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x30", "name": "__field_30__some_angle", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x34", "name": "velocity", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x40", "name": "flags", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "zReplayManager": 
+  { "is": "struct"
+  , "size": "0x178"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x178", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x178", "name": "__end", "type": null}
+    ]
+  }
+
+, "zSpellcard": 
+  { "is": "struct"
+  , "size": "0xbc"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0xbc", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0xbc", "name": "__end", "type": null}
+    ]
+  }
+
+, "zStage": 
+  { "is": "struct"
+  , "size": "0x7900"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x7900", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x7900", "name": "__end", "type": null}
+    ]
+  }
+
+, "zSupervisor": 
+  { "is": "struct"
+  , "size": "0xa3c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x4", "name": "d3d9", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}
+    , {"offset": "0x8", "name": "d3d_device", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}
+    , {"offset": "0xc", "name": "dinput", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectInput8A"}}}
+    , {"offset": "0x10", "name": "window_rect", "type": {"is": "named", "name": "tagRECT"}}
+    , {"offset": "0x20", "name": "keyboard_device", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectInputDevice8A"}}}
+    , {"offset": "0x24", "name": "__joypad_device", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectInputDevice8A"}}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x2c", "name": "__joypad_caps__ithink", "type": {"is": "named", "name": "DIDEVCAPS"}}
+    , {"offset": "0x58", "name": "main_window", "type": {"is": "ptr", "inner": {"is": "named", "name": "HWND__"}}}
+    , {"offset": "0x5c", "name": "__unknown_view_matrix", "type": {"is": "named", "name": "D3DMATRIX"}}
+    , {"offset": "0x9c", "name": "__unknown_projection_matrix", "type": {"is": "named", "name": "D3DMATRIX"}}
+    , {"offset": "0xdc", "name": "__unknown_viewport", "type": {"is": "named", "name": "D3DVIEWPORT9"}}
+    , {"offset": "0xf4", "name": "present_parameters", "type": {"is": "named", "name": "D3DPRESENT_PARAMETERS"}}
+    , {"offset": "0x12c", "name": "__unknown", "type": null}
+    , {"offset": "0x19c", "name": "display_mode", "type": {"is": "named", "name": "D3DDISPLAYMODE"}}
+    , {"offset": "0x1ac", "name": "surface_@R_0", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}
+    , {"offset": "0x1b0", "name": "surface_@R_1", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}
+    , {"offset": "0x1b4", "name": "back_buffer", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}
+    , {"offset": "0x1b8", "name": "__unknown", "type": null}
+    , {"offset": "0x1bc", "name": "arcade_vm_0", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x1c0", "name": "arcade_vm_1", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x1c4", "name": "arcade_vm_2__handles_upscaling", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x1c8", "name": "arcade_vm_3__handles_seija", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
+    , {"offset": "0x1cc", "name": "__unknown", "type": null}
+    , {"offset": "0x1d4", "name": "config", "type": {"is": "named", "name": "zConfig"}}
+    , {"offset": "0x238", "name": "camera_0", "type": {"is": "named", "name": "zCamera"}}
+    , {"offset": "0x364", "name": "camera_1", "type": {"is": "named", "name": "zCamera"}}
+    , {"offset": "0x490", "name": "camera_2", "type": {"is": "named", "name": "zCamera"}}
+    , {"offset": "0x5bc", "name": "camera_3__stage_background", "type": {"is": "named", "name": "zCamera"}}
+    , {"offset": "0x6e8", "name": "current_camera", "type": {"is": "ptr", "inner": {"is": "named", "name": "zCamera"}}}
+    , {"offset": "0x6ec", "name": "current_camera_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x6f0", "name": "gamemode_current", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x6f4", "name": "gamemode_to_switch_to", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x6f8", "name": "gamemode_prev", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x6fc", "name": "__unknown", "type": null}
+    , {"offset": "0x724", "name": "text_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x728", "name": "__unknown", "type": null}
+    , {"offset": "0x72c", "name": "flags", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x730", "name": "rng_seed_from_time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x734", "name": "__unknown", "type": null}
+    , {"offset": "0x738", "name": "caps", "type": {"is": "named", "name": "D3DCAPS9"}}
+    , {"offset": "0x868", "name": "__unknown", "type": null}
+    , {"offset": "0x86c", "name": "screenshot_stuff_that_shouldnt_be_global", "type": {"is": "named", "name": "zSupervisorScreenshotJank"}}
+    , {"offset": "0x994", "name": "__thread_98c", "type": {"is": "named", "name": "zThread"}}
+    , {"offset": "0x9b0", "name": "__unknown", "type": null}
+    , {"offset": "0xa08", "name": "renderstate_fog_enable", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xa0c", "name": "renderstate_z_write_enable", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xa10", "name": "__unknown", "type": null}
+    , {"offset": "0xa30", "name": "__time_delta_0xa2d", "type": {"is": "float", "size": 8}}
+    , {"offset": "0xa38", "name": "background_color", "type": {"is": "named", "name": "D3DCOLOR"}}
+    , {"offset": "0xa3c", "name": "__IMPORTED_FROM_TH14__MAY_CONTAIN_ERRORS", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0xa3c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zSupervisorScreenshotJank": 
+  { "is": "struct"
+  , "size": "0x128"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__field_0", "type": {"is": "named", "name": "zUnknown"}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x12", "name": "__padding", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x14", "name": "info_header", "type": {"is": "ptr", "inner": {"is": "named", "name": "BITMAPINFOHEADER"}}}
+    , {"offset": "0x18", "name": "__data_buffer_mebbe", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x1c", "name": "__lol_more_data", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x20", "name": "__field_1c", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x24", "name": "screenshot_filename", "type": {"is": "array", "len": 260, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x128", "name": "__end", "type": null}
+    ]
+  }
+
+, "zThread": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "zVTableDelete"}}}
+    , {"offset": "0x4", "name": "thread", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "tid", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "__bool_c", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "__bool_10", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "phModule", "type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "HINSTANCE__"}}}}
+    , {"offset": "0x1c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zTimer": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "prev", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "current", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "current_f", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "game_speed", "type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}
+    , {"offset": "0x10", "name": "control", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "zTutorial": 
+  { "is": "struct"
+  , "size": "0x1c0"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x1c0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x1c0", "name": "__end", "type": null}
+    ]
+  }
+
+, "zUnknown": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "value", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zUpdateFunc": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "priority__(lowest_goes_first)", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "flags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "function_pointer", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc", "name": "on_registration", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "cleanup_function", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "list_node", "type": {"is": "named", "name": "zUpdateFuncList"}}
+    , {"offset": "0x24", "name": "ecx_arg_to_function", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x28", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x28", "name": "__end", "type": null}
+    ]
+  }
+
+, "zUpdateFuncList": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "entry", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x4", "name": "next", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFuncList"}}}
+    , {"offset": "0x8", "name": "prev", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFuncList"}}}
+    , {"offset": "0xc", "name": "__seldom_used", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFuncList"}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "zUpdateFuncRegistry": 
+  { "is": "struct"
+  , "size": "0x58"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "on_tick__list_head", "type": {"is": "named", "name": "zUpdateFunc"}}
+    , {"offset": "0x28", "name": "on_draw__list_head", "type": {"is": "named", "name": "zUpdateFunc"}}
+    , {"offset": "0x50", "name": "__list_head_50", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFuncList"}}}
+    , {"offset": "0x54", "name": "is_cleaning_up", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x58", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x58", "name": "__end", "type": null}
+    ]
+  }
+
+, "zVTableBomb": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "begin", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc", "name": "method_c", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "method_10", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "method_14", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "zVTableDelete": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "operator delete", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zVTableEcl": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "run_over_300", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4", "name": "get_int_global", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "get_int_global_ptr", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc", "name": "get_float_global", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "get_float_global_ptr", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "operator delete", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+}

@@ -1,49 +1,50 @@
-[ {"addr": "0x4c5da0", "name": "VTABLE_LASER_CURVE", "type": "void*[0x19]", "comment": null}
-, {"addr": "0x4c5e08", "name": "VTABLE_LASER_BEAM", "type": "void*[0x19]", "comment": null}
-, {"addr": "0x4c5e70", "name": "VTABLE_LASER_INFINITE", "type": "void*[0x19]", "comment": null}
-, {"addr": "0x4c5ed8", "name": "VTABLE_LASER_LINE", "type": "void*[0x19]", "comment": null}
-, {"addr": "0x4c6c28", "name": "VTABLE_EQUIP_MAIN_MALLET", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6c44", "name": "VTABLE_EQUIP_MAIN_DOLL", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6c60", "name": "VTABLE_EQUIP_MAIN_BOMB", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6c7c", "name": "VTABLE_EQUIP_MAIN_JIZO", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6c98", "name": "VTABLE_EQUIP_MAIN_YIN_YANG", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6cb4", "name": "VTABLE_EQUIP_MAIN_LANTERN", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6cd0", "name": "VTABLE_EQUIP_MAIN_UMBRELLA", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6cec", "name": "VTABLE_EQUIP_MAIN_CAMERA", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6d08", "name": "VTABLE_EQUIP_MAIN_FABRIC", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6d24", "name": "VTABLE_EQUIP_SUBSKILL_JIZO", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6d40", "name": "VTABLE_EQUIP_SUBSKILL_UMBRELLA", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4c6d5c", "name": "VTABLE_EQUIP_SUBSKILL_FABRIC", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4d3e40", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
-, {"addr": "0x4e40b0", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
-, {"addr": "0x4e69f4", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
-, {"addr": "0x4e69f8", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
-, {"addr": "0x4e6a00", "name": "STAGE_PTR", "type": "struct zStage*", "comment": null}
-, {"addr": "0x4e6a08", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
-, {"addr": "0x4e6a0c", "name": "SPELLCARD_PTR", "type": "struct zSpellcard*", "comment": null}
-, {"addr": "0x4e6a3c", "name": "DEBUG_SPRT_VIEW_PTR", "type": "struct zDebugSprtView*", "comment": null}
-, {"addr": "0x4e6a40", "name": "EFFECT_MANAGER_PTR", "type": "struct zEffectManager*", "comment": null}
-, {"addr": "0x4e6a44", "name": "ENDING_PTR", "type": "struct zEnding*", "comment": null}
-, {"addr": "0x4e6a48", "name": "ENEMY_MANAGER_PTR", "type": "struct zEnemyManager*", "comment": null}
-, {"addr": "0x4e6a54", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
-, {"addr": "0x4e6a5c", "name": "GAME_THREAD_PTR", "type": "struct zGameThread*", "comment": null}
-, {"addr": "0x4e6b60", "name": "HELP_MANUAL_PTR", "type": "struct zHelpManual*", "comment": null}
-, {"addr": "0x4e6b64", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
-, {"addr": "0x4e6b68", "name": "EQUIP_ITEM_PTR", "type": "struct zEquipItem*", "comment": null}
-, {"addr": "0x4e6b6c", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
-, {"addr": "0x4e6b70", "name": "LOADING_THREAD_PTR", "type": "struct zLoadingThread*", "comment": null}
-, {"addr": "0x4e6b80", "name": "NOTICE_PTR", "type": "struct zNotice*", "comment": null}
-, {"addr": "0x4e6b84", "name": "PAUSE_MENU_PTR", "type": "struct zPauseMenu*", "comment": null}
-, {"addr": "0x4e6b88", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
-, {"addr": "0x4e6b90", "name": "TREASURE_PTR", "type": "struct zIscGlobal3c*", "comment": null}
-, {"addr": "0x4e6b98", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
-, {"addr": "0x4e6b9c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4e6ba0", "name": "DEBUG_SOUND_TEST_PTR", "type": "struct zDebugSoundTest*", "comment": null}
-, {"addr": "0x4e6ba4", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
-, {"addr": "0x4e6ba8", "name": "DEBUG_SPT_TEST_PTR", "type": "struct zDebugSptTest*", "comment": null}
-, {"addr": "0x4e6bb4", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
-, {"addr": "0x4e6bc8", "name": "TUTORIAL_PTR", "type": "struct zTutorial*", "comment": null}
-, {"addr": "0x538de8", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x5390a0", "name": "WINDOW", "type": "int32_t", "comment": null}
-, {"addr": "0x5409f0", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": null}
+
+[ {"addr": "0x4c5da0", "name": "VTABLE_LASER_CURVE", "type": {"is": "array", "len": 25, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c5e08", "name": "VTABLE_LASER_BEAM", "type": {"is": "array", "len": 25, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c5e70", "name": "VTABLE_LASER_INFINITE", "type": {"is": "array", "len": 25, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c5ed8", "name": "VTABLE_LASER_LINE", "type": {"is": "array", "len": 25, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6c28", "name": "VTABLE_EQUIP_MAIN_MALLET", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6c44", "name": "VTABLE_EQUIP_MAIN_DOLL", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6c60", "name": "VTABLE_EQUIP_MAIN_BOMB", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6c7c", "name": "VTABLE_EQUIP_MAIN_JIZO", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6c98", "name": "VTABLE_EQUIP_MAIN_YIN_YANG", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6cb4", "name": "VTABLE_EQUIP_MAIN_LANTERN", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6cd0", "name": "VTABLE_EQUIP_MAIN_UMBRELLA", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6cec", "name": "VTABLE_EQUIP_MAIN_CAMERA", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6d08", "name": "VTABLE_EQUIP_MAIN_FABRIC", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6d24", "name": "VTABLE_EQUIP_SUBSKILL_JIZO", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6d40", "name": "VTABLE_EQUIP_SUBSKILL_UMBRELLA", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4c6d5c", "name": "VTABLE_EQUIP_SUBSKILL_FABRIC", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4d3e40", "name": "__load_configuration_directory_table", "type": {"is": "named", "name": "Load_Configuration_Directory_Table"}}
+, {"addr": "0x4e40b0", "name": "GAME_SPEED", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4e69f4", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4e69f8", "name": "ASCII_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAsciiManager"}}}
+, {"addr": "0x4e6a00", "name": "STAGE_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zStage"}}}
+, {"addr": "0x4e6a08", "name": "BULLET_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBulletManager"}}}
+, {"addr": "0x4e6a0c", "name": "SPELLCARD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zSpellcard"}}}
+, {"addr": "0x4e6a3c", "name": "DEBUG_SPRT_VIEW_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zDebugSprtView"}}}
+, {"addr": "0x4e6a40", "name": "EFFECT_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEffectManager"}}}
+, {"addr": "0x4e6a44", "name": "ENDING_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnding"}}}
+, {"addr": "0x4e6a48", "name": "ENEMY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyManager"}}}
+, {"addr": "0x4e6a54", "name": "GUI_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGui"}}}
+, {"addr": "0x4e6a5c", "name": "GAME_THREAD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGameThread"}}}
+, {"addr": "0x4e6b60", "name": "HELP_MANUAL_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zHelpManual"}}}
+, {"addr": "0x4e6b64", "name": "ITEM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zItemManager"}}}
+, {"addr": "0x4e6b68", "name": "EQUIP_ITEM_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEquipItem"}}}
+, {"addr": "0x4e6b6c", "name": "LASER_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zLaserManager"}}}
+, {"addr": "0x4e6b70", "name": "LOADING_THREAD_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zLoadingThread"}}}
+, {"addr": "0x4e6b80", "name": "NOTICE_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zNotice"}}}
+, {"addr": "0x4e6b84", "name": "PAUSE_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPauseMenu"}}}
+, {"addr": "0x4e6b88", "name": "PLAYER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPlayer"}}}
+, {"addr": "0x4e6b90", "name": "TREASURE_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zIscGlobal3c"}}}
+, {"addr": "0x4e6b98", "name": "REPLAY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayManager"}}}
+, {"addr": "0x4e6b9c", "name": "SCOREFILE_PTR", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4e6ba0", "name": "DEBUG_SOUND_TEST_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zDebugSoundTest"}}}
+, {"addr": "0x4e6ba4", "name": "POPUP_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAsciiPopupManager"}}}
+, {"addr": "0x4e6ba8", "name": "DEBUG_SPT_TEST_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zDebugSptTest"}}}
+, {"addr": "0x4e6bb4", "name": "MAIN_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMainMenu"}}}
+, {"addr": "0x4e6bc8", "name": "TUTORIAL_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zTutorial"}}}
+, {"addr": "0x538de8", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}
+, {"addr": "0x5390a0", "name": "WINDOW", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x5409f0", "name": "SPRITE_TEMP_BUFFER", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zRenderVertex144"}}}
 ]

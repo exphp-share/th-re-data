@@ -1,116 +1,117 @@
-[ {"addr": "0x4105ef", "name": "lookup_table_4105ef", "type": "uint8_t[0x41]", "comment": null}
-, {"addr": "0x410678", "name": "lookup_table_410678", "type": "uint8_t[0x4b]", "comment": null}
-, {"addr": "0x42310f", "name": "lookup_table_42310f", "type": "uint8_t[0x71]", "comment": null}
-, {"addr": "0x423194", "name": "lookup_table_423194", "type": "uint8_t[0x41]", "comment": null}
-, {"addr": "0x4231f5", "name": "lookup_table_4231f5", "type": "uint8_t[0x5e]", "comment": null}
-, {"addr": "0x46a2b4", "name": "float(16)", "type": "float", "comment": null}
-, {"addr": "0x46a2b8", "name": "float(14)", "type": "float", "comment": null}
-, {"addr": "0x46a2bc", "name": "float(8)", "type": "float", "comment": null}
-, {"addr": "0x46a2c0", "name": "float(1)", "type": "float", "comment": null}
-, {"addr": "0x46a3e4", "name": "float(10)", "type": "float", "comment": null}
-, {"addr": "0x46a3e8", "name": "float(-100)", "type": "float", "comment": null}
-, {"addr": "0x46a3ec", "name": "float(3.1415927)", "type": "float", "comment": null}
-, {"addr": "0x46a3f0", "name": "float(6.2831855)", "type": "float", "comment": null}
-, {"addr": "0x46a408", "name": "float(60)", "type": "float", "comment": null}
-, {"addr": "0x46a40c", "name": "float(176)", "type": "float", "comment": null}
-, {"addr": "0x46a440", "name": "float(64)", "type": "float", "comment": null}
-, {"addr": "0x46a444", "name": "float(-32)", "type": "float", "comment": null}
-, {"addr": "0x46a448", "name": "float(6)", "type": "float", "comment": null}
-, {"addr": "0x46a44c", "name": "float(2)", "type": "float", "comment": null}
-, {"addr": "0x46a46c", "name": "float(1.5707964)", "type": "float", "comment": null}
-, {"addr": "0x46a470", "name": "float(1.2566371)", "type": "float", "comment": null}
-, {"addr": "0x46a474", "name": "float(3)", "type": "float", "comment": null}
-, {"addr": "0x46a478", "name": "float(0.62831855)", "type": "float", "comment": null}
-, {"addr": "0x46a4c4", "name": "float(72)", "type": "float", "comment": null}
-, {"addr": "0x46a4c8", "name": "float(144)", "type": "float", "comment": null}
-, {"addr": "0x46a4cc", "name": "float(48)", "type": "float", "comment": null}
-, {"addr": "0x46a4d0", "name": "float(-3.1415927)", "type": "float", "comment": null}
-, {"addr": "0x46a4d4", "name": "float(-1.5707964)", "type": "float", "comment": null}
-, {"addr": "0x46a4d8", "name": "float(96)", "type": "float", "comment": null}
-, {"addr": "0x46a4dc", "name": "float(0.3)", "type": "float", "comment": null}
-, {"addr": "0x46a4e0", "name": "float(32)", "type": "float", "comment": null}
-, {"addr": "0x46a518", "name": "float(0.75)", "type": "float", "comment": null}
-, {"addr": "0x46a51c", "name": "float(0.5235988)", "type": "float", "comment": null}
-, {"addr": "0x46a520", "name": "float(30)", "type": "float", "comment": null}
-, {"addr": "0x46a524", "name": "float(1.0471976)", "type": "float", "comment": null}
-, {"addr": "0x46a528", "name": "float(0.1)", "type": "float", "comment": null}
-, {"addr": "0x46a52c", "name": "float(0.7853982)", "type": "float", "comment": null}
-, {"addr": "0x46a530", "name": "float(2.3561945)", "type": "float", "comment": null}
-, {"addr": "0x46a534", "name": "float(128)", "type": "float", "comment": null}
-, {"addr": "0x46a538", "name": "float(0.17453294)", "type": "float", "comment": null}
-, {"addr": "0x46a53c", "name": "float(9)", "type": "float", "comment": null}
-, {"addr": "0x46a540", "name": "float(120)", "type": "float", "comment": null}
-, {"addr": "0x46a544", "name": "float(0.26666668)", "type": "float", "comment": null}
-, {"addr": "0x46a548", "name": "float(20)", "type": "float", "comment": null}
-, {"addr": "0x46a54c", "name": "float(-0.7853982)", "type": "float", "comment": null}
-, {"addr": "0x46a550", "name": "float(40)", "type": "float", "comment": null}
-, {"addr": "0x46a554", "name": "float(160)", "type": "float", "comment": null}
-, {"addr": "0x46a558", "name": "float(0.017453292)", "type": "float", "comment": null}
-, {"addr": "0x46a55c", "name": "float(-2.7488937)", "type": "float", "comment": null}
-, {"addr": "0x46a560", "name": "float(256)", "type": "float", "comment": null}
-, {"addr": "0x46a564", "name": "float(224)", "type": "float", "comment": null}
-, {"addr": "0x46a568", "name": "float(192)", "type": "float", "comment": null}
-, {"addr": "0x46a56c", "name": "float(2.2)", "type": "float", "comment": null}
-, {"addr": "0x46a570", "name": "float(320)", "type": "float", "comment": null}
-, {"addr": "0x46a574", "name": "float(6000)", "type": "float", "comment": null}
-, {"addr": "0x46a578", "name": "float(19)", "type": "float", "comment": null}
-, {"addr": "0x46a57c", "name": "float(12)", "type": "float", "comment": null}
-, {"addr": "0x46a580", "name": "float(33)", "type": "float", "comment": null}
-, {"addr": "0x46a584", "name": "float(4)", "type": "float", "comment": null}
-, {"addr": "0x46a588", "name": "float(255)", "type": "float", "comment": null}
-, {"addr": "0x46a58c", "name": "float(1e-05)", "type": "float", "comment": null}
-, {"addr": "0x46a590", "name": "float(240)", "type": "float", "comment": null}
-, {"addr": "0x46a7b0", "name": "float(-999)", "type": "float", "comment": null}
-, {"addr": "0x46a7b4", "name": "float(-1)", "type": "float", "comment": null}
-, {"addr": "0x46a7b8", "name": "float(640)", "type": "float", "comment": null}
-, {"addr": "0x46a7bc", "name": "float(448)", "type": "float", "comment": null}
-, {"addr": "0x46a7c0", "name": "float(384)", "type": "float", "comment": null}
-, {"addr": "0x46a7c4", "name": "float(5)", "type": "float", "comment": null}
-, {"addr": "0x46a7c8", "name": "float(2.5)", "type": "float", "comment": null}
-, {"addr": "0x46a7ec", "name": "float(416)", "type": "float", "comment": null}
-, {"addr": "0x46a7f0", "name": "float(232)", "type": "float", "comment": null}
-, {"addr": "0x46afac", "name": "VTABLE_46afac", "type": "void*[0x3]", "comment": null}
-, {"addr": "0x47a630", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x47b8e0", "name": "ASCII_MANAGER_ON_DRAW_0F", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x47b900", "name": "ASCII_MANAGER", "type": "struct zAsciiManager", "comment": null}
-, {"addr": "0x487aac", "name": "ASCII_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x487acc", "name": "ASCII_MANAGER_ON_DRAW_0A", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x487af0", "name": "STAGE_ON_DRAW_03", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x487b10", "name": "STAGE", "type": "struct zStage", "comment": null}
-, {"addr": "0x487e04", "name": "STAGE_ON_DRAW_04", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x487e24", "name": "STAGE_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x487e50", "name": "ECL_MANAGER", "type": "void", "comment": null}
-, {"addr": "0x487fbc", "name": "UNKNOWN_UPDATE_FUNC_487FBC", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x487fe0", "name": "EFFECT_MANAGER", "type": "struct zEffectManager", "comment": null}
-, {"addr": "0x4b7964", "name": "EFFECT_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4b7984", "name": "EFFECT_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4b79a8", "name": "ENEMY_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x4b79c8", "name": "ENEMY_MANAGER", "type": "struct zEnemyManager", "comment": null}
-, {"addr": "0x5a5fb4", "name": "ENEMY_MANAGER_ON_TICK_09", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x5a5fd8", "name": "BULLET_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x5a5ff8", "name": "BULLET_MANAGER", "type": "struct zBulletManager", "comment": null}
-, {"addr": "0x69bc10", "name": "BULLET_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x69bc30", "name": "GUI", "type": "struct zGui", "comment": null}
-, {"addr": "0x69bc5c", "name": "GUI_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x69bc7c", "name": "GUI_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x69bca0", "name": "GAME_MANAGER", "type": "struct zGameManager", "comment": null}
-, {"addr": "0x69d720", "name": "GAME_MANAGER_ON_TICK", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x69d740", "name": "GAME_MANAGER_ON_DRAW", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x69d760", "name": "JOYPAD_CAPS", "type": "struct JOYCAPSA", "comment": null}
-, {"addr": "0x69d918", "name": "UPDATE_FUNC_REGISTRY", "type": "void", "comment": null}
-, {"addr": "0x69d998", "name": "DEBUG_LOG", "type": "struct zDebugLog", "comment": null}
-, {"addr": "0x69e1b0", "name": "DINPUT_RELATED", "type": "void", "comment": null}
-, {"addr": "0x69e248", "name": "UNKNOWN_UPDATE_FUNC_69E248", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x69e268", "name": "ITEM_MANAGER", "type": "struct zItemManager", "comment": null}
-, {"addr": "0x6c6bb4", "name": "UNKNOWN_UPDATE_FUNC_6C6BB4", "type": "struct zUpdateFunc", "comment": null}
-, {"addr": "0x6c6bd4", "name": "WINDOW", "type": "struct zWindow", "comment": null}
-, {"addr": "0x6c6c08", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": "char[0x100]", "comment": null}
-, {"addr": "0x6c6d18", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
-, {"addr": "0x6c71f0", "name": "MUSIC_ROOM", "type": "struct zMusicRoom", "comment": null}
-, {"addr": "0x6ca628", "name": "PLAYER", "type": "struct zPlayer", "comment": null}
-, {"addr": "0x6d3f18", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
-, {"addr": "0x6d3f50", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
-, {"addr": "0x6d4588", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
-, {"addr": "0x6d4660", "name": "GLOBAL_VERTEX_BUFFER_6D4660", "type": "struct zRenderVertex142[0x4]", "comment": null}
-, {"addr": "0x6d46c0", "name": "MAIN_MENU", "type": "struct zMainMenu", "comment": null}
+
+[ {"addr": "0x4105ef", "name": "lookup_table_4105ef", "type": {"is": "array", "len": 65, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x410678", "name": "lookup_table_410678", "type": {"is": "array", "len": 75, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x42310f", "name": "lookup_table_42310f", "type": {"is": "array", "len": 113, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x423194", "name": "lookup_table_423194", "type": {"is": "array", "len": 65, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x4231f5", "name": "lookup_table_4231f5", "type": {"is": "array", "len": 94, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x46a2b4", "name": "float(16)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a2b8", "name": "float(14)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a2bc", "name": "float(8)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a2c0", "name": "float(1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a3e4", "name": "float(10)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a3e8", "name": "float(-100)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a3ec", "name": "float(3.1415927)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a3f0", "name": "float(6.2831855)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a408", "name": "float(60)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a40c", "name": "float(176)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a440", "name": "float(64)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a444", "name": "float(-32)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a448", "name": "float(6)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a44c", "name": "float(2)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a46c", "name": "float(1.5707964)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a470", "name": "float(1.2566371)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a474", "name": "float(3)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a478", "name": "float(0.62831855)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a4c4", "name": "float(72)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a4c8", "name": "float(144)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a4cc", "name": "float(48)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a4d0", "name": "float(-3.1415927)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a4d4", "name": "float(-1.5707964)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a4d8", "name": "float(96)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a4dc", "name": "float(0.3)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a4e0", "name": "float(32)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a518", "name": "float(0.75)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a51c", "name": "float(0.5235988)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a520", "name": "float(30)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a524", "name": "float(1.0471976)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a528", "name": "float(0.1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a52c", "name": "float(0.7853982)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a530", "name": "float(2.3561945)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a534", "name": "float(128)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a538", "name": "float(0.17453294)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a53c", "name": "float(9)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a540", "name": "float(120)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a544", "name": "float(0.26666668)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a548", "name": "float(20)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a54c", "name": "float(-0.7853982)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a550", "name": "float(40)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a554", "name": "float(160)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a558", "name": "float(0.017453292)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a55c", "name": "float(-2.7488937)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a560", "name": "float(256)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a564", "name": "float(224)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a568", "name": "float(192)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a56c", "name": "float(2.2)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a570", "name": "float(320)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a574", "name": "float(6000)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a578", "name": "float(19)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a57c", "name": "float(12)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a580", "name": "float(33)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a584", "name": "float(4)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a588", "name": "float(255)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a58c", "name": "float(1e-05)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a590", "name": "float(240)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7b0", "name": "float(-999)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7b4", "name": "float(-1)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7b8", "name": "float(640)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7bc", "name": "float(448)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7c0", "name": "float(384)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7c4", "name": "float(5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7c8", "name": "float(2.5)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7ec", "name": "float(416)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46a7f0", "name": "float(232)", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46afac", "name": "VTABLE_46afac", "type": {"is": "array", "len": 3, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x47a630", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x47b8e0", "name": "ASCII_MANAGER_ON_DRAW_0F", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x47b900", "name": "ASCII_MANAGER", "type": {"is": "named", "name": "zAsciiManager"}}
+, {"addr": "0x487aac", "name": "ASCII_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x487acc", "name": "ASCII_MANAGER_ON_DRAW_0A", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x487af0", "name": "STAGE_ON_DRAW_03", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x487b10", "name": "STAGE", "type": {"is": "named", "name": "zStage"}}
+, {"addr": "0x487e04", "name": "STAGE_ON_DRAW_04", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x487e24", "name": "STAGE_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x487e50", "name": "ECL_MANAGER", "type": {"is": "void"}}
+, {"addr": "0x487fbc", "name": "UNKNOWN_UPDATE_FUNC_487FBC", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x487fe0", "name": "EFFECT_MANAGER", "type": {"is": "named", "name": "zEffectManager"}}
+, {"addr": "0x4b7964", "name": "EFFECT_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4b7984", "name": "EFFECT_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4b79a8", "name": "ENEMY_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x4b79c8", "name": "ENEMY_MANAGER", "type": {"is": "named", "name": "zEnemyManager"}}
+, {"addr": "0x5a5fb4", "name": "ENEMY_MANAGER_ON_TICK_09", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x5a5fd8", "name": "BULLET_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x5a5ff8", "name": "BULLET_MANAGER", "type": {"is": "named", "name": "zBulletManager"}}
+, {"addr": "0x69bc10", "name": "BULLET_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x69bc30", "name": "GUI", "type": {"is": "named", "name": "zGui"}}
+, {"addr": "0x69bc5c", "name": "GUI_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x69bc7c", "name": "GUI_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x69bca0", "name": "GAME_MANAGER", "type": {"is": "named", "name": "zGameManager"}}
+, {"addr": "0x69d720", "name": "GAME_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x69d740", "name": "GAME_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x69d760", "name": "JOYPAD_CAPS", "type": {"is": "named", "name": "JOYCAPSA"}}
+, {"addr": "0x69d918", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "void"}}
+, {"addr": "0x69d998", "name": "DEBUG_LOG", "type": {"is": "named", "name": "zDebugLog"}}
+, {"addr": "0x69e1b0", "name": "DINPUT_RELATED", "type": {"is": "void"}}
+, {"addr": "0x69e248", "name": "UNKNOWN_UPDATE_FUNC_69E248", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x69e268", "name": "ITEM_MANAGER", "type": {"is": "named", "name": "zItemManager"}}
+, {"addr": "0x6c6bb4", "name": "UNKNOWN_UPDATE_FUNC_6C6BB4", "type": {"is": "named", "name": "zUpdateFunc"}}
+, {"addr": "0x6c6bd4", "name": "WINDOW", "type": {"is": "named", "name": "zWindow"}}
+, {"addr": "0x6c6c08", "name": "FPS_COUNTER_SPRINTF_BUFFER", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+, {"addr": "0x6c6d18", "name": "SUPERVISOR", "type": {"is": "named", "name": "zSupervisor"}}
+, {"addr": "0x6c71f0", "name": "MUSIC_ROOM", "type": {"is": "named", "name": "zMusicRoom"}}
+, {"addr": "0x6ca628", "name": "PLAYER", "type": {"is": "named", "name": "zPlayer"}}
+, {"addr": "0x6d3f18", "name": "REPLAY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayManager"}}}
+, {"addr": "0x6d3f50", "name": "SOUND_MANAGER", "type": {"is": "named", "name": "zSoundManager"}}
+, {"addr": "0x6d4588", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}
+, {"addr": "0x6d4660", "name": "GLOBAL_VERTEX_BUFFER_6D4660", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zRenderVertex142"}}}
+, {"addr": "0x6d46c0", "name": "MAIN_MENU", "type": {"is": "named", "name": "zMainMenu"}}
 ]

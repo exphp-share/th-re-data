@@ -1,0 +1,1548 @@
+
+{ "BITMAPFILEHEADER": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "bfType", "type": {"is": "array", "len": 2, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x2", "name": "__padding", "type": null}
+    , {"offset": "0x4", "name": "bfSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "bfReserved1", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xa", "name": "bfReserved2", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xc", "name": "bfOffBits", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "BITMAPINFOHEADER": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "biSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "biWidth", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x8", "name": "biHeight", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0xc", "name": "biPlanes", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0xe", "name": "biBitCount", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x10", "name": "biCompression", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "biSizeImage", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "biXPelsPerMeter", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x1c", "name": "biYPelsPerMeter", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x20", "name": "biClrUsed", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "biClrImportant", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "__end", "type": null}
+    ]
+  }
+
+, "CRITICAL_SECTION": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "DebugInfo", "type": {"is": "named", "name": "PRTL_CRITICAL_SECTION_DEBUG"}}
+    , {"offset": "0x4", "name": "LockCount", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x8", "name": "RecursionCount", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0xc", "name": "OwningThread", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x10", "name": "LockSemaphore", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x14", "name": "SpinCount", "type": {"is": "named", "name": "ULONG_PTR"}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DADAPTER_IDENTIFIER9": 
+  { "is": "struct"
+  , "size": "0x44c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Driver", "type": {"is": "array", "len": 512, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x200", "name": "Description", "type": {"is": "array", "len": 512, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x400", "name": "DeviceName", "type": {"is": "array", "len": 32, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x420", "name": "DriverVersion", "type": {"is": "named", "name": "LARGE_INTEGER"}}
+    , {"offset": "0x428", "name": "VendorId", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x42c", "name": "DeviceId", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x430", "name": "SubSysId", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x434", "name": "Revision", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x438", "name": "DeviceIdentifier", "type": {"is": "named", "name": "GUID"}}
+    , {"offset": "0x448", "name": "WHQLLevel", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44c", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DBOX": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Left", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "Top", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Right", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Bottom", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "Front", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "Back", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DCAPS9": 
+  { "is": "struct"
+  , "size": "0x130"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "DeviceType", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "AdapterOrdinal", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Caps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Caps2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "Caps3", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "PresentationIntervals", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "CursorCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "DevCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "PrimitiveMiscCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "RasterCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "ZCmpCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "SrcBlendCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "DestBlendCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "AlphaCmpCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "ShadeCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "TextureCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "TextureFilterCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "CubeTextureFilterCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x48", "name": "VolumeTextureFilterCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4c", "name": "TextureAddressCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x50", "name": "VolumeTextureAddressCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x54", "name": "LineCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x58", "name": "MaxTextureWidth", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "MaxTextureHeight", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x60", "name": "MaxVolumeExtent", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x64", "name": "MaxTextureRepeat", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x68", "name": "MaxTextureAspectRatio", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x6c", "name": "MaxAnisotropy", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x70", "name": "MaxVertexW", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x74", "name": "GuardBandLeft", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x78", "name": "GuardBandTop", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x7c", "name": "GuardBandRight", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x80", "name": "GuardBandBottom", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x84", "name": "ExtentsAdjust", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x88", "name": "StencilCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8c", "name": "FVFCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x90", "name": "TextureOpCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x94", "name": "MaxTextureBlendStages", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x98", "name": "MaxSimultaneousTextures", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x9c", "name": "VertexProcessingCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xa0", "name": "MaxActiveLights", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xa4", "name": "MaxUserClipPlanes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xa8", "name": "MaxVertexBlendMatrices", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xac", "name": "MaxVertexBlendMatrixIndex", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xb0", "name": "MaxPointSize", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xb4", "name": "MaxPrimitiveCount", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xb8", "name": "MaxVertexIndex", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xbc", "name": "MaxStreams", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc0", "name": "MaxStreamStride", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc4", "name": "VertexShaderVersion", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc8", "name": "MaxVertexShaderConst", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xcc", "name": "PixelShaderVersion", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xd0", "name": "PixelShader1xMaxValue", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xd4", "name": "DevCaps2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xd8", "name": "MaxNpatchTessellationLevel", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xdc", "name": "Reserved5", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xe0", "name": "MasterAdapterOrdinal", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xe4", "name": "AdapterOrdinalInGroup", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xe8", "name": "NumberOfAdaptersInGroup", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xec", "name": "DeclTypes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xf0", "name": "NumSimultaneousRTs", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xf4", "name": "StretchRectFilterCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xf8", "name": "VS20Caps", "type": {"is": "named", "name": "D3DVSHADERCAPS2_0"}}
+    , {"offset": "0x108", "name": "PS20Caps", "type": {"is": "named", "name": "D3DPSHADERCAPS2_0"}}
+    , {"offset": "0x11c", "name": "VertexTextureFilterCaps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x120", "name": "MaxVShaderInstructionsExecuted", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x124", "name": "MaxPShaderInstructionsExecuted", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x128", "name": "MaxVertexShader30InstructionSlots", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x12c", "name": "MaxPixelShader30InstructionSlots", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x130", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DCLIPSTATUS9": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "ClipUnion", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "ClipIntersection", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DCOLOR": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "b", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x1", "name": "g", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x2", "name": "r", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x3", "name": "a", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DCOLORVALUE": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "r", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "g", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x8", "name": "b", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "a", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DDEVICE_CREATION_PARAMETERS": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "AdapterOrdinal", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "DeviceType", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "hFocusWindow", "type": {"is": "named", "name": "HWND"}}
+    , {"offset": "0xc", "name": "BehaviorFlags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DDISPLAYMODE": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Width", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "Height", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "RefreshRate", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Format", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DGAMMARAMP": 
+  { "is": "struct"
+  , "size": "0x600"
+  , "align": 2
+  , "members": 
+    [ {"offset": "0x0", "name": "red", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": false, "size": 2}}}
+    , {"offset": "0x200", "name": "green", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": false, "size": 2}}}
+    , {"offset": "0x400", "name": "blue", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": false, "size": 2}}}
+    , {"offset": "0x600", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DINDEXBUFFER_DESC": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Format", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "Type", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Usage", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Pool", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "Size", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DLIGHT9": 
+  { "is": "struct"
+  , "size": "0x68"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Type", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "Diffuse", "type": {"is": "named", "name": "D3DCOLORVALUE"}}
+    , {"offset": "0x14", "name": "Specular", "type": {"is": "named", "name": "D3DCOLORVALUE"}}
+    , {"offset": "0x24", "name": "Ambient", "type": {"is": "named", "name": "D3DCOLORVALUE"}}
+    , {"offset": "0x34", "name": "Position", "type": {"is": "named", "name": "D3DVECTOR"}}
+    , {"offset": "0x40", "name": "Direction", "type": {"is": "named", "name": "D3DVECTOR"}}
+    , {"offset": "0x4c", "name": "Range", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x50", "name": "Falloff", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x54", "name": "Attenuation0", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x58", "name": "Attenuation1", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x5c", "name": "Attenuation2", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x60", "name": "Theta", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x64", "name": "Phi", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x68", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DLOCKED_BOX": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "RowPitch", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "SlicePitch", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "pBits", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DLOCKED_RECT": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Pitch", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "pBits", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DMATERIAL9": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Diffuse", "type": {"is": "named", "name": "D3DCOLORVALUE"}}
+    , {"offset": "0x10", "name": "Ambient", "type": {"is": "named", "name": "D3DCOLORVALUE"}}
+    , {"offset": "0x20", "name": "Specular", "type": {"is": "named", "name": "D3DCOLORVALUE"}}
+    , {"offset": "0x30", "name": "Emissive", "type": {"is": "named", "name": "D3DCOLORVALUE"}}
+    , {"offset": "0x40", "name": "Power", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DMATRIX": 
+  { "is": "struct"
+  , "size": "0x40"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "m00", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "m01", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x8", "name": "m02", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "m03", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x10", "name": "m10", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x14", "name": "m11", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "m12", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "m13", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x20", "name": "m20", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x24", "name": "m21", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x28", "name": "m22", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x2c", "name": "m23", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x30", "name": "m30", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x34", "name": "m31", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x38", "name": "m32", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x3c", "name": "m33", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x40", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DPRESENT_PARAMETERS": 
+  { "is": "struct"
+  , "size": "0x38"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "BackBufferWidth", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "BackBufferHeight", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "BackBufferFormat", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "BackBufferCount", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "MultiSampleType", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "MultiSampleQuality", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "SwapEffect", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "hDeviceWindow", "type": {"is": "named", "name": "HWND"}}
+    , {"offset": "0x20", "name": "Windowed", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x24", "name": "EnableAutoDepthStencil", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x28", "name": "AutoDepthStencilFormat", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "Flags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "FullScreen_RefreshRateInHz", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "PresentationInterval", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DPSHADERCAPS2_0": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Caps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "DynamicFlowControlDepth", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "NumTemps", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "StaticFlowControlDepth", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "NumInstructionSlots", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DRASTER_STATUS": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "InVBlank", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "ScanLine", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DRECT": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "x1", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "y1", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "x2", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "y2", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DRECTPATCH_INFO": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "StartVertexOffsetWidth", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "StartVertexOffsetHeight", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Width", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Height", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "Stride", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "Basis", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "Degree", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DSURFACE_DESC": 
+  { "is": "struct"
+  , "size": "0x20"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Format", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "Type", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Usage", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Pool", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "MultiSampleType", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "MultiSampleQuality", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "Width", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "Height", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DTRIPATCH_INFO": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "StartVertexOffset", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "NumVertices", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Basis", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Degree", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DVECTOR": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "x", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x4", "name": "y", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x8", "name": "z", "type": {"is": "float", "size": 4}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DVERTEXBUFFER_DESC": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Format", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "Type", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Usage", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Pool", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "Size", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "FVF", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DVERTEXELEMENT9": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 2
+  , "members": 
+    [ {"offset": "0x0", "name": "Stream", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2", "name": "Offset", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x4", "name": "Type", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "Method", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x6", "name": "Usage", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x7", "name": "UsageIndex", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DVIEWPORT9": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "X", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "Y", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Width", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Height", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "MinZ", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x14", "name": "MaxZ", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DVOLUME_DESC": 
+  { "is": "struct"
+  , "size": "0x1c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Format", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "Type", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "Usage", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "Pool", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "Width", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "Height", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "Depth", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "__end", "type": null}
+    ]
+  }
+
+, "D3DVSHADERCAPS2_0": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Caps", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "DynamicFlowControlDepth", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "NumTemps", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "StaticFlowControlDepth", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "DIDATAFORMAT": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "dwObjSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "dwDataSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "dwNumObjs", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "rgodf", "type": {"is": "ptr", "inner": {"is": "named", "name": "DIOBJECTDATAFORMAT"}}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "DIDEVCAPS": 
+  { "is": "struct"
+  , "size": "0x2c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "dwDevType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "dwAxes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "dwButtons", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "dwPOVs", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "dwFFSamplePeriod", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "dwFFMinTimeResolution", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "dwFirmwareRevision", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "dwHardwareRevision", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "dwFFDriverVersion", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "__end", "type": null}
+    ]
+  }
+
+, "DIDEVICEINSTANCEA": 
+  { "is": "struct"
+  , "size": "0x244"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "guidInstance", "type": {"is": "named", "name": "GUID"}}
+    , {"offset": "0x14", "name": "guidProduct", "type": {"is": "named", "name": "GUID"}}
+    , {"offset": "0x24", "name": "dwDevType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "tszInstanceName", "type": {"is": "array", "len": 260, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x12c", "name": "tszProductName", "type": {"is": "array", "len": 260, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x230", "name": "guidFFDriver", "type": {"is": "named", "name": "GUID"}}
+    , {"offset": "0x240", "name": "wUsagePage", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x242", "name": "wUsage", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x244", "name": "__end", "type": null}
+    ]
+  }
+
+, "DIDEVICEOBJECTINSTANCEA": 
+  { "is": "struct"
+  , "size": "0x13c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "guidType", "type": {"is": "named", "name": "GUID"}}
+    , {"offset": "0x14", "name": "dwOfs", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "dwType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "tszName", "type": {"is": "array", "len": 260, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x124", "name": "dwFFMaxForce", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x128", "name": "dwFFForceResolution", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x12c", "name": "wCollectionNumber", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x12e", "name": "wDesignatorIndex", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x130", "name": "wUsagePage", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x132", "name": "wUsage", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x134", "name": "dwDimension", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x138", "name": "wExponent", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x13a", "name": "wReportId", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x13c", "name": "__end", "type": null}
+    ]
+  }
+
+, "DIOBJECTDATAFORMAT": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "pguid", "type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}
+    , {"offset": "0x4", "name": "dwOfs", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "dwType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "HDC": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HDC__"}}}
+
+, "HDC__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "HINSTANCERGNDATA": 
+  { "is": "struct"
+  , "size": "0x21"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "rdh", "type": {"is": "named", "name": "HINSTANCERGNDATAHEADER"}}
+    , {"offset": "0x20", "name": "Buffer", "type": {"is": "array", "len": 1, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x21", "name": "__end", "type": null}
+    ]
+  }
+
+, "HINSTANCERGNDATAHEADER": 
+  { "is": "struct"
+  , "size": "0x20"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwSize", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "iType", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "nCount", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "nRgnSize", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "rcBound", "type": {"is": "named", "name": "RECT"}}
+    , {"offset": "0x20", "name": "__end", "type": null}
+    ]
+  }
+
+, "HMONITOR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HMONITOR__"}}}
+
+, "HMONITOR__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "HRSRC": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "named", "name": "HANDLE"}}
+
+, "IDirect3D9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3D9Vtbl": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "RegisterSoftwareDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}]}}
+    , {"offset": "0x10", "name": "GetAdapterCount", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}]}}
+    , {"offset": "0x14", "name": "GetAdapterIdentifier", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DADAPTER_IDENTIFIER9"}}}]}}
+    , {"offset": "0x18", "name": "GetAdapterModeCount", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1c", "name": "EnumAdapterModes", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DDISPLAYMODE"}}}]}}
+    , {"offset": "0x20", "name": "GetAdapterDisplayMode", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DDISPLAYMODE"}}}]}}
+    , {"offset": "0x24", "name": "CheckDeviceType", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": true, "size": 4}}]}}
+    , {"offset": "0x28", "name": "CheckDeviceFormat", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x2c", "name": "CheckDeviceMultiSampleType", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": true, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x30", "name": "CheckDepthStencilMatch", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x34", "name": "CheckDeviceFormatConversion", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x38", "name": "GetDeviceCaps", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DCAPS9"}}}]}}
+    , {"offset": "0x3c", "name": "GetAdapterMonitor", "type": {"is": "fn-ptr", "ret": {"is": "ptr", "inner": {"is": "named", "name": "HMONITOR"}}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x40", "name": "CreateDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "named", "name": "HWND"}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DPRESENT_PARAMETERS"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DBaseTexture9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DBaseTexture9Vtbl": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DResource9Vtbl"}}
+    , {"offset": "0x2c", "name": "SetLOD", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x30", "name": "GetLOD", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}]}}
+    , {"offset": "0x34", "name": "GetLevelCount", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}]}}
+    , {"offset": "0x38", "name": "SetAutoGenFilterType", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x3c", "name": "GetAutoGenFilterType", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}]}}
+    , {"offset": "0x40", "name": "GenerateMipSubLevels", "type": {"is": "fn-ptr", "ret": {"is": "void"}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}]}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DCubeTexture9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DCubeTexture9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DCubeTexture9Vtbl": 
+  { "is": "struct"
+  , "size": "0x58"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DBaseTexture9Vtbl"}}
+    , {"offset": "0x44", "name": "GetLevelDesc", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DCubeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DSURFACE_DESC"}}}]}}
+    , {"offset": "0x48", "name": "GetCubeMapSurface", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DCubeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}]}}
+    , {"offset": "0x4c", "name": "LockRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DCubeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DLOCKED_RECT"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x50", "name": "UnlockRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DCubeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x54", "name": "AddDirtyRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DCubeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}]}}
+    , {"offset": "0x58", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DDevice9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DDevice9Vtbl": 
+  { "is": "struct"
+  , "size": "0x1dc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "TestCooperativeLevel", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0x10", "name": "GetAvailableTextureMem", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0x14", "name": "EvictManagedResources", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0x18", "name": "GetDirect3D", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}}]}}
+    , {"offset": "0x1c", "name": "GetDeviceCaps", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DCAPS9"}}}]}}
+    , {"offset": "0x20", "name": "GetDisplayMode", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DDISPLAYMODE"}}}]}}
+    , {"offset": "0x24", "name": "GetCreationParameters", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DDEVICE_CREATION_PARAMETERS"}}}]}}
+    , {"offset": "0x28", "name": "SetCursorProperties", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}]}}
+    , {"offset": "0x2c", "name": "SetCursorPosition", "type": {"is": "fn-ptr", "ret": {"is": "void"}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": true, "size": 4}}, {"type": {"is": "int", "signed": true, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x30", "name": "ShowCursor", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": true, "size": 4}}]}}
+    , {"offset": "0x34", "name": "CreateAdditionalSwapChain", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DPRESENT_PARAMETERS"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}}]}}
+    , {"offset": "0x38", "name": "GetSwapChain", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}}]}}
+    , {"offset": "0x3c", "name": "GetNumberOfSwapChains", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0x40", "name": "Reset", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DPRESENT_PARAMETERS"}}}]}}
+    , {"offset": "0x44", "name": "Present", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "named", "name": "HWND"}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "HINSTANCERGNDATA"}}}]}}
+    , {"offset": "0x48", "name": "GetBackBuffer", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}]}}
+    , {"offset": "0x4c", "name": "GetRasterStatus", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DRASTER_STATUS"}}}]}}
+    , {"offset": "0x50", "name": "SetDialogBoxMode", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": true, "size": 4}}]}}
+    , {"offset": "0x54", "name": "SetGammaRamp", "type": {"is": "fn-ptr", "ret": {"is": "void"}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DGAMMARAMP"}}}]}}
+    , {"offset": "0x58", "name": "GetGammaRamp", "type": {"is": "fn-ptr", "ret": {"is": "void"}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DGAMMARAMP"}}}]}}
+    , {"offset": "0x5c", "name": "CreateTexture", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture9"}}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x60", "name": "CreateVolumeTexture", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolumeTexture9"}}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x64", "name": "CreateCubeTexture", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DCubeTexture9"}}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x68", "name": "CreateVertexBuffer", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer9"}}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x6c", "name": "CreateIndexBuffer", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DIndexBuffer9"}}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x70", "name": "CreateRenderTarget", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": true, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x74", "name": "CreateDepthStencilSurface", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": true, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x78", "name": "UpdateSurface", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "POINT"}}}]}}
+    , {"offset": "0x7c", "name": "UpdateTexture", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}]}}
+    , {"offset": "0x80", "name": "GetRenderTargetData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}]}}
+    , {"offset": "0x84", "name": "GetFrontBufferData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}]}}
+    , {"offset": "0x88", "name": "StretchRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x8c", "name": "ColorFill", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x90", "name": "CreateOffscreenPlainSurface", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x94", "name": "SetRenderTarget", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}]}}
+    , {"offset": "0x98", "name": "GetRenderTarget", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}]}}
+    , {"offset": "0x9c", "name": "SetDepthStencilSurface", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}]}}
+    , {"offset": "0xa0", "name": "GetDepthStencilSurface", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}]}}
+    , {"offset": "0xa4", "name": "BeginScene", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0xa8", "name": "EndScene", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0xac", "name": "Clear", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DRECT"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "float", "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0xb0", "name": "SetTransform", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DMATRIX"}}}]}}
+    , {"offset": "0xb4", "name": "GetTransform", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DMATRIX"}}}]}}
+    , {"offset": "0xb8", "name": "MultiplyTransform", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DMATRIX"}}}]}}
+    , {"offset": "0xbc", "name": "SetViewport", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DVIEWPORT9"}}}]}}
+    , {"offset": "0xc0", "name": "GetViewport", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DVIEWPORT9"}}}]}}
+    , {"offset": "0xc4", "name": "SetMaterial", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DMATERIAL9"}}}]}}
+    , {"offset": "0xc8", "name": "GetMaterial", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DMATERIAL9"}}}]}}
+    , {"offset": "0xcc", "name": "SetLight", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DLIGHT9"}}}]}}
+    , {"offset": "0xd0", "name": "GetLight", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DLIGHT9"}}}]}}
+    , {"offset": "0xd4", "name": "LightEnable", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": true, "size": 4}}]}}
+    , {"offset": "0xd8", "name": "GetLightEnable", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}]}}
+    , {"offset": "0xdc", "name": "SetClipPlane", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}]}}
+    , {"offset": "0xe0", "name": "GetClipPlane", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}]}}
+    , {"offset": "0xe4", "name": "SetRenderState", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0xe8", "name": "GetRenderState", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0xec", "name": "CreateStateBlock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DStateBlock9"}}}}]}}
+    , {"offset": "0xf0", "name": "BeginStateBlock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0xf4", "name": "EndStateBlock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DStateBlock9"}}}}]}}
+    , {"offset": "0xf8", "name": "SetClipStatus", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DCLIPSTATUS9"}}}]}}
+    , {"offset": "0xfc", "name": "GetClipStatus", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DCLIPSTATUS9"}}}]}}
+    , {"offset": "0x100", "name": "GetTexture", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}}]}}
+    , {"offset": "0x104", "name": "SetTexture", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture9"}}}]}}
+    , {"offset": "0x108", "name": "GetTextureStageState", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x10c", "name": "SetTextureStageState", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x110", "name": "GetSamplerState", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x114", "name": "SetSamplerState", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x118", "name": "ValidateDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x11c", "name": "SetPaletteEntries", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "PALETTEENTRY"}}}]}}
+    , {"offset": "0x120", "name": "GetPaletteEntries", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "PALETTEENTRY"}}}]}}
+    , {"offset": "0x124", "name": "SetCurrentTexturePalette", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x128", "name": "GetCurrentTexturePalette", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x12c", "name": "SetScissorRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}]}}
+    , {"offset": "0x130", "name": "GetScissorRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}]}}
+    , {"offset": "0x134", "name": "SetSoftwareVertexProcessing", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": true, "size": 4}}]}}
+    , {"offset": "0x138", "name": "GetSoftwareVertexProcessing", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0x13c", "name": "SetNPatchMode", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "float", "size": 4}}]}}
+    , {"offset": "0x140", "name": "GetNPatchMode", "type": {"is": "fn-ptr", "ret": {"is": "float", "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}]}}
+    , {"offset": "0x144", "name": "DrawPrimitive", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x148", "name": "DrawIndexedPrimitive", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": true, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x14c", "name": "DrawPrimitiveUP", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x150", "name": "DrawIndexedPrimitiveUP", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x154", "name": "ProcessVertices", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexDeclaration9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x158", "name": "CreateVertexDeclaration", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DVERTEXELEMENT9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexDeclaration9"}}}}]}}
+    , {"offset": "0x15c", "name": "SetVertexDeclaration", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexDeclaration9"}}}]}}
+    , {"offset": "0x160", "name": "GetVertexDeclaration", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexDeclaration9"}}}}]}}
+    , {"offset": "0x164", "name": "SetFVF", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x168", "name": "GetFVF", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x16c", "name": "CreateVertexShader", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexShader9"}}}}]}}
+    , {"offset": "0x170", "name": "SetVertexShader", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexShader9"}}}]}}
+    , {"offset": "0x174", "name": "GetVertexShader", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexShader9"}}}}]}}
+    , {"offset": "0x178", "name": "SetVertexShaderConstantF", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x17c", "name": "GetVertexShaderConstantF", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x180", "name": "SetVertexShaderConstantI", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x184", "name": "GetVertexShaderConstantI", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x188", "name": "SetVertexShaderConstantB", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x18c", "name": "GetVertexShaderConstantB", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x190", "name": "SetStreamSource", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x194", "name": "GetStreamSource", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer9"}}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x198", "name": "SetStreamSourceFreq", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x19c", "name": "GetStreamSourceFreq", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x1a0", "name": "SetIndices", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DIndexBuffer9"}}}]}}
+    , {"offset": "0x1a4", "name": "GetIndices", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DIndexBuffer9"}}}}]}}
+    , {"offset": "0x1a8", "name": "CreatePixelShader", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DPixelShader9"}}}}]}}
+    , {"offset": "0x1ac", "name": "SetPixelShader", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DPixelShader9"}}}]}}
+    , {"offset": "0x1b0", "name": "GetPixelShader", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DPixelShader9"}}}}]}}
+    , {"offset": "0x1b4", "name": "SetPixelShaderConstantF", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1b8", "name": "GetPixelShaderConstantF", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1bc", "name": "SetPixelShaderConstantI", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1c0", "name": "GetPixelShaderConstantI", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1c4", "name": "SetPixelShaderConstantB", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1c8", "name": "GetPixelShaderConstantB", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1cc", "name": "DrawRectPatch", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DRECTPATCH_INFO"}}}]}}
+    , {"offset": "0x1d0", "name": "DrawTriPatch", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "float", "size": 4}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DTRIPATCH_INFO"}}}]}}
+    , {"offset": "0x1d4", "name": "DeletePatch", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1d8", "name": "CreateQuery", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DQuery9"}}}}]}}
+    , {"offset": "0x1dc", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DIndexBuffer9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DIndexBuffer9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DIndexBuffer9Vtbl": 
+  { "is": "struct"
+  , "size": "0x38"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DResource9Vtbl"}}
+    , {"offset": "0x2c", "name": "Lock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DIndexBuffer9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x30", "name": "Unlock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DIndexBuffer9"}}}]}}
+    , {"offset": "0x34", "name": "GetDesc", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DIndexBuffer9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DINDEXBUFFER_DESC"}}}]}}
+    , {"offset": "0x38", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DPixelShader9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DPixelShader9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DPixelShader9Vtbl": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DPixelShader9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x10", "name": "GetFunction", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DPixelShader9"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DQuery9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DQuery9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DQuery9Vtbl": 
+  { "is": "struct"
+  , "size": "0x20"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DQuery9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x10", "name": "GetType", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DQuery9"}}}]}}
+    , {"offset": "0x14", "name": "GetDataSize", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DQuery9"}}}]}}
+    , {"offset": "0x18", "name": "Issue", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DQuery9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x1c", "name": "GetData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DQuery9"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x20", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DResource9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DResource9Vtbl": 
+  { "is": "struct"
+  , "size": "0x2c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x10", "name": "SetPrivateData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x14", "name": "GetPrivateData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x18", "name": "FreePrivateData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}]}}
+    , {"offset": "0x1c", "name": "SetPriority", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x20", "name": "GetPriority", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9"}}}]}}
+    , {"offset": "0x24", "name": "PreLoad", "type": {"is": "fn-ptr", "ret": {"is": "void"}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9"}}}]}}
+    , {"offset": "0x28", "name": "GetType", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource9"}}}]}}
+    , {"offset": "0x2c", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DStateBlock9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DStateBlock9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DStateBlock9Vtbl": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DStateBlock9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x10", "name": "Capture", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DStateBlock9"}}}]}}
+    , {"offset": "0x14", "name": "Apply", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DStateBlock9"}}}]}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DSurface9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DSurface9Vtbl": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DResource9Vtbl"}}
+    , {"offset": "0x2c", "name": "GetContainer", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x30", "name": "GetDesc", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DSURFACE_DESC"}}}]}}
+    , {"offset": "0x34", "name": "LockRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DLOCKED_RECT"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x38", "name": "UnlockRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}]}}
+    , {"offset": "0x3c", "name": "GetDC", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "HDC"}}}]}}
+    , {"offset": "0x40", "name": "ReleaseDC", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}, {"type": {"is": "named", "name": "HDC"}}]}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DSwapChain9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DSwapChain9Vtbl": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "Present", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "named", "name": "HWND"}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "HINSTANCERGNDATA"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x10", "name": "GetFrontBufferData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}]}}
+    , {"offset": "0x14", "name": "GetBackBuffer", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}]}}
+    , {"offset": "0x18", "name": "GetRasterStatus", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DRASTER_STATUS"}}}]}}
+    , {"offset": "0x1c", "name": "GetDisplayMode", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DDISPLAYMODE"}}}]}}
+    , {"offset": "0x20", "name": "GetDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x24", "name": "GetPresentParameters", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSwapChain9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DPRESENT_PARAMETERS"}}}]}}
+    , {"offset": "0x28", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DTexture9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DTexture9Vtbl": 
+  { "is": "struct"
+  , "size": "0x58"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DBaseTexture9Vtbl"}}
+    , {"offset": "0x44", "name": "GetLevelDesc", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DSURFACE_DESC"}}}]}}
+    , {"offset": "0x48", "name": "GetSurfaceLevel", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface9"}}}}]}}
+    , {"offset": "0x4c", "name": "LockRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DLOCKED_RECT"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x50", "name": "UnlockRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x54", "name": "AddDirtyRect", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "RECT"}}}]}}
+    , {"offset": "0x58", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVertexBuffer9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVertexBuffer9Vtbl": 
+  { "is": "struct"
+  , "size": "0x38"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DResource9Vtbl"}}
+    , {"offset": "0x2c", "name": "Lock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x30", "name": "Unlock", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer9"}}}]}}
+    , {"offset": "0x34", "name": "GetDesc", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DVERTEXBUFFER_DESC"}}}]}}
+    , {"offset": "0x38", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVertexDeclaration9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexDeclaration9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVertexDeclaration9Vtbl": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexDeclaration9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x10", "name": "GetDeclaration", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexDeclaration9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DVERTEXELEMENT9"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVertexShader9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexShader9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVertexShader9Vtbl": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexShader9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x10", "name": "GetFunction", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexShader9"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVolume9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVolume9Vtbl": 
+  { "is": "struct"
+  , "size": "0x2c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetDevice", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}}]}}
+    , {"offset": "0x10", "name": "SetPrivateData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x14", "name": "GetPrivateData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}, {"type": {"is": "ptr", "inner": {"is": "void"}}}, {"type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}]}}
+    , {"offset": "0x18", "name": "FreePrivateData", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}]}}
+    , {"offset": "0x1c", "name": "GetContainer", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x20", "name": "GetDesc", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DVOLUME_DESC"}}}]}}
+    , {"offset": "0x24", "name": "LockBox", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DLOCKED_BOX"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DBOX"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x28", "name": "UnlockBox", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}]}}
+    , {"offset": "0x2c", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVolumeTexture9": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolumeTexture9Vtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirect3DVolumeTexture9Vtbl": 
+  { "is": "struct"
+  , "size": "0x58"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IDirect3DBaseTexture9Vtbl"}}
+    , {"offset": "0x44", "name": "GetLevelDesc", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolumeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DVOLUME_DESC"}}}]}}
+    , {"offset": "0x48", "name": "GetVolumeLevel", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolumeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolume9"}}}}]}}
+    , {"offset": "0x4c", "name": "LockBox", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolumeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DLOCKED_BOX"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DBOX"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x50", "name": "UnlockBox", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolumeTexture9"}}}, {"type": {"is": "int", "signed": false, "size": 4}}]}}
+    , {"offset": "0x54", "name": "AddDirtyBox", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVolumeTexture9"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "D3DBOX"}}}]}}
+    , {"offset": "0x58", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectInput8A": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectInput8AVtbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectInput8AVtbl": 
+  { "is": "struct"
+  , "size": "0x2c"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "CreateDevice", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "EnumDevices", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "GetDeviceStatus", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "RunControlPanel", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x1c", "name": "Initialize", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x20", "name": "FindDevice", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x24", "name": "EnumDevicesBySemantics", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x28", "name": "ConfigureDevices", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x2c", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectInputDevice8A": 
+  { "is": "struct"
+  , "size": "0x5"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectInputDevice8AVTbl"}}}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x5", "name": "__end", "type": null}
+    ]
+  }
+
+, "IDirectInputDevice8AVTbl": 
+  { "is": "struct"
+  , "size": "0x80"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "super", "type": {"is": "named", "name": "IUnknownVtbl"}}
+    , {"offset": "0xc", "name": "GetCapabilities", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x10", "name": "EnumObjects", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x14", "name": "GetProperty", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "SetProperty", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x1c", "name": "Acquire", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x20", "name": "Unacquire", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x24", "name": "GetDeviceState", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x28", "name": "GetDeviceData", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x2c", "name": "SetDataFormat", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x30", "name": "SetEventNotification", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x34", "name": "SetCooperativeLevel", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x38", "name": "GetObjectInfo", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x3c", "name": "GetDeviceInfo", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x40", "name": "RunControlPanel", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x44", "name": "Initialize", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x48", "name": "CreateEffect", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x4c", "name": "EnumEffects", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x50", "name": "GetEffectInfo", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x54", "name": "GetForceFeedbackState", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x58", "name": "SendForceFeedbackCommand", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x5c", "name": "EnumCreatedEffectObjects", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x60", "name": "Escape", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x64", "name": "Poll", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x68", "name": "SendDeviceData", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x6c", "name": "EnumEffectsInFile", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x70", "name": "WriteEffectToFile", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x74", "name": "BuildActionMap", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x78", "name": "SetActionMap", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x7c", "name": "GetImageInfo", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x80", "name": "__end", "type": null}
+    ]
+  }
+
+, "IUnknown": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "IUnknownVtbl": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "QueryInterface", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknown"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x4", "name": "AddRef", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknown"}}}]}}
+    , {"offset": "0x8", "name": "Release", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknown"}}}]}}
+    , {"offset": "0xc", "name": "__end", "type": null}
+    ]
+  }
+
+, "JOYCAPSA": 
+  { "is": "struct"
+  , "size": "0x194"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "wMid", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x2", "name": "wPid", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x4", "name": "szPname", "type": {"is": "array", "len": 32, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x24", "name": "wXmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x28", "name": "wXmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x2c", "name": "wYmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x30", "name": "wYmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x34", "name": "wZmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x38", "name": "wZmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x3c", "name": "wNumButtons", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x40", "name": "wPeriodMin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x44", "name": "wPeriodMax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x48", "name": "wRmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x4c", "name": "wRmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x50", "name": "wUmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x54", "name": "wUmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x58", "name": "wVmin", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x5c", "name": "wVmax", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x60", "name": "wCaps", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x64", "name": "wMaxAxes", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x68", "name": "wNumAxes", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x6c", "name": "wMaxButtons", "type": {"is": "named", "name": "UINT"}}
+    , {"offset": "0x70", "name": "szRegKey", "type": {"is": "array", "len": 32, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x90", "name": "szOEMVxD", "type": {"is": "array", "len": 260, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x194", "name": "__end", "type": null}
+    ]
+  }
+
+, "Load_Configuration_Directory_Table": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "characteristics", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "timeDateStamp", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "majorVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xa", "name": "minorVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xc", "name": "globalFlagsClear", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "globalFlagsSet", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "criticalSectionDefaultTimeout", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "deCommitFreeBlockThreshold", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "deCommitTotalFreeThreshold", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "lockPrefixTable", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "maximumAllocationSize", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "virtualMemoryThreshold", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "processAffinityMask", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "processHeapFlags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "csdVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x36", "name": "reserved", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x38", "name": "editList", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "securityCookie", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "seHandlerTable", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "seHandlerCount", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "PALETTEENTRY": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "peRed", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x1", "name": "peGreen", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x2", "name": "peBlue", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x3", "name": "peFlags", "type": {"is": "int", "signed": true, "size": 1}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "RGBQUAD": 
+  { "is": "struct"
+  , "size": "0x4"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "rgbBlue", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x1", "name": "rgbGreen", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x2", "name": "rgbRed", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x3", "name": "rgbReserved", "type": {"is": "named", "name": "BYTE"}}
+    , {"offset": "0x4", "name": "__end", "type": null}
+    ]
+  }
+
+, "Rich_Header": 
+  { "is": "struct"
+  , "size": "0x88"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "e_magic__DanS", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "e_align", "type": {"is": "array", "len": 3, "inner": {"is": "int", "signed": false, "size": 4}}}
+    , {"offset": "0x10", "name": "e_entry_id0__00c7a09e", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "e_entry_count0__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "e_entry_id1__00df5146", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "e_entry_count1__49", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "e_entry_id2__00e05146", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "e_entry_count2__146", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "e_entry_id3__00e15146", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "e_entry_count3__57", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "e_entry_id4__00ab766f", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "e_entry_count4__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "e_entry_id5__009c52d2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "e_entry_count5__2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "e_entry_id6__007bc627", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "e_entry_count6__2", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x48", "name": "e_entry_id7__00010000", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4c", "name": "e_entry_count7__186", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x50", "name": "e_entry_id8__00937809", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x54", "name": "e_entry_count8__15", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x58", "name": "e_entry_id9__00837809", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "e_entry_count9__6", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x60", "name": "e_entry_id10__00e5520d", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x64", "name": "e_entry_count10__81", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x68", "name": "e_entry_id11__00db520d", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x6c", "name": "e_entry_count11__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x70", "name": "e_entry_id12__00970000", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x74", "name": "e_entry_count12__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x78", "name": "e_entry_id13__00de520d", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x7c", "name": "e_entry_count13__1", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x80", "name": "e_magic", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x84", "name": "e_checksum", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x88", "name": "__end", "type": null}
+    ]
+  }
+
+, "WIN32_FIND_DATAA": 
+  { "is": "struct"
+  , "size": "0x14a"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwFileAttributes", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "ftCreationTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0xc", "name": "ftLastAccessTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x14", "name": "ftLastWriteTime", "type": {"is": "named", "name": "FILETIME"}}
+    , {"offset": "0x1c", "name": "nFileSizeHigh", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "nFileSizeLow", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "dwReserved0", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "dwReserved1", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "cFileName", "type": {"is": "array", "len": 260, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x130", "name": "cAlternateFileName", "type": {"is": "array", "len": 14, "inner": {"is": "named", "name": "CHAR"}}}
+    , {"offset": "0x13e", "name": "__padding", "type": null}
+    , {"offset": "0x140", "name": "dwFileType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x144", "name": "dwCreatorType", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x148", "name": "wFinderFlags", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x14a", "name": "__end", "type": null}
+    ]
+  }
+
+, "_PROCESS_INFORMATION": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "hProcess", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x4", "name": "hThread", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x8", "name": "dwProcessId", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0xc", "name": "dwThreadId", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "_STARTUPINFOA": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cb", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "lpReserved", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0x8", "name": "lpDesktop", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0xc", "name": "lpTitle", "type": {"is": "named", "name": "LPSTR"}}
+    , {"offset": "0x10", "name": "dwX", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "dwY", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "dwXSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "dwYSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "dwXCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "dwYCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "dwFillAttribute", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x30", "name": "wShowWindow", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x32", "name": "cbReserved2", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x34", "name": "lpReserved2", "type": {"is": "named", "name": "LPBYTE"}}
+    , {"offset": "0x38", "name": "hStdInput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x3c", "name": "hStdOutput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x40", "name": "hStdError", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "_STARTUPINFOW": 
+  { "is": "struct"
+  , "size": "0x44"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "cb", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "lpReserved", "type": {"is": "named", "name": "LPWSTR"}}
+    , {"offset": "0x8", "name": "lpDesktop", "type": {"is": "named", "name": "LPWSTR"}}
+    , {"offset": "0xc", "name": "lpTitle", "type": {"is": "named", "name": "LPWSTR"}}
+    , {"offset": "0x10", "name": "dwX", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x14", "name": "dwY", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x18", "name": "dwXSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x1c", "name": "dwYSize", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x20", "name": "dwXCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x24", "name": "dwYCountChars", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x28", "name": "dwFillAttribute", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x2c", "name": "dwFlags", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x30", "name": "wShowWindow", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x32", "name": "cbReserved2", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x34", "name": "lpReserved2", "type": {"is": "named", "name": "LPBYTE"}}
+    , {"offset": "0x38", "name": "hStdInput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x3c", "name": "hStdOutput", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x40", "name": "hStdError", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+}

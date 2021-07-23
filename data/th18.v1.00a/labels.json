@@ -1,440 +1,436 @@
+
 { "card": 
-  [ ["0x411489", "56__Null"]
-  , ["0x4114e1", "1__Life"]
-  , ["0x411545", "2__Bomb"]
-  , ["0x4115a9", "3__LifeFragment"]
-  , ["0x41160d", "4__BombFragment"]
-  , ["0x411671", "5__Nazrin"]
-  , ["0x4116d5", "6__Ringo"]
-  , ["0x411739", "7__Mokou"]
-  , ["0x41179d", "38__Mike"]
-  , ["0x4117f5", "39__Takane"]
-  , ["0x41184d", "40__Sannyo"]
-  , ["0x4118a5", "8__Reimu1"]
-  , ["0x411910", "16__Youmu"]
-  , ["0x411965", "17__Alice"]
-  , ["0x4119bd", "18__Cirno"]
-  , ["0x411a15", "24__Tewi"]
-  , ["0x411a6d", "23__Eirin"]
-  , ["0x411ada", "21__Nitori"]
-  , ["0x411b32", "22__Kanako"]
-  , ["0x411b8a", "25__Saki"]
-  , ["0x411be2", "27__Koishi"]
-  , ["0x411c3a", "26__Byakuren"]
-  , ["0x411c92", "41__Yukari"]
-  , ["0x411d30", "43__Tenshi"]
-  , ["0x411e05", "42__Shinmyoumaru"]
-  , ["0x411ea3", "44__Clownpiece"]
-  , ["0x411f4b", "0__Chimata"]
-  , ["0x411faa", "9__Reimu2"]
-  , ["0x412002", "10__Marisa1"]
-  , ["0x41205a", "11__Marisa2"]
-  , ["0x4120b2", "12__Sakuya1"]
-  , ["0x41210a", "13__Sakuya2"]
-  , ["0x412162", "14__Sanae1"]
-  , ["0x4121ba", "15__Sanae2"]
-  , ["0x412212", "19__Okina"]
-  , ["0x41226a", "20__Nue"]
-  , ["0x4122c2", "28__Suwako"]
-  , ["0x41231a", "29__Aya"]
-  , ["0x412380", "30__Keiki"]
-  , ["0x412480", "31__Kaguya"]
-  , ["0x4124d8", "45__Miko"]
-  , ["0x412576", "32__Mamizou"]
-  , ["0x4125da", "33__Yuyuko"]
-  , ["0x412632", "34__Yachie"]
-  , ["0x41268a", "46__Remilia"]
-  , ["0x412728", "47__Utusho"]
-  , ["0x4127c6", "48__LilyWhite"]
-  , ["0x41286b", "35__ShikiEiki"]
-  , ["0x4128c3", "50__Sumireko"]
-  , ["0x412961", "36__Narumi"]
-  , ["0x4129c5", "37__Patchouli"]
-  , ["0x412a29", "49__Raiko"]
-  , ["0x412ac7", "51__Misumaru"]
-  , ["0x412b39", "53__Megumu"]
-  , ["0x412ba7", "52__Tsukasa"]
-  , ["0x412c15", "54__Momoyo"]
-  , ["0x412c82", "55__Magatama"]
+  [ {"addr": "0x411489", "label": "56__Null"}
+  , {"addr": "0x4114e1", "label": "1__Life"}
+  , {"addr": "0x411545", "label": "2__Bomb"}
+  , {"addr": "0x4115a9", "label": "3__LifeFragment"}
+  , {"addr": "0x41160d", "label": "4__BombFragment"}
+  , {"addr": "0x411671", "label": "5__Nazrin"}
+  , {"addr": "0x4116d5", "label": "6__Ringo"}
+  , {"addr": "0x411739", "label": "7__Mokou"}
+  , {"addr": "0x41179d", "label": "38__Mike"}
+  , {"addr": "0x4117f5", "label": "39__Takane"}
+  , {"addr": "0x41184d", "label": "40__Sannyo"}
+  , {"addr": "0x4118a5", "label": "8__Reimu1"}
+  , {"addr": "0x411910", "label": "16__Youmu"}
+  , {"addr": "0x411965", "label": "17__Alice"}
+  , {"addr": "0x4119bd", "label": "18__Cirno"}
+  , {"addr": "0x411a15", "label": "24__Tewi"}
+  , {"addr": "0x411a6d", "label": "23__Eirin"}
+  , {"addr": "0x411ada", "label": "21__Nitori"}
+  , {"addr": "0x411b32", "label": "22__Kanako"}
+  , {"addr": "0x411b8a", "label": "25__Saki"}
+  , {"addr": "0x411be2", "label": "27__Koishi"}
+  , {"addr": "0x411c3a", "label": "26__Byakuren"}
+  , {"addr": "0x411c92", "label": "41__Yukari"}
+  , {"addr": "0x411d30", "label": "43__Tenshi"}
+  , {"addr": "0x411e05", "label": "42__Shinmyoumaru"}
+  , {"addr": "0x411ea3", "label": "44__Clownpiece"}
+  , {"addr": "0x411f4b", "label": "0__Chimata"}
+  , {"addr": "0x411faa", "label": "9__Reimu2"}
+  , {"addr": "0x412002", "label": "10__Marisa1"}
+  , {"addr": "0x41205a", "label": "11__Marisa2"}
+  , {"addr": "0x4120b2", "label": "12__Sakuya1"}
+  , {"addr": "0x41210a", "label": "13__Sakuya2"}
+  , {"addr": "0x412162", "label": "14__Sanae1"}
+  , {"addr": "0x4121ba", "label": "15__Sanae2"}
+  , {"addr": "0x412212", "label": "19__Okina"}
+  , {"addr": "0x41226a", "label": "20__Nue"}
+  , {"addr": "0x4122c2", "label": "28__Suwako"}
+  , {"addr": "0x41231a", "label": "29__Aya"}
+  , {"addr": "0x412380", "label": "30__Keiki"}
+  , {"addr": "0x412480", "label": "31__Kaguya"}
+  , {"addr": "0x4124d8", "label": "45__Miko"}
+  , {"addr": "0x412576", "label": "32__Mamizou"}
+  , {"addr": "0x4125da", "label": "33__Yuyuko"}
+  , {"addr": "0x412632", "label": "34__Yachie"}
+  , {"addr": "0x41268a", "label": "46__Remilia"}
+  , {"addr": "0x412728", "label": "47__Utusho"}
+  , {"addr": "0x4127c6", "label": "48__LilyWhite"}
+  , {"addr": "0x41286b", "label": "35__ShikiEiki"}
+  , {"addr": "0x4128c3", "label": "50__Sumireko"}
+  , {"addr": "0x412961", "label": "36__Narumi"}
+  , {"addr": "0x4129c5", "label": "37__Patchouli"}
+  , {"addr": "0x412a29", "label": "49__Raiko"}
+  , {"addr": "0x412ac7", "label": "51__Misumaru"}
+  , {"addr": "0x412b39", "label": "53__Megumu"}
+  , {"addr": "0x412ba7", "label": "52__Tsukasa"}
+  , {"addr": "0x412c15", "label": "54__Momoyo"}
+  , {"addr": "0x412c82", "label": "55__Magatama"}
   ]
-
 , "std": 
-  [ ["0x41d2f4", "1__jmp"]
-  , ["0x41d338", "2__pos"]
-  , ["0x41d3b9", "3__posTime"]
-  , ["0x41d44f", "4__facing"]
-  , ["0x41d46f", "5__facingTime"]
-  , ["0x41d4f9", "6__up"]
-  , ["0x41d519", "18__upTime"]
-  , ["0x41d5b5", "7__fov"]
-  , ["0x41d5c3", "21__fovTime"]
-  , ["0x41d62a", "8__fog"]
-  , ["0x41d69c", "9__fogTime"]
-  , ["0x41d718", "10__posBezier"]
-  , ["0x41d7d6", "11__facingBezier"]
-  , ["0x41d876", "12__rockingMode"]
-  , ["0x41d930", "13__bgColor"]
-  , ["0x41d93d", "14__sprite"]
-  , ["0x41d9ee", "17__distortion"]
-  , ["0x41dad9", "20"]
-  , ["0x41daef", "19"]
-  , ["0x41dbaf", "15__multiple"]
-  , ["0x41dc53", "0__stop"]
+  [ {"addr": "0x41d2f4", "label": "1__jmp"}
+  , {"addr": "0x41d338", "label": "2__pos"}
+  , {"addr": "0x41d3b9", "label": "3__posTime"}
+  , {"addr": "0x41d44f", "label": "4__facing"}
+  , {"addr": "0x41d46f", "label": "5__facingTime"}
+  , {"addr": "0x41d4f9", "label": "6__up"}
+  , {"addr": "0x41d519", "label": "18__upTime"}
+  , {"addr": "0x41d5b5", "label": "7__fov"}
+  , {"addr": "0x41d5c3", "label": "21__fovTime"}
+  , {"addr": "0x41d62a", "label": "8__fog"}
+  , {"addr": "0x41d69c", "label": "9__fogTime"}
+  , {"addr": "0x41d718", "label": "10__posBezier"}
+  , {"addr": "0x41d7d6", "label": "11__facingBezier"}
+  , {"addr": "0x41d876", "label": "12__rockingMode"}
+  , {"addr": "0x41d930", "label": "13__bgColor"}
+  , {"addr": "0x41d93d", "label": "14__sprite"}
+  , {"addr": "0x41d9ee", "label": "17__distortion"}
+  , {"addr": "0x41dad9", "label": "20"}
+  , {"addr": "0x41daef", "label": "19"}
+  , {"addr": "0x41dbaf", "label": "15__multiple"}
+  , {"addr": "0x41dc53", "label": "0__stop"}
   ]
-
 , "ecl": 
-  [ ["0x430ddb", "309__multiple"]
-  , ["0x430df1", "300__multiple"]
-  , ["0x430dfd", "302__anmSelect"]
-  , ["0x430e14", "424__moveSetMirror"]
-  , ["0x430e39", "631__lifeHide"]
-  , ["0x430e61", "552__zIndex"]
-  , ["0x430e78", "553__hitSound"]
-  , ["0x430e8f", "638__scoreAdd"]
-  , ["0x430eda", "303__anmSetSprite"]
-  , ["0x430ee6", "320__anmMove"]
-  , ["0x430f46", "319__multiple"]
-  , ["0x430f52", "566__unknown566"]
-  , ["0x430f6b", "323__enm323"]
-  , ["0x430f94", "561__die"]
-  , ["0x431085", "322__enm322"]
-  , ["0x4310b1", "554__stageLogo"]
-  , ["0x4310c1", "338__anmPlayPos"]
-  , ["0x4311df", "307__anmPlay"]
-  , ["0x431292", "314__anmPlayHigh"]
-  , ["0x431345", "308__anmPlayAbs"]
-  , ["0x4313c8", "339__anm339"]
-  , ["0x4314d1", "315__anmPlayRotate"]
-  , ["0x43156e", "334__anm334"]
-  , ["0x431592", "306__anmSetMain"]
-  , ["0x431680", "318__anmReset"]
-  , ["0x4316f5", "313__anmSelectedPlay"]
-  , ["0x4317a1", "316__anm316"]
-  , ["0x43186d", "317__anmSwitch"]
-  , ["0x431898", "427__moveReset"]
-  , ["0x4319a7", "400__multiple"]
-  , ["0x431aae", "416__multiple"]
-  , ["0x431b4c", "401__multiple"]
-  , ["0x431d26", "434__multiple"]
-  , ["0x431ed6", "425__multiple"]
-  , ["0x43205a", "404__multiple"]
-  , ["0x432147", "405__multiple"]
-  , ["0x4324c8", "440__multiple"]
-  , ["0x43252a", "441__multiple"]
-  , ["0x432727", "444__multiple"]
-  , ["0x432771", "445__multiple"]
-  , ["0x432899", "408__multiple"]
-  , ["0x4329b3", "409__multiple"]
-  , ["0x432c40", "418__multiple"]
-  , ["0x432cdd", "420__multiple"]
-  , ["0x432e66", "421__multiple"]
-  , ["0x43326b", "414__moveBoss"]
-  , ["0x433290", "415__moveBossRel"]
-  , ["0x4332b5", "432__moveEnm"]
-  , ["0x4332cc", "433__moveEnmRel"]
-  , ["0x4332f9", "504__moveLimit"]
-  , ["0x43334c", "505__moveLimitReset"]
-  , ["0x43335b", "526__etProtectRange"]
-  , ["0x433375", "412__multiple"]
-  , ["0x433735", "527__lifeMarker"]
-  , ["0x4337a1", "632__funcSet"]
-  , ["0x4337c6", "639__funcSet2"]
-  , ["0x4337eb", "633__flagExtDmg"]
-  , ["0x433806", "634__unknown634"]
-  , ["0x433821", "637__funcCall"]
-  , ["0x43383a", "500__setHurtbox"]
-  , ["0x433884", "501__setHitbox"]
-  , ["0x4338ab", "569__unknown569"]
-  , ["0x433904", "570__unknown570"]
-  , ["0x433946", "563__unknown563"]
-  , ["0x433968", "564__unknown564"]
-  , ["0x43397e", "565__bombInvuln"]
-  , ["0x433994", "502__flagSet"]
-  , ["0x4339d4", "503__flagClear"]
-  , ["0x433a14", "506__dropClear"]
-  , ["0x433a24", "507__dropExtra"]
-  , ["0x433a4a", "573__unknown573"]
-  , ["0x433a70", "574"]
-  , ["0x433a8a", "508__dropArea"]
-  , ["0x433abf", "509__dropItems"]
-  , ["0x433ad1", "562__unknown562"]
-  , ["0x433ae9", "510__dropMain"]
-  , ["0x433b03", "511__lifeSet"]
-  , ["0x433b64", "572__lifeNow"]
-  , ["0x433b95", "512__setBoss"]
-  , ["0x433c1e", "515__setInvuln"]
-  , ["0x433c38", "541__unknown541"]
-  , ["0x433c52", "551__unknown551"]
-  , ["0x433c6c", "571__unknown571"]
-  , ["0x433c7c", "535__diffI"]
-  , ["0x433d1c", "536__diffF"]
-  , ["0x433dde", "600__etNew"]
-  , ["0x433ea2", "614__etCopy"]
-  , ["0x433f34", "601__etOn"]
-  , ["0x434032", "602__etSprite"]
-  , ["0x434066", "603__etOffset"]
-  , ["0x43409b", "626__etOffsetRad"]
-  , ["0x434126", "627__etDist"]
-  , ["0x43414e", "628__etOffsetAbs"]
-  , ["0x4341cc", "604__etAngle"]
-  , ["0x43420e", "605__etSpeed"]
-  , ["0x434246", "606__etCount"]
-  , ["0x43427c", "624__etSpeedD"]
-  , ["0x434328", "625__etCountD"]
-  , ["0x4343d6", "617__etSpeedR3"]
-  , ["0x43447b", "618__etSpeedR5"]
-  , ["0x43457d", "619__etSpeedR2"]
-  , ["0x434663", "620__etCountR3"]
-  , ["0x4346d6", "621__etCountR5"]
-  , ["0x434761", "622__etCountR2"]
-  , ["0x43482f", "607__etAim"]
-  , ["0x434856", "608__etSound"]
-  , ["0x43488a", "609__multiple"]
-  , ["0x434adc", "641__etExSubtract"]
-  , ["0x434b03", "640__etExSub"]
-  , ["0x434b3f", "700__laserNew"]
-  , ["0x434b9b", "701__laserTiming"]
-  , ["0x434bff", "514__setNext"]
-  , ["0x434d06", "521__setTimeout"]
-  , ["0x434d26", "556__setDeath"]
-  , ["0x434d46", "613__etClearAll"]
-  , ["0x434d67", "516__playSound"]
-  , ["0x434d8d", "517__setScreenShake"]
-  , ["0x434dbf", "518__dialogRead"]
-  , ["0x434e1b", "525__enmKillAll"]
-  , ["0x434e2b", "519__dialogWait"]
-  , ["0x434e59", "520__unknown520"]
-  , ["0x434e98", "558__flagMirror"]
-  , ["0x434eba", "522__multiple"]
-  , ["0x434fc0", "513__timerReset"]
-  , ["0x434fd2", "568__spellMode"]
-  , ["0x434fec", "523__spellEnd"]
-  , ["0x435067", "542__spellTimeout"]
-  , ["0x435077", "543__unknown543"]
-  , ["0x435087", "567__unknown567"]
-  , ["0x4350a1", "544__unknown544"]
-  , ["0x4350c3", "702__laserOn"]
-  , ["0x43527d", "703__laserStOn"]
-  , ["0x435469", "713__unknown713"]
-  , ["0x4355d5", "711__laserCuOn"]
-  , ["0x435760", "710__laserStEnd"]
-  , ["0x4357b7", "704__laserOffset"]
-  , ["0x435822", "705__laserTrajectory"]
-  , ["0x43588d", "706__laserStLength"]
-  , ["0x4358c6", "707__laserStWidth"]
-  , ["0x4358ff", "708__laserStAngle"]
-  , ["0x435938", "709__laserStRotation"]
-  , ["0x435971", "714__unknown714"]
-  , ["0x4359b0", "615__etCancel"]
-  , ["0x435a02", "712__hitboxRect"]
-  , ["0x435a74", "616__etClear"]
-  , ["0x435aab", "635__etCancel2"]
-  , ["0x435ae5", "636__etClear2"]
-  , ["0x435b23", "524__setChapter"]
-  , ["0x435b4f", "529__rankF3"]
-  , ["0x435ba4", "530__rankF5"]
-  , ["0x435c47", "531__rankF2"]
-  , ["0x435cc8", "532__rankI3"]
-  , ["0x435d19", "533__rankI5"]
-  , ["0x435db6", "534__rankI2"]
-  , ["0x435e07", "540__stars"]
-  , ["0x435e21", "545__reset"]
-  , ["0x435e31", "546__bombShield"]
-  , ["0x435e78", "559__unknown559"]
-  , ["0x435e92", "547__gameSpeed"]
-  , ["0x435ead", "623__angleToPlayer"]
-  , ["0x435f30", "548__diffWait"]
-  , ["0x435fe0", "629__fog"]
-  , ["0x43609e", "630__callSTD"]
-  , ["0x4360b8", "557__unknown557"]
-  , ["0x43618b", "549__unknown549"]
-  , ["0x4361b0", "550__unknown550"]
-  , ["0x4361c4", "555__enmAlive"]
-  , ["0x4361eb", "801__enmPos"]
-  , ["0x43623c", "802__unknown802"]
-  , ["0x4362fb", "800__enmCall"]
-  , ["0x43633e", "324__enm324"]
-  , ["0x4363af", "560__unknown560"]
-  , ["0x4363e1", "340__anm340"]
-  , ["0x436403", "1001__spec1"]
-  , ["0x436417", "default"]
+  [ {"addr": "0x430ddb", "label": "309__multiple"}
+  , {"addr": "0x430df1", "label": "300__multiple"}
+  , {"addr": "0x430dfd", "label": "302__anmSelect"}
+  , {"addr": "0x430e14", "label": "424__moveSetMirror"}
+  , {"addr": "0x430e39", "label": "631__lifeHide"}
+  , {"addr": "0x430e61", "label": "552__zIndex"}
+  , {"addr": "0x430e78", "label": "553__hitSound"}
+  , {"addr": "0x430e8f", "label": "638__scoreAdd"}
+  , {"addr": "0x430eda", "label": "303__anmSetSprite"}
+  , {"addr": "0x430ee6", "label": "320__anmMove"}
+  , {"addr": "0x430f46", "label": "319__multiple"}
+  , {"addr": "0x430f52", "label": "566__unknown566"}
+  , {"addr": "0x430f6b", "label": "323__enm323"}
+  , {"addr": "0x430f94", "label": "561__die"}
+  , {"addr": "0x431085", "label": "322__enm322"}
+  , {"addr": "0x4310b1", "label": "554__stageLogo"}
+  , {"addr": "0x4310c1", "label": "338__anmPlayPos"}
+  , {"addr": "0x4311df", "label": "307__anmPlay"}
+  , {"addr": "0x431292", "label": "314__anmPlayHigh"}
+  , {"addr": "0x431345", "label": "308__anmPlayAbs"}
+  , {"addr": "0x4313c8", "label": "339__anm339"}
+  , {"addr": "0x4314d1", "label": "315__anmPlayRotate"}
+  , {"addr": "0x43156e", "label": "334__anm334"}
+  , {"addr": "0x431592", "label": "306__anmSetMain"}
+  , {"addr": "0x431680", "label": "318__anmReset"}
+  , {"addr": "0x4316f5", "label": "313__anmSelectedPlay"}
+  , {"addr": "0x4317a1", "label": "316__anm316"}
+  , {"addr": "0x43186d", "label": "317__anmSwitch"}
+  , {"addr": "0x431898", "label": "427__moveReset"}
+  , {"addr": "0x4319a7", "label": "400__multiple"}
+  , {"addr": "0x431aae", "label": "416__multiple"}
+  , {"addr": "0x431b4c", "label": "401__multiple"}
+  , {"addr": "0x431d26", "label": "434__multiple"}
+  , {"addr": "0x431ed6", "label": "425__multiple"}
+  , {"addr": "0x43205a", "label": "404__multiple"}
+  , {"addr": "0x432147", "label": "405__multiple"}
+  , {"addr": "0x4324c8", "label": "440__multiple"}
+  , {"addr": "0x43252a", "label": "441__multiple"}
+  , {"addr": "0x432727", "label": "444__multiple"}
+  , {"addr": "0x432771", "label": "445__multiple"}
+  , {"addr": "0x432899", "label": "408__multiple"}
+  , {"addr": "0x4329b3", "label": "409__multiple"}
+  , {"addr": "0x432c40", "label": "418__multiple"}
+  , {"addr": "0x432cdd", "label": "420__multiple"}
+  , {"addr": "0x432e66", "label": "421__multiple"}
+  , {"addr": "0x43326b", "label": "414__moveBoss"}
+  , {"addr": "0x433290", "label": "415__moveBossRel"}
+  , {"addr": "0x4332b5", "label": "432__moveEnm"}
+  , {"addr": "0x4332cc", "label": "433__moveEnmRel"}
+  , {"addr": "0x4332f9", "label": "504__moveLimit"}
+  , {"addr": "0x43334c", "label": "505__moveLimitReset"}
+  , {"addr": "0x43335b", "label": "526__etProtectRange"}
+  , {"addr": "0x433375", "label": "412__multiple"}
+  , {"addr": "0x433735", "label": "527__lifeMarker"}
+  , {"addr": "0x4337a1", "label": "632__funcSet"}
+  , {"addr": "0x4337c6", "label": "639__funcSet2"}
+  , {"addr": "0x4337eb", "label": "633__flagExtDmg"}
+  , {"addr": "0x433806", "label": "634__unknown634"}
+  , {"addr": "0x433821", "label": "637__funcCall"}
+  , {"addr": "0x43383a", "label": "500__setHurtbox"}
+  , {"addr": "0x433884", "label": "501__setHitbox"}
+  , {"addr": "0x4338ab", "label": "569__unknown569"}
+  , {"addr": "0x433904", "label": "570__unknown570"}
+  , {"addr": "0x433946", "label": "563__unknown563"}
+  , {"addr": "0x433968", "label": "564__unknown564"}
+  , {"addr": "0x43397e", "label": "565__bombInvuln"}
+  , {"addr": "0x433994", "label": "502__flagSet"}
+  , {"addr": "0x4339d4", "label": "503__flagClear"}
+  , {"addr": "0x433a14", "label": "506__dropClear"}
+  , {"addr": "0x433a24", "label": "507__dropExtra"}
+  , {"addr": "0x433a4a", "label": "573__unknown573"}
+  , {"addr": "0x433a70", "label": "574"}
+  , {"addr": "0x433a8a", "label": "508__dropArea"}
+  , {"addr": "0x433abf", "label": "509__dropItems"}
+  , {"addr": "0x433ad1", "label": "562__unknown562"}
+  , {"addr": "0x433ae9", "label": "510__dropMain"}
+  , {"addr": "0x433b03", "label": "511__lifeSet"}
+  , {"addr": "0x433b64", "label": "572__lifeNow"}
+  , {"addr": "0x433b95", "label": "512__setBoss"}
+  , {"addr": "0x433c1e", "label": "515__setInvuln"}
+  , {"addr": "0x433c38", "label": "541__unknown541"}
+  , {"addr": "0x433c52", "label": "551__unknown551"}
+  , {"addr": "0x433c6c", "label": "571__unknown571"}
+  , {"addr": "0x433c7c", "label": "535__diffI"}
+  , {"addr": "0x433d1c", "label": "536__diffF"}
+  , {"addr": "0x433dde", "label": "600__etNew"}
+  , {"addr": "0x433ea2", "label": "614__etCopy"}
+  , {"addr": "0x433f34", "label": "601__etOn"}
+  , {"addr": "0x434032", "label": "602__etSprite"}
+  , {"addr": "0x434066", "label": "603__etOffset"}
+  , {"addr": "0x43409b", "label": "626__etOffsetRad"}
+  , {"addr": "0x434126", "label": "627__etDist"}
+  , {"addr": "0x43414e", "label": "628__etOffsetAbs"}
+  , {"addr": "0x4341cc", "label": "604__etAngle"}
+  , {"addr": "0x43420e", "label": "605__etSpeed"}
+  , {"addr": "0x434246", "label": "606__etCount"}
+  , {"addr": "0x43427c", "label": "624__etSpeedD"}
+  , {"addr": "0x434328", "label": "625__etCountD"}
+  , {"addr": "0x4343d6", "label": "617__etSpeedR3"}
+  , {"addr": "0x43447b", "label": "618__etSpeedR5"}
+  , {"addr": "0x43457d", "label": "619__etSpeedR2"}
+  , {"addr": "0x434663", "label": "620__etCountR3"}
+  , {"addr": "0x4346d6", "label": "621__etCountR5"}
+  , {"addr": "0x434761", "label": "622__etCountR2"}
+  , {"addr": "0x43482f", "label": "607__etAim"}
+  , {"addr": "0x434856", "label": "608__etSound"}
+  , {"addr": "0x43488a", "label": "609__multiple"}
+  , {"addr": "0x434adc", "label": "641__etExSubtract"}
+  , {"addr": "0x434b03", "label": "640__etExSub"}
+  , {"addr": "0x434b3f", "label": "700__laserNew"}
+  , {"addr": "0x434b9b", "label": "701__laserTiming"}
+  , {"addr": "0x434bff", "label": "514__setNext"}
+  , {"addr": "0x434d06", "label": "521__setTimeout"}
+  , {"addr": "0x434d26", "label": "556__setDeath"}
+  , {"addr": "0x434d46", "label": "613__etClearAll"}
+  , {"addr": "0x434d67", "label": "516__playSound"}
+  , {"addr": "0x434d8d", "label": "517__setScreenShake"}
+  , {"addr": "0x434dbf", "label": "518__dialogRead"}
+  , {"addr": "0x434e1b", "label": "525__enmKillAll"}
+  , {"addr": "0x434e2b", "label": "519__dialogWait"}
+  , {"addr": "0x434e59", "label": "520__unknown520"}
+  , {"addr": "0x434e98", "label": "558__flagMirror"}
+  , {"addr": "0x434eba", "label": "522__multiple"}
+  , {"addr": "0x434fc0", "label": "513__timerReset"}
+  , {"addr": "0x434fd2", "label": "568__spellMode"}
+  , {"addr": "0x434fec", "label": "523__spellEnd"}
+  , {"addr": "0x435067", "label": "542__spellTimeout"}
+  , {"addr": "0x435077", "label": "543__unknown543"}
+  , {"addr": "0x435087", "label": "567__unknown567"}
+  , {"addr": "0x4350a1", "label": "544__unknown544"}
+  , {"addr": "0x4350c3", "label": "702__laserOn"}
+  , {"addr": "0x43527d", "label": "703__laserStOn"}
+  , {"addr": "0x435469", "label": "713__unknown713"}
+  , {"addr": "0x4355d5", "label": "711__laserCuOn"}
+  , {"addr": "0x435760", "label": "710__laserStEnd"}
+  , {"addr": "0x4357b7", "label": "704__laserOffset"}
+  , {"addr": "0x435822", "label": "705__laserTrajectory"}
+  , {"addr": "0x43588d", "label": "706__laserStLength"}
+  , {"addr": "0x4358c6", "label": "707__laserStWidth"}
+  , {"addr": "0x4358ff", "label": "708__laserStAngle"}
+  , {"addr": "0x435938", "label": "709__laserStRotation"}
+  , {"addr": "0x435971", "label": "714__unknown714"}
+  , {"addr": "0x4359b0", "label": "615__etCancel"}
+  , {"addr": "0x435a02", "label": "712__hitboxRect"}
+  , {"addr": "0x435a74", "label": "616__etClear"}
+  , {"addr": "0x435aab", "label": "635__etCancel2"}
+  , {"addr": "0x435ae5", "label": "636__etClear2"}
+  , {"addr": "0x435b23", "label": "524__setChapter"}
+  , {"addr": "0x435b4f", "label": "529__rankF3"}
+  , {"addr": "0x435ba4", "label": "530__rankF5"}
+  , {"addr": "0x435c47", "label": "531__rankF2"}
+  , {"addr": "0x435cc8", "label": "532__rankI3"}
+  , {"addr": "0x435d19", "label": "533__rankI5"}
+  , {"addr": "0x435db6", "label": "534__rankI2"}
+  , {"addr": "0x435e07", "label": "540__stars"}
+  , {"addr": "0x435e21", "label": "545__reset"}
+  , {"addr": "0x435e31", "label": "546__bombShield"}
+  , {"addr": "0x435e78", "label": "559__unknown559"}
+  , {"addr": "0x435e92", "label": "547__gameSpeed"}
+  , {"addr": "0x435ead", "label": "623__angleToPlayer"}
+  , {"addr": "0x435f30", "label": "548__diffWait"}
+  , {"addr": "0x435fe0", "label": "629__fog"}
+  , {"addr": "0x43609e", "label": "630__callSTD"}
+  , {"addr": "0x4360b8", "label": "557__unknown557"}
+  , {"addr": "0x43618b", "label": "549__unknown549"}
+  , {"addr": "0x4361b0", "label": "550__unknown550"}
+  , {"addr": "0x4361c4", "label": "555__enmAlive"}
+  , {"addr": "0x4361eb", "label": "801__enmPos"}
+  , {"addr": "0x43623c", "label": "802__unknown802"}
+  , {"addr": "0x4362fb", "label": "800__enmCall"}
+  , {"addr": "0x43633e", "label": "324__enm324"}
+  , {"addr": "0x4363af", "label": "560__unknown560"}
+  , {"addr": "0x4363e1", "label": "340__anm340"}
+  , {"addr": "0x436403", "label": "1001__spec1"}
+  , {"addr": "0x436417", "label": "default"}
   ]
-
 , "msg": 
-  [ ["0x43e657", "26"]
-  , ["0x43e663", "15__textLine1"]
-  , ["0x43e6cc", "16__textLine2"]
-  , ["0x43e735", "28__bubblePos"]
-  , ["0x43e75c", "17__textAdd"]
-  , ["0x43f767", "18__textClear"]
-  , ["0x43f7a3", "1__playerShow"]
-  , ["0x43f94c", "2__bossShow"]
-  , ["0x43fa64", "31"]
-  , ["0x43fb66", "25__textOffsetY"]
-  , ["0x43fe24", "23__playerShake"]
-  , ["0x43fe3d", "24__bossShake"]
-  , ["0x43fe56", "4__playerHide"]
-  , ["0x43fe7a", "5__bossHide"]
-  , ["0x43fea8", "6__textboxHide"]
-  , ["0x43fee4", "33__portraitDarken"]
-  , ["0x43ff01", "34__portraitHighlight"]
-  , ["0x43ff05", "7__speakerPlayer"]
-  , ["0x440203", "8__speakerBoss"]
-  , ["0x4404cc", "32"]
-  , ["0x44075c", "9__speakerNone"]
-  , ["0x4409e2", "10__skippable"]
-  , ["0x4409fa", "13__playerFace"]
-  , ["0x440a12", "14__bossFace"]
-  , ["0x440a2a", "11__textPause"]
-  , ["0x440b1f", "12__eclResume"]
-  , ["0x440b2e", "19__musicBoss"]
-  , ["0x440b68", "20__intro"]
-  , ["0x440ba5", "21__stageEnd"]
-  , ["0x440bb5", "22__musicEnd"]
-  , ["0x440bf6", "27__musicFade"]
-  , ["0x440c05", "29__bubbleType"]
-  , ["0x440c1f", "35__lightsOut"]
-  , ["0x440d75", "0__end"]
-  , ["0x440d7e", "36__store"]
+  [ {"addr": "0x43e657", "label": "26"}
+  , {"addr": "0x43e663", "label": "15__textLine1"}
+  , {"addr": "0x43e6cc", "label": "16__textLine2"}
+  , {"addr": "0x43e735", "label": "28__bubblePos"}
+  , {"addr": "0x43e75c", "label": "17__textAdd"}
+  , {"addr": "0x43f767", "label": "18__textClear"}
+  , {"addr": "0x43f7a3", "label": "1__playerShow"}
+  , {"addr": "0x43f94c", "label": "2__bossShow"}
+  , {"addr": "0x43fa64", "label": "31"}
+  , {"addr": "0x43fb66", "label": "25__textOffsetY"}
+  , {"addr": "0x43fe24", "label": "23__playerShake"}
+  , {"addr": "0x43fe3d", "label": "24__bossShake"}
+  , {"addr": "0x43fe56", "label": "4__playerHide"}
+  , {"addr": "0x43fe7a", "label": "5__bossHide"}
+  , {"addr": "0x43fea8", "label": "6__textboxHide"}
+  , {"addr": "0x43fee4", "label": "33__portraitDarken"}
+  , {"addr": "0x43ff01", "label": "34__portraitHighlight"}
+  , {"addr": "0x43ff05", "label": "7__speakerPlayer"}
+  , {"addr": "0x440203", "label": "8__speakerBoss"}
+  , {"addr": "0x4404cc", "label": "32"}
+  , {"addr": "0x44075c", "label": "9__speakerNone"}
+  , {"addr": "0x4409e2", "label": "10__skippable"}
+  , {"addr": "0x4409fa", "label": "13__playerFace"}
+  , {"addr": "0x440a12", "label": "14__bossFace"}
+  , {"addr": "0x440a2a", "label": "11__textPause"}
+  , {"addr": "0x440b1f", "label": "12__eclResume"}
+  , {"addr": "0x440b2e", "label": "19__musicBoss"}
+  , {"addr": "0x440b68", "label": "20__intro"}
+  , {"addr": "0x440ba5", "label": "21__stageEnd"}
+  , {"addr": "0x440bb5", "label": "22__musicEnd"}
+  , {"addr": "0x440bf6", "label": "27__musicFade"}
+  , {"addr": "0x440c05", "label": "29__bubbleType"}
+  , {"addr": "0x440c1f", "label": "35__lightsOut"}
+  , {"addr": "0x440d75", "label": "0__end"}
+  , {"addr": "0x440d7e", "label": "36__store"}
   ]
-
 , "anm": 
-  [ ["0x478744", "200__jmp"]
-  , ["0x478762", "201__jmpDec"]
-  , ["0x4787b2", "6__wait"]
-  , ["0x4787ef", "4__stopHide"]
-  , ["0x4787f6", "3__stop"]
-  , ["0x478907", "7__caseReturn"]
-  , ["0x478936", "100__iset"]
-  , ["0x478977", "101__fset"]
-  , ["0x4789c8", "112__isetAdd"]
-  , ["0x478a32", "113__fsetAdd"]
-  , ["0x478ab1", "114__isetSub"]
-  , ["0x478b16", "115__fsetSub"]
-  , ["0x478b95", "116__isetMul"]
-  , ["0x478bfe", "117__fsetMul"]
-  , ["0x478c7d", "118__isetDiv"]
-  , ["0x478cea", "119__fsetDiv"]
-  , ["0x478d69", "120__isetMod"]
-  , ["0x478dd6", "121__fsetMod"]
-  , ["0x478e57", "102__iadd"]
-  , ["0x478e98", "103__fadd"]
-  , ["0x478eed", "104__isub"]
-  , ["0x478f2e", "105__fsub"]
-  , ["0x478f83", "106__imul"]
-  , ["0x478fc9", "107__fmul"]
-  , ["0x47901e", "108__idiv"]
-  , ["0x479066", "109__fdiv"]
-  , ["0x4790bb", "110__imod"]
-  , ["0x479103", "111__fmod"]
-  , ["0x479183", "122__isetRand"]
-  , ["0x4791d4", "123__fsetRand"]
-  , ["0x47922f", "124__fsin"]
-  , ["0x479285", "125__fcos"]
-  , ["0x4792db", "126__ftan"]
-  , ["0x479331", "127__facos"]
-  , ["0x479387", "128__fatan"]
-  , ["0x4793dd", "129__validRad"]
-  , ["0x479434", "130__circlePos"]
-  , ["0x4794c8", "131__circlePosRand"]
-  , ["0x4795b6", "202__ije"]
-  , ["0x479601", "203__fje"]
-  , ["0x479660", "204__ijne"]
-  , ["0x4796ab", "205__fjne"]
-  , ["0x47970a", "206__ijl"]
-  , ["0x479755", "207__fjl"]
-  , ["0x4797ac", "208__ijle"]
-  , ["0x4797f7", "209__fjle"]
-  , ["0x47984e", "210__ijg"]
-  , ["0x479899", "211__fjg"]
-  , ["0x4798f4", "212__ijge"]
-  , ["0x47993b", "213__fjge"]
-  , ["0x4799a3", "300__sprite"]
-  , ["0x479a5d", "432"]
-  , ["0x479a96", "500__scriptNew"]
-  , ["0x479add", "505__scriptNewPos"]
-  , ["0x479b7e", "502__scriptNewFront"]
-  , ["0x479bae", "501__scriptNewUI"]
-  , ["0x479bde", "503__scriptNewUIFront"]
-  , ["0x479c0e", "509__copyVars"]
-  , ["0x479c68", "506__scriptNewRootPos"]
-  , ["0x479cc0", "504__scriptNewRoot"]
-  , ["0x479d07", "508__effectNew"]
-  , ["0x479d43", "301__spriteRand"]
-  , ["0x479e04", "402__scale"]
-  , ["0x479e57", "434__scale2"]
-  , ["0x479eaa", "429__zoomOut"]
-  , ["0x479efd", "403__alpha"]
-  , ["0x479f44", "404__color"]
-  , ["0x479fa1", "405__alpha2"]
-  , ["0x479fe8", "406__color2"]
-  , ["0x47a045", "308__flipX"]
-  , ["0x47a07b", "309__flipY"]
-  , ["0x47a0b1", "315__colorizeChildren"]
-  , ["0x47a0c8", "316"]
-  , ["0x47a0e3", "317"]
-  , ["0x47a0fe", "439"]
-  , ["0x47a13b", "401__rotate"]
-  , ["0x47a1a8", "415__angleVel"]
-  , ["0x47a22f", "416__scaleGrowth"]
-  , ["0x47a28b", "417__alphaTimeLinear"]
-  , ["0x47a2cd", "303__blendMode"]
-  , ["0x47a2f8", "400__pos"]
-  , ["0x47a43a", "436__anchorOffset"]
-  , ["0x47a48c", "437__rotationMode"]
-  , ["0x47a4c1", "310__visible"]
-  , ["0x47a4e7", "421__anchor"]
-  , ["0x47a530", "425__scrollX"]
-  , ["0x47a56f", "426__scrollY"]
-  , ["0x47a5ae", "305__zWriteDisable"]
-  , ["0x47a5d9", "306"]
-  , ["0x47a604", "311__resampleMode"]
-  , ["0x47a61a", "407__posTime"]
-  , ["0x47a730", "433"]
-  , ["0x47a82e", "420__moveBezier"]
-  , ["0x47aa3f", "408__colorTime"]
-  , ["0x47aafd", "409__alphaTime"]
-  , ["0x47ab58", "413__color2Time"]
-  , ["0x47ac16", "414__alpha2Time"]
-  , ["0x47ac71", "410__rotateTime"]
-  , ["0x47ad7a", "411__rotateTime2D"]
-  , ["0x47ae34", "412__scaleTime"]
-  , ["0x47aec2", "435__scale2Time"]
-  , ["0x47af50", "430__zoomOutTime"]
-  , ["0x47afe4", "427__scrollXTime"]
-  , ["0x47b088", "428__scrollYTime"]
-  , ["0x47b12c", "302__type"]
-  , ["0x47b174", "422"]
-  , ["0x47b1bc", "600__texCircle"]
-  , ["0x47b211", "601__texArcEven"]
-  , ["0x47b223", "602__texArc"]
-  , ["0x47b235", "609__texCylinder3D"]
-  , ["0x47b2a2", "610__texRing3D"]
-  , ["0x47b2b4", "418"]
-  , ["0x47b337", "419"]
-  , ["0x47b370", "603__drawRect"]
-  , ["0x47b3d2", "606__drawRectGrad"]
-  , ["0x47b3e4", "607__drawRectRot"]
-  , ["0x47b3f6", "608__drawRectRotGrad"]
-  , ["0x47b40b", "613__drawLine"]
-  , ["0x47b420", "612__drawRectBorder"]
-  , ["0x47b435", "604__drawPoly"]
-  , ["0x47b494", "605__drawPolyBorder"]
-  , ["0x47b4a6", "611__drawRing"]
-  , ["0x47b523", "614"]
-  , ["0x47b538", "507"]
-  , ["0x47b571", "312__scrollMode"]
-  , ["0x47b5de", "313__resolutionMode"]
-  , ["0x47b617", "314"]
-  , ["0x47b650", "438__originMode"]
-  , ["0x47b667", "431"]
-  , ["0x47b67b", "304__layer"]
-  , ["0x47b69b", "423__colorMode"]
-  , ["0x47b6c7", "424__rotateAuto"]
-  , ["0x47b6db", "307__randMode"]
-  , ["0x47b6f3", "default"]
-  , ["0x47b851", "1__delete"]
-  , ["0x47b861", "2__static"]
+  [ {"addr": "0x478744", "label": "200__jmp"}
+  , {"addr": "0x478762", "label": "201__jmpDec"}
+  , {"addr": "0x4787b2", "label": "6__wait"}
+  , {"addr": "0x4787ef", "label": "4__stopHide"}
+  , {"addr": "0x4787f6", "label": "3__stop"}
+  , {"addr": "0x478907", "label": "7__caseReturn"}
+  , {"addr": "0x478936", "label": "100__iset"}
+  , {"addr": "0x478977", "label": "101__fset"}
+  , {"addr": "0x4789c8", "label": "112__isetAdd"}
+  , {"addr": "0x478a32", "label": "113__fsetAdd"}
+  , {"addr": "0x478ab1", "label": "114__isetSub"}
+  , {"addr": "0x478b16", "label": "115__fsetSub"}
+  , {"addr": "0x478b95", "label": "116__isetMul"}
+  , {"addr": "0x478bfe", "label": "117__fsetMul"}
+  , {"addr": "0x478c7d", "label": "118__isetDiv"}
+  , {"addr": "0x478cea", "label": "119__fsetDiv"}
+  , {"addr": "0x478d69", "label": "120__isetMod"}
+  , {"addr": "0x478dd6", "label": "121__fsetMod"}
+  , {"addr": "0x478e57", "label": "102__iadd"}
+  , {"addr": "0x478e98", "label": "103__fadd"}
+  , {"addr": "0x478eed", "label": "104__isub"}
+  , {"addr": "0x478f2e", "label": "105__fsub"}
+  , {"addr": "0x478f83", "label": "106__imul"}
+  , {"addr": "0x478fc9", "label": "107__fmul"}
+  , {"addr": "0x47901e", "label": "108__idiv"}
+  , {"addr": "0x479066", "label": "109__fdiv"}
+  , {"addr": "0x4790bb", "label": "110__imod"}
+  , {"addr": "0x479103", "label": "111__fmod"}
+  , {"addr": "0x479183", "label": "122__isetRand"}
+  , {"addr": "0x4791d4", "label": "123__fsetRand"}
+  , {"addr": "0x47922f", "label": "124__fsin"}
+  , {"addr": "0x479285", "label": "125__fcos"}
+  , {"addr": "0x4792db", "label": "126__ftan"}
+  , {"addr": "0x479331", "label": "127__facos"}
+  , {"addr": "0x479387", "label": "128__fatan"}
+  , {"addr": "0x4793dd", "label": "129__validRad"}
+  , {"addr": "0x479434", "label": "130__circlePos"}
+  , {"addr": "0x4794c8", "label": "131__circlePosRand"}
+  , {"addr": "0x4795b6", "label": "202__ije"}
+  , {"addr": "0x479601", "label": "203__fje"}
+  , {"addr": "0x479660", "label": "204__ijne"}
+  , {"addr": "0x4796ab", "label": "205__fjne"}
+  , {"addr": "0x47970a", "label": "206__ijl"}
+  , {"addr": "0x479755", "label": "207__fjl"}
+  , {"addr": "0x4797ac", "label": "208__ijle"}
+  , {"addr": "0x4797f7", "label": "209__fjle"}
+  , {"addr": "0x47984e", "label": "210__ijg"}
+  , {"addr": "0x479899", "label": "211__fjg"}
+  , {"addr": "0x4798f4", "label": "212__ijge"}
+  , {"addr": "0x47993b", "label": "213__fjge"}
+  , {"addr": "0x4799a3", "label": "300__sprite"}
+  , {"addr": "0x479a5d", "label": "432"}
+  , {"addr": "0x479a96", "label": "500__scriptNew"}
+  , {"addr": "0x479add", "label": "505__scriptNewPos"}
+  , {"addr": "0x479b7e", "label": "502__scriptNewFront"}
+  , {"addr": "0x479bae", "label": "501__scriptNewUI"}
+  , {"addr": "0x479bde", "label": "503__scriptNewUIFront"}
+  , {"addr": "0x479c0e", "label": "509__copyVars"}
+  , {"addr": "0x479c68", "label": "506__scriptNewRootPos"}
+  , {"addr": "0x479cc0", "label": "504__scriptNewRoot"}
+  , {"addr": "0x479d07", "label": "508__effectNew"}
+  , {"addr": "0x479d43", "label": "301__spriteRand"}
+  , {"addr": "0x479e04", "label": "402__scale"}
+  , {"addr": "0x479e57", "label": "434__scale2"}
+  , {"addr": "0x479eaa", "label": "429__zoomOut"}
+  , {"addr": "0x479efd", "label": "403__alpha"}
+  , {"addr": "0x479f44", "label": "404__color"}
+  , {"addr": "0x479fa1", "label": "405__alpha2"}
+  , {"addr": "0x479fe8", "label": "406__color2"}
+  , {"addr": "0x47a045", "label": "308__flipX"}
+  , {"addr": "0x47a07b", "label": "309__flipY"}
+  , {"addr": "0x47a0b1", "label": "315__colorizeChildren"}
+  , {"addr": "0x47a0c8", "label": "316"}
+  , {"addr": "0x47a0e3", "label": "317"}
+  , {"addr": "0x47a0fe", "label": "439"}
+  , {"addr": "0x47a13b", "label": "401__rotate"}
+  , {"addr": "0x47a1a8", "label": "415__angleVel"}
+  , {"addr": "0x47a22f", "label": "416__scaleGrowth"}
+  , {"addr": "0x47a28b", "label": "417__alphaTimeLinear"}
+  , {"addr": "0x47a2cd", "label": "303__blendMode"}
+  , {"addr": "0x47a2f8", "label": "400__pos"}
+  , {"addr": "0x47a43a", "label": "436__anchorOffset"}
+  , {"addr": "0x47a48c", "label": "437__rotationMode"}
+  , {"addr": "0x47a4c1", "label": "310__visible"}
+  , {"addr": "0x47a4e7", "label": "421__anchor"}
+  , {"addr": "0x47a530", "label": "425__scrollX"}
+  , {"addr": "0x47a56f", "label": "426__scrollY"}
+  , {"addr": "0x47a5ae", "label": "305__zWriteDisable"}
+  , {"addr": "0x47a5d9", "label": "306"}
+  , {"addr": "0x47a604", "label": "311__resampleMode"}
+  , {"addr": "0x47a61a", "label": "407__posTime"}
+  , {"addr": "0x47a730", "label": "433"}
+  , {"addr": "0x47a82e", "label": "420__moveBezier"}
+  , {"addr": "0x47aa3f", "label": "408__colorTime"}
+  , {"addr": "0x47aafd", "label": "409__alphaTime"}
+  , {"addr": "0x47ab58", "label": "413__color2Time"}
+  , {"addr": "0x47ac16", "label": "414__alpha2Time"}
+  , {"addr": "0x47ac71", "label": "410__rotateTime"}
+  , {"addr": "0x47ad7a", "label": "411__rotateTime2D"}
+  , {"addr": "0x47ae34", "label": "412__scaleTime"}
+  , {"addr": "0x47aec2", "label": "435__scale2Time"}
+  , {"addr": "0x47af50", "label": "430__zoomOutTime"}
+  , {"addr": "0x47afe4", "label": "427__scrollXTime"}
+  , {"addr": "0x47b088", "label": "428__scrollYTime"}
+  , {"addr": "0x47b12c", "label": "302__type"}
+  , {"addr": "0x47b174", "label": "422"}
+  , {"addr": "0x47b1bc", "label": "600__texCircle"}
+  , {"addr": "0x47b211", "label": "601__texArcEven"}
+  , {"addr": "0x47b223", "label": "602__texArc"}
+  , {"addr": "0x47b235", "label": "609__texCylinder3D"}
+  , {"addr": "0x47b2a2", "label": "610__texRing3D"}
+  , {"addr": "0x47b2b4", "label": "418"}
+  , {"addr": "0x47b337", "label": "419"}
+  , {"addr": "0x47b370", "label": "603__drawRect"}
+  , {"addr": "0x47b3d2", "label": "606__drawRectGrad"}
+  , {"addr": "0x47b3e4", "label": "607__drawRectRot"}
+  , {"addr": "0x47b3f6", "label": "608__drawRectRotGrad"}
+  , {"addr": "0x47b40b", "label": "613__drawLine"}
+  , {"addr": "0x47b420", "label": "612__drawRectBorder"}
+  , {"addr": "0x47b435", "label": "604__drawPoly"}
+  , {"addr": "0x47b494", "label": "605__drawPolyBorder"}
+  , {"addr": "0x47b4a6", "label": "611__drawRing"}
+  , {"addr": "0x47b523", "label": "614"}
+  , {"addr": "0x47b538", "label": "507"}
+  , {"addr": "0x47b571", "label": "312__scrollMode"}
+  , {"addr": "0x47b5de", "label": "313__resolutionMode"}
+  , {"addr": "0x47b617", "label": "314"}
+  , {"addr": "0x47b650", "label": "438__originMode"}
+  , {"addr": "0x47b667", "label": "431"}
+  , {"addr": "0x47b67b", "label": "304__layer"}
+  , {"addr": "0x47b69b", "label": "423__colorMode"}
+  , {"addr": "0x47b6c7", "label": "424__rotateAuto"}
+  , {"addr": "0x47b6db", "label": "307__randMode"}
+  , {"addr": "0x47b6f3", "label": "default"}
+  , {"addr": "0x47b851", "label": "1__delete"}
+  , {"addr": "0x47b861", "label": "2__static"}
   ]
-
 }
