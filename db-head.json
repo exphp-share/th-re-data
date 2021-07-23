@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "versions": [
     {"version": "th06.v1.02h", "level": "primary"},
     {"version": "th07.v1.00b", "level": "primary"},
