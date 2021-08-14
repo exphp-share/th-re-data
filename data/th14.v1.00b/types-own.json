@@ -122,7 +122,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xc8", "name": "call_counter__setup_render_state", "type": {"is": "int", "signed": true, "size": 4}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xc8", "name": "call_counter__setup_render_state", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0xcc", "name": "call_counter__draw_primitive", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0xd0", "name": "__vec2_d0", "type": {"is": "named", "name": "zFloat2"}}
     , {"offset": "0xd8", "name": "call_counter__vms_ticked", "type": {"is": "int", "signed": true, "size": 4}}
@@ -423,7 +424,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xc", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x10", "name": "on_draw_1", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x14", "name": "__vm_1", "type": {"is": "named", "name": "zAnmVm"}}
     , {"offset": "0x5e0", "name": "__vm_2", "type": {"is": "named", "name": "zAnmVm"}}
@@ -456,7 +458,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xaf4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xaf4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0xaf4", "name": "__end", "type": null}
     ]
   }
@@ -803,7 +806,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0xc", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x10", "name": "__ptr_10", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBullet"}}}
     , {"offset": "0x14", "name": "__unknown", "type": null}
@@ -941,7 +945,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x18", "name": "deadzone_x", "type": {"is": "int", "signed": true, "size": 2}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "deadzone_x", "type": {"is": "int", "signed": true, "size": 2}}
     , {"offset": "0x1a", "name": "deadzone_y", "type": {"is": "int", "signed": true, "size": 2}}
     , {"offset": "0x1c", "name": "__unknown", "type": null}
     , {"offset": "0x40", "name": "__window_top_left", "type": {"is": "named", "name": "zInt2"}}
@@ -957,7 +962,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x2bc", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x2bc", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x2bc", "name": "__end", "type": null}
     ]
   }
@@ -968,7 +974,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8a8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8a8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x8a8", "name": "__end", "type": null}
     ]
   }
@@ -979,7 +986,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x2e4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x2e4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x2e4", "name": "__end", "type": null}
     ]
   }
@@ -1000,7 +1008,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0xc", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x10", "name": "effect_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
     , {"offset": "0x14", "name": "bullet_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
@@ -1017,7 +1026,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x28", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x28", "name": "__end", "type": null}
     ]
   }
@@ -1125,7 +1135,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x18", "name": "__end", "type": null}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "__end", "type": null}
     ]
   }
 
@@ -1135,7 +1146,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x11e4", "name": "id", "type": {"is": "int", "signed": true, "size": 4}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x11e4", "name": "id", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x11e8", "name": "__unknown", "type": null}
     , {"offset": "0x11f0", "name": "enemy", "type": {"is": "named", "name": "zEnemy"}}
     , {"offset": "0x530c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
@@ -1180,7 +1192,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x10", "name": "miss_count", "type": {"is": "int", "signed": true, "size": 4}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "miss_count", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x14", "name": "bomb_count", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x18", "name": "can_still_capture_spell", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x1c", "name": "__unknown", "type": null}
@@ -1205,7 +1218,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x10", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x10", "name": "__end", "type": null}
     ]
   }
@@ -1254,7 +1268,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x8c", "name": "__end", "type": null}
     ]
   }
@@ -1265,7 +1280,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x24", "name": "config", "type": {"is": "named", "name": "zConfig"}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "config", "type": {"is": "named", "name": "zConfig"}}
     , {"offset": "0x80", "name": "flags", "type": {"is": "int", "signed": false, "size": 4}}
     , {"offset": "0x84", "name": "__unknown", "type": null}
     , {"offset": "0x9c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
@@ -1279,7 +1295,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x194", "name": "msg", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGuiMsgVm"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x194", "name": "msg", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGuiMsgVm"}}}
     , {"offset": "0x198", "name": "__unknown", "type": null}
     , {"offset": "0x2b0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x2b0", "name": "__end", "type": null}
@@ -1292,7 +1309,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x4", "name": "__timer_4", "type": {"is": "named", "name": "zTimer"}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "__timer_4", "type": {"is": "named", "name": "zTimer"}}
     , {"offset": "0x18", "name": "time_in_script", "type": {"is": "named", "name": "zTimer"}}
     , {"offset": "0x2c", "name": "pause_timer", "type": {"is": "named", "name": "zTimer"}}
     , {"offset": "0x40", "name": "anm_id_player_face", "type": {"is": "named", "name": "zAnmId"}}
@@ -1332,7 +1350,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x1c0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x1c0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x1c0", "name": "__end", "type": null}
     ]
   }
@@ -1498,7 +1517,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x10", "name": "__vm_1", "type": {"is": "named", "name": "zAnmVm"}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__vm_1", "type": {"is": "named", "name": "zAnmVm"}}
     , {"offset": "0x5dc", "name": "__vm_2", "type": {"is": "named", "name": "zAnmVm"}}
     , {"offset": "0xba8", "name": "__unknown", "type": null}
     , {"offset": "0xc18", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
@@ -1526,7 +1546,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0xc", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x10", "name": "__unknown", "type": null}
     , {"offset": "0x14", "name": "normal_items", "type": {"is": "array", "len": 600, "inner": {"is": "named", "name": "zItem"}}}
@@ -1549,7 +1570,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x600", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x600", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x600", "name": "__end", "type": null}
     ]
   }
@@ -1560,7 +1582,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x610", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x610", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x610", "name": "__end", "type": null}
     ]
   }
@@ -1571,7 +1594,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x5da0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x5da0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x5da0", "name": "__end", "type": null}
     ]
   }
@@ -1630,7 +1654,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x3e8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x3e8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x3e8", "name": "__end", "type": null}
     ]
   }
@@ -1641,7 +1666,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0xc", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x10", "name": "pl_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
     , {"offset": "0x14", "name": "vm", "type": {"is": "named", "name": "zAnmVm"}}
@@ -1697,7 +1723,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xd0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xd0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0xd0", "name": "__end", "type": null}
     ]
   }
@@ -1708,7 +1735,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xa4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xa4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0xa4", "name": "__end", "type": null}
     ]
   }
@@ -1719,7 +1747,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xe4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xe4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0xe4", "name": "__end", "type": null}
     ]
   }
@@ -1789,7 +1818,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x320", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x320", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x320", "name": "__end", "type": null}
     ]
   }
@@ -1830,7 +1860,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x5660", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x5660", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x5660", "name": "__end", "type": null}
     ]
   }
@@ -1841,7 +1872,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xc0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xc0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0xc0", "name": "__end", "type": null}
     ]
   }
@@ -1852,7 +1884,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0xc", "name": "on_draw_1", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x10", "name": "std_file", "type": {"is": "ptr", "inner": {"is": "named", "name": "zStdRawHeader"}}}
     , {"offset": "0x14", "name": "object_defs", "type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "zStdRawObject"}}}}
@@ -1989,7 +2022,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x4", "name": "d3d9", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "d3d9", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D9"}}}
     , {"offset": "0x8", "name": "d3d_device", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice9"}}}
     , {"offset": "0xc", "name": "dinput", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectInput8A"}}}
     , {"offset": "0x10", "name": "window_rect", "type": {"is": "named", "name": "RECT"}}
@@ -2161,7 +2195,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x58", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x58", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x58", "name": "__end", "type": null}
     ]
   }

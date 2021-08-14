@@ -66,7 +66,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x68", "name": "fast_array", "type": {"is": "array", "len": 4096, "inner": {"is": "named", "name": "zAnmVm"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x68", "name": "fast_array", "type": {"is": "array", "len": 4096, "inner": {"is": "named", "name": "zAnmVm"}}}
     , {"offset": "0x3ac068", "name": "__unknown", "type": null}
     , {"offset": "0x3adac8", "name": "vertex_buffers", "type": {"is": "named", "name": "zAnmVertexBuffers"}}
     , {"offset": "0x72dad4", "name": "__filler_02", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": true, "size": 1}}}
@@ -263,7 +264,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x89ac", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x89ac", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x89ac", "name": "__end", "type": null}
     ]
   }
@@ -274,7 +276,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xb884", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xb884", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0xb884", "name": "__end", "type": null}
     ]
   }
@@ -285,7 +288,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x48", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x48", "name": "__end", "type": null}
     ]
   }
@@ -308,7 +312,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x7f0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x7f0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x7f0", "name": "__end", "type": null}
     ]
   }
@@ -319,7 +324,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x60", "name": "bullets", "type": {"is": "array", "len": 2001, "inner": {"is": "named", "name": "zBullet"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x60", "name": "bullets", "type": {"is": "array", "len": 2001, "inner": {"is": "named", "name": "zBullet"}}}
     , {"offset": "0x3e0b50", "name": "bullet_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
     , {"offset": "0x3e0b54", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x3e0b54", "name": "__end", "type": null}
@@ -343,7 +349,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x688", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x688", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x688", "name": "__end", "type": null}
     ]
   }
@@ -354,7 +361,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x2e4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x2e4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x2e4", "name": "__end", "type": null}
     ]
   }
@@ -365,7 +373,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x18", "name": "__end", "type": null}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "__end", "type": null}
     ]
   }
 
@@ -375,7 +384,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x28", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x28", "name": "__end", "type": null}
     ]
   }
@@ -409,7 +419,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x38", "name": "__accessed_by_msg", "type": {"is": "int", "signed": true, "size": 4}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x38", "name": "__accessed_by_msg", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x3c", "name": "__unknown", "type": null}
     , {"offset": "0x58", "name": "list_head", "type": {"is": "ptr", "inner": {"is": "named", "name": "zEnemyList"}}}
     , {"offset": "0x5c", "name": "__unknown", "type": null}
@@ -463,7 +474,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x8c", "name": "__end", "type": null}
     ]
   }
@@ -474,7 +486,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x60", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x60", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x60", "name": "__end", "type": null}
     ]
   }
@@ -536,7 +549,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x4", "name": "__timer_4", "type": {"is": "named", "name": "zTimer"}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "__timer_4", "type": {"is": "named", "name": "zTimer"}}
     , {"offset": "0x18", "name": "time_in_script", "type": {"is": "named", "name": "zTimer"}}
     , {"offset": "0x2c", "name": "pause_timer", "type": {"is": "named", "name": "zTimer"}}
     , {"offset": "0x40", "name": "anm_id_player_face", "type": {"is": "named", "name": "zAnmId"}}
@@ -565,7 +579,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x1a8", "name": "__end", "type": null}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x1a8", "name": "__end", "type": null}
     ]
   }
 
@@ -680,7 +695,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x3f0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x3f0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x3f0", "name": "__end", "type": null}
     ]
   }
@@ -691,7 +707,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0xc", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x10", "name": "__unknown", "type": null}
     , {"offset": "0x14", "name": "normal_items", "type": {"is": "array", "len": 150, "inner": {"is": "named", "name": "zItem"}}}
@@ -710,7 +727,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x45c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x45c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x45c", "name": "__end", "type": null}
     ]
   }
@@ -721,7 +739,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x3f0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x3f0", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x3f0", "name": "__end", "type": null}
     ]
   }
@@ -732,7 +751,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x5acc", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x5acc", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x5acc", "name": "__end", "type": null}
     ]
   }
@@ -796,7 +816,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x2c8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x2c8", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x2c8", "name": "__end", "type": null}
     ]
   }
@@ -807,7 +828,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0xc", "name": "pl_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
     , {"offset": "0x10", "name": "__unknown", "type": null}
@@ -857,7 +879,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x5c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x5c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x5c", "name": "__end", "type": null}
     ]
   }
@@ -868,7 +891,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x6c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x6c", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x6c", "name": "__end", "type": null}
     ]
   }
@@ -879,7 +903,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x98", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x98", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x98", "name": "__end", "type": null}
     ]
   }
@@ -903,7 +928,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0xa0", "name": "stage_data", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zReplayStageData"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xa0", "name": "stage_data", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zReplayStageData"}}}
     , {"offset": "0x1c0", "name": "__unknown", "type": null}
     , {"offset": "0x2d4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x2d4", "name": "__end", "type": null}
@@ -916,7 +942,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x24", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x24", "name": "__end", "type": null}
     ]
   }
@@ -927,7 +954,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x44", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x44", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x44", "name": "__end", "type": null}
     ]
   }
@@ -938,7 +966,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x10", "name": "__vms_10", "type": {"is": "array", "len": 2, "inner": {"is": "named", "name": "zAnmVm"}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "__vms_10", "type": {"is": "array", "len": 2, "inner": {"is": "named", "name": "zAnmVm"}}}
     , {"offset": "0x768", "name": "__unknown", "type": null}
     , {"offset": "0x778", "name": "__vms_778", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zAnmVm"}}}
     , {"offset": "0x24d8", "name": "__vms_24d8", "type": {"is": "array", "len": 5, "inner": {"is": "named", "name": "zAnmVm"}}}
@@ -954,7 +983,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x14", "name": "objects", "type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "zStdRawObject"}}}}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "objects", "type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "named", "name": "zStdRawObject"}}}}
     , {"offset": "0x18", "name": "__unknown", "type": null}
     , {"offset": "0x17c", "name": "quad_vms", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmVm"}}}
     , {"offset": "0x180", "name": "__unknown", "type": null}
@@ -1052,7 +1082,8 @@
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x48", "name": "__end", "type": null}
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
     ]
   }
 

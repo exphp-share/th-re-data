@@ -329,12 +329,12 @@
 
 , "IDirect3D8": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3D8Vtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -363,12 +363,12 @@
 
 , "IDirect3DBaseTexture8": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DBaseTexture8Vtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -387,12 +387,12 @@
 
 , "IDirect3DDevice8": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DDevice8Vtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -502,12 +502,12 @@
 
 , "IDirect3DResource8": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DResource8Vtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -531,12 +531,12 @@
 
 , "IDirect3DSurface8": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DSurface8Vtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -556,12 +556,12 @@
 
 , "IDirect3DTexture8": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DTexture8Vtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -582,12 +582,12 @@
 
 , "IDirect3DVertexBuffer8": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirect3DVertexBuffer8Vtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -606,23 +606,23 @@
 
 , "IDirectSound": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundVtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
 , "IDirectSoundBuffer": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundBufferVtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -656,12 +656,12 @@
 
 , "IDirectSoundNotify": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IDirectSoundNotifyVtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -696,12 +696,12 @@
 
 , "IUnknown": 
   { "is": "struct"
-  , "size": "0x5"
+  , "size": "0x8"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "vtable", "type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknownVtbl"}}}
-    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 1}}
-    , {"offset": "0x5", "name": "__end", "type": null}
+    , {"offset": "0x4", "name": "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
     ]
   }
 
@@ -710,9 +710,9 @@
   , "size": "0xc"
   , "align": 4
   , "members": 
-    [ {"offset": "0x0", "name": "QueryInterface", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x4", "name": "AddRef", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x8", "name": "Release", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    [ {"offset": "0x0", "name": "QueryInterface", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": true, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknown"}}}, {"type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}, {"type": {"is": "ptr", "inner": {"is": "ptr", "inner": {"is": "void"}}}}]}}
+    , {"offset": "0x4", "name": "AddRef", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknown"}}}]}}
+    , {"offset": "0x8", "name": "Release", "type": {"is": "fn-ptr", "ret": {"is": "int", "signed": false, "size": 4}, "params": [{"type": {"is": "ptr", "inner": {"is": "named", "name": "IUnknown"}}}]}}
     , {"offset": "0xc", "name": "__end", "type": null}
     ]
   }
@@ -894,7 +894,7 @@
 
 , "WAVEFORMATEX": 
   { "is": "struct"
-  , "size": "0x12"
+  , "size": "0x14"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "wFormatTag", "type": {"is": "int", "signed": false, "size": 2}}
@@ -904,13 +904,14 @@
     , {"offset": "0xc", "name": "nBlockAlign", "type": {"is": "int", "signed": false, "size": 2}}
     , {"offset": "0xe", "name": "wBitsPerSample", "type": {"is": "int", "signed": false, "size": 2}}
     , {"offset": "0x10", "name": "cbSize", "type": {"is": "int", "signed": false, "size": 2}}
-    , {"offset": "0x12", "name": "__end", "type": null}
+    , {"offset": "0x12", "name": "__padding", "type": null}
+    , {"offset": "0x14", "name": "__end", "type": null}
     ]
   }
 
 , "WIN32_FIND_DATAA": 
   { "is": "struct"
-  , "size": "0x14a"
+  , "size": "0x14c"
   , "align": 4
   , "members": 
     [ {"offset": "0x0", "name": "dwFileAttributes", "type": {"is": "named", "name": "DWORD"}}
@@ -927,7 +928,8 @@
     , {"offset": "0x140", "name": "dwFileType", "type": {"is": "named", "name": "DWORD"}}
     , {"offset": "0x144", "name": "dwCreatorType", "type": {"is": "named", "name": "DWORD"}}
     , {"offset": "0x148", "name": "wFinderFlags", "type": {"is": "named", "name": "WORD"}}
-    , {"offset": "0x14a", "name": "__end", "type": null}
+    , {"offset": "0x14a", "name": "__padding", "type": null}
+    , {"offset": "0x14c", "name": "__end", "type": null}
     ]
   }
 
@@ -1051,6 +1053,158 @@
     , {"offset": "0x3c", "name": "hStdOutput", "type": {"is": "named", "name": "HANDLE"}}
     , {"offset": "0x40", "name": "hStdError", "type": {"is": "named", "name": "HANDLE"}}
     , {"offset": "0x44", "name": "__end", "type": null}
+    ]
+  }
+
+, "coff_characteristics": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "signed": false
+  , "values": 
+    [ {"name": "IMAGE_FILE_RELOCS_STRIPPED", "value": 1}
+    , {"name": "IMAGE_FILE_EXECUTABLE_IMAGE", "value": 2}
+    , {"name": "IMAGE_FILE_LINE_NUMS_STRIPPED", "value": 4}
+    , {"name": "IMAGE_FILE_LOCAL_SYMS_STRIPPED", "value": 8}
+    , {"name": "IMAGE_FILE_AGGRESIVE_WS_TRIM", "value": 16}
+    , {"name": "IMAGE_FILE_LARGE_ADDRESS_AWARE", "value": 32}
+    , {"name": "IMAGE_FILE_BYTES_REVERSED_LO", "value": 128}
+    , {"name": "IMAGE_FILE_32BIT_MACHINE", "value": 256}
+    , {"name": "IMAGE_FILE_DEBUG_STRIPPED", "value": 512}
+    , {"name": "IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP", "value": 1024}
+    , {"name": "IMAGE_FILE_NET_RUN_FROM_SWAP", "value": 2048}
+    , {"name": "IMAGE_FILE_SYSTEM", "value": 4096}
+    , {"name": "IMAGE_FILE_DLL", "value": 8192}
+    , {"name": "IMAGE_FILE_UP_SYSTEM_ONLY", "value": 16384}
+    , {"name": "IMAGE_FILE_BYTES_REVERSED_HI", "value": 32768}
+    ]
+  }
+
+, "coff_machine": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "signed": false
+  , "values": 
+    [ {"name": "IMAGE_FILE_MACHINE_UNKNOWN", "value": 0}
+    , {"name": "IMAGE_FILE_MACHINE_AM33", "value": 467}
+    , {"name": "IMAGE_FILE_MACHINE_AMD64", "value": 34404}
+    , {"name": "IMAGE_FILE_MACHINE_ARM", "value": 448}
+    , {"name": "IMAGE_FILE_MACHINE_ARM64", "value": 43620}
+    , {"name": "IMAGE_FILE_MACHINE_ARMNT", "value": 452}
+    , {"name": "IMAGE_FILE_MACHINE_EBC", "value": 3772}
+    , {"name": "IMAGE_FILE_MACHINE_I386", "value": 332}
+    , {"name": "IMAGE_FILE_MACHINE_IA64", "value": 512}
+    , {"name": "IMAGE_FILE_MACHINE_M32R", "value": 36929}
+    , {"name": "IMAGE_FILE_MACHINE_MIPS16", "value": 614}
+    , {"name": "IMAGE_FILE_MACHINE_MIPSFPU", "value": 870}
+    , {"name": "IMAGE_FILE_MACHINE_MIPSFPU16", "value": 1126}
+    , {"name": "IMAGE_FILE_MACHINE_POWERPC", "value": 496}
+    , {"name": "IMAGE_FILE_MACHINE_POWERPCFP", "value": 497}
+    , {"name": "IMAGE_FILE_MACHINE_R4000", "value": 358}
+    , {"name": "IMAGE_FILE_MACHINE_RISCV32", "value": 20530}
+    , {"name": "IMAGE_FILE_MACHINE_RISCV64", "value": 20580}
+    , {"name": "IMAGE_FILE_MACHINE_RISCV128", "value": 20776}
+    , {"name": "IMAGE_FILE_MACHINE_SH3", "value": 418}
+    , {"name": "IMAGE_FILE_MACHINE_SH3DSP", "value": 419}
+    , {"name": "IMAGE_FILE_MACHINE_SH4", "value": 422}
+    , {"name": "IMAGE_FILE_MACHINE_SH5", "value": 424}
+    , {"name": "IMAGE_FILE_MACHINE_THUMB", "value": 450}
+    , {"name": "IMAGE_FILE_MACHINE_WCEMIPSV2", "value": 361}
+    ]
+  }
+
+, "pe_dll_characteristics": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "signed": false
+  , "values": 
+    [ {"name": "IMAGE_DLLCHARACTERISTICS_0001", "value": 1}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_0002", "value": 2}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_0004", "value": 4}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_0008", "value": 8}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_HIGH_ENTROPY_VA", "value": 32}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE", "value": 64}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY", "value": 128}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_NX_COMPAT", "value": 256}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_NO_ISOLATION", "value": 512}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_NO_SEH", "value": 1024}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_NO_BIND", "value": 2048}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_APPCONTAINER", "value": 4096}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_WDM_DRIVER", "value": 8192}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_GUARD_CF", "value": 16384}
+    , {"name": "IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE", "value": 32768}
+    ]
+  }
+
+, "pe_magic": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "signed": false
+  , "values": 
+    [ {"name": "PE_ROM_IMAGE", "value": 263}
+    , {"name": "PE_32BIT", "value": 267}
+    , {"name": "PE_64BIT", "value": 523}
+    ]
+  }
+
+, "pe_section_flags": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "signed": false
+  , "values": 
+    [ {"name": "IMAGE_SCN_RESERVED_0001", "value": 1}
+    , {"name": "IMAGE_SCN_RESERVED_0002", "value": 2}
+    , {"name": "IMAGE_SCN_RESERVED_0004", "value": 4}
+    , {"name": "IMAGE_SCN_TYPE_NO_PAD", "value": 8}
+    , {"name": "IMAGE_SCN_RESERVED_0010", "value": 16}
+    , {"name": "IMAGE_SCN_CNT_CODE", "value": 32}
+    , {"name": "IMAGE_SCN_CNT_INITIALIZED_DATA", "value": 64}
+    , {"name": "IMAGE_SCN_CNT_UNINITIALIZED_DATA", "value": 128}
+    , {"name": "IMAGE_SCN_LNK_OTHER", "value": 256}
+    , {"name": "IMAGE_SCN_LNK_INFO", "value": 512}
+    , {"name": "IMAGE_SCN_RESERVED_0400", "value": 1024}
+    , {"name": "IMAGE_SCN_LNK_REMOVE", "value": 2048}
+    , {"name": "IMAGE_SCN_LNK_COMDAT", "value": 4096}
+    , {"name": "IMAGE_SCN_GPREL", "value": 32768}
+    , {"name": "IMAGE_SCN_MEM_PURGEABLE", "value": 65536}
+    , {"name": "IMAGE_SCN_MEM_16BIT", "value": 131072}
+    , {"name": "IMAGE_SCN_MEM_LOCKED", "value": 262144}
+    , {"name": "IMAGE_SCN_MEM_PRELOAD", "value": 524288}
+    , {"name": "IMAGE_SCN_LNK_NRELOC_OVFL", "value": 16777216}
+    , {"name": "IMAGE_SCN_MEM_DISCARDABLE", "value": 33554432}
+    , {"name": "IMAGE_SCN_MEM_NOT_CACHED", "value": 67108864}
+    , {"name": "IMAGE_SCN_MEM_NOT_PAGED", "value": 134217728}
+    , {"name": "IMAGE_SCN_MEM_SHARED", "value": 268435456}
+    , {"name": "IMAGE_SCN_MEM_EXECUTE", "value": 536870912}
+    , {"name": "IMAGE_SCN_MEM_READ", "value": 1073741824}
+    , {"name": "IMAGE_SCN_MEM_WRITE", "value": 2147483648}
+    ]
+  }
+
+, "pe_subsystem": 
+  { "is": "enum"
+  , "size": "0x2"
+  , "align": 2
+  , "signed": false
+  , "values": 
+    [ {"name": "IMAGE_SUBSYSTEM_UNKNOWN", "value": 0}
+    , {"name": "IMAGE_SUBSYSTEM_NATIVE", "value": 1}
+    , {"name": "IMAGE_SUBSYSTEM_WINDOWS_GUI", "value": 2}
+    , {"name": "IMAGE_SUBSYSTEM_WINDOWS_CUI", "value": 3}
+    , {"name": "IMAGE_SUBSYSTEM_OS2_CUI", "value": 5}
+    , {"name": "IMAGE_SUBSYSTEM_POSIX_CUI", "value": 7}
+    , {"name": "IMAGE_SUBSYSTEM_NATIVE_WINDOWS", "value": 8}
+    , {"name": "IMAGE_SUBSYSTEM_WINDOWS_CE_GUI", "value": 9}
+    , {"name": "IMAGE_SUBSYSTEM_EFI_APPLICATION", "value": 10}
+    , {"name": "IMAGE_SUBSYSTEM_EFI_BOOT_SERVICE_DRIVER", "value": 11}
+    , {"name": "IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER", "value": 12}
+    , {"name": "IMAGE_SUBSYSTEM_EFI_ROM", "value": 13}
+    , {"name": "IMAGE_SUBSYSTEM_XBOX", "value": 14}
+    , {"name": "IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION", "value": 16}
     ]
   }
 

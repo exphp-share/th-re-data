@@ -113,7 +113,9 @@
 , {"addr": "0x4c0748", "name": "__seh_table", "type": {"is": "array", "len": 65, "inner": {"is": "int", "signed": false, "size": 4}}}
 , {"addr": "0x4c4a4c", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
 , {"addr": "0x4cabe8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": {"is": "int", "signed": true, "size": 1}}
+, {"addr": "0x4cccc0", "name": "GLOBALS", "type": {"is": "named", "name": "zGlobals"}}
 , {"addr": "0x4ccdf0", "name": "SUPERVISOR", "type": {"is": "named", "name": "zSupervisor"}}
+, {"addr": "0x4cf288", "name": "REPLAY_SAFE_RNG", "type": {"is": "named", "name": "zRng"}}
 , {"addr": "0x4cf294", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "int", "signed": true, "size": 4}}
 , {"addr": "0x4cf298", "name": "ABILITY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAbilityManager"}}}
 , {"addr": "0x4cf29c", "name": "ABILITY_TXT_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAbilityText"}}}
