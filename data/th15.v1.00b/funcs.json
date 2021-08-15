@@ -1,3 +1,4 @@
+
 [ {"addr": "0x401310", "name": "UpdateFuncRegistry::constructor", "comment": null}
 , {"addr": "0x401390", "name": "register__on_tick", "comment": null}
 , {"addr": "0x401440", "name": "register__on_draw", "comment": null}
@@ -34,9 +35,11 @@
 , {"addr": "0x40d680", "name": "AnmVm::wipe", "comment": null}
 , {"addr": "0x40d9f0", "name": "AnmVm::destructor", "comment": null}
 , {"addr": "0x40db10", "name": "AnmVm::constructor", "comment": null}
+, {"addr": "0x40dd40", "name": "EnemyFog::destructor", "comment": null}
 , {"addr": "0x40de70", "name": "Stage::constructor", "comment": null}
 , {"addr": "0x40dfe0", "name": "Stage::initialize", "comment": null}
 , {"addr": "0x40e1c0", "name": "Stage::destructor", "comment": null}
+, {"addr": "0x40e5b0", "name": "EnemyFog::operator delete", "comment": null}
 , {"addr": "0x40e5d0", "name": "Stage::operator new", "comment": null}
 , {"addr": "0x40e7f0", "name": "Stage::on_draw_03", "comment": null}
 , {"addr": "0x40f000", "name": "Stage::on_tick", "comment": null}
@@ -151,6 +154,7 @@
 , {"addr": "0x422680", "name": "EffectManager::constructor", "comment": null}
 , {"addr": "0x4227b0", "name": "EffectManager::sub_4227b0", "comment": null}
 , {"addr": "0x4228c0", "name": "EffectManager::on_tick", "comment": null}
+, {"addr": "0x422bf0", "name": "EnemyFog::initialize", "comment": null}
 , {"addr": "0x4232f0", "name": "Ending::constructor", "comment": null}
 , {"addr": "0x423310", "name": "Ending::initialize", "comment": null}
 , {"addr": "0x423550", "name": "Ending::destructor", "comment": null}
@@ -165,6 +169,7 @@
 , {"addr": "0x425530", "name": "EnemyManager::set_boss_id", "comment": null}
 , {"addr": "0x425570", "name": "EnemyManager::set_boss_bit", "comment": null}
 , {"addr": "0x426050", "name": "EnemyManager::allocate_new_enemy", "comment": null}
+, {"addr": "0x4263b0", "name": "EnemyManager::remove_from_active_list", "comment": null}
 , {"addr": "0x426440", "name": "EnemyManager::constructor", "comment": null}
 , {"addr": "0x4264a0", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x426820", "name": "EnemyManager::destructor", "comment": null}
@@ -173,6 +178,7 @@
 , {"addr": "0x426bd0", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x426c10", "name": "EnemyManager::on_draw__noop", "comment": null}
 , {"addr": "0x426c60", "name": "EnemyFull::initialize", "comment": null}
+, {"addr": "0x427120", "name": "EnemyFull::destructor", "comment": null}
 , {"addr": "0x428830", "name": "EnemyFull::update", "comment": null}
 , {"addr": "0x4291d0", "name": "EnemyFull::ecl_run_over_300__trampoline", "comment": null}
 , {"addr": "0x4291e0", "name": "Enemy::ecl_run_over_300", "comment": null}
@@ -448,12 +454,14 @@
 , {"addr": "0x4885b0", "name": "AnmManager::find_snapshot_vm_by_id", "comment": null}
 , {"addr": "0x488620", "name": "AnmManager::interrupt_tree", "comment": null}
 , {"addr": "0x489460", "name": "AnmManager::allocate_vm", "comment": null}
-, {"addr": "0x489590", "name": "AnmManager::sub_489590__prolly_deletes_all_snapshot_vms", "comment": null}
+, {"addr": "0x489590", "name": "AnmManager::destroy_snapshot_vms", "comment": null}
 , {"addr": "0x489600", "name": "AnmManager::allocate_snapshot_vm", "comment": null}
 , {"addr": "0x489740", "name": "AnmManager::store_snapshot_of_vm", "comment": null}
 , {"addr": "0x4898a0", "name": "sub_4898a0__called_when_restoring_vm_or_writing_autosave", "comment": null}
 , {"addr": "0x4899f0", "name": "AnmVm::write_autosave_data", "comment": null}
 , {"addr": "0x489bd0", "name": "AnmManager::read_vm_autosave_data", "comment": null}
+, {"addr": "0x489d70", "name": "AnmVm::become_snapshot_of", "comment": null}
+, {"addr": "0x489fe0", "name": "AnmVm::restore_from_snapshot", "comment": null}
 , {"addr": "0x48e750", "name": "ecl_get_int_arg", "comment": null}
 , {"addr": "0x48f340", "name": "EclFileManager::find_sub_by_name", "comment": null}
 , {"addr": "0x48f700", "name": "sub_48f700__ecl_context_snapshot_stuff__prolly", "comment": null}

@@ -1,3 +1,4 @@
+
 [ {"addr": "0x49c0c4", "name": "ECL_EXT_DAMAGE_FUNCS", "type": "void*[0x3]", "comment": null}
 , {"addr": "0x49c888", "name": "VTABLE_LASER_CURVE", "type": "void*[0x1a]", "comment": null}
 , {"addr": "0x49c8f4", "name": "VTABLE_LASER_BEAM", "type": "void*[0x1a]", "comment": null}

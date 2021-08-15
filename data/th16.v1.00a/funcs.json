@@ -1,3 +1,4 @@
+
 [ {"addr": "0x401000", "name": "sub_401000_48ac10_via_474c70", "comment": null}
 , {"addr": "0x401010", "name": "sub_401010_48ac20_via_474c70", "comment": null}
 , {"addr": "0x401020", "name": "sub_401020_48ac30_via_474c70", "comment": null}
@@ -307,7 +308,7 @@
 , {"addr": "0x41a9c0", "name": "find_enemy_full_by_id", "comment": null}
 , {"addr": "0x41aa40", "name": "laser_find_by_id", "comment": null}
 , {"addr": "0x41aa70", "name": "EnemyManager::allocate_new_enemy", "comment": null}
-, {"addr": "0x41ade0", "name": "remove_from_active_enemies_list", "comment": null}
+, {"addr": "0x41ade0", "name": "EnemyManager::remove_from_active_list", "comment": null}
 , {"addr": "0x41ae70", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x41b040", "name": "method_41b040", "comment": null}
 , {"addr": "0x41b1a0", "name": "EnemyManager::destructor", "comment": null}

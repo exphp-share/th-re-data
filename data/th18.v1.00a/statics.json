@@ -1,3 +1,4 @@
+
 [ {"addr": "0x41b128", "name": "__jump_table_41b128", "type": "void*[0xb]", "comment": null}
 , {"addr": "0x41b160", "name": "lookup_table_41b160", "type": "uint8_t[0xa]", "comment": null}
 , {"addr": "0x41b178", "name": "lookup_table_41b178", "type": "uint8_t[0xa]", "comment": null}
@@ -112,7 +113,9 @@
 , {"addr": "0x4c0748", "name": "__seh_table", "type": "uint32_t[0x41]", "comment": null}
 , {"addr": "0x4c4a4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4cabe8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
+, {"addr": "0x4cccc0", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
 , {"addr": "0x4ccdf0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
+, {"addr": "0x4cf288", "name": "REPLAY_SAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4cf294", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf298", "name": "ABILITY_MANAGER_PTR", "type": "struct zAbilityManager*", "comment": null}
 , {"addr": "0x4cf29c", "name": "ABILITY_TXT_PTR", "type": "struct zAbilityText*", "comment": null}

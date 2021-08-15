@@ -1,3 +1,4 @@
+
 [ {"addr": "0x4aa5bc", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4aa5d8", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4aa5f4", "name": "VTABLE_BOMB_SANAE", "type": "struct zVTableBomb", "comment": null}

@@ -1,3 +1,4 @@
+
 [ {"addr": "0x4274b9", "name": "float(2.0675518e+18)", "type": "float", "comment": null}
 , {"addr": "0x427b40", "name": "jump_table_427b40_int_global", "type": "uint32_t[0x66]", "comment": null}
 , {"addr": "0x46a2fc", "name": "anm_jump_table_from_neg_1__addresses", "type": "uint32_t[0x35]", "comment": null}

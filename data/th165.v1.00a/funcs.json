@@ -1,3 +1,4 @@
+
 [ {"addr": "0x401130", "name": "register__on_tick", "comment": null}
 , {"addr": "0x4011e0", "name": "register__on_draw", "comment": null}
 , {"addr": "0x401560", "name": "UpdateFunc::operator new", "comment": null}

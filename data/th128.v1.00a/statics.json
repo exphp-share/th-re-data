@@ -1,3 +1,4 @@
+
 [ {"addr": "0x4a26e8", "name": "VTABLE_ECL_DEFAULT", "type": "void*[0x6]", "comment": null}
 , {"addr": "0x4a2704", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[0x6]", "comment": null}
 , {"addr": "0x4a2bb4", "name": "VTABLE_LASER_BASE_CLASS", "type": "void*[0x18]", "comment": null}

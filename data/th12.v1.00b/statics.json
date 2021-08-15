@@ -1,3 +1,4 @@
+
 [ {"addr": "0x49fc50", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[0x6]", "comment": null}
 , {"addr": "0x4a05fc", "name": "VTABLE_LASER_BASE_CLASS", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a0654", "name": "VTABLE_LASER_LINE", "type": "struct zVTableLaser", "comment": null}

@@ -1,3 +1,4 @@
+
 [ {"addr": "0x401000", "name": "life_before_main__sub_401000", "comment": null}
 , {"addr": "0x401010", "name": "life_before_main__sub_401010", "comment": null}
 , {"addr": "0x401020", "name": "life_before_main__sub_401020", "comment": null}
@@ -16,6 +17,9 @@
 , {"addr": "0x401420", "name": "UpdateFuncRegistry::run_all_on_draw", "comment": null}
 , {"addr": "0x401530", "name": "UpdateFunc::operator new", "comment": null}
 , {"addr": "0x402530", "name": "BulletManager::destructor", "comment": null}
+, {"addr": "0x402740", "name": "Rng::rand_dword", "comment": null}
+, {"addr": "0x4027d0", "name": "Rng::randf_0_to_1", "comment": null}
+, {"addr": "0x402810", "name": "Rng::randf_neg_1_to_1", "comment": null}
 , {"addr": "0x402af0", "name": "Thread::operator delete", "comment": null}
 , {"addr": "0x402b30", "name": "sub_402b30__join_thread", "comment": null}
 , {"addr": "0x402bf0", "name": "PosVel::update_secondary_fields", "comment": null}
@@ -380,6 +384,7 @@
 , {"addr": "0x4236b0", "name": "BombSanae::method_2arg_always_returns_0", "comment": null}
 , {"addr": "0x4236c0", "name": "BombSanae::method_that_does_some_cleanup", "comment": null}
 , {"addr": "0x4236d0", "name": "BombSanae::method_called_by_on_tick", "comment": null}
+, {"addr": "0x4237f0", "name": "EnemyManager::get_boss_enemy_full", "comment": null}
 , {"addr": "0x423880", "name": "Bullet::constructor", "comment": null}
 , {"addr": "0x423970", "name": "Bullet::destructor", "comment": null}
 , {"addr": "0x423980", "name": "BulletManager::destroy_all", "comment": null}
@@ -412,6 +417,14 @@
 , {"addr": "0x42e0b0", "name": "EnemyManager::on_draw", "comment": null}
 , {"addr": "0x42ed40", "name": "Enemy::step_game_logic", "comment": null}
 , {"addr": "0x430d40", "name": "Enemy::ecl_run_over_300", "comment": null}
+, {"addr": "0x437360", "name": "EnemyFull::ecl_get_int_global", "comment": null}
+, {"addr": "0x437b20", "name": "EnemyFull::ecl_get_int_global_ptr", "comment": null}
+, {"addr": "0x437c90", "name": "EnemyFull::ecl_get_float_global", "comment": null}
+, {"addr": "0x4387e0", "name": "EnemyFull::ecl_get_float_global_ptr", "comment": null}
+, {"addr": "0x438aa0", "name": "Enemy::get_int_arg__trampoline", "comment": null}
+, {"addr": "0x438ac0", "name": "Enemy::get_int_arg_ptr__trampoline", "comment": null}
+, {"addr": "0x438ad0", "name": "Enemy::get_float_arg__trampoline", "comment": null}
+, {"addr": "0x438af0", "name": "Enemy::get_float_arg_ptr__trampoline", "comment": null}
 , {"addr": "0x438d90", "name": "Enemy::ecl_func_set_1_6bs", "comment": null}
 , {"addr": "0x439020", "name": "Enemy::ecl_func_call_2_ex", "comment": null}
 , {"addr": "0x4391a0", "name": "Enemy::ecl_func_call_3_ex", "comment": null}
@@ -616,6 +629,10 @@
 , {"addr": "0x489320", "name": "AnmManager::allocate_new_vm", "comment": null}
 , {"addr": "0x48b3a0", "name": "ecl_run", "comment": null}
 , {"addr": "0x48d420", "name": "EnemyFull::ecl_run", "comment": null}
+, {"addr": "0x48d4f0", "name": "ecl_get_int_arg", "comment": null}
+, {"addr": "0x48d5a0", "name": "ecl_get_float_arg", "comment": null}
+, {"addr": "0x48d750", "name": "EclRunContext::ecl_get_int_arg_ptr", "comment": null}
+, {"addr": "0x48d7c0", "name": "EclRunContext::get_float_arg_ptr", "comment": null}
 , {"addr": "0x48d920", "name": "EnemyFull::sub_48d920", "comment": null}
 , {"addr": "0x48dc60", "name": "__security_check_cookie", "comment": null}
 , {"addr": "0x48dc71", "name": "operator new", "comment": null}

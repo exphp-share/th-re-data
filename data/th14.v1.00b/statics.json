@@ -1,3 +1,4 @@
+
 [ {"addr": "0x472d60", "name": "jump_table_anm_under_300", "type": "uint32_t[0x35]", "comment": null}
 , {"addr": "0x472e34", "name": "jump_table_anm_under_300_indirect", "type": "uint8_t[0xd7]", "comment": null}
 , {"addr": "0x472f0c", "name": "jump_table_472f0c_under_600", "type": "uint32_t[0x41]", "comment": null}

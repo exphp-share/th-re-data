@@ -1,3 +1,4 @@
+
 [ {"addr": "0x401000", "name": "AsciiManager::constructor", "comment": null}
 , {"addr": "0x4010e0", "name": "AsciiManagerBigChild1::constructor", "comment": null}
 , {"addr": "0x401140", "name": "AsciiManager::on_tick_01", "comment": null}

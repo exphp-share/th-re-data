@@ -1,3 +1,4 @@
+
 [ {"addr": "0x4c5da0", "name": "VTABLE_LASER_CURVE", "type": "void*[0x19]", "comment": null}
 , {"addr": "0x4c5e08", "name": "VTABLE_LASER_BEAM", "type": "void*[0x19]", "comment": null}
 , {"addr": "0x4c5e70", "name": "VTABLE_LASER_INFINITE", "type": "void*[0x19]", "comment": null}
