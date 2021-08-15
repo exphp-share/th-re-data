@@ -169,6 +169,8 @@
   , ["0x42a53b", "14__screenFade"]
   , ["0x42a560", "11__stageNext"]
   , ["0x42a71b", "13__skippable"]
+  , ["0x42a730", "next_instr"]
+  , ["0x42a766", "finish_tick"]
   ]
 
 , "anm": 

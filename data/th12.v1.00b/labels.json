@@ -44,7 +44,9 @@
   , ["0x40b269", "25__EX_STEER"]
   , ["0x40b3b7", "27__EX_VELADD"]
   , ["0x40b468", "29__EX_VELTIME"]
+  , ["0x40b4f7", "common_end_1"]
   , ["0x40b4fd", "28__EX_BRIGHT"]
+  , ["0x40b527", "next_index"]
   ]
 
 , "ecl": 
@@ -289,11 +291,13 @@
   , ["0x420a16", "21__stageBonus"]
   , ["0x420cc7", "22__musicFade"]
   , ["0x420ce1", "27"]
+  , ["0x420ced", "next_instr"]
   , ["0x420d4c", "0__end"]
   ]
 
 , "anm": 
-  [ ["0x4556b1", "4__jmp"]
+  [ ["0x455686", "next_ins"]
+  , ["0x4556b1", "4__jmp"]
   , ["0x4556ce", "5__jmpDec"]
   , ["0x455719", "69"]
   , ["0x455720", "63__stop"]

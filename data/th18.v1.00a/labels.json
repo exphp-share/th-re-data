@@ -295,6 +295,7 @@
   , ["0x440bf6", "27__musicFade"]
   , ["0x440c05", "29__bubbleType"]
   , ["0x440c1f", "35__lightsOut"]
+  , ["0x440c65", "next_instr"]
   , ["0x440d75", "0__end"]
   , ["0x440d7e", "36__store"]
   ]

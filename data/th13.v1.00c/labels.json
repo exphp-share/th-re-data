@@ -29,6 +29,7 @@
   , ["0x429bf5", "22__musicFade"]
   , ["0x429c1f", "27__musicFadeCustom"]
   , ["0x429c2d", "29"]
+  , ["0x429c43", "next_instr"]
   , ["0x429c73", "0__end"]
   ]
 

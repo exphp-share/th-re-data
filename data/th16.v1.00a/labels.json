@@ -276,6 +276,8 @@
   , ["0x42b155", "27__musicFade"]
   , ["0x42b161", "29__bubbleType"]
   , ["0x42b178", "35"]
+  , ["0x42b17d", "next_instr_"]
+  , ["0x42b185", "next_instr"]
   , ["0x42b1f4", "0__end"]
   ]
 
@@ -288,10 +290,13 @@
   , ["0x42f981", "1_body"]
   , ["0x42fbda", "4"]
   , ["0x42fd1a", "default"]
+  , ["0x43005f", "next_item"]
   ]
 
 , "anm": 
-  [ ["0x45fbfc", "200__jmp"]
+  [ ["0x45fb9a", "end_loop_iter"]
+  , ["0x45fba0", "begin_loop_iter"]
+  , ["0x45fbfc", "200__jmp"]
   , ["0x45fc12", "201__jmpIfPos"]
   , ["0x45fc65", "6"]
   , ["0x45fcc1", "7"]

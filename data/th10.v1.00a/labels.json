@@ -134,6 +134,7 @@
   , ["0x416ac3", "19__intro"]
   , ["0x416bd3", "20__stageBonus"]
   , ["0x416eef", "21__musicFade"]
+  , ["0x416f09", "next_instr"]
   , ["0x416f3c", "0__end"]
   ]
 

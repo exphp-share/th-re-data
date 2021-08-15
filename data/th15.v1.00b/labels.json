@@ -290,6 +290,7 @@
   , ["0x439166", "22__musicEnd"]
   , ["0x4391a1", "27__musicFade"]
   , ["0x4391bb", "29__bubbleType"]
+  , ["0x4391d0", "next_instr"]
   , ["0x43923c", "0__end"]
   ]
 

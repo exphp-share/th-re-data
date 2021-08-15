@@ -480,6 +480,8 @@
   , ["0x4351df", "11__stageNext"]
   , ["0x43520c", "13__skippable"]
   , ["0x435229", "18"]
+  , ["0x435244", "next_instr"]
+  , ["0x435288", "no_more_instrs"]
   ]
 
 , "anm": 
