@@ -3,7 +3,6 @@
   "common-modules": [
     {"name": "user32"},
     {"name": "kernel32"},
-    {"name": "pe"},
     {"name": "windows-x86"}
   ],
   "versions": [

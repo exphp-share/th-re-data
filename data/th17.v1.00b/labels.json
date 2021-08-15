@@ -52,6 +52,7 @@
   , {"addr": "0x41807b", "label": "29__EX_HITBOX"}
   , {"addr": "0x4180c0", "label": "31__EX_WAIT"}
   , {"addr": "0x41810e", "label": "30__UNUSED"}
+  , {"addr": "0x418178", "label": "NEXT_INDEX"}
   ]
 , "ecl": 
   [ {"addr": "0x4211ce", "label": "3xx__enmCreateF"}
@@ -226,6 +227,7 @@
   , {"addr": "0x42658a", "label": "560__unknown560"}
   , {"addr": "0x4265bc", "label": "340__anm340"}
   , {"addr": "0x4265de", "label": "1001__spec1"}
+  , {"addr": "0x4265f2", "label": "300_default_case"}
   , {"addr": "0x478b0a", "label": "2"}
   , {"addr": "0x478b92", "label": "1__delete"}
   , {"addr": "0x478ba9", "label": "7"}
@@ -328,6 +330,7 @@
   , {"addr": "0x42eca9", "label": "27__musicFade"}
   , {"addr": "0x42ecb8", "label": "29__bubbleType"}
   , {"addr": "0x42ecd2", "label": "35"}
+  , {"addr": "0x42edbf", "label": "next_instr"}
   , {"addr": "0x42ede5", "label": "0__end"}
   ]
 , "itemtick": 
@@ -336,6 +339,7 @@
   , {"addr": "0x433781", "label": "2"}
   , {"addr": "0x433823", "label": "3"}
   , {"addr": "0x43387b", "label": "4"}
+  , {"addr": "0x433ab2", "label": "default_case"}
   ]
 , "exline": 
   [ {"addr": "0x436053", "label": "00__EX_DIST"}
@@ -352,8 +356,10 @@
   , {"addr": "0x4366f0", "label": "11__EX_PLAYSOUND"}
   , {"addr": "0x436712", "label": "15__EX_REACT"}
   , {"addr": "0x43673e", "label": "31__EX_WAIT"}
+  , {"addr": "0x436786", "label": "common_end_1"}
   , {"addr": "0x436794", "label": "20__EX_BRIGHT"}
   , {"addr": "0x4367c7", "label": "16__EX_LOOP"}
+  , {"addr": "0x4367d4", "label": "common_end_2"}
   ]
 , "exinf": 
   [ {"addr": "0x43c056", "label": "20__EX_BRIGHT"}

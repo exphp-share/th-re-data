@@ -311,6 +311,7 @@
   , {"addr": "0x433633", "label": "22__musicEnd"}
   , {"addr": "0x43366e", "label": "27__musicFade"}
   , {"addr": "0x433688", "label": "29__bubbleType"}
+  , {"addr": "0x43369d", "label": "next_instr"}
   , {"addr": "0x4336f4", "label": "0__end"}
   ]
 , "anmfval": 
@@ -380,7 +381,8 @@
   , {"addr": "0x46fdc6", "label": "default"}
   ]
 , "anm": 
-  [ {"addr": "0x4700d1", "label": "200__jmp"}
+  [ {"addr": "0x47007e", "label": "next_instr"}
+  , {"addr": "0x4700d1", "label": "200__jmp"}
   , {"addr": "0x4700e7", "label": "201__jmpDec"}
   , {"addr": "0x470132", "label": "7"}
   , {"addr": "0x470162", "label": "202__ije"}
@@ -509,5 +511,7 @@
   , {"addr": "0x472ac8", "label": "3__stop"}
   , {"addr": "0x472cc0", "label": "1__end"}
   , {"addr": "0x472cd2", "label": "2"}
+  , {"addr": "0x472d38", "label": "exit_0"}
+  , {"addr": "0x472d3a", "label": "exit_1"}
   ]
 }

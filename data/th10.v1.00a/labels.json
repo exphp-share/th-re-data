@@ -133,6 +133,7 @@
   , {"addr": "0x416ac3", "label": "19__intro"}
   , {"addr": "0x416bd3", "label": "20__stageBonus"}
   , {"addr": "0x416eef", "label": "21__musicFade"}
+  , {"addr": "0x416f09", "label": "next_instr"}
   , {"addr": "0x416f3c", "label": "0__end"}
   ]
 , "anm": 

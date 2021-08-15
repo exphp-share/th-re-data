@@ -21,6 +21,7 @@
   , {"addr": "0x416e7f", "label": "24"}
   , {"addr": "0x416e8e", "label": "25"}
   , {"addr": "0x416ea6", "label": "28"}
+  , {"addr": "0x416ec1", "label": "nop"}
   , {"addr": "0x416ef3", "label": "10__stop"}
   , {"addr": "0x417043", "label": "0__end"}
   , {"addr": "0x41705b", "label": "11__stageNext"}

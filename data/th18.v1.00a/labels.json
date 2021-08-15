@@ -292,6 +292,7 @@
   , {"addr": "0x440bf6", "label": "27__musicFade"}
   , {"addr": "0x440c05", "label": "29__bubbleType"}
   , {"addr": "0x440c1f", "label": "35__lightsOut"}
+  , {"addr": "0x440c65", "label": "next_instr"}
   , {"addr": "0x440d75", "label": "0__end"}
   , {"addr": "0x440d7e", "label": "36__store"}
   ]

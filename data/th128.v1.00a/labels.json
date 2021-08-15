@@ -30,6 +30,7 @@
   , {"addr": "0x424841", "label": "27__musicFadeCustom"}
   , {"addr": "0x424852", "label": "29"}
   , {"addr": "0x42486a", "label": "30"}
+  , {"addr": "0x4248be", "label": "next_instr"}
   , {"addr": "0x424928", "label": "0__end"}
   ]
 , "anm": 

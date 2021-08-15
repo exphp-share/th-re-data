@@ -35,6 +35,23 @@
     ]
   }
 
+, "COFF_Header": 
+  { "is": "struct"
+  , "size": "0x18"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "magic", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x4", "name": "machine", "type": {"is": "named", "name": "coff_machine"}}
+    , {"offset": "0x6", "name": "numberOfSections", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x8", "name": "timeDateStamp", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "pointerToSymbolTable", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "numberOfSymbols", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "sizeOfOptionalHeader", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x16", "name": "characteristics", "type": {"is": "named", "name": "coff_characteristics"}}
+    , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
 , "CRITICAL_SECTION": 
   { "is": "struct"
   , "size": "0x18"
@@ -643,6 +660,34 @@
     , {"offset": "0x104", "name": "lFRz", "type": {"is": "named", "name": "LONG"}}
     , {"offset": "0x108", "name": "rglFSlider", "type": {"is": "array", "len": 2, "inner": {"is": "named", "name": "LONG"}}}
     , {"offset": "0x110", "name": "__end", "type": null}
+    ]
+  }
+
+, "DOS_Header": 
+  { "is": "struct"
+  , "size": "0x40"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "e_magic", "type": {"is": "array", "len": 2, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x2", "name": "e_cblp", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x4", "name": "e_cp", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x6", "name": "e_crlc", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x8", "name": "e_cparhdr", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xa", "name": "e_minalloc", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xc", "name": "e_maxalloc", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0xe", "name": "e_ss", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x10", "name": "e_sp", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x12", "name": "e_csum", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x14", "name": "e_ip", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x16", "name": "e_cs", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x18", "name": "e_lfarlc", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x1a", "name": "e_ovno", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x1c", "name": "e_res1", "type": {"is": "array", "len": 8, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x24", "name": "e_oemid", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x26", "name": "e_oeminfo", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x28", "name": "e_res2", "type": {"is": "array", "len": 20, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x3c", "name": "e_lfanew", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "__end", "type": null}
     ]
   }
 
@@ -1329,6 +1374,20 @@
     ]
   }
 
+, "Import_Directory_Table": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "importLookupTableRva", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "timeDateStamp", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "forwarderChain", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "nameRva", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "importAddressTableRva", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
 , "JOYCAPSA": 
   { "is": "struct"
   , "size": "0x194"
@@ -1405,6 +1464,72 @@
     ]
   }
 
+, "PE32_Optional_Header": 
+  { "is": "struct"
+  , "size": "0xe0"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "magic", "type": {"is": "named", "name": "pe_magic"}}
+    , {"offset": "0x2", "name": "majorLinkerVersion", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x3", "name": "minorLinkerVersion", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x4", "name": "sizeOfCode", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "sizeOfInitializedData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "sizeOfUninitializedData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "addressOfEntryPoint", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "baseOfCode", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "baseOfData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "imageBase", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "sectionAlignment", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x24", "name": "fileAlignment", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "majorOperatingSystemVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2a", "name": "minorOperatingSystemVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2c", "name": "majorImageVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2e", "name": "minorImageVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x30", "name": "majorSubsystemVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x32", "name": "minorSubsystemVersion", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x34", "name": "win32VersionValue", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x38", "name": "sizeOfImage", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x3c", "name": "sizeOfHeaders", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x40", "name": "checkSum", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x44", "name": "subsystem", "type": {"is": "named", "name": "pe_subsystem"}}
+    , {"offset": "0x46", "name": "dllCharacteristics", "type": {"is": "named", "name": "pe_dll_characteristics"}}
+    , {"offset": "0x48", "name": "sizeOfStackReserve", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4c", "name": "sizeOfStackCommit", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x50", "name": "sizeOfHeapReserve", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x54", "name": "sizeOfHeapCommit", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x58", "name": "loaderFlags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x5c", "name": "numberOfRvaAndSizes", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x60", "name": "exportTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x68", "name": "importTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x70", "name": "resourceTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x78", "name": "exceptionTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x80", "name": "certificateTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x88", "name": "baseRelocationTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x90", "name": "debugEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0x98", "name": "architectureEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xa0", "name": "globalPtrEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xa8", "name": "tlsTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xb0", "name": "loadConfigTableEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xb8", "name": "boundImportEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xc0", "name": "iatEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xc8", "name": "delayImportDescriptorEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xd0", "name": "clrRuntimeHeaderEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xd8", "name": "reservedEntry", "type": {"is": "named", "name": "PE_Data_Directory_Entry"}}
+    , {"offset": "0xe0", "name": "__end", "type": null}
+    ]
+  }
+
+, "PE_Data_Directory_Entry": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "virtualAddress", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "size", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
 , "RGNDATA": 
   { "is": "struct"
   , "size": "0x24"
@@ -1469,6 +1594,25 @@
     , {"offset": "0x80", "name": "e_magic", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 1}}}
     , {"offset": "0x84", "name": "e_checksum", "type": {"is": "int", "signed": false, "size": 4}}
     , {"offset": "0x88", "name": "__end", "type": null}
+    ]
+  }
+
+, "Section_Header": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "name", "type": {"is": "array", "len": 8, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x8", "name": "virtualSize", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0xc", "name": "virtualAddress", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x10", "name": "sizeOfRawData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x14", "name": "pointerToRawData", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "pointerToRelocations", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x1c", "name": "pointerToLineNumbers", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x20", "name": "numberOfRelocations", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x22", "name": "numberOfLineNumbers", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x24", "name": "characteristics", "type": {"is": "named", "name": "pe_section_flags"}}
+    , {"offset": "0x28", "name": "__end", "type": null}
     ]
   }
 

@@ -43,7 +43,9 @@
   , {"addr": "0x40b269", "label": "25__EX_STEER"}
   , {"addr": "0x40b3b7", "label": "27__EX_VELADD"}
   , {"addr": "0x40b468", "label": "29__EX_VELTIME"}
+  , {"addr": "0x40b4f7", "label": "common_end_1"}
   , {"addr": "0x40b4fd", "label": "28__EX_BRIGHT"}
+  , {"addr": "0x40b527", "label": "next_index"}
   ]
 , "ecl": 
   [ {"addr": "0x41554d", "label": "265__enmCreateF"}
@@ -285,10 +287,12 @@
   , {"addr": "0x420a16", "label": "21__stageBonus"}
   , {"addr": "0x420cc7", "label": "22__musicFade"}
   , {"addr": "0x420ce1", "label": "27"}
+  , {"addr": "0x420ced", "label": "next_instr"}
   , {"addr": "0x420d4c", "label": "0__end"}
   ]
 , "anm": 
-  [ {"addr": "0x4556b1", "label": "4__jmp"}
+  [ {"addr": "0x455686", "label": "next_ins"}
+  , {"addr": "0x4556b1", "label": "4__jmp"}
   , {"addr": "0x4556ce", "label": "5__jmpDec"}
   , {"addr": "0x455719", "label": "69"}
   , {"addr": "0x455720", "label": "63__stop"}

@@ -275,6 +275,8 @@
   , {"addr": "0x42b155", "label": "27__musicFade"}
   , {"addr": "0x42b161", "label": "29__bubbleType"}
   , {"addr": "0x42b178", "label": "35"}
+  , {"addr": "0x42b17d", "label": "next_instr_"}
+  , {"addr": "0x42b185", "label": "next_instr"}
   , {"addr": "0x42b1f4", "label": "0__end"}
   ]
 , "itemtick": 
@@ -286,9 +288,12 @@
   , {"addr": "0x42f981", "label": "1_body"}
   , {"addr": "0x42fbda", "label": "4"}
   , {"addr": "0x42fd1a", "label": "default"}
+  , {"addr": "0x43005f", "label": "next_item"}
   ]
 , "anm": 
-  [ {"addr": "0x45fbfc", "label": "200__jmp"}
+  [ {"addr": "0x45fb9a", "label": "end_loop_iter"}
+  , {"addr": "0x45fba0", "label": "begin_loop_iter"}
+  , {"addr": "0x45fbfc", "label": "200__jmp"}
   , {"addr": "0x45fc12", "label": "201__jmpIfPos"}
   , {"addr": "0x45fc65", "label": "6"}
   , {"addr": "0x45fcc1", "label": "7"}

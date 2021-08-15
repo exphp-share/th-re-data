@@ -287,6 +287,7 @@
   , {"addr": "0x439166", "label": "22__musicEnd"}
   , {"addr": "0x4391a1", "label": "27__musicFade"}
   , {"addr": "0x4391bb", "label": "29__bubbleType"}
+  , {"addr": "0x4391d0", "label": "next_instr"}
   , {"addr": "0x43923c", "label": "0__end"}
   ]
 , "anm": 
