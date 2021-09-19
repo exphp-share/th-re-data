@@ -1,3 +1,4 @@
+
 { "COFF_Header": 
   [ ["0x0", "magic", "char[0x4]"]
   , ["0x4", "machine", "enum coff_machine"]
@@ -81,6 +82,19 @@
 
 , "HWND__": 
   [ ["0x0", "__end", null]
+  ]
+
+, "IUnknown": 
+  [ ["0x0", "vtable", "struct IUnknownVtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
+  ]
+
+, "IUnknownVtbl": 
+  [ ["0x0", "QueryInterface", "int32_t (*)(struct IUnknown*, GUID*, void**)"]
+  , ["0x4", "AddRef", "uint32_t (*)(struct IUnknown*)"]
+  , ["0x8", "Release", "uint32_t (*)(struct IUnknown*)"]
+  , ["0xc", "__end", null]
   ]
 
 , "Import_Directory_Table": 
@@ -263,11 +277,12 @@
   , ["0x28", "dwReserved1", "DWORD"]
   , ["0x2c", "cFileName", "CHAR[0x104]"]
   , ["0x130", "cAlternateFileName", "CHAR[0xe]"]
-  , ["0x13e", "__unknown", null]
+  , ["0x13e", "__padding", null]
   , ["0x140", "dwFileType", "DWORD"]
   , ["0x144", "dwCreatorType", "DWORD"]
   , ["0x148", "wFinderFlags", "WORD"]
-  , ["0x14a", "__end", null]
+  , ["0x14a", "__padding", null]
+  , ["0x14c", "__end", null]
   ]
 
 , "_FILETIME": 

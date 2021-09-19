@@ -1,3 +1,4 @@
+
 { "zAbilityManager": 
   [ ["0x0", "__unknown", null]
   , ["0x4", "on_tick", "struct zUpdateFunc*"]
@@ -500,6 +501,10 @@
   , ["0x38", "__end", null]
   ]
 
+, "zGlobals": 
+  [ ["0x0", "__end", null]
+  ]
+
 , "zGui": 
   [ ["0x0", "__unknown", null]
   , ["0x1b0", "msg", "struct zGuiMsgVm*"]
@@ -772,6 +777,13 @@
   , ["0x10", "diffuse_color", "struct D3DCOLOR"]
   , ["0x14", "texture_uv", "struct zFloat2"]
   , ["0x1c", "__end", null]
+  ]
+
+, "zRng": 
+  [ ["0x0", "field_0", "uint16_t"]
+  , ["0x2", "__unknown", null]
+  , ["0x4", "field_4", "uint32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "zShtShooter": 

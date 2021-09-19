@@ -1,3 +1,4 @@
+
 { "zAnmFastVm": 
   [ ["0x0", "vm", "struct zAnmVm"]
   , ["0x608", "freelist_node", "struct zAnmFastVmList"]
@@ -243,20 +244,6 @@
   , ["0x538", "color_1", "struct D3DCOLOR"]
   , ["0x53c", "color_2", "struct D3DCOLOR"]
   , ["0x540", "mixed_inherited_color", "struct D3DCOLOR"]
-  , ["0x544", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x544", "__end", null]
-  ]
-
-, "zAnmVmPrefix2": 
-  [ ["0x0", "__unknown", null]
-  , ["0x18", "flags_lo", "int32_t"]
-  , ["0x1c", "__unknown", null]
-  , ["0x24", "layer", "int32_t"]
-  , ["0x28", "__unknown", null]
-  , ["0x5c", "scale", "struct zFloat2"]
-  , ["0x64", "__unknown", null]
-  , ["0x53c", "__color_2_prolly", "struct D3DCOLOR"]
-  , ["0x540", "__unknown", null]
   , ["0x544", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x544", "__end", null]
   ]
@@ -654,7 +641,7 @@
   , ["0xb4", "snapshot_inner", "struct zEnemyManagerInner"]
   , ["0x15c", "__unknown", null]
   , ["0x180", "enemy_list_head", "struct zEnemyList*"]
-  , ["0x184", "__unknown", null]
+  , ["0x184", "enemy_list_tail", "struct zEnemyList*"]
   , ["0x188", "enemy_list_snapshot", "struct zEnemyList*"]
   , ["0x18c", "enemy_count_real", "int32_t"]
   , ["0x190", "__exact_size_known", "struct zCOMMENT[0x0]"]

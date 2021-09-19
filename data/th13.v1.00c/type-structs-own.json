@@ -1,3 +1,4 @@
+
 { "zAnmFastVm": 
   [ ["0x0", "vm", "struct zAnmVm"]
   , ["0x5a4", "freelist_node", "struct zAnmFastVmList"]

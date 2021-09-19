@@ -1,0 +1,7 @@
+
+{ "zEclStackItem": 
+  [ ["as_float", "float"]
+  , ["as_int", "int32_t"]
+  ]
+
+}

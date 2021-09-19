@@ -1,3 +1,4 @@
+
 { "COFF_Header": 
   [ ["0x0", "magic", "char[0x4]"]
   , ["0x4", "machine", "enum coff_machine"]
@@ -385,21 +386,6 @@
   [ ["0x0", "__end", null]
   ]
 
-, "HINSTANCERGNDATA": 
-  [ ["0x0", "rdh", "struct HINSTANCERGNDATAHEADER"]
-  , ["0x20", "Buffer", "char[0x1]"]
-  , ["0x21", "__end", null]
-  ]
-
-, "HINSTANCERGNDATAHEADER": 
-  [ ["0x0", "dwSize", "uint32_t"]
-  , ["0x4", "iType", "uint32_t"]
-  , ["0x8", "nCount", "uint32_t"]
-  , ["0xc", "nRgnSize", "uint32_t"]
-  , ["0x10", "rcBound", "RECT"]
-  , ["0x20", "__end", null]
-  ]
-
 , "HINSTANCE__": 
   [ ["0x0", "__end", null]
   ]
@@ -417,13 +403,13 @@
   ]
 
 , "IDirect3D9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3D9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3D9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3D9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "RegisterSoftwareDevice", "int32_t (*)(struct IDirect3D9*, void*)"]
   , ["0x10", "GetAdapterCount", "uint32_t (*)(struct IDirect3D9*)"]
   , ["0x14", "GetAdapterIdentifier", "int32_t (*)(struct IDirect3D9*, uint32_t, uint32_t, struct D3DADAPTER_IDENTIFIER9*)"]
@@ -442,13 +428,13 @@
   ]
 
 , "IDirect3DBaseTexture9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DBaseTexture9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DBaseTexture9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DBaseTexture9Vtbl": 
-  [ ["0x0", "parent", "struct IDirect3DResource9Vtbl"]
+  [ ["0x0", "super", "struct IDirect3DResource9Vtbl"]
   , ["0x2c", "SetLOD", "uint32_t (*)(struct IDirect3DBaseTexture9*, uint32_t)"]
   , ["0x30", "GetLOD", "uint32_t (*)(struct IDirect3DBaseTexture9*)"]
   , ["0x34", "GetLevelCount", "uint32_t (*)(struct IDirect3DBaseTexture9*)"]
@@ -459,13 +445,13 @@
   ]
 
 , "IDirect3DCubeTexture9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DCubeTexture9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DCubeTexture9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DCubeTexture9Vtbl": 
-  [ ["0x0", "parent", "struct IDirect3DBaseTexture9Vtbl"]
+  [ ["0x0", "super", "struct IDirect3DBaseTexture9Vtbl"]
   , ["0x44", "GetLevelDesc", "int32_t (*)(struct IDirect3DCubeTexture9*, uint32_t, struct D3DSURFACE_DESC*)"]
   , ["0x48", "GetCubeMapSurface", "int32_t (*)(struct IDirect3DCubeTexture9*, uint32_t, uint32_t, struct IDirect3DSurface9**)"]
   , ["0x4c", "LockRect", "int32_t (*)(struct IDirect3DCubeTexture9*, uint32_t, uint32_t, struct D3DLOCKED_RECT*, RECT*, uint32_t)"]
@@ -475,13 +461,13 @@
   ]
 
 , "IDirect3DDevice9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DDevice9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DDevice9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DDevice9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "TestCooperativeLevel", "int32_t (*)(struct IDirect3DDevice9*)"]
   , ["0x10", "GetAvailableTextureMem", "uint32_t (*)(struct IDirect3DDevice9*)"]
   , ["0x14", "EvictManagedResources", "int32_t (*)(struct IDirect3DDevice9*)"]
@@ -496,7 +482,7 @@
   , ["0x38", "GetSwapChain", "int32_t (*)(struct IDirect3DDevice9*, uint32_t, struct IDirect3DSwapChain9**)"]
   , ["0x3c", "GetNumberOfSwapChains", "uint32_t (*)(struct IDirect3DDevice9*)"]
   , ["0x40", "Reset", "int32_t (*)(struct IDirect3DDevice9*, struct D3DPRESENT_PARAMETERS*)"]
-  , ["0x44", "Present", "int32_t (*)(struct IDirect3DDevice9*, RECT*, RECT*, HWND, struct HINSTANCERGNDATA*)"]
+  , ["0x44", "Present", "int32_t (*)(struct IDirect3DDevice9*, RECT*, RECT*, HWND, struct RGNDATA*)"]
   , ["0x48", "GetBackBuffer", "int32_t (*)(struct IDirect3DDevice9*, uint32_t, uint32_t, uint32_t, struct IDirect3DSurface9**)"]
   , ["0x4c", "GetRasterStatus", "int32_t (*)(struct IDirect3DDevice9*, uint32_t, struct D3DRASTER_STATUS*)"]
   , ["0x50", "SetDialogBoxMode", "int32_t (*)(struct IDirect3DDevice9*, int32_t)"]
@@ -602,13 +588,13 @@
   ]
 
 , "IDirect3DIndexBuffer9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DIndexBuffer9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DIndexBuffer9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DIndexBuffer9Vtbl": 
-  [ ["0x0", "parent", "struct IDirect3DResource9Vtbl"]
+  [ ["0x0", "super", "struct IDirect3DResource9Vtbl"]
   , ["0x2c", "Lock", "int32_t (*)(struct IDirect3DIndexBuffer9*, uint32_t, uint32_t, void**, uint32_t)"]
   , ["0x30", "Unlock", "int32_t (*)(struct IDirect3DIndexBuffer9*)"]
   , ["0x34", "GetDesc", "int32_t (*)(struct IDirect3DIndexBuffer9*, struct D3DINDEXBUFFER_DESC*)"]
@@ -616,26 +602,26 @@
   ]
 
 , "IDirect3DPixelShader9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DPixelShader9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DPixelShader9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DPixelShader9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "GetDevice", "int32_t (*)(struct IDirect3DPixelShader9*, struct IDirect3DDevice9**)"]
   , ["0x10", "GetFunction", "int32_t (*)(struct IDirect3DPixelShader9*, void*, uint32_t*)"]
   , ["0x14", "__end", null]
   ]
 
 , "IDirect3DQuery9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DQuery9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DQuery9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DQuery9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "GetDevice", "int32_t (*)(struct IDirect3DQuery9*, struct IDirect3DDevice9**)"]
   , ["0x10", "GetType", "uint32_t (*)(struct IDirect3DQuery9*)"]
   , ["0x14", "GetDataSize", "uint32_t (*)(struct IDirect3DQuery9*)"]
@@ -645,13 +631,13 @@
   ]
 
 , "IDirect3DResource9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DResource9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DResource9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DResource9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "GetDevice", "int32_t (*)(struct IDirect3DResource9*, struct IDirect3DDevice9**)"]
   , ["0x10", "SetPrivateData", "int32_t (*)(struct IDirect3DResource9*, GUID*, void*, uint32_t, uint32_t)"]
   , ["0x14", "GetPrivateData", "int32_t (*)(struct IDirect3DResource9*, GUID*, void*, uint32_t*)"]
@@ -664,13 +650,13 @@
   ]
 
 , "IDirect3DStateBlock9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DStateBlock9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DStateBlock9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DStateBlock9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "GetDevice", "int32_t (*)(struct IDirect3DStateBlock9*, struct IDirect3DDevice9**)"]
   , ["0x10", "Capture", "int32_t (*)(struct IDirect3DStateBlock9*)"]
   , ["0x14", "Apply", "int32_t (*)(struct IDirect3DStateBlock9*)"]
@@ -678,13 +664,13 @@
   ]
 
 , "IDirect3DSurface9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DSurface9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DSurface9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DSurface9Vtbl": 
-  [ ["0x0", "parent", "struct IDirect3DResource9Vtbl"]
+  [ ["0x0", "super", "struct IDirect3DResource9Vtbl"]
   , ["0x2c", "GetContainer", "int32_t (*)(struct IDirect3DSurface9*, GUID*, void**)"]
   , ["0x30", "GetDesc", "int32_t (*)(struct IDirect3DSurface9*, struct D3DSURFACE_DESC*)"]
   , ["0x34", "LockRect", "int32_t (*)(struct IDirect3DSurface9*, struct D3DLOCKED_RECT*, RECT*, uint32_t)"]
@@ -695,14 +681,14 @@
   ]
 
 , "IDirect3DSwapChain9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DSwapChain9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DSwapChain9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DSwapChain9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
-  , ["0xc", "Present", "int32_t (*)(struct IDirect3DSwapChain9*, RECT*, RECT*, HWND, struct HINSTANCERGNDATA*, uint32_t)"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
+  , ["0xc", "Present", "int32_t (*)(struct IDirect3DSwapChain9*, RECT*, RECT*, HWND, struct RGNDATA*, uint32_t)"]
   , ["0x10", "GetFrontBufferData", "int32_t (*)(struct IDirect3DSwapChain9*, struct IDirect3DSurface9*)"]
   , ["0x14", "GetBackBuffer", "int32_t (*)(struct IDirect3DSwapChain9*, uint32_t, uint32_t, struct IDirect3DSurface9**)"]
   , ["0x18", "GetRasterStatus", "int32_t (*)(struct IDirect3DSwapChain9*, struct D3DRASTER_STATUS*)"]
@@ -713,13 +699,13 @@
   ]
 
 , "IDirect3DTexture9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DTexture9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DTexture9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DTexture9Vtbl": 
-  [ ["0x0", "parent", "struct IDirect3DBaseTexture9Vtbl"]
+  [ ["0x0", "super", "struct IDirect3DBaseTexture9Vtbl"]
   , ["0x44", "GetLevelDesc", "int32_t (*)(struct IDirect3DTexture9*, uint32_t, struct D3DSURFACE_DESC*)"]
   , ["0x48", "GetSurfaceLevel", "int32_t (*)(struct IDirect3DTexture9*, uint32_t, struct IDirect3DSurface9**)"]
   , ["0x4c", "LockRect", "int32_t (*)(struct IDirect3DTexture9*, uint32_t, struct D3DLOCKED_RECT*, RECT*, uint32_t)"]
@@ -729,13 +715,13 @@
   ]
 
 , "IDirect3DVertexBuffer9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DVertexBuffer9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DVertexBuffer9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DVertexBuffer9Vtbl": 
-  [ ["0x0", "parent", "struct IDirect3DResource9Vtbl"]
+  [ ["0x0", "super", "struct IDirect3DResource9Vtbl"]
   , ["0x2c", "Lock", "int32_t (*)(struct IDirect3DVertexBuffer9*, uint32_t, uint32_t, void**, uint32_t)"]
   , ["0x30", "Unlock", "int32_t (*)(struct IDirect3DVertexBuffer9*)"]
   , ["0x34", "GetDesc", "int32_t (*)(struct IDirect3DVertexBuffer9*, struct D3DVERTEXBUFFER_DESC*)"]
@@ -743,39 +729,39 @@
   ]
 
 , "IDirect3DVertexDeclaration9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DVertexDeclaration9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DVertexDeclaration9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DVertexDeclaration9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "GetDevice", "int32_t (*)(struct IDirect3DVertexDeclaration9*, struct IDirect3DDevice9**)"]
   , ["0x10", "GetDeclaration", "int32_t (*)(struct IDirect3DVertexDeclaration9*, struct D3DVERTEXELEMENT9*, uint32_t*)"]
   , ["0x14", "__end", null]
   ]
 
 , "IDirect3DVertexShader9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DVertexShader9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DVertexShader9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DVertexShader9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "GetDevice", "int32_t (*)(struct IDirect3DVertexShader9*, struct IDirect3DDevice9**)"]
   , ["0x10", "GetFunction", "int32_t (*)(struct IDirect3DVertexShader9*, void*, uint32_t*)"]
   , ["0x14", "__end", null]
   ]
 
 , "IDirect3DVolume9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DVolume9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DVolume9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DVolume9Vtbl": 
-  [ ["0x0", "parent", "struct IUnknownVtbl"]
+  [ ["0x0", "super", "struct IUnknownVtbl"]
   , ["0xc", "GetDevice", "int32_t (*)(struct IDirect3DVolume9*, struct IDirect3DDevice9**)"]
   , ["0x10", "SetPrivateData", "int32_t (*)(struct IDirect3DVolume9*, GUID*, void*, uint32_t, uint32_t)"]
   , ["0x14", "GetPrivateData", "int32_t (*)(struct IDirect3DVolume9*, GUID*, void*, uint32_t*)"]
@@ -788,13 +774,13 @@
   ]
 
 , "IDirect3DVolumeTexture9": 
-  [ ["0x0", "lpVtbl", "struct IDirect3DVolumeTexture9Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  [ ["0x0", "vtable", "struct IDirect3DVolumeTexture9Vtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DVolumeTexture9Vtbl": 
-  [ ["0x0", "parent", "struct IDirect3DBaseTexture9Vtbl"]
+  [ ["0x0", "super", "struct IDirect3DBaseTexture9Vtbl"]
   , ["0x44", "GetLevelDesc", "int32_t (*)(struct IDirect3DVolumeTexture9*, uint32_t, struct D3DVOLUME_DESC*)"]
   , ["0x48", "GetVolumeLevel", "int32_t (*)(struct IDirect3DVolumeTexture9*, uint32_t, struct IDirect3DVolume9**)"]
   , ["0x4c", "LockBox", "int32_t (*)(struct IDirect3DVolumeTexture9*, uint32_t, struct D3DLOCKED_BOX*, struct D3DBOX*, uint32_t)"]
@@ -804,7 +790,9 @@
   ]
 
 , "IUnknown": 
-  [ ["0x0", "__end", null]
+  [ ["0x0", "vtable", "struct IUnknownVtbl*"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IUnknownVtbl": 
@@ -925,6 +913,22 @@
   , ["0x8", "__end", null]
   ]
 
+, "RGNDATA": 
+  [ ["0x0", "rdh", "struct RGNDATAHEADER"]
+  , ["0x20", "Buffer", "char[0x1]"]
+  , ["0x21", "__padding", null]
+  , ["0x24", "__end", null]
+  ]
+
+, "RGNDATAHEADER": 
+  [ ["0x0", "dwSize", "uint32_t"]
+  , ["0x4", "iType", "uint32_t"]
+  , ["0x8", "nCount", "uint32_t"]
+  , ["0xc", "nRgnSize", "uint32_t"]
+  , ["0x10", "rcBound", "RECT"]
+  , ["0x20", "__end", null]
+  ]
+
 , "RTL_CRITICAL_SECTION_DEBUG": 
   [ ["0x0", "__end", null]
   ]
@@ -996,11 +1000,12 @@
   , ["0x28", "dwReserved1", "DWORD"]
   , ["0x2c", "cFileName", "CHAR[0x104]"]
   , ["0x130", "cAlternateFileName", "CHAR[0xe]"]
-  , ["0x13e", "__unknown", null]
+  , ["0x13e", "__padding", null]
   , ["0x140", "dwFileType", "DWORD"]
   , ["0x144", "dwCreatorType", "DWORD"]
   , ["0x148", "wFinderFlags", "WORD"]
-  , ["0x14a", "__end", null]
+  , ["0x14a", "__padding", null]
+  , ["0x14c", "__end", null]
   ]
 
 , "_FILETIME": 

@@ -1,3 +1,4 @@
+
 { "zAnmLoaded": 
   [ ["0x0", "preloaded_index", "int32_t"]
   , ["0x4", "__ptr_4", "void*"]
@@ -1216,7 +1217,7 @@
 
 , "zRng": 
   [ ["0x0", "value", "uint16_t"]
-  , ["0x2", "__unknown", null]
+  , ["0x2", "__padding", null]
   , ["0x4", "index", "int32_t"]
   , ["0x8", "__end", null]
   ]

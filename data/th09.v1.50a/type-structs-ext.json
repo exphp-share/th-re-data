@@ -1,3 +1,4 @@
+
 { "ASCII_MANAGER": 
   [ ["0x0", "__end", null]
   ]
@@ -277,8 +278,8 @@
 
 , "IDirect3D8": 
   [ ["0x0", "vtable", "struct IDirect3D8Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3D8Vtbl": 
@@ -301,8 +302,8 @@
 
 , "IDirect3DBaseTexture8": 
   [ ["0x0", "vtable", "struct IDirect3DBaseTexture8Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DBaseTexture8Vtbl": 
@@ -315,8 +316,8 @@
 
 , "IDirect3DDevice8": 
   [ ["0x0", "vtable", "struct IDirect3DDevice8Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DDevice8Vtbl": 
@@ -420,8 +421,8 @@
 
 , "IDirect3DResource8": 
   [ ["0x0", "vtable", "struct IDirect3DResource8Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DResource8Vtbl": 
@@ -439,8 +440,8 @@
 
 , "IDirect3DSurface8": 
   [ ["0x0", "vtable", "struct IDirect3DSurface8Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DSurface8Vtbl": 
@@ -454,8 +455,8 @@
 
 , "IDirect3DTexture8": 
   [ ["0x0", "vtable", "struct IDirect3DTexture8Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DTexture8Vtbl": 
@@ -470,8 +471,8 @@
 
 , "IDirect3DVertexBuffer8": 
   [ ["0x0", "vtable", "struct IDirect3DVertexBuffer8Vtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirect3DVertexBuffer8Vtbl": 
@@ -484,14 +485,14 @@
 
 , "IDirectSound": 
   [ ["0x0", "vtable", "struct IDirectSoundVtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirectSoundBuffer": 
   [ ["0x0", "vtable", "struct IDirectSoundBufferVtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirectSoundBufferVtbl": 
@@ -519,8 +520,8 @@
 
 , "IDirectSoundNotify": 
   [ ["0x0", "vtable", "struct IDirectSoundNotifyVtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IDirectSoundNotifyVtbl": 
@@ -544,14 +545,14 @@
 
 , "IUnknown": 
   [ ["0x0", "vtable", "struct IUnknownVtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
-  , ["0x5", "__end", null]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x8", "__end", null]
   ]
 
 , "IUnknownVtbl": 
-  [ ["0x0", "QueryInterface", "void*"]
-  , ["0x4", "AddRef", "void*"]
-  , ["0x8", "Release", "void*"]
+  [ ["0x0", "QueryInterface", "int32_t (*)(struct IUnknown*, GUID*, void**)"]
+  , ["0x4", "AddRef", "uint32_t (*)(struct IUnknown*)"]
+  , ["0x8", "Release", "uint32_t (*)(struct IUnknown*)"]
   , ["0xc", "__end", null]
   ]
 
@@ -761,7 +762,8 @@
   , ["0xc", "nBlockAlign", "uint16_t"]
   , ["0xe", "wBitsPerSample", "uint16_t"]
   , ["0x10", "cbSize", "uint16_t"]
-  , ["0x12", "__end", null]
+  , ["0x12", "__padding", null]
+  , ["0x14", "__end", null]
   ]
 
 , "WIN32_FIND_DATAA": 
@@ -775,11 +777,12 @@
   , ["0x28", "dwReserved1", "DWORD"]
   , ["0x2c", "cFileName", "CHAR[0x104]"]
   , ["0x130", "cAlternateFileName", "CHAR[0xe]"]
-  , ["0x13e", "__unknown", null]
+  , ["0x13e", "__padding", null]
   , ["0x140", "dwFileType", "DWORD"]
   , ["0x144", "dwCreatorType", "DWORD"]
   , ["0x148", "wFinderFlags", "WORD"]
-  , ["0x14a", "__end", null]
+  , ["0x14a", "__padding", null]
+  , ["0x14c", "__end", null]
   ]
 
 , "WNDCLASSA": 

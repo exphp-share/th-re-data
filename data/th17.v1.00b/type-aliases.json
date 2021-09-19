@@ -1,37 +1,38 @@
+
 { "AAFLOAT4": {"def": "float AAFLOAT4[0x4]", "size": 16}
 , "BOOL": {"def": "int32_t", "size": 4}
-, "BOOLEAN": {"def": "BYTE BOOLEAN", "size": 1}
+, "BOOLEAN": {"def": "BYTE", "size": 1}
 , "BYTE": {"def": "uint8_t", "size": 1}
 , "CHAR": {"def": "char", "size": 1}
-, "DLL_DIRECTORY_COOKIE": {"def": "PVOID DLL_DIRECTORY_COOKIE", "size": 4}
+, "DLL_DIRECTORY_COOKIE": {"def": "PVOID", "size": 4}
 , "DWORD": {"def": "uint32_t", "size": 4}
 , "DWORD64": {"def": "uint64_t", "size": 8}
 , "DWORDLONG": {"def": "uint64_t", "size": 8}
 , "DWORD_PTR": {"def": "uint32_t", "size": 4}
-, "FILETIME": {"def": "struct _FILETIME FILETIME", "size": 8}
-, "GUID": {"def": "struct _GUID GUID", "size": 16}
+, "FILETIME": {"def": "struct _FILETIME", "size": 8}
+, "GUID": {"def": "struct _GUID", "size": 16}
 , "HANDLE": {"def": "void*", "size": 4}
 , "HDC": {"def": "struct HDC__*", "size": 4}
-, "HGLOBAL": {"def": "HANDLE HGLOBAL", "size": 4}
+, "HGLOBAL": {"def": "HANDLE", "size": 4}
 , "HINSTANCE": {"def": "struct HINSTANCE__*", "size": 4}
 , "HKEY": {"def": "struct HKEY__*", "size": 4}
-, "HMODULE": {"def": "HINSTANCE HMODULE", "size": 4}
+, "HMODULE": {"def": "HINSTANCE", "size": 4}
 , "HMONITOR": {"def": "struct HMONITOR__*", "size": 4}
 , "HRESULT": {"def": "int32_t", "size": 4}
-, "HRSRC": {"def": "HANDLE HRSRC", "size": 4}
+, "HRSRC": {"def": "HANDLE", "size": 4}
 , "HWND": {"def": "struct HWND__*", "size": 4}
 , "INT": {"def": "int32_t", "size": 4}
 , "INT16": {"def": "int16_t", "size": 2}
 , "INT32": {"def": "int32_t", "size": 4}
 , "INT64": {"def": "int64_t", "size": 8}
 , "INT8": {"def": "char", "size": 1}
-, "LCID": {"def": "DWORD LCID", "size": 4}
+, "LCID": {"def": "DWORD", "size": 4}
 , "LONG": {"def": "int32_t", "size": 4}
 , "LONG32": {"def": "int32_t", "size": 4}
 , "LONG64": {"def": "int64_t", "size": 8}
 , "LONGLONG": {"def": "int64_t", "size": 8}
 , "LONG_PTR": {"def": "int32_t", "size": 4}
-, "LPARAM": {"def": "LONG_PTR LPARAM", "size": 4}
+, "LPARAM": {"def": "LONG_PTR", "size": 4}
 , "LPBOOL": {"def": "int32_t*", "size": 4}
 , "LPBYTE": {"def": "uint8_t*", "size": 4}
 , "LPBY_HANDLE_FILE_INFORMATION": {"def": "struct BY_HANDLE_FILE_INFORMATION*", "size": 4}
@@ -74,8 +75,8 @@
 , "LPWIN32_FIND_DATAW": {"def": "struct WIN32_FIND_DATAW*", "size": 4}
 , "LPWORD": {"def": "uint16_t*", "size": 4}
 , "LPWSTR": {"def": "WCHAR*", "size": 4}
-, "LRESULT": {"def": "LONG_PTR LRESULT", "size": 4}
-, "MODULEINFO": {"def": "struct _MODULEINFO MODULEINFO", "size": 12}
+, "LRESULT": {"def": "LONG_PTR", "size": 4}
+, "MODULEINFO": {"def": "struct _MODULEINFO", "size": 12}
 , "NPPOINT": {"def": "struct tagPOINT*", "size": 4}
 , "PBOOL": {"def": "int32_t*", "size": 4}
 , "PBOOLEAN": {"def": "BYTE*", "size": 4}
@@ -88,7 +89,7 @@
 , "PCWSTR": {"def": "WCHAR const*", "size": 4}
 , "PDWORD": {"def": "uint32_t*", "size": 4}
 , "PDWORDLONG": {"def": "DWORDLONG*", "size": 4}
-, "PERFORMANCE_INFORMATION": {"def": "struct _PERFORMANCE_INFORMATION PERFORMANCE_INFORMATION", "size": 56}
+, "PERFORMANCE_INFORMATION": {"def": "struct _PERFORMANCE_INFORMATION", "size": 56}
 , "PFILETIME": {"def": "struct _FILETIME*", "size": 4}
 , "PFILE_INFO_BY_HANDLE_CLASS": {"def": "enum FILE_INFO_BY_HANDLE_CLASS*", "size": 4}
 , "PHANDLE": {"def": "HANDLE*", "size": 4}
@@ -101,14 +102,14 @@
 , "PLONG": {"def": "int32_t*", "size": 4}
 , "PMEMORY_BASIC_INFORMATION": {"def": "struct MEMORY_BASIC_INFORMATION*", "size": 4}
 , "PMEM_EXTENDED_PARAMETER": {"def": "struct MEM_EXTENDED_PARAMETER*", "size": 4}
-, "POINT": {"def": "struct tagPOINT POINT", "size": 8}
+, "POINT": {"def": "struct tagPOINT", "size": 8}
 , "PPERFORMANCE_INFORMATION": {"def": "struct _PERFORMANCE_INFORMATION*", "size": 4}
 , "PPOINT": {"def": "struct tagPOINT*", "size": 4}
 , "PPROCESSOR_NUMBER": {"def": "struct PROCESSOR_NUMBER*", "size": 4}
 , "PPROCESS_HEAP_ENTRY": {"def": "struct PROCESS_HEAP_ENTRY*", "size": 4}
 , "PPROCESS_INFORMATION": {"def": "struct _PROCESS_INFORMATION*", "size": 4}
 , "PREASON_CONTEXT": {"def": "struct REASON_CONTEXT*", "size": 4}
-, "PROCESS_INFORMATION": {"def": "struct _PROCESS_INFORMATION PROCESS_INFORMATION", "size": 16}
+, "PROCESS_INFORMATION": {"def": "struct _PROCESS_INFORMATION", "size": 16}
 , "PRTL_CRITICAL_SECTION_DEBUG": {"def": "struct RTL_CRITICAL_SECTION_DEBUG*", "size": 4}
 , "PSECURITY_ATTRIBUTES": {"def": "struct _SECURITY_ATTRIBUTES*", "size": 4}
 , "PSECURITY_DESCRIPTOR": {"def": "void*", "size": 4}
@@ -129,12 +130,12 @@
 , "PWCH": {"def": "WCHAR*", "size": 4}
 , "PWORD": {"def": "uint16_t*", "size": 4}
 , "PWSTR": {"def": "WCHAR*", "size": 4}
-, "RECT": {"def": "struct tagRECT RECT", "size": 16}
-, "SECURITY_ATTRIBUTES": {"def": "struct _SECURITY_ATTRIBUTES SECURITY_ATTRIBUTES", "size": 12}
+, "RECT": {"def": "struct tagRECT", "size": 16}
+, "SECURITY_ATTRIBUTES": {"def": "struct _SECURITY_ATTRIBUTES", "size": 12}
 , "SHORT": {"def": "int16_t", "size": 2}
 , "SIZE_T": {"def": "uint32_t", "size": 4}
-, "STARTUPINFOA": {"def": "struct _STARTUPINFOA STARTUPINFOA", "size": 68}
-, "STARTUPINFOW": {"def": "struct _STARTUPINFOW STARTUPINFOW", "size": 68}
+, "STARTUPINFOA": {"def": "struct _STARTUPINFOA", "size": 68}
+, "STARTUPINFOW": {"def": "struct _STARTUPINFOW", "size": 68}
 , "UCHAR": {"def": "uint8_t", "size": 1}
 , "UINT": {"def": "uint32_t", "size": 4}
 , "UINT16": {"def": "uint16_t", "size": 2}
@@ -147,12 +148,12 @@
 , "ULONG64": {"def": "uint64_t", "size": 8}
 , "ULONGLONG": {"def": "uint64_t", "size": 8}
 , "ULONG_PTR": {"def": "uint32_t", "size": 4}
-, "UNICODE": {"def": "wchar_t UNICODE", "size": 2}
+, "UNICODE": {"def": "wchar_t", "size": 2}
 , "USHORT": {"def": "uint16_t", "size": 2}
 , "WCHAR": {"def": "wchar_t*", "size": 4}
 , "WORD": {"def": "uint16_t", "size": 2}
 , "va_list": {"def": "char*", "size": 4}
 , "wchar_t": {"def": "uint16_t", "size": 2}
-, "zRenderPrimitiveVertex": {"def": "struct zRenderVertex044 zRenderPrimitiveVertex", "size": 20}
-, "zRenderSpriteVertex": {"def": "struct zRenderVertex144 zRenderSpriteVertex", "size": 28}
+, "zRenderPrimitiveVertex": {"def": "struct zRenderVertex044", "size": 20}
+, "zRenderSpriteVertex": {"def": "struct zRenderVertex144", "size": 28}
 }

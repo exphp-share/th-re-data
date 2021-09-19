@@ -1,3 +1,4 @@
+
 { "zAnmFastVm": 
   [ ["0x0", "vm", "struct zAnmVm"]
   , ["0x5fc", "freelist_node", "struct zAnmFastVmList"]
@@ -683,13 +684,6 @@
   , ["0x8", "prev", "struct zEclRunContextList*"]
   , ["0xc", "__seldom_used", "struct zEclRunContextList*"]
   , ["0x10", "__end", null]
-  ]
-
-, "zEclStackItem": 
-  [ ["0x0", "as_float", "float"]
-  , ["0x4", "__unknown", null]
-  , ["0x0", "as_int", "int32_t"]
-  , ["0x4", "__end", null]
   ]
 
 , "zEclSubroutinePtrs": 

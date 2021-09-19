@@ -1,35 +1,36 @@
+
 { "BOOL": {"def": "int32_t", "size": 4}
-, "BOOLEAN": {"def": "BYTE BOOLEAN", "size": 1}
+, "BOOLEAN": {"def": "BYTE", "size": 1}
 , "BYTE": {"def": "uint8_t", "size": 1}
 , "CHAR": {"def": "char", "size": 1}
 , "DWORD": {"def": "uint32_t", "size": 4}
 , "DWORD64": {"def": "uint64_t", "size": 8}
 , "DWORDLONG": {"def": "uint64_t", "size": 8}
 , "DWORD_PTR": {"def": "uint32_t", "size": 4}
-, "FILETIME": {"def": "struct _FILETIME FILETIME", "size": 8}
-, "GUID": {"def": "struct _GUID GUID", "size": 16}
+, "FILETIME": {"def": "struct _FILETIME", "size": 8}
+, "GUID": {"def": "struct _GUID", "size": 16}
 , "HANDLE": {"def": "void*", "size": 4}
 , "HDC": {"def": "struct HDC__*", "size": 4}
-, "HGLOBAL": {"def": "HANDLE HGLOBAL", "size": 4}
+, "HGLOBAL": {"def": "HANDLE", "size": 4}
 , "HINSTANCE": {"def": "struct HINSTANCE__*", "size": 4}
 , "HKEY": {"def": "struct HKEY__*", "size": 4}
-, "HMODULE": {"def": "HINSTANCE HMODULE", "size": 4}
+, "HMODULE": {"def": "HINSTANCE", "size": 4}
 , "HMONITOR": {"def": "struct HMONITOR__*", "size": 4}
 , "HRESULT": {"def": "int32_t", "size": 4}
-, "HRSRC": {"def": "HANDLE HRSRC", "size": 4}
+, "HRSRC": {"def": "HANDLE", "size": 4}
 , "HWND": {"def": "struct HWND__*", "size": 4}
 , "INT": {"def": "int32_t", "size": 4}
 , "INT16": {"def": "int16_t", "size": 2}
 , "INT32": {"def": "int32_t", "size": 4}
 , "INT64": {"def": "int64_t", "size": 8}
 , "INT8": {"def": "char", "size": 1}
-, "LCID": {"def": "DWORD LCID", "size": 4}
+, "LCID": {"def": "DWORD", "size": 4}
 , "LONG": {"def": "int32_t", "size": 4}
 , "LONG32": {"def": "int32_t", "size": 4}
 , "LONG64": {"def": "int64_t", "size": 8}
 , "LONGLONG": {"def": "int64_t", "size": 8}
 , "LONG_PTR": {"def": "int32_t", "size": 4}
-, "LPARAM": {"def": "LONG_PTR LPARAM", "size": 4}
+, "LPARAM": {"def": "LONG_PTR", "size": 4}
 , "LPBOOL": {"def": "int32_t*", "size": 4}
 , "LPBYTE": {"def": "uint8_t*", "size": 4}
 , "LPCGUID": {"def": "GUID const*", "size": 4}
@@ -58,7 +59,7 @@
 , "LPWIN32_FIND_DATAA": {"def": "struct WIN32_FIND_DATAA*", "size": 4}
 , "LPWORD": {"def": "uint16_t*", "size": 4}
 , "LPWSTR": {"def": "WCHAR*", "size": 4}
-, "LRESULT": {"def": "LONG_PTR LRESULT", "size": 4}
+, "LRESULT": {"def": "LONG_PTR", "size": 4}
 , "NPPOINT": {"def": "struct tagPOINT*", "size": 4}
 , "PBOOL": {"def": "int32_t*", "size": 4}
 , "PBOOLEAN": {"def": "BYTE*", "size": 4}
@@ -74,7 +75,7 @@
 , "PINT": {"def": "int32_t*", "size": 4}
 , "PLARGE_INTEGER": {"def": "struct LARGE_INTEGER*", "size": 4}
 , "PLONG": {"def": "int32_t*", "size": 4}
-, "POINT": {"def": "struct tagPOINT POINT", "size": 8}
+, "POINT": {"def": "struct tagPOINT", "size": 8}
 , "PPOINT": {"def": "struct tagPOINT*", "size": 4}
 , "PRTL_CRITICAL_SECTION_DEBUG": {"def": "struct RTL_CRITICAL_SECTION_DEBUG*", "size": 4}
 , "PSECURITY_ATTRIBUTES": {"def": "struct _SECURITY_ATTRIBUTES*", "size": 4}
@@ -93,8 +94,8 @@
 , "PWCH": {"def": "WCHAR*", "size": 4}
 , "PWORD": {"def": "uint16_t*", "size": 4}
 , "PWSTR": {"def": "WCHAR*", "size": 4}
-, "RECT": {"def": "struct tagRECT RECT", "size": 16}
-, "SECURITY_ATTRIBUTES": {"def": "struct _SECURITY_ATTRIBUTES SECURITY_ATTRIBUTES", "size": 12}
+, "RECT": {"def": "struct tagRECT", "size": 16}
+, "SECURITY_ATTRIBUTES": {"def": "struct _SECURITY_ATTRIBUTES", "size": 12}
 , "SHORT": {"def": "int16_t", "size": 2}
 , "SIZE_T": {"def": "uint32_t", "size": 4}
 , "UCHAR": {"def": "uint8_t", "size": 1}
@@ -109,7 +110,7 @@
 , "ULONG64": {"def": "uint64_t", "size": 8}
 , "ULONGLONG": {"def": "uint64_t", "size": 8}
 , "ULONG_PTR": {"def": "uint32_t", "size": 4}
-, "UNICODE": {"def": "wchar_t UNICODE", "size": 2}
+, "UNICODE": {"def": "wchar_t", "size": 2}
 , "USHORT": {"def": "uint16_t", "size": 2}
 , "WCHAR": {"def": "wchar_t*", "size": 4}
 , "WORD": {"def": "uint16_t", "size": 2}
