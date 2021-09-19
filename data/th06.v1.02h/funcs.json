@@ -12,6 +12,8 @@
 , {"addr": "0x401650", "name": "AsciiManager::drawf", "comment": null}
 , {"addr": "0x401940", "name": "AsciiManager::sub_401940_makes_array_1_popup", "comment": null}
 , {"addr": "0x401a60", "name": "AsciiManager::sub_401a60_makes_array_2_popup", "comment": null}
+, {"addr": "0x401b80", "name": "AsciiManagerBigChild::sub_401b80", "comment": null}
+, {"addr": "0x402870", "name": "AsciiManagerBigChild::sub_402870", "comment": null}
 , {"addr": "0x4031e0", "name": "AsciiManager::on_draw_0a__4031e0", "comment": null}
 , {"addr": "0x4033b0", "name": "AsciiManager::on_draw_0a__4033b0", "comment": null}
 , {"addr": "0x403670", "name": "D3DMATRIX::set_identity", "comment": null}
@@ -133,6 +135,7 @@
 , {"addr": "0x421950", "name": "sub_421950_debug", "comment": null}
 , {"addr": "0x4219d0", "name": "AnmManager::__render_surfaces", "comment": null}
 , {"addr": "0x421a40", "name": "AnmManager::__render_wierd_texture", "comment": null}
+, {"addr": "0x4224e0", "name": "MidiManager::sub_4224e0", "comment": null}
 , {"addr": "0x42333b", "name": "Supervisor::on_tick_00", "comment": null}
 , {"addr": "0x423785", "name": "Supervisor::on_draw_0e", "comment": null}
 , {"addr": "0x42386b", "name": "Supervisor::initialize", "comment": null}
@@ -141,7 +144,12 @@
 , {"addr": "0x4240f0", "name": "AnmManager::cleanup_stream_source", "comment": null}
 , {"addr": "0x424127", "name": "Timer::constructor", "comment": null}
 , {"addr": "0x424285", "name": "Supervisor::tick_timer", "comment": null}
+, {"addr": "0x4242f3", "name": "Supervisor::sub_4242f3", "comment": null}
+, {"addr": "0x424375", "name": "Supervisor::sub_424375", "comment": null}
 , {"addr": "0x42464d", "name": "Supervisor::load_config", "comment": null}
+, {"addr": "0x424b2f", "name": "Supervisor::sub_424b2f_bgm", "comment": null}
+, {"addr": "0x424b5d", "name": "Supervisor::sub_424b5d_bgm", "comment": null}
+, {"addr": "0x424d38", "name": "Supervisor::sub_424d38_bgm", "comment": null}
 , {"addr": "0x424d82", "name": "Supervisor::fade_out_music", "comment": null}
 , {"addr": "0x42523a", "name": "MusicRoom::initialize", "comment": null}
 , {"addr": "0x425318", "name": "MusicRoom::constructor", "comment": null}
@@ -154,7 +162,9 @@
 , {"addr": "0x428780", "name": "Player::initialize", "comment": null}
 , {"addr": "0x4288c0", "name": "Player::on_tick_07", "comment": null}
 , {"addr": "0x429930", "name": "Player::on_draw_05", "comment": null}
+, {"addr": "0x429b00", "name": "Player::sub_429b00", "comment": null}
 , {"addr": "0x429b90", "name": "Player::on_draw_07", "comment": null}
+, {"addr": "0x429bb0", "name": "Player::sub_429bb0", "comment": null}
 , {"addr": "0x429c50", "name": "Player::on_registration", "comment": null}
 , {"addr": "0x42a0b0", "name": "Player::on_cleanup", "comment": null}
 , {"addr": "0x42a0e0", "name": "Player::unregister_update_funcs", "comment": null}
@@ -177,6 +187,7 @@
 , {"addr": "0x430220", "name": "ScreenEffect::on_cleanup", "comment": null}
 , {"addr": "0x430270", "name": "SoundManager::initialize_dsound", "comment": null}
 , {"addr": "0x430510", "name": "SoundManager::deinitialize", "comment": null}
+, {"addr": "0x430f80", "name": "SoundManager::sub_430f80", "comment": null}
 , {"addr": "0x4311e0", "name": "SoundManager::play_sound_centered", "comment": null}
 , {"addr": "0x431420", "name": "SoundManager::constructor", "comment": null}
 , {"addr": "0x431470", "name": "AnmManager::constructor", "comment": null}
@@ -191,7 +202,9 @@
 , {"addr": "0x4323a0", "name": "AnmManager::set_vm_sprite", "comment": null}
 , {"addr": "0x432430", "name": "AnmManager::load_script_into_vm", "comment": null}
 , {"addr": "0x4324d0", "name": "AnmManager::set_render_state_for_vm", "comment": null}
+, {"addr": "0x432ad0", "name": "AnmManager::sub_432ad0", "comment": null}
 , {"addr": "0x433150", "name": "AnmManager::draw_vm", "comment": null}
+, {"addr": "0x433590", "name": "AnmManager::sub_433590", "comment": null}
 , {"addr": "0x433960", "name": "AnmManager::run_vm", "comment": null}
 , {"addr": "0x434af0", "name": "AnmManager::sub_434af0__possibly_font_related", "comment": null}
 , {"addr": "0x435010", "name": "AnmManager::set_surface_image", "comment": null}

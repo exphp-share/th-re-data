@@ -1,3 +1,4 @@
+
 { "coff_characteristics": 
   [ ["IMAGE_FILE_RELOCS_STRIPPED", 1]
   , ["IMAGE_FILE_EXECUTABLE_IMAGE", 2]
@@ -112,6 +113,30 @@
   , ["IMAGE_SUBSYSTEM_EFI_ROM", 13]
   , ["IMAGE_SUBSYSTEM_XBOX", 14]
   , ["IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION", 16]
+  ]
+
+, "zEnemyInterpMode": 
+  [ ["Constant", 0]
+  , ["Decelerate", 1]
+  , ["DecelerateFast", 2]
+  , ["Accelerate", 3]
+  , ["AccelerateFast", 4]
+  ]
+
+, "zEnemyMoveMode": 
+  [ ["PerAxisSpeed", 0]
+  , ["Velocity", 1]
+  , ["Interpolate", 2]
+  ]
+
+, "zItemId": 
+  [ ["PowerItem", 0]
+  , ["PointItem", 1]
+  , ["BigPowerItem", 2]
+  , ["BombItem", 3]
+  , ["FItem", 4]
+  , ["LifeItem", 5]
+  , ["StarItem", 6]
   ]
 
 }
