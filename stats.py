@@ -5,6 +5,7 @@ import os
 import sys
 import glob
 import json
+from pathlib import Path
 from collections import namedtuple
 
 import tabulate  # pip install tabulate
@@ -44,15 +45,27 @@ STAT_NAMES = {
     'wip%': None,
 }
 
+def get_root_dir():
+    return Path.cwd()
+
+def get_data_dirs():
+    root_dir = get_root_dir()
+    d = json.load(open(root_dir / 'db-head.json'))
+
+    for version_data in d['versions']:
+        version = version_data['version']
+        yield root_dir / 'data' / version
+
 def get_data_table(struct_name, sort, format):
     all_data = []
-    for datadir in glob.glob('data/th*'):
-        game = os.path.basename(datadir)
+    for data_dir in get_data_dirs():
+        game = data_dir.name
 
         try:
-            with open(os.path.join(datadir, 'type-structs-own.json')) as f:
+            with open(data_dir / 'type-structs-own.json') as f:
                 structs_json = json.load(f)
         except FileNotFoundError:
+            print('Warning: no data for {game}', file=sys.stderr)
             continue
         if struct_name not in structs_json:
             continue
@@ -79,7 +92,7 @@ def get_struct_stats(game, struct_json):
         if not cur_type or 'zComment' in cur_type:
             continue
         field_size = next_offset - cur_offset
-        
+
         if not cur_field.startswith('__'):
             data['goodbytes'] += field_size
             data['goodfields'] += 1
