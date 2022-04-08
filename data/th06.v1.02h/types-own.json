@@ -501,10 +501,10 @@
     , {"offset": "0xcec", "name": "score", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0xcf0", "name": "boss_timer", "type": {"is": "named", "name": "zTimer"}}
     , {"offset": "0xcfc", "name": "__color_CFC", "type": {"is": "named", "name": "D3DCOLOR"}}
-    , {"offset": "0xd00", "name": "bullet_properties", "type": {"is": "named", "name": "zEnemyBulletShooter"}}
+    , {"offset": "0xd00", "name": "bullet_props", "type": {"is": "named", "name": "zEnemyBulletShooter"}}
     , {"offset": "0xd54", "name": "shoot_interval", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0xd58", "name": "shoot_interval_timer", "type": {"is": "named", "name": "zTimer"}}
-    , {"offset": "0xd64", "name": "laser_properties", "type": {"is": "named", "name": "zEnemyLaserShooter"}}
+    , {"offset": "0xd64", "name": "laser_props", "type": {"is": "named", "name": "zEnemyLaserShooter"}}
     , {"offset": "0xdb8", "name": "lasers", "type": {"is": "array", "len": 32, "inner": {"is": "ptr", "inner": {"is": "named", "name": "zLaser"}}}}
     , {"offset": "0xe38", "name": "laser_store", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0xe3c", "name": "death_anm_one", "type": {"is": "int", "signed": false, "size": 1}}

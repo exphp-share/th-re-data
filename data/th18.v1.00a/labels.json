@@ -257,6 +257,73 @@
   , {"addr": "0x4363e1", "label": "340__anm340"}
   , {"addr": "0x436403", "label": "1001__spec1"}
   , {"addr": "0x436417", "label": "default"}
+  , {"addr": "0x48b43e", "label": "10__ret"}
+  , {"addr": "0x48b4ca", "label": "1__delete"}
+  , {"addr": "0x48b4e1", "label": "15__callAsync"}
+  , {"addr": "0x48b4f5", "label": "21__killAllAsync"}
+  , {"addr": "0x48b530", "label": "16__callAsyncId"}
+  , {"addr": "0x48b561", "label": "17__killAsync"}
+  , {"addr": "0x48b5a2", "label": "18"}
+  , {"addr": "0x48b5e2", "label": "19"}
+  , {"addr": "0x48b622", "label": "20"}
+  , {"addr": "0x48b66c", "label": "11__call"}
+  , {"addr": "0x48b697", "label": "14__jmpNeq"}
+  , {"addr": "0x48b6cc", "label": "13__jmpEq"}
+  , {"addr": "0x48b700", "label": "12__jmp"}
+  , {"addr": "0x48b727", "label": "23__wait"}
+  , {"addr": "0x48b748", "label": "24__waitf"}
+  , {"addr": "0x48b762", "label": "40__stackAlloc"}
+  , {"addr": "0x48b7a6", "label": "41"}
+  , {"addr": "0x48b7ce", "label": "42__pushi"}
+  , {"addr": "0x48b889", "label": "44__pushf"}
+  , {"addr": "0x48b975", "label": "43__seti"}
+  , {"addr": "0x48b9ba", "label": "45__setf"}
+  , {"addr": "0x48ba0d", "label": "50__addi"}
+  , {"addr": "0x48baa6", "label": "52__subi"}
+  , {"addr": "0x48bb1a", "label": "54__muli"}
+  , {"addr": "0x48bb8f", "label": "56__divi"}
+  , {"addr": "0x48bc1b", "label": "58__modi"}
+  , {"addr": "0x48bca7", "label": "51__addf"}
+  , {"addr": "0x48bd51", "label": "53__subf"}
+  , {"addr": "0x48bdd3", "label": "55__mulf"}
+  , {"addr": "0x48be5f", "label": "57__divf"}
+  , {"addr": "0x48bee1", "label": "59__eqi"}
+  , {"addr": "0x48bf48", "label": "61__neqi"}
+  , {"addr": "0x48bfaa", "label": "63__lessi"}
+  , {"addr": "0x48c011", "label": "65__leqi"}
+  , {"addr": "0x48c073", "label": "67__greateri"}
+  , {"addr": "0x48c0d5", "label": "69__geqi"}
+  , {"addr": "0x48c137", "label": "71__noti"}
+  , {"addr": "0x48c170", "label": "60__eqf"}
+  , {"addr": "0x48c1f6", "label": "62__neqf"}
+  , {"addr": "0x48c27c", "label": "64__lessf"}
+  , {"addr": "0x48c310", "label": "66__leqf"}
+  , {"addr": "0x48c3a4", "label": "68__greaterf"}
+  , {"addr": "0x48c42e", "label": "70__geqf"}
+  , {"addr": "0x48c4b8", "label": "72__notf"}
+  , {"addr": "0x48c507", "label": "73__or"}
+  , {"addr": "0x48c587", "label": "74__and"}
+  , {"addr": "0x48c606", "label": "75__xor"}
+  , {"addr": "0x48c66b", "label": "76__bit_or"}
+  , {"addr": "0x48c6e6", "label": "77__bit_and"}
+  , {"addr": "0x48c748", "label": "83__negi"}
+  , {"addr": "0x48c77c", "label": "84__negf"}
+  , {"addr": "0x48c8ac", "label": "78__deci"}
+  , {"addr": "0x48c8e5", "label": "79__stackSin"}
+  , {"addr": "0x48c94b", "label": "88__stackSqrt"}
+  , {"addr": "0x48c99d", "label": "80__stackCos"}
+  , {"addr": "0x48c9ee", "label": "81__mathCirclePos"}
+  , {"addr": "0x48caa0", "label": "85__squareSum"}
+  , {"addr": "0x48cae8", "label": "86__squareSumRoot"}
+  , {"addr": "0x48cb58", "label": "82__validRad"}
+  , {"addr": "0x48cbd3", "label": "87__mathAngle"}
+  , {"addr": "0x48cc5a", "label": "89__linearFunc"}
+  , {"addr": "0x48ccd4", "label": "90__pointRotate"}
+  , {"addr": "0x48cdd4", "label": "91__floatTime"}
+  , {"addr": "0x48ceef", "label": "92__math92"}
+  , {"addr": "0x48d024", "label": "93__math93"}
+  , {"addr": "0x48d0c8", "label": "94"}
+  , {"addr": "0x48d22e", "label": "0__multiple"}
   ]
 , "msg": 
   [ {"addr": "0x43e657", "label": "26"}

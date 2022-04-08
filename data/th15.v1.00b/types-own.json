@@ -599,18 +599,6 @@
     ]
   }
 
-, "zBulletMgrProps": 
-  { "is": "struct"
-  , "size": "0x380"
-  , "align": 1
-  , "packed": true
-  , "members": 
-    [ {"offset": "0x0", "name": "__unknown", "type": null}
-    , {"offset": "0x380", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
-    , {"offset": "0x380", "name": "__end", "type": null}
-    ]
-  }
-
 , "zBulletNullList": 
   { "is": "struct"
   , "size": "0x10"
@@ -794,7 +782,7 @@
     , {"offset": "0x4cc", "name": "__rel_radial_dist_i", "type": {"is": "named", "name": "zInterpFloat2"}}
     , {"offset": "0x510", "name": "__abs_ellipse_i", "type": {"is": "named", "name": "zInterpFloat2"}}
     , {"offset": "0x554", "name": "__rel_ellipse_i", "type": {"is": "named", "name": "zInterpFloat2"}}
-    , {"offset": "0x598", "name": "bullet_mgr_props", "type": {"is": "array", "len": 16, "inner": {"is": "named", "name": "zBulletMgrProps"}}}
+    , {"offset": "0x598", "name": "bullet_props", "type": {"is": "array", "len": 16, "inner": {"is": "named", "name": "zEnemyBulletShooter"}}}
     , {"offset": "0x3d98", "name": "__et_ex_index", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": true, "size": 4}}}
     , {"offset": "0x3dd8", "name": "bullet_mgr_offsets", "type": {"is": "array", "len": 16, "inner": {"is": "named", "name": "zBulletOffset"}}}
     , {"offset": "0x3e98", "name": "bullet_mgr_origins", "type": {"is": "array", "len": 16, "inner": {"is": "named", "name": "zBulletOffset"}}}
@@ -832,6 +820,18 @@
     , {"offset": "0x452c", "name": "__bool_cleared_by_ecl_570", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x4530", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x4530", "name": "__end", "type": null}
+    ]
+  }
+
+, "zEnemyBulletShooter": 
+  { "is": "struct"
+  , "size": "0x380"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x380", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
+    , {"offset": "0x380", "name": "__end", "type": null}
     ]
   }
 
