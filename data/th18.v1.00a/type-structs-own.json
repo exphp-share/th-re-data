@@ -362,6 +362,134 @@
   , ["0xfa0", "__end", null]
   ]
 
+, "zBulletExState_00_Speedup": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "__unknown", null]
+  , ["0x30", "__unused_0f", "float"]
+  , ["0x34", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_02_Accel": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "__r__acceleration", "float"]
+  , ["0x18", "__angle__comes_from_s_and_m", "float"]
+  , ["0x1c", "__unknown", null]
+  , ["0x28", "__vec3_a14", "struct zFloat3"]
+  , ["0x34", "duration", "int32_t"]
+  , ["0x38", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_03_AngleAccel": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "r__tangential_accel", "float"]
+  , ["0x18", "s__angular_velocity", "float"]
+  , ["0x1c", "__unknown", null]
+  , ["0x34", "a__duration", "int32_t"]
+  , ["0x38", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_04_Turn": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "speed", "float"]
+  , ["0x18", "angle", "float"]
+  , ["0x1c", "__unknown", null]
+  , ["0x34", "duration", "int32_t"]
+  , ["0x38", "max_turns", "int32_t"]
+  , ["0x3c", "turns_so_far", "int32_t"]
+  , ["0x40", "aim_type", "int32_t"]
+  , ["0x44", "__d", "int32_t"]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_06_Bounce": 
+  [ ["0x0", "__timer__unused", "struct zTimer"]
+  , ["0x14", "__r__speed_after_bounce", "float"]
+  , ["0x18", "__unknown", null]
+  , ["0x1c", "__s__box_dim_1", "float"]
+  , ["0x20", "__m__box_dim_2", "float"]
+  , ["0x24", "__unknown", null]
+  , ["0x34", "rebounds_so_far", "int32_t"]
+  , ["0x38", "a__max_rebounds", "int32_t"]
+  , ["0x3c", "__b__for_LaserLine", "int32_t"]
+  , ["0x40", "__b__wall_flags", "int32_t"]
+  , ["0x44", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_08_Offscreen": 
+  [ ["0x0", "__timer", "struct zTimer"]
+  , ["0x14", "__unknown", null]
+  , ["0x34", "__b__unknown", "int32_t"]
+  , ["0x38", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_12_Wrap": 
+  [ ["0x0", "__timer__used_by_lasers", "struct zTimer"]
+  , ["0x14", "__unknown", null]
+  , ["0x34", "__dunno_but_its_used", "int32_t"]
+  , ["0x38", "a__num_wraps", "int32_t"]
+  , ["0x3c", "__b__wall_flags", "int32_t"]
+  , ["0x40", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_17_Move": 
+  [ ["0x0", "__timer_1", "struct zTimer"]
+  , ["0x14", "__field_bf8__had_4", "float"]
+  , ["0x18", "__unknown", null]
+  , ["0x28", "__rs__target_pos", "struct zFloat3"]
+  , ["0x34", "__a", "int32_t"]
+  , ["0x38", "__b__mode", "int32_t"]
+  , ["0x3c", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_19_VelAdd": 
+  [ ["0x0", "__timer", "struct zTimer"]
+  , ["0x14", "__s__magnitude", "float"]
+  , ["0x18", "__r__angle", "float"]
+  , ["0x1c", "__unknown", null]
+  , ["0x28", "__vec3", "struct zFloat3"]
+  , ["0x34", "__a", "int32_t"]
+  , ["0x38", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_21_VelTime": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "acceleration", "float"]
+  , ["0x18", "__unknown", null]
+  , ["0x28", "__acceleration_vector", "struct zFloat3"]
+  , ["0x34", "a__duration", "int32_t"]
+  , ["0x38", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_23_SaveAngle": 
+  [ ["0x0", "__timer__unused", "struct zTimer"]
+  , ["0x14", "saved_speed", "int32_t"]
+  , ["0x18", "saved_angle", "int32_t"]
+  , ["0x1c", "saved_pos", "struct zFloat3"]
+  , ["0x28", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_26_Delay": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
+, "zBulletExState_31_Wait": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "__unknown", null]
+  , ["0x48", "__end", null]
+  ]
+
 , "zBulletList": 
   [ ["0x0", "entry", "struct zBullet*"]
   , ["0x4", "next", "struct zBulletList*"]

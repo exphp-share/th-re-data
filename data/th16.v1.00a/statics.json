@@ -297,6 +297,8 @@
 , {"addr": "0x49a128", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x49ea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4a2250", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x4]", "comment": null}
+, {"addr": "0x4a22d0", "name": "STAGE_1_DATA", "type": "struct zTableStageData", "comment": null}
+, {"addr": "0x4a23a4", "name": "STAGE_DATA_TABLE", "type": "struct zTableStageData[0x7]", "comment": null}
 , {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": "struct zFloat4[0x3]", "comment": null}
 , {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": "struct zFloat4[0x3]", "comment": null}
 , {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
@@ -380,6 +382,7 @@
 , {"addr": "0x4a6f08", "name": "REPLAY_MANAGER_PTR", "type": "struct zReplayManager*", "comment": null}
 , {"addr": "0x4a6f0c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4a6f10", "name": "POPUP_MANAGER_PTR", "type": "struct zAsciiPopupManager*", "comment": null}
+, {"addr": "0x4a6f18", "name": "CUR_TABLE_STAGE_FILES", "type": "struct zTableStageData*", "comment": null}
 , {"addr": "0x4a6f20", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x4c0f44", "name": "ANM_ON_WAIT_FUNCS", "type": "void*[0x1]", "comment": null}
 , {"addr": "0x4c0f48", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}

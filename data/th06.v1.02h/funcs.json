@@ -33,6 +33,14 @@
 , {"addr": "0x407400", "name": "EclManager::sub_407400", "comment": null}
 , {"addr": "0x407440", "name": "EclManager::sub_407440", "comment": null}
 , {"addr": "0x4074a0", "name": "EclManager::run_ecl", "comment": null}
+, {"addr": "0x40afb0", "name": "ecl_get_var", "comment": null}
+, {"addr": "0x40b380", "name": "ecl_get_float", "comment": null}
+, {"addr": "0x40b3c0", "name": "ecl_write_var", "comment": null}
+, {"addr": "0x40b420", "name": "ecl_ins_13_add_impl", "comment": null}
+, {"addr": "0x40b4d0", "name": "ecl_ins_14_sub_impl", "comment": null}
+, {"addr": "0x40b580", "name": "ecl_ins_15_mul_impl", "comment": null}
+, {"addr": "0x40b650", "name": "ecl_ins_16_div_impl", "comment": null}
+, {"addr": "0x40b700", "name": "ecl_ins_17_mod_impl", "comment": null}
 , {"addr": "0x40b8e0", "name": "Enemy::hardcoded_func_00", "comment": null}
 , {"addr": "0x40ba80", "name": "Enemy::hardcoded_func_01", "comment": null}
 , {"addr": "0x40bb80", "name": "Enemy::hardcoded_func_02", "comment": null}

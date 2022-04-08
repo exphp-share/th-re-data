@@ -1681,6 +1681,14 @@
   , ["0x8", "__end", null]
   ]
 
+, "zTimelineRawInstr": 
+  [ ["0x0", "time", "int32_t"]
+  , ["0x4", "opcode", "int16_t"]
+  , ["0x6", "offset_to_next", "uint8_t"]
+  , ["0x7", "difficulty_mask", "uint8_t"]
+  , ["0x8", "__end", null]
+  ]
+
 , "zTimer": 
   [ ["0x0", "previous", "int32_t"]
   , ["0x4", "subframe", "float"]

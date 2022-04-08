@@ -1,5 +1,5 @@
 
-{ "AAFLOAT4": {"def": "float AAFLOAT4[0x4]", "size": 16}
+{ "AAFLOAT4": {"def": "float[0x4]", "size": 16}
 , "BOOL": {"def": "int32_t", "size": 4}
 , "BOOLEAN": {"def": "BYTE", "size": 1}
 , "BYTE": {"def": "uint8_t", "size": 1}

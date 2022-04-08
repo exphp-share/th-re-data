@@ -26,7 +26,9 @@
 , {"addr": "0x408850", "name": "Spellcard::operator new", "comment": null}
 , {"addr": "0x408c60", "name": "Spellcard::on_tick_10", "comment": null}
 , {"addr": "0x408cb0", "name": "Spellcard::on_draw_13", "comment": null}
+, {"addr": "0x408de0", "name": "sub_408de0_load_sub", "comment": null}
 , {"addr": "0x408e70", "name": "ecl_run", "comment": null}
+, {"addr": "0x411f70", "name": "Enemy::ecl_call_impl", "comment": null}
 , {"addr": "0x412180", "name": "sub_412180_debug_log", "comment": null}
 , {"addr": "0x4149f0", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x414b90", "name": "EnemyManager::constructor", "comment": null}
