@@ -447,7 +447,7 @@
   , ["0x3d8", "rel_radial_dist_i", "struct zInterpFloat2"]
   , ["0x414", "abs_ellipse_i", "struct zInterpFloat2"]
   , ["0x450", "rel_ellipse_i", "struct zInterpFloat2"]
-  , ["0x48c", "bullet_mgrs", "struct zEnemyBulletMgr[0x8]"]
+  , ["0x48c", "bullet_props", "struct zEnemyBulletShooter[0x8]"]
   , ["0x152c", "bullet_offsets", "struct zBulletOffset[0x8]"]
   , ["0x158c", "bullet_origins", "struct zBulletOffset[0x8]"]
   , ["0x15ec", "__unknown", null]
@@ -478,7 +478,7 @@
   , ["0x1774", "__end", null]
   ]
 
-, "zEnemyBulletMgr": 
+, "zEnemyBulletShooter": 
   [ ["0x0", "type", "int16_t"]
   , ["0x2", "color", "int16_t"]
   , ["0x4", "enemy_pos", "struct zFloat3"]

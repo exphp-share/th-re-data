@@ -398,7 +398,7 @@
   , ["0xac4", "ex_bounce", "struct zBulletExState_06_Bounce"]
   , ["0xb0c", "ex_wait", "struct zBulletExState_31_Wait"]
   , ["0xb54", "ex_wrap", "struct zBulletExState_12_Wrap"]
-  , ["0xb9c", "ex_unused30", "struct zBulletExState_30"]
+  , ["0xb9c", "ex_homing", "struct zBulletExState_30_Homing"]
   , ["0xbe4", "ex_move", "struct zBulletExState_17_Move"]
   , ["0xc2c", "ex_veladd", "struct zBulletExState_19_VelAdd"]
   , ["0xc74", "ex_veltime", "struct zBulletExState_21_VelTime"]
@@ -561,7 +561,7 @@
   , ["0x48", "__end", null]
   ]
 
-, "zBulletExState_30": 
+, "zBulletExState_30_Homing": 
   [ ["0x0", "__timer", "struct zTimer"]
   , ["0x14", "__r__some_norm", "float"]
   , ["0x18", "__s__some_angle", "float"]
@@ -613,34 +613,6 @@
   , ["0x71b548", "bullet_anm", "struct zAnmLoaded*"]
   , ["0x71b54c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x71b54c", "__end", null]
-  ]
-
-, "zBulletMgr": 
-  [ ["0x0", "type", "int32_t"]
-  , ["0x4", "color", "int32_t"]
-  , ["0x8", "__vec3_8", "struct zFloat3"]
-  , ["0x14", "angle_aim", "float"]
-  , ["0x18", "angle_between", "float"]
-  , ["0x1c", "speed_first", "float"]
-  , ["0x20", "speed_last", "float"]
-  , ["0x24", "__distance", "float"]
-  , ["0x28", "ex", "struct zBulletEx[0x12]"]
-  , ["0x340", "__unknown", null]
-  , ["0x350", "laser_time_start", "int32_t"]
-  , ["0x354", "laser_trans_1", "int32_t"]
-  , ["0x358", "laser_duration", "int32_t"]
-  , ["0x35c", "laser_trans_2", "int32_t"]
-  , ["0x360", "laser_time_end", "int32_t"]
-  , ["0x364", "cnt_count", "int16_t"]
-  , ["0x366", "cnt_layers", "int16_t"]
-  , ["0x368", "aim_type", "int32_t"]
-  , ["0x36c", "sound_flag", "int32_t"]
-  , ["0x370", "shot_sound", "int32_t"]
-  , ["0x374", "shot_transform_sound", "int32_t"]
-  , ["0x378", "start_transform", "int32_t"]
-  , ["0x37c", "__field_37c", "int32_t"]
-  , ["0x380", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x380", "__end", null]
   ]
 
 , "zBulletNullList": 
@@ -696,11 +668,26 @@
   , ["0x64", "__end", null]
   ]
 
+, "zEclLocation": 
+  [ ["0x0", "subroutine_index", "int32_t"]
+  , ["0x4", "offset_from_first_instruction", "int32_t"]
+  , ["0x8", "__end", null]
+  ]
+
 , "zEclRunContext": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "time", "float"]
+  , ["0x4", "cur_subroutine_index", "int32_t"]
+  , ["0x8", "cur_offset_from_first_instruction", "int32_t"]
+  , ["0xc", "inner", "struct zEclRunContextInner"]
+  , ["0x1018", "full", "struct zEnemyFull*"]
+  , ["0x101c", "__set_by_ins_20", "uint8_t"]
+  , ["0x101d", "__unknown", null]
   , ["0x1020", "difficulty_mask", "uint8_t"]
   , ["0x1021", "__unknown", null]
-  , ["0x11e8", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x1024", "float_i", "struct zInterpFloat[0x8]"]
+  , ["0x11a4", "__float_i_locs__but_why", "struct zEclLocation[0x8]"]
+  , ["0x11e4", "__unknown", null]
+  , ["0x11e8", "__exact_size_known__see_473c17", "struct zCOMMENT[0x0]"]
   , ["0x11e8", "__end", null]
   ]
 
@@ -708,6 +695,14 @@
   [ ["0x0", "current_context", "struct zEclRunContext*"]
   , ["0x4", "primary_context", "struct zEclRunContext"]
   , ["0x11ec", "__end", null]
+  ]
+
+, "zEclRunContextInner": 
+  [ ["0x0", "__stack", "int32_t[0x400]"]
+  , ["0x1000", "stack_top_offset", "int32_t"]
+  , ["0x1004", "locals_offset_from_stack", "int32_t"]
+  , ["0x1008", "__field_1014_can_be_negative", "int32_t"]
+  , ["0x100c", "__end", null]
   ]
 
 , "zEffectManager": 
@@ -766,7 +761,7 @@
   , ["0x4cc", "rel_radial_dist_i", "struct zInterpFloat2"]
   , ["0x510", "abs_ellipse_i", "struct zInterpFloat2"]
   , ["0x554", "rel_ellipse_i", "struct zInterpFloat2"]
-  , ["0x598", "bullet_mgrs", "struct zBulletMgr[0x10]"]
+  , ["0x598", "bullet_props", "struct zEnemyBulletShooter[0x10]"]
   , ["0x3d98", "et_ex_index", "int32_t[0x10]"]
   , ["0x3dd8", "bullet_mgr_offsets", "struct zBulletOffset[0x10]"]
   , ["0x3e98", "bullet_mgr_origins", "struct zBulletOffset[0x10]"]
@@ -804,6 +799,34 @@
   , ["0x4548", "own_chapter", "int32_t"]
   , ["0x454c", "__bool_cleared_by_ecl_570", "int32_t"]
   , ["0x4550", "__end", null]
+  ]
+
+, "zEnemyBulletShooter": 
+  [ ["0x0", "type", "int32_t"]
+  , ["0x4", "color", "int32_t"]
+  , ["0x8", "__vec3_8", "struct zFloat3"]
+  , ["0x14", "angle_aim", "float"]
+  , ["0x18", "angle_between", "float"]
+  , ["0x1c", "speed_first", "float"]
+  , ["0x20", "speed_last", "float"]
+  , ["0x24", "__distance", "float"]
+  , ["0x28", "ex", "struct zBulletEx[0x12]"]
+  , ["0x340", "__unknown", null]
+  , ["0x350", "laser_time_start", "int32_t"]
+  , ["0x354", "laser_trans_1", "int32_t"]
+  , ["0x358", "laser_duration", "int32_t"]
+  , ["0x35c", "laser_trans_2", "int32_t"]
+  , ["0x360", "laser_time_end", "int32_t"]
+  , ["0x364", "cnt_count", "int16_t"]
+  , ["0x366", "cnt_layers", "int16_t"]
+  , ["0x368", "aim_type", "int32_t"]
+  , ["0x36c", "sound_flag", "int32_t"]
+  , ["0x370", "shot_sound", "int32_t"]
+  , ["0x374", "shot_transform_sound", "int32_t"]
+  , ["0x378", "start_transform", "int32_t"]
+  , ["0x37c", "__field_37c", "int32_t"]
+  , ["0x380", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x380", "__end", null]
   ]
 
 , "zEnemyDrop": 
@@ -1789,9 +1812,17 @@
   , ["0x20", "__end", null]
   ]
 
+, "zTableBulletSpriteColors": 
+  [ ["0x0", "main_sprite_id", "int32_t"]
+  , ["0x4", "spawn_sprite_id", "int32_t"]
+  , ["0x8", "cancel_sprite_id", "int32_t"]
+  , ["0xc", "cancel_script", "int32_t"]
+  , ["0x10", "__end", null]
+  ]
+
 , "zTableBulletSpriteData": 
   [ ["0x0", "script", "int32_t"]
-  , ["0x4", "__unknown", null]
+  , ["0x4", "colors", "struct zTableBulletSpriteColors[0x10]"]
   , ["0x104", "default_radius", "float"]
   , ["0x108", "default_layer", "int32_t"]
   , ["0x10c", "__field_10c__used_at_0x416fda", "int32_t"]

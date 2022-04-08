@@ -352,7 +352,7 @@
 , {"addr": "0x41d260", "name": "StageInner::run_std", "comment": null}
 , {"addr": "0x41e350", "name": "StageInner::sub_41e350", "comment": null}
 , {"addr": "0x41e760", "name": "StageInner::__on_tick_part_2", "comment": null}
-, {"addr": "0x41f640", "name": "InterpFloat2::step", "comment": null}
+, {"addr": "0x41f640", "name": "InterpFloat::step", "comment": null}
 , {"addr": "0x41fd40", "name": "Bomb::operator new", "comment": null}
 , {"addr": "0x41ff80", "name": "BombReimu::operator_delete", "comment": null}
 , {"addr": "0x41ffb0", "name": "BombMarisa::operator_delete", "comment": null}

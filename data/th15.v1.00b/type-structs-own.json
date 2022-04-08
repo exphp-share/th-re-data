@@ -419,12 +419,6 @@
   , ["0x141f0dc", "__end", null]
   ]
 
-, "zBulletMgrProps": 
-  [ ["0x0", "__unknown", null]
-  , ["0x380", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x380", "__end", null]
-  ]
-
 , "zBulletNullList": 
   [ ["0x0", "__unused_null_ptr", "void*"]
   , ["0x4", "next", "struct zBullet*"]
@@ -543,7 +537,7 @@
   , ["0x4cc", "__rel_radial_dist_i", "struct zInterpFloat2"]
   , ["0x510", "__abs_ellipse_i", "struct zInterpFloat2"]
   , ["0x554", "__rel_ellipse_i", "struct zInterpFloat2"]
-  , ["0x598", "bullet_mgr_props", "struct zBulletMgrProps[0x10]"]
+  , ["0x598", "bullet_props", "struct zEnemyBulletShooter[0x10]"]
   , ["0x3d98", "__et_ex_index", "int32_t[0x10]"]
   , ["0x3dd8", "bullet_mgr_offsets", "struct zBulletOffset[0x10]"]
   , ["0x3e98", "bullet_mgr_origins", "struct zBulletOffset[0x10]"]
@@ -581,6 +575,12 @@
   , ["0x452c", "__bool_cleared_by_ecl_570", "int32_t"]
   , ["0x4530", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4530", "__end", null]
+  ]
+
+, "zEnemyBulletShooter": 
+  [ ["0x0", "__unknown", null]
+  , ["0x380", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x380", "__end", null]
   ]
 
 , "zEnemyDrop": 
