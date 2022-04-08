@@ -12,6 +12,8 @@
 , {"addr": "0x401650", "name": "AsciiManager::drawf"}
 , {"addr": "0x401940", "name": "AsciiManager::sub_401940_makes_array_1_popup"}
 , {"addr": "0x401a60", "name": "AsciiManager::sub_401a60_makes_array_2_popup"}
+, {"addr": "0x401b80", "name": "AsciiManagerBigChild::sub_401b80"}
+, {"addr": "0x402870", "name": "AsciiManagerBigChild::sub_402870"}
 , {"addr": "0x4031e0", "name": "AsciiManager::on_draw_0a__4031e0"}
 , {"addr": "0x4033b0", "name": "AsciiManager::on_draw_0a__4033b0"}
 , {"addr": "0x403670", "name": "D3DMATRIX::set_identity"}
@@ -31,6 +33,14 @@
 , {"addr": "0x407400", "name": "EclManager::sub_407400"}
 , {"addr": "0x407440", "name": "EclManager::sub_407440"}
 , {"addr": "0x4074a0", "name": "EclManager::run_ecl"}
+, {"addr": "0x40afb0", "name": "ecl_get_var"}
+, {"addr": "0x40b380", "name": "ecl_get_float"}
+, {"addr": "0x40b3c0", "name": "ecl_write_var"}
+, {"addr": "0x40b420", "name": "ecl_ins_13_add_impl"}
+, {"addr": "0x40b4d0", "name": "ecl_ins_14_sub_impl"}
+, {"addr": "0x40b580", "name": "ecl_ins_15_mul_impl"}
+, {"addr": "0x40b650", "name": "ecl_ins_16_div_impl"}
+, {"addr": "0x40b700", "name": "ecl_ins_17_mod_impl"}
 , {"addr": "0x40b8e0", "name": "Enemy::hardcoded_func_00"}
 , {"addr": "0x40ba80", "name": "Enemy::hardcoded_func_01"}
 , {"addr": "0x40bb80", "name": "Enemy::hardcoded_func_02"}
@@ -133,6 +143,7 @@
 , {"addr": "0x421950", "name": "sub_421950_debug"}
 , {"addr": "0x4219d0", "name": "AnmManager::__render_surfaces"}
 , {"addr": "0x421a40", "name": "AnmManager::__render_wierd_texture"}
+, {"addr": "0x4224e0", "name": "MidiManager::sub_4224e0"}
 , {"addr": "0x42333b", "name": "Supervisor::on_tick_00"}
 , {"addr": "0x423785", "name": "Supervisor::on_draw_0e"}
 , {"addr": "0x42386b", "name": "Supervisor::initialize"}
@@ -141,7 +152,12 @@
 , {"addr": "0x4240f0", "name": "AnmManager::cleanup_stream_source"}
 , {"addr": "0x424127", "name": "Timer::constructor"}
 , {"addr": "0x424285", "name": "Supervisor::tick_timer"}
+, {"addr": "0x4242f3", "name": "Supervisor::sub_4242f3"}
+, {"addr": "0x424375", "name": "Supervisor::sub_424375"}
 , {"addr": "0x42464d", "name": "Supervisor::load_config"}
+, {"addr": "0x424b2f", "name": "Supervisor::sub_424b2f_bgm"}
+, {"addr": "0x424b5d", "name": "Supervisor::sub_424b5d_bgm"}
+, {"addr": "0x424d38", "name": "Supervisor::sub_424d38_bgm"}
 , {"addr": "0x424d82", "name": "Supervisor::fade_out_music"}
 , {"addr": "0x42523a", "name": "MusicRoom::initialize"}
 , {"addr": "0x425318", "name": "MusicRoom::constructor"}
@@ -154,7 +170,9 @@
 , {"addr": "0x428780", "name": "Player::initialize"}
 , {"addr": "0x4288c0", "name": "Player::on_tick_07"}
 , {"addr": "0x429930", "name": "Player::on_draw_05"}
+, {"addr": "0x429b00", "name": "Player::sub_429b00"}
 , {"addr": "0x429b90", "name": "Player::on_draw_07"}
+, {"addr": "0x429bb0", "name": "Player::sub_429bb0"}
 , {"addr": "0x429c50", "name": "Player::on_registration"}
 , {"addr": "0x42a0b0", "name": "Player::on_cleanup"}
 , {"addr": "0x42a0e0", "name": "Player::unregister_update_funcs"}
@@ -177,6 +195,7 @@
 , {"addr": "0x430220", "name": "ScreenEffect::on_cleanup"}
 , {"addr": "0x430270", "name": "SoundManager::initialize_dsound"}
 , {"addr": "0x430510", "name": "SoundManager::deinitialize"}
+, {"addr": "0x430f80", "name": "SoundManager::sub_430f80"}
 , {"addr": "0x4311e0", "name": "SoundManager::play_sound_centered"}
 , {"addr": "0x431420", "name": "SoundManager::constructor"}
 , {"addr": "0x431470", "name": "AnmManager::constructor"}
@@ -191,7 +210,9 @@
 , {"addr": "0x4323a0", "name": "AnmManager::set_vm_sprite"}
 , {"addr": "0x432430", "name": "AnmManager::load_script_into_vm"}
 , {"addr": "0x4324d0", "name": "AnmManager::set_render_state_for_vm"}
+, {"addr": "0x432ad0", "name": "AnmManager::sub_432ad0"}
 , {"addr": "0x433150", "name": "AnmManager::draw_vm"}
+, {"addr": "0x433590", "name": "AnmManager::sub_433590"}
 , {"addr": "0x433960", "name": "AnmManager::run_vm"}
 , {"addr": "0x434af0", "name": "AnmManager::sub_434af0__possibly_font_related"}
 , {"addr": "0x435010", "name": "AnmManager::set_surface_image"}

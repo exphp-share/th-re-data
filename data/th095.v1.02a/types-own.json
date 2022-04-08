@@ -665,4 +665,15 @@
     ]
   }
 
+, "zWindow": 
+  { "is": "struct"
+  , "size": "0x54"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x54", "name": "__end", "type": null}
+    ]
+  }
+
 }

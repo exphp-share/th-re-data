@@ -660,6 +660,7 @@
 , {"addr": "0x48a386", "name": "___addl"}
 , {"addr": "0x48a433", "name": "___shr_12"}
 , {"addr": "0x48ad70", "name": "___ascii_strnicmp"}
+, {"addr": "0x48b890", "name": "RtlUnwind"}
 , {"addr": "0x48b8a0", "name": "float_to_int_48b8a0"}
 , {"addr": "0x48b920", "name": "__CItan"}
 , {"addr": "0x48b9e0", "name": "_atan"}

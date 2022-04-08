@@ -71,6 +71,8 @@
 , {"addr": "0x46a7ec", "name": "float(416)", "type": {"is": "float", "size": 4}}
 , {"addr": "0x46a7f0", "name": "float(232)", "type": {"is": "float", "size": 4}}
 , {"addr": "0x46afac", "name": "VTABLE_46afac", "type": {"is": "array", "len": 3, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x476298", "name": "EFFECT_TABLE", "type": {"is": "array", "len": 20, "inner": {"is": "named", "name": "zTableEffectData"}}}
+, {"addr": "0x478528", "name": "UNKNOWN_SOUND_DATA_TABLE", "type": {"is": "array", "len": 32, "inner": {"is": "named", "name": "zTableUnknownSoundData"}}}
 , {"addr": "0x47a630", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
 , {"addr": "0x47b8e0", "name": "ASCII_MANAGER_ON_DRAW_0F", "type": {"is": "named", "name": "zUpdateFunc"}}
 , {"addr": "0x47b900", "name": "ASCII_MANAGER", "type": {"is": "named", "name": "zAsciiManager"}}
@@ -98,7 +100,9 @@
 , {"addr": "0x69d720", "name": "GAME_MANAGER_ON_TICK", "type": {"is": "named", "name": "zUpdateFunc"}}
 , {"addr": "0x69d740", "name": "GAME_MANAGER_ON_DRAW", "type": {"is": "named", "name": "zUpdateFunc"}}
 , {"addr": "0x69d760", "name": "JOYPAD_CAPS", "type": {"is": "named", "name": "JOYCAPSA"}}
-, {"addr": "0x69d918", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "void"}}
+, {"addr": "0x69d8f8", "name": "RNG", "type": {"is": "named", "name": "zRng"}}
+, {"addr": "0x69d904", "name": "INPUT", "type": {"is": "named", "name": "zInput"}}
+, {"addr": "0x69d918", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "named", "name": "zUpdateFuncRegistry"}}
 , {"addr": "0x69d998", "name": "DEBUG_LOG", "type": {"is": "named", "name": "zDebugLog"}}
 , {"addr": "0x69e1b0", "name": "DINPUT_RELATED", "type": {"is": "void"}}
 , {"addr": "0x69e248", "name": "UNKNOWN_UPDATE_FUNC_69E248", "type": {"is": "named", "name": "zUpdateFunc"}}

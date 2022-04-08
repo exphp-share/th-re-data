@@ -297,6 +297,8 @@
 , {"addr": "0x49a128", "name": "__tls_directory", "type": {"is": "named", "name": "TLS_Directory"}}
 , {"addr": "0x49ea4c", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
 , {"addr": "0x4a2250", "name": "ANM_508_TABLE", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zTableAnm508Data"}}}
+, {"addr": "0x4a22d0", "name": "STAGE_1_DATA", "type": {"is": "named", "name": "zTableStageData"}}
+, {"addr": "0x4a23a4", "name": "STAGE_DATA_TABLE", "type": {"is": "array", "len": 7, "inner": {"is": "named", "name": "zTableStageData"}}}
 , {"addr": "0x4a3048", "name": "ANCHOR_X_DATA", "type": {"is": "array", "len": 3, "inner": {"is": "named", "name": "zFloat4"}}}
 , {"addr": "0x4a3078", "name": "ANCHOR_Y_DATA", "type": {"is": "array", "len": 3, "inner": {"is": "named", "name": "zFloat4"}}}
 , {"addr": "0x4a30a8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": {"is": "int", "signed": true, "size": 1}}
@@ -380,6 +382,7 @@
 , {"addr": "0x4a6f08", "name": "REPLAY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayManager"}}}
 , {"addr": "0x4a6f0c", "name": "SCOREFILE_PTR", "type": {"is": "int", "signed": true, "size": 4}}
 , {"addr": "0x4a6f10", "name": "POPUP_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAsciiPopupManager"}}}
+, {"addr": "0x4a6f18", "name": "CUR_TABLE_STAGE_FILES", "type": {"is": "ptr", "inner": {"is": "named", "name": "zTableStageData"}}}
 , {"addr": "0x4a6f20", "name": "MAIN_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMainMenu"}}}
 , {"addr": "0x4c0f44", "name": "ANM_ON_WAIT_FUNCS", "type": {"is": "array", "len": 1, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
 , {"addr": "0x4c0f48", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}

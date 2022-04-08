@@ -13,8 +13,8 @@
 , {"addr": "0x4be3c8", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "void"}}
 , {"addr": "0x4c45dc", "name": "ITEM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zItemManager"}}}
 , {"addr": "0x4c45e0", "name": "LASER_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zLaserManager"}}}
-, {"addr": "0x4c45e8", "name": "WINDOW", "type": {"is": "int", "signed": true, "size": 4}}
-, {"addr": "0x4c4670", "name": "SUPERVISOR", "type": {"is": "void"}}
+, {"addr": "0x4c45e8", "name": "WINDOW", "type": {"is": "named", "name": "zWindow"}}
+, {"addr": "0x4c4670", "name": "SUPERVISOR", "type": {"is": "int", "signed": true, "size": 4}}
 , {"addr": "0x4c4e38", "name": "PAUSE_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPauseMenu"}}}
 , {"addr": "0x4c4e6c", "name": "PHOTO_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPhotoManager"}}}
 , {"addr": "0x4c4e70", "name": "PLAYER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPlayer"}}}

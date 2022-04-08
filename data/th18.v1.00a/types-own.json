@@ -494,6 +494,199 @@
     ]
   }
 
+, "zBulletExState_00_Speedup": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x30", "name": "__unused_0f", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x34", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_02_Accel": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__r__acceleration", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__angle__comes_from_s_and_m", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "__vec3_a14", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x34", "name": "duration", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_03_AngleAccel": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "r__tangential_accel", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "s__angular_velocity", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x34", "name": "a__duration", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_04_Turn": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "speed", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "angle", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x34", "name": "duration", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "max_turns", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3c", "name": "turns_so_far", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x40", "name": "aim_type", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x44", "name": "__d", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_06_Bounce": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__timer__unused", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__r__speed_after_bounce", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "__s__box_dim_1", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x20", "name": "__m__box_dim_2", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x34", "name": "rebounds_so_far", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "a__max_rebounds", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3c", "name": "__b__for_LaserLine", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x40", "name": "__b__wall_flags", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x44", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_08_Offscreen": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x34", "name": "__b__unknown", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_12_Wrap": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__timer__used_by_lasers", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x34", "name": "__dunno_but_its_used", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "a__num_wraps", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3c", "name": "__b__wall_flags", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x40", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_17_Move": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__timer_1", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__field_bf8__had_4", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "__rs__target_pos", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x34", "name": "__a", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "__b__mode", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3c", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_19_VelAdd": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__s__magnitude", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__r__angle", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "__vec3", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x34", "name": "__a", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_21_VelTime": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "acceleration", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x18", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "__acceleration_vector", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x34", "name": "a__duration", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x38", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_23_SaveAngle": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__timer__unused", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "saved_speed", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x18", "name": "saved_angle", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c", "name": "saved_pos", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x28", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_26_Delay": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
+, "zBulletExState_31_Wait": 
+  { "is": "struct"
+  , "size": "0x48"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x48", "name": "__end", "type": null}
+    ]
+  }
+
 , "zBulletList": 
   { "is": "struct"
   , "size": "0x10"

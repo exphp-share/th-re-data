@@ -2941,7 +2941,8 @@
     [ {"offset": "0x0", "name": "__unknown", "type": null}
     , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
     , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
-    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0xc", "name": "__anm_id", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
     , {"offset": "0x20", "name": "time", "type": {"is": "named", "name": "zTimer"}}
     , {"offset": "0x34", "name": "__unknown", "type": null}
     , {"offset": "0x78", "name": "flags", "type": {"is": "int", "signed": true, "size": 4}}
@@ -3066,24 +3067,43 @@
     ]
   }
 
-, "zTableStageFiles": 
+, "zTableStageData": 
   { "is": "struct"
   , "size": "0xd4"
   , "align": 1
   , "packed": true
   , "members": 
-    [ {"offset": "0x0", "name": "field_0", "type": {"is": "int", "signed": true, "size": 4}}
-    , {"offset": "0x4", "name": "field_4", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x8", "name": "field_8", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0xc", "name": "field_c", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x10", "name": "field_10", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x14", "name": "field_14", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x18", "name": "field_18", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x1c", "name": "field_1c", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x20", "name": "field_20", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x24", "name": "field_24", "type": {"is": "ptr", "inner": {"is": "void"}}}
-    , {"offset": "0x28", "name": "__unknown", "type": null}
+    [ {"offset": "0x0", "name": "stage_num", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "std_filename", "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x8", "name": "ecl_filename", "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0xc", "name": "_music_name_1", "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x10", "name": "_music_name_2", "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x14", "name": "msg_files", "type": {"is": "array", "len": 4, "inner": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}}
+    , {"offset": "0x24", "name": "logo_anm_filename", "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x28", "name": "stage_music_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x2c", "name": "boss_music_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x30", "name": "__unknown", "type": null}
+    , {"offset": "0x34", "name": "_array", "type": {"is": "array", "len": 4, "inner": {"is": "named", "name": "zTableStageDataArrayItem"}}}
     , {"offset": "0xd4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zTableStageDataArrayItem": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__spellcard_index_into_ecl_anim_list", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "__spellcard_anm_script", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "__spellcard_bitflag_9", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "__spellcard_index_into_ecl_anim_list_2", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "__spellcard_anm_script_2", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x14", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "__msg_index_into_ecl_anim_list", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x20", "name": "__msg_anm_script", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x28", "name": "__end", "type": null}
     ]
   }
 

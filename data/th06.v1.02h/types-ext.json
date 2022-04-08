@@ -198,24 +198,23 @@
 
 , "D3DPRESENT_PARAMETERS": 
   { "is": "struct"
-  , "size": "0x38"
-  , "align": 4
+  , "size": "0x34"
+  , "align": 1
   , "members": 
     [ {"offset": "0x0", "name": "BackBufferWidth", "type": {"is": "int", "signed": false, "size": 4}}
     , {"offset": "0x4", "name": "BackBufferHeight", "type": {"is": "int", "signed": false, "size": 4}}
     , {"offset": "0x8", "name": "BackBufferFormat", "type": {"is": "int", "signed": false, "size": 4}}
     , {"offset": "0xc", "name": "BackBufferCount", "type": {"is": "int", "signed": false, "size": 4}}
     , {"offset": "0x10", "name": "MultiSampleType", "type": {"is": "int", "signed": false, "size": 4}}
-    , {"offset": "0x14", "name": "MultiSampleQuality", "type": {"is": "int", "signed": false, "size": 4}}
-    , {"offset": "0x18", "name": "SwapEffect", "type": {"is": "int", "signed": false, "size": 4}}
-    , {"offset": "0x1c", "name": "hDeviceWindow", "type": {"is": "named", "name": "HWND"}}
-    , {"offset": "0x20", "name": "Windowed", "type": {"is": "int", "signed": true, "size": 4}}
-    , {"offset": "0x24", "name": "EnableAutoDepthStencil", "type": {"is": "int", "signed": true, "size": 4}}
-    , {"offset": "0x28", "name": "AutoDepthStencilFormat", "type": {"is": "int", "signed": false, "size": 4}}
-    , {"offset": "0x2c", "name": "Flags", "type": {"is": "int", "signed": false, "size": 4}}
-    , {"offset": "0x30", "name": "FullScreen_RefreshRateInHz", "type": {"is": "int", "signed": false, "size": 4}}
-    , {"offset": "0x34", "name": "PresentationInterval", "type": {"is": "int", "signed": false, "size": 4}}
-    , {"offset": "0x38", "name": "__end", "type": null}
+    , {"offset": "0x14", "name": "SwapEffect", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x18", "name": "hDeviceWindow", "type": {"is": "named", "name": "HWND"}}
+    , {"offset": "0x1c", "name": "Windowed", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x20", "name": "EnableAutoDepthStencil", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x24", "name": "AutoDepthStencilFormat", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x28", "name": "Flags", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x2c", "name": "FullScreen_RefreshRateInHz", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x30", "name": "PresentationInterval", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x34", "name": "__end", "type": null}
     ]
   }
 

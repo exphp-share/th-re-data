@@ -2351,6 +2351,20 @@
     ]
   }
 
+, "zTimelineRawInstr": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "time", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "opcode", "type": {"is": "int", "signed": true, "size": 2}}
+    , {"offset": "0x6", "name": "offset_to_next", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x7", "name": "difficulty_mask", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
 , "zTimer": 
   { "is": "struct"
   , "size": "0xc"
