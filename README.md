@@ -1,6 +1,6 @@
 Exported reverse engineering data from binja for various Touhou games.  Binja doesn't have nice export facilities so I just made some simple json files.
 
-**Note about EoSD:** Addresses for EoSD may be unreliable.  The executable I am using has MD5 3878F9321F9F9F2ED3EFEF0A6F539A5E.  It is a version of 1.02h where the DAT files have been renamed to ASCII.  I cannot recall where it came from, unfortunately.
+> **Note about EoSD:** Addresses for EoSD may be unreliable.  The executable I am using has MD5 3878F9321F9F9F2ED3EFEF0A6F539A5E.  It is a version of 1.02h where the DAT files have been renamed to ASCII (with no other changes).  It's not clear how this version came into existence, but if you need help finding it, ask around on the Zuncode discord.
 
 **Note:** Currently there are *many* things that are documented better in one game than in any other, and there is currently no single game whose files I would say paint a complete picture of my current understanding of how the games work.  So browse around!  Someday I may return to TH16 (or TH17) and try to add all the stuff I labeled in other games.
 
