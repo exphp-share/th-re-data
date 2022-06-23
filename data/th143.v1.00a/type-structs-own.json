@@ -1,5 +1,22 @@
 
-{ "zAnmId": 
+{ "zAnmFastVm": 
+  [ ["0x0", "vm", "struct zAnmVm"]
+  , ["0x5cc", "freelist_node", "struct zAnmFastVmList"]
+  , ["0x5dc", "is_alive", "int32_t"]
+  , ["0x5e0", "fast_id", "int32_t"]
+  , ["0x5e4", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x5e4", "__end", null]
+  ]
+
+, "zAnmFastVmList": 
+  [ ["0x0", "entry", "struct zAnmFastVm*"]
+  , ["0x4", "next", "struct zAnmFastVmList*"]
+  , ["0x8", "prev", "struct zAnmFastVmList*"]
+  , ["0xc", "__seldom_used", "uint32_t"]
+  , ["0x10", "__end", null]
+  ]
+
+, "zAnmId": 
   [ ["0x0", "id", "int32_t"]
   , ["0x4", "__end", null]
   ]
@@ -49,6 +66,21 @@
 
 , "zAnmManager": 
   [ ["0x0", "__unknown", null]
+  , ["0xdc", "fast_array", "struct zAnmFastVm[0x1fff]"]
+  , ["0xbc7af8", "freelist_head", "struct zAnmFastVmList"]
+  , ["0xbc7b08", "__unknown", null]
+  , ["0xbc7b84", "__matrix_bc7b84", "struct D3DMATRIX"]
+  , ["0xbc7bc4", "__vm_bc7bc4", "struct zAnmVm"]
+  , ["0xbc8190", "__unknown", null]
+  , ["0xbc8200", "vertex_buffers", "struct zAnmVertexBuffers"]
+  , ["0xfe8218", "world_list_head", "struct zAnmVmList*"]
+  , ["0xfe821c", "world_list_tail", "struct zAnmVmList*"]
+  , ["0xfe8220", "ui_list_head", "struct zAnmVmList*"]
+  , ["0xfe8224", "ui_list_tail", "struct zAnmVmList*"]
+  , ["0xfe8228", "layer_list_dummy_heads", "struct zAnmVm[0x2a]"]
+  , ["0xff75a0", "last_discriminator_19_bit", "int32_t"]
+  , ["0xff75a4", "__color_ff75a4", "struct D3DCOLOR"]
+  , ["0xff75a8", "__field_ff75a8", "int32_t"]
   , ["0xff75ac", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xff75ac", "__end", null]
   ]
@@ -110,6 +142,18 @@
   , ["0x10", "__end", null]
   ]
 
+, "zAnmVertexBuffers": 
+  [ ["0x0", "unrendered_sprite_count", "int32_t"]
+  , ["0x4", "sprite_vertex_data", "struct zRenderVertex144[0x20000]"]
+  , ["0x380004", "sprite_write_cursor", "struct zRenderVertex144*"]
+  , ["0x380008", "sprite_render_cursor", "struct zRenderVertex144*"]
+  , ["0x38000c", "__unrendered_primitive_count", "int32_t"]
+  , ["0x380010", "primitive_vertex_data", "struct zRenderVertex044[0x8000]"]
+  , ["0x420010", "primitive_write_cursor", "struct zRenderVertex044*"]
+  , ["0x420014", "primitive_render_cursor", "struct zRenderVertex044*"]
+  , ["0x420018", "__end", null]
+  ]
+
 , "zAnmVm": 
   [ ["0x0", "p", "struct zAnmVmPrefix"]
   , ["0x540", "s", "struct zAnmVmSuffix"]
@@ -126,8 +170,8 @@
   ]
 
 , "zAnmVmPrefix": 
-  [ ["0x0", "case_return_time", "struct zTimer"]
-  , ["0x14", "case_return_instr", "struct zAnmRawInstr*"]
+  [ ["0x0", "interrupt_return_time", "struct zTimer"]
+  , ["0x14", "interrupt_return_instr", "struct zAnmRawInstr*"]
   , ["0x18", "flags_lo", "int32_t"]
   , ["0x1c", "flags_hi", "int32_t"]
   , ["0x20", "__unknown", null]
@@ -166,7 +210,7 @@
   , ["0x3e0", "__scales_by_sprite_size_over_256__wtf", "struct D3DMATRIX"]
   , ["0x420", "world_matrix_0__(3D_scale_and_rotation)", "struct D3DMATRIX"]
   , ["0x460", "__matrix_460__modified_at_0x46f2ff", "struct D3DMATRIX"]
-  , ["0x4a0", "pending_switch_label", "int32_t"]
+  , ["0x4a0", "pending_interrupt", "int32_t"]
   , ["0x4a4", "__time_of_last_sprite_set__unused?", "int32_t"]
   , ["0x4a8", "__unknown", null]
   , ["0x4aa", "script_number", "int16_t"]
@@ -180,7 +224,8 @@
   , ["0x4e8", "rand_param_int", "int32_t"]
   , ["0x4ec", "__pos_2", "struct zFloat3"]
   , ["0x4f8", "last_rendered_quad_in_surface_space", "struct zFloat3[0x4]"]
-  , ["0x528", "__unknown", null]
+  , ["0x528", "font_dims", "uint8_t[0x2]"]
+  , ["0x52a", "__unknown", null]
   , ["0x534", "color_1", "struct D3DCOLOR"]
   , ["0x538", "color_2", "struct D3DCOLOR"]
   , ["0x53c", "mixed_inherited_color", "struct D3DCOLOR"]
@@ -198,7 +243,7 @@
   , ["0x50", "next_in_layer_list", "struct zAnmVm*"]
   , ["0x54", "parent", "struct zAnmVm*"]
   , ["0x58", "slowdown", "float"]
-  , ["0x5c", "__pos_3", "struct zFloat3"]
+  , ["0x5c", "entity_pos", "struct zFloat3"]
   , ["0x68", "on_wait", "void*"]
   , ["0x6c", "sprite_mapping_func", "void*"]
   , ["0x70", "associated_game_entity", "void*"]
@@ -206,7 +251,7 @@
   , ["0x78", "on_tick", "void*"]
   , ["0x7c", "on_draw", "void*"]
   , ["0x80", "on_destroy", "void*"]
-  , ["0x84", "on_switch", "void*"]
+  , ["0x84", "on_interrupt", "void*"]
   , ["0x88", "__unknown", null]
   , ["0x8c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x8c", "__end", null]

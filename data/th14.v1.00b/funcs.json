@@ -241,6 +241,7 @@
 , {"addr": "0x4238b0", "name": "Enemy::update_game_logic", "comment": null}
 , {"addr": "0x424710", "name": "EnemyFull::on_tick", "comment": null}
 , {"addr": "0x424810", "name": "Enemy::on_tick", "comment": null}
+, {"addr": "0x424af0", "name": "EnemyFull::die", "comment": null}
 , {"addr": "0x425260", "name": "EnemyFull::run_over_300__trampoline", "comment": null}
 , {"addr": "0x425270", "name": "Enemy::ecl_run_over_300", "comment": null}
 , {"addr": "0x42a1e0", "name": "EnemyManager::ecl_enm_create", "comment": null}
@@ -574,8 +575,13 @@
 , {"addr": "0x47f420", "name": "AnmManager::get_anm_by_id__or_set_zero", "comment": null}
 , {"addr": "0x47fcb0", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x47fd70", "name": "AnmLoaded::sub_47fd70_loads_a_script", "comment": null}
+, {"addr": "0x482080", "name": "EclRunContext::call_sub", "comment": null}
+, {"addr": "0x482380", "name": "EclRunContext::ecl_run", "comment": null}
 , {"addr": "0x483e70", "name": "EnemyFull::ecl_run", "comment": null}
+, {"addr": "0x483f30", "name": "Enemy::ecl_get_int_arg", "comment": null}
 , {"addr": "0x483fc0", "name": "Enemy::get_float_arg", "comment": null}
+, {"addr": "0x484580", "name": "EnemyFull::lookup_async", "comment": null}
+, {"addr": "0x4848b0", "name": "EclFileManager::find_sub_by_name", "comment": null}
 , {"addr": "0x4854a0", "name": "__check_security_cookie", "comment": null}
 , {"addr": "0x4854af", "name": "malloc", "comment": null}
 , {"addr": "0x4854fe", "name": "free", "comment": null}

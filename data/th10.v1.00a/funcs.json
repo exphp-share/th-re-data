@@ -177,6 +177,7 @@
 , {"addr": "0x427e90", "name": "Player::shoot_one_bullet", "comment": null}
 , {"addr": "0x428160", "name": "Player::do_shooting", "comment": null}
 , {"addr": "0x4281d0", "name": "Player::tick_shooting_state", "comment": null}
+, {"addr": "0x428280", "name": "Player::tick_bullets", "comment": null}
 , {"addr": "0x428f60", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x4294a0", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x429610", "name": "ReplayManager::operator new", "comment": null}

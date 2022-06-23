@@ -477,6 +477,7 @@
 , {"addr": "0x450350", "name": "ScorePopups::initialize", "comment": null}
 , {"addr": "0x4504d0", "name": "PopupManager::operator delete", "comment": null}
 , {"addr": "0x4505a0", "name": "ScorePopups::on_tick", "comment": null}
+, {"addr": "0x450700", "name": "PopupManager::on_draw", "comment": null}
 , {"addr": "0x450b50", "name": "ScorePopups::on_tick__stub", "comment": null}
 , {"addr": "0x450b60", "name": "ScorePopups::on_draw__stub", "comment": null}
 , {"addr": "0x450b70", "name": "PopupManager::generate_small_score_popup", "comment": null}
@@ -756,6 +757,7 @@
 , {"addr": "0x495380", "name": "__startTwoArgErrorHandling", "comment": null}
 , {"addr": "0x495397", "name": "__startOneArgErrorHandling", "comment": null}
 , {"addr": "0x495b10", "name": "__87except", "comment": null}
+, {"addr": "0x496518", "name": "IsProcessorFeaturePresent", "comment": null}
 , {"addr": "0x496520", "name": "__FindPESection", "comment": null}
 , {"addr": "0x496570", "name": "__IsNonwritableInCurrentImage", "comment": null}
 , {"addr": "0x496630", "name": "__ValidateImageBase", "comment": null}

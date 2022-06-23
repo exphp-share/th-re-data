@@ -35,7 +35,6 @@
 , {"addr": "0x40eb80", "name": "BulletManager::operator new", "comment": null}
 , {"addr": "0x40ed90", "name": "BulletManager::operator free", "comment": null}
 , {"addr": "0x40eed0", "name": "Bullet::on_tick", "comment": null}
-, {"addr": "0x40fcf0", "name": "Bullet::step_interpolators", "comment": null}
 , {"addr": "0x4100c0", "name": "BulletManager::on_tick__body", "comment": null}
 , {"addr": "0x4102b0", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x4102e0", "name": "BulletManager::on_draw", "comment": null}

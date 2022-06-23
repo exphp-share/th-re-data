@@ -32,6 +32,7 @@
 , {"addr": "0x40c380", "name": "AsciiManager::on_draw_3f", "comment": null}
 , {"addr": "0x40c410", "name": "AsciiManager::create_string", "comment": null}
 , {"addr": "0x40c800", "name": "AsciiManager::drawf_debug", "comment": null}
+, {"addr": "0x40d118", "name": "jump_table_40d118", "comment": null}
 , {"addr": "0x40d680", "name": "AnmVm::wipe", "comment": null}
 , {"addr": "0x40d9f0", "name": "AnmVm::destructor", "comment": null}
 , {"addr": "0x40db10", "name": "AnmVm::constructor", "comment": null}
@@ -409,6 +410,8 @@
 , {"addr": "0x477160", "name": "AnmLoaded::set_sprite", "comment": null}
 , {"addr": "0x477aa0", "name": "AnmVm::get_int_var", "comment": null}
 , {"addr": "0x477e10", "name": "AnmVm::run", "comment": null}
+, {"addr": "0x47b610", "name": "AnmVm::sub_47b610", "comment": null}
+, {"addr": "0x47be30", "name": "AnmVm::step_interpolators", "comment": null}
 , {"addr": "0x47d840", "name": "AnmManager::setup_render_state_for_vm", "comment": null}
 , {"addr": "0x47dba0", "name": "AnmManager::render_sprite_2d", "comment": null}
 , {"addr": "0x47e3a0", "name": "AnmManager::reset_vertex_buffers", "comment": null}

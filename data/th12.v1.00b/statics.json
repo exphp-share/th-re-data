@@ -33,8 +33,8 @@
 , {"addr": "0x4a42d0", "name": "float(56)", "type": "float", "comment": null}
 , {"addr": "0x4a9fe8", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4ad138", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
-, {"addr": "0x4aebd4", "name": "SHT_FUNCS_2", "type": "void*[0x6]", "comment": null}
-, {"addr": "0x4aedf0", "name": "__FUNC_LIST_4AEDF0", "type": "void*[0x7]", "comment": "Takes Player in ecx"}
+, {"addr": "0x4aebd4", "name": "SHT_ON_TICK_FUNCS", "type": "void*[0x6]", "comment": null}
+, {"addr": "0x4aedf0", "name": "SHT_ON_INIT_FUNCS", "type": "void*[0x7]", "comment": "Takes Player in ecx"}
 , {"addr": "0x4aee10", "name": "SHT_ON_HIT_FUNCS", "type": "void*[0x2]", "comment": null}
 , {"addr": "0x4af0fc", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[0x7]", "comment": null}
 , {"addr": "0x4af280", "name": "BULLET_TYPE_DATA_START", "type": "struct zTableBulletTypeData", "comment": "This table has 31 entries but I only type annotate the first\nbecause typing this as an array of length 31 makes binja\nbecome slow LITERALLY EVERYWHERE"}

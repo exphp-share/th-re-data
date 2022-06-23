@@ -1390,6 +1390,7 @@
 , {"addr": "0x4b0f38", "name": "___addl", "comment": null}
 , {"addr": "0x4b0fe5", "name": "___shr_12", "comment": null}
 , {"addr": "0x4b2720", "name": "___ascii_strnicmp", "comment": null}
+, {"addr": "0x4b2f80", "name": "RtlUnwind", "comment": null}
 , {"addr": "0x4b3540", "name": "life_before_main_4b3540_ASCII_MANAGER", "comment": null}
 , {"addr": "0x4b3550", "name": "life_before_main_4b3550_upd", "comment": null}
 , {"addr": "0x4b3570", "name": "life_before_main_4b3570_upd", "comment": null}

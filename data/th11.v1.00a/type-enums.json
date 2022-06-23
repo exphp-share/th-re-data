@@ -115,4 +115,10 @@
   , ["IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION", 16]
   ]
 
+, "zShtBulletKind": 
+  [ ["BULLET_KIND_PIERCING", 1]
+  , ["BULLET_KIND_SPLASH", 2]
+  , ["BULLET_KIND_LASER", 4]
+  ]
+
 }

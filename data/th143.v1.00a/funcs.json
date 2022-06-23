@@ -259,6 +259,7 @@
 , {"addr": "0x483830", "name": "AnmManager::on_tick_09", "comment": null}
 , {"addr": "0x4839b0", "name": "AnmManager::on_tick_22", "comment": null}
 , {"addr": "0x4839e0", "name": "AnmManager::on_tick_09__stub", "comment": null}
+, {"addr": "0x484280", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x48a697", "name": "malloc", "comment": null}
 , {"addr": "0x48a6e8", "name": "free", "comment": null}
 , {"addr": "0x48a7bc", "name": "free_", "comment": null}

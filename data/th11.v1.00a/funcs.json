@@ -133,7 +133,7 @@
 , {"addr": "0x417450", "name": "jump_table_417450", "comment": null}
 , {"addr": "0x4174b0", "name": "EnemyFull::get_float_global", "comment": null}
 , {"addr": "0x4179b0", "name": "EnemyFull::get_float_global_ptr", "comment": null}
-, {"addr": "0x417a60", "name": "jump_table_417a60", "comment": null}
+, {"addr": "0x417d80", "name": "Enemy::get_int_arg", "comment": null}
 , {"addr": "0x418520", "name": "sub_418520_koishi_funcset_card5", "comment": null}
 , {"addr": "0x4188c0", "name": "sub_4188c0_koishi_funcset_card7", "comment": null}
 , {"addr": "0x4189b0", "name": "sub_4189b0_koishi_funccall_card_9", "comment": null}
@@ -376,6 +376,7 @@
 , {"addr": "0x455560", "name": "AnmManager::on_tick_08", "comment": null}
 , {"addr": "0x455660", "name": "AnmManager::render_layer", "comment": null}
 , {"addr": "0x4556e0", "name": "AnmManager::sub_4556e0_put_in_some_list", "comment": null}
+, {"addr": "0x4558e0", "name": "AnmManager::sub_4558e0__remove_probably", "comment": null}
 , {"addr": "0x455a00", "name": "AnmLoaded::sub_455a00_makes_a_vm_and_stuff", "comment": null}
 , {"addr": "0x455b10", "name": "AnmLoaded::sub_455b10", "comment": null}
 , {"addr": "0x4561e0", "name": "AnmManager::get_vm_with_id", "comment": null}
@@ -400,6 +401,7 @@
 , {"addr": "0x459270", "name": "Timer::increment", "comment": null}
 , {"addr": "0x459430", "name": "sub_459430__calls_WaitForSingleObject", "comment": null}
 , {"addr": "0x45d4b0", "name": "ecl_get_int_arg", "comment": null}
+, {"addr": "0x45d550", "name": "EnemyFull::get_float_arg", "comment": null}
 , {"addr": "0x45dd70", "name": "Bomb::start__reimu_a", "comment": null}
 , {"addr": "0x45de30", "name": "Bomb::on_tick__reimu_a", "comment": null}
 , {"addr": "0x45fc2c", "name": "__security_check_cookie", "comment": null}

@@ -50,6 +50,7 @@
 , {"addr": "0x49e078", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a2088", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4a3828", "name": "STAGE_DATA", "type": "struct zTableStageData[0x8]", "comment": null}
+, {"addr": "0x4a3a50", "name": "__SOME_HARDCODED_SHOOTER", "type": "struct zShtShooter", "comment": null}
 , {"addr": "0x4a3d64", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[0xd]", "comment": null}
 , {"addr": "0x4a3ec0", "name": "BULLET_TYPE_DATA_START", "type": "struct zTableBulletTypeData", "comment": null}
 , {"addr": "0x4a56e0", "name": "GLOBALS", "type": "int32_t", "comment": null}

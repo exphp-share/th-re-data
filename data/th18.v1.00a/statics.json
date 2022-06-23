@@ -112,6 +112,7 @@
 , {"addr": "0x4bee00", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x4c0748", "name": "__seh_table", "type": "uint32_t[0x41]", "comment": null}
 , {"addr": "0x4c4a4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4c9410", "name": "STAGE_DATA_TABLE", "type": "struct zTableStageData[0x8]", "comment": null}
 , {"addr": "0x4cabe8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
 , {"addr": "0x4cccc0", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
 , {"addr": "0x4ccdf0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
@@ -131,6 +132,7 @@
 , {"addr": "0x4cf410", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4cf418", "name": "REPLAY_MANAGER_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf420", "name": "POPUP_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf428", "name": "CUR_STAGE_DATA", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf43c", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x51f65c", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x568c30", "name": "WINDOW", "type": "int32_t", "comment": null}

@@ -390,6 +390,7 @@
 , {"addr": "0x423980", "name": "BulletManager::destroy_all", "comment": null}
 , {"addr": "0x423af0", "name": "BulletManager::operator new", "comment": null}
 , {"addr": "0x423ce0", "name": "BulletManager::operator delete", "comment": null}
+, {"addr": "0x423e10", "name": "Bullet::on_tick", "comment": null}
 , {"addr": "0x424c50", "name": "BulletManager::on_tick__body", "comment": null}
 , {"addr": "0x424e70", "name": "BulletManager::on_tick", "comment": null}
 , {"addr": "0x424eb0", "name": "BulletManager::on_draw", "comment": null}

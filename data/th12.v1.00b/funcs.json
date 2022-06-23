@@ -315,13 +315,14 @@
 , {"addr": "0x439b10", "name": "Player::sub_439b10__prolly__tick_bullets", "comment": null}
 , {"addr": "0x439ed0", "name": "Enemy::take_damage_from_player", "comment": null}
 , {"addr": "0x43a470", "name": "sub_43a470__reimu_b", "comment": null}
-, {"addr": "0x43a480", "name": "sub_43a480__reimu_a", "comment": null}
+, {"addr": "0x43a480", "name": "Bullet::on_tick_func__reimu_a", "comment": null}
 , {"addr": "0x43a680", "name": "sub_43a680__marisa_a", "comment": null}
-, {"addr": "0x43a6b0", "name": "sub_43a6b0__marisa_a", "comment": null}
+, {"addr": "0x43a6b0", "name": "Bullet::on_tick_func__marisa_a", "comment": null}
 , {"addr": "0x43a800", "name": "sub_43a800__sanae_a", "comment": null}
-, {"addr": "0x43a810", "name": "sub_43a810__sanae_a", "comment": null}
+, {"addr": "0x43a810", "name": "Bullet::on_tick_func__sanae_a", "comment": null}
 , {"addr": "0x43a950", "name": "sub_43a950__sanae_b_splash_damage", "comment": null}
-, {"addr": "0x43aa50", "name": "sub_43aa50__sanae_b_secondary_bullets", "comment": null}
+, {"addr": "0x43aa50", "name": "Bullet::on_tick_func__sanae_b_splash_bullets", "comment": null}
+, {"addr": "0x43ab60", "name": "Bullet::on_tick_func__unknown_5", "comment": null}
 , {"addr": "0x43ae80", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x43b450", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x43b600", "name": "ReplayManager::operator new", "comment": null}

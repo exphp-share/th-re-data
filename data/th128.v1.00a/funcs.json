@@ -222,6 +222,8 @@
 , {"addr": "0x4666c0", "name": "AnmManager::on_tick_08__stub", "comment": null}
 , {"addr": "0x466af0", "name": "AnmManager::on_tick_1e__body", "comment": null}
 , {"addr": "0x466be0", "name": "AnmManager::on_tick_08", "comment": null}
+, {"addr": "0x466ce0", "name": "AnmManager::draw_layer", "comment": null}
+, {"addr": "0x466f60", "name": "AnmManager::sub_466f60__remove_probably", "comment": null}
 , {"addr": "0x4670b0", "name": "sub_4670b0_creates_vm", "comment": null}
 , {"addr": "0x467420", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x467480", "name": "anm_interrupt_by_id", "comment": null}
