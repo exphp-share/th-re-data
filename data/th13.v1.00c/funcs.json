@@ -113,13 +113,16 @@
 , {"addr": "0x416610", "name": "Ending::on_tick", "comment": null}
 , {"addr": "0x4166b0", "name": "Ending::on_tick__stub", "comment": null}
 , {"addr": "0x4166c0", "name": "Ending::on_draw", "comment": null}
+, {"addr": "0x417450", "name": "EclRunContext::constructor", "comment": null}
+, {"addr": "0x417d50", "name": "EnemyData::constructor", "comment": null}
 , {"addr": "0x4183f0", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x4187d0", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x418b50", "name": "EnemyManager::destructor", "comment": null}
 , {"addr": "0x418d30", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x418ef0", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x418f30", "name": "EnemyManager::on_draw", "comment": null}
-, {"addr": "0x41b260", "name": "Enemy::ecl_run_over_300", "comment": null}
+, {"addr": "0x418f40", "name": "Enemy::constructor", "comment": null}
+, {"addr": "0x41b260", "name": "EnemyData::ecl_run_over_300", "comment": null}
 , {"addr": "0x41fcc0", "name": "EnemyManager::ecl_enm_create", "comment": null}
 , {"addr": "0x4247b0", "name": "FpsCounter::initialize", "comment": null}
 , {"addr": "0x424870", "name": "FpsCounter::operator new", "comment": null}
@@ -338,6 +341,9 @@
 , {"addr": "0x4736a0", "name": "PosVel::update_secondary_fields", "comment": null}
 , {"addr": "0x473780", "name": "PosVel::step", "comment": null}
 , {"addr": "0x476e00", "name": "sub_476e00__get_position_in_bgm__i_think", "comment": null}
+, {"addr": "0x4772a0", "name": "EclRunContext::ecl_run", "comment": null}
+, {"addr": "0x478db0", "name": "Enemy::ecl_run", "comment": null}
+, {"addr": "0x479860", "name": "EclVm::operator new", "comment": null}
 , {"addr": "0x47a09f", "name": "__security_check_cookie", "comment": null}
 , {"addr": "0x47a181", "name": "free__checked", "comment": null}
 , {"addr": "0x47a1e1", "name": "malloc", "comment": null}

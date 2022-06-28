@@ -199,15 +199,15 @@
   , ["0x1", "__end", null]
   ]
 
-, "zEnemy": 
+, "zEnemyData": 
   [ ["0x0", "__unknown", null]
   , ["0x4cc0", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4cc0", "__end", null]
   ]
 
 , "zEnemyManager": 
-  [ ["0x0", "template", "struct zEnemy"]
-  , ["0x4cc0", "enemies", "struct zEnemy[0x80]"]
+  [ ["0x0", "template", "struct zEnemyData"]
+  , ["0x4cc0", "enemies", "struct zEnemyData[0x80]"]
   , ["0x26acc0", "__unknown", null]
   , ["0x26ae30", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x26ae30", "__end", null]

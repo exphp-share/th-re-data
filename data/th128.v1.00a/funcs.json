@@ -75,14 +75,16 @@
 , {"addr": "0x4135b0", "name": "Ending::operator new", "comment": null}
 , {"addr": "0x4136e0", "name": "Ending::on_tick", "comment": null}
 , {"addr": "0x413720", "name": "Ending::on_draw", "comment": null}
+, {"addr": "0x4142e0", "name": "EclRunContext::constructor", "comment": null}
 , {"addr": "0x414ff0", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x415310", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x415660", "name": "EnemyManager::destructor", "comment": null}
 , {"addr": "0x415840", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x415a20", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x415a60", "name": "EnemyManager::on_draw", "comment": null}
-, {"addr": "0x415a70", "name": "EnemyFull::operator new", "comment": null}
-, {"addr": "0x417ff0", "name": "Enemy::ecl_run_over_256", "comment": null}
+, {"addr": "0x415a70", "name": "Enemy::constructor", "comment": null}
+, {"addr": "0x417370", "name": "Enemy::die", "comment": null}
+, {"addr": "0x417ff0", "name": "EnemyData::ecl_run_over_256", "comment": null}
 , {"addr": "0x41f800", "name": "FpsCounter::initialize", "comment": null}
 , {"addr": "0x41f8c0", "name": "FpsCounter::operator new", "comment": null}
 , {"addr": "0x41fa90", "name": "FpsCounter::on_draw", "comment": null}
@@ -235,6 +237,10 @@
 , {"addr": "0x4687d0", "name": "register_new__on_draw__0", "comment": null}
 , {"addr": "0x468830", "name": "register_new__on_tick__1", "comment": null}
 , {"addr": "0x468890", "name": "register_new__on_draw__1", "comment": null}
+, {"addr": "0x46e100", "name": "EnemyRunContext::ecl_run", "comment": null}
+, {"addr": "0x46fe20", "name": "Enemy::ecl_run", "comment": null}
+, {"addr": "0x4702c0", "name": "Enemy::sub_4702c0", "comment": null}
+, {"addr": "0x4706a0", "name": "EclVm::operator new", "comment": null}
 , {"addr": "0x47290c", "name": "free_", "comment": null}
 , {"addr": "0x47296c", "name": "malloc", "comment": null}
 , {"addr": "0x4729ec", "name": "free", "comment": null}

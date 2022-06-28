@@ -18,6 +18,7 @@
 , {"addr": "0x4bd850", "name": "VTABLE_BOMB_REIMU_A", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bd86c", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4bde7c", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
+, {"addr": "0x4bdea4", "name": "VTABLE_ECL_BASE", "type": "struct zVTableEcl", "comment": null}
 , {"addr": "0x4be2fc", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4be364", "name": "VTABLE_LASER_BEAM", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4be3cc", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": null}

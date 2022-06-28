@@ -116,7 +116,8 @@
 , {"addr": "0x40fc30", "name": "anm_set_interrupt_3_by_id", "comment": null}
 , {"addr": "0x410190", "name": "EnemyDrop::drop_items", "comment": null}
 , {"addr": "0x4101d0", "name": "EnemyDrop::spawn_ex_drops", "comment": null}
-, {"addr": "0x410420", "name": "EnemyFull::operator delete", "comment": null}
+, {"addr": "0x410420", "name": "Enemy::operator delete", "comment": null}
+, {"addr": "0x410440", "name": "EnemyData::constructor", "comment": null}
 , {"addr": "0x4108f0", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x410be0", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x410e90", "name": "EnemyManager::destructor", "comment": null}
@@ -124,16 +125,16 @@
 , {"addr": "0x411120", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x4111a0", "name": "EnemyManager::on_tick__stub", "comment": null}
 , {"addr": "0x4111b0", "name": "EnemyManager::on_draw_14__noop", "comment": null}
-, {"addr": "0x4111c0", "name": "EnemyFull::constructor", "comment": null}
-, {"addr": "0x411750", "name": "Enemy::on_tick", "comment": null}
-, {"addr": "0x412e20", "name": "EnemyFull::run_ecl_over_256__trampoline", "comment": null}
-, {"addr": "0x412e30", "name": "Enemy::run_ecl_over_256", "comment": null}
-, {"addr": "0x416ee0", "name": "EnemyFull::get_int_global", "comment": null}
-, {"addr": "0x4173a0", "name": "EnemyFull::get_int_global_ptr", "comment": null}
+, {"addr": "0x4111c0", "name": "Enemy::constructor", "comment": null}
+, {"addr": "0x411750", "name": "EnemyData::on_tick", "comment": null}
+, {"addr": "0x412e20", "name": "Enemy::run_ecl_over_256__trampoline", "comment": null}
+, {"addr": "0x412e30", "name": "EnemyData::run_ecl_over_256", "comment": null}
+, {"addr": "0x416ee0", "name": "Enemy::get_int_global", "comment": null}
+, {"addr": "0x4173a0", "name": "Enemy::get_int_global_ptr", "comment": null}
 , {"addr": "0x417450", "name": "jump_table_417450", "comment": null}
-, {"addr": "0x4174b0", "name": "EnemyFull::get_float_global", "comment": null}
-, {"addr": "0x4179b0", "name": "EnemyFull::get_float_global_ptr", "comment": null}
-, {"addr": "0x417d80", "name": "Enemy::get_int_arg", "comment": null}
+, {"addr": "0x4174b0", "name": "Enemy::get_float_global", "comment": null}
+, {"addr": "0x4179b0", "name": "Enemy::get_float_global_ptr", "comment": null}
+, {"addr": "0x417d80", "name": "EnemyData::get_int_arg", "comment": null}
 , {"addr": "0x418520", "name": "sub_418520_koishi_funcset_card5", "comment": null}
 , {"addr": "0x4188c0", "name": "sub_4188c0_koishi_funcset_card7", "comment": null}
 , {"addr": "0x4189b0", "name": "sub_4189b0_koishi_funccall_card_9", "comment": null}
@@ -266,7 +267,7 @@
 , {"addr": "0x4342f0", "name": "Player::do_shooting", "comment": null}
 , {"addr": "0x434380", "name": "Player::tick_shooting_state", "comment": null}
 , {"addr": "0x434440", "name": "Player::tick_bullets", "comment": null}
-, {"addr": "0x4347f0", "name": "Enemy::take_damage_from_player", "comment": null}
+, {"addr": "0x4347f0", "name": "EnemyData::take_damage_from_player", "comment": null}
 , {"addr": "0x4356e0", "name": "ReplayManager::initialize", "comment": null}
 , {"addr": "0x435c50", "name": "ReplayManager::destructor", "comment": null}
 , {"addr": "0x435e00", "name": "ReplayManager::operator new", "comment": null}
@@ -400,8 +401,11 @@
 , {"addr": "0x459210", "name": "Timer::decrement", "comment": null}
 , {"addr": "0x459270", "name": "Timer::increment", "comment": null}
 , {"addr": "0x459430", "name": "sub_459430__calls_WaitForSingleObject", "comment": null}
+, {"addr": "0x45b860", "name": "EclRunContext::ecl_run", "comment": null}
+, {"addr": "0x45d420", "name": "Enemy::ecl_run", "comment": null}
 , {"addr": "0x45d4b0", "name": "ecl_get_int_arg", "comment": null}
-, {"addr": "0x45d550", "name": "EnemyFull::get_float_arg", "comment": null}
+, {"addr": "0x45d550", "name": "Enemy::get_float_arg", "comment": null}
+, {"addr": "0x45db90", "name": "EclVm::operator new", "comment": null}
 , {"addr": "0x45dd70", "name": "Bomb::start__reimu_a", "comment": null}
 , {"addr": "0x45de30", "name": "Bomb::on_tick__reimu_a", "comment": null}
 , {"addr": "0x45fc2c", "name": "__security_check_cookie", "comment": null}

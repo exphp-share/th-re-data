@@ -409,27 +409,27 @@
 , {"addr": "0x42af60", "name": "EffectManager::on_draw", "comment": null}
 , {"addr": "0x42b650", "name": "Ending::initialize", "comment": null}
 , {"addr": "0x42cb90", "name": "AsciiManager::sub_42cb90", "comment": null}
-, {"addr": "0x42cdd0", "name": "EnemyFull::sub_42cdd0", "comment": null}
-, {"addr": "0x42ce80", "name": "EnemyFull::sub_42ce80", "comment": null}
+, {"addr": "0x42cdd0", "name": "Enemy::sub_42cdd0", "comment": null}
+, {"addr": "0x42ce80", "name": "Enemy::sub_42ce80", "comment": null}
 , {"addr": "0x42d7d0", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x42dc20", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x42ddc0", "name": "EnemyManager::operator delete", "comment": null}
 , {"addr": "0x42df50", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x42e0b0", "name": "EnemyManager::on_draw", "comment": null}
-, {"addr": "0x42ed40", "name": "Enemy::step_game_logic", "comment": null}
-, {"addr": "0x430d40", "name": "Enemy::ecl_run_over_300", "comment": null}
-, {"addr": "0x437360", "name": "EnemyFull::ecl_get_int_global", "comment": null}
-, {"addr": "0x437b20", "name": "EnemyFull::ecl_get_int_global_ptr", "comment": null}
-, {"addr": "0x437c90", "name": "EnemyFull::ecl_get_float_global", "comment": null}
-, {"addr": "0x4387e0", "name": "EnemyFull::ecl_get_float_global_ptr", "comment": null}
-, {"addr": "0x438aa0", "name": "Enemy::get_int_arg__trampoline", "comment": null}
-, {"addr": "0x438ac0", "name": "Enemy::get_int_arg_ptr__trampoline", "comment": null}
-, {"addr": "0x438ad0", "name": "Enemy::get_float_arg__trampoline", "comment": null}
-, {"addr": "0x438af0", "name": "Enemy::get_float_arg_ptr__trampoline", "comment": null}
-, {"addr": "0x438d90", "name": "Enemy::ecl_func_set_1_6bs", "comment": null}
-, {"addr": "0x439020", "name": "Enemy::ecl_func_call_2_ex", "comment": null}
-, {"addr": "0x4391a0", "name": "Enemy::ecl_func_call_3_ex", "comment": null}
-, {"addr": "0x439320", "name": "Enemy::ecl_func_set_4_ex", "comment": null}
+, {"addr": "0x42ed40", "name": "EnemyData::step_game_logic", "comment": null}
+, {"addr": "0x430d40", "name": "EnemyData::ecl_run_over_300", "comment": null}
+, {"addr": "0x437360", "name": "Enemy::ecl_get_int_global", "comment": null}
+, {"addr": "0x437b20", "name": "Enemy::ecl_get_int_global_ptr", "comment": null}
+, {"addr": "0x437c90", "name": "Enemy::ecl_get_float_global", "comment": null}
+, {"addr": "0x4387e0", "name": "Enemy::ecl_get_float_global_ptr", "comment": null}
+, {"addr": "0x438aa0", "name": "EnemyData::get_int_arg__trampoline", "comment": null}
+, {"addr": "0x438ac0", "name": "EnemyData::get_int_arg_ptr__trampoline", "comment": null}
+, {"addr": "0x438ad0", "name": "EnemyData::get_float_arg__trampoline", "comment": null}
+, {"addr": "0x438af0", "name": "EnemyData::get_float_arg_ptr__trampoline", "comment": null}
+, {"addr": "0x438d90", "name": "EnemyData::ecl_func_set_1_6bs", "comment": null}
+, {"addr": "0x439020", "name": "EnemyData::ecl_func_call_2_ex", "comment": null}
+, {"addr": "0x4391a0", "name": "EnemyData::ecl_func_call_3_ex", "comment": null}
+, {"addr": "0x439320", "name": "EnemyData::ecl_func_set_4_ex", "comment": null}
 , {"addr": "0x43a340", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x43a3f0", "name": "GuiMsgVm::destructor", "comment": null}
 , {"addr": "0x43b800", "name": "Gui::operator new", "comment": null}
@@ -629,12 +629,12 @@
 , {"addr": "0x4890b0", "name": "sub_4890b0__recursive", "comment": null}
 , {"addr": "0x489320", "name": "AnmManager::allocate_new_vm", "comment": null}
 , {"addr": "0x48b3a0", "name": "ecl_run", "comment": null}
-, {"addr": "0x48d420", "name": "EnemyFull::ecl_run", "comment": null}
+, {"addr": "0x48d420", "name": "Enemy::ecl_run", "comment": null}
 , {"addr": "0x48d4f0", "name": "ecl_get_int_arg", "comment": null}
 , {"addr": "0x48d5a0", "name": "ecl_get_float_arg", "comment": null}
 , {"addr": "0x48d750", "name": "EclRunContext::ecl_get_int_arg_ptr", "comment": null}
 , {"addr": "0x48d7c0", "name": "EclRunContext::get_float_arg_ptr", "comment": null}
-, {"addr": "0x48d920", "name": "EnemyFull::sub_48d920", "comment": null}
+, {"addr": "0x48d920", "name": "Enemy::sub_48d920", "comment": null}
 , {"addr": "0x48dc60", "name": "__security_check_cookie", "comment": null}
 , {"addr": "0x48dc71", "name": "operator new", "comment": null}
 , {"addr": "0x48dca1", "name": "operator delete", "comment": null}

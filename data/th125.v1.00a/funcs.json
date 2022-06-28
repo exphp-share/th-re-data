@@ -63,14 +63,18 @@
 , {"addr": "0x40e6c0", "name": "EffectManager::on_tick__stub", "comment": null}
 , {"addr": "0x40e6d0", "name": "EffectManager::on_draw__stub", "comment": null}
 , {"addr": "0x40f640", "name": "ItemManager::set_ecl_461", "comment": null}
+, {"addr": "0x40f670", "name": "EclRunContext::constructor", "comment": null}
+, {"addr": "0x410240", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x410580", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x410850", "name": "EnemyManager::destructor", "comment": null}
 , {"addr": "0x410a20", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x410ad0", "name": "EnemyManager::on_tick__body", "comment": null}
 , {"addr": "0x410b50", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x410b90", "name": "EnemyManager::on_draw__stub", "comment": null}
-, {"addr": "0x411210", "name": "Enemy::on_tick", "comment": null}
-, {"addr": "0x413110", "name": "Enemy::ecl_run_over_256", "comment": null}
+, {"addr": "0x410ba0", "name": "Enemy::constructor", "comment": null}
+, {"addr": "0x411210", "name": "EnemyData::on_tick", "comment": null}
+, {"addr": "0x412210", "name": "Enemy::die", "comment": null}
+, {"addr": "0x413110", "name": "EnemyData::ecl_run_over_256", "comment": null}
 , {"addr": "0x418c50", "name": "ecl_get_float", "comment": null}
 , {"addr": "0x419f00", "name": "InterpFloat2::step", "comment": null}
 , {"addr": "0x41ac10", "name": "FpsCounter::initialize", "comment": null}
@@ -255,8 +259,9 @@
 , {"addr": "0x463660", "name": "sub_463660_logs_debug_messages", "comment": null}
 , {"addr": "0x463740", "name": "sub_463740_logs_debug_messages", "comment": null}
 , {"addr": "0x4640f0", "name": "sub_4640f0_joins_thread", "comment": null}
-, {"addr": "0x4670d0", "name": "ecl_run", "comment": null}
-, {"addr": "0x468d60", "name": "sub_468d60_run_ecl", "comment": null}
+, {"addr": "0x4670d0", "name": "EclRunContext::ecl_run", "comment": null}
+, {"addr": "0x468d60", "name": "Enemy::ecl_run", "comment": null}
+, {"addr": "0x469590", "name": "EclVm::operator new", "comment": null}
 , {"addr": "0x46b493", "name": "free_", "comment": null}
 , {"addr": "0x46b53c", "name": "malloc", "comment": null}
 , {"addr": "0x46b5a1", "name": "free", "comment": null}

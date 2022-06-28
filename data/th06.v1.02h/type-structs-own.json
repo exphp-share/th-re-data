@@ -686,7 +686,7 @@
   , ["0x2e4", "__dword_2E0", "int32_t"]
   , ["0x2e8", "__dword_2E4", "int32_t"]
   , ["0x2ec", "__dword_2E8", "int32_t"]
-  , ["0x2f0", "__SIZE_NOT_ACTUALLY_KNOWN", "struct { }[0x0]"]
+  , ["0x2f0", "__SIZE_NOT_ACTUALLY_KNOWN", "struct zCOMMENT[0x0]"]
   , ["0x2f0", "__end", null]
   ]
 

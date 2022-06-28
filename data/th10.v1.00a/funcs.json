@@ -72,6 +72,8 @@
 , {"addr": "0x40ba80", "name": "Ending::on_draw__noop", "comment": null}
 , {"addr": "0x40c480", "name": "anm_set_interrupt_2_by_id", "comment": null}
 , {"addr": "0x40c4d0", "name": "anm_set_interrupt_3_by_id", "comment": null}
+, {"addr": "0x40cc50", "name": "Enemy::operator delete", "comment": null}
+, {"addr": "0x40cc70", "name": "EnemyData::constructor", "comment": null}
 , {"addr": "0x40cfb0", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x40d280", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x40d530", "name": "EnemyManager::destructor", "comment": null}
@@ -79,9 +81,14 @@
 , {"addr": "0x40d750", "name": "EnemyManager::on_tick", "comment": null}
 , {"addr": "0x40d810", "name": "EnemyManager::on_tick__stub", "comment": null}
 , {"addr": "0x40d820", "name": "EnemyManager::on_draw", "comment": null}
-, {"addr": "0x40dc80", "name": "Enemy::on_tick", "comment": null}
-, {"addr": "0x40e770", "name": "ecl_run_over_256", "comment": null}
-, {"addr": "0x411fc0", "name": "EnemyFull::get_int_global", "comment": null}
+, {"addr": "0x40d830", "name": "Enemy::constructor", "comment": null}
+, {"addr": "0x40dc80", "name": "EnemyData::on_tick", "comment": null}
+, {"addr": "0x40e760", "name": "Enemy::ecl_run_over_256", "comment": null}
+, {"addr": "0x40e770", "name": "EnemyData::ecl_run_over_256", "comment": null}
+, {"addr": "0x411fc0", "name": "Enemy::ecl_get_int_global", "comment": null}
+, {"addr": "0x412300", "name": "Enemy::ecl_get_int_global_ptr", "comment": null}
+, {"addr": "0x412350", "name": "Enemy::ecl_get_float_global", "comment": null}
+, {"addr": "0x4126d0", "name": "Enemy::ecl_get_float_global_ptr", "comment": null}
 , {"addr": "0x412ff0", "name": "Globals::sub_412ff0_faith_timer_related", "comment": null}
 , {"addr": "0x413350", "name": "FpsCounter::operator new", "comment": null}
 , {"addr": "0x4135d0", "name": "FpsCounter::on_draw", "comment": null}
@@ -250,6 +257,9 @@
 , {"addr": "0x44b810", "name": "sub_44b810_logs_debug_messages", "comment": null}
 , {"addr": "0x44b8e0", "name": "sub_44b8e0_logs_debug_messages", "comment": null}
 , {"addr": "0x44c150", "name": "sub_44c150_calls_WaitForSingleObject", "comment": null}
+, {"addr": "0x44e1a0", "name": "EclRunContext::ecl_run", "comment": null}
+, {"addr": "0x44fd10", "name": "Enemy::ecl_run", "comment": null}
+, {"addr": "0x450500", "name": "EclRunContext::operator new", "comment": null}
 , {"addr": "0x452422", "name": "free_", "comment": null}
 , {"addr": "0x452493", "name": "malloc", "comment": null}
 , {"addr": "0x4524a1", "name": "free", "comment": null}

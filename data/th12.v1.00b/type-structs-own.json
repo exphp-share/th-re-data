@@ -414,6 +414,57 @@
   , ["0x2e4", "__end", null]
   ]
 
+, "zEclFileManager": 
+  [ ["0x0", "__end", null]
+  ]
+
+, "zEclRawInstructionHeader": 
+  [ ["0x0", "time", "int32_t"]
+  , ["0x4", "opcode", "uint16_t"]
+  , ["0x6", "total_size", "uint16_t"]
+  , ["0x8", "variable_mask", "uint16_t"]
+  , ["0xa", "rank_mask", "uint8_t"]
+  , ["0xb", "parameter_count", "uint8_t"]
+  , ["0xc", "__zero", "uint32_t"]
+  , ["0x10", "__end", null]
+  ]
+
+, "zEclRunContext": 
+  [ ["0x0", "time", "float"]
+  , ["0x4", "cur_instr", "struct zEclRawInstructionHeader*"]
+  , ["0x8", "__stack", "int32_t[0x400]"]
+  , ["0x1008", "stack_top_offset", "int32_t"]
+  , ["0x100c", "locals_offset_from_stack", "int32_t"]
+  , ["0x1010", "async_id", "int32_t"]
+  , ["0x1014", "enemy", "struct zEnemy*"]
+  , ["0x1018", "__set_by_ins_20", "int32_t"]
+  , ["0x101c", "difficulty_mask", "uint8_t"]
+  , ["0x101d", "__unknown", null]
+  , ["0x1020", "__set_by_ins_18_19", "int32_t"]
+  , ["0x1024", "__end", null]
+  ]
+
+, "zEclRunContextHolder": 
+  [ ["0x0", "current_context", "struct zEclRunContext*"]
+  , ["0x4", "primary_context", "struct zEclRunContext"]
+  , ["0x1028", "__end", null]
+  ]
+
+, "zEclRunContextList": 
+  [ ["0x0", "entry", "struct zEclRunContext*"]
+  , ["0x4", "next", "struct zEclRunContextList*"]
+  , ["0x8", "prev", "struct zEclRunContextList*"]
+  , ["0xc", "__end", null]
+  ]
+
+, "zEclVm": 
+  [ ["0x0", "vtable", "struct zVTableEcl*"]
+  , ["0x4", "context", "struct zEclRunContextHolder"]
+  , ["0x102c", "file_manager", "struct zEclFileManager*"]
+  , ["0x1030", "async_list_head", "struct zEclRunContextList"]
+  , ["0x103c", "__end", null]
+  ]
+
 , "zEffectManager": 
   [ ["0x0", "__unknown", null]
   , ["0x24", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -427,6 +478,36 @@
   ]
 
 , "zEnemy": 
+  [ ["0x0", "ecl", "struct zEclVm"]
+  , ["0x103c", "on_death_callback", "void*"]
+  , ["0x1040", "data", "struct zEnemyData"]
+  , ["0x27b4", "enemy_id", "int32_t"]
+  , ["0x27b8", "__end", null]
+  ]
+
+, "zEnemyBulletShooter": 
+  [ ["0x0", "type", "int16_t"]
+  , ["0x2", "color", "int16_t"]
+  , ["0x4", "enemy_pos", "struct zFloat3"]
+  , ["0x10", "angle_aim", "float"]
+  , ["0x14", "angle_between", "float"]
+  , ["0x18", "speed_first", "float"]
+  , ["0x1c", "speed_last", "float"]
+  , ["0x20", "distance", "float"]
+  , ["0x24", "ex", "struct zBulletEx[0x12]"]
+  , ["0x1d4", "__unknown", null]
+  , ["0x1f8", "count_bullets", "int16_t"]
+  , ["0x1fa", "count_layers", "int16_t"]
+  , ["0x1fc", "aim_type", "int32_t"]
+  , ["0x200", "sound_flag", "int32_t"]
+  , ["0x204", "sfx_shot", "int32_t"]
+  , ["0x208", "sfx_transform", "int32_t"]
+  , ["0x20c", "__unknown", null]
+  , ["0x214", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x214", "__end", null]
+  ]
+
+, "zEnemyData": 
   [ ["0x0", "prev_final_pos", "struct zPosVel"]
   , ["0x34", "final_pos", "struct zPosVel"]
   , ["0x68", "abs_pos", "struct zPosVel"]
@@ -476,7 +557,7 @@
   , ["0x16c4", "own_boss_id", "int32_t"]
   , ["0x16c8", "et_protect_range", "float"]
   , ["0x16cc", "__unknown", null]
-  , ["0x174c", "full", "struct zEnemyFull*"]
+  , ["0x174c", "full", "struct zEnemy*"]
   , ["0x1750", "__unknown", null]
   , ["0x1768", "func_from_ecl_func_set", "void*"]
   , ["0x176c", "func_from_ecl_flag_ext_damage", "void*"]
@@ -485,41 +566,11 @@
   , ["0x1774", "__end", null]
   ]
 
-, "zEnemyBulletShooter": 
-  [ ["0x0", "type", "int16_t"]
-  , ["0x2", "color", "int16_t"]
-  , ["0x4", "enemy_pos", "struct zFloat3"]
-  , ["0x10", "angle_aim", "float"]
-  , ["0x14", "angle_between", "float"]
-  , ["0x18", "speed_first", "float"]
-  , ["0x1c", "speed_last", "float"]
-  , ["0x20", "distance", "float"]
-  , ["0x24", "ex", "struct zBulletEx[0x12]"]
-  , ["0x1d4", "__unknown", null]
-  , ["0x1f8", "count_bullets", "int16_t"]
-  , ["0x1fa", "count_layers", "int16_t"]
-  , ["0x1fc", "aim_type", "int32_t"]
-  , ["0x200", "sound_flag", "int32_t"]
-  , ["0x204", "sfx_shot", "int32_t"]
-  , ["0x208", "sfx_transform", "int32_t"]
-  , ["0x20c", "__unknown", null]
-  , ["0x214", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x214", "__end", null]
-  ]
-
 , "zEnemyDrop": 
   [ ["0x0", "main_drop", "int32_t"]
   , ["0x4", "ex_drop", "int32_t[0x13]"]
   , ["0x50", "area", "struct zFloat2"]
   , ["0x58", "__end", null]
-  ]
-
-, "zEnemyFull": 
-  [ ["0x0", "__unknown", null]
-  , ["0x1040", "enemy", "struct zEnemy"]
-  , ["0x27b4", "__unknown", null]
-  , ["0x27b8", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x27b8", "__end", null]
   ]
 
 , "zEnemyLife": 
@@ -533,7 +584,7 @@
   ]
 
 , "zEnemyList": 
-  [ ["0x0", "entry", "struct zEnemy*"]
+  [ ["0x0", "entry", "struct zEnemyData*"]
   , ["0x4", "next", "struct zEnemyList*"]
   , ["0x8", "prev", "struct zEnemyList*"]
   , ["0xc", "__end", null]
@@ -544,7 +595,7 @@
   , ["0x10", "miss_count", "int32_t"]
   , ["0x14", "bomb_count", "int32_t"]
   , ["0x18", "capture", "int32_t"]
-  , ["0x1c", "bosses__len_unknown", "struct zEnemy*[0x1]"]
+  , ["0x1c", "bosses__len_unknown", "struct zEnemyData*[0x1]"]
   , ["0x20", "__unknown", null]
   , ["0x40", "anms", "struct zAnmLoaded*[0x4]"]
   , ["0x50", "time_in_stage", "struct zTimer"]
@@ -552,7 +603,7 @@
   , ["0x68", "list_head", "struct zEnemyList*"]
   , ["0x6c", "__unknown", null]
   , ["0x70", "enemy_count_real", "int32_t"]
-  , ["0x74", "__unknown", null]
+  , ["0x74", "next_enemy_id", "int32_t"]
   , ["0x78", "last_enemy_id", "int32_t"]
   , ["0x7c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x7c", "__end", null]
@@ -1121,6 +1172,16 @@
   , ["0x48", "__unknown", null]
   , ["0x4c", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x4c", "__end", null]
+  ]
+
+, "zVTableEcl": 
+  [ ["0x0", "run_over_256", "void*"]
+  , ["0x4", "get_int_global", "void*"]
+  , ["0x8", "get_int_global_ptr", "void*"]
+  , ["0xc", "get_float_global", "void*"]
+  , ["0x10", "get_float_global_ptr", "void*"]
+  , ["0x14", "operator delete", "void*"]
+  , ["0x18", "__end", null]
   ]
 
 , "zVTableLaser": 

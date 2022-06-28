@@ -28,12 +28,12 @@
 , {"addr": "0x408cb0", "name": "Spellcard::on_draw_13", "comment": null}
 , {"addr": "0x408de0", "name": "sub_408de0_load_sub", "comment": null}
 , {"addr": "0x408e70", "name": "ecl_run", "comment": null}
-, {"addr": "0x411f70", "name": "Enemy::ecl_call_impl", "comment": null}
+, {"addr": "0x411f70", "name": "EnemyData::ecl_call_impl", "comment": null}
 , {"addr": "0x412180", "name": "sub_412180_debug_log", "comment": null}
 , {"addr": "0x4149f0", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x414b90", "name": "EnemyManager::constructor", "comment": null}
-, {"addr": "0x415040", "name": "Enemy::constructor", "comment": null}
-, {"addr": "0x4152d0", "name": "Enemy::destructor", "comment": null}
+, {"addr": "0x415040", "name": "EnemyData::constructor", "comment": null}
+, {"addr": "0x4152d0", "name": "EnemyData::destructor", "comment": null}
 , {"addr": "0x4153d0", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x4154e0", "name": "EnemyManager::destructor", "comment": null}
 , {"addr": "0x415970", "name": "EnemyManager::on_tick__body", "comment": null}

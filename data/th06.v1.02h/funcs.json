@@ -119,8 +119,8 @@
 , {"addr": "0x41c7f0", "name": "UpdateFuncRegistry::constructor", "comment": null}
 , {"addr": "0x41c860", "name": "UpdateFuncRegistry::register__on_tick", "comment": null}
 , {"addr": "0x41c940", "name": "UpdateFuncRegistry::register__on_draw", "comment": null}
-, {"addr": "0x41ca10", "name": "UpdateFuncRegistry::run_all_on_draw", "comment": null}
-, {"addr": "0x41cad0", "name": "UpdateFuncRegistry::run_all_on_tick", "comment": null}
+, {"addr": "0x41ca10", "name": "UpdateFuncRegistry::run_all_on_tick", "comment": null}
+, {"addr": "0x41cad0", "name": "UpdateFuncRegistry::run_all_on_draw", "comment": null}
 , {"addr": "0x41cd40", "name": "UpdateFunc::operator new", "comment": null}
 , {"addr": "0x41cde0", "name": "UpdateFuncRegistry::unregister", "comment": null}
 , {"addr": "0x41cf60", "name": "get_joypad_capabilities", "comment": null}

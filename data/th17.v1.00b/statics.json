@@ -21,7 +21,8 @@
 , {"addr": "0x4a1400", "name": "VTABLE_BOMB_MARISA", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4a141c", "name": "VTABLE_BOMB_REIMU", "type": "struct zVTableBomb", "comment": null}
 , {"addr": "0x4a1438", "name": "VTABLE_BOMB_DEFAULT", "type": "struct zVTableBomb", "comment": null}
-, {"addr": "0x4a1680", "name": "VTABLE_ECL_ENEMY_FULL", "type": "void*[0x6]", "comment": null}
+, {"addr": "0x4a1680", "name": "VTABLE_ECL_ENEMY_FULL", "type": "struct zVTableEcl", "comment": null}
+, {"addr": "0x4a169c", "name": "VTABLE_ECL_BASE", "type": "struct zVTableEcl", "comment": null}
 , {"addr": "0x4a17e0", "name": "VTABLE_LASER_CURVE", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a184c", "name": "VTABLE_LASER_BEAM", "type": "struct zVTableLaser", "comment": null}
 , {"addr": "0x4a18b8", "name": "VTABLE_LASER_INFINITE", "type": "struct zVTableLaser", "comment": null}

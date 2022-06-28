@@ -77,7 +77,7 @@
 , {"addr": "0x41ec00", "name": "EnemyManager::operator new", "comment": null}
 , {"addr": "0x41edb0", "name": "EnemyManager::on_tick_1a", "comment": null}
 , {"addr": "0x41edf0", "name": "EnemyManager::on_draw_16", "comment": null}
-, {"addr": "0x421e40", "name": "Enemy::ecl_run_over_300", "comment": null}
+, {"addr": "0x421e40", "name": "EnemyData::ecl_run_over_300", "comment": null}
 , {"addr": "0x426db0", "name": "EnemyManager::ecl_enm_create", "comment": null}
 , {"addr": "0x42bc40", "name": "FpsCounter::initialize", "comment": null}
 , {"addr": "0x42bec0", "name": "FpsCounter::on_draw", "comment": null}
