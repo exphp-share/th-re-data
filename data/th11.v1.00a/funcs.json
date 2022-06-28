@@ -406,6 +406,7 @@
 , {"addr": "0x45d4b0", "name": "ecl_get_int_arg", "comment": null}
 , {"addr": "0x45d550", "name": "Enemy::get_float_arg", "comment": null}
 , {"addr": "0x45db90", "name": "EclVm::operator new", "comment": null}
+, {"addr": "0x45dd20", "name": "EclStack::ecl_return", "comment": null}
 , {"addr": "0x45dd70", "name": "Bomb::start__reimu_a", "comment": null}
 , {"addr": "0x45de30", "name": "Bomb::on_tick__reimu_a", "comment": null}
 , {"addr": "0x45fc2c", "name": "__security_check_cookie", "comment": null}

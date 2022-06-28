@@ -484,6 +484,7 @@
 , {"addr": "0x468ec0", "name": "EclRunContext::get_float_arg", "comment": null}
 , {"addr": "0x4691b0", "name": "Enemy::get_async_by_id", "comment": null}
 , {"addr": "0x469570", "name": "EclVm::operator new", "comment": null}
+, {"addr": "0x469700", "name": "EclStack::ecl_return", "comment": null}
 , {"addr": "0x46a970", "name": "Bomb::on_tick_reimu_a", "comment": null}
 , {"addr": "0x46c932", "name": "__security_check_cookie", "comment": null}
 , {"addr": "0x46c941", "name": "free_", "comment": null}

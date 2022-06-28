@@ -708,9 +708,7 @@
 , "zEclRunContext": 
   [ ["0x0", "time", "float"]
   , ["0x4", "cur_instr", "struct zEclRawInstructionHeader*"]
-  , ["0x8", "__stack", "int32_t[0x400]"]
-  , ["0x1008", "stack_top_offset", "int32_t"]
-  , ["0x100c", "locals_offset_from_stack", "int32_t"]
+  , ["0x8", "stack", "struct zEclStack"]
   , ["0x1010", "async_id", "int32_t"]
   , ["0x1014", "enemy", "struct zEnemy*"]
   , ["0x1018", "__set_by_ins_20", "int32_t"]
@@ -728,20 +726,19 @@
   , ["0x11c8", "__end", null]
   ]
 
-, "zEclRunContextInner": 
-  [ ["0x0", "__stack", "struct zEclStackItem[0x400]"]
-  , ["0x1000", "stack_top_offset", "int32_t"]
-  , ["0x1004", "locals_offset_from_stack", "int32_t"]
-  , ["0x1008", "__field_1014_can_be_negative", "int32_t"]
-  , ["0x100c", "__end", null]
-  ]
-
 , "zEclRunContextList": 
   [ ["0x0", "entry", "struct zEclRunContext*"]
   , ["0x4", "next", "struct zEclRunContextList*"]
   , ["0x8", "prev", "struct zEclRunContextList*"]
   , ["0xc", "__seldom_used", "struct zEclRunContextList*"]
   , ["0x10", "__end", null]
+  ]
+
+, "zEclStack": 
+  [ ["0x0", "data", "int32_t[0x400]"]
+  , ["0x1000", "stack_offset", "int32_t"]
+  , ["0x1004", "base_offset", "int32_t"]
+  , ["0x1008", "__end", null]
   ]
 
 , "zEclStackItem": 
@@ -786,7 +783,7 @@
   , ["0x11e0", "on_death_callback", "void*"]
   , ["0x11e4", "enemy_id", "int32_t"]
   , ["0x11e8", "parent_enemy_id", "int32_t"]
-  , ["0x11ec", "__only_used_in_ddc", "uint32_t"]
+  , ["0x11ec", "__only_used_in_ddc_and_isc", "uint32_t"]
   , ["0x11f0", "data", "struct zEnemyData"]
   , ["0x530c", "__end", null]
   ]

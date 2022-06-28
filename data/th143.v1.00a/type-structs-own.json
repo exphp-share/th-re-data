@@ -357,6 +357,78 @@
   , ["0x2e4", "__end", null]
   ]
 
+, "zEclFileManager": 
+  [ ["0x0", "vtable", "void*"]
+  , ["0x4", "file_count", "int32_t"]
+  , ["0x8", "subroutine_count", "int32_t"]
+  , ["0xc", "file_data_pointers", "uint8_t*[0x20]"]
+  , ["0x8c", "subroutines", "struct zEclSubroutinePtrs*"]
+  , ["0x90", "__unknown", null]
+  , ["0x1098", "__end", null]
+  ]
+
+, "zEclRawInstructionHeader": 
+  [ ["0x0", "time", "int32_t"]
+  , ["0x4", "opcode", "uint16_t"]
+  , ["0x6", "total_size", "uint16_t"]
+  , ["0x8", "variable_mask", "uint16_t"]
+  , ["0xa", "rank_mask", "uint8_t"]
+  , ["0xb", "parameter_count", "uint8_t"]
+  , ["0xc", "num_stack_refs_in_parameters", "uint8_t"]
+  , ["0xd", "_padding_D", "char[0x3]"]
+  , ["0x10", "__end", null]
+  ]
+
+, "zEclRunContext": 
+  [ ["0x0", "time", "float"]
+  , ["0x4", "cur_instr", "struct zEclRawInstructionHeader*"]
+  , ["0x8", "stack", "struct zEclStack"]
+  , ["0x1010", "async_id", "int32_t"]
+  , ["0x1014", "enemy", "struct zEnemy*"]
+  , ["0x1018", "__set_by_ins_20", "int32_t"]
+  , ["0x101c", "difficulty_mask", "uint8_t"]
+  , ["0x101d", "__unknown", null]
+  , ["0x1020", "float_i", "struct zInterpFloat[0x8]"]
+  , ["0x11a0", "float_i_instrs", "struct zEclRawInstructionHeader*[0x8]"]
+  , ["0x11c0", "__set_by_ins_18_19", "int32_t"]
+  , ["0x11c4", "__end", null]
+  ]
+
+, "zEclRunContextHolder": 
+  [ ["0x0", "current_context", "struct zEclRunContext*"]
+  , ["0x4", "primary_context", "struct zEclRunContext"]
+  , ["0x11c8", "__end", null]
+  ]
+
+, "zEclRunContextList": 
+  [ ["0x0", "entry", "struct zEclRunContext*"]
+  , ["0x4", "next", "struct zEclRunContextList*"]
+  , ["0x8", "prev", "struct zEclRunContextList*"]
+  , ["0xc", "__seldom_used", "struct zEclRunContextList*"]
+  , ["0x10", "__end", null]
+  ]
+
+, "zEclStack": 
+  [ ["0x0", "data", "int32_t[0x400]"]
+  , ["0x1000", "stack_offset", "int32_t"]
+  , ["0x1004", "base_offset", "int32_t"]
+  , ["0x1008", "__end", null]
+  ]
+
+, "zEclSubroutinePtrs": 
+  [ ["0x0", "name", "char*"]
+  , ["0x4", "bytecode", "void*"]
+  , ["0x8", "__end", null]
+  ]
+
+, "zEclVm": 
+  [ ["0x0", "vtable", "struct zVTableEcl*"]
+  , ["0x4", "context", "struct zEclRunContextHolder"]
+  , ["0x11cc", "file_manager", "struct zEclFileManager*"]
+  , ["0x11d0", "async_list_head", "struct zEclRunContextList"]
+  , ["0x11e0", "__end", null]
+  ]
+
 , "zEffectManager": 
   [ ["0x0", "__unknown", null]
   , ["0x30", "__exact_size_known", "struct zCOMMENT[0x0]"]
@@ -367,6 +439,21 @@
   [ ["0x0", "__unknown", null]
   , ["0x28", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x28", "__end", null]
+  ]
+
+, "zEnemy": 
+  [ ["0x0", "ecl", "struct zEclVm"]
+  , ["0x11e0", "on_death_callback", "void*"]
+  , ["0x11e4", "enemy_id", "int32_t"]
+  , ["0x11e8", "parent_enemy_id", "int32_t"]
+  , ["0x11ec", "__only_used_in_ddc_and_isc", "uint32_t"]
+  , ["0x11f0", "data", "struct zEnemyData"]
+  , ["0x53d8", "__end", null]
+  ]
+
+, "zEnemyData": 
+  [ ["0x0", "__unknown", null]
+  , ["0x41e8", "__end", null]
   ]
 
 , "zEnemyManager": 
@@ -687,6 +774,16 @@
 
 , "zUpdateFunc": 
   [ ["0x0", "__end", null]
+  ]
+
+, "zVTableEcl": 
+  [ ["0x0", "run_over_300", "void*"]
+  , ["0x4", "get_int_global", "void*"]
+  , ["0x8", "get_int_global_ptr", "void*"]
+  , ["0xc", "get_float_global", "void*"]
+  , ["0x10", "get_float_global_ptr", "void*"]
+  , ["0x14", "operator delete", "void*"]
+  , ["0x18", "__end", null]
   ]
 
 }

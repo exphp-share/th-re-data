@@ -260,6 +260,7 @@
 , {"addr": "0x44e1a0", "name": "EclRunContext::ecl_run", "comment": null}
 , {"addr": "0x44fd10", "name": "Enemy::ecl_run", "comment": null}
 , {"addr": "0x450500", "name": "EclRunContext::operator new", "comment": null}
+, {"addr": "0x4506d0", "name": "EclStack::ecl_return", "comment": null}
 , {"addr": "0x452422", "name": "free_", "comment": null}
 , {"addr": "0x452493", "name": "malloc", "comment": null}
 , {"addr": "0x4524a1", "name": "free", "comment": null}

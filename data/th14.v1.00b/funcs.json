@@ -585,6 +585,7 @@
 , {"addr": "0x484580", "name": "Enemy::lookup_async", "comment": null}
 , {"addr": "0x4848b0", "name": "EclFileManager::find_sub_by_name", "comment": null}
 , {"addr": "0x484940", "name": "EclVm::operator new", "comment": null}
+, {"addr": "0x484b50", "name": "EclStack::ecl_return", "comment": null}
 , {"addr": "0x4854a0", "name": "__check_security_cookie", "comment": null}
 , {"addr": "0x4854af", "name": "malloc", "comment": null}
 , {"addr": "0x4854fe", "name": "free", "comment": null}

@@ -720,14 +720,15 @@
 , "zEclRunContext": 
   [ ["0x0", "time", "float"]
   , ["0x4", "cur_location", "struct zEclLocation"]
-  , ["0xc", "inner", "struct zEclRunContextInner"]
+  , ["0xc", "stack", "struct zEclStack"]
+  , ["0x1014", "async_id", "int32_t"]
   , ["0x1018", "enemy", "struct zEnemy*"]
   , ["0x101c", "__set_by_ins_20", "uint8_t"]
   , ["0x101d", "__unknown", null]
   , ["0x1020", "difficulty_mask", "uint8_t"]
   , ["0x1021", "__unknown", null]
   , ["0x1024", "float_i", "struct zInterpFloat[0x8]"]
-  , ["0x11a4", "__unknown", null]
+  , ["0x11a4", "float_i_locals_offsets_from_stack", "int32_t[0x8]"]
   , ["0x11c4", "float_i_locs", "struct zEclLocation[0x8]"]
   , ["0x1204", "__set_by_ins_18_19", "int32_t"]
   , ["0x1208", "__end", null]
@@ -739,20 +740,19 @@
   , ["0x120c", "__end", null]
   ]
 
-, "zEclRunContextInner": 
-  [ ["0x0", "__stack", "int32_t[0x400]"]
-  , ["0x1000", "stack_top_offset", "int32_t"]
-  , ["0x1004", "locals_offset_from_stack", "int32_t"]
-  , ["0x1008", "__field_1014_can_be_negative", "int32_t"]
-  , ["0x100c", "__end", null]
-  ]
-
 , "zEclRunContextList": 
   [ ["0x0", "entry", "struct zEclRunContext*"]
   , ["0x4", "next", "struct zEclRunContextList*"]
   , ["0x8", "prev", "struct zEclRunContextList*"]
   , ["0xc", "__seldom_used", "struct zEclRunContextList*"]
   , ["0x10", "__end", null]
+  ]
+
+, "zEclStack": 
+  [ ["0x0", "data", "int32_t[0x400]"]
+  , ["0x1000", "stack_offset", "int32_t"]
+  , ["0x1004", "base_offset", "int32_t"]
+  , ["0x1008", "__end", null]
   ]
 
 , "zEclSubroutinePtrs": 

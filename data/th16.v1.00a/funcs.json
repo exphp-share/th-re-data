@@ -44,7 +44,7 @@
 , {"addr": "0x402fb0", "name": "Thread::restart", "comment": null}
 , {"addr": "0x402ff0", "name": "PosVel::update_secondary_fields", "comment": null}
 , {"addr": "0x403110", "name": "PosVel::step", "comment": null}
-, {"addr": "0x4033d0", "name": "ecl_sub_4033d0_math", "comment": null}
+, {"addr": "0x4033d0", "name": "PosVel::ecl_sub_4033d0_math", "comment": null}
 , {"addr": "0x4033f0", "name": "interp_common_methods", "comment": null}
 , {"addr": "0x403d30", "name": "collision_test_circle_rect", "comment": null}
 , {"addr": "0x4049c0", "name": "collision_test_rect_rect", "comment": null}
@@ -853,12 +853,12 @@
 , {"addr": "0x471db0", "name": "EclRunContext::call_sub", "comment": null}
 , {"addr": "0x472030", "name": "EclRunContext::ecl_run", "comment": null}
 , {"addr": "0x473bc0", "name": "Enemy::ecl_run", "comment": null}
-, {"addr": "0x473c90", "name": "ecl_get_int_arg", "comment": null}
-, {"addr": "0x473d40", "name": "ecl_get_float_arg", "comment": null}
-, {"addr": "0x473e40", "name": "ecl_get_int_arg_given_value", "comment": null}
-, {"addr": "0x473ef0", "name": "ecl_get_float_arg_given_value", "comment": null}
-, {"addr": "0x473fe0", "name": "ecl_push_473fe0", "comment": null}
-, {"addr": "0x474090", "name": "ecl_pushf_474090", "comment": null}
+, {"addr": "0x473c90", "name": "EclRunContext::ecl_get_int_arg", "comment": null}
+, {"addr": "0x473d40", "name": "EclRunContext::ecl_get_float_arg", "comment": null}
+, {"addr": "0x473e40", "name": "EclRunContext::ecl_get_int_arg_given_value", "comment": null}
+, {"addr": "0x473ef0", "name": "EclRunContext::ecl_get_float_arg_given_value", "comment": null}
+, {"addr": "0x473fe0", "name": "EclRunContext::ecl_push_473fe0", "comment": null}
+, {"addr": "0x474090", "name": "EclRunContext::ecl_pushf_474090", "comment": null}
 , {"addr": "0x474330", "name": "EclRunContext::get_int_arg0_ptr", "comment": null}
 , {"addr": "0x4743a0", "name": "EclRunContext::get_float_arg_ptr", "comment": null}
 , {"addr": "0x4744e0", "name": "Enemy::lookup_async", "comment": null}
@@ -866,6 +866,7 @@
 , {"addr": "0x474530", "name": "method_474530", "comment": null}
 , {"addr": "0x474740", "name": "EclFileManager::find_sub_by_name", "comment": null}
 , {"addr": "0x4747d0", "name": "EclRunContext::get_subroutine_ptr", "comment": null}
+, {"addr": "0x474860", "name": "EclStack::ecl_return", "comment": null}
 , {"addr": "0x474890", "name": "Enemy::load_sub_by_name", "comment": null}
 , {"addr": "0x4748df", "name": "leaf_4748df_bad_allocation", "comment": null}
 , {"addr": "0x47499b", "name": "__security_check_cookie", "comment": null}

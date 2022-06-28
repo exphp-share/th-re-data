@@ -640,8 +640,8 @@
 , {"addr": "0x476a60", "name": "AnmManager::allocate_vm", "comment": null}
 , {"addr": "0x478a70", "name": "ecl_run", "comment": null}
 , {"addr": "0x47a940", "name": "Enemy::ecl_run", "comment": null}
-, {"addr": "0x47aa10", "name": "ecl_get_int_arg", "comment": null}
-, {"addr": "0x47aac0", "name": "ecl_get_float_arg", "comment": null}
+, {"addr": "0x47aa10", "name": "EclRunContext::ecl_get_int_arg", "comment": null}
+, {"addr": "0x47aac0", "name": "EclRunContext::ecl_get_float_arg", "comment": null}
 , {"addr": "0x47ac70", "name": "EclRunContext::get_int_arg_ptr", "comment": null}
 , {"addr": "0x47ace0", "name": "EclRunContext::get_float_arg_ptr", "comment": null}
 , {"addr": "0x47ae20", "name": "cartesian_from_polar_47ae20", "comment": null}

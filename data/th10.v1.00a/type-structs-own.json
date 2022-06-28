@@ -257,9 +257,7 @@
 , "zEclRunContext": 
   [ ["0x0", "time", "float"]
   , ["0x4", "cur_instr", "struct zEclRawInstructionHeader*"]
-  , ["0x8", "__stack", "int32_t[0x400]"]
-  , ["0x1008", "stack_top_offset", "int32_t"]
-  , ["0x100c", "locals_offset_from_stack", "int32_t"]
+  , ["0x8", "stack", "struct zEclStack"]
   , ["0x1010", "async_id", "int32_t"]
   , ["0x1014", "enemy", "struct zEnemy*"]
   , ["0x1018", "__set_by_ins_20", "int32_t"]
@@ -280,6 +278,13 @@
   , ["0x4", "next", "struct zEclRunContextList*"]
   , ["0x8", "prev", "struct zEclRunContextList*"]
   , ["0xc", "__end", null]
+  ]
+
+, "zEclStack": 
+  [ ["0x0", "data", "int32_t[0x400]"]
+  , ["0x1000", "stack_offset", "int32_t"]
+  , ["0x1004", "base_offset", "int32_t"]
+  , ["0x1008", "__end", null]
   ]
 
 , "zEclVm": 

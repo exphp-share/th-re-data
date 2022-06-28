@@ -164,6 +164,7 @@
 , {"addr": "0x4238b0", "name": "Ending::on_tick__stub", "comment": null}
 , {"addr": "0x4238c0", "name": "Ending::on_draw__noop", "comment": null}
 , {"addr": "0x423b80", "name": "Ending::on_tick__main", "comment": null}
+, {"addr": "0x424b10", "name": "EclVm::constructor", "comment": null}
 , {"addr": "0x4251d0", "name": "Enemy::write_autosave_data", "comment": null}
 , {"addr": "0x425330", "name": "Enemy::operator delete", "comment": null}
 , {"addr": "0x425360", "name": "EnemyData::constructor", "comment": null}
@@ -465,8 +466,11 @@
 , {"addr": "0x489bd0", "name": "AnmManager::read_vm_autosave_data", "comment": null}
 , {"addr": "0x489d70", "name": "AnmVm::become_snapshot_of", "comment": null}
 , {"addr": "0x489fe0", "name": "AnmVm::restore_from_snapshot", "comment": null}
+, {"addr": "0x48ca80", "name": "EnemyRunContext::ecl_run", "comment": null}
+, {"addr": "0x48e690", "name": "Enemy::ecl_run", "comment": null}
 , {"addr": "0x48e750", "name": "ecl_get_int_arg", "comment": null}
 , {"addr": "0x48f340", "name": "EclFileManager::find_sub_by_name", "comment": null}
+, {"addr": "0x48f410", "name": "EclVm::operator new", "comment": null}
 , {"addr": "0x48f700", "name": "sub_48f700__ecl_context_snapshot_stuff__prolly", "comment": null}
 , {"addr": "0x48f820", "name": "sub_48f820__prolly_EclRunContext_write_autosave_data", "comment": null}
 , {"addr": "0x490390", "name": "check_security_cookie", "comment": null}
