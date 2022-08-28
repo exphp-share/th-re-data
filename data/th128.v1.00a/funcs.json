@@ -75,14 +75,16 @@
 , {"addr": "0x4135b0", "name": "Ending::operator new"}
 , {"addr": "0x4136e0", "name": "Ending::on_tick"}
 , {"addr": "0x413720", "name": "Ending::on_draw"}
+, {"addr": "0x4142e0", "name": "EclRunContext::constructor"}
 , {"addr": "0x414ff0", "name": "EnemyManager::allocate_new_enemy"}
 , {"addr": "0x415310", "name": "EnemyManager::initialize"}
 , {"addr": "0x415660", "name": "EnemyManager::destructor"}
 , {"addr": "0x415840", "name": "EnemyManager::operator new"}
 , {"addr": "0x415a20", "name": "EnemyManager::on_tick"}
 , {"addr": "0x415a60", "name": "EnemyManager::on_draw"}
-, {"addr": "0x415a70", "name": "EnemyFull::operator new"}
-, {"addr": "0x417ff0", "name": "Enemy::ecl_run_over_256"}
+, {"addr": "0x415a70", "name": "Enemy::constructor"}
+, {"addr": "0x417370", "name": "Enemy::die"}
+, {"addr": "0x417ff0", "name": "EnemyData::ecl_run_over_256"}
 , {"addr": "0x41f800", "name": "FpsCounter::initialize"}
 , {"addr": "0x41f8c0", "name": "FpsCounter::operator new"}
 , {"addr": "0x41fa90", "name": "FpsCounter::on_draw"}
@@ -222,6 +224,8 @@
 , {"addr": "0x4666c0", "name": "AnmManager::on_tick_08__stub"}
 , {"addr": "0x466af0", "name": "AnmManager::on_tick_1e__body"}
 , {"addr": "0x466be0", "name": "AnmManager::on_tick_08"}
+, {"addr": "0x466ce0", "name": "AnmManager::draw_layer"}
+, {"addr": "0x466f60", "name": "AnmManager::sub_466f60__remove_probably"}
 , {"addr": "0x4670b0", "name": "sub_4670b0_creates_vm"}
 , {"addr": "0x467420", "name": "AnmManager::get_vm_with_id"}
 , {"addr": "0x467480", "name": "anm_interrupt_by_id"}
@@ -233,6 +237,10 @@
 , {"addr": "0x4687d0", "name": "register_new__on_draw__0"}
 , {"addr": "0x468830", "name": "register_new__on_tick__1"}
 , {"addr": "0x468890", "name": "register_new__on_draw__1"}
+, {"addr": "0x46e100", "name": "EnemyRunContext::ecl_run"}
+, {"addr": "0x46fe20", "name": "Enemy::ecl_run"}
+, {"addr": "0x4702c0", "name": "Enemy::sub_4702c0"}
+, {"addr": "0x4706a0", "name": "EclVm::operator new"}
 , {"addr": "0x47290c", "name": "free_"}
 , {"addr": "0x47296c", "name": "malloc"}
 , {"addr": "0x4729ec", "name": "free"}

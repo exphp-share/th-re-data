@@ -1,0 +1,43 @@
+
+[ {"addr": "0x41f830", "name": "lookup_table_41f830", "type": {"is": "array", "len": 8, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x4214e4", "name": "lookup_table_4214e4", "type": {"is": "array", "len": 11, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x423e60", "name": "lookup_table_423e60", "type": {"is": "array", "len": 12, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x423e7c", "name": "lookup_table_423e7c", "type": {"is": "array", "len": 12, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x42df38", "name": "lookup_table_42df38", "type": {"is": "array", "len": 128, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x434628", "name": "lookup_table_434628", "type": {"is": "array", "len": 104, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x43d8ac", "name": "lookup_table_43d8ac", "type": {"is": "array", "len": 727, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x43f038", "name": "lookup_table_43f038", "type": {"is": "array", "len": 94, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x43fda8", "name": "lookup_table_43fda8", "type": {"is": "array", "len": 81, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x44c420", "name": "lookup_table_44c420", "type": {"is": "array", "len": 19, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x44f4d8", "name": "lookup_table_44f4d8", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x456ddc", "name": "lookup_table_456ddc", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x45baf0", "name": "lookup_table_45baf0", "type": {"is": "array", "len": 15, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x45de04", "name": "lookup_table_45de04", "type": {"is": "array", "len": 10, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x46caa8", "name": "lookup_table_46caa8", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x474b10", "name": "lookup_table_474b10", "type": {"is": "array", "len": 24, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x47aa48", "name": "lookup_table_47aa48", "type": {"is": "array", "len": 36, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x47ab8c", "name": "lookup_table_47ab8c", "type": {"is": "array", "len": 32, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x47ac44", "name": "lookup_table_47ac44", "type": {"is": "array", "len": 30, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x47e22c", "name": "lookup_table_47e22c", "type": {"is": "array", "len": 215, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x47e454", "name": "lookup_table_47e454", "type": {"is": "array", "len": 314, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x47f038", "name": "lookup_table_47f038", "type": {"is": "array", "len": 17, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x484358", "name": "lookup_table_484358", "type": {"is": "array", "len": 29, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x487b78", "name": "lookup_table_487b78", "type": {"is": "array", "len": 30, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x48ee30", "name": "lookup_table_48ee30", "type": {"is": "array", "len": 95, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x494030", "name": "lookup_table_494030", "type": {"is": "array", "len": 12, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x49cea5", "name": "lookup_table_49cea5", "type": {"is": "array", "len": 11, "inner": {"is": "int", "signed": false, "size": 1}}}
+, {"addr": "0x4c2310", "name": "__load_configuration_directory_table", "type": {"is": "named", "name": "Load_Configuration_Directory_Table"}}
+, {"addr": "0x4c23d0", "name": "__debug_directory_entries", "type": {"is": "array", "len": 1, "inner": {"is": "named", "name": "Debug_Directory_Table"}}}
+, {"addr": "0x4c2400", "name": "__tls_directory", "type": {"is": "named", "name": "TLS_Directory"}}
+, {"addr": "0x4c44f4", "name": "__seh_table", "type": {"is": "array", "len": 79, "inner": {"is": "int", "signed": false, "size": 4}}}
+, {"addr": "0x4cba90", "name": "STAGE_DATA_TABLE", "type": {"is": "array", "len": 10, "inner": {"is": "named", "name": "zTableStageData"}}}
+, {"addr": "0x4d7ab4", "name": "UPDATE_FUNC_REGISTRY", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d7ab8", "name": "ABILITY_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAbilityManager"}}}
+, {"addr": "0x4d7ac4", "name": "BLACK_MARKET_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zBlackMarket"}}}
+, {"addr": "0x4d7ac8", "name": "PERMANENT_CARD_SHOP_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPermanentCardShop"}}}
+, {"addr": "0x4d7ad8", "name": "STAGE_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zStage"}}}
+, {"addr": "0x4d7b08", "name": "GUI_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zGui"}}}
+, {"addr": "0x4d7b0c", "name": "GAME_THREAD_PTR", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4d7c54", "name": "CURRENT_STAGE_DATA", "type": {"is": "ptr", "inner": {"is": "named", "name": "zTableStageData"}}}
+, {"addr": "0x529e88", "name": "ANM_MANAGER_PTR", "type": {"is": "int", "signed": true, "size": 4}}
+]

@@ -1,5 +1,6 @@
 
-[ {"addr": "0x49fc50", "name": "VTABLE_ECL_ENEMY_FULL", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+[ {"addr": "0x49fc34", "name": "VTABLE_ECL_BASE", "type": {"is": "named", "name": "zVTableEcl"}}
+, {"addr": "0x49fc50", "name": "VTABLE_ECL_ENEMY_FULL", "type": {"is": "named", "name": "zVTableEcl"}}
 , {"addr": "0x4a05fc", "name": "VTABLE_LASER_BASE_CLASS", "type": {"is": "named", "name": "zVTableLaser"}}
 , {"addr": "0x4a0654", "name": "VTABLE_LASER_LINE", "type": {"is": "named", "name": "zVTableLaser"}}
 , {"addr": "0x4a06ac", "name": "VTABLE_LASER_CURVE", "type": {"is": "named", "name": "zVTableLaser"}}
@@ -33,8 +34,8 @@
 , {"addr": "0x4a42d0", "name": "float(56)", "type": {"is": "float", "size": 4}}
 , {"addr": "0x4a9fe8", "name": "__load_configuration_directory_table", "type": {"is": "named", "name": "Load_Configuration_Directory_Table"}}
 , {"addr": "0x4ad138", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
-, {"addr": "0x4aebd4", "name": "SHT_FUNCS_2", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
-, {"addr": "0x4aedf0", "name": "__FUNC_LIST_4AEDF0", "type": {"is": "array", "len": 7, "inner": {"is": "ptr", "inner": {"is": "void"}}}, "comment": "Takes Player in ecx"}
+, {"addr": "0x4aebd4", "name": "SHT_ON_TICK_FUNCS", "type": {"is": "array", "len": 6, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
+, {"addr": "0x4aedf0", "name": "SHT_ON_INIT_FUNCS", "type": {"is": "array", "len": 7, "inner": {"is": "ptr", "inner": {"is": "void"}}}, "comment": "Takes Player in ecx"}
 , {"addr": "0x4aee10", "name": "SHT_ON_HIT_FUNCS", "type": {"is": "array", "len": 2, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
 , {"addr": "0x4af0fc", "name": "ECL_FUNC_SET_FUNCS", "type": {"is": "array", "len": 7, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
 , {"addr": "0x4af280", "name": "BULLET_TYPE_DATA_START", "type": {"is": "named", "name": "zTableBulletTypeData"}, "comment": "This table has 31 entries but I only type annotate the first\nbecause typing this as an array of length 31 makes binja\nbecome slow LITERALLY EVERYWHERE"}

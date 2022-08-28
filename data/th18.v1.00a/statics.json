@@ -112,6 +112,7 @@
 , {"addr": "0x4bee00", "name": "__tls_directory", "type": {"is": "named", "name": "TLS_Directory"}}
 , {"addr": "0x4c0748", "name": "__seh_table", "type": {"is": "array", "len": 65, "inner": {"is": "int", "signed": false, "size": 4}}}
 , {"addr": "0x4c4a4c", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4c9410", "name": "STAGE_DATA_TABLE", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zTableStageData"}}}
 , {"addr": "0x4cabe8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": {"is": "int", "signed": true, "size": 1}}
 , {"addr": "0x4cccc0", "name": "GLOBALS", "type": {"is": "named", "name": "zGlobals"}}
 , {"addr": "0x4ccdf0", "name": "SUPERVISOR", "type": {"is": "named", "name": "zSupervisor"}}
@@ -131,6 +132,7 @@
 , {"addr": "0x4cf410", "name": "PLAYER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zPlayer"}}}
 , {"addr": "0x4cf418", "name": "REPLAY_MANAGER_PTR", "type": {"is": "int", "signed": true, "size": 4}}
 , {"addr": "0x4cf420", "name": "POPUP_MANAGER_PTR", "type": {"is": "int", "signed": true, "size": 4}}
+, {"addr": "0x4cf428", "name": "CUR_STAGE_DATA", "type": {"is": "ptr", "inner": {"is": "named", "name": "zTableStageData"}}}
 , {"addr": "0x4cf43c", "name": "MAIN_MENU_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zMainMenu"}}}
 , {"addr": "0x51f65c", "name": "ANM_MANAGER_PTR", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmManager"}}}
 , {"addr": "0x568c30", "name": "WINDOW", "type": {"is": "int", "signed": true, "size": 4}}

@@ -72,12 +72,15 @@
 , {"addr": "0x41c010", "name": "Ending::on_tick_24"}
 , {"addr": "0x41c0f0", "name": "Ending::on_tick_24__stub"}
 , {"addr": "0x41c100", "name": "Ending::on_draw_40"}
+, {"addr": "0x41d2e0", "name": "EclVm::constructor"}
+, {"addr": "0x41e270", "name": "EnemyManager::allocate_new_enemy"}
 , {"addr": "0x41e6a0", "name": "EnemyManager::initialize"}
 , {"addr": "0x41ea20", "name": "EnemyManager::destructor"}
 , {"addr": "0x41ec00", "name": "EnemyManager::operator new"}
 , {"addr": "0x41edb0", "name": "EnemyManager::on_tick_1a"}
 , {"addr": "0x41edf0", "name": "EnemyManager::on_draw_16"}
-, {"addr": "0x421e40", "name": "Enemy::ecl_run_over_300"}
+, {"addr": "0x41ee00", "name": "Enemy::constructor"}
+, {"addr": "0x421e40", "name": "EnemyData::ecl_run_over_300"}
 , {"addr": "0x426db0", "name": "EnemyManager::ecl_enm_create"}
 , {"addr": "0x42bc40", "name": "FpsCounter::initialize"}
 , {"addr": "0x42bec0", "name": "FpsCounter::on_draw"}
@@ -259,6 +262,10 @@
 , {"addr": "0x483830", "name": "AnmManager::on_tick_09"}
 , {"addr": "0x4839b0", "name": "AnmManager::on_tick_22"}
 , {"addr": "0x4839e0", "name": "AnmManager::on_tick_09__stub"}
+, {"addr": "0x484280", "name": "AnmManager::get_vm_with_id"}
+, {"addr": "0x487540", "name": "EclRunContext::ecl_run"}
+, {"addr": "0x489040", "name": "Enemy::ecl_run"}
+, {"addr": "0x489b20", "name": "EclVm::operator new"}
 , {"addr": "0x48a697", "name": "malloc"}
 , {"addr": "0x48a6e8", "name": "free"}
 , {"addr": "0x48a7bc", "name": "free_"}

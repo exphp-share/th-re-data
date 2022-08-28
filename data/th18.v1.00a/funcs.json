@@ -25,7 +25,7 @@
 , {"addr": "0x402bf0", "name": "PosVel::update_secondary_fields"}
 , {"addr": "0x404d70", "name": "reduce_angle_404d70"}
 , {"addr": "0x404dd0", "name": "cartesian_from_polar_404dd0"}
-, {"addr": "0x405bf0", "name": "sub_405bf0_creates_vm"}
+, {"addr": "0x405bf0", "name": "AnmLoaded::instantiate_vm_to_world_list_back"}
 , {"addr": "0x405d10", "name": "Timer::set_value"}
 , {"addr": "0x407420", "name": "AnmManager::sub_407420"}
 , {"addr": "0x407d70", "name": "TableCardData::get"}
@@ -38,6 +38,8 @@
 , {"addr": "0x408c30", "name": "AbilityManager::sub_408c30"}
 , {"addr": "0x408d00", "name": "AbilityManager::create_all_card_lists_for_hud"}
 , {"addr": "0x408de0", "name": "AbilityManager::create_card_list_for_hud"}
+, {"addr": "0x409590", "name": "AnmLoaded::instantiate_vm_to_ui_list_front"}
+, {"addr": "0x409670", "name": "AnmLoaded::instantiate_vm_to_ui_list_back"}
 , {"addr": "0x409750", "name": "Timer::decrement"}
 , {"addr": "0x409940", "name": "BulletManager::sub_409940"}
 , {"addr": "0x409a30", "name": "Player::get_damage_source_by_index"}
@@ -315,6 +317,8 @@
 , {"addr": "0x413150", "name": "CardBaseClass::on_anm_id_assigned_to_hud"}
 , {"addr": "0x413160", "name": "CardBaseClass::on_draw"}
 , {"addr": "0x413170", "name": "CardBaseClass::method_4C"}
+, {"addr": "0x413180", "name": "AnmLoaded::instantiate_vm_to_world_list_back2"}
+, {"addr": "0x416a10", "name": "AnmLoaded::instantiate_vm_to_ui_list_back2"}
 , {"addr": "0x4171b0", "name": "AbilityShop::initialize"}
 , {"addr": "0x417880", "name": "AbilityShop::sub_417880"}
 , {"addr": "0x417cc0", "name": "AbilityShop::on_tick"}
@@ -390,6 +394,7 @@
 , {"addr": "0x423980", "name": "BulletManager::destroy_all"}
 , {"addr": "0x423af0", "name": "BulletManager::operator new"}
 , {"addr": "0x423ce0", "name": "BulletManager::operator delete"}
+, {"addr": "0x423e10", "name": "Bullet::on_tick"}
 , {"addr": "0x424c50", "name": "BulletManager::on_tick__body"}
 , {"addr": "0x424e70", "name": "BulletManager::on_tick"}
 , {"addr": "0x424eb0", "name": "BulletManager::on_draw"}
@@ -408,32 +413,37 @@
 , {"addr": "0x42af60", "name": "EffectManager::on_draw"}
 , {"addr": "0x42b650", "name": "Ending::initialize"}
 , {"addr": "0x42cb90", "name": "AsciiManager::sub_42cb90"}
-, {"addr": "0x42cdd0", "name": "EnemyFull::sub_42cdd0"}
-, {"addr": "0x42ce80", "name": "EnemyFull::sub_42ce80"}
+, {"addr": "0x42ccc0", "name": "EclRunContext::constructor"}
+, {"addr": "0x42cdd0", "name": "Enemy::sub_42cdd0"}
+, {"addr": "0x42ce80", "name": "Enemy::sub_42ce80"}
 , {"addr": "0x42d7d0", "name": "EnemyManager::allocate_new_enemy"}
 , {"addr": "0x42dc20", "name": "EnemyManager::operator new"}
 , {"addr": "0x42ddc0", "name": "EnemyManager::operator delete"}
 , {"addr": "0x42df50", "name": "EnemyManager::on_tick"}
 , {"addr": "0x42e0b0", "name": "EnemyManager::on_draw"}
-, {"addr": "0x42ed40", "name": "Enemy::step_game_logic"}
-, {"addr": "0x430d40", "name": "Enemy::ecl_run_over_300"}
-, {"addr": "0x437360", "name": "EnemyFull::ecl_get_int_global"}
-, {"addr": "0x437b20", "name": "EnemyFull::ecl_get_int_global_ptr"}
-, {"addr": "0x437c90", "name": "EnemyFull::ecl_get_float_global"}
-, {"addr": "0x4387e0", "name": "EnemyFull::ecl_get_float_global_ptr"}
-, {"addr": "0x438aa0", "name": "Enemy::get_int_arg__trampoline"}
-, {"addr": "0x438ac0", "name": "Enemy::get_int_arg_ptr__trampoline"}
-, {"addr": "0x438ad0", "name": "Enemy::get_float_arg__trampoline"}
-, {"addr": "0x438af0", "name": "Enemy::get_float_arg_ptr__trampoline"}
-, {"addr": "0x438d90", "name": "Enemy::ecl_func_set_1_6bs"}
-, {"addr": "0x439020", "name": "Enemy::ecl_func_call_2_ex"}
-, {"addr": "0x4391a0", "name": "Enemy::ecl_func_call_3_ex"}
-, {"addr": "0x439320", "name": "Enemy::ecl_func_set_4_ex"}
+, {"addr": "0x42e100", "name": "Enemy::constructor"}
+, {"addr": "0x42ed40", "name": "EnemyData::step_game_logic"}
+, {"addr": "0x430d40", "name": "EnemyData::ecl_run_over_300"}
+, {"addr": "0x437360", "name": "Enemy::ecl_get_int_global"}
+, {"addr": "0x437b20", "name": "Enemy::ecl_get_int_global_ptr"}
+, {"addr": "0x437c90", "name": "Enemy::ecl_get_float_global"}
+, {"addr": "0x4387e0", "name": "Enemy::ecl_get_float_global_ptr"}
+, {"addr": "0x438aa0", "name": "EnemyData::get_int_arg__trampoline"}
+, {"addr": "0x438ac0", "name": "EnemyData::get_int_arg_ptr__trampoline"}
+, {"addr": "0x438ad0", "name": "EnemyData::get_float_arg__trampoline"}
+, {"addr": "0x438af0", "name": "EnemyData::get_float_arg_ptr__trampoline"}
+, {"addr": "0x438d90", "name": "EnemyData::ecl_func_set_1_6bs"}
+, {"addr": "0x439020", "name": "EnemyData::ecl_func_call_2_ex"}
+, {"addr": "0x4391a0", "name": "EnemyData::ecl_func_call_3_ex"}
+, {"addr": "0x439320", "name": "EnemyData::ecl_func_set_4_ex"}
+, {"addr": "0x43a030", "name": "AnmLoaded::instantiate_vm_to_world_list_front"}
+, {"addr": "0x43a110", "name": "AnmLoaded::instantiate_vm_to_world_list_front2"}
 , {"addr": "0x43a340", "name": "FpsCounter::on_draw"}
 , {"addr": "0x43a3f0", "name": "GuiMsgVm::destructor"}
 , {"addr": "0x43b800", "name": "Gui::operator new"}
 , {"addr": "0x43bb70", "name": "Gui::on_tick"}
 , {"addr": "0x43d6f0", "name": "Gui::on_tick__stub"}
+, {"addr": "0x43d720", "name": "GuiMsgVm::constructor"}
 , {"addr": "0x43e550", "name": "GuiMsgVm::run"}
 , {"addr": "0x4420e0", "name": "Gui::sub_4420e0"}
 , {"addr": "0x442480", "name": "LaserManager::destroy_all"}
@@ -573,6 +583,9 @@
 , {"addr": "0x45ea00", "name": "Player::tick_shooting_state"}
 , {"addr": "0x45f0f0", "name": "enm_compute_damage_sources"}
 , {"addr": "0x4615e0", "name": "ReplayManager::initialize"}
+, {"addr": "0x461db0", "name": "ReplayManager::on_tick_24__speedup_replay__body"}
+, {"addr": "0x462940", "name": "ReplayManager::on_tick_11__record_replay"}
+, {"addr": "0x462c30", "name": "ReplayManager::on_tick_24__speedup_replay"}
 , {"addr": "0x463dd0", "name": "PopupManager::operator new"}
 , {"addr": "0x463f50", "name": "PopupManager::operator delete"}
 , {"addr": "0x464020", "name": "PopupManager::on_tick"}
@@ -619,7 +632,10 @@
 , {"addr": "0x488400", "name": "AnmManager::insert_in_world_list_front"}
 , {"addr": "0x488490", "name": "AnmManager::insert_in_ui_list_back"}
 , {"addr": "0x488540", "name": "AnmManager::insert_in_ui_list_front"}
-, {"addr": "0x4885d0", "name": "AnmManager::remove_from_global_lists"}
+, {"addr": "0x4885d0", "name": "AnmManager::destroy_possibly_managed_vm"}
+, {"addr": "0x488770", "name": "AnmLoaded::instantiate_vm"}
+, {"addr": "0x4888f0", "name": "AnmLoaded::instantiate_child_vm"}
+, {"addr": "0x488a40", "name": "AnmLoaded::instantiate_orphan_vm_to_world_list_back"}
 , {"addr": "0x488b40", "name": "AnmManager::get_vm_with_id"}
 , {"addr": "0x488be0", "name": "AnmManager::interrupt_tree"}
 , {"addr": "0x488cf0", "name": "AnmManager::sub_488cf0"}
@@ -627,13 +643,13 @@
 , {"addr": "0x488da0", "name": "AnmManager::sub_488da0"}
 , {"addr": "0x4890b0", "name": "sub_4890b0__recursive"}
 , {"addr": "0x489320", "name": "AnmManager::allocate_new_vm"}
-, {"addr": "0x48b3a0", "name": "ecl_run"}
-, {"addr": "0x48d420", "name": "EnemyFull::ecl_run"}
-, {"addr": "0x48d4f0", "name": "ecl_get_int_arg"}
-, {"addr": "0x48d5a0", "name": "ecl_get_float_arg"}
+, {"addr": "0x48b3a0", "name": "EclRunContext::ecl_run"}
+, {"addr": "0x48d420", "name": "Enemy::ecl_run"}
+, {"addr": "0x48d4f0", "name": "EclRunContext::ecl_get_int_arg"}
+, {"addr": "0x48d5a0", "name": "EclRunContext::ecl_get_float_arg"}
 , {"addr": "0x48d750", "name": "EclRunContext::ecl_get_int_arg_ptr"}
 , {"addr": "0x48d7c0", "name": "EclRunContext::get_float_arg_ptr"}
-, {"addr": "0x48d920", "name": "EnemyFull::sub_48d920"}
+, {"addr": "0x48d920", "name": "Enemy::sub_48d920"}
 , {"addr": "0x48dc60", "name": "__security_check_cookie"}
 , {"addr": "0x48dc71", "name": "operator new"}
 , {"addr": "0x48dca1", "name": "operator delete"}

@@ -1,5 +1,6 @@
 
-[ {"addr": "0x494074", "name": "VTABLE_ECL_ENEMY_FULL", "type": {"is": "named", "name": "zVTableEcl"}}
+[ {"addr": "0x494058", "name": "VTABLE_ECL_BASE", "type": {"is": "named", "name": "zVTableEcl"}}
+, {"addr": "0x494074", "name": "VTABLE_ECL_ENEMY_FULL", "type": {"is": "named", "name": "zVTableEcl"}}
 , {"addr": "0x497e60", "name": "double(0.5)", "type": {"is": "float", "size": 8}}
 , {"addr": "0x497e78", "name": "double(6.2831854820251465)", "type": {"is": "float", "size": 8}}
 , {"addr": "0x497e80", "name": "double(3.1415927410125732)", "type": {"is": "float", "size": 8}}
@@ -50,6 +51,7 @@
 , {"addr": "0x49e078", "name": "__load_configuration_directory_table", "type": {"is": "named", "name": "Load_Configuration_Directory_Table"}}
 , {"addr": "0x4a2088", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
 , {"addr": "0x4a3828", "name": "STAGE_DATA", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zTableStageData"}}}
+, {"addr": "0x4a3a50", "name": "__SOME_HARDCODED_SHOOTER", "type": {"is": "named", "name": "zShtShooter"}}
 , {"addr": "0x4a3d64", "name": "ECL_FUNC_SET_FUNCS", "type": {"is": "array", "len": 13, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
 , {"addr": "0x4a3ec0", "name": "BULLET_TYPE_DATA_START", "type": {"is": "named", "name": "zTableBulletTypeData"}}
 , {"addr": "0x4a56e0", "name": "GLOBALS", "type": {"is": "int", "signed": true, "size": 4}}

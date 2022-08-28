@@ -4,6 +4,8 @@
 , {"addr": "0x4aa5f4", "name": "VTABLE_BOMB_SANAE", "type": {"is": "named", "name": "zVTableBomb"}}
 , {"addr": "0x4aa610", "name": "VTABLE_BOMB_YOUMU", "type": {"is": "named", "name": "zVTableBomb"}}
 , {"addr": "0x4aa62c", "name": "VTABLE_BOMB_DEFAULT", "type": {"is": "named", "name": "zVTableBomb"}}
+, {"addr": "0x4aabf8", "name": "VTABLE_ECL_BASE", "type": {"is": "named", "name": "zVTableEcl"}}
+, {"addr": "0x4aac14", "name": "VTABLE_ECL_ENEMY_FULL", "type": {"is": "named", "name": "zVTableEcl"}}
 , {"addr": "0x4ab064", "name": "VTABLE_LASER_BASE_CLASS", "type": {"is": "array", "len": 24, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
 , {"addr": "0x4ab0cc", "name": "VTABLE_LASER_LINE", "type": {"is": "array", "len": 24, "inner": {"is": "ptr", "inner": {"is": "void"}}}}
 , {"addr": "0x4ab134", "name": "VTABLE_LASER_CURVE", "type": {"is": "array", "len": 24, "inner": {"is": "ptr", "inner": {"is": "void"}}}}

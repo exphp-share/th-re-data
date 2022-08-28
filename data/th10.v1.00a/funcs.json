@@ -49,6 +49,10 @@
 , {"addr": "0x4089c0", "name": "Spellcard::initialize"}
 , {"addr": "0x408af0", "name": "Spellcard::destructor"}
 , {"addr": "0x408c90", "name": "Spellcard::operator new"}
+, {"addr": "0x408d60", "name": "Spellcard::on_registration"}
+, {"addr": "0x409220", "name": "Spellcard::on_registration__stub"}
+, {"addr": "0x409230", "name": "Spellcard::on_draw_0e"}
+, {"addr": "0x409270", "name": "Spellcard::on_draw_25"}
 , {"addr": "0x409d90", "name": "Globals::add_to_score"}
 , {"addr": "0x409e50", "name": "anm_trigger_leave_by_id"}
 , {"addr": "0x40a040", "name": "DebugSprtView::constructor"}
@@ -72,6 +76,8 @@
 , {"addr": "0x40ba80", "name": "Ending::on_draw__noop"}
 , {"addr": "0x40c480", "name": "anm_set_interrupt_2_by_id"}
 , {"addr": "0x40c4d0", "name": "anm_set_interrupt_3_by_id"}
+, {"addr": "0x40cc50", "name": "Enemy::operator delete"}
+, {"addr": "0x40cc70", "name": "EnemyData::constructor"}
 , {"addr": "0x40cfb0", "name": "EnemyManager::allocate_new_enemy"}
 , {"addr": "0x40d280", "name": "EnemyManager::initialize"}
 , {"addr": "0x40d530", "name": "EnemyManager::destructor"}
@@ -79,9 +85,14 @@
 , {"addr": "0x40d750", "name": "EnemyManager::on_tick"}
 , {"addr": "0x40d810", "name": "EnemyManager::on_tick__stub"}
 , {"addr": "0x40d820", "name": "EnemyManager::on_draw"}
-, {"addr": "0x40dc80", "name": "Enemy::on_tick"}
-, {"addr": "0x40e770", "name": "ecl_run_over_256"}
-, {"addr": "0x411fc0", "name": "EnemyFull::get_int_global"}
+, {"addr": "0x40d830", "name": "Enemy::constructor"}
+, {"addr": "0x40dc80", "name": "EnemyData::on_tick"}
+, {"addr": "0x40e760", "name": "Enemy::ecl_run_over_256"}
+, {"addr": "0x40e770", "name": "EnemyData::ecl_run_over_256"}
+, {"addr": "0x411fc0", "name": "Enemy::ecl_get_int_global"}
+, {"addr": "0x412300", "name": "Enemy::ecl_get_int_global_ptr"}
+, {"addr": "0x412350", "name": "Enemy::ecl_get_float_global"}
+, {"addr": "0x4126d0", "name": "Enemy::ecl_get_float_global_ptr"}
 , {"addr": "0x412ff0", "name": "Globals::sub_412ff0_faith_timer_related"}
 , {"addr": "0x413350", "name": "FpsCounter::operator new"}
 , {"addr": "0x4135d0", "name": "FpsCounter::on_draw"}
@@ -177,6 +188,7 @@
 , {"addr": "0x427e90", "name": "Player::shoot_one_bullet"}
 , {"addr": "0x428160", "name": "Player::do_shooting"}
 , {"addr": "0x4281d0", "name": "Player::tick_shooting_state"}
+, {"addr": "0x428280", "name": "Player::tick_bullets"}
 , {"addr": "0x428f60", "name": "ReplayManager::initialize"}
 , {"addr": "0x4294a0", "name": "ReplayManager::destructor"}
 , {"addr": "0x429610", "name": "ReplayManager::operator new"}
@@ -249,6 +261,10 @@
 , {"addr": "0x44b810", "name": "sub_44b810_logs_debug_messages"}
 , {"addr": "0x44b8e0", "name": "sub_44b8e0_logs_debug_messages"}
 , {"addr": "0x44c150", "name": "sub_44c150_calls_WaitForSingleObject"}
+, {"addr": "0x44e1a0", "name": "EclRunContext::ecl_run"}
+, {"addr": "0x44fd10", "name": "Enemy::ecl_run"}
+, {"addr": "0x450500", "name": "EclRunContext::operator new"}
+, {"addr": "0x4506d0", "name": "EclStack::ecl_return"}
 , {"addr": "0x452422", "name": "free_"}
 , {"addr": "0x452493", "name": "malloc"}
 , {"addr": "0x4524a1", "name": "free"}

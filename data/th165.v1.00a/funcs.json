@@ -35,7 +35,6 @@
 , {"addr": "0x40eb80", "name": "BulletManager::operator new"}
 , {"addr": "0x40ed90", "name": "BulletManager::operator free"}
 , {"addr": "0x40eed0", "name": "Bullet::on_tick"}
-, {"addr": "0x40fcf0", "name": "Bullet::step_interpolators"}
 , {"addr": "0x4100c0", "name": "BulletManager::on_tick__body"}
 , {"addr": "0x4102b0", "name": "BulletManager::on_tick"}
 , {"addr": "0x4102e0", "name": "BulletManager::on_draw"}
@@ -56,20 +55,20 @@
 , {"addr": "0x415f10", "name": "EffectManager::on_draw"}
 , {"addr": "0x416690", "name": "EnemyBaseClass::constructor"}
 , {"addr": "0x416800", "name": "EnemyDrop::eject_all_drops"}
-, {"addr": "0x416a10", "name": "Enemy::constructor"}
+, {"addr": "0x416a10", "name": "EnemyData::constructor"}
 , {"addr": "0x416b90", "name": "EnemyManager::set_boss_id"}
 , {"addr": "0x417010", "name": "EnemyManager::allocate_new_enemy"}
 , {"addr": "0x4174f0", "name": "EnemyManager::operator new"}
 , {"addr": "0x417960", "name": "EnemyManager::on_tick"}
 , {"addr": "0x4179a0", "name": "EnemyManager::on_draw"}
-, {"addr": "0x4179b0", "name": "EnemyFull::initialize"}
-, {"addr": "0x419640", "name": "EnemyFull::on_tick"}
-, {"addr": "0x41a880", "name": "EnemyFull::ecl_run_over_300__trampoline"}
-, {"addr": "0x41a890", "name": "Enemy::ecl_run_over_300"}
-, {"addr": "0x41fd10", "name": "Enemy::ecl_enm_create"}
-, {"addr": "0x420770", "name": "EnemyFull::get_int_var"}
-, {"addr": "0x4213f0", "name": "EnemyFull::get_int_var_ptr"}
-, {"addr": "0x421750", "name": "EnemyFull::get_float_var"}
+, {"addr": "0x4179b0", "name": "Enemy::initialize"}
+, {"addr": "0x419640", "name": "Enemy::on_tick"}
+, {"addr": "0x41a880", "name": "Enemy::ecl_run_over_300__trampoline"}
+, {"addr": "0x41a890", "name": "EnemyData::ecl_run_over_300"}
+, {"addr": "0x41fd10", "name": "EnemyData::ecl_enm_create"}
+, {"addr": "0x420770", "name": "Enemy::get_int_var"}
+, {"addr": "0x4213f0", "name": "Enemy::get_int_var_ptr"}
+, {"addr": "0x421750", "name": "Enemy::get_float_var"}
 , {"addr": "0x422d10", "name": "sub_422d10_get_int_val"}
 , {"addr": "0x422d40", "name": "sub_422d40_get_float_val"}
 , {"addr": "0x423680", "name": "sub_423680_funccall"}

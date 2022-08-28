@@ -28,12 +28,12 @@
 , {"addr": "0x408cb0", "name": "Spellcard::on_draw_13"}
 , {"addr": "0x408de0", "name": "sub_408de0_load_sub"}
 , {"addr": "0x408e70", "name": "ecl_run"}
-, {"addr": "0x411f70", "name": "Enemy::ecl_call_impl"}
+, {"addr": "0x411f70", "name": "EnemyData::ecl_call_impl"}
 , {"addr": "0x412180", "name": "sub_412180_debug_log"}
 , {"addr": "0x4149f0", "name": "EnemyManager::operator new"}
 , {"addr": "0x414b90", "name": "EnemyManager::constructor"}
-, {"addr": "0x415040", "name": "Enemy::constructor"}
-, {"addr": "0x4152d0", "name": "Enemy::destructor"}
+, {"addr": "0x415040", "name": "EnemyData::constructor"}
+, {"addr": "0x4152d0", "name": "EnemyData::destructor"}
 , {"addr": "0x4153d0", "name": "EnemyManager::initialize"}
 , {"addr": "0x4154e0", "name": "EnemyManager::destructor"}
 , {"addr": "0x415970", "name": "EnemyManager::on_tick__body"}

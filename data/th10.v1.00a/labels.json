@@ -109,6 +109,50 @@
   , {"addr": "0x411ca6", "label": "368__diffWait"}
   , {"addr": "0x411d18", "label": "default"}
   ]
+, "eclivar": 
+  [ {"addr": "0x411fd9", "label": "-10000"}
+  , {"addr": "0x411fe6", "label": "-9999"}
+  , {"addr": "0x411ff8", "label": "-9987"}
+  , {"addr": "0x41200a", "label": "-9991"}
+  , {"addr": "0x41201d", "label": "-9990"}
+  , {"addr": "0x412031", "label": "-9988"}
+  , {"addr": "0x41203a", "label": "-9986"}
+  , {"addr": "0x412048", "label": "-9985"}
+  , {"addr": "0x412051", "label": "-9984"}
+  , {"addr": "0x41205a", "label": "-9983"}
+  , {"addr": "0x412063", "label": "-9982"}
+  , {"addr": "0x41206c", "label": "-9981"}
+  , {"addr": "0x41207a", "label": "-9980"}
+  , {"addr": "0x412088", "label": "-9979"}
+  , {"addr": "0x412096", "label": "-9978"}
+  , {"addr": "0x4120a4", "label": "-9997__multiple"}
+  , {"addr": "0x4120b2", "label": "-9995__multiple"}
+  , {"addr": "0x4120c0", "label": "-9994__multiple"}
+  , {"addr": "0x4120ce", "label": "-9993__multiple"}
+  , {"addr": "0x4120dc", "label": "-9992__multiple"}
+  , {"addr": "0x4120ea", "label": "-9971"}
+  , {"addr": "0x4120f8", "label": "-9970"}
+  , {"addr": "0x412106", "label": "-9958"}
+  , {"addr": "0x41211c", "label": "-9969"}
+  , {"addr": "0x41212a", "label": "-9968"}
+  , {"addr": "0x412138", "label": "-9967"}
+  , {"addr": "0x412146", "label": "-9966"}
+  , {"addr": "0x412154", "label": "-9965"}
+  , {"addr": "0x412168", "label": "-9964"}
+  , {"addr": "0x41217b", "label": "-9963"}
+  , {"addr": "0x412192", "label": "-9962"}
+  , {"addr": "0x41219a", "label": "-9996__multiple"}
+  , {"addr": "0x4121a8", "label": "-9961"}
+  , {"addr": "0x4121bf", "label": "-9960"}
+  , {"addr": "0x4121c7", "label": "-9959"}
+  , {"addr": "0x4121cf", "label": "-9954"}
+  , {"addr": "0x4121d8", "label": "-9953"}
+  , {"addr": "0x4121e8", "label": "-9952"}
+  , {"addr": "0x4121f9", "label": "-9951"}
+  , {"addr": "0x41220a", "label": "-9950"}
+  , {"addr": "0x41221b", "label": "-9957"}
+  , {"addr": "0x412223", "label": "-9998__multiple"}
+  ]
 , "msg": 
   [ {"addr": "0x415f1d", "label": "14__textLine1"}
   , {"addr": "0x415f22", "label": "15__textLine2"}

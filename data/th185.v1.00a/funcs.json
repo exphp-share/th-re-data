@@ -1,0 +1,60 @@
+
+[ {"addr": "0x401150", "name": "register__on_tick"}
+, {"addr": "0x401200", "name": "register__on_draw"}
+, {"addr": "0x401410", "name": "UpdateFuncRegistry::run_all_on_draw"}
+, {"addr": "0x4015a0", "name": "UpdateFunc::operator new"}
+, {"addr": "0x408690", "name": "AbilityManager::operator new"}
+, {"addr": "0x408a40", "name": "AbilityManager::on_tick"}
+, {"addr": "0x408fa0", "name": "AbilityManager::on_tick__stub"}
+, {"addr": "0x408fc0", "name": "AbilityManager::on_draw"}
+, {"addr": "0x41d430", "name": "BlackMarket::initialize"}
+, {"addr": "0x41e150", "name": "BlackMarket::on_tick"}
+, {"addr": "0x41f4a0", "name": "BlackMarket::on_draw"}
+, {"addr": "0x41f840", "name": "BlackMarket::on_tick__stub"}
+, {"addr": "0x41f850", "name": "BlackMarket::on_draw__stub"}
+, {"addr": "0x41fb50", "name": "PermanentCardShop::initialize"}
+, {"addr": "0x420150", "name": "PermanentCardShop::on_tick"}
+, {"addr": "0x421130", "name": "PermanentCardShop::on_draw"}
+, {"addr": "0x4214f0", "name": "PermanentCardShop::on_tick__stub"}
+, {"addr": "0x421500", "name": "PermanentCardShop::on_draw__stub"}
+, {"addr": "0x421580", "name": "sub_421580_trophy_related"}
+, {"addr": "0x421d20", "name": "AsciiManager::initialize"}
+, {"addr": "0x421e90", "name": "AsciiManager::destructor"}
+, {"addr": "0x4220f0", "name": "AsciiManager::operator new"}
+, {"addr": "0x4222e0", "name": "AsciiManager::on_tick"}
+, {"addr": "0x422370", "name": "AsciiManager::on_draw_5b__stub"}
+, {"addr": "0x422380", "name": "AsciiManager::on_draw_38"}
+, {"addr": "0x4224b0", "name": "AsciiManager::on_draw_49"}
+, {"addr": "0x422540", "name": "AsciiManager::on_draw_40"}
+, {"addr": "0x4225c0", "name": "AsciiManager::on_draw_4a"}
+, {"addr": "0x422b70", "name": "AsciiManager::draw_group"}
+, {"addr": "0x424540", "name": "Stage::initialize"}
+, {"addr": "0x424c30", "name": "Stage::on_tick"}
+, {"addr": "0x424e10", "name": "Stage::on_draw_03"}
+, {"addr": "0x4252a0", "name": "Stage::on_draw_06"}
+, {"addr": "0x425600", "name": "Stage::on_tick__stub"}
+, {"addr": "0x425610", "name": "Stage::on_draw_03__stub"}
+, {"addr": "0x425620", "name": "Stage::on_draw_06__stub"}
+, {"addr": "0x425e00", "name": "StageInner::run_std"}
+, {"addr": "0x429ec0", "name": "BulletManager::operator new"}
+, {"addr": "0x4417b0", "name": "Gui::initialize"}
+, {"addr": "0x442200", "name": "Gui::operator new"}
+, {"addr": "0x442460", "name": "Gui::destructor"}
+, {"addr": "0x442650", "name": "Gui::on_tick"}
+, {"addr": "0x444290", "name": "Gui::on_tick__stub"}
+, {"addr": "0x4442c0", "name": "GuiMsgVm::constructor"}
+, {"addr": "0x444860", "name": "GuiMsgVm::run"}
+, {"addr": "0x447cb0", "name": "decrypt_msg_string_arg"}
+, {"addr": "0x473950", "name": "WinMain"}
+, {"addr": "0x47ac70", "name": "AnmVm::run"}
+, {"addr": "0x4860a0", "name": "AnmManager::initialize"}
+, {"addr": "0x488360", "name": "AnmManager::preload_anm"}
+, {"addr": "0x488c40", "name": "AnmManager::sub_488c40"}
+, {"addr": "0x4899d0", "name": "AnmManager::on_tick_23"}
+, {"addr": "0x489ac0", "name": "AnmManager::on_tick_0b"}
+, {"addr": "0x489d00", "name": "AnmManager::on_tick_23__stub"}
+, {"addr": "0x489d30", "name": "AnmManager::on_tick_0b__stub"}
+, {"addr": "0x48a4a0", "name": "AnmManager::get_vm_with_id"}
+, {"addr": "0x48a540", "name": "AnmManager::interrupt_tree"}
+, {"addr": "0x49003b", "name": "_start"}
+]

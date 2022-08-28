@@ -89,7 +89,7 @@
   , {"addr": "0x42767e", "label": "500__setHurtbox"}
   , {"addr": "0x4276a5", "label": "501__setHitbox"}
   , {"addr": "0x4276cc", "label": "563__unknown563"}
-  , {"addr": "0x4276ee", "label": "564__unknown564"}
+  , {"addr": "0x4276ee", "label": "564__hitboxRotate"}
   , {"addr": "0x427704", "label": "565__bombInvuln"}
   , {"addr": "0x42771a", "label": "502__flagSet"}
   , {"addr": "0x427753", "label": "503__flagClear"}
@@ -197,6 +197,72 @@
   , {"addr": "0x429bde", "label": "560__unknown560"}
   , {"addr": "0x429c0e", "label": "1003__spec3"}
   , {"addr": "0x429c28", "label": "default"}
+  , {"addr": "0x4823ed", "label": "10__ret"}
+  , {"addr": "0x48244c", "label": "15__callAsync"}
+  , {"addr": "0x482460", "label": "21__killAllAsync"}
+  , {"addr": "0x482470", "label": "16__callAsyncId"}
+  , {"addr": "0x48249e", "label": "17__killAsync"}
+  , {"addr": "0x4824c9", "label": "18"}
+  , {"addr": "0x4824f4", "label": "19"}
+  , {"addr": "0x48251f", "label": "20"}
+  , {"addr": "0x482552", "label": "11__call"}
+  , {"addr": "0x48256e", "label": "14__jmpNeq"}
+  , {"addr": "0x4825a3", "label": "13__jmpEq"}
+  , {"addr": "0x4825d7", "label": "12__jmp"}
+  , {"addr": "0x4825f3", "label": "23__wait"}
+  , {"addr": "0x482614", "label": "24__waitf"}
+  , {"addr": "0x48262e", "label": "40__stackAlloc"}
+  , {"addr": "0x482645", "label": "41"}
+  , {"addr": "0x482652", "label": "42__pushi"}
+  , {"addr": "0x482682", "label": "44__pushf"}
+  , {"addr": "0x4826c2", "label": "43__seti"}
+  , {"addr": "0x482702", "label": "45__setf"}
+  , {"addr": "0x482751", "label": "50__addi"}
+  , {"addr": "0x4827b0", "label": "52__subi"}
+  , {"addr": "0x48280c", "label": "54__muli"}
+  , {"addr": "0x482896", "label": "56__divi"}
+  , {"addr": "0x482903", "label": "58__modi"}
+  , {"addr": "0x48298f", "label": "51__addf"}
+  , {"addr": "0x482a1f", "label": "53__subf"}
+  , {"addr": "0x482aaf", "label": "55__mulf"}
+  , {"addr": "0x482b5e", "label": "57__divf"}
+  , {"addr": "0x482c0d", "label": "59__eqi"}
+  , {"addr": "0x482c71", "label": "61__neqi"}
+  , {"addr": "0x482cd5", "label": "63__lessi"}
+  , {"addr": "0x482d39", "label": "65__leqi"}
+  , {"addr": "0x482d9d", "label": "67__greateri"}
+  , {"addr": "0x482e01", "label": "69__geqi"}
+  , {"addr": "0x482e65", "label": "71__noti"}
+  , {"addr": "0x482e9d", "label": "60__eqf"}
+  , {"addr": "0x482f2c", "label": "62__neqf"}
+  , {"addr": "0x482fb8", "label": "64__lessf"}
+  , {"addr": "0x483042", "label": "66__leqf"}
+  , {"addr": "0x4830cc", "label": "68__greaterf"}
+  , {"addr": "0x483174", "label": "70__geqf"}
+  , {"addr": "0x483204", "label": "72__notf"}
+  , {"addr": "0x483254", "label": "73__or"}
+  , {"addr": "0x4832bb", "label": "74__and"}
+  , {"addr": "0x483325", "label": "75__xor"}
+  , {"addr": "0x483384", "label": "76__bit_or"}
+  , {"addr": "0x4833e0", "label": "77__bit_and"}
+  , {"addr": "0x483462", "label": "83__negi"}
+  , {"addr": "0x4834b8", "label": "84__negf"}
+  , {"addr": "0x48352a", "label": "78__deci"}
+  , {"addr": "0x48356a", "label": "79__stackSin"}
+  , {"addr": "0x4835e1", "label": "88__stackSqrt"}
+  , {"addr": "0x483658", "label": "80__stackCos"}
+  , {"addr": "0x4836cf", "label": "81__mathCirclePos"}
+  , {"addr": "0x48373d", "label": "85__squareSum"}
+  , {"addr": "0x483785", "label": "86__squareSumRoot"}
+  , {"addr": "0x4837db", "label": "82__validRad"}
+  , {"addr": "0x483807", "label": "87__mathAngle"}
+  , {"addr": "0x48389e", "label": "89__linearFunc"}
+  , {"addr": "0x4838df", "label": "90__pointRotate"}
+  , {"addr": "0x48399c", "label": "91__floatTime"}
+  , {"addr": "0x483a5c", "label": "92__math92"}
+  , {"addr": "0x483b3a", "label": "93__math93"}
+  , {"addr": "0x483c0c", "label": "0__multiple"}
+  , {"addr": "0x483c9e", "label": "1__delete"}
   ]
 , "eclival": 
   [ {"addr": "0x42a941", "label": "10000__RAND"}

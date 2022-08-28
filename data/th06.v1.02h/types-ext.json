@@ -1,5 +1,9 @@
 
-{ "BRUSH__": 
+{ "BOOL": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": true, "size": 4}}
+
+, "BOOLEAN": {"is": "typedef", "size": "0x1", "align": 1, "type": {"is": "named", "name": "BYTE"}}
+
+, "BRUSH__": 
   { "is": "struct"
   , "size": "0x0"
   , "align": 1
@@ -7,6 +11,10 @@
     [ {"offset": "0x0", "name": "__end", "type": null}
     ]
   }
+
+, "BYTE": {"is": "typedef", "size": "0x1", "align": 1, "type": {"is": "int", "signed": false, "size": 1}}
+
+, "CHAR": {"is": "typedef", "size": "0x1", "align": 1, "type": {"is": "int", "signed": true, "size": 1}}
 
 , "COFF_Header": 
   { "is": "struct"
@@ -348,11 +356,49 @@
     ]
   }
 
+, "DWORD": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "DWORD64": {"is": "typedef", "size": "0x8", "align": 8, "type": {"is": "int", "signed": false, "size": 8}}
+
+, "DWORDLONG": {"is": "typedef", "size": "0x8", "align": 8, "type": {"is": "int", "signed": false, "size": 8}}
+
+, "DWORD_PTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "FILETIME": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "_FILETIME"}}
+
+, "GUID": {"is": "typedef", "size": "0x10", "align": 4, "type": {"is": "named", "name": "_GUID"}}
+
+, "HANDLE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
 , "HBRUSH": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "BRUSH__"}}}
 
 , "HCURSOR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CURSOR__"}}}
 
+, "HGLOBAL": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "named", "name": "HANDLE"}}
+
 , "HICON": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "ICON__"}}}
+
+, "HINSTANCE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HINSTANCE__"}}}
+
+, "HINSTANCE__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "HKEY": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HKEY__"}}}
+
+, "HKEY__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
 
 , "HMMIO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HMMIO__"}}}
 
@@ -365,9 +411,24 @@
     ]
   }
 
+, "HMODULE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "named", "name": "HINSTANCE"}}
+
+, "HRESULT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": true, "size": 4}}
+
 , "HTASK": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HTASK__"}}}
 
 , "HTASK__": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
+, "HWND": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HWND__"}}}
+
+, "HWND__": 
   { "is": "struct"
   , "size": "0x0"
   , "align": 1
@@ -754,6 +815,16 @@
     ]
   }
 
+, "INT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": true, "size": 4}}
+
+, "INT16": {"is": "typedef", "size": "0x2", "align": 2, "type": {"is": "int", "signed": true, "size": 2}}
+
+, "INT32": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": true, "size": 4}}
+
+, "INT64": {"is": "typedef", "size": "0x8", "align": 8, "type": {"is": "int", "signed": true, "size": 8}}
+
+, "INT8": {"is": "typedef", "size": "0x1", "align": 1, "type": {"is": "int", "signed": true, "size": 1}}
+
 , "IUnknown": 
   { "is": "struct"
   , "size": "0x8"
@@ -825,6 +896,91 @@
     ]
   }
 
+, "LARGE_INTEGER": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "LowPart", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "HighPart", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "LCID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "named", "name": "DWORD"}}
+
+, "LONG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": true, "size": 4}}
+
+, "LONG32": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": true, "size": 4}}
+
+, "LONG64": {"is": "typedef", "size": "0x8", "align": 8, "type": {"is": "int", "signed": true, "size": 8}}
+
+, "LONGLONG": {"is": "typedef", "size": "0x8", "align": 8, "type": {"is": "int", "signed": true, "size": 8}}
+
+, "LONG_PTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": true, "size": 4}}
+
+, "LPARAM": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "named", "name": "LONG_PTR"}}
+
+, "LPBOOL": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}
+
+, "LPBYTE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+
+, "LPCGUID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}
+
+, "LPCH": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+
+, "LPCRITICAL_SECTION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CRITICAL_SECTION"}}}
+
+, "LPCSTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CHAR"}}}
+
+, "LPCVOID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "LPCWSTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WCHAR"}}}
+
+, "LPDWORD": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}
+
+, "LPFILETIME": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_FILETIME"}}}
+
+, "LPGUID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "GUID"}}}
+
+, "LPHANDLE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HANDLE"}}}
+
+, "LPINT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}
+
+, "LPLONG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}
+
+, "LPOVERLAPPED": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "OVERLAPPED"}}}
+
+, "LPOVERLAPPED_COMPLETION_ROUTINE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "void"}, "params": [{"type": {"is": "named", "name": "DWORD"}, "name": "dwErrorCode"}, {"type": {"is": "named", "name": "DWORD"}, "name": "dwNumberOfBytesTransferred"}, {"type": {"is": "named", "name": "LPOVERLAPPED"}, "name": "lpOverlapped"}]}}
+
+, "LPPOINT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "tagPOINT"}}}
+
+, "LPSECURITY_ATTRIBUTES": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_SECURITY_ATTRIBUTES"}}}
+
+, "LPSTARTUPINFOA": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_STARTUPINFOA"}}}
+
+, "LPSTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CHAR"}}}
+
+, "LPSYSTEMTIME": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "SYSTEMTIME"}}}
+
+, "LPSYSTEM_INFO": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "SYSTEM_INFO"}}}
+
+, "LPTHREAD_START_ROUTINE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "fn-ptr", "abi": "stdcall", "ret": {"is": "named", "name": "DWORD"}, "params": [{"type": {"is": "named", "name": "LPVOID"}, "name": "lpThreadParameter"}]}}
+
+, "LPUINT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}
+
+, "LPVOID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "LPWCH": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WCHAR"}}}
+
+, "LPWIN32_FIND_DATAA": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WIN32_FIND_DATAA"}}}
+
+, "LPWORD": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 2}}}
+
+, "LPWSTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WCHAR"}}}
+
+, "LRESULT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "named", "name": "LONG_PTR"}}
+
 , "MEMORY_BASIC_INFORMATION": 
   { "is": "struct"
   , "size": "0x1c"
@@ -879,6 +1035,37 @@
     , {"offset": "0x4c", "name": "__end", "type": null}
     ]
   }
+
+, "NPPOINT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "tagPOINT"}}}
+
+, "OVERLAPPED": 
+  { "is": "struct"
+  , "size": "0x14"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Internal", "type": {"is": "named", "name": "ULONG_PTR"}}
+    , {"offset": "0x4", "name": "InternalHigh", "type": {"is": "named", "name": "ULONG_PTR"}}
+    , {"offset": "0x8", "name": "u", "type": {"is": "union", "size": "0x8", "align": 4, "members": [{"name": "s", "type": {"is": "struct", "size": "0x8", "align": 4, "members": [{"offset": "0x0", "name": "Offset", "type": {"is": "named", "name": "DWORD"}}, {"offset": "0x4", "name": "OffsetHigh", "type": {"is": "named", "name": "DWORD"}}, {"offset": "0x8", "name": "__end", "type": null}]}}, {"name": "Pointer", "type": {"is": "named", "name": "PVOID"}}]}}
+    , {"offset": "0x10", "name": "hEvent", "type": {"is": "named", "name": "HANDLE"}}
+    , {"offset": "0x14", "name": "__end", "type": null}
+    ]
+  }
+
+, "PBOOL": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}
+
+, "PBOOLEAN": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "BYTE"}}}
+
+, "PBYTE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+
+, "PCH": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+
+, "PCHAR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+
+, "PCWSTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WCHAR"}}}
+
+, "PDWORD": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}
+
+, "PDWORDLONG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "DWORDLONG"}}}
 
 , "PE32_Optional_Header": 
   { "is": "struct"
@@ -946,6 +1133,69 @@
     ]
   }
 
+, "PFILETIME": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_FILETIME"}}}
+
+, "PHANDLE": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HANDLE"}}}
+
+, "PHKEY": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "HKEY"}}}
+
+, "PINT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}
+
+, "PLARGE_INTEGER": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "LARGE_INTEGER"}}}
+
+, "PLONG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 4}}}
+
+, "PMEMORY_BASIC_INFORMATION": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "MEMORY_BASIC_INFORMATION"}}}
+
+, "POINT": {"is": "typedef", "size": "0x8", "align": 4, "type": {"is": "named", "name": "tagPOINT"}}
+
+, "PPOINT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "tagPOINT"}}}
+
+, "PRTL_CRITICAL_SECTION_DEBUG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "RTL_CRITICAL_SECTION_DEBUG"}}}
+
+, "PSECURITY_ATTRIBUTES": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "_SECURITY_ATTRIBUTES"}}}
+
+, "PSECURITY_DESCRIPTOR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "PSID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "PSIZE_T": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "SIZE_T"}}}
+
+, "PSTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "CHAR"}}}
+
+, "PUCHAR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+
+, "PUINT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}
+
+, "PULARGE_INTEGER": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "ULARGE_INTEGER"}}}
+
+, "PULONG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 4}}}
+
+, "PULONGLONG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "ULONGLONG"}}}
+
+, "PULONG_PTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "ULONG_PTR"}}}
+
+, "PUSHORT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 2}}}
+
+, "PVOID": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "void"}}}
+
+, "PWCH": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WCHAR"}}}
+
+, "PWORD": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 2}}}
+
+, "PWSTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "WCHAR"}}}
+
+, "RECT": {"is": "typedef", "size": "0x10", "align": 4, "type": {"is": "named", "name": "tagRECT"}}
+
+, "RTL_CRITICAL_SECTION_DEBUG": 
+  { "is": "struct"
+  , "size": "0x0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__end", "type": null}
+    ]
+  }
+
 , "Rich_Header": 
   { "is": "struct"
   , "size": "0x70"
@@ -980,6 +1230,12 @@
     , {"offset": "0x70", "name": "__end", "type": null}
     ]
   }
+
+, "SECURITY_ATTRIBUTES": {"is": "typedef", "size": "0xc", "align": 4, "type": {"is": "named", "name": "_SECURITY_ATTRIBUTES"}}
+
+, "SHORT": {"is": "typedef", "size": "0x2", "align": 2, "type": {"is": "int", "signed": true, "size": 2}}
+
+, "SIZE_T": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
 
 , "SYSTEMTIME": 
   { "is": "struct"
@@ -1047,6 +1303,44 @@
     ]
   }
 
+, "UCHAR": {"is": "typedef", "size": "0x1", "align": 1, "type": {"is": "int", "signed": false, "size": 1}}
+
+, "UINT": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "UINT16": {"is": "typedef", "size": "0x2", "align": 2, "type": {"is": "int", "signed": false, "size": 2}}
+
+, "UINT32": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "UINT64": {"is": "typedef", "size": "0x8", "align": 8, "type": {"is": "int", "signed": false, "size": 8}}
+
+, "UINT8": {"is": "typedef", "size": "0x1", "align": 1, "type": {"is": "int", "signed": false, "size": 1}}
+
+, "UINT_PTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "ULARGE_INTEGER": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 8
+  , "members": 
+    [ {"offset": "0x0", "name": "QuadPart", "type": {"is": "int", "signed": false, "size": 8}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "ULONG": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "ULONG32": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "ULONG64": {"is": "typedef", "size": "0x8", "align": 8, "type": {"is": "int", "signed": false, "size": 8}}
+
+, "ULONGLONG": {"is": "typedef", "size": "0x8", "align": 8, "type": {"is": "int", "signed": false, "size": 8}}
+
+, "ULONG_PTR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "int", "signed": false, "size": 4}}
+
+, "UNICODE": {"is": "typedef", "size": "0x2", "align": 2, "type": {"is": "named", "name": "wchar_t"}}
+
+, "USHORT": {"is": "typedef", "size": "0x2", "align": 2, "type": {"is": "int", "signed": false, "size": 2}}
+
 , "WAVEFORMATEX": 
   { "is": "struct"
   , "size": "0x14"
@@ -1063,6 +1357,8 @@
     , {"offset": "0x14", "name": "__end", "type": null}
     ]
   }
+
+, "WCHAR": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "named", "name": "wchar_t"}}}
 
 , "WIN32_FIND_DATAA": 
   { "is": "struct"
@@ -1106,6 +1402,8 @@
     , {"offset": "0x28", "name": "__end", "type": null}
     ]
   }
+
+, "WORD": {"is": "typedef", "size": "0x2", "align": 2, "type": {"is": "int", "signed": false, "size": 2}}
 
 , "_D3DCAPS8": 
   { "is": "struct"
@@ -1181,6 +1479,42 @@
     , {"offset": "0x10", "name": "MinZ", "type": {"is": "float", "size": 4}}
     , {"offset": "0x14", "name": "MaxZ", "type": {"is": "float", "size": 4}}
     , {"offset": "0x18", "name": "__end", "type": null}
+    ]
+  }
+
+, "_FILETIME": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "dwLowDateTime", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "dwHighDateTime", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "_GUID": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "Data1", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "Data2", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x6", "name": "Data3", "type": {"is": "named", "name": "WORD"}}
+    , {"offset": "0x8", "name": "Data4", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "BYTE"}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "_SECURITY_ATTRIBUTES": 
+  { "is": "struct"
+  , "size": "0xc"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "nLength", "type": {"is": "named", "name": "DWORD"}}
+    , {"offset": "0x4", "name": "lpSecurityDescriptor", "type": {"is": "named", "name": "LPVOID"}}
+    , {"offset": "0x8", "name": "bInheritHandle", "type": {"is": "named", "name": "BOOL"}}
+    , {"offset": "0xc", "name": "__end", "type": null}
     ]
   }
 
@@ -1363,6 +1697,30 @@
     ]
   }
 
+, "tagPOINT": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "x", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x4", "name": "y", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "tagRECT": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 4
+  , "members": 
+    [ {"offset": "0x0", "name": "left", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x4", "name": "top", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x8", "name": "right", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0xc", "name": "bottom", "type": {"is": "named", "name": "LONG"}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
 , "tagWNDCLASSA": 
   { "is": "struct"
   , "size": "0x28"
@@ -1381,5 +1739,9 @@
     , {"offset": "0x28", "name": "__end", "type": null}
     ]
   }
+
+, "va_list": {"is": "typedef", "size": "0x4", "align": 4, "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+
+, "wchar_t": {"is": "typedef", "size": "0x2", "align": 2, "type": {"is": "int", "signed": false, "size": 2}}
 
 }

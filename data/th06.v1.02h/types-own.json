@@ -970,7 +970,7 @@
     , {"offset": "0x2e4", "name": "__dword_2E0", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x2e8", "name": "__dword_2E4", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x2ec", "name": "__dword_2E8", "type": {"is": "int", "signed": true, "size": 4}}
-    , {"offset": "0x2f0", "name": "__SIZE_NOT_ACTUALLY_KNOWN", "type": {"is": "array", "len": 0, "inner": {"is": "struct", "size": "0x1", "align": 1, "packed": true, "members": [{"offset": "0x0", "name": "__unknown", "type": null}, {"offset": "0x1", "name": "__end", "type": null}]}}}
+    , {"offset": "0x2f0", "name": "__SIZE_NOT_ACTUALLY_KNOWN", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x2f0", "name": "__end", "type": null}
     ]
   }
@@ -1391,7 +1391,7 @@
 
 , "zStdRawInstr": 
   { "is": "struct"
-  , "size": "0x58"
+  , "size": "0x14"
   , "align": 1
   , "packed": true
   , "members": 
@@ -1399,9 +1399,8 @@
     , {"offset": "0x4", "name": "opcode", "type": {"is": "int", "signed": false, "size": 2}}
     , {"offset": "0x6", "name": "args_size", "type": {"is": "int", "signed": false, "size": 2}}
     , {"offset": "0x8", "name": "args", "type": {"is": "named", "name": "zStdRawInstrArgs"}}
-    , {"offset": "0x14", "name": "next", "type": {"is": "named", "name": "zStdRawInstr"}}
-    , {"offset": "0x6c", "name": "__unknown", "type": null}
-    , {"offset": "0x58", "name": "__end", "type": null}
+    , {"offset": "0x14", "name": "next", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zStdRawInstr"}}}
+    , {"offset": "0x14", "name": "__end", "type": null}
     ]
   }
 

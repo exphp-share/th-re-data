@@ -165,24 +165,23 @@
     , {"offset": "0x1f4", "name": "color_2", "type": {"is": "named", "name": "D3DCOLOR"}}
     , {"offset": "0x1f8", "name": "flags", "type": {"is": "int", "signed": false, "size": 4}}
     , {"offset": "0x1fc", "name": "__v3_ins_25", "type": {"is": "int", "signed": true, "size": 2}}
-    , {"offset": "0x1fe", "name": "pending_switch_label", "type": {"is": "int", "signed": true, "size": 2}}
+    , {"offset": "0x1fe", "name": "pending_interrupt", "type": {"is": "int", "signed": true, "size": 2}}
     , {"offset": "0x200", "name": "__v3_ins_83", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0x204", "name": "anm_file", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
     , {"offset": "0x208", "name": "pos", "type": {"is": "named", "name": "zFloat3"}}
     , {"offset": "0x214", "name": "sprite_number", "type": {"is": "int", "signed": true, "size": 2}}
     , {"offset": "0x216", "name": "anm_file_index", "type": {"is": "int", "signed": false, "size": 2}}
-    , {"offset": "0x218", "name": "__unknown", "type": null}
+    , {"offset": "0x218", "name": "__another_sprite_number", "type": {"is": "int", "signed": false, "size": 2}}
     , {"offset": "0x21a", "name": "script_number", "type": {"is": "int", "signed": false, "size": 2}}
     , {"offset": "0x21c", "name": "beginning_of_script", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmRawInstr"}}}
     , {"offset": "0x220", "name": "current_instr", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmRawInstr"}}}
     , {"offset": "0x224", "name": "sprite", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoadedSprite"}}}
-    , {"offset": "0x228", "name": "case_return_time", "type": {"is": "named", "name": "zTimer"}}
-    , {"offset": "0x234", "name": "case_return_instr", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmRawInstr"}}}
+    , {"offset": "0x228", "name": "interrupt_return_time", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x234", "name": "interrupt_return_instr", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmRawInstr"}}}
     , {"offset": "0x238", "name": "interp_data", "type": {"is": "named", "name": "zAnmVmInterpData"}}
     , {"offset": "0x288", "name": "__pos_2", "type": {"is": "named", "name": "zFloat3"}}
     , {"offset": "0x294", "name": "time_of_last_sprite_set", "type": {"is": "int", "signed": true, "size": 4}}
-    , {"offset": "0x298", "name": "__byte_298", "type": {"is": "int", "signed": false, "size": 1}}
-    , {"offset": "0x299", "name": "__byte_299__used_by_msg", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x298", "name": "font_dims", "type": {"is": "array", "len": 2, "inner": {"is": "int", "signed": false, "size": 1}}}
     , {"offset": "0x29a", "name": "__unknown", "type": null}
     , {"offset": "0x2a4", "name": "__exact_size_known", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x2a4", "name": "__end", "type": null}

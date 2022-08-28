@@ -32,6 +32,7 @@
 , {"addr": "0x40c380", "name": "AsciiManager::on_draw_3f"}
 , {"addr": "0x40c410", "name": "AsciiManager::create_string"}
 , {"addr": "0x40c800", "name": "AsciiManager::drawf_debug"}
+, {"addr": "0x40d118", "name": "jump_table_40d118"}
 , {"addr": "0x40d680", "name": "AnmVm::wipe"}
 , {"addr": "0x40d9f0", "name": "AnmVm::destructor"}
 , {"addr": "0x40db10", "name": "AnmVm::constructor"}
@@ -163,9 +164,10 @@
 , {"addr": "0x4238b0", "name": "Ending::on_tick__stub"}
 , {"addr": "0x4238c0", "name": "Ending::on_draw__noop"}
 , {"addr": "0x423b80", "name": "Ending::on_tick__main"}
-, {"addr": "0x4251d0", "name": "EnemyFull::write_autosave_data"}
-, {"addr": "0x425330", "name": "EnemyFull::operator delete"}
-, {"addr": "0x425360", "name": "Enemy::constructor"}
+, {"addr": "0x424b10", "name": "EclVm::constructor"}
+, {"addr": "0x4251d0", "name": "Enemy::write_autosave_data"}
+, {"addr": "0x425330", "name": "Enemy::operator delete"}
+, {"addr": "0x425360", "name": "EnemyData::constructor"}
 , {"addr": "0x425530", "name": "EnemyManager::set_boss_id"}
 , {"addr": "0x425570", "name": "EnemyManager::set_boss_bit"}
 , {"addr": "0x426050", "name": "EnemyManager::allocate_new_enemy"}
@@ -177,25 +179,25 @@
 , {"addr": "0x426ad0", "name": "EnemyManager::on_tick__body"}
 , {"addr": "0x426bd0", "name": "EnemyManager::on_tick"}
 , {"addr": "0x426c10", "name": "EnemyManager::on_draw__noop"}
-, {"addr": "0x426c60", "name": "EnemyFull::initialize"}
-, {"addr": "0x427120", "name": "EnemyFull::destructor"}
-, {"addr": "0x428830", "name": "EnemyFull::update"}
-, {"addr": "0x4291d0", "name": "EnemyFull::ecl_run_over_300__trampoline"}
-, {"addr": "0x4291e0", "name": "Enemy::ecl_run_over_300"}
+, {"addr": "0x426c60", "name": "Enemy::initialize"}
+, {"addr": "0x427120", "name": "Enemy::destructor"}
+, {"addr": "0x428830", "name": "Enemy::update"}
+, {"addr": "0x4291d0", "name": "Enemy::ecl_run_over_300__trampoline"}
+, {"addr": "0x4291e0", "name": "EnemyData::ecl_run_over_300"}
 , {"addr": "0x42e160", "name": "EnemyManager::ecl_enm_create"}
-, {"addr": "0x42e360", "name": "Enemy::ecl_anm_set_sprite_impl"}
-, {"addr": "0x42e910", "name": "EnemyFull::ecl_get_int_global"}
-, {"addr": "0x42f0b0", "name": "EnemyFull::ecl_get_int_global_ptr"}
-, {"addr": "0x42f240", "name": "EnemyFull::ecl_get_float_global"}
-, {"addr": "0x42fce0", "name": "EnemyFull::ecl_get_float_global_ptr"}
-, {"addr": "0x430320", "name": "Enemy::ecl_get_int_arg__trampoline"}
-, {"addr": "0x430350", "name": "Enemy::ecl_get_float_arg"}
+, {"addr": "0x42e360", "name": "EnemyData::ecl_anm_set_sprite_impl"}
+, {"addr": "0x42e910", "name": "Enemy::ecl_get_int_global"}
+, {"addr": "0x42f0b0", "name": "Enemy::ecl_get_int_global_ptr"}
+, {"addr": "0x42f240", "name": "Enemy::ecl_get_float_global"}
+, {"addr": "0x42fce0", "name": "Enemy::ecl_get_float_global_ptr"}
+, {"addr": "0x430320", "name": "EnemyData::ecl_get_int_arg__trampoline"}
+, {"addr": "0x430350", "name": "EnemyData::ecl_get_float_arg"}
 , {"addr": "0x430490", "name": "EnemyManager::store_snapshot"}
 , {"addr": "0x430610", "name": "EnemyManager::restore_snapshot"}
-, {"addr": "0x430880", "name": "EnemyFull::store_snapshot_at"}
+, {"addr": "0x430880", "name": "Enemy::store_snapshot_at"}
 , {"addr": "0x4309a0", "name": "EnemyManager::write_autosave_data"}
 , {"addr": "0x430a50", "name": "EnemyManager::read_autosave_data"}
-, {"addr": "0x430e50", "name": "Enemy::write_autosave_data"}
+, {"addr": "0x430e50", "name": "EnemyData::write_autosave_data"}
 , {"addr": "0x4315f0", "name": "BulletManager::sub_4315f0"}
 , {"addr": "0x431720", "name": "BulletManager::sub_431720_cancels_bullets"}
 , {"addr": "0x4318a0", "name": "BulletManager::sub_4318a0"}
@@ -409,6 +411,8 @@
 , {"addr": "0x477160", "name": "AnmLoaded::set_sprite"}
 , {"addr": "0x477aa0", "name": "AnmVm::get_int_var"}
 , {"addr": "0x477e10", "name": "AnmVm::run"}
+, {"addr": "0x47b610", "name": "AnmVm::sub_47b610"}
+, {"addr": "0x47be30", "name": "AnmVm::step_interpolators"}
 , {"addr": "0x47d840", "name": "AnmManager::setup_render_state_for_vm"}
 , {"addr": "0x47dba0", "name": "AnmManager::render_sprite_2d"}
 , {"addr": "0x47e3a0", "name": "AnmManager::reset_vertex_buffers"}
@@ -462,8 +466,11 @@
 , {"addr": "0x489bd0", "name": "AnmManager::read_vm_autosave_data"}
 , {"addr": "0x489d70", "name": "AnmVm::become_snapshot_of"}
 , {"addr": "0x489fe0", "name": "AnmVm::restore_from_snapshot"}
+, {"addr": "0x48ca80", "name": "EnemyRunContext::ecl_run"}
+, {"addr": "0x48e690", "name": "Enemy::ecl_run"}
 , {"addr": "0x48e750", "name": "ecl_get_int_arg"}
 , {"addr": "0x48f340", "name": "EclFileManager::find_sub_by_name"}
+, {"addr": "0x48f410", "name": "EclVm::operator new"}
 , {"addr": "0x48f700", "name": "sub_48f700__ecl_context_snapshot_stuff__prolly"}
 , {"addr": "0x48f820", "name": "sub_48f820__prolly_EclRunContext_write_autosave_data"}
 , {"addr": "0x490390", "name": "check_security_cookie"}

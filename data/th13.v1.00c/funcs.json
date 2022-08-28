@@ -76,6 +76,7 @@
 , {"addr": "0x40d4c0", "name": "BulletManager::destroy_all"}
 , {"addr": "0x40d7b0", "name": "BulletManager::destructor"}
 , {"addr": "0x40d920", "name": "BulletManager::operator new"}
+, {"addr": "0x40db10", "name": "Bullet::on_tick"}
 , {"addr": "0x40e360", "name": "BulletManager::on_tick__body"}
 , {"addr": "0x40e4d0", "name": "BulletManager::on_draw__common"}
 , {"addr": "0x40e780", "name": "BulletManager::on_tick"}
@@ -112,13 +113,16 @@
 , {"addr": "0x416610", "name": "Ending::on_tick"}
 , {"addr": "0x4166b0", "name": "Ending::on_tick__stub"}
 , {"addr": "0x4166c0", "name": "Ending::on_draw"}
+, {"addr": "0x417450", "name": "EclRunContext::constructor"}
+, {"addr": "0x417d50", "name": "EnemyData::constructor"}
 , {"addr": "0x4183f0", "name": "EnemyManager::allocate_new_enemy"}
 , {"addr": "0x4187d0", "name": "EnemyManager::initialize"}
 , {"addr": "0x418b50", "name": "EnemyManager::destructor"}
 , {"addr": "0x418d30", "name": "EnemyManager::operator new"}
 , {"addr": "0x418ef0", "name": "EnemyManager::on_tick"}
 , {"addr": "0x418f30", "name": "EnemyManager::on_draw"}
-, {"addr": "0x41b260", "name": "Enemy::ecl_run_over_300"}
+, {"addr": "0x418f40", "name": "Enemy::constructor"}
+, {"addr": "0x41b260", "name": "EnemyData::ecl_run_over_300"}
 , {"addr": "0x41fcc0", "name": "EnemyManager::ecl_enm_create"}
 , {"addr": "0x4247b0", "name": "FpsCounter::initialize"}
 , {"addr": "0x424870", "name": "FpsCounter::operator new"}
@@ -316,6 +320,7 @@
 , {"addr": "0x46f330", "name": "AnmManager::on_tick_1d"}
 , {"addr": "0x46f360", "name": "AnmManager::on_tick_08__stub"}
 , {"addr": "0x46f380", "name": "AnmManager::draw_layer"}
+, {"addr": "0x46f690", "name": "AnmManager::sub_46f690__remove_probably"}
 , {"addr": "0x46f990", "name": "AnmLoaded::create_managed_child"}
 , {"addr": "0x46fb90", "name": "AnmManager::get_vm_by_id"}
 , {"addr": "0x46fc30", "name": "anm_set_interrupt_by_id"}
@@ -336,6 +341,9 @@
 , {"addr": "0x4736a0", "name": "PosVel::update_secondary_fields"}
 , {"addr": "0x473780", "name": "PosVel::step"}
 , {"addr": "0x476e00", "name": "sub_476e00__get_position_in_bgm__i_think"}
+, {"addr": "0x4772a0", "name": "EclRunContext::ecl_run"}
+, {"addr": "0x478db0", "name": "Enemy::ecl_run"}
+, {"addr": "0x479860", "name": "EclVm::operator new"}
 , {"addr": "0x47a09f", "name": "__security_check_cookie"}
 , {"addr": "0x47a181", "name": "free__checked"}
 , {"addr": "0x47a1e1", "name": "malloc"}

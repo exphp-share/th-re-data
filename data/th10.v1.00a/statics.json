@@ -1,5 +1,6 @@
 
 [ {"addr": "0x41bea4", "name": "float(-2.9700563e-20)_1", "type": {"is": "float", "size": 4}}
+, {"addr": "0x46d0c0", "name": "VTABLE_ECL_ENEMY_FULL", "type": {"is": "named", "name": "zVTableEcl"}}
 , {"addr": "0x470b0c", "name": "float(0.5)", "type": {"is": "float", "size": 4}}
 , {"addr": "0x470dd8", "name": "__load_configuration_directory_table", "type": {"is": "named", "name": "Load_Configuration_Directory_Table"}}
 , {"addr": "0x473660", "name": "SECURITY_COOKIE", "type": {"is": "int", "signed": true, "size": 4}}
