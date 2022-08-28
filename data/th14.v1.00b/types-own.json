@@ -16,56 +16,60 @@
   }
 
 , "zAnmBitfieldsHi": 
-  { "is": "enum"
+  { "is": "bitfields"
   , "size": "0x4"
   , "align": 4
-  , "signed": false
-  , "values": 
-    [ {"name": "__IS_BITFIELD", "value": 0}
-    , {"name": "__U_scroll_mode_v", "value": 3}
-    , {"name": "__U_rotation_system", "value": 28}
-    , {"name": "__U___used_by_fog", "value": 32}
-    , {"name": "__U_rotate_auto", "value": 64}
-    , {"name": "__U___ins_431", "value": 128}
-    , {"name": "__U_ignore_game_speed", "value": 256}
-    , {"name": "__U__disused__rng_flag", "value": 512}
-    , {"name": "__U_rescale_mode", "value": 1024}
-    , {"name": "__U___ins_419", "value": 4096}
-    , {"name": "__U___idfk_2_bits", "value": 24576}
-    , {"name": "__U_virtual_root", "value": 32768}
-    , {"name": "__U_origin_mode", "value": 393216}
-    , {"name": "__U_resolution_mode", "value": 3670016}
-    , {"name": "__U_attach_to_parent_rotation", "value": 4194304}
-    , {"name": "__U_has_other", "value": 8388608}
-    , {"name": "__U_colorize_children", "value": 16777216}
+  , "members": 
+    [ {"start": 0, "name": "scroll_mode_v", "signed": false}
+    , {"start": 2, "name": "rotation_system", "signed": false}
+    , {"start": 5, "name": "__used_by_fog", "signed": false}
+    , {"start": 6, "name": "rotate_auto", "signed": false}
+    , {"start": 7, "name": "__ins_431", "signed": false}
+    , {"start": 8, "name": "ignore_game_speed", "signed": false}
+    , {"start": 9, "name": "_disused__rng_flag", "signed": false}
+    , {"start": 10, "name": "rescale_mode", "signed": false}
+    , {"start": 11, "name": "__unknown", "signed": null}
+    , {"start": 12, "name": "__ins_419", "signed": false}
+    , {"start": 13, "name": "__idfk_2_bits", "signed": false}
+    , {"start": 15, "name": "virtual_root", "signed": false}
+    , {"start": 16, "name": "__unknown", "signed": null}
+    , {"start": 17, "name": "origin_mode", "signed": false}
+    , {"start": 19, "name": "resolution_mode", "signed": false}
+    , {"start": 22, "name": "attach_to_parent_rotation", "signed": false}
+    , {"start": 23, "name": "has_other", "signed": false}
+    , {"start": 24, "name": "colorize_children", "signed": false}
+    , {"start": 25, "name": "__unknown", "signed": null}
+    , {"start": 32, "name": "__end", "signed": null}
     ]
   }
 
 , "zAnmBitfieldsLo": 
-  { "is": "enum"
+  { "is": "bitfields"
   , "size": "0x4"
   , "align": 4
-  , "signed": false
-  , "values": 
-    [ {"name": "__IS_BITFIELD", "value": 0}
-    , {"name": "__U___visibility_flag_0", "value": 1}
-    , {"name": "__U___visibility_flag_1", "value": 2}
-    , {"name": "__U_has_rotation", "value": 4}
-    , {"name": "__U_has_scale", "value": 8}
-    , {"name": "__U_has_scale_uv", "value": 16}
-    , {"name": "__U_blend_mode", "value": 480}
-    , {"name": "__U_alternate_pos", "value": 1024}
-    , {"name": "__U_mirror_x", "value": 2048}
-    , {"name": "__U_mirror_y", "value": 4096}
-    , {"name": "__U_disable_z_buffer", "value": 8192}
-    , {"name": "__U___interrupt_related", "value": 16384}
-    , {"name": "__U___ins_306", "value": 32768}
-    , {"name": "__U_color_mode", "value": 393216}
-    , {"name": "__U___idk_prevents_ticking", "value": 1048576}
-    , {"name": "__U_x_anchor", "value": 6291456}
-    , {"name": "__U_y_anchor", "value": 25165824}
-    , {"name": "__U_render_mode", "value": 1040187392}
-    , {"name": "__U_scroll_mode_u", "value": 3221225472}
+  , "members": 
+    [ {"start": 0, "name": "__visibility_flag_0", "signed": false}
+    , {"start": 1, "name": "__visibility_flag_1", "signed": false}
+    , {"start": 2, "name": "has_rotation", "signed": false}
+    , {"start": 3, "name": "has_scale", "signed": false}
+    , {"start": 4, "name": "has_scale_uv", "signed": false}
+    , {"start": 5, "name": "blend_mode", "signed": false}
+    , {"start": 9, "name": "__unknown", "signed": null}
+    , {"start": 10, "name": "alternate_pos", "signed": false}
+    , {"start": 11, "name": "mirror_x", "signed": false}
+    , {"start": 12, "name": "mirror_y", "signed": false}
+    , {"start": 13, "name": "disable_z_buffer", "signed": false}
+    , {"start": 14, "name": "__interrupt_related", "signed": false}
+    , {"start": 15, "name": "__ins_306", "signed": false}
+    , {"start": 16, "name": "__unknown", "signed": null}
+    , {"start": 17, "name": "color_mode", "signed": false}
+    , {"start": 19, "name": "__unknown", "signed": null}
+    , {"start": 20, "name": "__idk_prevents_ticking", "signed": false}
+    , {"start": 21, "name": "x_anchor", "signed": false}
+    , {"start": 23, "name": "y_anchor", "signed": false}
+    , {"start": 25, "name": "render_mode", "signed": false}
+    , {"start": 30, "name": "scroll_mode_u", "signed": false}
+    , {"start": 32, "name": "__end", "signed": null}
     ]
   }
 

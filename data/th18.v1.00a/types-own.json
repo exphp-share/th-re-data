@@ -45,55 +45,64 @@
   }
 
 , "zAnmBitfieldsHi": 
-  { "is": "enum"
+  { "is": "bitfields"
   , "size": "0x4"
   , "align": 4
-  , "signed": false
-  , "values": 
-    [ {"name": "__IS_BITFIELD", "value": 0}
-    , {"name": "__U_scroll_mode_u", "value": 3}
-    , {"name": "__U_scroll_mode_v", "value": 12}
-    , {"name": "__U_rotation_mode", "value": 112}
-    , {"name": "__U___vm_state", "value": 384}
-    , {"name": "__U_auto_rotate", "value": 512}
-    , {"name": "__U___flag_T", "value": 1024}
-    , {"name": "__U_slowdown_immune", "value": 2048}
-    , {"name": "__U_use_animation_rng", "value": 4096}
-    , {"name": "__U_rescale_mode", "value": 8192}
-    , {"name": "__U___flag_Q", "value": 32768}
-    , {"name": "__U___field_B", "value": 196608}
-    , {"name": "__U___use_root_vm_custom_slowdown", "value": 262144}
-    , {"name": "__U_origin_mode", "value": 3145728}
-    , {"name": "__U_resolution_mode", "value": 29360128}
-    , {"name": "__U_inherit_rotation", "value": 33554432}
-    , {"name": "__U_colorize_children", "value": 134217728}
-    , {"name": "__U___flag_F", "value": 268435456}
-    , {"name": "__U_enable_camera_fade", "value": 1073741824}
+  , "members": 
+    [ {"start": 0, "name": "scroll_mode_u", "signed": false}
+    , {"start": 2, "name": "scroll_mode_v", "signed": false}
+    , {"start": 4, "name": "rotation_mode", "signed": false}
+    , {"start": 7, "name": "__vm_state", "signed": false}
+    , {"start": 9, "name": "auto_rotate", "signed": false}
+    , {"start": 10, "name": "__flag_T", "signed": false}
+    , {"start": 11, "name": "slowdown_immune", "signed": false}
+    , {"start": 12, "name": "use_animation_rng", "signed": false}
+    , {"start": 13, "name": "rescale_mode", "signed": false}
+    , {"start": 14, "name": "__unknown", "signed": null}
+    , {"start": 15, "name": "__flag_Q", "signed": false}
+    , {"start": 16, "name": "__field_B", "signed": false}
+    , {"start": 18, "name": "__use_root_vm_custom_slowdown", "signed": false}
+    , {"start": 19, "name": "__unknown", "signed": null}
+    , {"start": 20, "name": "origin_mode", "signed": false}
+    , {"start": 22, "name": "resolution_mode", "signed": false}
+    , {"start": 25, "name": "inherit_rotation", "signed": false}
+    , {"start": 26, "name": "__unknown", "signed": null}
+    , {"start": 27, "name": "colorize_children", "signed": false}
+    , {"start": 28, "name": "__flag_F", "signed": false}
+    , {"start": 29, "name": "__unknown", "signed": null}
+    , {"start": 30, "name": "enable_camera_fade", "signed": false}
+    , {"start": 31, "name": "__unknown", "signed": null}
+    , {"start": 32, "name": "__end", "signed": null}
     ]
   }
 
 , "zAnmBitfieldsLo": 
-  { "is": "enum"
+  { "is": "bitfields"
   , "size": "0x4"
   , "align": 4
-  , "signed": false
-  , "values": 
-    [ {"name": "__IS_BITFIELD", "value": 0}
-    , {"name": "__U_visible", "value": 1}
-    , {"name": "__U___flag_J", "value": 2}
-    , {"name": "__U___z_rotation", "value": 4}
-    , {"name": "__U___scale_related", "value": 8}
-    , {"name": "__U_blend_mode", "value": 480}
-    , {"name": "__U_position_mode", "value": 1024}
-    , {"name": "__U_mirror_x", "value": 2048}
-    , {"name": "__U_mirror_y", "value": 4096}
-    , {"name": "__U_disable_z_write", "value": 16384}
-    , {"name": "__U___std_flag", "value": 65536}
-    , {"name": "__U_color_mode", "value": 917504}
-    , {"name": "__U___flag_O", "value": 2097152}
-    , {"name": "__U_x_anchor_mode", "value": 12582912}
-    , {"name": "__U_y_anchor_mode", "value": 50331648}
-    , {"name": "__U_type", "value": 2080374784}
+  , "members": 
+    [ {"start": 0, "name": "visible", "signed": false}
+    , {"start": 1, "name": "__flag_J", "signed": false}
+    , {"start": 2, "name": "__z_rotation", "signed": false}
+    , {"start": 3, "name": "__scale_related", "signed": false}
+    , {"start": 4, "name": "__unknown", "signed": null}
+    , {"start": 5, "name": "blend_mode", "signed": false}
+    , {"start": 9, "name": "__unknown", "signed": null}
+    , {"start": 10, "name": "position_mode", "signed": false}
+    , {"start": 11, "name": "mirror_x", "signed": false}
+    , {"start": 12, "name": "mirror_y", "signed": false}
+    , {"start": 13, "name": "__unknown", "signed": null}
+    , {"start": 14, "name": "disable_z_write", "signed": false}
+    , {"start": 15, "name": "__unknown", "signed": null}
+    , {"start": 16, "name": "__std_flag", "signed": false}
+    , {"start": 17, "name": "color_mode", "signed": false}
+    , {"start": 20, "name": "__unknown", "signed": null}
+    , {"start": 21, "name": "__flag_O", "signed": false}
+    , {"start": 22, "name": "x_anchor_mode", "signed": false}
+    , {"start": 24, "name": "y_anchor_mode", "signed": false}
+    , {"start": 26, "name": "type", "signed": false}
+    , {"start": 31, "name": "__unknown", "signed": null}
+    , {"start": 32, "name": "__end", "signed": null}
     ]
   }
 
