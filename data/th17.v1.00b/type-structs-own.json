@@ -1966,8 +1966,8 @@
   [ ["0x0", "on_game_tick__list_head", "struct zUpdateFunc"]
   , ["0x28", "on_draw__list_head", "struct zUpdateFunc"]
   , ["0x50", "__list_head_50", "struct zUpdateFuncList*"]
-  , ["0x54", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x54", "__end", null]
+  , ["0x54", "is_cleaning_up", "int32_t"]
+  , ["0x58", "__end", null]
   ]
 
 , "zVTableBomb": 

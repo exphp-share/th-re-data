@@ -1569,9 +1569,8 @@
   , ["0x4", "opcode", "uint16_t"]
   , ["0x6", "args_size", "uint16_t"]
   , ["0x8", "args", "struct zStdRawInstrArgs"]
-  , ["0x14", "next", "struct zStdRawInstr"]
-  , ["0x6c", "__unknown", null]
-  , ["0x58", "__end", null]
+  , ["0x14", "next", "struct zStdRawInstr[0x0]"]
+  , ["0x14", "__end", null]
   ]
 
 , "zStdRawInstrArgs": 

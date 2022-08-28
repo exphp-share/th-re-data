@@ -1,0 +1,13 @@
+
+{ "LARGE_INTEGER": 
+  [ ["", "struct"]
+  , ["u", "struct _u_e__Struct"]
+  , ["QuadPart", "int64_t"]
+  ]
+
+, "SLIST_HEADER": 
+  [ ["Alignment", "uint64_t"]
+  , ["", "struct"]
+  ]
+
+}

@@ -629,7 +629,7 @@
 , {"addr": "0x475d30", "name": "AnmManager::insert_in_world_list_front", "comment": null}
 , {"addr": "0x475dc0", "name": "AnmManager::insert_in_ui_list_back", "comment": null}
 , {"addr": "0x475e70", "name": "AnmManager::insert_in_ui_list_front", "comment": null}
-, {"addr": "0x475f00", "name": "AnmManager::remove_from_global_lists", "comment": null}
+, {"addr": "0x475f00", "name": "AnmManager::destroy_possibly_managed_vm", "comment": null}
 , {"addr": "0x476220", "name": "AnmLoaded::create_managed_child", "comment": null}
 , {"addr": "0x476470", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x476510", "name": "AnmManager::interrupt_tree", "comment": null}

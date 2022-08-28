@@ -132,7 +132,7 @@
 , {"addr": "0x4cf410", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4cf418", "name": "REPLAY_MANAGER_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf420", "name": "POPUP_MANAGER_PTR", "type": "int32_t", "comment": null}
-, {"addr": "0x4cf428", "name": "CUR_STAGE_DATA", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf428", "name": "CUR_STAGE_DATA", "type": "struct zTableStageData*", "comment": null}
 , {"addr": "0x4cf43c", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
 , {"addr": "0x51f65c", "name": "ANM_MANAGER_PTR", "type": "struct zAnmManager*", "comment": null}
 , {"addr": "0x568c30", "name": "WINDOW", "type": "int32_t", "comment": null}

@@ -49,6 +49,10 @@
 , {"addr": "0x4089c0", "name": "Spellcard::initialize", "comment": null}
 , {"addr": "0x408af0", "name": "Spellcard::destructor", "comment": null}
 , {"addr": "0x408c90", "name": "Spellcard::operator new", "comment": null}
+, {"addr": "0x408d60", "name": "Spellcard::on_registration", "comment": null}
+, {"addr": "0x409220", "name": "Spellcard::on_registration__stub", "comment": null}
+, {"addr": "0x409230", "name": "Spellcard::on_draw_0e", "comment": null}
+, {"addr": "0x409270", "name": "Spellcard::on_draw_25", "comment": null}
 , {"addr": "0x409d90", "name": "Globals::add_to_score", "comment": null}
 , {"addr": "0x409e50", "name": "anm_trigger_leave_by_id", "comment": null}
 , {"addr": "0x40a040", "name": "DebugSprtView::constructor", "comment": null}

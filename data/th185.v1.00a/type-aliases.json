@@ -1,0 +1,59 @@
+
+{ "BOOL": {"def": "int32_t", "size": 4}
+, "BSTR": {"def": "char*", "size": 4}
+, "CHAR": {"def": "uint8_t", "size": 1}
+, "CreatedHDC": {"def": "int32_t*", "size": 4}
+, "DLGPROC": {"def": "int32_t* (*)(HWND param0, uint32_t param1, WPARAM param2, LPARAM param3)", "size": 4}
+, "DWORD_PTR": {"def": "uint32_t", "size": 4}
+, "FARPROC": {"def": "int32_t* (*)()", "size": 4}
+, "FONTENUMPROCA": {"def": "int32_t (*)(struct LOGFONTA* param0, struct TEXTMETRICA* param1, uint32_t param2, LPARAM param3)", "size": 4}
+, "FindFileHandle": {"def": "int32_t*", "size": 4}
+, "HANDLE": {"def": "int32_t*", "size": 4}
+, "HBITMAP": {"def": "int32_t*", "size": 4}
+, "HBRUSH": {"def": "int32_t*", "size": 4}
+, "HCURSOR": {"def": "int32_t*", "size": 4}
+, "HDC": {"def": "int32_t*", "size": 4}
+, "HFONT": {"def": "int32_t*", "size": 4}
+, "HGDIOBJ": {"def": "int32_t*", "size": 4}
+, "HICON": {"def": "int32_t*", "size": 4}
+, "HINSTANCE": {"def": "int32_t*", "size": 4}
+, "HMENU": {"def": "int32_t*", "size": 4}
+, "HMONITOR": {"def": "int32_t*", "size": 4}
+, "HRESULT": {"def": "int32_t", "size": 4}
+, "HWND": {"def": "int32_t*", "size": 4}
+, "HeapHandle": {"def": "int32_t*", "size": 4}
+, "IDirect3D9": {"def": "struct _IDirect3D9*", "size": 4}
+, "IDirect3DBaseTexture9": {"def": "struct _IDirect3DBaseTexture9*", "size": 4}
+, "IDirect3DCubeTexture9": {"def": "struct _IDirect3DCubeTexture9*", "size": 4}
+, "IDirect3DDevice9": {"def": "struct _IDirect3DDevice9*", "size": 4}
+, "IDirect3DIndexBuffer9": {"def": "struct _IDirect3DIndexBuffer9*", "size": 4}
+, "IDirect3DPixelShader9": {"def": "struct _IDirect3DPixelShader9*", "size": 4}
+, "IDirect3DQuery9": {"def": "struct _IDirect3DQuery9*", "size": 4}
+, "IDirect3DStateBlock9": {"def": "struct _IDirect3DStateBlock9*", "size": 4}
+, "IDirect3DSurface9": {"def": "struct _IDirect3DSurface9*", "size": 4}
+, "IDirect3DSwapChain9": {"def": "struct _IDirect3DSwapChain9*", "size": 4}
+, "IDirect3DTexture9": {"def": "struct _IDirect3DTexture9*", "size": 4}
+, "IDirect3DVertexBuffer9": {"def": "struct _IDirect3DVertexBuffer9*", "size": 4}
+, "IDirect3DVertexDeclaration9": {"def": "struct _IDirect3DVertexDeclaration9*", "size": 4}
+, "IDirect3DVertexShader9": {"def": "struct _IDirect3DVertexShader9*", "size": 4}
+, "IDirect3DVolume9": {"def": "struct _IDirect3DVolume9*", "size": 4}
+, "IDirect3DVolumeTexture9": {"def": "struct _IDirect3DVolumeTexture9*", "size": 4}
+, "IUnknown": {"def": "struct _IUnknown*", "size": 4}
+, "LONG_PTR": {"def": "int32_t", "size": 4}
+, "LPARAM": {"def": "int32_t*", "size": 4}
+, "LPTHREAD_START_ROUTINE": {"def": "uint32_t (*)(void* lpThreadParameter)", "size": 4}
+, "LPTOP_LEVEL_EXCEPTION_FILTER": {"def": "int32_t (*)(struct EXCEPTION_POINTERS* ExceptionInfo)", "size": 4}
+, "LRESULT": {"def": "int32_t*", "size": 4}
+, "NTSTATUS": {"def": "int32_t", "size": 4}
+, "PSTR": {"def": "uint8_t*", "size": 4}
+, "PWSTR": {"def": "char*", "size": 4}
+, "SIZE_T": {"def": "uint32_t", "size": 4}
+, "TIMERPROC": {"def": "void (*)(HWND param0, uint32_t param1, uint32_t* param2, uint32_t param3)", "size": 4}
+, "UINT_PTR": {"def": "uint32_t", "size": 4}
+, "ULONG_PTR": {"def": "uint32_t", "size": 4}
+, "WNDPROC": {"def": "LRESULT (*)(HWND param0, uint32_t param1, WPARAM param2, LPARAM param3)", "size": 4}
+, "WPARAM": {"def": "uint32_t*", "size": 4}
+, "_HMODULE": {"def": "void*", "size": 4}
+, "_HRESULT": {"def": "int32_t", "size": 4}
+, "_RPC_STATUS": {"def": "int32_t", "size": 4}
+}

@@ -25,7 +25,7 @@
 , {"addr": "0x402bf0", "name": "PosVel::update_secondary_fields", "comment": null}
 , {"addr": "0x404d70", "name": "reduce_angle_404d70", "comment": null}
 , {"addr": "0x404dd0", "name": "cartesian_from_polar_404dd0", "comment": null}
-, {"addr": "0x405bf0", "name": "sub_405bf0_creates_vm", "comment": null}
+, {"addr": "0x405bf0", "name": "AnmLoaded::instantiate_vm_to_world_list_back", "comment": null}
 , {"addr": "0x405d10", "name": "Timer::set_value", "comment": null}
 , {"addr": "0x407420", "name": "AnmManager::sub_407420", "comment": null}
 , {"addr": "0x407d70", "name": "TableCardData::get", "comment": null}
@@ -38,6 +38,8 @@
 , {"addr": "0x408c30", "name": "AbilityManager::sub_408c30", "comment": null}
 , {"addr": "0x408d00", "name": "AbilityManager::create_all_card_lists_for_hud", "comment": null}
 , {"addr": "0x408de0", "name": "AbilityManager::create_card_list_for_hud", "comment": null}
+, {"addr": "0x409590", "name": "AnmLoaded::instantiate_vm_to_ui_list_front", "comment": null}
+, {"addr": "0x409670", "name": "AnmLoaded::instantiate_vm_to_ui_list_back", "comment": null}
 , {"addr": "0x409750", "name": "Timer::decrement", "comment": null}
 , {"addr": "0x409940", "name": "BulletManager::sub_409940", "comment": null}
 , {"addr": "0x409a30", "name": "Player::get_damage_source_by_index", "comment": null}
@@ -315,6 +317,8 @@
 , {"addr": "0x413150", "name": "CardBaseClass::on_anm_id_assigned_to_hud", "comment": null}
 , {"addr": "0x413160", "name": "CardBaseClass::on_draw", "comment": null}
 , {"addr": "0x413170", "name": "CardBaseClass::method_4C", "comment": null}
+, {"addr": "0x413180", "name": "AnmLoaded::instantiate_vm_to_world_list_back2", "comment": null}
+, {"addr": "0x416a10", "name": "AnmLoaded::instantiate_vm_to_ui_list_back2", "comment": null}
 , {"addr": "0x4171b0", "name": "AbilityShop::initialize", "comment": null}
 , {"addr": "0x417880", "name": "AbilityShop::sub_417880", "comment": null}
 , {"addr": "0x417cc0", "name": "AbilityShop::on_tick", "comment": null}
@@ -432,11 +436,14 @@
 , {"addr": "0x439020", "name": "EnemyData::ecl_func_call_2_ex", "comment": null}
 , {"addr": "0x4391a0", "name": "EnemyData::ecl_func_call_3_ex", "comment": null}
 , {"addr": "0x439320", "name": "EnemyData::ecl_func_set_4_ex", "comment": null}
+, {"addr": "0x43a030", "name": "AnmLoaded::instantiate_vm_to_world_list_front", "comment": null}
+, {"addr": "0x43a110", "name": "AnmLoaded::instantiate_vm_to_world_list_front2", "comment": null}
 , {"addr": "0x43a340", "name": "FpsCounter::on_draw", "comment": null}
 , {"addr": "0x43a3f0", "name": "GuiMsgVm::destructor", "comment": null}
 , {"addr": "0x43b800", "name": "Gui::operator new", "comment": null}
 , {"addr": "0x43bb70", "name": "Gui::on_tick", "comment": null}
 , {"addr": "0x43d6f0", "name": "Gui::on_tick__stub", "comment": null}
+, {"addr": "0x43d720", "name": "GuiMsgVm::constructor", "comment": null}
 , {"addr": "0x43e550", "name": "GuiMsgVm::run", "comment": null}
 , {"addr": "0x4420e0", "name": "Gui::sub_4420e0", "comment": null}
 , {"addr": "0x442480", "name": "LaserManager::destroy_all", "comment": null}
@@ -576,6 +583,9 @@
 , {"addr": "0x45ea00", "name": "Player::tick_shooting_state", "comment": null}
 , {"addr": "0x45f0f0", "name": "enm_compute_damage_sources", "comment": null}
 , {"addr": "0x4615e0", "name": "ReplayManager::initialize", "comment": null}
+, {"addr": "0x461db0", "name": "ReplayManager::on_tick_24__speedup_replay__body", "comment": null}
+, {"addr": "0x462940", "name": "ReplayManager::on_tick_11__record_replay", "comment": null}
+, {"addr": "0x462c30", "name": "ReplayManager::on_tick_24__speedup_replay", "comment": null}
 , {"addr": "0x463dd0", "name": "PopupManager::operator new", "comment": null}
 , {"addr": "0x463f50", "name": "PopupManager::operator delete", "comment": null}
 , {"addr": "0x464020", "name": "PopupManager::on_tick", "comment": null}
@@ -622,7 +632,10 @@
 , {"addr": "0x488400", "name": "AnmManager::insert_in_world_list_front", "comment": null}
 , {"addr": "0x488490", "name": "AnmManager::insert_in_ui_list_back", "comment": null}
 , {"addr": "0x488540", "name": "AnmManager::insert_in_ui_list_front", "comment": null}
-, {"addr": "0x4885d0", "name": "AnmManager::remove_from_global_lists", "comment": null}
+, {"addr": "0x4885d0", "name": "AnmManager::destroy_possibly_managed_vm", "comment": null}
+, {"addr": "0x488770", "name": "AnmLoaded::instantiate_vm", "comment": null}
+, {"addr": "0x4888f0", "name": "AnmLoaded::instantiate_child_vm", "comment": null}
+, {"addr": "0x488a40", "name": "AnmLoaded::instantiate_orphan_vm_to_world_list_back", "comment": null}
 , {"addr": "0x488b40", "name": "AnmManager::get_vm_with_id", "comment": null}
 , {"addr": "0x488be0", "name": "AnmManager::interrupt_tree", "comment": null}
 , {"addr": "0x488cf0", "name": "AnmManager::sub_488cf0", "comment": null}
