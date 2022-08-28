@@ -20,6 +20,9 @@
 , {"addr": "0x402740", "name": "Rng::rand_dword", "comment": null}
 , {"addr": "0x4027d0", "name": "Rng::randf_0_to_1", "comment": null}
 , {"addr": "0x402810", "name": "Rng::randf_neg_1_to_1", "comment": null}
+, {"addr": "0x402940", "name": "MenuSelect::push_current_to_stack", "comment": null}
+, {"addr": "0x402990", "name": "MenuSelect::pop_and_set_from_stack", "comment": null}
+, {"addr": "0x4029e0", "name": "MenuSelect::add_to_index", "comment": null}
 , {"addr": "0x402af0", "name": "Thread::operator delete", "comment": null}
 , {"addr": "0x402b30", "name": "sub_402b30__join_thread", "comment": null}
 , {"addr": "0x402bf0", "name": "PosVel::update_secondary_fields", "comment": null}
@@ -29,13 +32,14 @@
 , {"addr": "0x405d10", "name": "Timer::set_value", "comment": null}
 , {"addr": "0x407420", "name": "AnmManager::sub_407420", "comment": null}
 , {"addr": "0x407d70", "name": "TableCardData::get", "comment": null}
+, {"addr": "0x407da0", "name": "AbilityManager::reset_cards", "comment": null}
 , {"addr": "0x4080e0", "name": "AbilityManager::sub_4080e0", "comment": null}
 , {"addr": "0x4082b0", "name": "AbilityManager::operator new", "comment": null}
 , {"addr": "0x408640", "name": "AbilityManager::on_tick", "comment": null}
 , {"addr": "0x408a90", "name": "AbilityManager::on_tick__stub", "comment": null}
 , {"addr": "0x408ab0", "name": "AbilityManager::on_draw", "comment": null}
-, {"addr": "0x408b00", "name": "AbilityManager::sub_408b00", "comment": null}
-, {"addr": "0x408c30", "name": "AbilityManager::sub_408c30", "comment": null}
+, {"addr": "0x408b00", "name": "AbilityManager::set_selected_active_card", "comment": null}
+, {"addr": "0x408c30", "name": "AbilityManager::update_selected_active_card_hud", "comment": null}
 , {"addr": "0x408d00", "name": "AbilityManager::create_all_card_lists_for_hud", "comment": null}
 , {"addr": "0x408de0", "name": "AbilityManager::create_card_list_for_hud", "comment": null}
 , {"addr": "0x409590", "name": "AnmLoaded::instantiate_vm_to_ui_list_front", "comment": null}
@@ -318,9 +322,24 @@
 , {"addr": "0x413160", "name": "CardBaseClass::on_draw", "comment": null}
 , {"addr": "0x413170", "name": "CardBaseClass::method_4C", "comment": null}
 , {"addr": "0x413180", "name": "AnmLoaded::instantiate_vm_to_world_list_back2", "comment": null}
+, {"addr": "0x413470", "name": "AbilityMenu::set_state", "comment": null}
+, {"addr": "0x413510", "name": "ScoreFileSuper::write_files_and_backup", "comment": null}
+, {"addr": "0x413650", "name": "AbilityMenu::initialize", "comment": null}
+, {"addr": "0x413810", "name": "AbilityMenu::operator new", "comment": null}
+, {"addr": "0x413950", "name": "AbilityMenu::operator delete", "comment": null}
+, {"addr": "0x413af0", "name": "AbilityMenu::on_tick", "comment": null}
+, {"addr": "0x415af0", "name": "AbilityMenu::sub_415af0", "comment": null}
+, {"addr": "0x415b70", "name": "AbilityMenu::sub_415b70", "comment": null}
+, {"addr": "0x415cb0", "name": "AbilityMenu::sub_415cb0", "comment": null}
+, {"addr": "0x415e00", "name": "AbilityMenu::on_draw", "comment": null}
+, {"addr": "0x416090", "name": "AbilityMenu::on_tick__stub", "comment": null}
+, {"addr": "0x4160a0", "name": "AbilityMenu::on_draw__stub", "comment": null}
 , {"addr": "0x416a10", "name": "AnmLoaded::instantiate_vm_to_ui_list_back2", "comment": null}
+, {"addr": "0x416b70", "name": "test_menu_input", "comment": null}
+, {"addr": "0x416ba0", "name": "MenuSelect::set_index", "comment": null}
 , {"addr": "0x4171b0", "name": "AbilityShop::initialize", "comment": null}
 , {"addr": "0x417880", "name": "AbilityShop::sub_417880", "comment": null}
+, {"addr": "0x417a60", "name": "GlobalsInner::assign", "comment": null}
 , {"addr": "0x417cc0", "name": "AbilityShop::on_tick", "comment": null}
 , {"addr": "0x418990", "name": "AbilityShop::on_draw", "comment": null}
 , {"addr": "0x418c20", "name": "AbilityShop::on_tick__stub", "comment": null}
@@ -412,6 +431,10 @@
 , {"addr": "0x42af30", "name": "EffectManager::on_tick", "comment": null}
 , {"addr": "0x42af60", "name": "EffectManager::on_draw", "comment": null}
 , {"addr": "0x42b650", "name": "Ending::initialize", "comment": null}
+, {"addr": "0x42b8b0", "name": "Ending::destructor", "comment": null}
+, {"addr": "0x42bab0", "name": "Ending::operator new", "comment": null}
+, {"addr": "0x42bb30", "name": "Ending::on_tick", "comment": null}
+, {"addr": "0x42bc50", "name": "Ending::on_draw", "comment": null}
 , {"addr": "0x42cb90", "name": "AsciiManager::sub_42cb90", "comment": null}
 , {"addr": "0x42ccc0", "name": "EclRunContext::constructor", "comment": null}
 , {"addr": "0x42cdd0", "name": "Enemy::sub_42cdd0", "comment": null}
@@ -451,7 +474,11 @@
 , {"addr": "0x4432b0", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x4437b0", "name": "GameThread::operator new", "comment": null}
 , {"addr": "0x444650", "name": "GameThread::end_stage", "comment": null}
-, {"addr": "0x444f10", "name": "HelpManual::operator new", "comment": null}
+, {"addr": "0x444f10", "name": "ManualMenu::operator new", "comment": null}
+, {"addr": "0x4450b0", "name": "ManualMenu::operator delete", "comment": null}
+, {"addr": "0x4451c0", "name": "ManualMenu::on_tick", "comment": null}
+, {"addr": "0x445690", "name": "ManualMenu::on_tick__stub", "comment": null}
+, {"addr": "0x4456a0", "name": "ManualMenu::on_draw", "comment": null}
 , {"addr": "0x4456b0", "name": "Item::constructor", "comment": null}
 , {"addr": "0x445800", "name": "Item::destructor", "comment": null}
 , {"addr": "0x445820", "name": "ItemManager::operator new", "comment": null}
@@ -462,6 +489,13 @@
 , {"addr": "0x446f00", "name": "ItemManager::on_draw_04", "comment": null}
 , {"addr": "0x446f20", "name": "ItemManager::on_draw_08", "comment": null}
 , {"addr": "0x446f40", "name": "ItemManager::spawn_item", "comment": null}
+, {"addr": "0x447450", "name": "KeyConfigMenu::set_state", "comment": null}
+, {"addr": "0x4474a0", "name": "KeyConfigMenu::operator new", "comment": null}
+, {"addr": "0x447630", "name": "KeyConfigMenu::operator delete", "comment": null}
+, {"addr": "0x447700", "name": "KeyConfigMenu::on_tick", "comment": null}
+, {"addr": "0x447cf0", "name": "KeyConfigMenu::on_draw", "comment": null}
+, {"addr": "0x447fa0", "name": "KeyConfigMenu::on_tick__stub", "comment": null}
+, {"addr": "0x447fb0", "name": "KeyConfigMenu::on_draw__stub", "comment": null}
 , {"addr": "0x447fc0", "name": "LaserBaseClass::method_0", "comment": null}
 , {"addr": "0x447fd0", "name": "LaserBaseClass::run_ex", "comment": null}
 , {"addr": "0x447fe0", "name": "LaserBaseClass::method_8__beam", "comment": null}
@@ -560,10 +594,21 @@
 , {"addr": "0x4531b0", "name": "LoadingThread::operator new", "comment": null}
 , {"addr": "0x453640", "name": "Supervisor::on_registration", "comment": null}
 , {"addr": "0x453db0", "name": "Supervisor::initialize", "comment": null}
+, {"addr": "0x454620", "name": "sub_454620_sets_bgm", "comment": null}
+, {"addr": "0x4546a0", "name": "sub_4546a0_unlocks_bgm", "comment": null}
 , {"addr": "0x454860", "name": "wait_for_game_thread", "comment": null}
 , {"addr": "0x454f50", "name": "Supervisor::sub_454f50", "comment": null}
 , {"addr": "0x4564b0", "name": "Notice::on_tick", "comment": null}
 , {"addr": "0x456810", "name": "Notice::on_tick__stub", "comment": null}
+, {"addr": "0x456820", "name": "Notice::on_draw", "comment": null}
+, {"addr": "0x456830", "name": "OptionsMenu::set_state", "comment": null}
+, {"addr": "0x456880", "name": "OptionsMenu::operator new", "comment": null}
+, {"addr": "0x456a90", "name": "OptionsMenu::operator delete", "comment": null}
+, {"addr": "0x456b60", "name": "OptionsMenu::on_tick", "comment": null}
+, {"addr": "0x457190", "name": "OptionsMenu::on_tick__stub", "comment": null}
+, {"addr": "0x4571a0", "name": "OptionsMenu::on_draw", "comment": null}
+, {"addr": "0x457870", "name": "ScoreFileShotData::add_to_top10_if_worthy", "comment": null}
+, {"addr": "0x45a4d0", "name": "MenuSelect::disable_index", "comment": null}
 , {"addr": "0x45a550", "name": "Player::set_shoot_key_short_timer", "comment": null}
 , {"addr": "0x45a690", "name": "PlayerInner::constructor", "comment": null}
 , {"addr": "0x45a7a0", "name": "Player::initialize", "comment": null}
@@ -583,9 +628,15 @@
 , {"addr": "0x45ea00", "name": "Player::tick_shooting_state", "comment": null}
 , {"addr": "0x45f0f0", "name": "enm_compute_damage_sources", "comment": null}
 , {"addr": "0x4615e0", "name": "ReplayManager::initialize", "comment": null}
-, {"addr": "0x461db0", "name": "ReplayManager::on_tick_24__speedup_replay__body", "comment": null}
-, {"addr": "0x462940", "name": "ReplayManager::on_tick_11__record_replay", "comment": null}
+, {"addr": "0x461ad0", "name": "ReplayManager::destructor", "comment": null}
+, {"addr": "0x461cf0", "name": "ReplayManager::operator_new_461fc0", "comment": null}
+, {"addr": "0x461db0", "name": "ReplayManager::on_tick__speedup_replay", "comment": null}
+, {"addr": "0x462940", "name": "ReplayManager::on_tick__record_replay", "comment": null}
+, {"addr": "0x462a50", "name": "ReplayManager::on_tick__playback_replay", "comment": null}
 , {"addr": "0x462c30", "name": "ReplayManager::on_tick_24__speedup_replay", "comment": null}
+, {"addr": "0x462d20", "name": "ReplayManager::sub_462d20", "comment": null}
+, {"addr": "0x4630e0", "name": "ReplayManager::new_replay_chunk", "comment": null}
+, {"addr": "0x463180", "name": "ReplayManager::sub_463180", "comment": null}
 , {"addr": "0x463dd0", "name": "PopupManager::operator new", "comment": null}
 , {"addr": "0x463f50", "name": "PopupManager::operator delete", "comment": null}
 , {"addr": "0x464020", "name": "PopupManager::on_tick", "comment": null}
@@ -593,19 +644,37 @@
 , {"addr": "0x4645d0", "name": "PopupManager::on_tick__stub", "comment": null}
 , {"addr": "0x4645e0", "name": "PopupManager::on_draw__stub", "comment": null}
 , {"addr": "0x4645f0", "name": "PopupManager::sub_4645f0", "comment": null}
-, {"addr": "0x4646e0", "name": "MainMenu::sub_4646e0", "comment": null}
+, {"addr": "0x4646e0", "name": "MainMenu::set_menu", "comment": null}
+, {"addr": "0x464740", "name": "MainMenu::set_menu_state", "comment": null}
+, {"addr": "0x464790", "name": "MainMenu::sub_464790_returns_anm_id", "comment": null}
+, {"addr": "0x4647c0", "name": "ScoreFile::has_cleared_maingame_with_shot", "comment": null}
+, {"addr": "0x464810", "name": "ScoreFile::has_cleared_difficulty_with_all_shots", "comment": null}
+, {"addr": "0x464860", "name": "ScoreFile::unlock_all", "comment": null}
 , {"addr": "0x464b80", "name": "MainMenu::thread_start", "comment": null}
 , {"addr": "0x464cb0", "name": "MainMenu::operator new", "comment": null}
 , {"addr": "0x464ed0", "name": "MainMenu::on_tick", "comment": null}
 , {"addr": "0x465870", "name": "MainMenu::on_draw", "comment": null}
 , {"addr": "0x465a80", "name": "MainMenu::on_tick__stub", "comment": null}
 , {"addr": "0x465a90", "name": "MainMenu::on_draw__stub", "comment": null}
-, {"addr": "0x466280", "name": "MainMenu::sub_466280", "comment": null}
-, {"addr": "0x467b10", "name": "MainMenu::sub_467b10", "comment": null}
-, {"addr": "0x4686e0", "name": "MainMenu::sub_4686e0", "comment": null}
-, {"addr": "0x469c80", "name": "MainMenu::sub_469c80", "comment": null}
-, {"addr": "0x46bca0", "name": "MainMenu::sub_46bca0", "comment": null}
-, {"addr": "0x46d320", "name": "MainMenu::sub_46d320", "comment": null}
+, {"addr": "0x465aa0", "name": "MainMenu::tick_menu_01_title", "comment": null}
+, {"addr": "0x466280", "name": "MainMenu::tick_menu_05_difficulty_select", "comment": null}
+, {"addr": "0x466740", "name": "MainMenu::tick_menu_06_character_select", "comment": null}
+, {"addr": "0x467320", "name": "MainMenu::tick_menu_08_stage_select", "comment": null}
+, {"addr": "0x4679d0", "name": "load_replays", "comment": null}
+, {"addr": "0x467b10", "name": "MainMenu::tick_menu_0c_replay", "comment": null}
+, {"addr": "0x4686e0", "name": "MainMenu::tick_menu_0a_player_data", "comment": null}
+, {"addr": "0x468b10", "name": "MainMenu::tick_menu_0b_score_ranking", "comment": null}
+, {"addr": "0x4694a0", "name": "MainMenu::sub_4694a0", "comment": null}
+, {"addr": "0x469c80", "name": "MainMenu::tick_menu_0f_result", "comment": null}
+, {"addr": "0x46a5d0", "name": "MainMenu::tick_menu_10_save_replay", "comment": null}
+, {"addr": "0x46aff0", "name": "MainMenu::tick_menu_0e_music_room", "comment": null}
+, {"addr": "0x46bca0", "name": "MainMenu::tick_menu_12_spell_prac_stage_select", "comment": null}
+, {"addr": "0x46c070", "name": "MainMenu::sub_46c070", "comment": null}
+, {"addr": "0x46c1d0", "name": "MainMenu::tick_menu_13_spell_prac_spell_select", "comment": null}
+, {"addr": "0x46c680", "name": "MainMenu::sub_46c680", "comment": null}
+, {"addr": "0x46ccd0", "name": "MainMenu::sub_46ccd0", "comment": null}
+, {"addr": "0x46cd50", "name": "MainMenu::tick_menu_14_spell_prac_diff_select", "comment": null}
+, {"addr": "0x46d320", "name": "MainMenu::tick_menu_17_achievement", "comment": null}
 , {"addr": "0x46e490", "name": "TrophyNotice::award_trophy", "comment": null}
 , {"addr": "0x471270", "name": "WinMain", "comment": null}
 , {"addr": "0x4726a0", "name": "Window::sub_4726a0", "comment": null}

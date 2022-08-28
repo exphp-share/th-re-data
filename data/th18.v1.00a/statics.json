@@ -112,7 +112,10 @@
 , {"addr": "0x4bee00", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x4c0748", "name": "__seh_table", "type": "uint32_t[0x41]", "comment": null}
 , {"addr": "0x4c4a4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4c5f88", "name": "ENDING_ID", "type": "int32_t", "comment": null}
 , {"addr": "0x4c9410", "name": "STAGE_DATA_TABLE", "type": "struct zTableStageData[0x8]", "comment": null}
+, {"addr": "0x4ca218", "name": "MENU_INPUT_PREV", "type": "int32_t", "comment": null}
+, {"addr": "0x4ca21c", "name": "MENU_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4cabe8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
 , {"addr": "0x4cccc0", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
 , {"addr": "0x4ccdf0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
@@ -120,17 +123,24 @@
 , {"addr": "0x4cf294", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf298", "name": "ABILITY_MANAGER_PTR", "type": "struct zAbilityManager*", "comment": null}
 , {"addr": "0x4cf29c", "name": "ABILITY_TXT_PTR", "type": "struct zAbilityText*", "comment": null}
+, {"addr": "0x4cf2a0", "name": "ABILITY_MENU_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf2ac", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
 , {"addr": "0x4cf2b8", "name": "BOMB_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf2bc", "name": "BULLET_MANAGER_PTR", "type": "struct zBulletManager*", "comment": null}
 , {"addr": "0x4cf2c0", "name": "SPELLCARD_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf2cc", "name": "ENDING_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf2d0", "name": "ENEMY_MANAGER_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf2e0", "name": "GUI_PTR", "type": "struct zGui*", "comment": null}
 , {"addr": "0x4cf2e4", "name": "GAME_THREAD_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf2e8", "name": "MANUAL_MENU_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf2ec", "name": "ITEM_MANAGER_PTR", "type": "struct zItemManager*", "comment": null}
+, {"addr": "0x4cf3f0", "name": "KEY_CONFIG_MENU_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf3f4", "name": "LASER_MANAGER_PTR", "type": "struct zLaserManager*", "comment": null}
+, {"addr": "0x4cf404", "name": "NOTICE_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf408", "name": "OPTIONS_MENU_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf410", "name": "PLAYER_PTR", "type": "struct zPlayer*", "comment": null}
 , {"addr": "0x4cf418", "name": "REPLAY_MANAGER_PTR", "type": "int32_t", "comment": null}
+, {"addr": "0x4cf41c", "name": "SCOREFILE_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf420", "name": "POPUP_MANAGER_PTR", "type": "int32_t", "comment": null}
 , {"addr": "0x4cf428", "name": "CUR_STAGE_DATA", "type": "struct zTableStageData*", "comment": null}
 , {"addr": "0x4cf43c", "name": "MAIN_MENU_PTR", "type": "struct zMainMenu*", "comment": null}
