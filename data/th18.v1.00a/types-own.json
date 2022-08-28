@@ -33,6 +33,38 @@
     ]
   }
 
+, "zAbilityMenu": 
+  { "is": "struct"
+  , "size": "0x13fc"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "__select_1", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0xe4", "name": "__select_2", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0x1bc", "name": "__select_3", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0x294", "name": "time_in_current_state", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x2a8", "name": "position", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x2b4", "name": "__vec3_0x2b4", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x2c0", "name": "__vec3_0x2c0", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x2cc", "name": "__timer_0x2cc", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x2e0", "name": "__timer_0x2e0", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x2f4", "name": "__unknown", "type": null}
+    , {"offset": "0x304", "name": "__card_ids_0x304", "type": {"is": "array", "len": 56, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x3e4", "name": "num_total_cards", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x3e8", "name": "anm_id__ability_menu", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x3ec", "name": "__anm_ids_0x3ec", "type": {"is": "array", "len": 256, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0x7ec", "name": "__anm_ids_0x7ec", "type": {"is": "array", "len": 256, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0xbec", "name": "__anm_ids_0xbec", "type": {"is": "array", "len": 256, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0xfec", "name": "__card_ptrs_0xfec", "type": {"is": "array", "len": 256, "inner": {"is": "ptr", "inner": {"is": "named", "name": "zCardBaseClass"}}}}
+    , {"offset": "0x13ec", "name": "__unknown", "type": null}
+    , {"offset": "0x13f4", "name": "state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x13f8", "name": "previous_state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x13fc", "name": "__end", "type": null}
+    ]
+  }
+
 , "zAbilityText": 
   { "is": "struct"
   , "size": "0x63e0"
@@ -1169,6 +1201,21 @@
     ]
   }
 
+, "zEnding": 
+  { "is": "struct"
+  , "size": "0x24"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "ending_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x24", "name": "__end", "type": null}
+    ]
+  }
+
 , "zEnemy": 
   { "is": "struct"
   , "size": "0x683c"
@@ -1477,6 +1524,17 @@
     ]
   }
 
+, "zGlobalsInner": 
+  { "is": "struct"
+  , "size": "0x104"
+  , "align": 1
+  , "packed": true
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x104", "name": "__end", "type": null}
+    ]
+  }
+
 , "zGui": 
   { "is": "struct"
   , "size": "0x1c0"
@@ -1739,6 +1797,25 @@
     ]
   }
 
+, "zKeyConfigMenu": 
+  { "is": "struct"
+  , "size": "0x180"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "select", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0xe8", "name": "__unknown", "type": null}
+    , {"offset": "0x148", "name": "time_in_current_state", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x15c", "name": "position", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x168", "name": "__timer_0x168", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x17c", "name": "state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x180", "name": "__end", "type": null}
+    ]
+  }
+
 , "zLaserBaseClass": 
   { "is": "struct"
   , "size": "0x788"
@@ -1986,10 +2063,91 @@
   { "is": "struct"
   , "size": "0x5d98"
   , "align": 1
-  , "packed": true
   , "members": 
     [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x10", "name": "title_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x14", "name": "title_v_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x18", "name": "current_menu", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x1c", "name": "previous_menu", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x20", "name": "menu_state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x24", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "select", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0xf8", "name": "__unknown", "type": null}
+    , {"offset": "0xfc", "name": "__select_2", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0x1d4", "name": "__select_3", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0x2ac", "name": "__select_4", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0x384", "name": "time_in_current_state", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x398", "name": "anm_ids", "type": {"is": "array", "len": 220, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0x708", "name": "__unknown", "type": null}
+    , {"offset": "0x595c", "name": "result_name_input", "type": {"is": "array", "len": 8, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x5964", "name": "__unknown", "type": null}
+    , {"offset": "0x5968", "name": "result_is_not_top10", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x596c", "name": "__unknown", "type": null}
+    , {"offset": "0x5970", "name": "select_player_name_input", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0x5a48", "name": "replays", "type": {"is": "array", "len": 75, "inner": {"is": "ptr", "inner": {"is": "named", "name": "zReplayManager"}}}}
+    , {"offset": "0x5b74", "name": "__unknown", "type": null}
+    , {"offset": "0x5c44", "name": "musiccmt_file", "type": {"is": "ptr", "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x5c48", "name": "__unknown", "type": null}
+    , {"offset": "0x5c50", "name": "__select_6", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0x5d28", "name": "__unknown", "type": null}
+    , {"offset": "0x5d48", "name": "score_ranking_menu__is_spell_list", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x5d4c", "name": "__unknown", "type": null}
+    , {"offset": "0x5d54", "name": "__timer_0x5d54", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x5d68", "name": "__unknown", "type": null}
     , {"offset": "0x5d98", "name": "__end", "type": null}
+    ]
+  }
+
+, "zMainMenuId": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "signed": false
+  , "values": 
+    [ {"name": "MENU_INIT", "value": 0}
+    , {"name": "MENU_TITLE", "value": 1}
+    , {"name": "MENU_EXIT", "value": 2}
+    , {"name": "MENU_OPTION", "value": 3}
+    , {"name": "MENU_DIFF_SELECT", "value": 5}
+    , {"name": "MENU_CHARACTER_SELECT", "value": 6}
+    , {"name": "MENU_STAGE_SELECT", "value": 8}
+    , {"name": "MENU_9", "value": 9}
+    , {"name": "MENU_PLAYER_DATA", "value": 10}
+    , {"name": "MENU_SCORE_RANKING", "value": 11}
+    , {"name": "MENU_REPLAY", "value": 12}
+    , {"name": "MENU_D", "value": 13}
+    , {"name": "MENU_MUSIC_ROOM", "value": 14}
+    , {"name": "MENU_RESULT", "value": 15}
+    , {"name": "MENU_SAVE_REPLAY", "value": 16}
+    , {"name": "MENU_MANUAL", "value": 17}
+    , {"name": "MENU_SPELL_PRAC_STAGE_SELECT", "value": 18}
+    , {"name": "MENU_SPELL_PRAC_SPELL_SELECT", "value": 19}
+    , {"name": "MENU_SPELL_PRAC_DIFF_SELECT", "value": 20}
+    , {"name": "MENU_ACHIEVEMENT", "value": 23}
+    , {"name": "MENU_ABILITY_CARD_INFO", "value": 24}
+    ]
+  }
+
+, "zManualMenu": 
+  { "is": "struct"
+  , "size": "0x1bc"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "timer", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x24", "name": "select", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0xfc", "name": "anm_ids", "type": {"is": "array", "len": 10, "inner": {"is": "named", "name": "zAnmId"}}}
+    , {"offset": "0x124", "name": "__unknown", "type": null}
+    , {"offset": "0x12c", "name": "help_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x130", "name": "__unknown", "type": null}
+    , {"offset": "0x134", "name": "state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x138", "name": "__unknown", "type": null}
+    , {"offset": "0x1bc", "name": "__end", "type": null}
     ]
   }
 
@@ -2008,6 +2166,41 @@
     , {"offset": "0x90", "name": "__unknown", "type": null}
     , {"offset": "0xd0", "name": "__usually_1", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0xd4", "name": "__unknown", "type": null}
+    , {"offset": "0xd8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zMenuInput": 
+  { "is": "enum"
+  , "size": "0x4"
+  , "align": 4
+  , "signed": false
+  , "values": 
+    [ {"name": "KEY_Z", "value": 1}
+    , {"name": "KEY_X", "value": 2}
+    , {"name": "KEY_UP", "value": 16}
+    , {"name": "KEY_DOWN", "value": 32}
+    , {"name": "KEY_LEFT", "value": 64}
+    , {"name": "KEY_RIGHT", "value": 128}
+    , {"name": "KEY_ESC", "value": 256}
+    , {"name": "KEY_ENTER", "value": 524288}
+    ]
+  }
+
+, "zMenuSelect": 
+  { "is": "struct"
+  , "size": "0xd8"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "selection_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "selection_on_prev_tick", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x8", "name": "selection_count", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc", "name": "selection_stack", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x4c", "name": "selection_count_stack", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x8c", "name": "current_stack_index", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x90", "name": "disabled_selections", "type": {"is": "array", "len": 16, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0xd0", "name": "wrap_around", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xd4", "name": "num_disabled_selections", "type": {"is": "int", "signed": true, "size": 4}}
     , {"offset": "0xd8", "name": "__end", "type": null}
     ]
   }
@@ -2038,6 +2231,52 @@
     , {"offset": "0x6", "name": "offset_06", "type": {"is": "int", "signed": false, "size": 2}}
     , {"offset": "0x8", "name": "__the_actual_argument_layout_depend_on_the_instruction_but_i_put_words_to_let_binja_be_helpful", "type": {"is": "array", "len": 0, "inner": {"is": "named", "name": "zCOMMENT"}}}
     , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zNotice": 
+  { "is": "struct"
+  , "size": "0x1b4"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "time_in_current_state", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x24", "name": "select", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0xfc", "name": "anm_id__notice_bk", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x100", "name": "__unknown", "type": null}
+    , {"offset": "0x10c", "name": "anm_id__notice_text", "type": {"is": "named", "name": "zAnmId"}}
+    , {"offset": "0x110", "name": "__unknown", "type": null}
+    , {"offset": "0x114", "name": "finished", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x118", "name": "__unknown", "type": null}
+    , {"offset": "0x120", "name": "notice_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x124", "name": "__maybe_trophy_anm", "type": {"is": "ptr", "inner": {"is": "named", "name": "zAnmLoaded"}}}
+    , {"offset": "0x128", "name": "__unknown", "type": null}
+    , {"offset": "0x12c", "name": "sub_state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x130", "name": "__unknown", "type": null}
+    , {"offset": "0x1b4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zOptionsMenu": 
+  { "is": "struct"
+  , "size": "0x138"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "select", "type": {"is": "named", "name": "zMenuSelect"}}
+    , {"offset": "0xe8", "name": "time_in_current_state", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0xfc", "name": "position", "type": {"is": "named", "name": "zFloat3"}}
+    , {"offset": "0x108", "name": "__timer_0x108", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x11c", "name": "__timer_0x11c", "type": {"is": "named", "name": "zTimer"}}
+    , {"offset": "0x130", "name": "__unknown", "type": null}
+    , {"offset": "0x134", "name": "state", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x138", "name": "__end", "type": null}
     ]
   }
 
@@ -2175,6 +2414,136 @@
     ]
   }
 
+, "zReplayChunk": 
+  { "is": "struct"
+  , "size": "0x18b4"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "input", "type": {"is": "array", "len": 900, "inner": {"is": "named", "name": "zReplayFrameInput"}}}
+    , {"offset": "0x1518", "name": "next_input_write_pos", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayFrameInput"}}}
+    , {"offset": "0x151c", "name": "fps_counts", "type": {"is": "array", "len": 900, "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x18a0", "name": "next_fps_count_write_pos", "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x18a4", "name": "node", "type": {"is": "named", "name": "zReplayChunkList"}}
+    , {"offset": "0x18b4", "name": "__end", "type": null}
+    ]
+  }
+
+, "zReplayChunkList": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "entry", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayChunk"}}}
+    , {"offset": "0x4", "name": "next", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayChunkList"}}}
+    , {"offset": "0x8", "name": "prev", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayChunkList"}}}
+    , {"offset": "0xc", "name": "__seldom_used", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayChunkList"}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "zReplayFrameInput": 
+  { "is": "struct"
+  , "size": "0x6"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "input", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x2", "name": "input_rising_edge", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x4", "name": "input_falling_edge", "type": {"is": "int", "signed": false, "size": 2}}
+    , {"offset": "0x6", "name": "__end", "type": null}
+    ]
+  }
+
+, "zReplayGamestateSnapshot": 
+  { "is": "struct"
+  , "size": "0x126c"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "stage", "type": {"is": "int", "signed": true, "size": 2}}
+    , {"offset": "0x2", "name": "rng_state", "type": {"is": "int", "signed": true, "size": 2}}
+    , {"offset": "0x4", "name": "__unknown", "type": null}
+    , {"offset": "0x164", "name": "owned_card_ids", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x564", "name": "__cards_timer_2__probably_recharge_times", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x964", "name": "selected_active_card_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x968", "name": "__unknown", "type": null}
+    , {"offset": "0x126c", "name": "__end", "type": null}
+    ]
+  }
+
+, "zReplayInfo": 
+  { "is": "struct"
+  , "size": "0xc8"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0xa", "name": "practice_mode", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0xb", "name": "__unknown", "type": null}
+    , {"offset": "0x1c", "name": "config", "type": {"is": "named", "name": "zConfig"}}
+    , {"offset": "0xa4", "name": "__unknown", "type": null}
+    , {"offset": "0xac", "name": "shottype", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xb0", "name": "subshot", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xb4", "name": "difficulty", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xb8", "name": "__unknown", "type": null}
+    , {"offset": "0xc8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zReplayLoadedStageData": 
+  { "is": "struct"
+  , "size": "0x28"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "input_begin", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayFrameInput"}}}
+    , {"offset": "0x4", "name": "input_current", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayFrameInput"}}}
+    , {"offset": "0x8", "name": "fps_counts_begin", "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0xc", "name": "fps_counts_current", "type": {"is": "ptr", "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x10", "name": "gamestate_at_stage_begin", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayGamestateSnapshot"}}}
+    , {"offset": "0x14", "name": "frame_current", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x18", "name": "node", "type": {"is": "named", "name": "zReplayLoadedStageDataList"}}
+    , {"offset": "0x28", "name": "__end", "type": null}
+    ]
+  }
+
+, "zReplayLoadedStageDataList": 
+  { "is": "struct"
+  , "size": "0x10"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "entry", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayLoadedStageData"}}}
+    , {"offset": "0x4", "name": "next", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayLoadedStageDataList"}}}
+    , {"offset": "0x8", "name": "prev", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayLoadedStageDataList"}}}
+    , {"offset": "0xc", "name": "__seldom_used", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayLoadedStageDataList"}}}
+    , {"offset": "0x10", "name": "__end", "type": null}
+    ]
+  }
+
+, "zReplayManager": 
+  { "is": "struct"
+  , "size": "0x31c"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x4", "name": "on_tick", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x8", "name": "on_draw", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0xc", "name": "mode", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x14", "name": "replay_file", "type": {"is": "ptr", "inner": {"is": "void"}}}
+    , {"offset": "0x18", "name": "replay_info", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayInfo"}}}
+    , {"offset": "0x1c", "name": "stage_gamestate_snapshots", "type": {"is": "array", "len": 8, "inner": {"is": "ptr", "inner": {"is": "named", "name": "zReplayGamestateSnapshot"}}}}
+    , {"offset": "0x3c", "name": "recorded_chunk_list_heads_by_stage", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zReplayChunkList"}}}
+    , {"offset": "0xbc", "name": "currently_recording_chunk", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayChunk"}}}
+    , {"offset": "0xc0", "name": "num_chunks_currently_recorded", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc4", "name": "__stage_array", "type": {"is": "array", "len": 8, "inner": {"is": "named", "name": "zReplayLoadedStageData"}}}
+    , {"offset": "0x204", "name": "__replay_info_0x204", "type": {"is": "ptr", "inner": {"is": "named", "name": "zReplayInfo"}}}
+    , {"offset": "0x208", "name": "current_fps_during_playback", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x20c", "name": "current_tick_num_in_stage", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x210", "name": "on_tick_22", "type": {"is": "ptr", "inner": {"is": "named", "name": "zUpdateFunc"}}}
+    , {"offset": "0x214", "name": "stage_num", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x218", "name": "__unknown", "type": null}
+    , {"offset": "0x21c", "name": "filename", "type": {"is": "array", "len": 256, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x31c", "name": "__end", "type": null}
+    ]
+  }
+
 , "zRng": 
   { "is": "struct"
   , "size": "0x8"
@@ -2185,6 +2554,106 @@
     , {"offset": "0x2", "name": "__unknown", "type": null}
     , {"offset": "0x4", "name": "field_4", "type": {"is": "int", "signed": false, "size": 4}}
     , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zScoreFile": 
+  { "is": "struct"
+  , "size": "0x5f888"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "data_per_shottype", "type": {"is": "array", "len": 5, "inner": {"is": "named", "name": "zScoreFileShotData"}}}
+    , {"offset": "0x5f4b8", "name": "__unknown", "type": null}
+    , {"offset": "0x5f4c4", "name": "last_saved_player_name", "type": {"is": "array", "len": 8, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0x5f4cc", "name": "__unknown", "type": null}
+    , {"offset": "0x5f4de", "name": "bgm_is_unlocked", "type": {"is": "array", "len": 18, "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x5f4f0", "name": "__unknown", "type": null}
+    , {"offset": "0x5f508", "name": "achievement_is_unlocked", "type": {"is": "array", "len": 30, "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x5f526", "name": "__unknown", "type": null}
+    , {"offset": "0x5f588", "name": "unlocked_cards", "type": {"is": "array", "len": 57, "inner": {"is": "int", "signed": false, "size": 1}}}
+    , {"offset": "0x5f5c1", "name": "__unknown", "type": null}
+    , {"offset": "0x5f608", "name": "initial_cards_per_shottype", "type": {"is": "array", "len": 4, "inner": {"is": "array", "len": 16, "inner": {"is": "int", "signed": false, "size": 1}}}}
+    , {"offset": "0x5f648", "name": "__unknown", "type": null}
+    , {"offset": "0x5f678", "name": "initial_card_slots_per_gamemode", "type": {"is": "array", "len": 4, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x5f688", "name": "__unknown", "type": null}
+    , {"offset": "0x5f888", "name": "__end", "type": null}
+    ]
+  }
+
+, "zScoreFileShotData": 
+  { "is": "struct"
+  , "size": "0x130f0"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "__unknown", "type": null}
+    , {"offset": "0x10", "name": "top_results_per_difficulty", "type": {"is": "array", "len": 5, "inner": {"is": "array", "len": 10, "inner": {"is": "named", "name": "zScoreFileTopResult"}}}}
+    , {"offset": "0x650", "name": "__unknown", "type": null}
+    , {"offset": "0x8d0", "name": "spell_data", "type": {"is": "array", "len": 97, "inner": {"is": "named", "name": "zScoreFileSpellData"}}}
+    , {"offset": "0x5c2c", "name": "__unknown", "type": null}
+    , {"offset": "0x64ec", "name": "cleared_difficulties", "type": {"is": "array", "len": 5, "inner": {"is": "int", "signed": true, "size": 4}}}
+    , {"offset": "0x6500", "name": "__unknown", "type": null}
+    , {"offset": "0x12ef8", "name": "stage_practice_data_per_difficulty", "type": {"is": "array", "len": 5, "inner": {"is": "array", "len": 9, "inner": {"is": "named", "name": "zScoreFileStagePracticeData"}}}}
+    , {"offset": "0x13060", "name": "__unknown", "type": null}
+    , {"offset": "0x130f0", "name": "__end", "type": null}
+    ]
+  }
+
+, "zScoreFileSpellData": 
+  { "is": "struct"
+  , "size": "0xdc"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "spell_name", "type": {"is": "array", "len": 192, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0xc0", "name": "capture_count_maingame", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc4", "name": "capture_count_spellprac", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xc8", "name": "attempt_count_maingame", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xcc", "name": "attempt_count_spellprac", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xd0", "name": "spell_id", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xd4", "name": "difficulty", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xd8", "name": "spellprac_high_score", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0xdc", "name": "__end", "type": null}
+    ]
+  }
+
+, "zScoreFileStagePracticeData": 
+  { "is": "struct"
+  , "size": "0x8"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "high_score", "type": {"is": "int", "signed": true, "size": 4}}
+    , {"offset": "0x4", "name": "cleared_stage", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x5", "name": "unlocked_stage", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x6", "name": "__unknown", "type": null}
+    , {"offset": "0x8", "name": "__end", "type": null}
+    ]
+  }
+
+, "zScoreFileSuper": 
+  { "is": "struct"
+  , "size": "0xbf110"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "main", "type": {"is": "named", "name": "zScoreFile"}}
+    , {"offset": "0x5f888", "name": "backup", "type": {"is": "named", "name": "zScoreFile"}}
+    , {"offset": "0xbf110", "name": "__end", "type": null}
+    ]
+  }
+
+, "zScoreFileTopResult": 
+  { "is": "struct"
+  , "size": "0x20"
+  , "align": 1
+  , "members": 
+    [ {"offset": "0x0", "name": "high_score", "type": {"is": "int", "signed": false, "size": 4}}
+    , {"offset": "0x4", "name": "stage_num", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x5", "name": "continues_used", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x6", "name": "player_name", "type": {"is": "array", "len": 9, "inner": {"is": "int", "signed": true, "size": 1}}}
+    , {"offset": "0xf", "name": "__padding_probably", "type": {"is": "int", "signed": false, "size": 1}}
+    , {"offset": "0x10", "name": "__unknown", "type": null}
+    , {"offset": "0x18", "name": "slowdown", "type": {"is": "float", "size": 4}}
+    , {"offset": "0x1c", "name": "__unknown", "type": null}
+    , {"offset": "0x20", "name": "__end", "type": null}
     ]
   }
 
