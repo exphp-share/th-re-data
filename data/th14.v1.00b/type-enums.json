@@ -115,4 +115,6 @@
   , ["IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION", 16]
   ]
 
+, "zItemType":   []
+
 }

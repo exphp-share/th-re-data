@@ -277,6 +277,7 @@
 , {"addr": "0x4a9760", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4a9804", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x4aea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4aea4c", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4af3c0", "name": "BULLET_TYPE_DEFINITIONS", "type": "struct zTableBulletSpriteData[0x2c]", "comment": null}
 , {"addr": "0x4b23e4", "name": "IS_ACHIEVEMENT_MODE", "type": "int32_t", "comment": null}
 , {"addr": "0x4b3230", "name": "INPUT_STRUCT", "type": "struct zInput", "comment": null}

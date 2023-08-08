@@ -33,6 +33,7 @@
 , {"addr": "0x4a42c0", "name": "float(2.2)", "type": "float", "comment": null}
 , {"addr": "0x4a42d0", "name": "float(56)", "type": "float", "comment": null}
 , {"addr": "0x4a9fe8", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4ad138", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4ad138", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4aebd4", "name": "SHT_ON_TICK_FUNCS", "type": "void*[0x6]", "comment": null}
 , {"addr": "0x4aedf0", "name": "SHT_ON_INIT_FUNCS", "type": "void*[0x7]", "comment": "Takes Player in ecx"}
@@ -83,4 +84,5 @@
 , {"addr": "0x4d48b8", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4d49d0", "name": "INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4d49d4", "name": "INPUT_PREV", "type": "int32_t", "comment": null}
+, {"addr": "0x4d4ca0", "name": "VIRTUAL_KEYBOARD_FOR_PRACTICE_LIVES", "type": "uint8_t[0x100]", "comment": null}
 ]

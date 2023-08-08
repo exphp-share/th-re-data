@@ -36,6 +36,7 @@
 , {"addr": "0x4af024", "name": "float(-600)", "type": "float", "comment": null}
 , {"addr": "0x4af028", "name": "float(-14)", "type": "float", "comment": null}
 , {"addr": "0x4b4d48", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4b9c34", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4b9c34", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4bad30", "name": "ANM_X_ANCHOR_DATA", "type": "struct zFloat4[0x3]", "comment": null}
 , {"addr": "0x4bad60", "name": "ANM_Y_ANCHOR_DATA", "type": "struct zFloat4[0x3]", "comment": null}

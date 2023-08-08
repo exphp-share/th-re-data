@@ -111,6 +111,7 @@
 , {"addr": "0x4bed10", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4bee00", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x4c0748", "name": "__seh_table", "type": "uint32_t[0x41]", "comment": null}
+, {"addr": "0x4c4a4c", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4c4a4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4c5f88", "name": "ENDING_ID", "type": "int32_t", "comment": null}
 , {"addr": "0x4c9410", "name": "STAGE_DATA_TABLE", "type": "struct zTableStageData[0x8]", "comment": null}
@@ -118,6 +119,11 @@
 , {"addr": "0x4ca21c", "name": "MENU_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4cabe8", "name": "OUTPUT_BUF_FOR_STRINGS", "type": "char", "comment": null}
 , {"addr": "0x4cccc0", "name": "GLOBALS", "type": "struct zGlobals", "comment": null}
+, {"addr": "0x4ccccc", "name": "PRACTICE_LIVES", "type": "int32_t", "comment": null}
+, {"addr": "0x4ccce8", "name": "TIME_IN_STAGE", "type": "int32_t", "comment": null}
+, {"addr": "0x4cccec", "name": "TIME_IN_CHAPTER", "type": "int32_t", "comment": null}
+, {"addr": "0x4cccf0", "name": "TIME_IN_MUSIC", "type": "int32_t", "comment": null}
+, {"addr": "0x4ccd48", "name": "CURRENT_LIVES", "type": "int32_t", "comment": null}
 , {"addr": "0x4ccdf0", "name": "SUPERVISOR", "type": "struct zSupervisor", "comment": null}
 , {"addr": "0x4cf288", "name": "REPLAY_SAFE_RNG", "type": "struct zRng", "comment": null}
 , {"addr": "0x4cf294", "name": "UPDATE_FUNC_REGISTRY", "type": "int32_t", "comment": null}

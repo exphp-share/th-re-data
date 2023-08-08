@@ -296,6 +296,7 @@
 , {"addr": "0x49a0c0", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x49a128", "name": "__tls_directory", "type": "struct TLS_Directory", "comment": null}
 , {"addr": "0x49ea4c", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x49ea4c", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4a2250", "name": "ANM_508_TABLE", "type": "struct zTableAnm508Data[0x4]", "comment": null}
 , {"addr": "0x4a22d0", "name": "STAGE_1_DATA", "type": "struct zTableStageData", "comment": null}
 , {"addr": "0x4a23a4", "name": "STAGE_DATA_TABLE", "type": "struct zTableStageData[0x7]", "comment": null}

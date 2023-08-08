@@ -93,6 +93,7 @@
 , {"addr": "0x4cfe98", "name": "float(1)", "type": "float", "comment": null}
 , {"addr": "0x4d0100", "name": "float(-3.1415927)", "type": "float", "comment": null}
 , {"addr": "0x4d9f10", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4dfaf8", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4dfaf8", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4e0ef0", "name": "OPENED_FILE_HANDLE", "type": "HANDLE", "comment": "zun's file opening utility function writes the handle to a global instead of returning it because lol"}
 , {"addr": "0x4e6f34", "name": "INPUT_RISING_EDGE", "type": "int32_t", "comment": null}

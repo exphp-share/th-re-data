@@ -71,6 +71,7 @@
 , {"addr": "0x46a7ec", "name": "float(416)", "type": "float", "comment": null}
 , {"addr": "0x46a7f0", "name": "float(232)", "type": "float", "comment": null}
 , {"addr": "0x46afac", "name": "VTABLE_46afac", "type": "void*[0x3]", "comment": null}
+, {"addr": "0x470090", "name": "lookup_table_470090", "type": "uint8_t[0x74]", "comment": null}
 , {"addr": "0x476298", "name": "EFFECT_TABLE", "type": "struct zTableEffectData[0x14]", "comment": null}
 , {"addr": "0x478528", "name": "UNKNOWN_SOUND_DATA_TABLE", "type": "struct zTableUnknownSoundData[0x20]", "comment": null}
 , {"addr": "0x47a630", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}

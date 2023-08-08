@@ -49,6 +49,7 @@
 , {"addr": "0x498178", "name": "float(0.001)", "type": "float", "comment": null}
 , {"addr": "0x49822c", "name": "float(10)", "type": "float", "comment": null}
 , {"addr": "0x49e078", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4a2088", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4a2088", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4a3828", "name": "STAGE_DATA", "type": "struct zTableStageData[0x8]", "comment": null}
 , {"addr": "0x4a3a50", "name": "__SOME_HARDCODED_SHOOTER", "type": "struct zShtShooter", "comment": null}
@@ -59,6 +60,7 @@
 , {"addr": "0x4a5710", "name": "CHARACTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5714", "name": "SUBSHOT", "type": "int32_t", "comment": null}
 , {"addr": "0x4a5728", "name": "__STAGE__POSSIBLY", "type": "int32_t", "comment": null}
+, {"addr": "0x4a5764", "name": "PRACTICE_LIVES", "type": "int32_t", "comment": null}
 , {"addr": "0x4a7948", "name": "GAME_SPEED", "type": "float", "comment": null}
 , {"addr": "0x4a8d58", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}
 , {"addr": "0x4a8d5c", "name": "ANOTHER_STAGE_PTR", "type": "struct zStage*", "comment": null}
@@ -100,5 +102,6 @@
 , {"addr": "0x4c91d8", "name": "SPRITE_TEMP_BUFFER", "type": "int32_t", "comment": null}
 , {"addr": "0x4c92a8", "name": "HARDWARE_INPUT", "type": "int32_t", "comment": null}
 , {"addr": "0x4c93c0", "name": "INPUT", "type": "int32_t", "comment": null}
+, {"addr": "0x4c9690", "name": "VIRTUAL_KEYBOARD_FOR_PRACTICE_LIVES", "type": "uint8_t[0x100]", "comment": null}
 , {"addr": "0x4c9a30", "name": "MSG_STRING_DECRYPT_BUF", "type": "char[0x80]", "comment": null}
 ]

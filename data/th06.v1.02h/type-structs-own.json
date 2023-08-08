@@ -573,7 +573,8 @@
 
 , "zGuiImpl": 
   [ ["0x0", "__vms_0", "struct zAnmVm[0x1a]"]
-  , ["0x1ba0", "__unknown", null]
+  , ["0x1ba0", "__byte_1ba0", "uint8_t"]
+  , ["0x1ba1", "__unknown", null]
   , ["0x1ba4", "__vm_1", "struct zAnmVm"]
   , ["0x1cb4", "__vm_2", "struct zAnmVm"]
   , ["0x1dc4", "__vm_3", "struct zAnmVm"]
@@ -584,7 +585,7 @@
   , ["0x2314", "__vm_8", "struct zAnmVm"]
   , ["0x2424", "__vm_9", "struct zAnmVm"]
   , ["0x2534", "msg", "struct zGuiMsgVm"]
-  , ["0x2bdc", "__unknown", null]
+  , ["0x2bdc", "__field_2bdc", "uint32_t"]
   , ["0x2be0", "stage_score", "int32_t"]
   , ["0x2be4", "__child_b_0", "struct zGuiImplChildB"]
   , ["0x2c04", "__child_b_1", "struct zGuiImplChildB"]
@@ -604,13 +605,20 @@
 , "zGuiMsgVm": 
   [ ["0x0", "msg_file", "struct zMsgRawHeader*"]
   , ["0x4", "current_instr", "struct zMsgRawInstr*"]
-  , ["0x8", "__field_8", "int32_t"]
+  , ["0x8", "current_msg_index", "int32_t"]
   , ["0xc", "timer", "struct zTimer"]
   , ["0x18", "frames_elapsed_during_pause", "int32_t"]
   , ["0x1c", "portraits", "struct zAnmVm[0x2]"]
   , ["0x23c", "dialogue_lines", "struct zAnmVm[0x2]"]
   , ["0x45c", "intro_lines", "struct zAnmVm[0x2]"]
-  , ["0x67c", "__end", null]
+  , ["0x67c", "text_colors_A", "struct D3DCOLOR[0x4]"]
+  , ["0x68c", "text_colors_B", "struct D3DCOLOR[0x4]"]
+  , ["0x69c", "font_size", "uint32_t"]
+  , ["0x6a0", "ignore_wait_counter", "uint32_t"]
+  , ["0x6a4", "dialog_skippable", "uint8_t"]
+  , ["0x6a5", "__unknown", null]
+  , ["0x6a8", "__exact_size_known", "struct zCOMMENT[0x0]"]
+  , ["0x6a8", "__end", null]
   ]
 
 , "zInput": 

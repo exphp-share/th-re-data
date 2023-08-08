@@ -466,7 +466,9 @@
   ]
 
 , "zBulletExState": 
-  [ ["0x0", "__unknown", null]
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "floats", "float[0x8]"]
+  , ["0x34", "ints", "int32_t[0x5]"]
   , ["0x48", "__end", null]
   ]
 
@@ -1284,7 +1286,7 @@
   , ["0x78", "laser_st_length", "float"]
   , ["0x7c", "__field_7c__sometimes_0.01_or_0f", "float"]
   , ["0x80", "laser_id", "int32_t"]
-  , ["0x84", "array", "struct zLaserInner48[0x12]"]
+  , ["0x84", "ex_state", "struct zBulletExState[0x12]"]
   , ["0x594", "et_ex_index", "int32_t"]
   , ["0x598", "__field_598__was_4", "int32_t"]
   , ["0x59c", "__unknown", null]
@@ -1384,14 +1386,6 @@
   , ["0x60", "ex", "struct zBulletEx[0x12]"]
   , ["0x378", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0x378", "__end", null]
-  ]
-
-, "zLaserInner48": 
-  [ ["0x0", "__unknown", null]
-  , ["0x10", "timer", "struct zTimer"]
-  , ["0x24", "__unknown", null]
-  , ["0x48", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x48", "__end", null]
   ]
 
 , "zLaserLine": 

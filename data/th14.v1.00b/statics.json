@@ -108,6 +108,7 @@
 , {"addr": "0x4c1cc4", "name": "float(-5000)", "type": "float", "comment": null}
 , {"addr": "0x4c1d10", "name": "PACKED_FLOAT_SIGN_MASK", "type": "float[0x4]", "comment": null}
 , {"addr": "0x4cbb00", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
+, {"addr": "0x4d0cc0", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4d0cc0", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
 , {"addr": "0x4d1d68", "name": "FILE_BEING_WRITTEN", "type": "HANDLE", "comment": "because of course it's a global"}
 , {"addr": "0x4d4cec", "name": "ECL_FUNC_SET_FUNCS", "type": "void*[0x7]", "comment": null}
@@ -166,6 +167,8 @@
 , {"addr": "0x4f583c", "name": "RANK", "type": "int32_t", "comment": null}
 , {"addr": "0x4f5844", "name": "SPELL_ID", "type": "int32_t", "comment": null}
 , {"addr": "0x4f58a4", "name": "CUR_STAGE_NUM", "type": "int32_t", "comment": null}
+, {"addr": "0x4f58b0", "name": "TIME_IN_STAGE", "type": "int32_t", "comment": null}
+, {"addr": "0x4f58b4", "name": "TIME_IN_CHAPTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4f5a18", "name": "WINDOW", "type": "struct zWindow", "comment": null}
 , {"addr": "0x4f7b58", "name": "SOUND_MANAGER", "type": "struct zSoundManager", "comment": null}
 , {"addr": "0x4fd218", "name": "SPRITE_TEMP_BUFFER", "type": "struct zRenderVertex144[0x4]", "comment": "WHY IS THIS GLOBAL???????????"}

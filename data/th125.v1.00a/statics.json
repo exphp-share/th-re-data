@@ -14,6 +14,7 @@
 , {"addr": "0x4a2d68", "name": "float(0.35)", "type": "float", "comment": null}
 , {"addr": "0x4a8b38", "name": "__load_configuration_directory_table", "type": "struct Load_Configuration_Directory_Table", "comment": null}
 , {"addr": "0x4ac138", "name": "SECURITY_COOKIE", "type": "int32_t", "comment": null}
+, {"addr": "0x4ac138", "name": "__security_cookie", "type": "int32_t", "comment": null}
 , {"addr": "0x4b308c", "name": "CHARACTER", "type": "int32_t", "comment": null}
 , {"addr": "0x4b5308", "name": "GAME_SPEED", "type": "int32_t", "comment": null}
 , {"addr": "0x4b6770", "name": "ASCII_MANAGER_PTR", "type": "struct zAsciiManager*", "comment": null}

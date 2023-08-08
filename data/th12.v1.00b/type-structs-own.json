@@ -682,6 +682,7 @@
   , ["0x98", "__unknown", null]
   , ["0x9c", "GRAZE", "int32_t"]
   , ["0xa0", "__unknown", null]
+  , ["0xac", "PRACTICE_LIVES", "int32_t"]
   , ["0xb0", "CURRENT_PIV", "int32_t"]
   , ["0xb4", "MAXIMUM_PIV", "int32_t"]
   , ["0xb8", "__exact_size_known", "struct zCOMMENT[0x0]"]

@@ -881,7 +881,8 @@
 
 , "IDirectInput8A": 
   [ ["0x0", "vtable", "struct IDirectInput8AVtbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__padding", null]
   , ["0x8", "__end", null]
   ]
 
@@ -900,7 +901,8 @@
 
 , "IDirectInputDevice8A": 
   [ ["0x0", "vtable", "struct IDirectInputDevice8AVTbl*"]
-  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "int32_t"]
+  , ["0x4", "__make_struct_bigger_than_a_dword_so_binja_sees_when_vtable_is_read", "char"]
+  , ["0x5", "__padding", null]
   , ["0x8", "__end", null]
   ]
 
@@ -1195,6 +1197,12 @@
   , ["0x28", "__end", null]
   ]
 
+, "TIMECAPS": 
+  [ ["0x0", "wPeriodMin", "UINT"]
+  , ["0x4", "wPeriodMax", "UINT"]
+  , ["0x8", "__end", null]
+  ]
+
 , "ULARGE_INTEGER": 
   [ ["0x0", "QuadPart", "uint64_t"]
   , ["0x8", "__end", null]
@@ -1226,10 +1234,10 @@
   ]
 
 , "_GUID": 
-  [ ["0x0", "Data1", "DWORD"]
-  , ["0x4", "Data2", "WORD"]
-  , ["0x6", "Data3", "WORD"]
-  , ["0x8", "Data4", "BYTE[0x8]"]
+  [ ["0x0", "Data1", "uint32_t"]
+  , ["0x4", "Data2", "uint16_t"]
+  , ["0x6", "Data3", "uint16_t"]
+  , ["0x8", "Data4", "uint8_t[0x8]"]
   , ["0x10", "__end", null]
   ]
 

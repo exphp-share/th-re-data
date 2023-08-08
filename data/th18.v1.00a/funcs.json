@@ -473,6 +473,8 @@
 , {"addr": "0x4424e0", "name": "GameThread::thread_start", "comment": null}
 , {"addr": "0x4432b0", "name": "GameThread::thread_start__stub", "comment": null}
 , {"addr": "0x4437b0", "name": "GameThread::operator new", "comment": null}
+, {"addr": "0x443860", "name": "GameThread::on_tick", "comment": null}
+, {"addr": "0x443d70", "name": "GameThread::on_tick__stub", "comment": null}
 , {"addr": "0x444650", "name": "GameThread::end_stage", "comment": null}
 , {"addr": "0x444f10", "name": "ManualMenu::operator new", "comment": null}
 , {"addr": "0x4450b0", "name": "ManualMenu::operator delete", "comment": null}

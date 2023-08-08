@@ -461,6 +461,13 @@
   , ["0x2c", "__end", null]
   ]
 
+, "zBulletExState": 
+  [ ["0x0", "timer", "struct zTimer"]
+  , ["0x14", "floats", "float[0x8]"]
+  , ["0x34", "ints", "int32_t[0x5]"]
+  , ["0x48", "__end", null]
+  ]
+
 , "zBulletExState_00_Speedup": 
   [ ["0x0", "timer", "struct zTimer"]
   , ["0x14", "__unknown", null]
@@ -570,8 +577,8 @@
 
 , "zBulletExState_23_SaveAngle": 
   [ ["0x0", "__timer__unused", "struct zTimer"]
-  , ["0x14", "saved_speed", "int32_t"]
-  , ["0x18", "saved_angle", "int32_t"]
+  , ["0x14", "saved_speed", "float"]
+  , ["0x18", "saved_angle", "float"]
   , ["0x1c", "saved_pos", "struct zFloat3"]
   , ["0x28", "__unknown", null]
   , ["0x48", "__end", null]
@@ -598,11 +605,6 @@
 , "zBulletExState_31_Wait": 
   [ ["0x0", "timer", "struct zTimer"]
   , ["0x14", "__unknown", null]
-  , ["0x48", "__end", null]
-  ]
-
-, "zBulletExState_99_UNASSIGNED": 
-  [ ["0x0", "__unknown", null]
   , ["0x48", "__end", null]
   ]
 
@@ -1254,7 +1256,7 @@
   , ["0x1a4", "ex_bounce", "struct zBulletExState_06_Bounce"]
   , ["0x1ec", "ex_wait", "struct zBulletExState_31_Wait"]
   , ["0x234", "ex_wrap", "struct zBulletExState_12_Wrap"]
-  , ["0x27c", "ex_unassigned", "struct zBulletExState_99_UNASSIGNED[0x11]"]
+  , ["0x27c", "ex_unassigned", "struct zBulletExState[0x11]"]
   , ["0x744", "et_ex_index", "int32_t"]
   , ["0x748", "flags", "int32_t"]
   , ["0x74c", "__unknown", null]

@@ -231,6 +231,7 @@
 , {"addr": "0x421560", "name": "EnemyDrop::drop_all", "comment": null}
 , {"addr": "0x421850", "name": "Enemy::operator delete", "comment": null}
 , {"addr": "0x421880", "name": "EnemyData::constructor", "comment": null}
+, {"addr": "0x4219b0", "name": "EnemyManager::count_real_enemies", "comment": null}
 , {"addr": "0x421ef0", "name": "EnemyManager::allocate_new_enemy", "comment": null}
 , {"addr": "0x422340", "name": "EnemyManager::initialize", "comment": null}
 , {"addr": "0x4226c0", "name": "EnemyManager::destructor", "comment": null}
@@ -311,6 +312,7 @@
 , {"addr": "0x43a350", "name": "LaserManager::initialize", "comment": null}
 , {"addr": "0x43a3d0", "name": "LaserManager::destructor", "comment": null}
 , {"addr": "0x43a4c0", "name": "LaserManager::operator new", "comment": null}
+, {"addr": "0x43a570", "name": "LaserManager::on_tick__body", "comment": null}
 , {"addr": "0x43a6a0", "name": "LaserManager::on_tick", "comment": null}
 , {"addr": "0x43a710", "name": "LaserManager::on_draw", "comment": null}
 , {"addr": "0x43a750", "name": "LaserManager::allocate_new_laser", "comment": null}

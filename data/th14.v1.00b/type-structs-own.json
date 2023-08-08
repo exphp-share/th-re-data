@@ -1145,6 +1145,12 @@
   , ["0x10", "__vm_1", "struct zAnmVm"]
   , ["0x5dc", "__vm_2", "struct zAnmVm"]
   , ["0xba8", "__unknown", null]
+  , ["0xbac", "pos", "struct zFloat3"]
+  , ["0xbb8", "velocity", "struct zFloat3"]
+  , ["0xbc4", "__unknown", null]
+  , ["0xbf0", "state", "int32_t"]
+  , ["0xbf4", "item_type", "enum zItemType"]
+  , ["0xbf8", "__unknown", null]
   , ["0xc18", "__exact_size_known", "struct zCOMMENT[0x0]"]
   , ["0xc18", "__end", null]
   ]
@@ -1175,10 +1181,19 @@
   , ["0xddd888", "__end", null]
   ]
 
+, "zLaserBaseClass": 
+  [ ["0x0", "__unknown", null]
+  , ["0x4", "next", "struct zLaserBaseClass*"]
+  , ["0x8", "prev", "struct zLaserBaseClass*"]
+  , ["0xc", "__unknown", null]
+  , ["0x5c0", "__end", null]
+  ]
+
 , "zLaserManager": 
   [ ["0x0", "__unknown", null]
-  , ["0x600", "__exact_size_known", "struct zCOMMENT[0x0]"]
-  , ["0x600", "__end", null]
+  , ["0x10", "dummy_laser_for_list_tail", "struct zLaserBaseClass"]
+  , ["0x5d0", "__unknown", null]
+  , ["0x610", "__end", null]
   ]
 
 , "zLoadingThread": 
