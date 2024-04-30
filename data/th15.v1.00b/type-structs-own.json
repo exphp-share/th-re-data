@@ -1085,6 +1085,7 @@
 , "zMainMenu": 
   [ ["0x0", "__unknown", null]
   , ["0x18", "__menu_id", "int32_t"]
+  , ["0x1c", "__unknown", null]
   , ["0x24", "__menu_helper", "struct zMenuHelper"]
   , ["0xfc", "__unknown", null]
   , ["0x6b8", "__start_of_musiccmt.txt_related_info", "struct zCOMMENT[0x0]"]
